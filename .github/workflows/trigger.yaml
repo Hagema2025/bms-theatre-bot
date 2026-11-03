@@ -1,0 +1,42 @@
+name: BMS bot
+on:
+  repository_dispatch:
+    types: [trigger_bms_theatre_check]  # External trigger via cron-job.org or Telegram Bot
+  workflow_dispatch:  # Manual trigger button
+ 
+
+concurrency:
+  group: bms-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python main.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_INTO: ${{ secrets.TELEGRAM_CHAT_INTO }}
+          TELEGRAM_CHAT_PVHR: ${{ secrets.TELEGRAM_CHAT_PVHR }}
+          TELEGRAM_CHAT_MCSK: ${{ secrets.TELEGRAM_CHAT_MCSK }}
+          TELEGRAM_CHAT_TVHP: ${{ secrets.TELEGRAM_CHAT_TVHP }}
+          TELEGRAM_CHAT_CBMC: ${{ secrets.TELEGRAM_CHAT_CBMC }}
+          TELEGRAM_CHAT_MAYJ: ${{ secrets.TELEGRAM_CHAT_MAYJ }}
+          TELEGRAM_CHAT_ACON: ${{ secrets.TELEGRAM_CHAT_ACON }}
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "bms-bot"
+          git config user.email "bms-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "Update state" && git push)

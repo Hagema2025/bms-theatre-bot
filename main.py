@@ -1,8 +1,8 @@
 """BookMyShow seat-availability alert bot for Chennai theatres.
 
-Each run scans every bookable date at the target theatres and stores EVERY seat
-class it sees (all prices, even sold out) in state.json together with its
-availability status. On the next runs it pings when:
+Each run scans every bookable date at the target theatres and stores every BUDGET
+seat class it sees (price <= MAX_BUDGET_PRICE, even sold out) in state.json together
+with its availability status. On the next runs it pings when:
   - a class is seen for the first time and is bookable        -> NEW
   - a sold-out class becomes bookable (status 0 -> 1/2/3)     -> NOW AVAILABLE
   - a bookable class gets more seats (1 -> 2, 2 -> 3, 1 -> 3) -> MORE SEATS
@@ -15,8 +15,8 @@ once every show of that date is past its window (so a date with a 12:30 AM show
 stays open until ~1:00 AM, not until calendar midnight). When a topic is closed the
 bot posts a "🗑 Delete this topic" button in it; the press is handled on the next run.
 
-Notifications: budget classes (<= MAX_BUDGET_PRICE, default 100) alert WITH
-sound; non-budget classes (above that) alert silently.
+Only budget seat classes (<= MAX_BUDGET_PRICE, default 100) are tracked and alerted;
+everything priced above that is ignored.
 
 Telegram layout: one supergroup (Topics enabled) PER THEATRE. Inside each group:
   - one topic per show date (e.g. "Wed 04 Nov")
@@ -57,8 +57,7 @@ TARGET_THEATRES = {
 THEATRE_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
                  for code in TARGET_THEATRES}
 
-MAX_BUDGET_PRICE  = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # budget (<= this): alert WITH notification
-SILENT_MAX_PRICE  = float(os.environ.get("SILENT_MAX_PRICE", "0"))     # non-budget (above budget): SILENT alert; 0 = no price cap
+MAX_BUDGET_PRICE  = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # only seat classes priced <= this are tracked and alerted
 REMINDER_MINUTES  = int(os.environ.get("REMINDER_MINUTES", "120"))
 SHOW_GRACE        = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # alerts stop this long after showtime
 MAX_DATES         = int(os.environ.get("MAX_DATES", "7"))
@@ -315,8 +314,8 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
         price = float(cat.get("CurPrice") or 0)
     except (TypeError, ValueError):
         return None
-    if price <= 0 or (SILENT_MAX_PRICE and price > SILENT_MAX_PRICE):
-        return None
+    if price <= 0 or price > MAX_BUDGET_PRICE:
+        return None   # only budget seats are tracked
     session_id = show.get("SessionId")
     date_code  = show.get("ShowDateCode") or day.get("Date")
     if not session_id or not date_code:
@@ -368,7 +367,7 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
         "movie": child.get("EventName") or "Movie", "date": date_code,
         "time": show.get("ShowTime") or "", "screen": show.get("ScreenName") or "",
         "category": desc, "price": price, "status": status, "prev_status": prev_status,
-        "start": start, "end": end_iso, "silent": price > MAX_BUDGET_PRICE,
+        "start": start, "end": end_iso,
         "url": SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
                                       session=session_id, date=date_code),
     }
@@ -419,20 +418,33 @@ def scan(session, state, now):
 
 
 def cleanup_ended(state, now):
-    """Drop stored shows past their alert window, then close the topic of every theatre date
-    that has no live shows left."""
-    state["alerts"] = {k: v for k, v in state["alerts"].items()
-                       if isinstance(v, dict) and entry_end(v) >= now}
-    live = {(k.split("_")[0], v.get("date")) for k, v in state["alerts"].items()}
-    today_code = now.strftime("%Y%m%d")
-    for key in list(state["threads"]):
-        parts = key.split("_")
-        if len(parts) != 3 or parts[1] != "date":
-            continue                                   # keep the Errors topic
-        venue, _, date_code = parts
-        if date_code > today_code or (venue, date_code) in live:
-            continue                                   # future date, or shows still running
+    """Drop stored shows past their alert window. A theatre date whose shows have ALL just
+    expired is queued in state["closing"] and its topic is closed (retried every run until it
+    works). A topic is never closed merely because no shows are stored for it."""
+    kept, expired = {}, set()
+    for k, v in state["alerts"].items():
+        if not isinstance(v, dict):
+            continue
+        if entry_end(v) >= now:
+            kept[k] = v
+        else:
+            expired.add((k.split("_")[0], v.get("date")))
+    state["alerts"] = kept
+    live = {(k.split("_")[0], v.get("date")) for k, v in kept.items()}
+
+    closing = state.setdefault("closing", [])
+    for venue, date_code in expired - live:
+        key = f"{venue}_date_{date_code}"
+        if key in state["threads"] and key not in closing:
+            closing.append(key)
+    for key in list(closing):
+        venue, _, date_code = key.split("_")
+        if (venue, date_code) in live or key not in state["threads"]:
+            closing.remove(key)                        # shows came back, or topic already gone
+            continue
         finish_date_topic(state, venue, date_code, key)
+        if key not in state["threads"]:
+            closing.remove(key)                        # closed; otherwise retry next run
 
 
 # ───────────────────────── alerts ─────────────────────────
@@ -467,13 +479,13 @@ def record_alert(state, h, now):
 
 
 def send_alerts(hits, state, now):
-    """One message per (theatre, date, tier), split if long, posted in that theatre group's date topic.
-    Budget messages notify; non-budget messages are silent. Returns alerts delivered."""
+    """One message per (theatre, date), split if long, posted in that theatre group's date topic.
+    Returns alerts delivered."""
     groups = {}
     for h in sorted(hits, key=lambda h: h["start"] or now):
-        groups.setdefault((h["venue"], h["date"], h["silent"]), []).append(h)
+        groups.setdefault((h["venue"], h["date"]), []).append(h)
     sent = 0
-    for (venue, date_code, silent), group in groups.items():
+    for (venue, date_code), group in groups.items():
         chunks, current, size = [], [], 0
         for h in group:
             block = format_hit(h)
@@ -486,13 +498,11 @@ def send_alerts(hits, state, now):
             chunks.append(current)
         for n, chunk in enumerate(chunks, 1):
             part   = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
-            tier   = (f"🔕 non-budget show(s) > ₹{MAX_BUDGET_PRICE:.0f}" if silent
-                      else f"budget show(s) ≤ ₹{MAX_BUDGET_PRICE:.0f}")
             header = (f"🎟️ {TARGET_THEATRES[venue]}\n"
-                      f"📅 {format_date(date_code)} · {len(group)} {tier}{part}")
+                      f"📅 {format_date(date_code)} · {len(group)} budget seat class(es) "
+                      f"≤ ₹{MAX_BUDGET_PRICE:.0f}{part}")
             text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
-            if send_to_thread(state, venue, f"date_{date_code}", format_date(date_code), text,
-                              silent=silent):
+            if send_to_thread(state, venue, f"date_{date_code}", format_date(date_code), text):
                 for h, _ in chunk:
                     record_alert(state, h, now)
                 sent += len(chunk)
@@ -529,6 +539,8 @@ def main():
     now     = datetime.now(IST)
     state   = load_state()
     healthy = False
+    # If this always says 0 shows / 0 topics, state.json isn't being saved between runs
+    logging.info(f"State loaded: {len(state['alerts'])} shows, {len(state['threads'])} topics")
 
     missing = [code for code, chat in THEATRE_CHATS.items() if not chat]
     if missing:

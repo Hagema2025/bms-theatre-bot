@@ -1,7 +1,7 @@
 name: BMS bot
 on:
   repository_dispatch:
-    types: [trigger_bms_theatre_check]  # External trigger via cron-job.org or Telegram Bot
+    types: [trigger-bms-theatre-check]  # External trigger via cron-job.org or Telegram Bot
   workflow_dispatch:  # Manual trigger button
  
 

@@ -26,6 +26,7 @@ The bot must be a group admin with "Manage Topics" (and "Delete Messages" for th
 Chat IDs come from env vars, one per theatre: TELEGRAM_CHAT_<VENUE_CODE>
 (e.g. TELEGRAM_CHAT_INTO). Keep them in GitHub secrets.
 """
+import html
 import json
 import logging
 import os
@@ -191,8 +192,9 @@ def tg_api(method, payload):
     return False, body
 
 
-def get_thread(state, chat_id, key, name, force=False):
-    """Topic ID for key in this chat, created on first use. None if it can't be created."""
+def get_thread(state, chat_id, key, name, force=False, note=None):
+    """Topic ID for key in this chat, created on first use (with an intro note posted first).
+    None if it can't be created."""
     if key in state["threads"] and not force:
         return state["threads"][key]
     ok, body = tg_api("createForumTopic", {"chat_id": chat_id, "name": name})
@@ -200,26 +202,34 @@ def get_thread(state, chat_id, key, name, force=False):
         logging.warning(f"{key}: couldn't create topic '{name}' ({body.get('description', '')}); "
                         f"posting to the group's main chat instead")
         return None
-    state["threads"][key] = body["result"]["message_thread_id"]
-    return state["threads"][key]
+    thread_id = body["result"]["message_thread_id"]
+    state["threads"][key] = thread_id
+    if note:
+        # First message in the topic, before any alert; a failure here must not block alerts
+        tg_api("sendMessage", {"chat_id": chat_id, "message_thread_id": thread_id, "text": note,
+                               "disable_notification": True, "disable_web_page_preview": True})
+    return thread_id
 
 
-def send_to_thread(state, venue, thread_key, name, text, silent=False):
+def send_to_thread(state, venue, thread_key, name, text, silent=False, html_mode=False, note=None):
     """Send text into a topic of the theatre's group; recreate the topic once if it was deleted.
-    silent=True delivers without a notification sound. Returns True on success."""
+    silent=True delivers without a notification sound; html_mode=True sends as Telegram HTML
+    (links, bold); note is posted first when the topic is newly created. Returns True on success."""
     chat_id = THEATRE_CHATS.get(venue)
     if not chat_id:
         logging.error(f"{venue}: no TELEGRAM_CHAT_{venue} set, can't send")
         return False
     key = f"{venue}_{thread_key}"
-    thread_id = get_thread(state, chat_id, key, name)
+    thread_id = get_thread(state, chat_id, key, name, note=note)
     payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True,
                "disable_notification": silent}
+    if html_mode:
+        payload["parse_mode"] = "HTML"
     if thread_id:
         payload["message_thread_id"] = thread_id
     ok, body = tg_api("sendMessage", payload)
     if not ok and thread_id and "thread" in body.get("description", "").lower():
-        thread_id = get_thread(state, chat_id, key, name, force=True)
+        thread_id = get_thread(state, chat_id, key, name, force=True, note=note)
         payload.pop("message_thread_id", None)
         if thread_id:
             payload["message_thread_id"] = thread_id
@@ -227,8 +237,32 @@ def send_to_thread(state, venue, thread_key, name, text, silent=False):
     return ok
 
 
+def date_note(venue, date_code):
+    """First message of a new date topic."""
+    return (f"📌 NOTE\n"
+            f"🎟️ {TARGET_THEATRES[venue]}\n"
+            f"📅 {format_date(date_code)}\n"
+            f"{DIVIDER}\n"
+            f"Budget seats ≤ ₹{MAX_BUDGET_PRICE:.0f} only.\n"
+            f"🔔 Now available = was sold out\n"
+            f"📈 More seats = availability up\n"
+            f"⏰ Show soon = starts within {REMINDER_MINUTES // 60}h\n"
+            f"Alerts stop {int(SHOW_GRACE.total_seconds() // 60)} min after showtime.\n"
+            f"Topic closes after the last show.")
+
+
+def errors_note(venue):
+    """First message of a new Errors topic."""
+    return (f"📌 NOTE\n"
+            f"🎟️ {TARGET_THEATRES[venue]}\n"
+            f"{DIVIDER}\n"
+            f"BookMyShow outages, recoveries and\n"
+            f"bot crashes are posted here.")
+
+
 def send_error(state, venue, text):
-    return send_to_thread(state, venue, "errors", ERRORS_THREAD_NAME, text)
+    return send_to_thread(state, venue, "errors", ERRORS_THREAD_NAME, text,
+                          note=errors_note(venue))
 
 
 def finish_date_topic(state, venue, date_code, key):
@@ -461,10 +495,16 @@ def format_hit(h):
         lines.append(f"⏰ SHOW IN {hours}h {mins}m" if hours else f"⏰ SHOW IN {mins} MIN")
     elif h["mins"] is not None and h["mins"] < 0:
         lines.append(f"⏰ STARTED {int(-h['mins'])} MIN AGO")
-    lines.append(f"🎬 {h['movie']}")
-    lines.append(f"🕘 {h['time']} · {format_date(h['date'])} · {h['screen']}")
-    lines.append(f"💺 {h['category']} ₹{h['price']:.2f} · {AVAIL_LABELS[h['status']]}")
-    lines.append(f"👉 {h['url']}")
+    # Short lines so nothing wraps awkwardly on a small phone screen; text is HTML-escaped
+    # because the message is sent in Telegram HTML mode
+    lines.append(f"🎬 <b>{html.escape(h['movie'])}</b>")
+    if h["screen"]:
+          lines.append(f"🕘 {html.escape(h['time'])} 🖥️ {html.escape(h['screen'])}")
+    else:
+          lines.append(f"🕘 {html.escape(h['time'])}")
+    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']:g}")
+    lines.append(f"📊 {AVAIL_LABELS[h['status']]}")
+    lines.append(f'🔗 <a href="{html.escape(h["url"], quote=True)}">Book seats</a>')
     return "\n".join(lines)
 
 
@@ -498,11 +538,11 @@ def send_alerts(hits, state, now):
             chunks.append(current)
         for n, chunk in enumerate(chunks, 1):
             part   = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
-            header = (f"🎟️ {TARGET_THEATRES[venue]}\n"
-                      f"📅 {format_date(date_code)} · {len(group)} budget seat class(es) "
-                      f"≤ ₹{MAX_BUDGET_PRICE:.0f}{part}")
+            header = (f"🎟️ <b>{html.escape(TARGET_THEATRES[venue])}</b>\n"
+                      f"📅 {format_date(date_code)} · {len(group)} budget alert(s){part}")
             text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
-            if send_to_thread(state, venue, f"date_{date_code}", format_date(date_code), text):
+            if send_to_thread(state, venue, f"date_{date_code}", format_date(date_code), text,
+                              html_mode=True, note=date_note(venue, date_code)):
                 for h, _ in chunk:
                     record_alert(state, h, now)
                 sent += len(chunk)

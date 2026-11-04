@@ -366,7 +366,7 @@
     "ACON_48432_20261106_PEARL": {
       "category": "PEARL",
       "date": "20261106",
-      "end": "2026-11-06T09:40:00+05:30",
+      "end": "2026-11-06T10:25:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.0,
       "soon_alerted": false,
@@ -443,7 +443,7 @@
     "ACON_48439_20261106_PEARL": {
       "category": "PEARL",
       "date": "20261106",
-      "end": "2026-11-06T16:40:00+05:30",
+      "end": "2026-11-06T17:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.0,
       "soon_alerted": false,
@@ -465,7 +465,7 @@
     "ACON_48441_20261106_PEARL 3D": {
       "category": "PEARL 3D",
       "date": "20261106",
-      "end": "2026-11-06T12:40:00+05:30",
+      "end": "2026-11-06T13:20:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 89.0,
       "soon_alerted": false,
@@ -1166,6 +1166,17 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:55 PM"
     },
+    "ACON_48549_20261106_PEARL": {
+      "category": "PEARL",
+      "date": "20261106",
+      "end": "2026-11-06T07:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.0,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
+      "time": "07:00 AM"
+    },
     "CBMC_15432_20261104_NORMAL": {
       "category": "NORMAL",
       "date": "20261104",
@@ -1846,7 +1857,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:30 AM"
     },
@@ -1930,17 +1941,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
-    },
-    "INTO_92488_20261104_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T10:40:00+05:30",
-      "movie": "Pulavar - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:10 AM"
     },
     "INTO_92489_20261104_EXECUTIVE": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -5244,14 +5244,14 @@
       "time": "10:25 PM"
     },
     "PVHR_44762_20261106_CLASSIC": {
-      "alerted_at": "2026-11-04T07:40:54+05:30",
+      "alerted_at": "2026-11-04T10:40:46+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T06:30:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },

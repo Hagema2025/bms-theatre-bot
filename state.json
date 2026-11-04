@@ -1056,17 +1056,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:35 PM"
     },
-    "CBMC_15441_20261104_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T20:15:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:45 PM"
-    },
     "CBMC_15442_20261104_NORMAL": {
       "category": "NORMAL",
       "date": "20261104",
@@ -2909,18 +2898,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:30 PM"
-    },
-    "INTO_92476_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T20:15:00+05:30",
-      "movie": "Cult - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:45 PM"
     },
     "INTO_92477_20261104_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -6516,13 +6493,13 @@
       "time": "09:30 PM"
     },
     "PVHR_44659_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T20:20:49+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T22:45:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
@@ -6551,18 +6528,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
     },
-    "PVHR_44682_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T17:50:52+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T20:15:00+05:30",
-      "movie": "Doraemon: Castle of the Undersea Devil (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:45 PM"
-    },
     "PVHR_44683_20261104_CLASSIC": {
       "alerted_at": "2026-11-04T20:10:47+05:30",
       "category": "CLASSIC",
@@ -6576,13 +6541,13 @@
       "time": "10:10 PM"
     },
     "PVHR_44691_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T20:20:49+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T22:50:00+05:30",
       "movie": "Singgaramm - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:20 PM"
@@ -6612,14 +6577,14 @@
       "time": "10:25 PM"
     },
     "PVHR_44715_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T20:20:49+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T22:25:00+05:30",
       "movie": "Haiku - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:55 PM"
     },
@@ -7087,7 +7052,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM"
     },
@@ -7135,7 +7100,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 PM"
     },

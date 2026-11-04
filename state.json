@@ -2853,14 +2853,14 @@
       "time": "11:00 PM"
     },
     "INTO_92453_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T21:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T23:25:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM"
     },
@@ -3820,14 +3820,14 @@
       "time": "09:45 AM"
     },
     "INTO_92609_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T04:10:54+05:30",
+      "alerted_at": "2026-11-04T21:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T13:30:00+05:30",
       "movie": "Summer Holidays - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:00 PM"
     },
@@ -4287,14 +4287,14 @@
       "time": "09:00 AM"
     },
     "INTO_92657_20261108_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-04T21:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261108",
       "end": "2026-11-08T12:50:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:20 PM"
     },
@@ -6549,7 +6549,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
     },
@@ -6602,14 +6602,14 @@
       "time": "10:25 PM"
     },
     "PVHR_44715_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T20:20:49+05:30",
+      "alerted_at": "2026-11-04T21:10:54+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T22:25:00+05:30",
       "movie": "Haiku - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "0",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:55 PM"
     },

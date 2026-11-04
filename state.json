@@ -1101,13 +1101,14 @@
       "time": "10:35 PM"
     },
     "CBMC_15437_20261104_NORMAL": {
+      "alerted_at": "2026-11-04T18:20:46+05:30",
       "category": "NORMAL",
       "date": "20261104",
       "end": "2026-11-04T19:45:00+05:30",
       "movie": "Anbil Avan - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:15 PM"
     },
@@ -1134,13 +1135,14 @@
       "time": "10:50 PM"
     },
     "CBMC_15445_20261104_NORMAL": {
+      "alerted_at": "2026-11-04T18:20:46+05:30",
       "category": "NORMAL",
       "date": "20261104",
       "end": "2026-11-04T19:40:00+05:30",
       "movie": "Udta Teer - Hindi",
       "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:10 PM"
     },
@@ -1199,18 +1201,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:50 PM"
-    },
-    "CBMC_15461_20261104_NORMAL": {
-      "alerted_at": "2026-11-04T17:01:09+05:30",
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T18:20:00+05:30",
-      "movie": "The Influencer Project - English",
-      "price": 61.74,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "05:50 PM"
     },
     "CBMC_15463_20261104_NORMAL": {
       "category": "NORMAL",
@@ -1685,6 +1675,39 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "06:05 AM"
     },
+    "CBMC_15569_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T20:40:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "08:10 PM"
+    },
+    "CBMC_15571_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T08:10:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:40 AM"
+    },
+    "CBMC_15573_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T14:25:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "01:55 PM"
+    },
     "CBMC_15575_20261105_NORMAL": {
       "category": "NORMAL",
       "date": "20261105",
@@ -1717,6 +1740,105 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
+    },
+    "CBMC_15578_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T11:20:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:50 AM"
+    },
+    "CBMC_15579_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T17:35:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "05:05 PM"
+    },
+    "CBMC_15580_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T13:50:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "01:20 PM"
+    },
+    "CBMC_15581_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T20:00:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:30 PM"
+    },
+    "CBMC_15582_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T10:45:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:15 AM"
+    },
+    "CBMC_15583_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T16:55:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "04:25 PM"
+    },
+    "CBMC_15584_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T23:05:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:35 PM"
+    },
+    "CBMC_15585_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T07:40:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:10 AM"
+    },
+    "CBMC_15586_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T23:50:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:20 PM"
     },
     "INTO_92428_20261104_EXECUTIVE": {
       "alerted_at": "2026-11-04T18:01:11+05:30",
@@ -3531,7 +3653,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:40 PM"
     },
@@ -5507,7 +5629,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:45 PM"
     },
@@ -6155,7 +6277,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },

@@ -1,16 +1,5 @@
 {
   "alerts": {
-    "ACON_48389_20261104_PEARL": {
-      "category": "PEARL",
-      "date": "20261104",
-      "end": "2026-11-04T12:00:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "11:30 AM"
-    },
     "ACON_48390_20261104_PEARL": {
       "category": "PEARL",
       "date": "20261104",
@@ -1853,18 +1842,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM"
     },
-    "INTO_92462_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T11:31:15+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T12:00:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "11:30 AM"
-    },
     "INTO_92463_20261104_EXECUTIVE": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "EXECUTIVE",
@@ -2281,7 +2258,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:15 PM"
     },
@@ -2320,14 +2297,14 @@
       "time": "10:10 AM"
     },
     "INTO_92546_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T12:01:05+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T14:50:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:20 PM"
     },
@@ -3868,6 +3845,66 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:35 PM"
     },
+    "INTO_92696_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261106",
+      "end": "2026-11-06T06:45:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "06:15 AM"
+    },
+    "INTO_92697_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261106",
+      "end": "2026-11-06T07:00:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "06:30 AM"
+    },
+    "INTO_92698_20261107_EXECUTIVE": {
+      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261107",
+      "end": "2026-11-07T07:00:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "06:30 AM"
+    },
+    "INTO_92699_20261107_EXECUTIVE": {
+      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261107",
+      "end": "2026-11-07T06:45:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "06:15 AM"
+    },
+    "INTO_92701_20261108_EXECUTIVE": {
+      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261108",
+      "end": "2026-11-08T07:00:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "06:30 AM"
+    },
     "MCSK_16881_20261104_SPECIAL": {
       "category": "SPECIAL",
       "date": "20261104",
@@ -4744,18 +4781,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:55 PM"
     },
-    "PVHR_44716_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T09:31:16+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T12:00:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "11:30 AM"
-    },
     "PVHR_44717_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -5292,7 +5317,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 PM"
     },
@@ -5496,7 +5521,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 AM"
     },

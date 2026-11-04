@@ -1706,13 +1706,13 @@
       "time": "09:50 PM"
     },
     "INTO_92426_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T10:50:47+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T13:15:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:45 PM"
@@ -1987,17 +1987,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
-    },
-    "INTO_92503_20261104_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T10:45:00+05:30",
-      "movie": "Singgaramm - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:15 AM"
     },
     "INTO_92504_20261104_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -5251,7 +5240,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },
@@ -5551,7 +5540,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:20 PM"
     },

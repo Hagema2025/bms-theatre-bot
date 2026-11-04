@@ -1719,13 +1719,13 @@
       "time": "09:55 PM"
     },
     "INTO_92428_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T18:01:11+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T20:25:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:55 PM"
@@ -2604,14 +2604,14 @@
       "time": "07:35 PM"
     },
     "INTO_92592_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T04:10:54+05:30",
+      "alerted_at": "2026-11-04T18:01:11+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T13:30:00+05:30",
       "movie": "Summer Holidays - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:00 PM"
     },
@@ -3699,7 +3699,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:15 AM"
     },
@@ -5483,7 +5483,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 PM"
     },

@@ -2886,18 +2886,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
     },
-    "INTO_92452_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T17:40:50+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T20:10:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:40 PM"
-    },
     "INTO_92453_20261104_EXECUTIVE": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "EXECUTIVE",
@@ -6576,13 +6564,13 @@
       "time": "07:45 PM"
     },
     "PVHR_44683_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T20:10:47+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T22:40:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 PM"
@@ -7039,7 +7027,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM"
     },
@@ -7092,14 +7080,14 @@
       "time": "06:00 AM"
     },
     "PVHR_44763_20261106_CLASSIC": {
-      "alerted_at": "2026-11-04T03:31:19+05:30",
+      "alerted_at": "2026-11-04T20:10:47+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T09:40:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM"
     },
@@ -7111,7 +7099,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:20 PM"
     },

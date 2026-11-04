@@ -1067,18 +1067,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:35 PM"
     },
-    "CBMC_15437_20261104_NORMAL": {
-      "alerted_at": "2026-11-04T18:20:46+05:30",
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T19:45:00+05:30",
-      "movie": "Anbil Avan - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:15 PM"
-    },
     "CBMC_15441_20261104_NORMAL": {
       "category": "NORMAL",
       "date": "20261104",
@@ -2904,7 +2892,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:30 PM"
     },
@@ -3469,7 +3457,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -3612,7 +3600,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:40 PM"
     },
@@ -3742,7 +3730,7 @@
       "movie": "Summer Holidays - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:00 PM"
     },
@@ -4942,17 +4930,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
-    "MCSK_16883_20261104_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261104",
-      "end": "2026-11-04T19:50:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "07:20 PM"
-    },
     "MCSK_16884_20261104_SPECIAL": {
       "category": "SPECIAL",
       "date": "20261104",
@@ -4963,17 +4940,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM"
-    },
-    "MCSK_16887_20261104_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261104",
-      "end": "2026-11-04T19:50:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "07:20 PM"
     },
     "MCSK_16888_20261104_SPECIAL": {
       "category": "SPECIAL",
@@ -6691,18 +6657,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:20 PM"
     },
-    "PVHR_44698_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T18:50:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T19:50:00+05:30",
-      "movie": "418 (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:20 PM"
-    },
     "PVHR_44699_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -6726,18 +6680,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:25 PM"
-    },
-    "PVHR_44714_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T17:20:58+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T19:45:00+05:30",
-      "movie": "Clayface - English",
-      "price": 61.74,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:15 PM"
     },
     "PVHR_44715_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -7107,7 +7049,7 @@
       "movie": "Enemy Of The Smuggler - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 PM"
     },
@@ -7191,7 +7133,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:25 PM"
     },

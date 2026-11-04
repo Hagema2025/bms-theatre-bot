@@ -1332,13 +1332,14 @@
       "time": "10:50 PM"
     },
     "CBMC_15451_20261104_NORMAL": {
+      "alerted_at": "2026-11-04T11:01:05+05:30",
       "category": "NORMAL",
       "date": "20261104",
       "end": "2026-11-04T12:20:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:50 AM"
     },
@@ -1802,13 +1803,13 @@
       "time": "11:00 PM"
     },
     "INTO_92450_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T11:01:05+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T13:25:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:55 PM"
@@ -1850,14 +1851,14 @@
       "time": "10:55 PM"
     },
     "INTO_92462_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T10:31:20+05:30",
+      "alerted_at": "2026-11-04T11:01:05+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T12:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "0",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:30 AM"
     },
@@ -1943,13 +1944,13 @@
       "time": "11:00 PM"
     },
     "INTO_92489_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T11:01:05+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T13:25:00+05:30",
       "movie": "Baththa - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:55 PM"
@@ -3333,7 +3334,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM"
     },
@@ -4513,13 +4514,13 @@
       "time": "10:30 PM"
     },
     "PVHR_44680_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T11:01:05+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T13:25:00+05:30",
       "movie": "Doraemon: Castle of the Undersea Devil (Tamil) - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:55 PM"
@@ -6701,6 +6702,7 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
+    "CBMC_date_20261104": 41,
     "INTO_date_20261104": 42,
     "INTO_date_20261105": 46,
     "INTO_date_20261106": 51,

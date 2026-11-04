@@ -4084,14 +4084,14 @@
       "time": "02:25 PM"
     },
     "INTO_92637_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T21:01:11+05:30",
+      "alerted_at": "2026-11-04T22:01:11+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T17:30:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -6853,18 +6853,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
     },
-    "PVHR_44651_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T19:31:18+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T22:00:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "09:30 PM"
-    },
     "PVHR_44659_20261104_CLASSIC": {
       "alerted_at": "2026-11-04T20:20:49+05:30",
       "category": "CLASSIC",
@@ -6885,7 +6873,7 @@
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 PM"
     },
@@ -7365,7 +7353,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM"
     },
@@ -7377,19 +7365,19 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:15 PM"
     },
     "PVHR_44760_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T22:01:11+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T18:50:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:20 PM"
     },

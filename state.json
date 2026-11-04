@@ -407,17 +407,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:00 PM"
     },
-    "ACON_48475_20261104_PEARL": {
-      "category": "PEARL",
-      "date": "20261104",
-      "end": "2026-11-04T23:15:00+05:30",
-      "movie": "Cult - Telugu",
-      "price": 59.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "10:45 PM"
-    },
     "ACON_48476_20261107_PEARL": {
       "category": "PEARL",
       "date": "20261107",
@@ -1122,27 +1111,16 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "07:00 PM"
     },
-    "CBMC_15442_20261104_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T23:20:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
+    "ACON_48557_20261105_PEARL 3D": {
+      "category": "PEARL 3D",
+      "date": "20261105",
+      "end": "2026-11-05T11:15:00+05:30",
+      "movie": "Ramayana (3D)(Telugu) - Telugu",
+      "price": 89.0,
       "soon_alerted": false,
       "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:50 PM"
-    },
-    "CBMC_15450_20261104_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T23:20:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:50 PM"
+      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
+      "time": "10:45 AM"
     },
     "CBMC_15485_20261105_NORMAL": {
       "category": "NORMAL",
@@ -2885,25 +2863,26 @@
       "time": "11:00 PM"
     },
     "INTO_92453_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T21:10:54+05:30",
+      "alerted_at": "2026-11-04T23:22:17+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T23:25:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "0",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM"
     },
     "INTO_92477_20261104_EXECUTIVE": {
+      "alerted_at": "2026-11-04T23:22:17+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T23:30:00+05:30",
       "movie": "Clayface - English",
       "price": 66.74,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
     },
@@ -2917,18 +2896,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
-    },
-    "INTO_92522_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T23:10:50+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T23:20:00+05:30",
-      "movie": "418 - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "3",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:50 PM"
     },
     "INTO_92525_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -4226,14 +4193,14 @@
       "time": "10:50 PM"
     },
     "INTO_92651_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-04T23:22:17+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T09:30:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM"
     },
@@ -4604,7 +4571,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:40 PM"
     },
@@ -5231,17 +5198,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM"
-    },
-    "MCSK_16884_20261104_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261104",
-      "end": "2026-11-04T23:15:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "10:45 PM"
     },
     "MCSK_16893_20261105_3D SPECIAL": {
       "category": "3D SPECIAL",
@@ -9426,7 +9382,6 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
-    "CBMC_date_20261104": 41,
     "INTO_date_20261104": 42,
     "INTO_date_20261105": 46,
     "INTO_date_20261106": 51,
@@ -9434,7 +9389,6 @@
     "INTO_date_20261108": 57,
     "INTO_date_20261109": 60,
     "INTO_date_20261110": 153,
-    "MCSK_date_20261104": 31,
     "MCSK_date_20261106": 16,
     "MCSK_date_20261108": 20,
     "MCSK_date_20261109": 24,

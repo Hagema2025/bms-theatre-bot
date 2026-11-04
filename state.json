@@ -1273,7 +1273,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:10 PM"
     },
@@ -1607,6 +1607,17 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:50 PM"
     },
+    "CBMC_15546_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T13:20:00+05:30",
+      "movie": "Ramayana (Telugu) - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "12:50 PM"
+    },
     "CBMC_15547_20261106_NORMAL": {
       "category": "NORMAL",
       "date": "20261106",
@@ -1617,6 +1628,17 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "06:45 PM"
+    },
+    "CBMC_15548_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T17:20:00+05:30",
+      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "04:50 PM"
     },
     "CBMC_15551_20261106_NORMAL": {
       "category": "NORMAL",
@@ -1727,6 +1749,39 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:35 PM"
+    },
+    "CBMC_15564_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T23:05:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:35 PM"
+    },
+    "CBMC_15565_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T10:10:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "09:40 AM"
+    },
+    "CBMC_15566_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T20:30:00+05:30",
+      "movie": "Summer Holidays - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "08:00 PM"
     },
     "CBMC_15567_20261106_NORMAL": {
       "category": "NORMAL",
@@ -2314,14 +2369,14 @@
       "time": "09:30 AM"
     },
     "INTO_92548_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T14:40:47+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T09:45:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:15 AM"
     },
@@ -4675,7 +4730,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:00 AM"
     },
@@ -4687,7 +4742,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:15 AM"
     },
@@ -4723,7 +4778,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:50 PM"
     },
@@ -4735,7 +4790,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:00 PM"
     },
@@ -4747,7 +4802,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:25 AM"
     },
@@ -4807,7 +4862,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 AM"
     },
@@ -4879,7 +4934,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:10 AM"
     },
@@ -4891,7 +4946,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "09:20 AM"
     },
@@ -4903,7 +4958,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM"
     },
@@ -5395,7 +5450,7 @@
       "movie": "Cult - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:25 PM"
     },

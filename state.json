@@ -1178,13 +1178,14 @@
       "time": "10:50 PM"
     },
     "CBMC_15453_20261104_NORMAL": {
+      "alerted_at": "2026-11-04T17:40:50+05:30",
       "category": "NORMAL",
       "date": "20261104",
       "end": "2026-11-04T19:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "06:30 PM"
     },
@@ -1766,13 +1767,13 @@
       "time": "11:00 PM"
     },
     "INTO_92452_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T17:40:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T20:10:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:40 PM"
@@ -3797,6 +3798,18 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
+    },
+    "INTO_92706_20261105_EXECUTIVE": {
+      "alerted_at": "2026-11-04T17:40:50+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261105",
+      "end": "2026-11-05T22:20:00+05:30",
+      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "price": 89.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:50 PM"
     },
     "MCSK_16883_20261104_SPECIAL": {
       "category": "SPECIAL",

@@ -440,17 +440,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:00 PM"
     },
-    "ACON_48474_20261104_PEARL": {
-      "category": "PEARL",
-      "date": "20261104",
-      "end": "2026-11-04T19:40:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "07:10 PM"
-    },
     "ACON_48475_20261104_PEARL": {
       "category": "PEARL",
       "date": "20261104",
@@ -1111,18 +1100,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
-    },
-    "CBMC_15445_20261104_NORMAL": {
-      "alerted_at": "2026-11-04T18:20:46+05:30",
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T19:40:00+05:30",
-      "movie": "Udta Teer - Hindi",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:10 PM"
     },
     "CBMC_15446_20261104_NORMAL": {
       "category": "NORMAL",
@@ -3037,17 +3014,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:00 PM"
     },
-    "INTO_92506_20261104_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T19:40:00+05:30",
-      "movie": "Enemy Of The Smuggler - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:10 PM"
-    },
     "INTO_92507_20261104_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261104",
@@ -3058,18 +3024,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:25 PM"
-    },
-    "INTO_92521_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T17:10:54+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T19:40:00+05:30",
-      "movie": "Ranabaali - Telugu",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:10 PM"
     },
     "INTO_92522_20261104_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -3508,14 +3462,14 @@
       "time": "10:10 AM"
     },
     "INTO_92567_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-04T19:40:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T17:30:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -7657,7 +7611,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:30 PM"
     },

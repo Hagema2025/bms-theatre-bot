@@ -1167,17 +1167,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:00 PM"
     },
-    "CBMC_15448_20261104_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T16:40:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "04:10 PM"
-    },
     "CBMC_15449_20261104_NORMAL": {
       "category": "NORMAL",
       "date": "20261104",
@@ -1739,18 +1728,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
     },
-    "INTO_92427_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T14:10:48+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261104",
-      "end": "2026-11-04T16:40:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "04:10 PM"
-    },
     "INTO_92428_20261104_EXECUTIVE": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "EXECUTIVE",
@@ -1800,14 +1777,14 @@
       "time": "11:00 PM"
     },
     "INTO_92451_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T16:10:49+05:30",
+      "alerted_at": "2026-11-04T16:40:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T16:55:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -2529,14 +2506,14 @@
       "time": "02:25 PM"
     },
     "INTO_92580_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-04T16:40:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T09:50:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:20 AM"
     },
@@ -2606,7 +2583,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:35 PM"
     },
@@ -3863,18 +3840,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM"
-    },
-    "MCSK_16886_20261104_SPECIAL": {
-      "alerted_at": "2026-11-04T16:31:23+05:30",
-      "category": "SPECIAL",
-      "date": "20261104",
-      "end": "2026-11-04T16:35:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "3",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "04:05 PM"
     },
     "MCSK_16887_20261104_SPECIAL": {
       "category": "SPECIAL",
@@ -5567,13 +5532,13 @@
       "time": "10:15 PM"
     },
     "PVHR_44666_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T16:40:50+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T19:10:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM"
@@ -5721,18 +5686,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:25 PM"
-    },
-    "PVHR_44713_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T14:10:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T16:35:00+05:30",
-      "movie": "Haiku - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "04:05 PM"
     },
     "PVHR_44714_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",

@@ -33,17 +33,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:00 PM"
     },
-    "ACON_48393_20261104_PEARL": {
-      "category": "PEARL",
-      "date": "20261104",
-      "end": "2026-11-04T12:30:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "12:00 PM"
-    },
     "ACON_48394_20261104_PEARL": {
       "category": "PEARL",
       "date": "20261104",
@@ -1207,7 +1196,7 @@
       "movie": "Anbil Avan - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:30 PM"
     },
@@ -1285,7 +1274,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:50 PM"
     },
@@ -1539,7 +1528,7 @@
       "movie": "Baththa - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:45 PM"
     },
@@ -1735,14 +1724,14 @@
       "time": "11:30 PM"
     },
     "INTO_92438_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-04T10:31:20+05:30",
+      "alerted_at": "2026-11-04T12:31:23+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T13:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:30 PM"
     },
@@ -2280,7 +2269,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -3230,7 +3219,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4362,13 +4351,13 @@
       "time": "10:50 PM"
     },
     "PVHR_44649_20261104_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T12:31:23+05:30",
       "category": "CLASSIC",
       "date": "20261104",
       "end": "2026-11-04T15:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:30 PM"
@@ -4480,18 +4469,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 PM"
-    },
-    "PVHR_44672_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T10:01:07+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T12:30:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "12:00 PM"
     },
     "PVHR_44673_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -4672,18 +4649,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:35 PM"
-    },
-    "PVHR_44704_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T10:01:07+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T12:30:00+05:30",
-      "movie": "Baththa - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "12:00 PM"
     },
     "PVHR_44705_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",

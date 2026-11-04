@@ -1903,14 +1903,14 @@
       "time": "06:50 PM"
     },
     "INTO_92465_20261104_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-04T19:10:53+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T23:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:30 PM"
     },
@@ -1990,7 +1990,7 @@
       "movie": "Ranabaali - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:10 PM"
     },
@@ -3871,7 +3871,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
     },
@@ -5611,18 +5611,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
     },
-    "PVHR_44666_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T16:40:50+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T19:10:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:40 PM"
-    },
     "PVHR_44667_20261104_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -5715,7 +5703,7 @@
       "movie": "418 (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:20 PM"
     },

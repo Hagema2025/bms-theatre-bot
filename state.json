@@ -1122,17 +1122,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "07:00 PM"
     },
-    "CBMC_15434_20261104_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261104",
-      "end": "2026-11-04T23:05:00+05:30",
-      "movie": "Baththa - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:35 PM"
-    },
     "CBMC_15442_20261104_NORMAL": {
       "category": "NORMAL",
       "date": "20261104",
@@ -2930,13 +2919,14 @@
       "time": "11:00 PM"
     },
     "INTO_92522_20261104_EXECUTIVE": {
+      "alerted_at": "2026-11-04T23:10:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261104",
       "end": "2026-11-04T23:20:00+05:30",
       "movie": "418 - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM"
     },
@@ -4243,7 +4233,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM"
     },
@@ -5252,17 +5242,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM"
-    },
-    "MCSK_16888_20261104_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261104",
-      "end": "2026-11-04T23:05:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "10:35 PM"
     },
     "MCSK_16893_20261105_3D SPECIAL": {
       "category": "3D SPECIAL",
@@ -6861,18 +6840,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
-    },
-    "PVHR_44699_20261104_CLASSIC": {
-      "alerted_at": "2026-11-04T22:20:49+05:30",
-      "category": "CLASSIC",
-      "date": "20261104",
-      "end": "2026-11-04T23:05:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:35 PM"
     },
     "PVHR_44720_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -9472,7 +9439,6 @@
     "MCSK_date_20261108": 20,
     "MCSK_date_20261109": 24,
     "MCSK_date_20261110": 27,
-    "PVHR_date_20261104": 73,
     "PVHR_date_20261105": 78,
     "PVHR_date_20261106": 83,
     "PVHR_date_20261107": 86,

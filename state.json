@@ -88,17 +88,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "06:30 PM"
     },
-    "ACON_48416_20261105_PEARL": {
-      "category": "PEARL",
-      "date": "20261105",
-      "end": "2026-11-05T11:40:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "11:10 AM"
-    },
     "ACON_48417_20261105_PEARL 3D": {
       "category": "PEARL 3D",
       "date": "20261105",
@@ -1451,7 +1440,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:15 AM"
     },
@@ -3999,14 +3988,14 @@
       "time": "02:25 PM"
     },
     "INTO_92637_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-05T10:31:24+05:30",
+      "alerted_at": "2026-11-05T11:40:58+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T17:30:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -4778,14 +4767,14 @@
       "time": "06:00 AM"
     },
     "INTO_92706_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T11:10:49+05:30",
+      "alerted_at": "2026-11-05T11:40:58+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T22:20:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -7643,7 +7632,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:45 PM"
     },
@@ -9124,14 +9113,14 @@
       "time": "04:10 PM"
     },
     "PVHR_44881_20261107_CLASSIC": {
-      "alerted_at": "2026-11-04T05:01:09+05:30",
+      "alerted_at": "2026-11-05T11:40:58+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T19:50:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:20 PM"
     },

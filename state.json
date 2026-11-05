@@ -1113,17 +1113,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "05:35 PM"
     },
-    "CBMC_15509_20261105_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T14:55:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "02:25 PM"
-    },
     "CBMC_15510_20261105_NORMAL": {
       "category": "NORMAL",
       "date": "20261105",
@@ -1236,7 +1225,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:20 PM"
     },
@@ -2951,17 +2940,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:30 PM"
-    },
-    "INTO_92540_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T14:55:00+05:30",
-      "movie": "Tom and Jerry: Forbidden Compass - English",
-      "price": 61.74,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "02:25 PM"
     },
     "INTO_92543_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -5364,14 +5342,14 @@
       "time": "07:30 PM"
     },
     "INTO_92766_20261111_EXECUTIVE": {
-      "alerted_at": "2026-11-05T07:50:49+05:30",
+      "alerted_at": "2026-11-05T15:01:06+05:30",
       "category": "EXECUTIVE",
       "date": "20261111",
       "end": "2026-11-11T23:20:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM"
     },
@@ -7060,18 +7038,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:05 PM"
     },
-    "PVHR_44284_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T12:31:23+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T15:00:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "02:30 PM"
-    },
     "PVHR_44285_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7680,7 +7646,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:30 PM"
     },

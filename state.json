@@ -3036,13 +3036,13 @@
       "time": "08:05 PM"
     },
     "INTO_92555_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:31:43+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T19:00:00+05:30",
       "movie": "The Cat in the Hat (3D) - English",
       "price": 96.74,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 PM"
@@ -5884,7 +5884,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:50 PM"
     },
@@ -7262,13 +7262,13 @@
       "time": "10:30 PM"
     },
     "PVHR_44734_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:31:43+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T18:55:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:25 PM"
@@ -7356,18 +7356,6 @@
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:55 PM"
-    },
-    "PVHR_44753_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T14:01:09+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T16:25:00+05:30",
-      "movie": "Haiku - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "03:55 PM"
     },
     "PVHR_44754_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -7497,7 +7485,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM"
     },

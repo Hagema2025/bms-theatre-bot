@@ -3043,18 +3043,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:20 PM"
     },
-    "INTO_92549_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T14:00:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
-      "price": 89.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "01:30 PM"
-    },
     "INTO_92550_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-05T06:50:46+05:30",
       "category": "EXECUTIVE",
@@ -7555,18 +7543,18 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:55 PM"
     },
     "PVHR_44753_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T14:01:09+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T16:25:00+05:30",
       "movie": "Haiku - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:55 PM"
@@ -7627,7 +7615,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:15 PM"
     },

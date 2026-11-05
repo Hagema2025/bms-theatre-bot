@@ -335,13 +335,14 @@ def fetch_showtimes(session, venue, date_code):
 def iter_categories(data):
     for day in data.get("ShowDetails") or []:
         for ev in day.get("Event") or []:
+            duration = ev.get("EventDuration") or "0"  # <-- Extract duration here
             for child in ev.get("ChildEvents") or []:
                 for show in child.get("ShowTimes") or []:
                     for cat in show.get("Categories") or []:
-                        yield day, child, show, cat
+                        yield day, child, show, cat, duration
 
 
-def check_category(venue, day, child, show, cat, alerts, now, seen):
+def check_category(venue, day, child, show, cat, duration, alerts, now, seen):
     """Track one seat class in alerts and return an alert dict if it should ping, else None.
     Adds every class it processes to seen."""
     try:
@@ -350,10 +351,12 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
         return None
     if price <= 0 or price > MAX_BUDGET_PRICE:
         return None   # only budget seats are tracked
+    
     session_id = show.get("SessionId")
     date_code  = show.get("ShowDateCode") or day.get("Date")
     if not session_id or not date_code:
         return None
+        
     desc   = (cat.get("PriceDesc") or "").strip().upper()
     key    = f"{venue}_{session_id}_{date_code}_{desc}"
     status = str(cat.get("AvailStatus", "0"))
@@ -365,10 +368,35 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
     end = start + SHOW_GRACE if start else parse_bms_time(show.get("CutOffDateTime"))
     if end and end < now:
         return None
+        
     seen.add(key)
     end_iso = end.isoformat(timespec="seconds") if end else ""
     mins_to_start = (start - now).total_seconds() / 60 if start else None
     soon = mins_to_start is not None and 0 <= mins_to_start <= REMINDER_MINUTES
+
+    # --- NEW EXTRA TAGS EXTRACTED HERE ---
+    sub_acronym = show.get("SessionSubTitleAcronym") or "" 
+    attributes = show.get("Attributes") or ""
+    atmos = "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else ""
+    dimension = child.get("EventDimension") or ""
+    censor = child.get("EventCensor") or ""
+    trailer = child.get("EventTrailer") or "" # <--- NEW: GET TRAILER
+    # NEW: Grab the clean language and parent Title
+    language = child.get("EventLanguage") or ""
+    clean_title = child.get("EventTitle") or day.get("EventTitle") or child.get("EventName") or "Movie"
+    
+    # Add language to the front of the tags list
+    tags = [t for t in (attributes, atmos) if t]
+    extra_tags = " · ".join(tags)
+    # Format the subtitle bracket if it exists (e.g., "[ENG SUB]")
+    sub_tag = f"[{sub_acronym}💬]" if sub_acronym else ""
+
+    # --- CALCULATE SHOW END TIME ---
+    time_str = show.get("ShowTime") or ""
+    if start and duration.isdigit() and int(duration) > 0:
+        total_mins = int(duration) + 25
+        end_time = start + timedelta(minutes=total_mins)
+        time_str = f"{time_str} - {end_time.strftime('%I:%M %p')}"
 
     prev = alerts.get(key)
     if prev is None:
@@ -376,7 +404,7 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
             # Sold out right now: store it so a later run can ping when it opens
             alerts[key] = {
                 "movie": child.get("EventName") or "Movie", "theatre": TARGET_THEATRES[venue],
-                "date": date_code, "time": show.get("ShowTime") or "",
+                "date": date_code, "time": time_str,
                 "category": desc, "price": price,
                 "status": "0", "end": end_iso, "soon_alerted": False,
             }
@@ -398,14 +426,18 @@ def check_category(venue, day, child, show, cat, alerts, now, seen):
     return {
         "key": key, "kind": kind, "soon": soon, "mins": mins_to_start,
         "venue": venue, "theatre": TARGET_THEATRES[venue],
-        "movie": child.get("EventName") or "Movie", "date": date_code,
-        "time": show.get("ShowTime") or "", "screen": show.get("ScreenName") or "",
+"movie": clean_title,  # <--- USE CLEAN TITLE HERE
+        "date": date_code,
+                "time": time_str, "screen": show.get("ScreenName") or "",
         "category": desc, "price": price, "status": status, "prev_status": prev_status,
         "start": start, "end": end_iso,
+        "censor": censor, "extra_tags": extra_tags, # <--- NEW DATA ADDED TO HIT
+        "trailer": trailer, # <--- ADD IT HERE
         "url": SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
                                       session=session_id, date=date_code),
+                                      "sub_tag":sub_tag,
+                                      "dimension":dimension
     }
-
 
 def scan(session, state, now):
     """Check every bookable date at every theatre.
@@ -413,6 +445,7 @@ def scan(session, state, now):
     hits, keys = [], set()
     stats = {venue: {"ok": 0, "failed": 0} for venue in TARGET_THEATRES}
     seen, scanned = set(), set()
+    
     for venue in TARGET_THEATRES:
         dates, done = [now.strftime("%Y%m%d")], set()
         while dates and len(done) < MAX_DATES:
@@ -420,21 +453,25 @@ def scan(session, state, now):
             if date_code in done:
                 continue
             done.add(date_code)
+            
             data = fetch_showtimes(session, venue, date_code)
             time.sleep(0.5)
+            
             if data is None:
                 stats[venue]["failed"] += 1
                 continue
+                
             stats[venue]["ok"] += 1
             scanned.add((venue, date_code))
             scanned.update((venue, d.get("Date")) for d in data.get("ShowDetails") or [])
+            
             if len(done) == 1:
-                # BMS lists the dates this venue has opened for booking
                 dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
                           if d.get("DateCode") and not d.get("isDisabled")]
-            for day, child, show, cat in iter_categories(data):
+                          
+            for day, child, show, cat, duration in iter_categories(data): # <-- Added duration here
                 try:
-                    hit = check_category(venue, day, child, show, cat, state["alerts"], now, seen)
+                    hit = check_category(venue, day, child, show, cat, duration, state["alerts"], now, seen) # <-- Added duration here
                 except Exception as e:
                     logging.warning(f"{venue} {date_code}: skipped a seat class ({type(e).__name__}: {e})")
                     continue
@@ -442,14 +479,12 @@ def scan(session, state, now):
                     keys.add(hit["key"])
                     hits.append(hit)
 
-    # A stored class that has vanished from a date we scanned (theatre pulled the show
-    # from sale) counts as sold out, so it pings if it comes back
     for key, entry in state["alerts"].items():
         if ((key.split("_")[0], entry.get("date")) in scanned
                 and key not in seen and entry.get("status") != "0"):
             entry["status"] = "0"
+            
     return hits, stats
-
 
 def cleanup_ended(state, now):
     """Drop stored shows past their alert window. A theatre date whose shows have ALL just
@@ -484,29 +519,51 @@ def cleanup_ended(state, now):
 # ───────────────────────── alerts ─────────────────────────
 
 def format_hit(h):
-    # The group is the theatre, so the theatre name isn't repeated per show
     lines = []
-    if h["kind"] == "opened":
+    if h["kind"] == "new":
+      lines.append("🆕 NEW BUDGET SEATS")
+    elif h["kind"] == "opened":
         lines.append("🔔 NOW AVAILABLE (was sold out)")
     elif h["kind"] == "more":
         lines.append(f"📈 MORE SEATS (was {STATUS_NAMES[h['prev_status']].lower()})")
+        
     if h["soon"]:
         hours, mins = divmod(max(int(h["mins"]), 0), 60)
         lines.append(f"⏰ SHOW IN {hours}h {mins}m" if hours else f"⏰ SHOW IN {mins} MIN")
     elif h["mins"] is not None and h["mins"] < 0:
         lines.append(f"⏰ STARTED {int(-h['mins'])} MIN AGO")
-    # Short lines so nothing wraps awkwardly on a small phone screen; text is HTML-escaped
-    # because the message is sent in Telegram HTML mode
-    lines.append(f"🎬 <b>{html.escape(h['movie'])}</b>")
-    if h["screen"]:
-          lines.append(f"🕘 {html.escape(h['time'])} 🖥️ {html.escape(h['screen'])}")
+        
+    # --- MOVIE TITLE LINE (Title, 3D, Censor, Subtitles) ---
+    censor_tag = f" ({html.escape(h['censor'])})" if h.get("censor") else ""
+    dim_tag = f" {html.escape(h['dimension'])}" if h.get("dimension")  else ""
+    sub_tag = f" {html.escape(h['sub_tag'])}" if h.get("sub_tag") else ""
+    lang_text = f"{html.escape(h['language'])}" if h.get("language") else ""
+
+    title_text = f"{html.escape(h['movie'])} {lang_text}-{dim_tag}"
+    
+    if h.get("trailer"):
+        lines.append(f'🎬 <b><a href="{html.escape(h["trailer"], quote=True)}">{title_text}</a></b>{censor_tag}{sub_tag}')
     else:
-          lines.append(f"🕘 {html.escape(h['time'])}")
-    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']:g}")
+        lines.append(f"🎬 <b>{title_text}</b>{censor_tag}{sub_tag}")
+
+    lines.append(f"🕘 {html.escape(h['time'])}")
+    if h["screen"]:
+              lines.append(f"🖥️ {html.escape(h['screen'])}")
+        
+    
+    if h.get("extra_tags"):
+        lines.append(f"✨ <i>{html.escape(h['extra_tags'])}</i>")
+        
+        
+    
+
+          
+    # --- PRICE (No decimals) & STATUS ---
+    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']}")
     lines.append(f"📊 {AVAIL_LABELS[h['status']]}")
     lines.append(f'🔗 <a href="{html.escape(h["url"], quote=True)}">Book seats</a>')
+    
     return "\n".join(lines)
-
 
 def record_alert(state, h, now):
     prev = state["alerts"].get(h["key"], {})

@@ -1441,14 +1441,14 @@
       "time": "07:40 AM"
     },
     "CBMC_15573_20261106_NORMAL": {
-      "alerted_at": "2026-11-05T15:40:49+05:30",
+      "alerted_at": "2026-11-05T16:01:12+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T14:25:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -1483,7 +1483,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
     },
@@ -2965,7 +2965,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 PM"
     },
@@ -3330,7 +3330,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:20 PM"
     },
@@ -4603,14 +4603,14 @@
       "time": "06:00 AM"
     },
     "INTO_92706_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T11:40:58+05:30",
+      "alerted_at": "2026-11-05T16:01:12+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T22:20:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -5455,24 +5455,26 @@
       "time": "10:55 PM"
     },
     "MCSK_16895_20261105_3D SPECIAL": {
+      "alerted_at": "2026-11-05T16:01:12+05:30",
       "category": "3D SPECIAL",
       "date": "20261105",
       "end": "2026-11-05T18:45:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:15 PM"
     },
     "MCSK_16896_20261105_3D SPECIAL": {
+      "alerted_at": "2026-11-05T16:01:12+05:30",
       "category": "3D SPECIAL",
       "date": "20261105",
       "end": "2026-11-05T22:50:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:20 PM"
     },
@@ -7202,18 +7204,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
     },
-    "PVHR_44725_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T13:31:24+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T16:00:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "03:30 PM"
-    },
     "PVHR_44726_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7491,14 +7481,14 @@
       "time": "03:30 PM"
     },
     "PVHR_44766_20261106_CLASSIC": {
-      "alerted_at": "2026-11-05T06:01:07+05:30",
+      "alerted_at": "2026-11-05T16:01:12+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T19:10:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM"
     },
@@ -9942,6 +9932,7 @@
     "INTO_date_20261109": 60,
     "INTO_date_20261110": 188,
     "INTO_date_20261111": 168,
+    "MCSK_date_20261105": 47,
     "MCSK_date_20261106": 16,
     "MCSK_date_20261107": 40,
     "MCSK_date_20261108": 20,

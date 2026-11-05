@@ -1390,7 +1390,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -2775,13 +2775,14 @@
       "time": "11:00 PM"
     },
     "INTO_92527_20261105_EXECUTIVE": {
+      "alerted_at": "2026-11-05T20:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T20:45:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "08:15 PM"
     },
@@ -3144,7 +3145,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM"
     },
@@ -4398,7 +4399,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM"
     },
@@ -5346,7 +5347,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM"
     },
@@ -5358,7 +5359,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -5772,7 +5773,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "01:30 PM"
     },
@@ -5852,7 +5853,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 PM"
     },

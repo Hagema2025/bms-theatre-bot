@@ -1225,17 +1225,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "02:40 PM"
     },
-    "CBMC_15534_20261105_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T11:50:00+05:30",
-      "movie": "Baththa - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "11:15 AM"
-    },
     "CBMC_15535_20261105_NORMAL": {
       "category": "NORMAL",
       "date": "20261105",
@@ -1488,7 +1477,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:40 AM"
     },
@@ -2950,13 +2939,13 @@
       "time": "04:25 PM"
     },
     "INTO_92532_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T11:01:06+05:30",
+      "alerted_at": "2026-11-05T11:50:48+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T14:15:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:45 PM"
@@ -2969,7 +2958,7 @@
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:05 PM"
     },
@@ -7428,7 +7417,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
     },
@@ -9192,7 +9181,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:20 PM"
     },

@@ -95,6 +95,20 @@ BMS_HEADERS = {
     "x-location-selection": "manual",
 }
 
+def console_print(message):
+    """Print timestamped messages in terminal and GitHub Actions."""
+    print(
+        f"[{datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S')}] {message}",
+        flush=True
+    )
+
+
+console_print("🤖 BookMyShow alert bot module loaded.")
+
+console_print(f"⚙️ Budget limit: ₹{MAX_BUDGET_PRICE:.0f}")
+console_print(f"⚙️ Reminder: {REMINDER_MINUTES} minutes before show")
+console_print(f"⚙️ Maximum dates to scan: {MAX_DATES}")
+console_print(f"⚙️ Theatres configured: {len(TARGET_THEATRES)}")
 
 # ───────────────────────── helpers ─────────────────────────
 
@@ -102,6 +116,7 @@ def parse_bms_time(value):
     try:
         return datetime.strptime(value, "%Y%m%d%H%M").replace(tzinfo=IST)
     except (TypeError, ValueError):
+        console_print(f"⚠️ Invalid BMS time: {value}")
         return None
 
 
@@ -132,13 +147,20 @@ def entry_end(entry):
 # state["tg_offset"]: next Telegram update id to read (for delete-button presses)
 
 def load_state():
+    console_print("📂 Loading saved state...")
+
     state = {}
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, encoding="utf-8") as f:
                 state = json.load(f)
+            console_print("✅ Previous state loaded successfully.")
+
         except (OSError, ValueError) as e:
-            logging.error(f"State read failed, starting fresh: {e}")
+            console_print(f"❌ State loading failed: {e}")
+    else:
+        console_print("🆕 No previous state found. Starting fresh.")
+
     if not isinstance(state, dict):
         state = {}
     state.setdefault("alerts", {})
@@ -147,10 +169,19 @@ def load_state():
     state.setdefault("outage_alerted", [])    # venues whose outage warning was delivered
     state.pop("fail_streak", None)            # old single-streak format
     state.pop("last_heartbeat", None)         # changed every run and forced a commit per run
+
+    console_print(
+        f"📊 Previously tracked seat classes: {len(state['alerts'])}"
+    )
+    console_print(
+        f"📌 Previously created Telegram topics: {len(state['threads'])}"
+    )
     return state
 
 
 def save_state(state):
+    console_print("💾 Saving bot state...")
+
     tmp = STATE_FILE + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, sort_keys=True)
@@ -162,12 +193,17 @@ def save_state(state):
 
 def tg_api(method, payload):
     """Call a Telegram Bot API method via curl_cffi with retries. Returns (ok, body)."""
+    console_print(f"📨 Telegram API request: {method}")
+
     if not TELEGRAM_BOT_TOKEN:
-        logging.error("TELEGRAM_BOT_TOKEN missing!")
+        console_print("❌ TELEGRAM_BOT_TOKEN is missing!")
         return False, {}
     url  = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
     body = {}
     for attempt in range(1, TG_RETRIES + 1):
+        console_print(
+            f"🔄 Telegram attempt {attempt}/{TG_RETRIES}: {method}"
+        )
         try:
             resp = bms_req.post(url, json=payload, timeout=15)
             try:
@@ -175,20 +211,34 @@ def tg_api(method, payload):
             except ValueError:
                 body = {}
             if resp.status_code == 200 and body.get("ok"):
+                console_print(f"✅ Telegram {method} successful.")
                 return True, body
             desc = body.get("description", "")
-            logging.warning(f"Telegram {method} attempt {attempt}/{TG_RETRIES}: HTTP {resp.status_code} {desc}")
+            console_print(
+                f"⚠️ Telegram error: HTTP {resp.status_code} - {desc}"
+            )
             if resp.status_code == 429:
                 wait = int(body.get("parameters", {}).get("retry_after", 5))
+                console_print(
+                    f"⏳ Telegram rate limit. Waiting {wait} seconds."
+                )
                 time.sleep(min(wait, 30))
                 continue
             if 400 <= resp.status_code < 500:
+                console_print("❌ Telegram client error. No retry.")
                 return False, body  # bad token/chat/thread; retrying won't help
         except Exception as e:
+            console_print(
+                f"❌ Telegram connection error: {type(e).__name__}"
+            )
             # Exception text can contain the URL (bot token), so log only the type
             logging.warning(f"Telegram {method} attempt {attempt}/{TG_RETRIES}: {type(e).__name__}")
         if attempt < TG_RETRIES:
+            console_print(f"⏳ Retrying after {wait} seconds...")
+
             time.sleep(2 ** attempt)  # 2s, 4s, 8s backoff for network errors and 5xx
+    console_print(f"❌ Telegram {method} failed after all retries.")
+
     return False, body
 
 

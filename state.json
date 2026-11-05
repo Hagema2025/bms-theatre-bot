@@ -1505,7 +1505,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:20 PM"
     },
@@ -2872,7 +2872,7 @@
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:25 PM"
     },
@@ -3194,14 +3194,14 @@
       "time": "08:15 PM"
     },
     "INTO_92583_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-05T19:10:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T09:30:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM"
     },
@@ -3724,7 +3724,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:10 PM"
     },
@@ -3748,7 +3748,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4551,7 +4551,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -7025,18 +7025,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:05 PM"
     },
-    "PVHR_44285_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T16:40:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T19:10:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:40 PM"
-    },
     "PVHR_44286_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7201,7 +7189,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
     },
@@ -7240,18 +7228,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
-    },
-    "PVHR_44738_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T16:40:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T19:10:00+05:30",
-      "movie": "Ramayana - Hindi",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:40 PM"
     },
     "PVHR_44739_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -7357,7 +7333,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:25 PM"
     },
@@ -7381,7 +7357,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM"
     },
@@ -9832,18 +9808,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
-    },
-    "TVHP_26246_20261105_BUDGET+3D": {
-      "alerted_at": "2026-11-05T16:40:48+05:30",
-      "category": "BUDGET+3D",
-      "date": "20261105",
-      "end": "2026-11-05T19:10:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 93.72,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "The Vijay Park Multiplex: Injambakkam",
-      "time": "06:40 PM"
     }
   },
   "closing": [],
@@ -9874,7 +9838,6 @@
     "PVHR_date_20261108": 89,
     "PVHR_date_20261109": 129,
     "PVHR_date_20261110": 134,
-    "PVHR_date_20261111": 166,
-    "TVHP_date_20261105": 49
+    "PVHR_date_20261111": 166
   }
 }

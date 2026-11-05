@@ -1492,7 +1492,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:15 PM"
     },
@@ -3611,7 +3611,7 @@
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:15 PM"
     },
@@ -3832,14 +3832,14 @@
       "time": "08:30 PM"
     },
     "INTO_92635_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-05T15:31:24+05:30",
+      "alerted_at": "2026-11-05T17:40:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T10:40:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4618,7 +4618,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
     },
@@ -5522,6 +5522,18 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:45 PM"
     },
+    "INTO_92781_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-05T17:40:54+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261106",
+      "end": "2026-11-06T22:20:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:50 PM"
+    },
     "MCSK_16895_20261105_3D SPECIAL": {
       "alerted_at": "2026-11-05T16:20:53+05:30",
       "category": "3D SPECIAL",
@@ -5545,6 +5557,17 @@
       "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:20 PM"
+    },
+    "MCSK_16900_20261105_3D SPECIAL": {
+      "category": "3D SPECIAL",
+      "date": "20261105",
+      "end": "2026-11-05T22:15:00+05:30",
+      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "price": 94.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Miraj Cinemas: Sekaran Mall",
+      "time": "09:45 PM"
     },
     "MCSK_16903_20261105_3D SPECIAL": {
       "category": "3D SPECIAL",
@@ -7285,14 +7308,14 @@
       "time": "07:00 PM"
     },
     "PVHR_44727_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T17:40:54+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T23:00:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
     },
@@ -7424,7 +7447,7 @@
       "movie": "The Cat in the Hat (3D) - English",
       "price": 96.74,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:15 PM"
     },

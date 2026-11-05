@@ -335,14 +335,15 @@ def fetch_showtimes(session, venue, date_code):
 def iter_categories(data):
     for day in data.get("ShowDetails") or []:
         for ev in day.get("Event") or []:
-            duration = ev.get("EventDuration") or "0"  # <-- Extract duration here
+            duration = ev.get("EventDuration") or "0"
+            clean_title = ev.get("EventTitle") or "Movie"  # <--- NEW: Extract clean title here
             for child in ev.get("ChildEvents") or []:
                 for show in child.get("ShowTimes") or []:
                     for cat in show.get("Categories") or []:
-                        yield day, child, show, cat, duration
+                        yield day, child, show, cat, duration, clean_title
 
 
-def check_category(venue, day, child, show, cat, duration, alerts, now, seen):
+def check_category(venue, day, child, show, cat, duration, clean_title,alerts, now, seen):
     """Track one seat class in alerts and return an alert dict if it should ping, else None.
     Adds every class it processes to seen."""
     try:
@@ -383,7 +384,6 @@ def check_category(venue, day, child, show, cat, duration, alerts, now, seen):
     trailer = child.get("EventTrailer") or "" # <--- NEW: GET TRAILER
     # NEW: Grab the clean language and parent Title
     language = child.get("EventLanguage") or ""
-    clean_title = child.get("EventTitle") or day.get("EventTitle") or child.get("EventName") or "Movie"
     
     # Add language to the front of the tags list
     tags = [t for t in (attributes, atmos) if t]
@@ -469,9 +469,9 @@ def scan(session, state, now):
                 dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
                           if d.get("DateCode") and not d.get("isDisabled")]
                           
-            for day, child, show, cat, duration in iter_categories(data): # <-- Added duration here
+            for day, child, show, cat, duration, clean_title in iter_categories(data): # <-- Added duration here
                 try:
-                    hit = check_category(venue, day, child, show, cat, duration, state["alerts"], now, seen) # <-- Added duration here
+                    hit = check_category(venue, day, child, show, cat, duration, clean_title, state["alerts"], now, seen) # <-- Added duration here
                 except Exception as e:
                     logging.warning(f"{venue} {date_code}: skipped a seat class ({type(e).__name__}: {e})")
                     continue

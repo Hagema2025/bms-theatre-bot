@@ -486,7 +486,8 @@ def check_category(venue, day, child, show, cat, duration, clean_title,alerts, n
         "url": SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
                                       session=session_id, date=date_code),
                                       "sub_tag":sub_tag,
-                                      "dimension":dimension
+                                      "dimension":dimension,
+                                      "language": language
     }
 
 def scan(session, state, now):

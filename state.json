@@ -7207,13 +7207,13 @@
       "time": "11:05 PM"
     },
     "PVHR_44284_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T12:31:23+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T15:00:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:30 PM"
@@ -7421,18 +7421,6 @@
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
-    },
-    "PVHR_44724_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T10:01:08+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T12:30:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "12:00 PM"
     },
     "PVHR_44725_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -7651,14 +7639,14 @@
       "time": "10:55 PM"
     },
     "PVHR_44752_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T10:50:49+05:30",
+      "alerted_at": "2026-11-05T12:31:23+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T13:20:00+05:30",
       "movie": "Haiku - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:50 PM"
     },
@@ -9158,7 +9146,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:00 PM"
     },

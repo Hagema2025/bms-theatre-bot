@@ -1425,19 +1425,19 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
     "CBMC_15575_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T15:31:24+05:30",
+      "alerted_at": "2026-11-05T17:01:11+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T21:45:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:15 PM"
     },
@@ -2864,26 +2864,15 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:45 PM"
     },
-    "INTO_92531_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T16:55:00+05:30",
-      "movie": "Drones - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "04:25 PM"
-    },
     "INTO_92533_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T16:10:54+05:30",
+      "alerted_at": "2026-11-05T17:01:11+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T18:35:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": true,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:05 PM"
     },
@@ -5848,7 +5837,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "01:30 PM"
     },
@@ -7226,13 +7215,13 @@
       "time": "10:15 PM"
     },
     "PVHR_44726_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T17:01:11+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T19:30:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 PM"
@@ -7346,13 +7335,13 @@
       "time": "10:55 PM"
     },
     "PVHR_44754_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T17:01:11+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T19:30:00+05:30",
       "movie": "Enemy Of The Smuggler - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 PM"
@@ -7394,14 +7383,14 @@
       "time": "09:30 PM"
     },
     "PVHR_44760_20261105_CLASSIC": {
-      "alerted_at": "2026-11-04T22:01:11+05:30",
+      "alerted_at": "2026-11-05T17:01:11+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T18:50:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:20 PM"
     },

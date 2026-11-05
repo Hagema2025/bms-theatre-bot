@@ -1110,7 +1110,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:35 PM"
     },
@@ -2799,6 +2799,50 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:30 AM"
     },
+    "CBMC_15735_20261106_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T23:15:00+05:30",
+      "movie": "Disco - Malayalam",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:45 PM"
+    },
+    "CBMC_15736_20261107_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261107",
+      "end": "2026-11-07T23:30:00+05:30",
+      "movie": "Disco - Malayalam",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:00 PM"
+    },
+    "CBMC_15737_20261108_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261108",
+      "end": "2026-11-08T23:30:00+05:30",
+      "movie": "Disco - Malayalam",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:00 PM"
+    },
+    "CBMC_15738_20261109_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261109",
+      "end": "2026-11-09T23:30:00+05:30",
+      "movie": "Disco - Malayalam",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:00 PM"
+    },
     "INTO_92526_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -2855,13 +2899,13 @@
       "time": "04:25 PM"
     },
     "INTO_92533_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T11:31:22+05:30",
+      "alerted_at": "2026-11-05T16:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261105",
       "end": "2026-11-05T18:35:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:05 PM"
@@ -3831,7 +3875,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -7181,13 +7225,13 @@
       "time": "10:50 PM"
     },
     "PVHR_44722_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:10:54+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T18:40:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:10 PM"
@@ -7275,18 +7319,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM"
-    },
-    "PVHR_44741_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T13:40:49+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T16:10:00+05:30",
-      "movie": "Doraemon: Castle of the Undersea Devil (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "03:40 PM"
     },
     "PVHR_44745_20261105_CLASSIC": {
       "alerted_at": "2026-11-05T13:50:50+05:30",
@@ -7524,7 +7556,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:45 AM"
     },
@@ -8772,7 +8804,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:10 PM"
     },

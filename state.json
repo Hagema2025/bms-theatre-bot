@@ -1179,14 +1179,14 @@
       "time": "09:35 AM"
     },
     "CBMC_15505_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T09:01:04+05:30",
+      "alerted_at": "2026-11-05T10:01:08+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T18:05:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "05:35 PM"
     },
@@ -1247,14 +1247,14 @@
       "time": "04:10 PM"
     },
     "CBMC_15530_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T09:01:04+05:30",
+      "alerted_at": "2026-11-05T10:01:08+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T19:20:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "06:50 PM"
     },
@@ -1358,7 +1358,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:30 PM"
     },
@@ -1555,7 +1555,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:40 AM"
     },
@@ -3095,18 +3095,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:20 PM"
-    },
-    "INTO_92547_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T00:31:27+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T10:00:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
-      "price": 89.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "09:30 AM"
     },
     "INTO_92549_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
@@ -7490,13 +7478,13 @@
       "time": "10:15 PM"
     },
     "PVHR_44724_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T10:01:08+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T12:30:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:00 PM"

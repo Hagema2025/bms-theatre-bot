@@ -1,16 +1,5 @@
 {
   "alerts": {
-    "ACON_48408_20261105_PEARL 3D": {
-      "category": "PEARL 3D",
-      "date": "20261105",
-      "end": "2026-11-05T14:50:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 89.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "02:20 PM"
-    },
     "ACON_48409_20261105_PEARL 3D": {
       "category": "PEARL 3D",
       "date": "20261105",
@@ -2974,18 +2963,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:25 PM"
     },
-    "INTO_92542_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-04T12:50:46+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T14:45:00+05:30",
-      "movie": "Ramayana (3D)(Telugu) - Telugu",
-      "price": 94.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "02:15 PM"
-    },
     "INTO_92543_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -3008,18 +2985,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:45 PM"
-    },
-    "INTO_92546_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T12:20:48+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T14:50:00+05:30",
-      "movie": "Ramayana (3D)(Telugu) - Telugu",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "02:20 PM"
     },
     "INTO_92550_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-05T06:50:46+05:30",
@@ -3174,14 +3139,14 @@
       "time": "05:00 PM"
     },
     "INTO_92568_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-05T14:50:51+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T12:50:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:20 PM"
     },
@@ -3648,14 +3613,14 @@
       "time": "01:00 PM"
     },
     "INTO_92610_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-05T09:10:48+05:30",
+      "alerted_at": "2026-11-05T14:50:51+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T16:45:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:15 PM"
     },
@@ -3876,14 +3841,14 @@
       "time": "08:30 PM"
     },
     "INTO_92635_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-05T14:50:51+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T10:40:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4590,7 +4555,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM"
     },
@@ -5406,7 +5371,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM"
     },
@@ -5551,17 +5516,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:20 PM"
-    },
-    "MCSK_16902_20261105_3D SPECIAL": {
-      "category": "3D SPECIAL",
-      "date": "20261105",
-      "end": "2026-11-05T14:50:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 99.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "02:20 PM"
     },
     "MCSK_16903_20261105_3D SPECIAL": {
       "category": "3D SPECIAL",
@@ -7346,18 +7300,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
     },
-    "PVHR_44733_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T12:20:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T14:50:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "02:20 PM"
-    },
     "PVHR_44734_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7562,18 +7504,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 PM"
     },
-    "PVHR_44759_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T13:10:57+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T14:45:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "02:15 PM"
-    },
     "PVHR_44760_20261105_CLASSIC": {
       "alerted_at": "2026-11-04T22:01:11+05:30",
       "category": "CLASSIC",
@@ -7743,14 +7673,14 @@
       "time": "09:10 AM"
     },
     "PVHR_44776_20261106_CLASSIC": {
-      "alerted_at": "2026-11-04T04:10:54+05:30",
+      "alerted_at": "2026-11-05T14:50:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T13:00:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:30 PM"
     },
@@ -9046,7 +8976,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },

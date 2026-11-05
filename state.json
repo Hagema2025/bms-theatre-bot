@@ -1101,17 +1101,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:45 PM"
     },
-    "CBMC_15487_20261105_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T13:15:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "12:45 PM"
-    },
     "CBMC_15497_20261105_NORMAL": {
       "category": "NORMAL",
       "date": "20261105",
@@ -2851,6 +2840,17 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:45 AM"
     },
+    "CBMC_15721_20261105_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261105",
+      "end": "2026-11-05T23:20:00+05:30",
+      "movie": "Ramayana (Telugu) - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:50 PM"
+    },
     "INTO_92525_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -3229,14 +3229,14 @@
       "time": "10:10 AM"
     },
     "INTO_92567_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T12:01:08+05:30",
+      "alerted_at": "2026-11-05T13:20:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T17:30:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -7603,18 +7603,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:55 PM"
-    },
-    "PVHR_44752_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T12:31:23+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T13:20:00+05:30",
-      "movie": "Haiku - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "12:50 PM"
     },
     "PVHR_44753_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",

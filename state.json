@@ -1166,18 +1166,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:35 PM"
     },
-    "CBMC_15504_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T08:40:47+05:30",
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T10:05:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "09:35 AM"
-    },
     "CBMC_15505_20261105_NORMAL": {
       "alerted_at": "2026-11-05T10:01:08+05:30",
       "category": "NORMAL",
@@ -1548,14 +1536,14 @@
       "time": "10:35 PM"
     },
     "CBMC_15565_20261106_NORMAL": {
-      "alerted_at": "2026-11-05T00:10:55+05:30",
+      "alerted_at": "2026-11-05T10:10:48+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T10:10:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:40 AM"
     },
@@ -1594,13 +1582,14 @@
       "time": "08:10 PM"
     },
     "CBMC_15571_20261106_NORMAL": {
+      "alerted_at": "2026-11-05T10:10:48+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T08:10:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:40 AM"
     },
@@ -1781,13 +1770,14 @@
       "time": "05:00 PM"
     },
     "CBMC_15590_20261107_NORMAL": {
+      "alerted_at": "2026-11-05T10:10:48+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T20:40:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "08:10 PM"
     },
@@ -2847,6 +2837,18 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:10 PM"
     },
+    "CBMC_15711_20261106_NORMAL": {
+      "alerted_at": "2026-11-05T10:10:48+05:30",
+      "category": "NORMAL",
+      "date": "20261106",
+      "end": "2026-11-06T07:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "06:30 AM"
+    },
     "INTO_92525_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -3104,7 +3106,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:30 PM"
     },
@@ -3469,7 +3471,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 AM"
     },
@@ -10352,6 +10354,7 @@
   "threads": {
     "CBMC_date_20261105": 66,
     "CBMC_date_20261106": 54,
+    "CBMC_date_20261107": 74,
     "INTO_date_20261105": 46,
     "INTO_date_20261106": 51,
     "INTO_date_20261107": 54,

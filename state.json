@@ -1,14 +1,14 @@
 {
   "alerts": {
     "ACON_48423_20261106_PEARL": {
-      "alerted_at": "2026-11-05T23:38:09+05:30",
+      "alerted_at": "2026-11-06T00:01:12+05:30",
       "category": "PEARL",
       "date": "20261106",
       "end": "2026-11-06T10:45:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:15 AM - 01:09 PM"
     },
@@ -2409,17 +2409,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:50 PM - 03:00 AM"
-    },
-    "INTO_92539_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-06T00:00:00+05:30",
-      "movie": "Clayface - English",
-      "price": 61.74,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "11:30 PM - 01:44 AM"
     },
     "INTO_92559_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -6263,7 +6252,7 @@
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM - 10:20 PM"
     },
@@ -6794,7 +6783,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 PM - 01:29 AM"
     },

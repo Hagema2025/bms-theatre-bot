@@ -1591,7 +1591,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:20 PM"
     },
@@ -2851,17 +2851,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
     },
-    "INTO_92525_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T13:35:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "01:05 PM"
-    },
     "INTO_92526_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -2905,17 +2894,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:45 PM"
-    },
-    "INTO_92530_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T13:35:00+05:30",
-      "movie": "Baththa - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "01:05 PM"
     },
     "INTO_92531_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -3236,7 +3214,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM"
     },
@@ -3449,7 +3427,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 AM"
     },
@@ -7521,13 +7499,13 @@
       "time": "01:15 PM"
     },
     "PVHR_44741_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T13:40:49+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T16:10:00+05:30",
       "movie": "Doraemon: Castle of the Undersea Devil (Tamil) - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:40 PM"
@@ -8656,7 +8634,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:05 AM"
     },

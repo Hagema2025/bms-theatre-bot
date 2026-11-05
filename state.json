@@ -8,7 +8,7 @@
       "movie": "Scene",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:15 AM - 01:09 PM"
     },
@@ -1047,13 +1047,14 @@
       "time": "09:30 AM - 12:40 PM"
     },
     "CBMC_15553_20261106_NORMAL": {
+      "alerted_at": "2026-11-06T01:10:52+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T13:25:00+05:30",
-      "movie": "Jailer 2 - Tamil",
+      "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:55 PM - 04:05 PM"
     },
@@ -6782,7 +6783,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:50 AM - 09:39 AM"
     },
@@ -9262,6 +9263,7 @@
   "outage_alerted": [],
   "threads": {
     "ACON_date_20261106": 72,
+    "CBMC_date_20261106": 95,
     "INTO_date_20261106": 302,
     "INTO_date_20261107": 305,
     "INTO_date_20261108": 309,

@@ -53,7 +53,7 @@
       "movie": "Scene - Tamil",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:15 AM"
     },
@@ -1066,7 +1066,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:45 PM"
     },
@@ -1392,7 +1392,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
     },
@@ -4321,7 +4321,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:15 AM"
     },
@@ -4420,18 +4420,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
-    },
-    "INTO_92706_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T18:31:26+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T22:20:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
-      "price": 89.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "09:50 PM"
     },
     "INTO_92707_20261110_EXECUTIVE": {
       "alerted_at": "2026-11-04T21:40:47+05:30",
@@ -5274,14 +5262,14 @@
       "time": "10:55 PM"
     },
     "INTO_92777_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T20:20:50+05:30",
+      "alerted_at": "2026-11-05T22:20:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:00:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM"
     },
@@ -5293,7 +5281,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -5334,14 +5322,14 @@
       "time": "09:30 AM"
     },
     "INTO_92783_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-05T19:01:12+05:30",
+      "alerted_at": "2026-11-05T22:20:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T16:55:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -5368,17 +5356,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:20 PM"
-    },
-    "MCSK_16900_20261105_3D SPECIAL": {
-      "category": "3D SPECIAL",
-      "date": "20261105",
-      "end": "2026-11-05T22:15:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
-      "price": 94.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "09:45 PM"
     },
     "MCSK_16904_20261105_3D SPECIAL": {
       "category": "3D SPECIAL",
@@ -7056,7 +7033,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
     },
@@ -7119,18 +7096,6 @@
       "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:55 PM"
-    },
-    "PVHR_44755_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T19:50:54+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T22:20:00+05:30",
-      "movie": "Haiku - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "09:50 PM"
     },
     "PVHR_44761_20261105_CLASSIC": {
       "alerted_at": "2026-11-05T18:10:50+05:30",

@@ -1167,13 +1167,14 @@
       "time": "01:35 PM"
     },
     "CBMC_15504_20261105_NORMAL": {
+      "alerted_at": "2026-11-05T08:40:47+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T10:05:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:35 AM"
     },
@@ -1502,7 +1503,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:15 AM"
     },
@@ -1519,14 +1520,14 @@
       "time": "12:25 PM"
     },
     "CBMC_15563_20261106_NORMAL": {
-      "alerted_at": "2026-11-05T07:40:52+05:30",
+      "alerted_at": "2026-11-05T08:40:47+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T16:05:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:35 PM"
     },
@@ -7709,13 +7710,13 @@
       "time": "10:35 PM"
     },
     "PVHR_44748_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T08:40:47+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T11:10:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 AM"
@@ -10365,6 +10366,7 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
+    "CBMC_date_20261105": 66,
     "CBMC_date_20261106": 54,
     "INTO_date_20261105": 46,
     "INTO_date_20261106": 51,

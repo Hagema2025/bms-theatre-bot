@@ -2521,7 +2521,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:35 AM - 12:24 PM"
     },
@@ -4904,13 +4904,14 @@
       "time": "11:45 PM - 02:39 AM"
     },
     "MCSK_16932_20261106_SPECIAL": {
+      "alerted_at": "2026-11-06T05:01:06+05:30",
       "category": "SPECIAL",
       "date": "20261106",
       "end": "2026-11-06T07:30:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:00 AM - 09:54 AM"
     },
@@ -5103,13 +5104,14 @@
       "time": "06:10 AM - 09:04 AM"
     },
     "MCSK_16950_20261106_SPECIAL": {
+      "alerted_at": "2026-11-06T05:01:06+05:30",
       "category": "SPECIAL",
       "date": "20261106",
       "end": "2026-11-06T09:50:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "09:20 AM - 12:14 PM"
     },
@@ -6813,13 +6815,13 @@
       "time": "10:45 PM - 02:25 AM"
     },
     "PVHR_44795_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T01:41:01+05:30",
+      "alerted_at": "2026-11-06T05:01:06+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T07:20:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:50 AM - 09:39 AM"
@@ -8899,13 +8901,13 @@
       "time": "10:50 PM - 02:30 AM"
     },
     "PVHR_44990_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T05:01:06+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T07:30:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 AM - 10:40 AM"
@@ -8923,13 +8925,13 @@
       "time": "06:40 PM - 10:20 PM"
     },
     "PVHR_44992_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T01:50:53+05:30",
+      "alerted_at": "2026-11-06T05:01:06+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T07:30:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 AM - 09:54 AM"

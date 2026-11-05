@@ -1,14 +1,14 @@
 {
   "alerts": {
     "ACON_48423_20261106_PEARL": {
-      "alerted_at": "2026-11-06T00:01:12+05:30",
+      "alerted_at": "2026-11-06T00:20:58+05:30",
       "category": "PEARL",
       "date": "20261106",
       "end": "2026-11-06T10:45:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:15 AM - 01:09 PM"
     },
@@ -2399,17 +2399,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:00 PM - 02:03 AM"
     },
-    "INTO_92528_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-06T00:20:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "11:50 PM - 03:00 AM"
-    },
     "INTO_92559_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261106",
@@ -2930,7 +2919,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:45 AM - 12:39 PM"
     },
@@ -6687,7 +6676,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:00 PM - 03:40 PM"
     },
@@ -6975,7 +6964,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:20 PM - 03:14 PM"
     },

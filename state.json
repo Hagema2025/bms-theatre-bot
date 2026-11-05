@@ -23,13 +23,14 @@
       "time": "10:45 PM"
     },
     "ACON_48418_20261105_PEARL 3D": {
+      "alerted_at": "2026-11-05T21:31:32+05:30",
       "category": "PEARL 3D",
       "date": "20261105",
       "end": "2026-11-05T22:30:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 89.0,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:00 PM"
     },
@@ -1390,7 +1391,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -3568,14 +3569,14 @@
       "time": "10:55 PM"
     },
     "INTO_92623_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T13:10:47+05:30",
+      "alerted_at": "2026-11-05T21:31:32+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T13:40:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:10 PM"
     },
@@ -3640,14 +3641,14 @@
       "time": "08:30 PM"
     },
     "INTO_92635_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-05T19:21:30+05:30",
+      "alerted_at": "2026-11-05T21:31:32+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T10:40:00+05:30",
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4726,7 +4727,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:35 PM"
     },
@@ -5350,7 +5351,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM"
     },
@@ -8565,7 +8566,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 AM"
     },

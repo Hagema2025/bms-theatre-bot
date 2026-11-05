@@ -1036,13 +1036,14 @@
       "time": "07:00 PM"
     },
     "ACON_48558_20261105_PEARL": {
+      "alerted_at": "2026-11-05T19:31:24+05:30",
       "category": "PEARL",
       "date": "20261105",
       "end": "2026-11-05T19:40:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "07:10 PM"
     },
@@ -5404,19 +5405,19 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:45 PM"
     },
     "INTO_92781_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T17:40:54+05:30",
+      "alerted_at": "2026-11-05T19:31:24+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T22:20:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -7148,28 +7149,16 @@
       "time": "10:50 PM"
     },
     "PVHR_44723_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T19:31:24+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T22:45:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
-    },
-    "PVHR_44726_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T18:31:26+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T19:30:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:00 PM"
     },
     "PVHR_44727_20261105_CLASSIC": {
       "alerted_at": "2026-11-05T17:40:54+05:30",
@@ -7243,18 +7232,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:55 PM"
     },
-    "PVHR_44754_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T18:01:11+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T19:30:00+05:30",
-      "movie": "Enemy Of The Smuggler - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:00 PM"
-    },
     "PVHR_44755_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7268,13 +7245,13 @@
       "time": "09:50 PM"
     },
     "PVHR_44757_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T19:31:24+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T22:00:00+05:30",
       "movie": "The Cat in the Hat (3D) - English",
       "price": 96.74,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 PM"
@@ -7424,14 +7401,14 @@
       "time": "07:35 PM"
     },
     "PVHR_44775_20261106_CLASSIC": {
-      "alerted_at": "2026-11-04T04:10:54+05:30",
+      "alerted_at": "2026-11-05T19:31:24+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T09:40:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM"
     },
@@ -7503,7 +7480,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:05 AM"
     },
@@ -9768,6 +9745,7 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
+    "ACON_date_20261105": 57,
     "ACON_date_20261106": 53,
     "CBMC_date_20261105": 66,
     "CBMC_date_20261106": 54,

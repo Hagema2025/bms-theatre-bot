@@ -1383,14 +1383,14 @@
       "time": "07:40 AM"
     },
     "CBMC_15573_20261106_NORMAL": {
-      "alerted_at": "2026-11-05T20:01:17+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T14:25:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -2797,17 +2797,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:50 PM"
     },
-    "INTO_92529_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T20:15:00+05:30",
-      "movie": "Ranabaali - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:45 PM"
-    },
     "INTO_92534_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-04T13:10:47+05:30",
       "category": "EXECUTIVE",
@@ -2819,17 +2808,6 @@
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:25 PM"
-    },
-    "INTO_92537_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T20:15:00+05:30",
-      "movie": "Udta Teer - Hindi",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:45 PM"
     },
     "INTO_92538_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -4212,14 +4190,14 @@
       "time": "09:20 AM"
     },
     "INTO_92682_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T18:31:36+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T13:10:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:40 PM"
     },
@@ -5340,26 +5318,26 @@
       "time": "10:55 PM"
     },
     "INTO_92777_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T17:10:55+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:00:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM"
     },
     "INTO_92778_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T17:20:51+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T16:55:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -5383,7 +5361,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -5766,14 +5744,14 @@
       "time": "10:15 AM"
     },
     "MCSK_16957_20261107_SPECIAL": {
-      "alerted_at": "2026-11-05T15:31:24+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T14:00:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "01:30 PM"
     },
@@ -7115,13 +7093,13 @@
       "time": "10:50 PM"
     },
     "PVHR_44723_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T20:01:17+05:30",
+      "alerted_at": "2026-11-05T20:20:50+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T22:45:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:15 PM"
@@ -7134,7 +7112,7 @@
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 PM"
     },
@@ -9693,6 +9671,18 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
+    },
+    "PVHR_45022_20261106_CLASSIC": {
+      "alerted_at": "2026-11-05T20:20:50+05:30",
+      "category": "CLASSIC",
+      "date": "20261106",
+      "end": "2026-11-06T23:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "11:00 PM"
     }
   },
   "closing": [],

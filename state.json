@@ -30,7 +30,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 89.0,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:00 PM"
     },
@@ -2695,7 +2695,7 @@
       "movie": "Ramayana (Telugu) - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
     },
@@ -2818,7 +2818,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:45 PM"
     },
@@ -6960,7 +6960,7 @@
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
     },
@@ -7104,7 +7104,7 @@
       "movie": "Ramayana - Hindi",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM"
     },
@@ -7144,18 +7144,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 PM"
     },
-    "PVHR_44757_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T19:31:24+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T22:00:00+05:30",
-      "movie": "The Cat in the Hat (3D) - English",
-      "price": 96.74,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "09:30 PM"
-    },
     "PVHR_44761_20261105_CLASSIC": {
       "alerted_at": "2026-11-05T18:10:50+05:30",
       "category": "CLASSIC",
@@ -7169,14 +7157,14 @@
       "time": "10:25 PM"
     },
     "PVHR_44762_20261106_CLASSIC": {
-      "alerted_at": "2026-11-05T13:50:50+05:30",
+      "alerted_at": "2026-11-05T22:01:12+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T06:30:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },
@@ -7260,7 +7248,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:45 AM"
     },
@@ -7404,7 +7392,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:15 PM"
     },
@@ -8129,14 +8117,14 @@
       "time": "10:05 AM"
     },
     "PVHR_44848_20261108_CLASSIC": {
-      "alerted_at": "2026-11-05T20:50:53+05:30",
+      "alerted_at": "2026-11-05T22:01:12+05:30",
       "category": "CLASSIC",
       "date": "20261108",
       "end": "2026-11-08T14:40:00+05:30",
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM"
     },
@@ -10032,7 +10020,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "11:00 PM"
     }

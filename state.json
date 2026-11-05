@@ -1099,21 +1099,9 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "09:35 PM"
-    },
-    "CBMC_15522_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T08:50:48+05:30",
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T16:40:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "04:10 PM"
+      "time": "09:35 PM"
     },
     "CBMC_15530_20261105_NORMAL": {
       "alerted_at": "2026-11-05T10:01:08+05:30",
@@ -1182,7 +1170,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:30 PM"
     },
@@ -1449,7 +1437,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:15 PM"
     },
@@ -2895,7 +2883,7 @@
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:05 PM"
     },
@@ -3612,7 +3600,7 @@
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:15 PM"
     },
@@ -4180,14 +4168,14 @@
       "time": "09:50 AM"
     },
     "INTO_92667_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-04T05:31:28+05:30",
+      "alerted_at": "2026-11-05T16:40:48+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T13:35:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:05 PM"
     },
@@ -5599,7 +5587,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "04:40 PM"
     },
@@ -7046,13 +7034,13 @@
       "time": "11:05 PM"
     },
     "PVHR_44285_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:40:48+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T19:10:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 94.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM"
@@ -7286,13 +7274,13 @@
       "time": "10:30 PM"
     },
     "PVHR_44738_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:40:48+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T19:10:00+05:30",
       "movie": "Ramayana - Hindi",
       "price": 59.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM"
@@ -7761,7 +7749,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:00 PM"
     },
@@ -9902,13 +9890,13 @@
       "time": "10:50 PM"
     },
     "TVHP_26246_20261105_BUDGET+3D": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T16:40:48+05:30",
       "category": "BUDGET+3D",
       "date": "20261105",
       "end": "2026-11-05T19:10:00+05:30",
       "movie": "Ramayana (3D)(Hindi) - Hindi",
       "price": 93.72,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "The Vijay Park Multiplex: Injambakkam",
       "time": "06:40 PM"

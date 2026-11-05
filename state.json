@@ -1513,7 +1513,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:40 AM"
     },
@@ -2997,17 +2997,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:25 PM"
     },
-    "INTO_92541_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T13:45:00+05:30",
-      "movie": "Haiku - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "01:15 PM"
-    },
     "INTO_92542_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-04T12:50:46+05:30",
       "category": "EXECUTIVE",
@@ -3420,14 +3409,14 @@
       "time": "11:35 PM"
     },
     "INTO_92587_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T10:20:54+05:30",
+      "alerted_at": "2026-11-05T13:50:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:20:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 AM"
     },
@@ -3463,7 +3452,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:30 PM"
     },
@@ -4628,14 +4617,14 @@
       "time": "06:15 AM"
     },
     "INTO_92697_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T12:01:05+05:30",
+      "alerted_at": "2026-11-05T13:50:50+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T07:00:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM"
     },
@@ -7350,7 +7339,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:05 PM"
     },
@@ -7486,18 +7475,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM"
     },
-    "PVHR_44740_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T11:20:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T13:45:00+05:30",
-      "movie": "Doraemon: Castle of the Undersea Devil (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "01:15 PM"
-    },
     "PVHR_44741_20261105_CLASSIC": {
       "alerted_at": "2026-11-05T13:40:49+05:30",
       "category": "CLASSIC",
@@ -7511,13 +7488,13 @@
       "time": "03:40 PM"
     },
     "PVHR_44745_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T13:50:50+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T16:15:00+05:30",
       "movie": "Jailer 2 - Tamil",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:45 PM"
@@ -7679,14 +7656,14 @@
       "time": "10:25 PM"
     },
     "PVHR_44762_20261106_CLASSIC": {
-      "alerted_at": "2026-11-05T11:20:48+05:30",
+      "alerted_at": "2026-11-05T13:50:50+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T06:30:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },

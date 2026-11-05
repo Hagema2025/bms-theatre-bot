@@ -1440,14 +1440,14 @@
       "time": "07:40 AM"
     },
     "CBMC_15573_20261106_NORMAL": {
-      "alerted_at": "2026-11-05T16:01:12+05:30",
+      "alerted_at": "2026-11-05T18:40:52+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T14:25:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -2863,18 +2863,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:45 PM"
-    },
-    "INTO_92533_20261105_EXECUTIVE": {
-      "alerted_at": "2026-11-05T17:01:11+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T18:35:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "06:05 PM"
     },
     "INTO_92534_20261105_EXECUTIVE": {
       "alerted_at": "2026-11-04T13:10:47+05:30",
@@ -4490,7 +4478,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM"
     },
@@ -4514,7 +4502,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:15 AM"
     },
@@ -4562,7 +4550,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
     },
@@ -7215,18 +7203,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
     },
-    "PVHR_44722_20261105_CLASSIC": {
-      "alerted_at": "2026-11-05T17:31:25+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T18:40:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
-      "price": 89.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:10 PM"
-    },
     "PVHR_44723_20261105_CLASSIC": {
       "alerted_at": "2026-11-03T23:43:15+05:30",
       "category": "CLASSIC",
@@ -7307,7 +7283,7 @@
       "movie": "Ramayana - Hindi",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM"
     },
@@ -7859,7 +7835,7 @@
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 PM"
     },
@@ -8063,7 +8039,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:30 PM"
     },

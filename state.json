@@ -1448,7 +1448,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM"
     },
@@ -1483,7 +1483,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
     },
@@ -2777,6 +2777,28 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
     },
+    "CBMC_15722_20261107_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261107",
+      "end": "2026-11-07T08:40:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "08:10 AM"
+    },
+    "CBMC_15725_20261109_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261109",
+      "end": "2026-11-09T08:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:30 AM"
+    },
     "INTO_92526_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -3785,7 +3807,7 @@
       "movie": "Ramayana (3D)(Telugu) - Telugu",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM"
     },
@@ -4588,7 +4610,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 PM"
     },
@@ -5475,17 +5497,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:30 PM"
-    },
-    "MCSK_16906_20261105_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261105",
-      "end": "2026-11-05T15:50:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "03:20 PM"
     },
     "MCSK_16907_20261105_SPECIAL": {
       "category": "SPECIAL",

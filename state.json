@@ -980,17 +980,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "07:00 PM"
     },
-    "ACON_48559_20261105_PEARL": {
-      "category": "PEARL",
-      "date": "20261105",
-      "end": "2026-11-05T23:30:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "11:00 PM"
-    },
     "ACON_48560_20261106_PEARL": {
       "category": "PEARL",
       "date": "20261106",
@@ -2672,17 +2661,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:50 PM"
     },
-    "INTO_92538_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T23:25:00+05:30",
-      "movie": "Udta Teer - Hindi",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:55 PM"
-    },
     "INTO_92539_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -2693,17 +2671,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:30 PM"
-    },
-    "INTO_92553_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T23:30:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "11:00 PM"
     },
     "INTO_92559_20261106_EXECUTIVE": {
       "alerted_at": "2026-11-04T05:20:47+05:30",
@@ -2825,14 +2792,14 @@
       "time": "04:15 PM"
     },
     "INTO_92573_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-04T04:10:54+05:30",
+      "alerted_at": "2026-11-05T23:31:32+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:05:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:35 AM"
     },
@@ -5201,7 +5168,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -6850,18 +6817,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM"
-    },
-    "PVHR_44751_20261105_CLASSIC": {
-      "alerted_at": "2026-11-04T17:31:22+05:30",
-      "category": "CLASSIC",
-      "date": "20261105",
-      "end": "2026-11-05T23:25:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:55 PM"
     },
     "PVHR_44762_20261106_CLASSIC": {
       "alerted_at": "2026-11-05T22:01:12+05:30",
@@ -9736,7 +9691,6 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
-    "ACON_date_20261105": 57,
     "ACON_date_20261106": 53,
     "CBMC_date_20261106": 54,
     "CBMC_date_20261107": 74,
@@ -9753,7 +9707,6 @@
     "MCSK_date_20261109": 24,
     "MCSK_date_20261110": 27,
     "MCSK_date_20261111": 36,
-    "PVHR_date_20261105": 78,
     "PVHR_date_20261106": 83,
     "PVHR_date_20261107": 86,
     "PVHR_date_20261108": 89,

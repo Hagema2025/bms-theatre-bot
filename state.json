@@ -2820,17 +2820,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:00 PM"
     },
-    "INTO_92526_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T17:10:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "04:40 PM"
-    },
     "INTO_92527_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261105",
@@ -2887,17 +2876,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:25 PM"
-    },
-    "INTO_92536_20261105_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261105",
-      "end": "2026-11-05T17:05:00+05:30",
-      "movie": "Udta Teer - Hindi",
-      "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "04:35 PM"
     },
     "INTO_92537_20261105_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -3793,7 +3771,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:10 PM"
     },
@@ -5464,6 +5442,18 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM"
     },
+    "INTO_92777_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-05T17:10:55+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261106",
+      "end": "2026-11-06T10:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:30 AM"
+    },
     "MCSK_16895_20261105_3D SPECIAL": {
       "alerted_at": "2026-11-05T16:20:53+05:30",
       "category": "3D SPECIAL",
@@ -5472,7 +5462,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 94.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:15 PM"
     },
@@ -7198,7 +7188,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:10 PM"
     },
@@ -7402,7 +7392,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:25 PM"
     },

@@ -1081,18 +1081,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
     },
-    "CBMC_15513_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T15:31:24+05:30",
-      "category": "NORMAL",
-      "date": "20261105",
-      "end": "2026-11-05T22:05:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "09:35 PM"
-    },
     "CBMC_15537_20261106_NORMAL": {
       "alerted_at": "2026-11-05T01:20:55+05:30",
       "category": "NORMAL",
@@ -1397,14 +1385,14 @@
       "time": "01:55 PM"
     },
     "CBMC_15577_20261105_NORMAL": {
-      "alerted_at": "2026-11-05T15:31:24+05:30",
+      "alerted_at": "2026-11-05T22:10:54+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T22:25:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:55 PM"
     },
@@ -2695,7 +2683,7 @@
       "movie": "Ramayana (Telugu) - Telugu",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 PM"
     },
@@ -4326,14 +4314,14 @@
       "time": "11:35 PM"
     },
     "INTO_92696_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-05T04:20:52+05:30",
+      "alerted_at": "2026-11-05T22:10:54+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T06:45:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:15 AM"
     },
@@ -5293,7 +5281,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM"
     },
@@ -5353,7 +5341,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM"
     },
@@ -7140,7 +7128,7 @@
       "movie": "Haiku - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 PM"
     },
@@ -7164,7 +7152,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:00 AM"
     },

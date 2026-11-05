@@ -1174,7 +1174,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:35 AM"
     },
@@ -1234,13 +1234,14 @@
       "time": "09:35 PM"
     },
     "CBMC_15522_20261105_NORMAL": {
+      "alerted_at": "2026-11-05T08:50:48+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T16:40:00+05:30",
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:10 PM"
     },
@@ -1278,15 +1279,16 @@
       "time": "11:35 AM"
     },
     "CBMC_15533_20261105_NORMAL": {
+      "alerted_at": "2026-11-05T08:50:48+05:30",
       "category": "NORMAL",
       "date": "20261105",
       "end": "2026-11-05T15:10:00+05:30",
       "movie": "Anbil Avan - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "02:35 PM"
+      "time": "02:40 PM"
     },
     "CBMC_15534_20261105_NORMAL": {
       "category": "NORMAL",
@@ -3762,7 +3764,7 @@
       "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:15 PM"
     },
@@ -4769,7 +4771,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM"
     },
@@ -5818,13 +5820,14 @@
       "time": "04:40 PM"
     },
     "MCSK_16936_20261106_SPECIAL": {
+      "alerted_at": "2026-11-05T08:50:48+05:30",
       "category": "SPECIAL",
       "date": "20261106",
       "end": "2026-11-06T20:20:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:50 PM"
     },
@@ -5973,13 +5976,14 @@
       "time": "10:30 PM"
     },
     "MCSK_16949_20261106_SPECIAL": {
+      "alerted_at": "2026-11-05T08:50:48+05:30",
       "category": "SPECIAL",
       "date": "20261106",
       "end": "2026-11-06T06:40:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:10 AM"
     },
@@ -6076,13 +6080,14 @@
       "time": "01:30 PM"
     },
     "MCSK_16958_20261107_SPECIAL": {
+      "alerted_at": "2026-11-05T08:50:48+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T17:10:00+05:30",
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "04:40 PM"
     },
@@ -7453,7 +7458,7 @@
       "movie": "Ramayana (3D)(Tamil) - Tamil",
       "price": 89.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 AM"
     },
@@ -10376,6 +10381,7 @@
     "INTO_date_20261110": 188,
     "INTO_date_20261111": 168,
     "MCSK_date_20261106": 16,
+    "MCSK_date_20261107": 40,
     "MCSK_date_20261108": 20,
     "MCSK_date_20261109": 24,
     "MCSK_date_20261110": 27,

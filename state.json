@@ -1526,7 +1526,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "03:35 PM"
     },
@@ -1550,7 +1550,7 @@
       "movie": "Scene - Tamil",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:40 AM"
     },
@@ -7589,13 +7589,13 @@
       "time": "10:30 PM"
     },
     "PVHR_44736_20261105_CLASSIC": {
-      "alerted_at": "2026-11-03T23:43:15+05:30",
+      "alerted_at": "2026-11-05T08:31:23+05:30",
       "category": "CLASSIC",
       "date": "20261105",
       "end": "2026-11-05T11:00:00+05:30",
       "movie": "Ramayana - Hindi",
       "price": 59.43,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:30 AM"
@@ -7836,7 +7836,7 @@
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM"
     },

@@ -1,17 +1,5 @@
 {
   "alerts": {
-    "ACON_48426_20261106_PEARL": {
-      "alerted_at": "2026-11-06T09:40:53+05:30",
-      "category": "PEARL",
-      "date": "20261106",
-      "end": "2026-11-06T20:15:00+05:30",
-      "movie": "Scene",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "07:45 PM - 10:39 PM"
-    },
     "ACON_48427_20261106_PEARL": {
       "alerted_at": "2026-11-06T13:31:25+05:30",
       "category": "PEARL",
@@ -1104,18 +1092,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:50 PM - 12:44 AM"
-    },
-    "CBMC_15555_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T16:50:49+05:30",
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T20:15:00+05:30",
-      "movie": "Jailer 2",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:45 PM - 10:55 PM"
     },
     "CBMC_15556_20261106_NORMAL": {
       "alerted_at": "2026-11-06T06:31:21+05:30",
@@ -3080,18 +3056,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
     },
-    "INTO_92569_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T11:10:50+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T20:20:00+05:30",
-      "movie": "Ramayana",
-      "price": 89.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "07:50 PM - 11:30 PM"
-    },
     "INTO_92575_20261106_EXECUTIVE": {
       "alerted_at": "2026-11-06T13:01:09+05:30",
       "category": "EXECUTIVE",
@@ -3105,13 +3069,14 @@
       "time": "10:50 PM - 01:39 AM"
     },
     "INTO_92577_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-06T20:20:52+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T21:00:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "08:30 PM - 11:24 PM"
     },
@@ -5093,14 +5058,14 @@
       "time": "09:30 AM - 12:24 PM"
     },
     "INTO_92783_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T20:20:52+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T16:55:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:25 PM - 07:19 PM"
     },
@@ -5223,18 +5188,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:45 PM - 02:39 AM"
-    },
-    "MCSK_16936_20261106_SPECIAL": {
-      "alerted_at": "2026-11-06T06:50:47+05:30",
-      "category": "SPECIAL",
-      "date": "20261106",
-      "end": "2026-11-06T20:20:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "07:50 PM - 10:44 PM"
     },
     "MCSK_16937_20261106_SPECIAL": {
       "category": "SPECIAL",
@@ -5519,7 +5472,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "03:40 PM - 06:50 PM"
     },
@@ -6683,7 +6636,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:25 PM - 07:19 PM"
     },
@@ -8949,7 +8902,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "11:00 PM - 01:54 AM"
     },

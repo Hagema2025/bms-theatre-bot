@@ -2938,18 +2938,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:45 AM - 10:39 AM"
     },
-    "INTO_92585_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T22:40:55+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-07T00:25:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "11:55 PM - 02:49 AM"
-    },
     "INTO_92593_20261107_EXECUTIVE": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "EXECUTIVE",
@@ -4117,7 +4105,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:40 PM - 03:34 PM"
     },
@@ -4811,7 +4799,7 @@
       "movie": "Summer Holidays",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:00 PM - 03:31 PM"
     },
@@ -9488,7 +9476,6 @@
   "outage_alerted": [],
   "threads": {
     "ACON_date_20261107": 77,
-    "INTO_date_20261106": 302,
     "INTO_date_20261107": 305,
     "INTO_date_20261108": 309,
     "INTO_date_20261109": 313,

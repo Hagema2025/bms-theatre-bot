@@ -58,17 +58,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:05 PM - 02:45 AM"
     },
-    "ACON_48437_20261106_PEARL": {
-      "category": "PEARL",
-      "date": "20261106",
-      "end": "2026-11-06T19:15:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "06:45 PM - 09:55 PM"
-    },
     "ACON_48440_20261106_PEARL 3D": {
       "category": "PEARL 3D",
       "date": "20261106",
@@ -1126,18 +1115,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "09:50 PM - 12:44 AM"
-    },
-    "CBMC_15547_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T10:40:51+05:30",
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T19:15:00+05:30",
-      "movie": "Ramayana",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "06:45 PM - 10:25 PM"
     },
     "CBMC_15555_20261106_NORMAL": {
       "alerted_at": "2026-11-06T16:50:49+05:30",
@@ -6696,18 +6673,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:35 PM - 10:45 PM"
     },
-    "PVHR_44778_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T16:50:49+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T19:20:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:50 PM - 09:39 PM"
-    },
     "PVHR_44779_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "CLASSIC",
@@ -7361,7 +7326,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:10 PM - 03:59 PM"
     },

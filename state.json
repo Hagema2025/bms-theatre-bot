@@ -964,14 +964,14 @@
       "time": "09:50 PM - 12:44 AM"
     },
     "CBMC_15546_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T12:01:09+05:30",
+      "alerted_at": "2026-11-06T12:40:51+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T13:20:00+05:30",
       "movie": "Ramayana",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "2",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:50 PM - 04:30 PM"
     },
@@ -3600,14 +3600,14 @@
       "time": "05:00 PM - 08:40 PM"
     },
     "INTO_92639_20261108_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T12:40:51+05:30",
       "category": "EXECUTIVE",
       "date": "20261108",
       "end": "2026-11-08T10:40:00+05:30",
       "movie": "Ramayana",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:10 AM - 01:50 PM"
     },
@@ -6766,7 +6766,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM - 09:34 PM"
     },
@@ -7414,14 +7414,14 @@
       "time": "09:10 AM - 11:59 AM"
     },
     "PVHR_44837_20261108_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T12:40:51+05:30",
       "category": "CLASSIC",
       "date": "20261108",
       "end": "2026-11-08T13:00:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:30 PM - 03:19 PM"
     },
@@ -7433,7 +7433,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:40 PM - 06:29 PM"
     },

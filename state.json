@@ -8,7 +8,7 @@
       "movie": "Scene",
       "price": 54.0,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "01:20 PM - 04:14 PM"
     },
@@ -20,7 +20,7 @@
       "movie": "Scene",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "04:30 PM - 07:24 PM"
     },
@@ -1246,7 +1246,7 @@
       "movie": "Ramayana",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:50 PM - 04:30 PM"
     },
@@ -3149,17 +3149,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:45 AM - 10:39 AM"
     },
-    "INTO_92559_20261106_EXECUTIVE": {
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T13:05:00+05:30",
-      "movie": "Jailer 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "12:35 PM - 03:45 PM"
-    },
     "INTO_92560_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261106",
@@ -3295,18 +3284,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "02:25 PM - 04:40 PM"
-    },
-    "INTO_92581_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T12:31:24+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T13:10:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "12:40 PM - 03:34 PM"
     },
     "INTO_92582_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
@@ -4519,7 +4496,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM - 08:54 AM"
     },
@@ -5585,7 +5562,7 @@
       "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 PM - 10:20 PM"
     },
@@ -7125,7 +7102,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:00 PM - 03:54 PM"
     },
@@ -7234,18 +7211,6 @@
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 PM - 01:29 AM"
-    },
-    "PVHR_44802_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T10:40:51+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T13:10:00+05:30",
-      "movie": "Jailer 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "12:40 PM - 03:50 PM"
     },
     "PVHR_44803_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",

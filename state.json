@@ -1198,13 +1198,14 @@
       "time": "06:45 PM - 10:25 PM"
     },
     "CBMC_15548_20261106_NORMAL": {
+      "alerted_at": "2026-11-06T16:20:53+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T17:20:00+05:30",
-      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "movie": "Aadarsha Kutumbam House No: 47 (AK 47)",
       "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:50 PM - 07:44 PM"
     },
@@ -3676,14 +3677,14 @@
       "time": "10:55 PM - 01:37 AM"
     },
     "INTO_92618_20261109_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T16:20:53+05:30",
       "category": "EXECUTIVE",
       "date": "20261109",
       "end": "2026-11-09T10:15:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:45 AM - 12:39 PM"
     },
@@ -5390,7 +5391,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 PM - 12:24 AM"
     },
@@ -7541,7 +7542,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -9237,14 +9238,14 @@
       "time": "10:10 AM - 01:04 PM"
     },
     "PVHR_45005_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T16:20:53+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T13:50:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:20 PM - 04:14 PM"
     },
@@ -9256,7 +9257,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:30 PM - 07:24 PM"
     },
@@ -9268,7 +9269,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:40 PM - 10:34 PM"
     },

@@ -971,7 +971,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:55 PM - 04:05 PM"
     },
@@ -1076,18 +1076,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:55 PM - 04:49 PM"
-    },
-    "CBMC_15578_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T09:50:52+05:30",
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T11:20:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:50 AM - 01:39 PM"
     },
     "CBMC_15579_20261106_NORMAL": {
       "category": "NORMAL",
@@ -5308,7 +5296,7 @@
       "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 PM - 10:20 PM"
     },
@@ -5636,7 +5624,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM - 03:24 PM"
     },
@@ -9079,14 +9067,14 @@
       "time": "06:40 PM - 10:20 PM"
     },
     "PVHR_44994_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T10:40:51+05:30",
+      "alerted_at": "2026-11-06T11:20:48+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T13:50:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "2",
+      "soon_alerted": true,
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:20 PM - 04:14 PM"
     },

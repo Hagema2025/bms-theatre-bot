@@ -760,17 +760,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:55 PM - 01:49 AM"
     },
-    "ACON_48538_20261106_PEARL": {
-      "category": "PEARL",
-      "date": "20261106",
-      "end": "2026-11-06T07:50:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "07:20 AM - 10:14 AM"
-    },
     "ACON_48540_20261107_PEARL": {
       "category": "PEARL",
       "date": "20261107",
@@ -2415,7 +2404,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:20 PM - 04:00 PM"
     },
@@ -2450,7 +2439,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:35 AM - 12:24 PM"
     },
@@ -2601,13 +2590,13 @@
       "time": "11:35 PM - 02:24 AM"
     },
     "INTO_92587_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:50:48+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:20:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:50 AM - 12:39 PM"
@@ -6534,13 +6523,13 @@
       "time": "10:20 PM - 02:00 AM"
     },
     "PVHR_44786_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:50:48+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T10:20:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 AM - 12:44 PM"
@@ -8781,7 +8770,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 AM - 12:24 PM"
     },

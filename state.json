@@ -1128,17 +1128,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "08:10 PM - 11:04 PM"
     },
-    "CBMC_15571_20261106_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T08:10:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:40 AM - 10:34 AM"
-    },
     "CBMC_15573_20261106_NORMAL": {
       "category": "NORMAL",
       "date": "20261106",
@@ -1191,7 +1180,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:30 PM - 10:19 PM"
     },
@@ -6203,14 +6192,14 @@
       "time": "06:40 PM - 10:20 PM"
     },
     "PVHR_44290_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T08:10:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T23:20:00+05:30",
       "movie": "Ramayana",
       "price": 94.43,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM - 02:30 AM"
     },
@@ -6475,13 +6464,13 @@
       "time": "10:00 PM - 12:49 AM"
     },
     "PVHR_44781_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T08:10:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T10:35:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:05 AM - 01:45 PM"
@@ -8691,13 +8680,13 @@
       "time": "06:40 PM - 10:20 PM"
     },
     "PVHR_44993_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T07:01:08+05:30",
+      "alerted_at": "2026-11-06T08:10:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T10:40:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM - 01:04 PM"
@@ -8842,7 +8831,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:30 PM - 07:24 PM"
     },

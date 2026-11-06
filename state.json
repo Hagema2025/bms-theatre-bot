@@ -2174,13 +2174,14 @@
       "time": "07:30 AM - 10:24 AM"
     },
     "CBMC_15735_20261106_NORMAL": {
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T23:15:00+05:30",
-      "movie": "Disco - Malayalam",
+      "movie": "Disco",
       "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:45 PM - 01:48 AM"
     },
@@ -3011,13 +3012,14 @@
       "time": "10:45 PM - 02:25 AM"
     },
     "INTO_92565_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T23:25:00+05:30",
-      "movie": "Udta Teer - Hindi",
+      "movie": "Udta Teer",
       "price": 59.43,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
     },
@@ -3564,13 +3566,14 @@
       "time": "05:00 PM - 08:40 PM"
     },
     "INTO_92650_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T23:20:00+05:30",
-      "movie": "Ramayana (Tamil) - Tamil",
+      "movie": "Ramayana",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 02:30 AM"
     },
@@ -4134,14 +4137,14 @@
       "time": "06:30 AM - 09:19 AM"
     },
     "INTO_92704_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T06:30:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM - 08:54 AM"
     },
@@ -4316,7 +4319,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:30 PM - 10:19 PM"
     },
@@ -5382,14 +5385,14 @@
       "time": "06:10 AM - 09:04 AM"
     },
     "MCSK_16973_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T21:20:53+05:30",
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T09:50:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "09:20 AM - 12:14 PM"
     },
@@ -5406,14 +5409,14 @@
       "time": "12:30 PM - 03:24 PM"
     },
     "MCSK_16975_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T21:40:56+05:30",
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T16:10:00+05:30",
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "03:40 PM - 06:50 PM"
     },
@@ -6498,14 +6501,14 @@
       "time": "10:30 PM - 01:24 AM"
     },
     "PVHR_44794_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T20:50:52+05:30",
+      "alerted_at": "2026-11-06T22:01:14+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T23:15:00+05:30",
       "movie": "Ramayana",
       "price": 94.43,
       "soon_alerted": true,
-      "status": "0",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM - 02:25 AM"
     },
@@ -6541,7 +6544,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:35 AM - 09:29 AM"
     },
@@ -7907,7 +7910,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -8711,7 +8714,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:30 PM - 07:24 PM"
     },

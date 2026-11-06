@@ -280,13 +280,14 @@
       "time": "07:35 PM - 11:15 PM"
     },
     "ACON_48486_20261107_PEARL 3D": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
       "category": "PEARL 3D",
       "date": "20261107",
       "end": "2026-11-07T09:30:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "movie": "Ramayana",
       "price": 84.0,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "09:00 AM - 12:40 PM"
     },
@@ -1064,17 +1065,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:35 PM - 01:29 AM"
-    },
-    "CBMC_15565_20261106_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T10:10:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "09:40 AM - 12:34 PM"
     },
     "CBMC_15566_20261106_NORMAL": {
       "category": "NORMAL",
@@ -2367,7 +2357,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:20 PM - 04:00 PM"
     },
@@ -2394,18 +2384,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:15 PM - 07:09 PM"
     },
-    "INTO_92573_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T09:01:06+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T10:05:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "09:35 AM - 12:24 PM"
-    },
     "INTO_92574_20261106_EXECUTIVE": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "EXECUTIVE",
@@ -2426,7 +2404,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 01:39 AM"
     },
@@ -6238,7 +6216,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:20 PM - 03:14 PM"
     },
@@ -6569,7 +6547,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 PM - 01:29 AM"
     },
@@ -7396,7 +7374,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:00 PM - 03:40 PM"
     },
@@ -8648,14 +8626,14 @@
       "time": "06:40 PM - 10:20 PM"
     },
     "PVHR_44993_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T09:50:52+05:30",
+      "alerted_at": "2026-11-06T10:10:48+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T10:40:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM - 01:04 PM"
     },
@@ -9127,6 +9105,66 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "11:00 PM - 01:54 AM"
     },
+    "PVHR_45037_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T10:15:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "09:45 AM - 12:39 PM"
+    },
+    "PVHR_45038_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T13:25:00+05:30",
+      "movie": "Jailer 2",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "12:55 PM - 04:05 PM"
+    },
+    "PVHR_45039_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T16:55:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "04:25 PM - 07:19 PM"
+    },
+    "PVHR_45040_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T20:05:00+05:30",
+      "movie": "Jailer 2",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "07:35 PM - 10:45 PM"
+    },
+    "PVHR_45041_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T23:30:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "11:00 PM - 01:54 AM"
+    },
     "PVHR_45042_20261109_CLASSIC": {
       "alerted_at": "2026-11-06T10:01:08+05:30",
       "category": "CLASSIC",
@@ -9228,6 +9266,54 @@
       "category": "CLASSIC",
       "date": "20261110",
       "end": "2026-11-10T23:15:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "10:45 PM - 02:25 AM"
+    },
+    "PVHR_45053_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T12:30:00+05:30",
+      "movie": "Ramayana",
+      "price": 89.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "12:00 PM - 03:40 PM"
+    },
+    "PVHR_45054_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T16:35:00+05:30",
+      "movie": "The Cat in the Hat",
+      "price": 96.74,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "04:05 PM - 06:20 PM"
+    },
+    "PVHR_45055_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T19:10:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "06:40 PM - 10:20 PM"
+    },
+    "PVHR_45056_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T23:15:00+05:30",
       "movie": "Ramayana",
       "price": 94.43,
       "soon_alerted": false,
@@ -9360,6 +9446,66 @@
       "category": "CLASSIC",
       "date": "20261110",
       "end": "2026-11-10T23:20:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "10:50 PM - 01:44 AM"
+    },
+    "PVHR_45070_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T10:40:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "10:10 AM - 01:04 PM"
+    },
+    "PVHR_45071_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T13:50:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "01:20 PM - 04:14 PM"
+    },
+    "PVHR_45072_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T17:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "04:30 PM - 07:24 PM"
+    },
+    "PVHR_45073_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T20:10:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "PVR: Heritage RSL ECR",
+      "time": "07:40 PM - 10:34 PM"
+    },
+    "PVHR_45074_20261111_CLASSIC": {
+      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "category": "CLASSIC",
+      "date": "20261111",
+      "end": "2026-11-11T23:20:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
@@ -9553,6 +9699,7 @@
   "outage_alerted": [],
   "threads": {
     "ACON_date_20261106": 72,
+    "ACON_date_20261107": 77,
     "CBMC_date_20261106": 95,
     "INTO_date_20261106": 302,
     "INTO_date_20261107": 305,

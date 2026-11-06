@@ -31,7 +31,7 @@
       "movie": "Ramayana",
       "price": 84.0,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:05 PM - 02:45 AM"
     },
@@ -3110,7 +3110,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 01:39 AM"
     },
@@ -5389,7 +5389,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "09:20 AM - 12:14 PM"
     },
@@ -5406,14 +5406,14 @@
       "time": "12:30 PM - 03:24 PM"
     },
     "MCSK_16975_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T18:20:53+05:30",
+      "alerted_at": "2026-11-06T21:40:56+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T16:10:00+05:30",
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "03:40 PM - 06:50 PM"
     },
@@ -7380,7 +7380,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:00 PM - 03:54 PM"
     },
@@ -7900,14 +7900,14 @@
       "time": "10:05 AM - 01:45 PM"
     },
     "PVHR_44928_20261109_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T21:40:56+05:30",
       "category": "CLASSIC",
       "date": "20261109",
       "end": "2026-11-09T14:40:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -8740,14 +8740,14 @@
       "time": "10:50 PM - 01:44 AM"
     },
     "PVHR_45015_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T21:01:19+05:30",
+      "alerted_at": "2026-11-06T21:40:56+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T10:00:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 AM - 12:24 PM"
     },

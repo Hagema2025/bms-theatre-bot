@@ -1060,6 +1060,28 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:30 PM - 02:10 AM"
     },
+    "ACON_48594_20261107_PEARL": {
+      "category": "PEARL",
+      "date": "20261107",
+      "end": "2026-11-07T06:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.0,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
+      "time": "06:00 AM - 08:54 AM"
+    },
+    "ACON_48597_20261108_PEARL 3D": {
+      "category": "PEARL 3D",
+      "date": "20261108",
+      "end": "2026-11-08T07:00:00+05:30",
+      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "price": 84.0,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
+      "time": "06:30 AM - 10:10 AM"
+    },
     "CBMC_15556_20261106_NORMAL": {
       "alerted_at": "2026-11-06T06:31:21+05:30",
       "category": "NORMAL",
@@ -2129,18 +2151,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:30 AM - 10:24 AM"
     },
-    "CBMC_15735_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T22:01:14+05:30",
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T23:15:00+05:30",
-      "movie": "Disco",
-      "price": 59.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:45 PM - 01:48 AM"
-    },
     "CBMC_15736_20261107_NORMAL": {
       "category": "NORMAL",
       "date": "20261107",
@@ -2955,18 +2965,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:45 AM - 10:39 AM"
     },
-    "INTO_92562_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T22:31:29+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T23:15:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:45 PM - 02:25 AM"
-    },
     "INTO_92565_20261106_EXECUTIVE": {
       "alerted_at": "2026-11-06T22:40:55+05:30",
       "category": "EXECUTIVE",
@@ -2978,18 +2976,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
-    },
-    "INTO_92575_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T13:01:09+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T23:20:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:50 PM - 01:39 AM"
     },
     "INTO_92585_20261106_EXECUTIVE": {
       "alerted_at": "2026-11-06T22:40:55+05:30",
@@ -3354,13 +3340,14 @@
       "time": "10:55 PM - 01:37 AM"
     },
     "INTO_92623_20261107_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T13:40:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:10 PM - 04:04 PM"
     },
@@ -3521,18 +3508,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "05:00 PM - 08:40 PM"
-    },
-    "INTO_92650_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T23:10:53+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T23:20:00+05:30",
-      "movie": "Ramayana",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:50 PM - 02:30 AM"
     },
     "INTO_92651_20261107_EXECUTIVE": {
       "alerted_at": "2026-11-06T18:51:01+05:30",
@@ -4101,7 +4076,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM - 08:54 AM"
     },
@@ -4808,7 +4783,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 01:39 AM"
     },
@@ -4944,7 +4919,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM - 12:24 PM"
     },
@@ -5080,6 +5055,222 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:45 PM - 02:39 AM"
     },
+    "INTO_92794_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T10:40:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "10:10 AM - 01:50 PM"
+    },
+    "INTO_92795_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T14:55:00+05:30",
+      "movie": "The Cat in the Hat",
+      "price": 96.74,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "02:25 PM - 04:40 PM"
+    },
+    "INTO_92796_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T17:30:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "05:00 PM - 08:40 PM"
+    },
+    "INTO_92797_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T22:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:30 PM - 12:24 AM"
+    },
+    "INTO_92798_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T10:40:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "10:10 AM - 01:50 PM"
+    },
+    "INTO_92799_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T14:55:00+05:30",
+      "movie": "The Cat in the Hat",
+      "price": 96.74,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "02:25 PM - 04:40 PM"
+    },
+    "INTO_92800_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T17:30:00+05:30",
+      "movie": "Ramayana",
+      "price": 94.43,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "05:00 PM - 08:40 PM"
+    },
+    "INTO_92801_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T22:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:30 PM - 12:24 AM"
+    },
+    "INTO_92802_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T10:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:30 AM - 12:24 PM"
+    },
+    "INTO_92803_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T13:40:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "01:10 PM - 04:04 PM"
+    },
+    "INTO_92804_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T17:10:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "04:40 PM - 07:34 PM"
+    },
+    "INTO_92805_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-10T21:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "08:30 PM - 11:24 PM"
+    },
+    "INTO_92806_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261110",
+      "end": "2026-11-11T00:15:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "11:45 PM - 02:39 AM"
+    },
+    "INTO_92807_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T10:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "09:30 AM - 12:24 PM"
+    },
+    "INTO_92808_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T13:40:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "01:10 PM - 04:04 PM"
+    },
+    "INTO_92809_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T17:10:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "04:40 PM - 07:34 PM"
+    },
+    "INTO_92810_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-11T21:00:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "08:30 PM - 11:24 PM"
+    },
+    "INTO_92811_20261111_EXECUTIVE": {
+      "alerted_at": "2026-11-06T23:20:49+05:30",
+      "category": "EXECUTIVE",
+      "date": "20261111",
+      "end": "2026-11-12T00:15:00+05:30",
+      "movie": "Scene",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "3",
+      "theatre": "INOX: The Marina Mall, OMR",
+      "time": "11:45 PM - 02:39 AM"
+    },
     "MCSK_16937_20261106_SPECIAL": {
       "category": "SPECIAL",
       "date": "20261106",
@@ -5090,17 +5281,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:00 PM - 01:54 AM"
-    },
-    "MCSK_16942_20261106_3D SPECIAL": {
-      "category": "3D SPECIAL",
-      "date": "20261106",
-      "end": "2026-11-06T23:15:00+05:30",
-      "movie": "Ramayana (3D)(Hindi) - Hindi",
-      "price": 99.43,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "10:45 PM - 02:25 AM"
     },
     "MCSK_16954_20261106_SPECIAL": {
       "alerted_at": "2026-11-06T11:01:04+05:30",
@@ -6281,18 +6461,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:05 PM - 02:45 AM"
     },
-    "PVHR_44290_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T20:50:52+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T23:20:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:50 PM - 02:30 AM"
-    },
     "PVHR_44291_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "CLASSIC",
@@ -6389,18 +6557,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM - 02:30 AM"
     },
-    "PVHR_44794_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T22:01:14+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T23:15:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:45 PM - 02:25 AM"
-    },
     "PVHR_44806_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T23:10:53+05:30",
       "category": "CLASSIC",
@@ -6409,7 +6565,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:35 AM - 09:29 AM"
     },
@@ -6708,7 +6864,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:40 PM - 06:29 PM"
     },
@@ -8427,18 +8583,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM - 02:30 AM"
     },
-    "PVHR_44997_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T14:01:08+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T23:20:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:50 PM - 01:44 AM"
-    },
     "PVHR_45001_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T20:40:53+05:30",
       "category": "CLASSIC",
@@ -8615,7 +8759,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 AM - 12:24 PM"
     },

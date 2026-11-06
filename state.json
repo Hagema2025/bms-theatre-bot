@@ -3000,14 +3000,14 @@
       "time": "07:45 AM - 10:39 AM"
     },
     "INTO_92562_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T20:50:52+05:30",
+      "alerted_at": "2026-11-06T22:10:53+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T23:15:00+05:30",
       "movie": "Ramayana",
       "price": 94.43,
       "soon_alerted": true,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:45 PM - 02:25 AM"
     },
@@ -3019,7 +3019,7 @@
       "movie": "Udta Teer",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
     },
@@ -3573,7 +3573,7 @@
       "movie": "Ramayana",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 02:30 AM"
     },
@@ -7047,7 +7047,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:15 PM - 09:55 PM"
     },
@@ -8750,7 +8750,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 AM - 12:24 PM"
     },

@@ -1240,17 +1240,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:35 PM - 01:24 AM"
     },
-    "CBMC_15585_20261106_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T07:40:00+05:30",
-      "movie": "Mookuthi Amman 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:10 AM - 09:59 AM"
-    },
     "CBMC_15586_20261106_NORMAL": {
       "category": "NORMAL",
       "date": "20261106",
@@ -2454,13 +2443,13 @@
       "time": "04:15 PM - 07:09 PM"
     },
     "INTO_92573_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T05:31:25+05:30",
+      "alerted_at": "2026-11-06T07:40:52+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T10:05:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:35 AM - 12:24 PM"

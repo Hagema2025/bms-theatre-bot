@@ -617,18 +617,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:55 PM - 01:49 AM"
     },
-    "ACON_48552_20261106_PEARL": {
-      "alerted_at": "2026-11-06T14:40:51+05:30",
-      "category": "PEARL",
-      "date": "20261106",
-      "end": "2026-11-07T00:00:00+05:30",
-      "movie": "Scene",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "11:30 PM - 02:24 AM"
-    },
     "ACON_48553_20261108_PEARL": {
       "category": "PEARL",
       "date": "20261108",
@@ -5474,14 +5462,14 @@
       "time": "12:30 PM - 03:24 PM"
     },
     "MCSK_16975_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T22:01:14+05:30",
+      "alerted_at": "2026-11-07T00:01:15+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T16:10:00+05:30",
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "03:40 PM - 06:50 PM"
     },
@@ -9522,7 +9510,6 @@
   "fail_streaks": {},
   "outage_alerted": [],
   "threads": {
-    "ACON_date_20261106": 72,
     "ACON_date_20261107": 77,
     "INTO_date_20261106": 302,
     "INTO_date_20261107": 305,

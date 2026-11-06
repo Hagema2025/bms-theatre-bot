@@ -3201,14 +3201,14 @@
       "time": "10:50 PM - 02:30 AM"
     },
     "INTO_92651_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T08:50:48+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T09:30:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM - 11:54 AM"
     },
@@ -4955,7 +4955,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM - 03:24 PM"
     },
@@ -5105,7 +5105,7 @@
       "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 PM - 10:20 PM"
     },
@@ -5209,14 +5209,14 @@
       "time": "09:20 AM - 12:14 PM"
     },
     "MCSK_16974_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T07:01:08+05:30",
+      "alerted_at": "2026-11-06T08:50:48+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T13:00:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM - 03:24 PM"
     },
@@ -6520,7 +6520,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 AM - 12:44 PM"
     },
@@ -8688,7 +8688,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:10 AM - 01:04 PM"
     },

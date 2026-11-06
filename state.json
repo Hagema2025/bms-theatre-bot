@@ -903,6 +903,17 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "07:00 PM - 09:54 PM"
     },
+    "ACON_48566_20261108_PEARL": {
+      "category": "PEARL",
+      "date": "20261108",
+      "end": "2026-11-08T06:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.0,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
+      "time": "06:00 AM - 08:54 AM"
+    },
     "ACON_48570_20261107_PEARL": {
       "category": "PEARL",
       "date": "20261107",
@@ -1002,17 +1013,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:50 PM - 07:44 PM"
-    },
-    "CBMC_15551_20261106_NORMAL": {
-      "category": "NORMAL",
-      "date": "20261106",
-      "end": "2026-11-06T07:10:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "06:40 AM - 09:34 AM"
     },
     "CBMC_15552_20261106_NORMAL": {
       "category": "NORMAL",
@@ -4935,17 +4935,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM - 02:25 AM"
     },
-    "MCSK_16943_20261106_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261106",
-      "end": "2026-11-06T07:10:00+05:30",
-      "movie": "Mookuthi Amman 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "06:40 AM - 09:29 AM"
-    },
     "MCSK_16944_20261106_SPECIAL": {
       "category": "SPECIAL",
       "date": "20261106",
@@ -5140,24 +5129,26 @@
       "time": "06:25 AM - 10:05 AM"
     },
     "MCSK_16962_20261107_3D SPECIAL": {
+      "alerted_at": "2026-11-06T07:10:48+05:30",
       "category": "3D SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T11:00:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:30 AM - 02:10 PM"
     },
     "MCSK_16963_20261107_3D SPECIAL": {
+      "alerted_at": "2026-11-06T07:10:48+05:30",
       "category": "3D SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T15:05:00+05:30",
-      "movie": "Ramayana (3D)(Tamil) - Tamil",
+      "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "02:35 PM - 06:15 PM"
     },
@@ -6365,13 +6356,13 @@
       "time": "10:50 PM - 02:30 AM"
     },
     "PVHR_44763_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:10:48+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T09:40:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM - 12:04 PM"
@@ -6422,17 +6413,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:50 PM - 12:44 AM"
     },
-    "PVHR_44768_20261106_CLASSIC": {
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T07:05:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:35 AM - 09:29 AM"
-    },
     "PVHR_44769_20261106_CLASSIC": {
       "category": "CLASSIC",
       "date": "20261106",
@@ -6480,13 +6460,13 @@
       "time": "07:35 PM - 10:45 PM"
     },
     "PVHR_44775_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:10:48+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T09:40:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM - 11:59 AM"
@@ -6586,18 +6566,6 @@
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:20 PM - 02:00 AM"
-    },
-    "PVHR_44785_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T07:01:08+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T07:10:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:40 AM - 09:34 AM"
     },
     "PVHR_44786_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",

@@ -826,17 +826,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:55 PM - 01:49 AM"
     },
-    "ACON_48549_20261106_PEARL": {
-      "category": "PEARL",
-      "date": "20261106",
-      "end": "2026-11-06T07:30:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.0,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "07:00 AM - 09:54 AM"
-    },
     "ACON_48550_20261106_PEARL": {
       "category": "PEARL",
       "date": "20261106",
@@ -1146,7 +1135,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "08:10 PM - 11:04 PM"
     },
@@ -4685,7 +4674,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:30 AM - 12:24 PM"
     },
@@ -4820,18 +4809,6 @@
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:45 PM - 02:39 AM"
-    },
-    "MCSK_16932_20261106_SPECIAL": {
-      "alerted_at": "2026-11-06T05:01:06+05:30",
-      "category": "SPECIAL",
-      "date": "20261106",
-      "end": "2026-11-06T07:30:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "07:00 AM - 09:54 AM"
     },
     "MCSK_16933_20261106_SPECIAL": {
       "category": "SPECIAL",
@@ -5271,7 +5248,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM - 03:24 PM"
     },
@@ -7069,14 +7046,14 @@
       "time": "03:40 PM - 06:29 PM"
     },
     "PVHR_44833_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:31:24+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T19:20:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:50 PM - 09:39 PM"
     },
@@ -8723,18 +8700,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM - 02:30 AM"
     },
-    "PVHR_44990_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T05:01:06+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T07:30:00+05:30",
-      "movie": "Ramayana",
-      "price": 89.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:00 AM - 10:40 AM"
-    },
     "PVHR_44991_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "CLASSIC",
@@ -8746,18 +8711,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM - 10:20 PM"
-    },
-    "PVHR_44992_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T05:01:06+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T07:30:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:00 AM - 09:54 AM"
     },
     "PVHR_44993_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T07:01:08+05:30",
@@ -8832,13 +8785,13 @@
       "time": "07:25 PM - 10:19 PM"
     },
     "PVHR_44999_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T07:31:24+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T10:00:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:30 AM - 12:24 PM"

@@ -54,7 +54,7 @@
       "movie": "Ramayana",
       "price": 84.0,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:05 PM - 02:45 AM"
     },
@@ -3170,7 +3170,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "08:15 PM - 11:09 PM"
     },
@@ -5328,18 +5328,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM - 02:25 AM"
     },
-    "MCSK_16947_20261106_SPECIAL": {
-      "alerted_at": "2026-11-06T17:40:50+05:30",
-      "category": "SPECIAL",
-      "date": "20261106",
-      "end": "2026-11-06T19:50:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "07:20 PM - 10:09 PM"
-    },
     "MCSK_16948_20261106_SPECIAL": {
       "alerted_at": "2026-11-06T17:31:25+05:30",
       "category": "SPECIAL",
@@ -6686,17 +6674,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:20 PM - 02:00 AM"
     },
-    "PVHR_44789_20261106_CLASSIC": {
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T19:50:00+05:30",
-      "movie": "Scene - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "07:20 PM - 10:14 PM"
-    },
     "PVHR_44790_20261106_CLASSIC": {
       "category": "CLASSIC",
       "date": "20261106",
@@ -7195,7 +7172,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -9018,7 +8995,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 AM - 10:40 AM"
     },

@@ -3782,14 +3782,14 @@
       "time": "10:50 PM - 02:30 AM"
     },
     "INTO_92651_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-06T10:31:21+05:30",
+      "alerted_at": "2026-11-06T18:51:01+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T09:30:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:00 AM - 11:54 AM"
     },
@@ -6777,18 +6777,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 PM - 12:49 AM"
     },
-    "PVHR_44783_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T17:50:49+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T18:45:00+05:30",
-      "movie": "Ramayana",
-      "price": 89.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:15 PM - 09:55 PM"
-    },
     "PVHR_44784_20261106_CLASSIC": {
       "alerted_at": "2026-11-06T12:20:48+05:30",
       "category": "CLASSIC",
@@ -6843,7 +6831,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:30 PM - 10:19 PM"
     },

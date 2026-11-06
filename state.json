@@ -62,7 +62,7 @@
     "ACON_48428_20261106_PEARL": {
       "category": "PEARL",
       "date": "20261106",
-      "end": "2026-11-06T13:20:00+05:30",
+      "end": "2026-11-06T13:25:00+05:30",
       "movie": "Mookuthi Amman 2 - Tamil",
       "price": 54.0,
       "soon_alerted": false,
@@ -953,14 +953,14 @@
       "time": "12:50 PM - 04:30 PM"
     },
     "CBMC_15547_20261106_NORMAL": {
-      "alerted_at": "2026-11-06T06:31:21+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "NORMAL",
       "date": "20261106",
       "end": "2026-11-06T19:15:00+05:30",
       "movie": "Ramayana",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "06:45 PM - 10:25 PM"
     },
@@ -1097,7 +1097,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:50 AM - 01:39 PM"
     },
@@ -1143,7 +1143,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:15 AM - 01:04 PM"
     },
@@ -2438,7 +2438,7 @@
     "CBMC_15756_20261110_NORMAL": {
       "category": "NORMAL",
       "date": "20261110",
-      "end": "2026-11-10T19:15:00+05:30",
+      "end": "2026-11-10T15:15:00+05:30",
       "movie": "Ramayana (Telugu) - Telugu",
       "price": 59.43,
       "soon_alerted": false,
@@ -2449,7 +2449,7 @@
     "CBMC_15757_20261110_NORMAL": {
       "category": "NORMAL",
       "date": "20261110",
-      "end": "2026-11-10T15:15:00+05:30",
+      "end": "2026-11-10T19:15:00+05:30",
       "movie": "Ramayana (Tamil) - Tamil",
       "price": 54.35,
       "soon_alerted": false,
@@ -2567,6 +2567,325 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:35 AM - 02:29 PM"
     },
+    "CBMC_15814_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T09:35:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "09:05 AM - 11:59 AM"
+    },
+    "CBMC_15815_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T12:45:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "12:15 PM - 03:04 PM"
+    },
+    "CBMC_15816_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T15:50:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "03:20 PM - 06:14 PM"
+    },
+    "CBMC_15817_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T19:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "06:30 PM - 09:24 PM"
+    },
+    "CBMC_15818_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T22:10:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "09:40 PM - 12:34 AM"
+    },
+    "CBMC_15819_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T10:00:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "09:30 AM - 12:19 PM"
+    },
+    "CBMC_15820_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T13:05:00+05:30",
+      "movie": "Jailer 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "12:35 PM - 03:45 PM"
+    },
+    "CBMC_15821_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T16:30:00+05:30",
+      "movie": "Jailer 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "04:00 PM - 07:10 PM"
+    },
+    "CBMC_15822_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T19:55:00+05:30",
+      "movie": "Jailer 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:25 PM - 10:35 PM"
+    },
+    "CBMC_15823_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T23:20:00+05:30",
+      "movie": "Jailer 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:50 PM - 02:00 AM"
+    },
+    "CBMC_15828_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T13:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "12:30 PM - 03:24 PM"
+    },
+    "CBMC_15829_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T16:10:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "03:40 PM - 06:29 PM"
+    },
+    "CBMC_15830_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T19:15:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "06:45 PM - 09:34 PM"
+    },
+    "CBMC_15831_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T22:20:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "09:50 PM - 12:39 AM"
+    },
+    "CBMC_15832_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T11:15:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:45 AM - 01:39 PM"
+    },
+    "CBMC_15833_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T14:25:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "01:55 PM - 04:44 PM"
+    },
+    "CBMC_15834_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T17:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "05:00 PM - 07:54 PM"
+    },
+    "CBMC_15835_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T20:40:00+05:30",
+      "movie": "Mookuthi Amman 2 - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "08:10 PM - 10:59 PM"
+    },
+    "CBMC_15836_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T23:45:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:15 PM - 02:09 AM"
+    },
+    "CBMC_15837_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T12:05:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "11:35 AM - 02:29 PM"
+    },
+    "CBMC_15838_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T19:15:00+05:30",
+      "movie": "Ramayana (Tamil) - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "06:45 PM - 10:25 PM"
+    },
+    "CBMC_15839_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T15:15:00+05:30",
+      "movie": "Ramayana (Telugu) - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "02:45 PM - 06:25 PM"
+    },
+    "CBMC_15840_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T23:15:00+05:30",
+      "movie": "Disco - Malayalam",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:45 PM - 01:48 AM"
+    },
+    "CBMC_15841_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T10:30:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:00 AM - 12:54 PM"
+    },
+    "CBMC_15842_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T13:40:00+05:30",
+      "movie": "Aadarsha Kutumbam House No: 47 (AK 47) - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "01:10 PM - 04:04 PM"
+    },
+    "CBMC_15843_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T16:50:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "04:20 PM - 07:14 PM"
+    },
+    "CBMC_15844_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T20:00:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:30 PM - 10:24 PM"
+    },
+    "CBMC_15845_20261111_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261111",
+      "end": "2026-11-11T23:10:00+05:30",
+      "movie": "Summer Holidays - Telugu",
+      "price": 59.43,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "10:40 PM - 01:11 AM"
+    },
+    "CBMC_15849_20261108_NORMAL": {
+      "category": "NORMAL",
+      "date": "20261108",
+      "end": "2026-11-08T08:15:00+05:30",
+      "movie": "Scene - Tamil",
+      "price": 54.35,
+      "soon_alerted": false,
+      "status": "0",
+      "theatre": "Cinepolis: BSR Mall, OMR",
+      "time": "07:45 AM - 10:39 AM"
+    },
     "INTO_92559_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261106",
@@ -2623,18 +2942,6 @@
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
     },
-    "INTO_92566_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T10:01:08+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261106",
-      "end": "2026-11-06T10:40:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "10:10 AM - 01:50 PM"
-    },
     "INTO_92567_20261106_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261106",
@@ -2659,14 +2966,14 @@
       "time": "12:20 PM - 04:00 PM"
     },
     "INTO_92569_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T20:20:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:50 PM - 11:30 PM"
     },
@@ -4665,7 +4972,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 01:39 AM"
     },
@@ -5040,14 +5347,14 @@
       "time": "02:35 PM - 06:15 PM"
     },
     "MCSK_16941_20261106_3D SPECIAL": {
-      "alerted_at": "2026-11-06T10:01:08+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "3D SPECIAL",
       "date": "20261106",
       "end": "2026-11-06T19:10:00+05:30",
       "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "06:40 PM - 10:20 PM"
     },
@@ -5252,7 +5559,7 @@
       "movie": "Ramayana",
       "price": 94.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "02:35 PM - 06:15 PM"
     },
@@ -5375,7 +5682,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "12:30 PM - 03:24 PM"
     },
@@ -6589,27 +6896,15 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 PM - 12:49 AM"
     },
-    "PVHR_44781_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T08:10:51+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T10:35:00+05:30",
-      "movie": "Ramayana",
-      "price": 89.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:05 AM - 01:45 PM"
-    },
     "PVHR_44782_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T14:40:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -6638,14 +6933,14 @@
       "time": "10:20 PM - 02:00 AM"
     },
     "PVHR_44787_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T13:30:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:00 PM - 03:54 PM"
     },
@@ -6768,13 +7063,13 @@
       "time": "10:40 PM - 01:29 AM"
     },
     "PVHR_44802_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T13:10:00+05:30",
       "movie": "Jailer 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:40 PM - 03:50 PM"
@@ -8841,27 +9136,15 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 PM - 10:20 PM"
     },
-    "PVHR_44993_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T10:10:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261106",
-      "end": "2026-11-06T10:40:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:10 AM - 01:04 PM"
-    },
     "PVHR_44994_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T09:31:20+05:30",
+      "alerted_at": "2026-11-06T10:40:51+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T13:50:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:20 PM - 04:14 PM"
     },

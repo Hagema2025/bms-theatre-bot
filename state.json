@@ -1114,7 +1114,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:20 PM - 02:09 AM"
     },
@@ -3002,14 +3002,14 @@
       "time": "10:45 PM - 02:25 AM"
     },
     "INTO_92565_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T22:01:14+05:30",
+      "alerted_at": "2026-11-06T22:40:55+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T23:25:00+05:30",
       "movie": "Udta Teer",
       "price": 59.43,
       "soon_alerted": true,
-      "status": "0",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:55 PM - 01:37 AM"
     },
@@ -3026,13 +3026,14 @@
       "time": "10:50 PM - 01:39 AM"
     },
     "INTO_92585_20261106_EXECUTIVE": {
+      "alerted_at": "2026-11-06T22:40:55+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-07T00:25:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:55 PM - 02:49 AM"
     },
@@ -3556,14 +3557,14 @@
       "time": "05:00 PM - 08:40 PM"
     },
     "INTO_92650_20261106_EXECUTIVE": {
-      "alerted_at": "2026-11-06T22:01:14+05:30",
+      "alerted_at": "2026-11-06T22:40:55+05:30",
       "category": "EXECUTIVE",
       "date": "20261106",
       "end": "2026-11-06T23:20:00+05:30",
       "movie": "Ramayana",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "10:50 PM - 02:30 AM"
     },
@@ -4745,13 +4746,14 @@
       "time": "09:35 AM - 12:24 PM"
     },
     "INTO_92758_20261110_EXECUTIVE": {
+      "alerted_at": "2026-11-06T22:40:55+05:30",
       "category": "EXECUTIVE",
       "date": "20261110",
       "end": "2026-11-10T13:05:00+05:30",
-      "movie": "Jailer 2 - Tamil",
+      "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "12:35 PM - 03:45 PM"
     },

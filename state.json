@@ -24,14 +24,14 @@
       "time": "10:15 PM - 01:04 AM"
     },
     "ACON_48435_20261106_PEARL 3D": {
-      "alerted_at": "2026-11-06T20:50:52+05:30",
+      "alerted_at": "2026-11-06T21:20:53+05:30",
       "category": "PEARL 3D",
       "date": "20261106",
       "end": "2026-11-06T23:35:00+05:30",
       "movie": "Ramayana",
       "price": 84.0,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "11:05 PM - 02:45 AM"
     },
@@ -4153,7 +4153,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:00 AM - 08:54 AM"
     },
@@ -5382,14 +5382,14 @@
       "time": "06:10 AM - 09:04 AM"
     },
     "MCSK_16973_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T17:20:54+05:30",
+      "alerted_at": "2026-11-06T21:20:53+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T09:50:00+05:30",
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "1",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "09:20 AM - 12:14 PM"
     },
@@ -5429,14 +5429,14 @@
       "time": "07:05 PM - 10:45 PM"
     },
     "MCSK_16977_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T18:31:28+05:30",
+      "alerted_at": "2026-11-06T21:20:53+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T23:35:00+05:30",
       "movie": "Ramayana",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "2",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:05 PM - 02:45 AM"
     },
@@ -6553,7 +6553,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:45 AM - 12:39 PM"
     },
@@ -7535,7 +7535,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:30 PM - 06:24 PM"
     },
@@ -7907,7 +7907,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },
@@ -8603,7 +8603,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:00 AM - 09:54 AM"
     },

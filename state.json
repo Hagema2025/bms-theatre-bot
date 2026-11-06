@@ -5449,13 +5449,14 @@
       "time": "07:00 AM - 09:54 AM"
     },
     "MCSK_16956_20261107_SPECIAL": {
+      "alerted_at": "2026-11-06T12:10:50+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T10:45:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:15 AM - 01:09 PM"
     },
@@ -6863,13 +6864,13 @@
       "time": "10:00 PM - 12:49 AM"
     },
     "PVHR_44782_20261106_CLASSIC": {
-      "alerted_at": "2026-11-06T11:50:48+05:30",
+      "alerted_at": "2026-11-06T12:10:50+05:30",
       "category": "CLASSIC",
       "date": "20261106",
       "end": "2026-11-06T14:40:00+05:30",
       "movie": "Ramayana",
       "price": 89.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
@@ -7060,7 +7061,7 @@
       "movie": "Summer Holidays",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "3",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:35 PM - 01:06 AM"
     },

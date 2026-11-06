@@ -3959,13 +3959,13 @@
       "time": "11:35 PM - 02:24 AM"
     },
     "INTO_92698_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-06T20:50:52+05:30",
+      "alerted_at": "2026-11-07T04:31:22+05:30",
       "category": "EXECUTIVE",
       "date": "20261107",
       "end": "2026-11-07T07:00:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM - 09:19 AM"
@@ -7283,7 +7283,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "06:40 AM - 09:34 AM"
     },

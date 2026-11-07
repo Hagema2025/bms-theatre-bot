@@ -895,6 +895,13 @@ async function getJson(folder, venue) {
     debugLog("HTTP OK:", r.ok);
 
     const text = await r.text();
+    debugLog("JSON FETCH TIME:", new Date().toISOString());
+debugLog("JSON CONTENT HAS 92612:",
+  text.includes('"92612"')
+);
+debugLog("JSON CONTENT HAS EXECUTIVE:",
+  text.includes('"EXECUTIVE"')
+);
 
     debugLog("RESPONSE:", text.slice(0, 500));
 
@@ -918,21 +925,49 @@ async function loadState(venue) {
     S.state[venue] = st;
   }
 }
+
+const trackingRequestId = {};
 async function loadTracking(venue) {
+  const requestId = (trackingRequestId[venue] || 0) + 1;
+  trackingRequestId[venue] = requestId;
+
   const tr = await getJson("tracking", venue);
+
+  // Ignore an older request if a newer request has started
+  if (requestId !== trackingRequestId[venue]) {
+    debugLog("IGNORED OLD TRACKING RESPONSE", {
+      venue,
+      requestId,
+      latestRequestId: trackingRequestId[venue]
+    });
+    return;
+  }
 
   if (tr !== null) {
     S.track[venue] = tr;
+    debugLog("FRONTEND TRACK CHECK:", {
+  show92612: S.track[venue]?.["20261107"]?.["92612"],
+  time: new Date().toISOString()
+});
 
-    debugLog("TRACKING DATA CHECK", {
+    debugLog("TRACKING DATA UPDATED", {
       venue,
-      date: "20261107",
+      requestId,
+      fetchedAt: new Date().toISOString(),
+      show92612: tr["20261107"]?.["92612"],
       show92670: tr["20261107"]?.["92670"],
       show92785: tr["20261107"]?.["92785"],
       ids: Object.keys(tr["20261107"] || {})
     });
+  } else {
+    debugLog("TRACKING FETCH FAILED", {
+      venue,
+      requestId,
+      time: new Date().toISOString()
+    });
   }
 }
+
 async function load(venue) { await Promise.all([loadState(venue), loadTracking(venue)]); }
 
 const trackOf = (v, d, s) => (((S.track[v] || {})[d] || {})[s]) || {};
@@ -1023,14 +1058,32 @@ function pending(v, d, s) {
 function prunePending() {
   const all = store.get("pend", {});
   let changed = false;
+
   for (const [key, p] of Object.entries(all)) {
     const [v, d, id] = key.split("_");
-    const expired = Date.now() - p.ts > PENDING_MIN * 60000;
-    if (expired || (S.track[v] && confirmed(p, trackOf(v, d, id)))) { delete all[key]; changed = true; }
+
+    const expired =
+      Date.now() - p.ts > PENDING_MIN * 60000;
+
+    const t = trackOf(v, d, id);
+    const isConfirmed = !!S.track[v] && confirmed(p, t);
+
+    debugLog("PENDING STATUS:", {
+      key,
+      expired,
+      isConfirmed,
+      savedTracking: t
+    });
+
+    if (expired || isConfirmed) {
+      delete all[key];
+      changed = true;
+      debugLog("PENDING REMOVED:", key);
+    }
   }
+
   if (changed) store.set("pend", all);
 }
-
 // ── Category tracking selection ──────────────────────────
 let categorySelection = null;
 
@@ -1193,14 +1246,17 @@ function renderDates() {
 
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
-  const pend = store.get("pend", {})[key];
 
-  if (pend && Date.now() - pend.ts <= PENDING_MIN * 60000) {
-    const intent = pend.intent;
+  // Check whether the bot has confirmed the request
+  const pendingAction = pending(v, d, id);
+
+  if (pendingAction) {
+    const pend = store.get("pend", {})[key];
+    const intent = pend?.intent;
 
     let label = "Waiting for confirmation";
 
-    if (pend.a === "trk" && intent) {
+    if (pendingAction === "trk" && intent) {
       if (intent.mode === "manual") {
         label = `Saving · ${intent.categories.join(", ")}`;
       } else if (intent.mode === "budget") {
@@ -1208,7 +1264,7 @@ function button(v, d, id, show) {
       } else {
         label = "Saving · All Categories";
       }
-    } else if (pend.a === "unt") {
+    } else if (pendingAction === "unt") {
       label = "Stopping tracking";
     }
 
@@ -1217,6 +1273,7 @@ function button(v, d, id, show) {
     </button>`;
   }
 
+  // Once confirmed, immediately show the saved tracking state
   if (isTracked(v, d, id)) {
     return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
             <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;

@@ -1067,6 +1067,7 @@ function prunePending() {
 
 // ── Category tracking selection ──────────────────────────
 let categorySelection = null;
+let batchSelection = [];
 
 function notify(msg) {
   if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg);
@@ -1105,7 +1106,59 @@ function openCategoryPicker(v, d, id, show) {
   updateCategoryMode();
   $("category-overlay").hidden = false;
 }
+function openBatchCategoryPicker() {
+  const shows = [];
 
+  for (const key of S.selected) {
+    const [v, d, id] = key.split("_");
+    const show = ((S.state[v] || {})[d] || {})[id];
+
+    if (!show || isTracked(v, d, id) || closed(show) || pending(v, d, id)) {
+      continue;
+    }
+
+    const classes = Object.entries(show.classes || {})
+      .filter(([name, c]) => name && Number(c.price) > 0);
+
+    if (classes.length) {
+      shows.push({ v, d, id, show, classes });
+    }
+  }
+
+  if (!shows.length) {
+    return notify("No eligible shows selected.");
+  }
+
+  batchSelection = shows;
+
+  const categoryMap = new Map();
+
+  shows.forEach(item => {
+    item.classes.forEach(([name]) => {
+      categoryMap.set(name, (categoryMap.get(name) || 0) + 1);
+    });
+  });
+
+  $("category-sub").textContent =
+    `${shows.length} shows selected · Same selection for all`;
+
+  document.querySelectorAll('input[name="track-mode"]')
+    .forEach(i => i.checked = i.value === "all");
+
+  $("category-budget").value = "";
+
+  $("category-options").innerHTML =
+    [...categoryMap.entries()].map(([name, count]) => `
+      <label class="category-check">
+        <input type="checkbox" value="${esc(name)}">
+        <span>${esc(name)}</span>
+        <small class="category-price">${count}/${shows.length} shows</small>
+      </label>
+    `).join("");
+
+  updateCategoryMode();
+  $("category-overlay").hidden = false;
+}
 function updateCategoryMode() {
   const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
   $("budget-area").hidden = mode !== "budget";
@@ -1490,6 +1543,8 @@ document.addEventListener("click", async e => {
 
 if (t.id === "batch-continue") {
   notify(`${S.selected.size} shows selected. Next, we'll add the shared category selection.`);
+    openBatchCategoryPicker();
+
   return;
 }
 });

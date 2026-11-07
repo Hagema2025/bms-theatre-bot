@@ -736,6 +736,40 @@ main { gap: 13px; }
   box-shadow: inset 0 0 0 1px rgba(186, 204, 232, 0.15);
   font-size: 16px; 
 }
+
+/* Multi-show selection */
+.show-select {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+.show-select input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+.batch-bar {
+  position: sticky;
+  bottom: 12px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin: 0 auto 16px;
+  width: calc(100% - 36px);
+  max-width: 724px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #182438;
+  box-shadow: 0 8px 25px #0008;
+}
+.batch-bar[hidden] { display: none; }
+.batch-count { flex: 1; font-size: 12px; color: var(--muted); }
+
 </style>
 </head>
 <body>
@@ -823,6 +857,12 @@ main { gap: 13px; }
 
 <main id="list"></main>
 
+<div class="batch-bar" id="batch-bar" hidden>
+  <span class="batch-count" id="batch-count">0 shows selected</span>
+  <button class="btn off" id="batch-clear" type="button">Clear</button>
+  <button class="btn" id="batch-continue" type="button">Track Selected</button>
+</div>
+
 <script>
 
 // Set to true only while debugging. It shows a green log panel to the user.
@@ -881,7 +921,9 @@ const S = {
   venue: store.get("venue", "INTO"),
   date: null,
   state: {}, track: {}, updated: {}, failed: {},
-  filters: { ...EMPTY_FILTERS }
+  filters: { ...EMPTY_FILTERS },
+    selected: new Set()
+
 };
 if (!THEATRES[S.venue]) S.venue = "INTO";
 
@@ -1279,8 +1321,21 @@ function renderList() {
     const classes = Object.entries(s.classes || {}).map(([name, c]) => `
       <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
+    const key = `${v}_${S.date}_${id}`;
+const canSelect = !isTracked(v, S.date, id)
+  && !closed(s)
+  && !pending(v, S.date, id);
+
+const selectBox = canSelect ? `
+  <label class="show-select">
+    <input type="checkbox"
+      data-select-key="${key}"
+      ${S.selected.has(key) ? "checked" : ""}>
+    Select show
+  </label>` : "";
 
     return `<article class="show">
+    ${selectBox}
       <div class="show-header">
         ${posterImg}
         <div class="show-info">
@@ -1310,6 +1365,7 @@ function renderList() {
   setHtml(el, html);
   tickCountdown();
   updateFilterUI();
+  updateBatchUI();
 }
 
 function renderUpdated() {
@@ -1319,6 +1375,7 @@ function renderUpdated() {
   el.textContent = m < 1 ? "Data Updated just now" : m < 60 ? `Data Updated ${m} min ago` : `Data Updated ${Math.round(m / 60)} h ago`;
 }
 
+
 function renderAll() {
   renderVenues();
   renderDates();
@@ -1327,6 +1384,14 @@ function renderAll() {
   renderUpdated();
 }
 
+function updateBatchUI() {
+  const count = S.selected.size;
+
+  $("batch-bar").hidden = count === 0;
+
+  $("batch-count").textContent =
+    `${count} show${count === 1 ? "" : "s"} selected`;
+}
 function updateFilterUI() {
   const n = Object.values(S.filters).filter(Boolean).length;
   $("filter-clear-quick").hidden = n === 0;
@@ -1417,6 +1482,16 @@ document.addEventListener("click", async e => {
     store.set("pend", all);
     renderList();
   }
+  if (t.id === "batch-clear") {
+  S.selected.clear();
+  renderList();
+  return;
+}
+
+if (t.id === "batch-continue") {
+  notify(`${S.selected.size} shows selected. Next, we'll add the shared category selection.`);
+  return;
+}
 });
 
 document.addEventListener("change", e => {
@@ -1425,6 +1500,18 @@ document.addEventListener("change", e => {
     S.filters[e.target.id.replace("filter-", "")] = e.target.value;
     renderList();
   }
+  if (e.target.matches("[data-select-key]")) {
+  const key = e.target.dataset.selectKey;
+
+  if (e.target.checked) {
+    S.selected.add(key);
+  } else {
+    S.selected.delete(key);
+  }
+
+  updateBatchUI();
+  return;
+}
 });
 
 document.addEventListener("keydown", e => {

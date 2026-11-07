@@ -1042,8 +1042,20 @@ function openCategoryPicker(v, d, id, show) {
   const classes = Object.entries(show.classes || {}).filter(([name, c]) => name && Number(c.price) > 0);
   if (!classes.length) return notify("No seat categories are available.");
 
-  const t = trackOf(v, d, id);
-  const saved = t.tracked ? { mode: t.mode, max_price: t.max_price, categories: t.categories } : {};
+const key = `${v}_${d}_${id}`;
+const pend = store.get("pend", {})[key];
+
+const t = trackOf(v, d, id);
+
+const saved = pend && Date.now() - pend.ts <= PENDING_MIN * 60000
+  ? (pend.intent || {})
+  : t.tracked
+    ? {
+        mode: t.mode || "all",
+        max_price: t.max_price,
+        categories: t.categories || []
+      }
+    : {};
   categorySelection = { v, d, id, show, classes };
 
   $("category-sub").textContent = `${show.movie || "Show"} · ${show.time || ""}`;
@@ -1181,14 +1193,39 @@ function renderDates() {
 
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
-  if (pending(v, d, id)) {
-    return `<button class="btn off" disabled data-wait="${key}">🟡 Waiting for confirmation · <span class="cd"></span></button>`;
+  const pend = store.get("pend", {})[key];
+
+  if (pend && Date.now() - pend.ts <= PENDING_MIN * 60000) {
+    const intent = pend.intent;
+
+    let label = "Waiting for confirmation";
+
+    if (pend.a === "trk" && intent) {
+      if (intent.mode === "manual") {
+        label = `Saving · ${intent.categories.join(", ")}`;
+      } else if (intent.mode === "budget") {
+        label = `Saving · Under ₹${intent.max_price}`;
+      } else {
+        label = "Saving · All Categories";
+      }
+    } else if (pend.a === "unt") {
+      label = "Stopping tracking";
+    }
+
+    return `<button class="btn off" disabled data-wait="${key}">
+      🟡 ${esc(label)} · <span class="cd"></span>
+    </button>`;
   }
+
   if (isTracked(v, d, id)) {
     return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
             <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;
   }
-  if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
+
+  if (closed(show)) {
+    return `<button class="btn off" disabled>Tracking closed</button>`;
+  }
+
   return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
 }
 

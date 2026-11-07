@@ -893,40 +893,35 @@ function sameSet(a, b) {
 // Has the bot's saved data caught up with what the user asked for?
 // Has the bot's saved data caught up with what the user asked for?
 function confirmed(p, t) {
-  // 1. If untracking, wait for it to be removed
   if (p.a === "unt") return !t.tracked;
-  
-  // 2. If tracking, wait for tracked to become true
+
   if (!t.tracked) return false;
-  
+
   const i = p.intent;
   if (!i) return true;
-  
-  // 3. Verify the mode matches our edit
+
   const tMode = t.mode || "all";
+
   if (tMode !== i.mode) return false;
-  
-  // 4. Verify the budget price matches (Number() ensures 150.0 === 150)
+
   if (i.mode === "budget") {
-    if (Number(t.max_price) !== Number(i.max_price)) return false;
+    return Math.abs(
+      Number(t.max_price) - Number(i.max_price)
+    ) < 0.01;
   }
-  
-  // 5. Verify the manual categories match perfectly
+
   if (i.mode === "manual") {
-    const tCats = Array.isArray(t.categories) ? t.categories : [];
-    const iCats = Array.isArray(i.categories) ? i.categories : [];
-    
-    if (tCats.length !== iCats.length) return false;
-    
-    // Sort and join to safely compare arrays regardless of order
-    const tStr = [...tCats].sort().join("|");
-    const iStr = [...iCats].sort().join("|");
-    if (tStr !== iStr) return false;
-  }
-  
-  return true; // Everything matches! The bot has completed the edit.
+  const tCats = Array.isArray(t.categories) ? t.categories : [];
+  const iCats = Array.isArray(i.categories) ? i.categories : [];
+
+  const normalize = cats => [...new Set(cats)].sort();
+
+  return JSON.stringify(normalize(tCats)) ===
+         JSON.stringify(normalize(iCats));
 }
 
+  return true;
+}
 function pending(v, d, s) {
   const p = store.get("pend", {})[`${v}_${d}_${s}`];
   if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;

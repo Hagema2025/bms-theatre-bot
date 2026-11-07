@@ -582,8 +582,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-07T21:20:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-07T21:31:28+05:30"
     },
     "PRIME": {
      "first_seen_status": "2",
@@ -2092,8 +2092,10 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-07T21:31:28+05:30",
      "soon_alerted": false,
-     "status": "2"
+     "status": "0",
+     "status_changed_at": "2026-11-07T21:31:28+05:30"
     },
     "PRIME": {
      "first_seen_status": "1",
@@ -7809,5 +7811,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-07T21:20:51+05:30"
+ "_updated": "2026-11-07T21:31:28+05:30"
 }

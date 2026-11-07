@@ -74,9 +74,11 @@
     },
     "92784": {
       "tracked": true,
-      "mode": "all",
+      "mode": "manual",
       "max_price": null,
-      "categories": [],
+      "categories": [
+        "EXECUTIVE"
+      ],
       "user_id": 8344846885,
       "movie": "Scene",
       "time": "11:45 PM",
@@ -84,7 +86,7 @@
       "message_thread_id": 501,
       "summary_msg_id": 503,
       "status_msg_id": 504,
-      "updated": "2026-11-07T22:51:37.749164+05:30"
+      "updated": "2026-11-07T22:51:58.660015+05:30"
     }
   }
 }

@@ -147,7 +147,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "NORMAL": {
@@ -209,46 +209,6 @@
    "time": "08:30 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15611/20261107"
-  },
-  "15619": {
-   "censor": "UA 7+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 202.49,
-     "sold_out_at": "2026-11-07T20:40:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-07T20:40:51+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 59.43,
-     "reopened_at": "2026-11-07T19:20:53+05:30",
-     "sold_out_at": "2026-11-07T20:40:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-07T20:40:51+05:30"
-    }
-   },
-   "cutoff": "2026-11-07T20:30:00+05:30",
-   "dimension": "2D",
-   "duration": 126,
-   "end": "2026-11-07T20:45:00+05:30",
-   "event_code": "ET00524282",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Adventure,Drama,Kids",
-   "language": "Telugu",
-   "movie": "Summer Holidays",
-   "poster": "summer-holidays-et00524282-1793080177",
-   "screen": "AUDI08",
-   "start": "2026-11-07T20:15:00+05:30",
-   "tags": [],
-   "time": "08:15 PM",
-   "trailer": "https://www.youtube.com/watch?v=l7ojGbmxtr0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15619/20261107"
   },
   "15622": {
    "censor": "UA16+",
@@ -5870,5 +5830,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15863/20261111"
   }
  },
- "_updated": "2026-11-07T20:40:51+05:30"
+ "_updated": "2026-11-07T20:50:49+05:30"
 }

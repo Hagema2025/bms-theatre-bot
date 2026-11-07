@@ -994,29 +994,29 @@ function confirmed(p, t) {
 }
 
 
+
 function pending(v, d, s) {
   const key = `${v}_${d}_${s}`;
-  const p = store.get("pend", {})[key];
+  const all = store.get("pend", {});
+  const p = all[key];
 
   if (!p) return null;
 
   const t = trackOf(v, d, s);
 
-  debugLog("PENDING LOOKUP", {
-    key,
-    pending: p,
-    venueExists: !!S.track[v],
-    dateExists: !!S.track[v]?.[d],
-    showExists: !!S.track[v]?.[d]?.[s],
-    actualEntry: t
-  });
-
   if (Date.now() - p.ts > PENDING_MIN * 60000) {
-    debugLog("Pending expired:", key);
+    delete all[key];
+    store.set("pend", all);
     return null;
   }
 
-  return confirmed(p, t) ? null : p.a;
+  if (confirmed(p, t)) {
+    delete all[key];
+    store.set("pend", all);
+    return null;
+  }
+
+  return p.a;
 }
 
 
@@ -1371,21 +1371,39 @@ function updateFilterUI() {
 }
 
 // ── Actions ───────────────────────────────────────────────
+
 function press(action, key, extra = "", intent = null) {
   const [v, d, id] = key.split("_");
   const pend = store.get("pend", {});
-  pend[key] = { a: action, ts: Date.now(), intent };
+
+  debugLog("========== NEW REQUEST ==========");
+  debugLog("Key:", key);
+  debugLog("Action:", action);
+  debugLog("New intent:", intent);
+  debugLog("Existing pending:", pend[key]);
+  debugLog("Current tracking:", trackOf(v, d, id));
+
+  pend[key] = {
+    a: action,
+    ts: Date.now(),
+    intent
+  };
+
   store.set("pend", pend);
- 
-  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
-  if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
-   debugLog("========== TELEGRAM TRACK LINK ==========");
-debugLog("Action:", action);
-debugLog("Key:", key);
-debugLog("Extra:", extra);
-debugLog("Intent:", intent);
-debugLog("Generated URL:", link);
+
+  const link =
+    `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}` +
+    (extra ? "_" + extra : "");
+
+  debugLog("Generated Telegram URL:", link);
+
   renderList();
+
+  if (tg && tg.openTelegramLink) {
+    tg.openTelegramLink(link);
+  } else {
+    window.open(link, "_blank");
+  }
 }
 
 function clearFilters() {

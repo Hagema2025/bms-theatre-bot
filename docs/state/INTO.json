@@ -1,40 +1,5 @@
 {
  "20261107": {
-  "92596": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-07T20:15:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-07T20:00:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 7",
-   "start": "2026-11-07T19:30:00+05:30",
-   "tags": [],
-   "time": "07:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92596/20261107"
-  },
   "92597": {
    "censor": "UA16+",
    "classes": {
@@ -196,10 +161,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 218.8,
      "reopened_at": "2026-11-07T19:50:51+05:30",
-     "sold_out_at": "2026-11-07T19:40:52+05:30",
+     "sold_out_at": "2026-11-07T20:01:09+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-07T19:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-07T20:01:09+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -265,44 +230,6 @@
    "time": "11:55 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92655/20261107"
-  },
-  "92669": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "1"
-    }
-   },
-   "cutoff": "2026-11-07T20:15:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-07T20:00:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 2",
-   "start": "2026-11-07T19:30:00+05:30",
-   "tags": [
-    "Atmos",
-    "ENG subs"
-   ],
-   "time": "07:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92669/20261107"
   },
   "92670": {
    "censor": "U",
@@ -387,7 +314,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-07T20:01:09+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -498,8 +426,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-07T20:01:09+05:30",
      "soon_alerted": true,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-07T20:01:09+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -720,7 +650,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-07T20:01:09+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -6256,5 +6187,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-07T19:50:51+05:30"
+ "_updated": "2026-11-07T20:01:09+05:30"
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Budget seats</title>
+<title>Ticket Alerts</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
 
@@ -662,34 +662,37 @@ main { gap: 13px; }
   .category-panel { border-radius:24px; }
 }
 
-/* ── Movie Poster & New Info Styles ─────────────────────── */
+/* ── Mobile-Optimized Grid Layout ─────────────────────── */
 .show-header {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 85px 1fr; /* Locks poster width to 85px, text takes the rest */
+  gap: 15px;
+  align-items: start;
 }
 .poster {
-  width: 72px;
-  height: 106px;
+  width: 100%;
+  aspect-ratio: 2 / 3; /* Maintains perfect movie poster proportions */
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   background: rgba(255,255,255,0.03);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  flex: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .show-info {
-  flex: 1;
-  min-width: 0; /* Prevents text overflow */
-}
-.show-time {
-  text-align: right;
-  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .movie-title-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 7px;
-  flex-wrap: wrap;
+}
+.movie {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 .censor-badge {
   font-size: 9px;
@@ -698,13 +701,31 @@ main { gap: 13px; }
   border: 1px solid rgba(186, 204, 232, 0.2);
   border-radius: 5px;
   color: #a5b2c4;
-  line-height: 1;
+  line-height: 1.2;
+  margin-top: 1px;
 }
 .genre {
   color: var(--muted);
   font-size: 11px;
-  margin-top: 3px;
   font-weight: 500;
+}
+/* New Time Row integrated into the info column */
+.show-time-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,255,255,0.08);
+}
+.time {
+  font-size: 16px;
+  font-weight: 850;
+  color: var(--accent-2);
+}
+.dur {
+  font-size: 11px;
+  color: var(--muted);
 }
 .btn.trailer {
   flex: none;
@@ -713,23 +734,22 @@ main { gap: 13px; }
   background: rgba(255,255,255,0.05);
   color: #edf2f8;
   box-shadow: inset 0 0 0 1px rgba(186, 204, 232, 0.15);
-  font-size: 16px; /* Size for the play icon */
+  font-size: 16px; 
 }
-
 </style>
 </head>
 <body>
 <header>
-  <div class="brand"><div class="brand-mark" aria-hidden="true">B</div><div><h1>Budget Seats</h1><div class="subhead">Find the best seats before they’re gone</div></div></div>
+  <div class="brand">
+    <!-- Changed 'B' to a Ticket Emoji for a modern feel -->
+    <div class="brand-mark" aria-hidden="true">🎫</div>
+    <div>
+      <h1>Ticket Alerts</h1>
+      <div class="subhead">Track any seat category and get notified instantly</div>
+    </div>
+  </div>
   <div id="upd"></div>
 </header>
-<div class="nav-wrap">
-  <div class="nav-label">Choose a theatre</div>
-  <nav class="row" id="venues" aria-label="Theatres"></nav>
-  <div class="nav-label">Select a date</div>
-  <nav class="row" id="dates" aria-label="Dates"></nav>
-</div>
-
 <div class="filter-bar">
   <button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
   <button type="button" class="filter-clear-quick" id="filter-clear-quick" hidden>✕ Clear</button>
@@ -1126,6 +1146,7 @@ function renderList() {
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
     
     // --- NEW: Updated Layout ---
+    // --- NEW: Grid Optimized Layout ---
     return `<article class="show">
       <div class="show-header">
         ${posterImg}
@@ -1137,10 +1158,11 @@ function renderList() {
           ${genre}
           <div class="meta">${meta}</div>
           ${tags ? `<div class="tags">${tags}</div>` : ""}
-        </div>
-        <div class="show-time">
-          <div class="time">${esc(s.time)}</div>
-          <div class="dur">${dur}</div>
+          
+          <div class="show-time-row">
+            <div class="time">${esc(s.time)}</div>
+            <div class="dur">${dur}</div>
+          </div>
         </div>
       </div>
       <div class="classes">${classes}</div>

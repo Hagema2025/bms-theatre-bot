@@ -85,7 +85,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SECOND CLASS 3D": {
@@ -155,8 +155,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-07T22:01:09+05:30",
      "soon_alerted": true,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "0",
@@ -231,7 +233,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SECOND CLASS": {
@@ -270,7 +272,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SECOND CLASS": {
@@ -1499,7 +1501,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     }
    },
    "cutoff": "2026-11-08T11:40:00+05:30",
@@ -1529,7 +1532,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     }
    },
    "cutoff": "2026-11-08T18:00:00+05:30",
@@ -2071,8 +2075,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-07T21:50:53+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     }
    },
    "cutoff": "2026-11-08T10:40:00+05:30",
@@ -3404,8 +3408,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-07T22:01:09+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     }
    },
    "cutoff": "2026-11-09T09:20:00+05:30",
@@ -4005,8 +4011,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-07T22:01:09+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-07T22:01:09+05:30"
     }
    },
    "cutoff": "2026-11-09T10:25:00+05:30",
@@ -5380,7 +5388,67 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242088/20261109"
+  },
+  "242089": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T22:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-09T09:10:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-09T09:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-07T22:01:09+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 13",
+   "start": "2026-11-09T09:00:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "09:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242089/20261109"
+  },
+  "242090": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T22:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-09T08:10:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-09T08:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-07T22:01:09+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 4",
+   "start": "2026-11-09T08:00:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "08:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242090/20261109"
   }
  },
- "_updated": "2026-11-07T21:50:53+05:30"
+ "_updated": "2026-11-07T22:01:09+05:30"
 }

@@ -252,35 +252,14 @@
    "time": "06:40 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15615/20261107"
   },
-  "15617": {
-   "classes": {
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T12:18:30+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-07T15:10:00+05:30",
-   "language": "Telugu",
-   "movie": "Ramayana",
-   "screen": "AUDI07",
-   "start": "2026-11-07T14:40:00+05:30",
-   "tags": [],
-   "time": "02:40 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/15617/20261107"
-  },
   "15618": {
    "classes": {
     "NORMAL": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 59.43,
-     "soon_alerted": false,
-     "status": "2"
+     "soon_alerted": true,
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -2949,5 +2928,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15863/20261111"
   }
  },
- "_updated": "2026-11-07T14:50:51+05:30"
+ "_updated": "2026-11-07T15:10:50+05:30"
 }

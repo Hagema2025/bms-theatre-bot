@@ -1,33 +1,5 @@
 {
  "20261107": {
-  "16958": {
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T17:10:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "SCREEN 1",
-   "start": "2026-11-07T16:40:00+05:30",
-   "tags": [],
-   "time": "04:40 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/16958/20261107"
-  },
   "16959": {
    "classes": {
     "EXECUTIVE": {
@@ -175,7 +147,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "SPECIAL": {
      "first_seen_status": "0",
@@ -202,14 +174,14 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SPECIAL": {
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 59.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2"
     }
    },
@@ -296,7 +268,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "0"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -625,7 +597,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "SPECIAL": {
      "first_seen_status": "0",
@@ -935,7 +907,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "SPECIAL": {
      "first_seen_status": "0",
@@ -2529,5 +2501,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MCSK/17061/20261111"
   }
  },
- "_updated": "2026-11-07T17:01:09+05:30"
+ "_updated": "2026-11-07T17:10:49+05:30"
 }

@@ -125,7 +125,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "1"
+     "status": "0"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -176,37 +176,6 @@
    "time": "05:00 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92637/20261107"
   },
-  "92653": {
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "0"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T17:05:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "SCREEN 3",
-   "start": "2026-11-07T16:35:00+05:30",
-   "tags": [
-    "Atmos",
-    "ENG"
-   ],
-   "time": "04:35 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92653/20261107"
-  },
   "92654": {
    "classes": {
     "CLUB": {
@@ -214,7 +183,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 218.8,
      "soon_alerted": false,
-     "status": "0"
+     "status": "1"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -840,7 +809,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "1"
+     "status": "2"
     },
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -1658,7 +1627,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -5143,5 +5112,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-07T17:01:09+05:30"
+ "_updated": "2026-11-07T17:10:49+05:30"
 }

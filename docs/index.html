@@ -745,14 +745,15 @@ main { gap: 13px; }
 
 <script>
 // ── Settings ──────────────────────────────────────────────
-const BOT = "Bms_ticketAlert_bot";   // username of the bot that handles Track (no @)
-const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
-const PENDING_MIN = 1;                    // how long a press shows as "Waiting" before we stop assuming
+const BOT = "Bms_ticketAlert_bot";
+const CUTOFF_MIN = 10;
+const PENDING_MIN = 1;   // how long to wait for the bot to confirm
 const THEATRES = {
   INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
 };
 const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
+const EMPTY_FILTERS = { movie: "", language: "", dimension: "", screen: "", time: "" };
 
 // ── State ─────────────────────────────────────────────────
 const tg = window.Telegram && window.Telegram.WebApp;
@@ -765,20 +766,13 @@ const store = {
 const S = {
   venue: store.get("venue", "INTO"),
   date: null,
-  state: {},
-  track: {},
-  updated: {},
-  failed: {},
-  filters: {
-    movie: "",
-    language: "",
-    dimension: "",
-    screen: "",
-    time: ""
-  }
-};if (!THEATRES[S.venue]) S.venue = "INTO";
+  state: {}, track: {}, updated: {}, failed: {},
+  filters: { ...EMPTY_FILTERS }
+};
+if (!THEATRES[S.venue]) S.venue = "INTO";
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const $ = id => document.getElementById(id);
 
 // ── Data ──────────────────────────────────────────────────
 const DATA_BASE = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot/data/docs";
@@ -794,118 +788,112 @@ async function getJson(folder, venue) {
 async function loadState(venue) {
   const st = await getJson("state", venue);
   S.failed[venue] = st === null;
-
   if (st) {
     S.updated[venue] = st._updated;
     delete st._updated;
     S.state[venue] = st;
   }
 }
-
 async function loadTracking(venue) {
   const tr = await getJson("tracking", venue);
   if (tr !== null) S.track[venue] = tr;
 }
+async function load(venue) { await Promise.all([loadState(venue), loadTracking(venue)]); }
 
-async function load(venue) {
-  await Promise.all([
-    loadState(venue),
-    loadTracking(venue)
-  ]);
+const trackOf = (v, d, s) => (((S.track[v] || {})[d] || {})[s]) || {};
+const isTracked = (v, d, s) => !!trackOf(v, d, s).tracked;
+
+// ── Pending (waiting for bot) ─────────────────────────────
+function sameSet(a, b) {
+  a = a || []; b = b || [];
+  return a.length === b.length && [...a].sort().join("|") === [...b].sort().join("|");
 }
-const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
+
+// Has the bot's saved data caught up with what the user asked for?
+function confirmed(p, t) {
+  if (p.a === "unt") return !t.tracked;
+  if (!t.tracked) return false;
+  const i = p.intent;
+  if (!i) return true;
+  if ((t.mode || "all") !== i.mode) return false;
+  if (i.mode === "budget" && Number(t.max_price) !== i.max_price) return false;
+  if (i.mode === "manual" && !sameSet(t.categories, i.categories)) return false;
+  return true;
+}
+
+function pending(v, d, s) {
+  const p = store.get("pend", {})[`${v}_${d}_${s}`];
+  if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
+  if (!S.track[v]) return p.a;                 // tracking data not loaded yet
+  return confirmed(p, trackOf(v, d, s)) ? null : p.a;
+}
+
+function prunePending() {
+  const all = store.get("pend", {});
+  let changed = false;
+  for (const [key, p] of Object.entries(all)) {
+    const [v, d, id] = key.split("_");
+    const expired = Date.now() - p.ts > PENDING_MIN * 60000;
+    if (expired || (S.track[v] && confirmed(p, trackOf(v, d, id)))) { delete all[key]; changed = true; }
+  }
+  if (changed) store.set("pend", all);
+}
 
 // ── Category tracking selection ──────────────────────────
-
 let categorySelection = null;
-
-function selectionKey(v, d, id) {
-  return `${v}_${d}_${id}`;
-}
-
-function openCategoryPicker(v, d, id, show) {
-  const classes = Object.entries(show.classes || {})
-    .filter(([name, c]) => name && Number(c.price) > 0);
-
-  if (!classes.length) {
-    alert("No seat categories are available.");
-    return;
-  }
-
-  const key = selectionKey(v, d, id);
-  const t = (((S.track[v] || {})[d] || {})[id]) || {};
-const saved = t.tracked
-  ? { mode: t.mode, max_price: t.max_price, categories: t.categories }
-  : {};
-
-  categorySelection = { v, d, id, show, classes };
-
-  document.getElementById("category-sub").textContent =
-    `${show.movie || "Show"} · ${show.time || ""}`;
-
-  document.querySelectorAll('input[name="track-mode"]').forEach(input => {
-    input.checked = input.value === (saved.mode || "all");
-  });
-
-  document.getElementById("category-budget").value =
-    saved.max_price ?? "";
-
-  const selected = saved.categories || [];
-
-  document.getElementById("category-options").innerHTML =
-    classes.map(([name, c]) => `
-      <label class="category-check">
-        <input type="checkbox"
-          value="${esc(name)}"
-          ${selected.includes(name) ? "checked" : ""}>
-        <span>${esc(name)}</span>
-        <small class="category-price">₹${esc(c.price)}</small>
-      </label>
-    `).join("");
-
-  updateCategoryMode();
-
-  document.getElementById("category-overlay").hidden = false;
-}
-
-function updateCategoryMode() {
-  const mode = document.querySelector(
-    'input[name="track-mode"]:checked'
-  )?.value || "all";
-
-  document.getElementById("budget-area").hidden = mode !== "budget";
-  document.getElementById("manual-area").hidden = mode !== "manual";
-}
-
-function closeCategoryPicker() {
-  document.getElementById("category-overlay").hidden = true;
-  categorySelection = null;
-}
 
 function notify(msg) {
   if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg);
 }
 
+function openCategoryPicker(v, d, id, show) {
+  const classes = Object.entries(show.classes || {}).filter(([name, c]) => name && Number(c.price) > 0);
+  if (!classes.length) return notify("No seat categories are available.");
+
+  const t = trackOf(v, d, id);
+  const saved = t.tracked ? { mode: t.mode, max_price: t.max_price, categories: t.categories } : {};
+  categorySelection = { v, d, id, show, classes };
+
+  $("category-sub").textContent = `${show.movie || "Show"} · ${show.time || ""}`;
+  document.querySelectorAll('input[name="track-mode"]').forEach(i => {
+    i.checked = i.value === (saved.mode || "all");
+  });
+  $("category-budget").value = saved.max_price ?? "";
+  const selected = saved.categories || [];
+  $("category-options").innerHTML = classes.map(([name, c]) => `
+    <label class="category-check">
+      <input type="checkbox" value="${esc(name)}" ${selected.includes(name) ? "checked" : ""}>
+      <span>${esc(name)}</span><small class="category-price">₹${esc(c.price)}</small>
+    </label>`).join("");
+  updateCategoryMode();
+  $("category-overlay").hidden = false;
+}
+
+function updateCategoryMode() {
+  const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
+  $("budget-area").hidden = mode !== "budget";
+  $("manual-area").hidden = mode !== "manual";
+}
+
+function closeCategoryPicker() {
+  $("category-overlay").hidden = true;
+  categorySelection = null;
+}
+
 function saveCategorySelection() {
   if (!categorySelection) return;
-
   const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
-  const maxPrice = Number(document.getElementById("category-budget").value);
-  const checked = [...document.querySelectorAll("#category-options input[type=checkbox]:checked")]
-    .map(i => i.value);
+  const maxPrice = Math.round(Number($("category-budget").value));
+  const checked = [...document.querySelectorAll("#category-options input[type=checkbox]:checked")].map(i => i.value);
 
-  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
-    return notify("Please enter a valid maximum price.");
-  }
-  if (mode === "manual" && !checked.length) {
-    return notify("Please select at least one category.");
-  }
+  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) return notify("Please enter a valid maximum price.");
+  if (mode === "manual" && !checked.length) return notify("Please select at least one category.");
 
   const { v, d, id, classes } = categorySelection;
 
-  // Compact code for the Telegram link: a | b<price> | m<base36 bitmask>
+  // Compact code for the bot link: a | b<price> | m<base36 bitmask>
   let extra = "a";
-  if (mode === "budget") extra = "b" + Math.round(maxPrice);
+  if (mode === "budget") extra = "b" + maxPrice;
   if (mode === "manual") {
     let mask = 0;
     classes.forEach(([name], i) => { if (checked.includes(name)) mask |= (1 << i); });
@@ -913,14 +901,11 @@ function saveCategorySelection() {
   }
 
   closeCategoryPicker();
-  press("trk", `${v}_${d}_${id}`, extra);
-}
-function pending(v, d, s) {
-  const p = store.get("pend", {})[`${v}_${d}_${s}`];
-  if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
-  const t = (((S.track[v] || {})[d] || {})[s]) || {};
-  if (p.a === "unt") return t.tracked ? "unt" : null;
-  return t.tracked && Date.parse(t.updated) >= p.ts - 60000 ? null : "trk";
+  press("trk", `${v}_${d}_${id}`, extra, {
+    mode,
+    max_price: mode === "budget" ? maxPrice : null,
+    categories: mode === "manual" ? checked : []
+  });
 }
 
 // ── Rendering ─────────────────────────────────────────────
@@ -936,9 +921,17 @@ function dateLabel(code) {
   return { day, base };
 }
 
+// Set innerHTML only if it changed, so the DOM isn't replaced needlessly
+function setHtml(el, html) {
+  if (el.dataset.h === html) return false;
+  el.dataset.h = html;
+  el.innerHTML = html;
+  return true;
+}
+
 function renderVenues() {
-  document.getElementById("venues").innerHTML = Object.entries(THEATRES).map(([code, name]) =>
-    `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join("");
+  setHtml($("venues"), Object.entries(THEATRES).map(([code, name]) =>
+    `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join(""));
 }
 
 function datesFor(v) {
@@ -949,134 +942,95 @@ function datesFor(v) {
 function renderDates() {
   const dates = datesFor(S.venue);
   if (!dates.includes(S.date)) S.date = dates[0] || null;
-  document.getElementById("dates").innerHTML = dates.map(d => {
+  setHtml($("dates"), dates.map(d => {
     const l = dateLabel(d);
     return `<button class="chip" data-d="${d}" aria-pressed="${d === S.date}">${l.day}<small>${l.base}</small></button>`;
-  }).join("");
+  }).join(""));
 }
 
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
-  const p = pending(v, d, id);
-
-  if (p) {
-    const item = store.get("pend", {})[key];
-    const elapsed = item ? Math.floor((Date.now() - item.ts) / 1000) : 0;
-    const remaining = Math.max(0, PENDING_MIN * 60 - elapsed);
-
-    const mins = String(Math.floor(remaining / 60)).padStart(2, "0");
-    const secs = String(remaining % 60).padStart(2, "0");
-
-    return `<button class="btn off" disabled>
-      🟡 Waiting for confirmation · ${mins}:${secs}
-    </button>`;
+  if (pending(v, d, id)) {
+    return `<button class="btn off" disabled data-wait="${key}">🟡 Waiting for confirmation · <span class="cd"></span></button>`;
   }
-
   if (isTracked(v, d, id)) {
-    return `
-      <button class="btn alt" data-a="edit" data-k="${key}">
-        ✓ Tracking · Edit
-      </button>
-      <button class="btn off" data-a="unt" data-k="${key}">
-        Stop
-      </button>`;
+    return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
+            <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;
   }
-
-  if (closed(show)) {
-    return `<button class="btn off" disabled>Tracking closed</button>`;
-  }
-
-  return `<button class="btn" data-a="pick" data-k="${key}">
-    Track this show
-  </button>`;
+  if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
+  return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
 }
+
 function renderFilters() {
-  const day = (S.state[S.venue] || {})[S.date] || {};
+  // Never rebuild while the user is using the panel
+  if (!$("filter-overlay").hidden) { updateFilterUI(); return; }
 
-  // Build choices from every show in this selected theatre/date state.
-  // The show list itself still displays only live shows.
-  const shows = Object.values(day);
+  const shows = Object.values((S.state[S.venue] || {})[S.date] || {});
+  const options = field => [...new Set(shows.map(s => String(s[field] || "").trim()).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b));
 
-  const options = (field) => [...new Set(
-    shows.map(s => String(s[field] || "").trim()).filter(Boolean)
-  )].sort((a, b) => a.localeCompare(b));
+  ["movie", "language", "dimension", "screen"].forEach(f => {
+    if (S.filters[f] && !options(f).includes(S.filters[f])) S.filters[f] = "";
+  });
 
   const makeSelect = (id, label, values) => `
     <select id="filter-${id}" aria-label="${label}">
       <option value="">All ${label}</option>
-      ${values.map(value =>
-        `<option value="${esc(value)}" ${S.filters[id] === value ? "selected" : ""}>
-          ${esc(value)}
-        </option>`
-      ).join("")}
-    </select>
-  `;
+      ${values.map(val => `<option value="${esc(val)}" ${S.filters[id] === val ? "selected" : ""}>${esc(val)}</option>`).join("")}
+    </select>`;
+  const timeOpt = (v, label) => `<option value="${v}" ${S.filters.time === v ? "selected" : ""}>${label}</option>`;
 
-  // Remove selections that are no longer available
-  ["movie", "language", "dimension", "screen"].forEach(field => {
-    if (!options(field).includes(S.filters[field])) {
-      S.filters[field] = "";
-    }
-  });
-
-  document.getElementById("filters").innerHTML = `
+  setHtml($("filters"), `
     ${makeSelect("movie", "Movies", options("movie"))}
     ${makeSelect("language", "Languages", options("language"))}
     ${makeSelect("dimension", "Dimensions", options("dimension"))}
     ${makeSelect("screen", "Screens", options("screen"))}
-
     <select id="filter-time" aria-label="Show time">
       <option value="">All show times</option>
-      <option value="morning" ${S.filters.time === "morning" ? "selected" : ""}>Morning (before 12 PM)</option>
-      <option value="afternoon" ${S.filters.time === "afternoon" ? "selected" : ""}>Afternoon (12–5 PM)</option>
-      <option value="evening" ${S.filters.time === "evening" ? "selected" : ""}>Evening (5–9 PM)</option>
-      <option value="night" ${S.filters.time === "night" ? "selected" : ""}>Night (9 PM onwards)</option>
+      ${timeOpt("morning", "Morning (before 12 PM)")}
+      ${timeOpt("afternoon", "Afternoon (12–5 PM)")}
+      ${timeOpt("evening", "Evening (5–9 PM)")}
+      ${timeOpt("night", "Night (9 PM onwards)")}
     </select>
-
-    <button type="button" data-filter-reset>Clear all filters</button>
-  `;
-  updateFilterUI()
+    <button type="button" data-filter-reset>Clear all filters</button>`);
+  updateFilterUI();
 }
 
 function matchesFilters(show) {
   const f = S.filters;
-
   if (f.movie && show.movie !== f.movie) return false;
   if (f.language && show.language !== f.language) return false;
   if (f.dimension && show.dimension !== f.dimension) return false;
   if (f.screen && show.screen !== f.screen) return false;
-
   if (f.time) {
-    const hour = Number(
-      new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Asia/Kolkata",
-        hour: "2-digit",
-        hourCycle: "h23"
-      }).formatToParts(new Date(show.start)).find(part => part.type === "hour").value
-    );
-
+    const hour = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", hourCycle: "h23" })
+      .formatToParts(new Date(show.start)).find(p => p.type === "hour").value);
     if (f.time === "morning" && !(hour < 12)) return false;
     if (f.time === "afternoon" && !(hour >= 12 && hour < 17)) return false;
     if (f.time === "evening" && !(hour >= 17 && hour < 21)) return false;
     if (f.time === "night" && !(hour >= 21 || hour < 5)) return false;
   }
-
   return true;
 }
 
 function renderList() {
-  const el = document.getElementById("list");
-  const v = S.venue;
-  if (S.failed[v] && !S.state[v]) { el.innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and pull to refresh.</div>`; return; }
+  const el = $("list"), v = S.venue;
+  if (S.failed[v] && !S.state[v]) {
+    setHtml(el, `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`);
+    return;
+  }
   const day = (S.state[v] || {})[S.date] || {};
   const shows = Object.entries(day)
     .filter(([, s]) => live(s) && matchesFilters(s))
     .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
+
   if (!shows.length) {
-    el.innerHTML = `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`;
+    setHtml(el, `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`);
+    updateFilterUI();
     return;
   }
-  el.innerHTML = shows.map(([id, s]) => {
+
+  const html = shows.map(([id, s]) => {
     const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
     const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
@@ -1089,11 +1043,14 @@ function renderList() {
       <div class="actions">${button(v, S.date, id, s)}<a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a></div>
     </article>`;
   }).join("");
-  updateFilterUI()
+
+  setHtml(el, html);
+  tickCountdown();
+  updateFilterUI();
 }
 
 function renderUpdated() {
-  const u = S.updated[S.venue], el = document.getElementById("upd");
+  const u = S.updated[S.venue], el = $("upd");
   if (!u) { el.textContent = ""; return; }
   const m = Math.max(0, Math.round((Date.now() - Date.parse(u)) / 60000));
   el.textContent = m < 1 ? "Data Updated just now" : m < 60 ? `Data Updated ${m} min ago` : `Data Updated ${Math.round(m / 60)} h ago`;
@@ -1106,71 +1063,55 @@ function renderAll() {
   renderList();
   renderUpdated();
 }
+
+function updateFilterUI() {
+  const n = Object.values(S.filters).filter(Boolean).length;
+  $("filter-clear-quick").hidden = n === 0;
+  $("filter-open").innerHTML = n
+    ? `⚙ Filters <span style="background:var(--accent);color:#000;padding:2px 6px;border-radius:6px;margin-left:4px">${n}</span>`
+    : `⚙ Filters`;
+}
+
 // ── Actions ───────────────────────────────────────────────
-function press(action, key, extra = "") {
+function press(action, key, extra = "", intent = null) {
   const [v, d, id] = key.split("_");
   const pend = store.get("pend", {});
-  pend[key] = { a: action, ts: Date.now() };
+  pend[key] = { a: action, ts: Date.now(), intent };
   store.set("pend", pend);
   const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
   if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
   renderList();
 }
 
-function updateFilterUI() {
-  const activeCount = Object.values(S.filters).filter(Boolean).length;
-  const quickClear = document.getElementById("filter-clear-quick");
-  const filterBtn = document.getElementById("filter-open");
-
-  if (activeCount > 0) {
-    quickClear.hidden = false;
-    filterBtn.innerHTML = `⚙ Filters <span style="background:var(--accent);color:#000;padding:2px 6px;border-radius:6px;margin-left:4px">${activeCount}</span>`;
-  } else {
-    quickClear.hidden = true;
-    filterBtn.innerHTML = `⚙ Filters`;
-  }
+function clearFilters() {
+  S.filters = { ...EMPTY_FILTERS };
+  $("filters").dataset.h = "";      // force rebuild
+  renderFilters();
+  renderList();
 }
 
 document.addEventListener("click", async e => {
   if (e.target.closest("[data-filter-close]")) {
-    document.getElementById("filter-overlay").hidden = true;
+    $("filter-overlay").hidden = true;
+    renderFilters();
     return;
   }
-
   const t = e.target.closest("button");
   if (!t) return;
 
-  // --- NEW: Consolidated Category Handlers ---
-  if (t.id === "category-close" || t.id === "category-cancel") {
-    closeCategoryPicker();
-    return;
-  }
+  if (t.id === "category-close" || t.id === "category-cancel") return closeCategoryPicker();
+  if (t.id === "category-save") return saveCategorySelection();
+  if (t.id === "filter-open") { $("filter-overlay").hidden = false; return; }
+  if (t.id === "filter-clear-quick" || t.dataset.filterReset !== undefined) return clearFilters();
 
-  if (t.id === "category-save") {
-    saveCategorySelection();
-    return;
-  }
-  // -------------------------------------------
-
-  if (t.id === "filter-open") {
-    document.getElementById("filter-overlay").hidden = false;
-    return;
-  }
-
-  if (t.dataset.filterReset !== undefined) {
-    S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
-    renderFilters();
-    renderList();
-    return;
-  }
-
-  if (t.dataset.v) { 
-    S.venue = t.dataset.v; 
-    store.set("venue", S.venue); 
-    S.date = null; 
-    renderAll(); 
-    await load(S.venue); 
-    renderAll(); 
+  if (t.dataset.v) {
+    S.venue = t.dataset.v;
+    store.set("venue", S.venue);
+    S.date = null;
+    renderAll();
+    await load(S.venue);
+    prunePending();
+    renderAll();
   } else if (t.dataset.d) {
     S.date = t.dataset.d;
     renderDates();
@@ -1183,83 +1124,64 @@ document.addEventListener("click", async e => {
   } else if (t.dataset.a === "unt") {
     press("unt", t.dataset.k);
   }
-  
-  if (t.id === "filter-clear-quick") {
-    S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
-    renderFilters();
+});
+
+document.addEventListener("change", e => {
+  if (e.target.name === "track-mode") return updateCategoryMode();
+  if (e.target.id && e.target.id.startsWith("filter-")) {
+    S.filters[e.target.id.replace("filter-", "")] = e.target.value;
     renderList();
-    return;
   }
 });
-
-// Category selection events
-document.addEventListener("change", e => {
-  if (e.target.name === "track-mode") {
-    updateCategoryMode();
-  }
-});
-
-
-
-document.addEventListener("change", e => {
-  if (!e.target.id || !e.target.id.startsWith("filter-")) return;
-
-  const field = e.target.id.replace("filter-", "");
-  S.filters[field] = e.target.value;
-
-  renderList();
-});
-
 
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
-    document.getElementById("filter-overlay").hidden = true;
+    $("filter-overlay").hidden = true;
+    if (categorySelection) closeCategoryPicker();
   }
 });
 
+// ── Refresh loops ─────────────────────────────────────────
 async function refreshAll() {
-  await load(S.venue);
-  renderAll();
+  const venue = S.venue;
+  await load(venue);
+  prunePending();
+  if (venue === S.venue) renderAll();
 }
 
 async function refreshState() {
   const venue = S.venue;
   await loadState(venue);
-  if (venue === S.venue) renderAll();
+  if (venue === S.venue) { renderDates(); renderFilters(); renderList(); renderUpdated(); }
 }
 
 async function refreshTracking() {
   const venue = S.venue;
   await loadTracking(venue);
-  if (venue === S.venue) renderList();
+  prunePending();
+  if (venue === S.venue) renderList();   // setHtml skips the DOM if nothing changed
 }
 
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden) refreshAll();
-});
+// Countdown: only updates text, never rebuilds buttons
+function tickCountdown() {
+  const waits = document.querySelectorAll("[data-wait]");
+  if (!waits.length) return;
+  const all = store.get("pend", {});
+  let expired = false;
+  waits.forEach(b => {
+    const p = all[b.dataset.wait];
+    const left = p ? Math.max(0, PENDING_MIN * 60 - Math.floor((Date.now() - p.ts) / 1000)) : 0;
+    if (!left) expired = true;
+    const cd = b.querySelector(".cd");
+    if (cd) cd.textContent = `${String(Math.floor(left / 60)).padStart(2, "0")}:${String(left % 60).padStart(2, "0")}`;
+  });
+  if (expired) { prunePending(); renderList(); }
+}
 
-// State JSON: every 30 seconds
-setInterval(() => {
-  if (!document.hidden) refreshState();
-}, 30000);
-
-// Tracking JSON: every 5 seconds
-setInterval(() => {
-  if (!document.hidden) refreshTracking();
-}, 5000);
-
-// Countdown: every 1 second (no JSON download)
-setInterval(() => {
-  if (document.hidden) return;
-
-  const pending = store.get("pend", {});
-
-  const hasPending = Object.values(pending).some(p =>
-    p && Date.now() - p.ts < PENDING_MIN * 60000
-  );
-
-  if (hasPending) renderList();
-}, 1000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshAll(); });
+setInterval(() => { if (!document.hidden) refreshState(); }, 30000);
+setInterval(() => { if (!document.hidden) refreshTracking(); }, 5000);
+setInterval(() => { if (!document.hidden) tickCountdown(); }, 1000);
 
 renderAll();
 refreshAll();

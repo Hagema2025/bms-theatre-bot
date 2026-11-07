@@ -191,8 +191,8 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
-     "soon_alerted": false,
-     "status": "2"
+     "soon_alerted": true,
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -293,36 +293,6 @@
    "tags": [],
    "time": "10:20 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/44845/20261107"
-  },
-  "44854": {
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "0"
-    },
-    "PRIME": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-07T16:50:00+05:30",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "screen": "AUDI 09",
-   "start": "2026-11-07T16:20:00+05:30",
-   "tags": [
-    "ENG"
-   ],
-   "time": "04:20 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/44854/20261107"
   },
   "44855": {
    "classes": {
@@ -631,7 +601,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1"
+     "status": "0"
     },
     "PRIME": {
      "first_seen_status": "1",
@@ -1730,7 +1700,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 237.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     }
    },
    "dimension": "3D",
@@ -2120,7 +2090,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 218.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     }
    },
    "dimension": "3D",
@@ -2171,7 +2141,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "PRIME": {
      "first_seen_status": "2",
@@ -3359,7 +3329,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6667,5 +6637,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-07T16:40:49+05:30"
+ "_updated": "2026-11-07T16:50:49+05:30"
 }

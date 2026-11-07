@@ -97,7 +97,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 237.93,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
@@ -157,7 +157,14 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 219.2,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T17:31:22+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "dimension": "3D",
@@ -226,7 +233,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "1"
+     "status": "0"
     },
     "SECOND CLASS": {
      "first_seen_status": "0",
@@ -316,14 +323,14 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "SECOND CLASS": {
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -429,36 +436,6 @@
    "time": "11:59 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/241819/20261107"
   },
-  "241880": {
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "0"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 57.98,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-07T17:30:00+05:30",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "screen": "SCREEN 2",
-   "start": "2026-11-07T17:00:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:00 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/MAYJ/241880/20261107"
-  },
   "241889": {
    "classes": {
     "FIRST CLASS": {
@@ -473,7 +450,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -773,7 +750,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -833,7 +810,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -1043,7 +1020,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 57.98,
      "soon_alerted": true,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -4694,5 +4671,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242088/20261109"
   }
  },
- "_updated": "2026-11-07T17:20:51+05:30"
+ "_updated": "2026-11-07T17:31:22+05:30"
 }

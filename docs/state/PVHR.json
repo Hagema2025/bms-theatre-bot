@@ -39,43 +39,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/44294/20261107"
   },
-  "44834": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "PRIME": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "cutoff": "2026-11-07T22:45:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-07T22:30:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI 03",
-   "start": "2026-11-07T22:00:00+05:30",
-   "tags": [
-    "ENG subs"
-   ],
-   "time": "10:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/44834/20261107"
-  },
   "44845": {
    "censor": "U",
    "classes": {
@@ -163,7 +126,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 94.43,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-07T22:31:23+05:30"
     },
     "PRIME": {
      "first_seen_status": "1",
@@ -285,11 +249,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "reopened_at": "2026-11-07T21:10:51+05:30",
+     "reopened_at": "2026-11-07T22:31:23+05:30",
      "sold_out_at": "2026-11-07T21:50:53+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-07T21:50:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-07T22:31:23+05:30"
     }
    },
    "cutoff": "2026-11-07T23:45:00+05:30",
@@ -509,8 +473,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-07T22:20:48+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-07T22:31:23+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -2332,8 +2296,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-07T20:50:49+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-07T22:31:23+05:30"
     }
    },
    "cutoff": "2026-11-08T23:20:00+05:30",
@@ -7784,5 +7748,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-07T22:20:48+05:30"
+ "_updated": "2026-11-07T22:31:23+05:30"
 }

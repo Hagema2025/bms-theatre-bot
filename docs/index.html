@@ -512,78 +512,6 @@ main { gap: 13px; }
 }
 
 
-/* Category selection */
-.category-overlay[hidden] { display:none; }
-.category-overlay {
-  position:fixed;
-  inset:0;
-  z-index:1100;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  background:rgba(0,0,0,.72);
-}
-.category-panel {
-  width:100%;
-  max-width:560px;
-  max-height:82vh;
-  overflow-y:auto;
-  padding:22px 20px calc(24px + env(safe-area-inset-bottom, 0px));
-  background:linear-gradient(160deg,#182438,#101827 72%);
-  border:1px solid var(--line);
-  border-radius:24px 24px 0 0;
-}
-.category-head {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  margin-bottom:8px;
-}
-.category-title { font-size:18px; font-weight:800; }
-.category-sub { color:var(--muted); font-size:12px; margin-bottom:17px; }
-.category-option {
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:13px 12px;
-  margin-bottom:8px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:rgba(255,255,255,.035);
-  cursor:pointer;
-}
-.category-option input {
-  width:18px;
-  height:18px;
-  accent-color:var(--accent);
-}
-.category-option span { flex:1; font-size:13px; font-weight:700; }
-.category-price { color:var(--muted); font-size:12px; }
-.category-actions { display:flex; gap:10px; margin-top:18px; }
-.category-actions button {
-  flex:1;
-  min-height:44px;
-  border-radius:12px;
-  font:inherit;
-  font-size:12px;
-  font-weight:800;
-  cursor:pointer;
-}
-.category-cancel {
-  border:1px solid var(--line);
-  background:var(--panel-2);
-  color:var(--fg);
-}
-.category-start {
-  border:0;
-  background:linear-gradient(135deg,var(--accent-2),var(--accent));
-  color:#1a1409;
-}
-@media (min-width:600px) {
-  .category-overlay { align-items:center; padding:20px; }
-  .category-panel { border-radius:24px; }
-}
 
 /* Category tracking panel */
 .category-overlay[hidden] { display:none; }
@@ -763,29 +691,6 @@ main { gap: 13px; }
   </section>
 </div>
 
-<div class="category-overlay" id="category-overlay" hidden>
-  <section class="category-panel" role="dialog" aria-modal="true">
-    <div class="category-head">
-      <div class="category-title">Choose seat categories</div>
-      <button type="button" class="filter-close" id="category-close">✕</button>
-    </div>
-
-    <div class="category-sub" id="category-sub">
-      Select the categories you want alerts for.
-    </div>
-
-    <div id="category-options"></div>
-
-    <div class="category-actions">
-      <button type="button" class="category-cancel" id="category-cancel">
-        Cancel
-      </button>
-      <button type="button" class="category-start" id="category-start">
-        Continue
-      </button>
-    </div>
-  </section>
-</div>
 
 <div class="category-overlay" id="category-overlay" hidden>
   <section class="category-panel" role="dialog" aria-modal="true">
@@ -838,7 +743,6 @@ main { gap: 13px; }
 
 <main id="list"></main>
 
-<main id="list"></main>
 <script>
 // ── Settings ──────────────────────────────────────────────
 const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
@@ -1242,39 +1146,18 @@ document.addEventListener("click", async e => {
 
   const t = e.target.closest("button");
   if (!t) return;
+
+  // --- NEW: Consolidated Category Handlers ---
   if (t.id === "category-close" || t.id === "category-cancel") {
-  closeCategoryPicker();
-  return;
-}
-
-if (t.id === "category-start") {
-  if (!categorySelection) return;
-
-  const selected = [
-    ...document.querySelectorAll(
-      "#category-options input[type='checkbox']:checked"
-    )
-  ].map(input => input.value);
-
-  if (!selected.length) {
-    alert("Please select at least one seat category.");
+    closeCategoryPicker();
     return;
   }
 
-  // Keep the selection locally for the upcoming bot integration.
-  const { v, d, id } = categorySelection;
-  const selections = store.get("categorySelections", {});
-  selections[`${v}_${d}_${id}`] = selected;
-  store.set("categorySelections", selections);
-
-  closeCategoryPicker();
-
-  alert(
-    "Your category selection has been saved in this Mini App. " +
-    "Telegram bot integration is still pending, so alerts have not started yet."
-  );
-  return;
-}
+  if (t.id === "category-save") {
+    saveCategorySelection();
+    return;
+  }
+  // -------------------------------------------
 
   if (t.id === "filter-open") {
     document.getElementById("filter-overlay").hidden = false;
@@ -1282,37 +1165,33 @@ if (t.id === "category-start") {
   }
 
   if (t.dataset.filterReset !== undefined) {
-  S.filters = {
-    movie: "",
-    language: "",
-    dimension: "",
-    screen: "",
-    time: ""
-  };
-  renderFilters();
-  renderList();
-  return;
-}
-  if (t.dataset.v) { S.venue = t.dataset.v; store.set("venue", S.venue); S.date = null; renderAll(); await load(S.venue); renderAll(); }
-else if (t.dataset.d) {
-  S.date = t.dataset.d;
-  renderDates();
-  renderFilters();
-  renderList();
-}  else if (t.dataset.a === "pick") {
-  const [v, d, id] = t.dataset.k.split("_");
-  const show = ((S.state[v] || {})[d] || {})[id];
-  if (show) openCategoryPicker(v, d, id, show);
-}
-else if (t.dataset.a === "pick" || t.dataset.a === "edit") {
-  const [v, d, id] = t.dataset.k.split("_");
-  const show = ((S.state[v] || {})[d] || {})[id];
+    S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
+    renderFilters();
+    renderList();
+    return;
+  }
 
-  if (show) openCategoryPicker(v, d, id, show);
-}
-else if (t.dataset.a === "unt") {
-  press("unt", t.dataset.k);
-}if (t.id === "filter-clear-quick") {
+  if (t.dataset.v) { 
+    S.venue = t.dataset.v; 
+    store.set("venue", S.venue); 
+    S.date = null; 
+    renderAll(); 
+    await load(S.venue); 
+    renderAll(); 
+  } else if (t.dataset.d) {
+    S.date = t.dataset.d;
+    renderDates();
+    renderFilters();
+    renderList();
+  } else if (t.dataset.a === "pick" || t.dataset.a === "edit") {
+    const [v, d, id] = t.dataset.k.split("_");
+    const show = ((S.state[v] || {})[d] || {})[id];
+    if (show) openCategoryPicker(v, d, id, show);
+  } else if (t.dataset.a === "unt") {
+    press("unt", t.dataset.k);
+  }
+  
+  if (t.id === "filter-clear-quick") {
     S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
     renderFilters();
     renderList();

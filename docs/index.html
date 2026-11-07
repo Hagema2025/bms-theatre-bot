@@ -1070,10 +1070,15 @@ let categorySelection = null;
 let batchSelection = [];
 
 function notify(msg) {
-  if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg);
+  if (tg && tg.showAlert && tg.isVersionAtLeast("6.2")) {
+    tg.showAlert(msg);
+  } else {
+    alert(msg);
+  }
 }
 
 function openCategoryPicker(v, d, id, show) {
+  batchSelection = [];
   const classes = Object.entries(show.classes || {}).filter(([name, c]) => name && Number(c.price) > 0);
   if (!classes.length) return notify("No seat categories are available.");
 
@@ -1148,13 +1153,30 @@ function openBatchCategoryPicker() {
   $("category-budget").value = "";
 
   $("category-options").innerHTML =
-    [...categoryMap.entries()].map(([name, count]) => `
+  [...categoryMap.entries()].map(([name, count]) => {
+    const prices = shows
+      .flatMap(item => item.classes)
+      .filter(([n]) => n === name)
+      .map(([, c]) => Number(c.price))
+      .filter(p => Number.isFinite(p) && p > 0);
+
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+
+    const priceLabel = minPrice === maxPrice
+      ? `₹${minPrice}`
+      : `₹${minPrice}–₹${maxPrice}`;
+
+    return `
       <label class="category-check">
         <input type="checkbox" value="${esc(name)}">
         <span>${esc(name)}</span>
-        <small class="category-price">${count}/${shows.length} shows</small>
+        <small class="category-price">
+          ${priceLabel} · ${count}/${shows.length} shows
+        </small>
       </label>
-    `).join("");
+    `;
+  }).join("");
 
   updateCategoryMode();
   $("category-overlay").hidden = false;
@@ -1170,18 +1192,26 @@ function closeCategoryPicker() {
   categorySelection = null;
 }
 
-function saveCategorySelection() {
-  if (!categorySelection) return;
+let preparedBatchActions = [];
 
-  const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
+function saveCategorySelection() {
+  const isBatch = batchSelection.length > 0;
+
+  if (!isBatch && !categorySelection) return;
+
+  const mode =
+    document.querySelector('input[name="track-mode"]:checked')?.value || "all";
+
   const maxPrice = Math.round(Number($("category-budget").value));
+
   const checked = [
-    ...document.querySelectorAll("#category-options input[type=checkbox]:checked")
+    ...document.querySelectorAll(
+      "#category-options input[type=checkbox]:checked"
+    )
   ].map(i => i.value);
 
-  const { v, d, id, classes } = categorySelection;
-
-  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
+  if (mode === "budget" &&
+      (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
     return notify("Please enter a valid maximum price.");
   }
 
@@ -1189,15 +1219,79 @@ function saveCategorySelection() {
     return notify("Please select at least one category.");
   }
 
+  // ── Batch tracking ─────────────────────────────
+  if (isBatch) {
+    const actions = [];
+
+    for (const item of batchSelection) {
+      const { v, d, id, classes } = item;
+
+      let selection = "a";
+
+      if (mode === "budget") {
+        selection = "b" + maxPrice;
+      }
+
+      if (mode === "manual") {
+        let mask = 0;
+
+        classes.forEach(([name], i) => {
+          if (checked.includes(name)) {
+            mask |= (1 << i);
+          }
+        });
+
+        // Don't submit an empty manual selection
+        if (mask === 0) continue;
+
+        selection = "m" + mask.toString(36);
+      }
+
+      actions.push({
+        action: "track",
+        venue: v,
+        session: id,
+        date: d,
+        selection
+      });
+    }
+
+    if (!actions.length) {
+      return notify("No selected categories match these shows.");
+    }
+
+    preparedBatchActions = actions;
+
+    console.log("Prepared batch tracking actions:", actions);
+
+    closeCategoryPicker();
+    batchSelection = [];
+
+    notify(
+      `${actions.length} tracking actions prepared. API submission is the next step. Nothing has been saved yet.`
+    );
+
+    return;
+  }
+
+  // ── Existing individual tracking ───────────────
+  const { v, d, id, classes } = categorySelection;
+
   let extra = "a";
 
-  if (mode === "budget") extra = "b" + maxPrice;
+  if (mode === "budget") {
+    extra = "b" + maxPrice;
+  }
 
   if (mode === "manual") {
     let mask = 0;
+
     classes.forEach(([name], i) => {
-      if (checked.includes(name)) mask |= (1 << i);
+      if (checked.includes(name)) {
+        mask |= (1 << i);
+      }
     });
+
     extra = "m" + mask.toString(36);
   }
 
@@ -1207,13 +1301,10 @@ function saveCategorySelection() {
     categories: mode === "manual" ? checked : []
   };
 
-  debugLog("Deep-link extra:", extra, "intent:", intent);
-
   closeCategoryPicker();
 
   press("trk", `${v}_${d}_${id}`, extra, intent);
 }
-
 // ── Rendering ─────────────────────────────────────────────
 const live = show => Date.parse(show.end) > Date.now();
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;

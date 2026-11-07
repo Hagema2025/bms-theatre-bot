@@ -174,7 +174,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 260.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -230,7 +230,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "NORMAL": {
@@ -279,34 +279,6 @@
    "tags": [],
    "time": "10:45 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15606/20261107"
-  },
-  "15610": {
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T17:50:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "AUDI06",
-   "start": "2026-11-07T17:20:00+05:30",
-   "tags": [],
-   "time": "05:20 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15610/20261107"
   },
   "15611": {
    "classes": {
@@ -363,34 +335,6 @@
    "tags": [],
    "time": "06:40 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15615/20261107"
-  },
-  "15618": {
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "0"
-    },
-    "NORMAL": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 59.43,
-     "soon_alerted": true,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T17:35:00+05:30",
-   "language": "Telugu",
-   "movie": "Aadarsha Kutumbam House No: 47 (AK 47)",
-   "screen": "AUDI08",
-   "start": "2026-11-07T17:05:00+05:30",
-   "tags": [],
-   "time": "05:05 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00475942/CBMC/15618/20261107"
   },
   "15619": {
    "classes": {
@@ -793,7 +737,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -877,7 +821,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1129,7 +1073,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4965,5 +4909,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15863/20261111"
   }
  },
- "_updated": "2026-11-07T17:31:22+05:30"
+ "_updated": "2026-11-07T17:50:49+05:30"
 }

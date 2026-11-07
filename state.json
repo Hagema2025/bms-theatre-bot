@@ -100,13 +100,13 @@
       "time": "07:35 PM - 11:15 PM"
     },
     "ACON_48486_20261107_PEARL 3D": {
-      "alerted_at": "2026-11-06T10:10:48+05:30",
+      "alerted_at": "2026-11-07T07:01:05+05:30",
       "category": "PEARL 3D",
       "date": "20261107",
       "end": "2026-11-07T09:30:00+05:30",
       "movie": "Ramayana",
       "price": 84.0,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "2",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "09:00 AM - 12:40 PM"
@@ -1362,7 +1362,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:30 AM - 10:24 AM"
     },
@@ -2775,13 +2775,14 @@
       "time": "08:10 AM - 11:04 AM"
     },
     "CBMC_15851_20261107_NORMAL": {
+      "alerted_at": "2026-11-07T07:01:05+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T08:20:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:50 AM - 10:44 AM"
     },
@@ -2907,13 +2908,14 @@
       "time": "11:40 AM - 03:20 PM"
     },
     "CBMC_15865_20261107_NORMAL": {
+      "alerted_at": "2026-11-07T07:01:05+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T08:15:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
+      "soon_alerted": true,
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:45 AM - 10:39 AM"
     },
@@ -3773,7 +3775,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:20 AM - 12:14 PM"
     },
@@ -3936,18 +3938,6 @@
       "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "11:35 PM - 02:24 AM"
-    },
-    "INTO_92698_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-07T04:31:22+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261107",
-      "end": "2026-11-07T07:00:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "06:30 AM - 09:19 AM"
     },
     "INTO_92700_20261108_EXECUTIVE": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
@@ -5223,18 +5213,6 @@
       "status": "0",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:00 PM - 01:54 AM"
-    },
-    "MCSK_16961_20261107_3D SPECIAL": {
-      "alerted_at": "2026-11-07T05:31:24+05:30",
-      "category": "3D SPECIAL",
-      "date": "20261107",
-      "end": "2026-11-07T06:55:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.35,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "06:25 AM - 10:05 AM"
     },
     "MCSK_16962_20261107_3D SPECIAL": {
       "alerted_at": "2026-11-06T07:10:48+05:30",
@@ -6819,7 +6797,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "02:10 PM - 05:50 PM"
     },

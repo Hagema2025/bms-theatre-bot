@@ -53,7 +53,7 @@
       "movie": "Ramayana",
       "price": 89.0,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "12:10 PM - 03:50 PM"
     },
@@ -533,14 +533,14 @@
       "time": "10:55 PM - 01:49 AM"
     },
     "ACON_48540_20261107_PEARL": {
-      "alerted_at": "2026-11-07T08:20:46+05:30",
+      "alerted_at": "2026-11-07T10:10:49+05:30",
       "category": "PEARL",
       "date": "20261107",
       "end": "2026-11-07T10:45:00+05:30",
       "movie": "Scene",
       "price": 54.0,
       "soon_alerted": true,
-      "status": "2",
+      "status": "3",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:15 AM - 01:09 PM"
     },
@@ -1112,14 +1112,14 @@
       "time": "10:50 PM - 02:00 AM"
     },
     "CBMC_15602_20261107_NORMAL": {
-      "alerted_at": "2026-11-07T09:31:22+05:30",
+      "alerted_at": "2026-11-07T10:10:49+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T10:55:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:25 AM - 01:14 PM"
     },
@@ -1188,7 +1188,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "02:15 PM - 05:04 PM"
     },
@@ -2814,18 +2814,6 @@
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "07:50 AM - 10:44 AM"
     },
-    "INTO_92593_20261107_EXECUTIVE": {
-      "alerted_at": "2026-11-07T07:40:50+05:30",
-      "category": "EXECUTIVE",
-      "date": "20261107",
-      "end": "2026-11-07T10:05:00+05:30",
-      "movie": "Mookuthi Amman 2",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "INOX: The Marina Mall, OMR",
-      "time": "09:35 AM - 12:24 PM"
-    },
     "INTO_92594_20261107_EXECUTIVE": {
       "category": "EXECUTIVE",
       "date": "20261107",
@@ -3206,7 +3194,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "01:10 PM - 04:04 PM"
     },
@@ -5203,7 +5191,7 @@
       "movie": "Scene",
       "price": 57.98,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "01:20 PM - 04:14 PM"
     },
@@ -6959,7 +6947,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "07:35 PM - 10:45 PM"
     },
@@ -7007,7 +6995,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "04:25 PM - 07:19 PM"
     },

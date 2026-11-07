@@ -1,30 +1,39 @@
-"""BookMyShow seat-availability alert bot for Chennai theatres.
+"""BookMyShow seat-availability alert scanner for Chennai theatres.
 
-Each run scans every bookable date at the target theatres and stores every BUDGET
-seat class it sees (price <= MAX_BUDGET_PRICE, even sold out) in state.json together
-with its availability status. On the next runs it pings when:
-  - a class is seen for the first time and is bookable        -> NEW
-  - a sold-out class becomes bookable (status 0 -> 1/2/3)     -> NOW AVAILABLE
-  - a bookable class gets more seats (1 -> 2, 2 -> 3, 1 -> 3) -> MORE SEATS
-  - the show is within REMINDER_MINUTES of start (once)       -> SHOW SOON
-There is no flicker damping: every increase pings.
+Each run scans every bookable date at the target theatres and records every BUDGET
+seat class it sees (price <= MAX_BUDGET_PRICE, even sold out) with its availability.
 
-Alerts for a show stop SHOW_GRACE_MINUTES (default 30) after its start time.
-A show's stored state is dropped at that point. A theatre's date topic is closed
-once every show of that date is past its window (so a date with a 12:30 AM show
-stays open until ~1:00 AM, not until calendar midnight). When a topic is closed the
-bot posts a "🗑 Delete this topic" button in it; the press is handled on the next run.
+FILES (one writer each, so nothing ever overwrites anything else)
 
-Only budget seat classes (<= MAX_BUDGET_PRICE, default 100) are tracked and alerted;
-everything priced above that is ignored.
+  docs/state/<VENUE>.json     WRITTEN BY THIS SCANNER, also the Mini App's data source
+      { "20261107": { "28451": {
+            "movie", "language", "dimension", "screen", "time", "start", "end", "url",
+            "classes": { "SILVER": {"price": 80, "status": "3", "soon_alerted": false} } } },
+        "_updated": "<ISO time of the last real change>" }
 
-Telegram layout: one supergroup (Topics enabled) PER THEATRE. Inside each group:
-  - one topic per show date (e.g. "Wed 04 Nov")
-  - one "Errors" topic for that theatre's outage / crash warnings
-The bot must be a group admin with "Manage Topics" (and "Delete Messages" for the delete button).
+  docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
+      { "20261107": { "28451": {"tracked": true, "thread": 4567} } }
 
-Chat IDs come from env vars, one per theatre: TELEGRAM_CHAT_<VENUE_CODE>
-(e.g. TELEGRAM_CHAT_INTO). Keep them in GitHub secrets.
+  meta.json                   scanner-private: outage counters + Errors topic ids
+
+TELEGRAM
+  One tracking supergroup (Topics enabled) per theatre: TELEGRAM_TRACK_<VENUE>.
+    - one topic per tracked show (created by the running bot when you press Track)
+    - one "Errors" topic per theatre (created here)
+  This scanner only SENDS (alerts, time-change notices, error warnings) and deletes the
+  topic when the show ends. It never calls getUpdates, so it cannot clash with any
+  other process that polls the same bot token.
+  The bot must be admin in every tracking group with "Manage Topics".
+
+ALERTS (tracked shows only, into that show's topic)
+  - NEW           a class seen for the first time and bookable
+  - NOW AVAILABLE a sold-out class becomes bookable (status 0 -> 1/2/3)
+  - MORE SEATS    a bookable class gets more seats (1 -> 2, 2 -> 3, 1 -> 3)
+  - SHOW SOON     the show is within REMINDER_MINUTES of start (once)
+  Untracked shows are still scanned and stored silently, so tracking one later starts
+  from accurate status.
+
+A show is dropped SHOW_GRACE_MINUTES after its start; its topic is deleted then.
 """
 import html
 import json
@@ -54,19 +63,22 @@ TARGET_THEATRES = {
     "ACON": "AGS Cinemas OMR: Navalur (Vivira Mall)",
 }
 
-# One Telegram supergroup per theatre, e.g. TELEGRAM_CHAT_INTO=-1001234567890
-THEATRE_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
-                 for code in TARGET_THEATRES}
+# Tracking group per theatre, e.g. TELEGRAM_TRACK_INTO=-1009876543210
+TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_TRACK_{code}", "").strip()
+               for code in TARGET_THEATRES}
 
-MAX_BUDGET_PRICE  = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # only seat classes priced <= this are tracked and alerted
-REMINDER_MINUTES  = int(os.environ.get("REMINDER_MINUTES", "120"))
-SHOW_GRACE        = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # alerts stop this long after showtime
-MAX_DATES         = int(os.environ.get("MAX_DATES", "7"))
-FAIL_ALERT_AFTER  = 3
-TG_RETRIES        = 4
+MAX_BUDGET_PRICE   = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # only seat classes priced <= this are tracked
+REMINDER_MINUTES   = int(os.environ.get("REMINDER_MINUTES", "120"))
+SHOW_GRACE         = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # state/alerts end this long after showtime
+MAX_DATES          = int(os.environ.get("MAX_DATES", "7"))
+FAIL_ALERT_AFTER   = 3
+TG_RETRIES         = 4
+CLEANUP_MAX_TRIES  = 5
 ERRORS_THREAD_NAME = "⚠️ Errors"
-STATE_FILE        = "state.json"
-DIVIDER           = "━━━━━━━━━━━━━━━━"
+STATE_DIR          = os.environ.get("STATE_DIR", "docs/state")
+TRACKING_DIR       = os.environ.get("TRACKING_DIR", "docs/tracking")
+META_FILE          = "meta.json"
+DIVIDER            = "━━━━━━━━━━━━━━━━"
 
 # Category AvailStatus, as checked against live seat maps:
 # 3 = plenty of seats, 2 = filling fast, 1 = last few seats, 0 = sold out
@@ -95,6 +107,7 @@ BMS_HEADERS = {
     "x-location-selection": "manual",
 }
 
+
 def console_print(message):
     """Print timestamped messages in terminal and GitHub Actions."""
     print(
@@ -103,8 +116,7 @@ def console_print(message):
     )
 
 
-console_print("🤖 BookMyShow alert bot module loaded.")
-
+console_print("🤖 BookMyShow alert scanner module loaded.")
 console_print(f"⚙️ Budget limit: ₹{MAX_BUDGET_PRICE:.0f}")
 console_print(f"⚙️ Reminder: {REMINDER_MINUTES} minutes before show")
 console_print(f"⚙️ Maximum dates to scan: {MAX_DATES}")
@@ -112,11 +124,19 @@ console_print(f"⚙️ Theatres configured: {len(TARGET_THEATRES)}")
 
 # ───────────────────────── helpers ─────────────────────────
 
+
 def parse_bms_time(value):
     try:
         return datetime.strptime(value, "%Y%m%d%H%M").replace(tzinfo=IST)
     except (TypeError, ValueError):
         console_print(f"⚠️ Invalid BMS time: {value}")
+        return None
+
+
+def parse_iso(value):
+    try:
+        return datetime.fromisoformat(value)
+    except (TypeError, ValueError):
         return None
 
 
@@ -127,69 +147,119 @@ def format_date(date_code):
         return date_code
 
 
-def entry_end(entry):
-    """When alerts for this stored show stop (showtime + grace). Older entries without it
-    are kept until the end of their calendar date."""
+def entry_end(show, date_code):
+    """When this stored show expires (showtime + grace). Falls back to the end of its date."""
+    end = parse_iso(show.get("end"))
+    if end:
+        return end
     try:
-        return datetime.fromisoformat(entry["end"])
-    except (KeyError, TypeError, ValueError):
-        pass
-    try:
-        return datetime.strptime(entry.get("date", ""), "%Y%m%d").replace(tzinfo=IST) + timedelta(days=1)
+        return datetime.strptime(date_code, "%Y%m%d").replace(tzinfo=IST) + timedelta(days=1)
     except (TypeError, ValueError):
         return datetime(2000, 1, 1, tzinfo=IST)
 
 
-# ───────────────────────── state ─────────────────────────
-# state["alerts"]:  every seat class seen -> {movie, theatre, date, time, category, price,
-#                                             status, end, alerted_at?, soon_alerted}
-# state["threads"]: "<VENUE>_errors" and "<VENUE>_date_<YYYYMMDD>" -> Telegram topic id
-# state["tg_offset"]: next Telegram update id to read (for delete-button presses)
+# ───────────────────────── files ─────────────────────────
+
+def read_json(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return default
+
+
+def write_json(path, data):
+    folder = os.path.dirname(path)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=1, sort_keys=True, ensure_ascii=False)
+        f.write("\n")
+    os.replace(tmp, path)
+
 
 def load_state():
+    """state[VENUE] = {date: {session: show}} read from docs/state/<VENUE>.json."""
     console_print("📂 Loading saved state...")
-
     state = {}
-    if os.path.exists(STATE_FILE):
-        try:
-            with open(STATE_FILE, encoding="utf-8") as f:
-                state = json.load(f)
-            console_print("✅ Previous state loaded successfully.")
-
-        except (OSError, ValueError) as e:
-            console_print(f"❌ State loading failed: {e}")
-    else:
-        console_print("🆕 No previous state found. Starting fresh.")
-
-    if not isinstance(state, dict):
-        state = {}
-    state.setdefault("alerts", {})
-    state.setdefault("threads", {})
-    state.setdefault("fail_streaks", {})      # venue -> consecutive failed runs (capped)
-    state.setdefault("outage_alerted", [])    # venues whose outage warning was delivered
-    state.pop("fail_streak", None)            # old single-streak format
-    state.pop("last_heartbeat", None)         # changed every run and forced a commit per run
-
-    console_print(
-        f"📊 Previously tracked seat classes: {len(state['alerts'])}"
-    )
-    console_print(
-        f"📌 Previously created Telegram topics: {len(state['threads'])}"
-    )
+    for venue in TARGET_THEATRES:
+        data = read_json(os.path.join(STATE_DIR, f"{venue}.json"), {})
+        if not isinstance(data, dict):
+            data = {}
+        data.pop("_updated", None)
+        state[venue] = data
+    shows = sum(len(s) for dates in state.values() for s in dates.values())
+    console_print(f"🎬 Shows loaded: {shows}")
     return state
 
 
-def save_state(state):
-    console_print("💾 Saving bot state...")
+def load_tracking():
+    """tracking[VENUE] = {date: {session: {"tracked", "thread"}}}  (read-only here)."""
+    tracking = {}
+    for venue in TARGET_THEATRES:
+        data = read_json(os.path.join(TRACKING_DIR, f"{venue}.json"), {})
+        tracking[venue] = data if isinstance(data, dict) else {}
+    return tracking
 
-    tmp = STATE_FILE + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, sort_keys=True)
-        f.write("\n")
-    os.replace(tmp, STATE_FILE)
+
+def load_meta():
+    meta = read_json(META_FILE, {})
+    if not isinstance(meta, dict):
+        meta = {}
+    meta.setdefault("threads", {})          # "<VENUE>_errors" -> topic id
+    meta.setdefault("fail_streaks", {})     # venue -> consecutive failed runs (capped)
+    meta.setdefault("outage_alerted", [])   # venues whose outage warning was delivered
+    return meta
+
+
+def save_all(state, meta, now):
+    """Write only files whose content really changed, so unchanged runs make no commits."""
+    console_print("💾 Saving state...")
+    for venue, data in state.items():
+        path = os.path.join(STATE_DIR, f"{venue}.json")
+        old = read_json(path, {})
+        if isinstance(old, dict):
+            old.pop("_updated", None)
+        if old == data:
+            continue
+        out = dict(data)
+        out["_updated"] = now.isoformat(timespec="seconds")
+        write_json(path, out)
+    if read_json(META_FILE, {}) != meta:
+        write_json(META_FILE, meta)
+
+
+def get_show(state, venue, date_code, session):
+    return ((state.get(venue) or {}).get(date_code) or {}).get(session)
+
+
+def track_thread(state, tracking, venue, date_code, session):
+    """Topic id for a TRACKED show, else None. If the original topic was deleted and this
+    scanner made a replacement, the replacement is used while the file still lists the old id."""
+    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
+    if not t.get("tracked") or not t.get("thread"):
+        return None
+    s = get_show(state, venue, date_code, session) or {}
+    if s.get("thread") and s.get("thread_for") == t["thread"]:
+        return s["thread"]
+    return t["thread"]
 
 
 # ───────────────────────── telegram ─────────────────────────
+
+_last_send = {}
+SEND_METHODS = {"sendMessage", "editMessageText", "editMessageReplyMarkup",
+                "createForumTopic", "editForumTopic"}
+
+
+def throttle(chat_id, gap=3.2):
+    """Keep to about 18 messages/min per group (Telegram allows 20)."""
+    wait = _last_send.get(chat_id, 0) + gap - time.monotonic()
+    if wait > 0:
+        time.sleep(wait)
+    _last_send[chat_id] = time.monotonic()
+
 
 def tg_api(method, payload):
     """Call a Telegram Bot API method via curl_cffi with retries. Returns (ok, body)."""
@@ -200,10 +270,10 @@ def tg_api(method, payload):
         return False, {}
     url  = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
     body = {}
+    if method in SEND_METHODS and payload.get("chat_id"):
+        throttle(payload["chat_id"])
     for attempt in range(1, TG_RETRIES + 1):
-        console_print(
-            f"🔄 Telegram attempt {attempt}/{TG_RETRIES}: {method}"
-        )
+        console_print(f"🔄 Telegram attempt {attempt}/{TG_RETRIES}: {method}")
         try:
             resp = bms_req.post(url, json=payload, timeout=15)
             try:
@@ -214,91 +284,26 @@ def tg_api(method, payload):
                 console_print(f"✅ Telegram {method} successful.")
                 return True, body
             desc = body.get("description", "")
-            console_print(
-                f"⚠️ Telegram error: HTTP {resp.status_code} - {desc}"
-            )
+            console_print(f"⚠️ Telegram error: HTTP {resp.status_code} - {desc}")
             if resp.status_code == 429:
                 wait = int(body.get("parameters", {}).get("retry_after", 5))
-                console_print(
-                    f"⏳ Telegram rate limit. Waiting {wait} seconds."
-                )
-                time.sleep(min(wait, 30))
+                console_print(f"⏳ Telegram rate limit. Waiting {wait} seconds.")
+                time.sleep(min(wait, 60))
                 continue
             if 400 <= resp.status_code < 500:
                 console_print("❌ Telegram client error. No retry.")
                 return False, body  # bad token/chat/thread; retrying won't help
         except Exception as e:
-            console_print(
-                f"❌ Telegram connection error: {type(e).__name__}"
-            )
+            console_print(f"❌ Telegram connection error: {type(e).__name__}")
             # Exception text can contain the URL (bot token), so log only the type
             logging.warning(f"Telegram {method} attempt {attempt}/{TG_RETRIES}: {type(e).__name__}")
         if attempt < TG_RETRIES:
-            console_print(f"⏳ Retrying after {wait} seconds...")
-
-            time.sleep(2 ** attempt)  # 2s, 4s, 8s backoff for network errors and 5xx
+            delay = 2 ** attempt  # 2s, 4s, 8s backoff for network errors and 5xx
+            console_print(f"⏳ Retrying after {delay} seconds...")
+            time.sleep(delay)
     console_print(f"❌ Telegram {method} failed after all retries.")
 
     return False, body
-
-
-def get_thread(state, chat_id, key, name, force=False, note=None):
-    """Topic ID for key in this chat, created on first use (with an intro note posted first).
-    None if it can't be created."""
-    if key in state["threads"] and not force:
-        return state["threads"][key]
-    ok, body = tg_api("createForumTopic", {"chat_id": chat_id, "name": name})
-    if not ok:
-        logging.warning(f"{key}: couldn't create topic '{name}' ({body.get('description', '')}); "
-                        f"posting to the group's main chat instead")
-        return None
-    thread_id = body["result"]["message_thread_id"]
-    state["threads"][key] = thread_id
-    if note:
-        # First message in the topic, before any alert; a failure here must not block alerts
-        tg_api("sendMessage", {"chat_id": chat_id, "message_thread_id": thread_id, "text": note,
-                               "disable_notification": True, "disable_web_page_preview": True})
-    return thread_id
-
-
-def send_to_thread(state, venue, thread_key, name, text, silent=False, html_mode=False, note=None):
-    """Send text into a topic of the theatre's group; recreate the topic once if it was deleted.
-    silent=True delivers without a notification sound; html_mode=True sends as Telegram HTML
-    (links, bold); note is posted first when the topic is newly created. Returns True on success."""
-    chat_id = THEATRE_CHATS.get(venue)
-    if not chat_id:
-        logging.error(f"{venue}: no TELEGRAM_CHAT_{venue} set, can't send")
-        return False
-    key = f"{venue}_{thread_key}"
-    thread_id = get_thread(state, chat_id, key, name, note=note)
-    payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True,
-               "disable_notification": silent}
-    if html_mode:
-        payload["parse_mode"] = "HTML"
-    if thread_id:
-        payload["message_thread_id"] = thread_id
-    ok, body = tg_api("sendMessage", payload)
-    if not ok and thread_id and "thread" in body.get("description", "").lower():
-        thread_id = get_thread(state, chat_id, key, name, force=True, note=note)
-        payload.pop("message_thread_id", None)
-        if thread_id:
-            payload["message_thread_id"] = thread_id
-        ok, body = tg_api("sendMessage", payload)
-    return ok
-
-
-def date_note(venue, date_code):
-    """First message of a new date topic."""
-    return (f"📌 NOTE\n"
-            f"🎟️ {TARGET_THEATRES[venue]}\n"
-            f"📅 {format_date(date_code)}\n"
-            f"{DIVIDER}\n"
-            f"Budget seats ≤ ₹{MAX_BUDGET_PRICE:.0f} only.\n"
-            f"🔔 Now available = was sold out\n"
-            f"📈 More seats = availability up\n"
-            f"⏰ Show soon = starts within {REMINDER_MINUTES // 60}h\n"
-            f"Alerts stop {int(SHOW_GRACE.total_seconds() // 60)} min after showtime.\n"
-            f"Topic closes after the last show.")
 
 
 def errors_note(venue):
@@ -310,58 +315,97 @@ def errors_note(venue):
             f"bot crashes are posted here.")
 
 
-def send_error(state, venue, text):
-    return send_to_thread(state, venue, "errors", ERRORS_THREAD_NAME, text,
-                          note=errors_note(venue))
-
-
-def finish_date_topic(state, venue, date_code, key):
-    """Post a delete button in a finished date's topic, then close the topic."""
-    chat_id   = THEATRE_CHATS.get(venue)
-    thread_id = state["threads"].get(key)
-    if not chat_id or not thread_id:
-        state["threads"].pop(key, None)
-        return
-    ok, body = tg_api("sendMessage", {
-        "chat_id": chat_id, "message_thread_id": thread_id, "disable_notification": True,
-        "text": f"📅 {format_date(date_code)} is over: every show has started. This topic is now closed.",
-        "reply_markup": {"inline_keyboard": [[
-            {"text": "🗑 Delete this topic", "callback_data": f"del:{thread_id}"}]]},
-    })
-    gone = "thread" in body.get("description", "").lower()   # topic was already deleted by hand
-    if ok:
-        tg_api("closeForumTopic", {"chat_id": chat_id, "message_thread_id": thread_id})
-    if ok or gone:
-        state["threads"].pop(key, None)
-    # otherwise keep the key and retry on the next run
-
-
-def process_callbacks(state):
-    """Handle presses of the 'Delete this topic' button (only group admins may delete)."""
-    ok, body = tg_api("getUpdates", {"offset": state.get("tg_offset", 0), "timeout": 0,
-                                     "allowed_updates": ["callback_query"]})
+def get_errors_thread(meta, venue, force=False):
+    """Errors topic of this theatre's tracking group, created on first use."""
+    chat_id = TRACK_CHATS.get(venue)
+    key = f"{venue}_errors"
+    if key in meta["threads"] and not force:
+        return meta["threads"][key]
+    ok, body = tg_api("createForumTopic", {"chat_id": chat_id, "name": ERRORS_THREAD_NAME})
     if not ok:
-        return
-    known_chats = {chat for chat in THEATRE_CHATS.values() if chat}
-    for upd in body.get("result", []):
-        state["tg_offset"] = upd["update_id"] + 1
-        cq   = upd.get("callback_query") or {}
-        data = cq.get("data") or ""
-        chat_id = str(((cq.get("message") or {}).get("chat") or {}).get("id", ""))
-        thread  = data[4:]
-        if not data.startswith("del:") or not thread.isdigit() or chat_id not in known_chats:
+        logging.warning(f"{venue}: couldn't create the Errors topic ({body.get('description', '')})")
+        return None
+    thread_id = body["result"]["message_thread_id"]
+    meta["threads"][key] = thread_id
+    tg_api("sendMessage", {"chat_id": chat_id, "message_thread_id": thread_id, "text": errors_note(venue),
+                           "disable_notification": True, "disable_web_page_preview": True})
+    return thread_id
+
+
+def send_error(meta, venue, text):
+    """Post into the theatre's Errors topic; recreate the topic once if it was deleted."""
+    chat_id = TRACK_CHATS.get(venue)
+    if not chat_id:
+        logging.error(f"{venue}: no TELEGRAM_TRACK_{venue} set, can't send")
+        return False
+    thread_id = get_errors_thread(meta, venue)
+    payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
+    if thread_id:
+        payload["message_thread_id"] = thread_id
+    ok, body = tg_api("sendMessage", payload)
+    if not ok and thread_id and "thread" in body.get("description", "").lower():
+        thread_id = get_errors_thread(meta, venue, force=True)
+        payload.pop("message_thread_id", None)
+        if thread_id:
+            payload["message_thread_id"] = thread_id
+        ok, body = tg_api("sendMessage", payload)
+    return ok
+
+
+# ───────────────────────── tracking topics ─────────────────────────
+
+def track_name(date_code, s):
+    return f"{format_date(date_code)} · {s.get('movie', 'Movie')} · {s.get('time', '')}"[:120]
+
+
+def status_text(s):
+    """Seat status summary, used when a deleted topic has to be recreated."""
+    rows = "\n".join(f"💺 {html.escape(d)} · ₹{c['price']:g} · {STATUS_NAMES.get(c['status'], c['status'])}"
+                     for d, c in s.get("classes", {}).items())
+    return (f"🎬 <b>{html.escape(s.get('movie', 'Movie'))}</b>\n🕘 {html.escape(s.get('time', ''))}\n{rows}\n"
+            f'🔗 <a href="{html.escape(s.get("url", ""), quote=True)}">Book seats</a>')
+
+
+def send_track(state, tracking, venue, date_code, session, text):
+    """Send an alert into the tracked show's topic. If the topic was deleted by hand, make a
+    replacement (remembered in state, since tracking/ is not ours to edit) and resend once."""
+    tc = TRACK_CHATS.get(venue)
+    s = get_show(state, venue, date_code, session)
+    thread = track_thread(state, tracking, venue, date_code, session)
+    if not tc or not thread or not s:
+        return False
+    ok, body = tg_api("sendMessage", {"chat_id": tc, "message_thread_id": thread, "text": text,
+                                      "parse_mode": "HTML", "disable_web_page_preview": True})
+    if ok:
+        return True
+    if "thread" not in body.get("description", "").lower():
+        return False
+    original = tracking[venue][date_code][session]["thread"]
+    ok_t, tb = tg_api("createForumTopic", {"chat_id": tc, "name": track_name(date_code, s)})
+    if not ok_t:
+        return False
+    new_thread = tb["result"]["message_thread_id"]
+    s["thread"], s["thread_for"] = new_thread, original
+    tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": status_text(s),
+                           "parse_mode": "HTML", "disable_notification": True,
+                           "disable_web_page_preview": True})
+    ok, _ = tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": text,
+                                   "parse_mode": "HTML", "disable_web_page_preview": True})
+    return ok
+
+
+def announce_time_changes(state, tracking, changes):
+    """Tell tracked shows' topics about a new showtime and rename the topic."""
+    for c in changes:
+        thread = track_thread(state, tracking, c["venue"], c["date"], c["session"])
+        tc = TRACK_CHATS.get(c["venue"])
+        s = get_show(state, c["venue"], c["date"], c["session"])
+        if not (thread and tc and s):
             continue
-        ok_m, mb = tg_api("getChatMember", {"chat_id": chat_id, "user_id": (cq.get("from") or {}).get("id")})
-        is_admin = ok_m and mb["result"].get("status") in ("creator", "administrator")
-        if not is_admin:
-            tg_api("answerCallbackQuery", {"callback_query_id": cq["id"],
-                                           "text": "Only group admins can delete topics.", "show_alert": True})
-            continue
-        deleted, _ = tg_api("deleteForumTopic", {"chat_id": chat_id, "message_thread_id": int(thread)})
-        tg_api("answerCallbackQuery", {
-            "callback_query_id": cq["id"], "show_alert": not deleted,
-            "text": "Topic deleted." if deleted else "Couldn't delete it. The bot needs the Delete Messages right.",
-        })
+        tg_api("sendMessage", {"chat_id": tc, "message_thread_id": thread,
+                               "text": f"⏰ Time changed: {c['old']} → {c['new']}"})
+        tg_api("editForumTopic", {"chat_id": tc, "message_thread_id": thread,
+                                  "name": track_name(c["date"], s)})
 
 
 # ───────────────────────── BMS fetching ─────────────────────────
@@ -386,15 +430,48 @@ def iter_categories(data):
     for day in data.get("ShowDetails") or []:
         for ev in day.get("Event") or []:
             duration = ev.get("EventDuration") or "0"
-            clean_title = ev.get("EventTitle") or "Movie"  # <--- NEW: Extract clean title here
+            clean_title = ev.get("EventTitle") or "Movie"
             for child in ev.get("ChildEvents") or []:
                 for show in child.get("ShowTimes") or []:
                     for cat in show.get("Categories") or []:
                         yield day, child, show, cat, duration, clean_title
 
 
-def check_category(venue, day, child, show, cat, duration, clean_title,alerts, now, seen):
-    """Track one seat class in alerts and return an alert dict if it should ping, else None.
+def register_shows(vstate, venue, data, now):
+    """Keep one entry per show under vstate[date][session]. Returns showtime changes found."""
+    changes = []
+    for day, child, show, cat, duration, title in iter_categories(data):
+        try:
+            price = float(cat.get("CurPrice") or 0)
+        except (TypeError, ValueError):
+            continue
+        session_id = show.get("SessionId")
+        date_code  = show.get("ShowDateCode") or day.get("Date")
+        start      = parse_bms_time(show.get("ShowDateTime"))
+        if not (0 < price <= MAX_BUDGET_PRICE and session_id and date_code and start):
+            continue
+        if start + SHOW_GRACE < now:
+            continue
+        sid = str(session_id)
+        entry = vstate.setdefault(date_code, {}).setdefault(sid, {"classes": {}, "time": ""})
+        new_time = show.get("ShowTime") or ""
+        if entry.get("time") and new_time and new_time != entry["time"]:
+            changes.append({"venue": venue, "date": date_code, "session": sid,
+                            "old": entry["time"], "new": new_time})
+        entry["time"]      = new_time or entry.get("time", "")
+        entry["movie"]     = title
+        entry["language"]  = child.get("EventLanguage") or ""
+        entry["dimension"] = child.get("EventDimension") or ""
+        entry["screen"]    = show.get("ScreenName") or ""
+        entry["url"]       = SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
+                                                    session=session_id, date=date_code)
+        entry["start"]     = start.isoformat(timespec="seconds")
+        entry["end"]       = (start + SHOW_GRACE).isoformat(timespec="seconds")
+    return changes
+
+
+def check_category(venue, day, child, show, cat, duration, clean_title, vstate, now, seen):
+    """Track one seat class and return an alert dict if it should ping, else None.
     Adds every class it processes to seen."""
     try:
         price = float(cat.get("CurPrice") or 0)
@@ -402,127 +479,118 @@ def check_category(venue, day, child, show, cat, duration, clean_title,alerts, n
         return None
     if price <= 0 or price > MAX_BUDGET_PRICE:
         return None   # only budget seats are tracked
-    
+
     session_id = show.get("SessionId")
     date_code  = show.get("ShowDateCode") or day.get("Date")
     if not session_id or not date_code:
         return None
-        
+    sid = str(session_id)
+    entry = (vstate.get(date_code) or {}).get(sid)
+    if entry is None:
+        return None   # register_shows skipped it (expired or no start time)
+
     desc   = (cat.get("PriceDesc") or "").strip().upper()
-    key    = f"{venue}_{session_id}_{date_code}_{desc}"
     status = str(cat.get("AvailStatus", "0"))
     if status not in STATUS_NAMES:
         return None
 
     start = parse_bms_time(show.get("ShowDateTime"))
-    # Alerts stop SHOW_GRACE after the show starts (BMS's own cutoff time isn't used)
     end = start + SHOW_GRACE if start else parse_bms_time(show.get("CutOffDateTime"))
     if end and end < now:
         return None
-        
-    seen.add(key)
-    end_iso = end.isoformat(timespec="seconds") if end else ""
+
+    seen.add((venue, date_code, sid, desc))
     mins_to_start = (start - now).total_seconds() / 60 if start else None
     soon = mins_to_start is not None and 0 <= mins_to_start <= REMINDER_MINUTES
 
-    # --- NEW EXTRA TAGS EXTRACTED HERE ---
-    sub_acronym = show.get("SessionSubTitleAcronym") or "" 
+    # Extra tags for the alert text
+    sub_acronym = show.get("SessionSubTitleAcronym") or ""
     attributes = show.get("Attributes") or ""
     atmos = "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else ""
-    dimension = child.get("EventDimension") or ""
-    censor = child.get("EventCensor") or ""
-    trailer = child.get("EventTrailer") or "" # <--- NEW: GET TRAILER
-    # NEW: Grab the clean language and parent Title
-    language = child.get("EventLanguage") or ""
-    
-    # Add language to the front of the tags list
     tags = [t for t in (attributes, atmos) if t]
     extra_tags = " · ".join(tags)
-    # Format the subtitle bracket if it exists (e.g., "[ENG SUB]")
     sub_tag = f"[{sub_acronym}💬]" if sub_acronym else ""
 
-    # --- CALCULATE SHOW END TIME ---
+    # Show start - end time (end = start + duration + 25 min of ads/trailers)
     time_str = show.get("ShowTime") or ""
     if start and duration.isdigit() and int(duration) > 0:
-        total_mins = int(duration) + 25
-        end_time = start + timedelta(minutes=total_mins)
+        end_time = start + timedelta(minutes=int(duration) + 25)
         time_str = f"{time_str} - {end_time.strftime('%I:%M %p')}"
 
-    prev = alerts.get(key)
+    prev = entry["classes"].get(desc)
     if prev is None:
         if status == "0":
             # Sold out right now: store it so a later run can ping when it opens
-            alerts[key] = {
-                "movie": child.get("EventName") or "Movie", "theatre": TARGET_THEATRES[venue],
-                "date": date_code, "time": time_str,
-                "category": desc, "price": price,
-                "status": "0", "end": end_iso, "soon_alerted": False,
-            }
+            entry["classes"][desc] = {"price": price, "status": "0", "soon_alerted": False}
             return None
         kind, prev_status = "new", None
     else:
-        # Entries from older versions have no status: assume sold out if flagged, else full
-        prev_status = prev.get("status") or ("0" if prev.get("sold_out") else "3")
+        prev_status = prev.get("status") or "3"
         if int(status) > int(prev_status):
             kind = "opened" if prev_status == "0" else "more"
         elif soon and status != "0" and not prev.get("soon_alerted"):
             kind = "soon"
         else:
             prev["status"] = status   # no ping, but keep the stored availability current
-            if end_iso:
-                prev["end"] = end_iso
+            prev["price"] = price
             return None
 
     return {
-        "key": key, "kind": kind, "soon": soon, "mins": mins_to_start,
-        "venue": venue, "theatre": TARGET_THEATRES[venue],
-"movie": clean_title,  # <--- USE CLEAN TITLE HERE
-        "date": date_code,
-                "time": time_str, "screen": show.get("ScreenName") or "",
+        "key": f"{venue}_{date_code}_{sid}_{desc}", "session": sid,
+        "kind": kind, "soon": soon, "mins": mins_to_start,
+        "venue": venue, "date": date_code, "movie": clean_title,
+        "time": time_str, "screen": show.get("ScreenName") or "",
         "category": desc, "price": price, "status": status, "prev_status": prev_status,
-        "start": start, "end": end_iso,
-        "censor": censor, "extra_tags": extra_tags, # <--- NEW DATA ADDED TO HIT
-        "trailer": trailer, # <--- ADD IT HERE
+        "start": start,
+        "censor": child.get("EventCensor") or "", "extra_tags": extra_tags,
+        "trailer": child.get("EventTrailer") or "",
         "url": SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
                                       session=session_id, date=date_code),
-                                      "sub_tag":sub_tag,
-                                      "dimension":dimension,
-                                      "language": language
+        "sub_tag": sub_tag,
+        "dimension": child.get("EventDimension") or "",
+        "language": child.get("EventLanguage") or "",
     }
+
 
 def scan(session, state, now):
     """Check every bookable date at every theatre.
-    Returns (hits, stats) where stats is {venue: {"ok": n, "failed": n}}."""
-    hits, keys = [], set()
+    Returns (hits, stats, changes). stats is {venue: {"ok": n, "failed": n}}."""
+    hits, keys, changes = [], set(), []
     stats = {venue: {"ok": 0, "failed": 0} for venue in TARGET_THEATRES}
     seen, scanned = set(), set()
-    
+
     for venue in TARGET_THEATRES:
+        vstate = state[venue]
         dates, done = [now.strftime("%Y%m%d")], set()
         while dates and len(done) < MAX_DATES:
             date_code = dates.pop(0)
             if date_code in done:
                 continue
             done.add(date_code)
-            
+
             data = fetch_showtimes(session, venue, date_code)
             time.sleep(0.5)
-            
+
             if data is None:
                 stats[venue]["failed"] += 1
                 continue
-                
+
             stats[venue]["ok"] += 1
+            try:
+                changes += register_shows(vstate, venue, data, now)
+            except Exception as e:
+                logging.warning(f"{venue} {date_code}: register_shows failed ({type(e).__name__}: {e})")
             scanned.add((venue, date_code))
             scanned.update((venue, d.get("Date")) for d in data.get("ShowDetails") or [])
-            
+
             if len(done) == 1:
                 dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
                           if d.get("DateCode") and not d.get("isDisabled")]
-                          
-            for day, child, show, cat, duration, clean_title in iter_categories(data): # <-- Added duration here
+
+            for day, child, show, cat, duration, clean_title in iter_categories(data):
                 try:
-                    hit = check_category(venue, day, child, show, cat, duration, clean_title, state["alerts"], now, seen) # <-- Added duration here
+                    hit = check_category(venue, day, child, show, cat, duration, clean_title,
+                                         vstate, now, seen)
                 except Exception as e:
                     logging.warning(f"{venue} {date_code}: skipped a seat class ({type(e).__name__}: {e})")
                     continue
@@ -530,41 +598,41 @@ def scan(session, state, now):
                     keys.add(hit["key"])
                     hits.append(hit)
 
-    for key, entry in state["alerts"].items():
-        if ((key.split("_")[0], entry.get("date")) in scanned
-                and key not in seen and entry.get("status") != "0"):
-            entry["status"] = "0"
-            
-    return hits, stats
+    # A class that vanished from a date we did scan is treated as sold out
+    for venue, dates in state.items():
+        for date_code, shows in dates.items():
+            if (venue, date_code) not in scanned:
+                continue
+            for sid, s in shows.items():
+                for desc, c in s.get("classes", {}).items():
+                    if (venue, date_code, sid, desc) not in seen and c.get("status") != "0":
+                        c["status"] = "0"
 
-def cleanup_ended(state, now):
-    """Drop stored shows past their alert window. A theatre date whose shows have ALL just
-    expired is queued in state["closing"] and its topic is closed (retried every run until it
-    works). A topic is never closed merely because no shows are stored for it."""
-    kept, expired = {}, set()
-    for k, v in state["alerts"].items():
-        if not isinstance(v, dict):
-            continue
-        if entry_end(v) >= now:
-            kept[k] = v
-        else:
-            expired.add((k.split("_")[0], v.get("date")))
-    state["alerts"] = kept
-    live = {(k.split("_")[0], v.get("date")) for k, v in kept.items()}
+    return hits, stats, changes
 
-    closing = state.setdefault("closing", [])
-    for venue, date_code in expired - live:
-        key = f"{venue}_date_{date_code}"
-        if key in state["threads"] and key not in closing:
-            closing.append(key)
-    for key in list(closing):
-        venue, _, date_code = key.split("_")
-        if (venue, date_code) in live or key not in state["threads"]:
-            closing.remove(key)                        # shows came back, or topic already gone
-            continue
-        finish_date_topic(state, venue, date_code, key)
-        if key not in state["threads"]:
-            closing.remove(key)                        # closed; otherwise retry next run
+
+def cleanup_ended(state, tracking, now):
+    """Drop shows past their window and delete their tracking topics. If a topic can't be
+    deleted, keep the show and retry on later runs (up to CLEANUP_MAX_TRIES)."""
+    for venue, dates in state.items():
+        for date_code in list(dates):
+            shows = dates[date_code]
+            for sid in list(shows):
+                s = shows[sid]
+                if entry_end(s, date_code) >= now:
+                    continue
+                thread = track_thread(state, tracking, venue, date_code, sid)
+                tc = TRACK_CHATS.get(venue)
+                if thread and tc:
+                    ok, body = tg_api("deleteForumTopic", {"chat_id": tc, "message_thread_id": thread})
+                    gone = "thread" in body.get("description", "").lower()
+                    if not ok and not gone:
+                        s["cleanup_tries"] = s.get("cleanup_tries", 0) + 1
+                        if s["cleanup_tries"] < CLEANUP_MAX_TRIES:
+                            continue                      # retry next run
+                shows.pop(sid)
+            if not shows:
+                dates.pop(date_code)
 
 
 # ───────────────────────── alerts ─────────────────────────
@@ -572,26 +640,24 @@ def cleanup_ended(state, now):
 def format_hit(h):
     lines = []
     if h["kind"] == "new":
-      lines.append("🆕 NEW BUDGET SEATS")
+        lines.append("🆕 NEW BUDGET SEATS")
     elif h["kind"] == "opened":
         lines.append("🔔 NOW AVAILABLE (was sold out)")
     elif h["kind"] == "more":
         lines.append(f"📈 MORE SEATS (was {STATUS_NAMES[h['prev_status']].lower()})")
-        
+
     if h["soon"]:
         hours, mins = divmod(max(int(h["mins"]), 0), 60)
         lines.append(f"⏰ SHOW IN {hours}h {mins}m" if hours else f"⏰ SHOW IN {mins} MIN")
     elif h["mins"] is not None and h["mins"] < 0:
         lines.append(f"⏰ STARTED {int(-h['mins'])} MIN AGO")
-        
-    # --- MOVIE TITLE LINE (Title, 3D, Censor, Subtitles) ---
-    censor_tag = f" ({html.escape(h['censor'])})" if h.get("censor") else ""
-    dim_tag = f" {html.escape(h['dimension'])}" if h.get("dimension")  else ""
-    sub_tag = f" {html.escape(h['sub_tag'])}" if h.get("sub_tag") else ""
-    lang_text = f"{html.escape(h['language'])}" if h.get("language") else ""
 
-    title_text = f"{html.escape(h['movie'])} {lang_text}-{dim_tag}"
-    
+    # Movie title line (title, language, dimension, censor, subtitles)
+    censor_tag = f" ({html.escape(h['censor'])})" if h.get("censor") else ""
+    sub_tag = f" {html.escape(h['sub_tag'])}" if h.get("sub_tag") else ""
+    lang_dim = " · ".join(html.escape(x) for x in (h.get("language"), h.get("dimension")) if x)
+    title_text = html.escape(h["movie"]) + (f" · {lang_dim}" if lang_dim else "")
+
     if h.get("trailer"):
         lines.append(f'🎬 <b><a href="{html.escape(h["trailer"], quote=True)}">{title_text}</a></b>{censor_tag}{sub_tag}')
     else:
@@ -599,41 +665,41 @@ def format_hit(h):
 
     lines.append(f"🕘 {html.escape(h['time'])}")
     if h["screen"]:
-              lines.append(f"🖥️ {html.escape(h['screen'])}")
-        
-    
+        lines.append(f"🖥️ {html.escape(h['screen'])}")
     if h.get("extra_tags"):
         lines.append(f"✨ <i>{html.escape(h['extra_tags'])}</i>")
-        
-        
-    
 
-          
-    # --- PRICE (No decimals) & STATUS ---
-    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']}")
+    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']:g}")
     lines.append(f"📊 {AVAIL_LABELS[h['status']]}")
     lines.append(f'🔗 <a href="{html.escape(h["url"], quote=True)}">Book seats</a>')
-    
+
     return "\n".join(lines)
 
-def record_alert(state, h, now):
-    prev = state["alerts"].get(h["key"], {})
-    state["alerts"][h["key"]] = {
-        "movie": h["movie"], "theatre": h["theatre"], "date": h["date"], "time": h["time"],
-        "category": h["category"], "price": h["price"], "status": h["status"], "end": h["end"],
-        "alerted_at": now.isoformat(timespec="seconds"),
+
+def record_alert(state, h):
+    """Store the class's latest status (and the soon flag) after it was alerted or silently seen."""
+    entry = get_show(state, h["venue"], h["date"], h["session"])
+    if entry is None:
+        return
+    prev = entry["classes"].get(h["category"], {})
+    entry["classes"][h["category"]] = {
+        "price": h["price"], "status": h["status"],
         "soon_alerted": h["soon"] or prev.get("soon_alerted", False),
     }
 
 
-def send_alerts(hits, state, now):
-    """One message per (theatre, date), split if long, posted in that theatre group's date topic.
-    Returns alerts delivered."""
+def send_alerts(hits, state, tracking, now):
+    """Alerts go only to tracked shows, into that show's topic. Untracked hits are recorded
+    silently so their status stays current. Returns alerts delivered."""
     groups = {}
     for h in sorted(hits, key=lambda h: h["start"] or now):
-        groups.setdefault((h["venue"], h["date"]), []).append(h)
+        if track_thread(state, tracking, h["venue"], h["date"], h["session"]):
+            groups.setdefault((h["venue"], h["date"], h["session"]), []).append(h)
+        else:
+            record_alert(state, h)
+
     sent = 0
-    for (venue, date_code), group in groups.items():
+    for (venue, date_code, session), group in groups.items():
         chunks, current, size = [], [], 0
         for h in group:
             block = format_hit(h)
@@ -645,30 +711,29 @@ def send_alerts(hits, state, now):
         if current:
             chunks.append(current)
         for n, chunk in enumerate(chunks, 1):
-            part   = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
+            part = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
             header = (f"🎟️ <b>{html.escape(TARGET_THEATRES[venue])}</b>\n"
-                      f"📅 {format_date(date_code)} · {len(group)} budget alert(s){part}")
+                      f"📅 {format_date(date_code)} · {len(group)} alert(s){part}")
             text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
-            if send_to_thread(state, venue, f"date_{date_code}", format_date(date_code), text,
-                              html_mode=True, note=date_note(venue, date_code)):
+            if send_track(state, tracking, venue, date_code, session, text):
                 for h, _ in chunk:
-                    record_alert(state, h, now)
+                    record_alert(state, h)
                 sent += len(chunk)
             time.sleep(1)
     return sent
 
 
-def check_health(state, stats):
-    """Per theatre: warn in that group's Errors topic when BMS has failed for several runs in a row,
+def check_health(meta, stats):
+    """Per theatre: warn in its Errors topic when BMS has failed for several runs in a row,
     and again when it recovers. Returns False if no theatre could be reached at all."""
-    streaks, alerted = state["fail_streaks"], state["outage_alerted"]
+    streaks, alerted = meta["fail_streaks"], meta["outage_alerted"]
     for venue, s in stats.items():
         name = TARGET_THEATRES[venue]
         if s["ok"] == 0:
-            # Capped so a long outage doesn't change state.json (and commit) every run
+            # Capped so a long outage doesn't change meta.json (and commit) every run
             streaks[venue] = min(streaks.get(venue, 0) + 1, FAIL_ALERT_AFTER)
             if streaks[venue] == FAIL_ALERT_AFTER and venue not in alerted:
-                if send_error(state, venue,
+                if send_error(meta, venue,
                               f"⚠️ BMS bot: couldn't fetch showtimes for {name} on {FAIL_ALERT_AFTER} "
                               f"checks in a row ({s['failed']} failed requests). "
                               f"No alerts for this theatre until it recovers."):
@@ -676,7 +741,7 @@ def check_health(state, stats):
         else:
             if venue in alerted:
                 alerted.remove(venue)
-                send_error(state, venue, f"✅ BMS bot: {name} is reachable again, alerts resumed.")
+                send_error(meta, venue, f"✅ BMS bot: {name} is reachable again, alerts resumed.")
             streaks.pop(venue, None)
     return any(s["ok"] for s in stats.values())
 
@@ -684,44 +749,46 @@ def check_health(state, stats):
 # ───────────────────────── main ─────────────────────────
 
 def main():
-    now     = datetime.now(IST)
-    state   = load_state()
-    healthy = False
-    # If this always says 0 shows / 0 topics, state.json isn't being saved between runs
-    logging.info(f"State loaded: {len(state['alerts'])} shows, {len(state['threads'])} topics")
+    now      = datetime.now(IST)
+    meta     = load_meta()
+    state    = load_state()
+    tracking = load_tracking()
+    healthy  = False
 
-    missing = [code for code, chat in THEATRE_CHATS.items() if not chat]
+    tracked = sum(1 for v in tracking.values() for d in v.values() if isinstance(d, dict)
+                  for t in d.values() if isinstance(t, dict) and t.get("tracked"))
+    logging.info(f"Tracked shows in tracking files: {tracked}")
+
+    missing = [code for code, chat in TRACK_CHATS.items() if not chat]
     if missing:
-        logging.error("No Telegram chat configured for: "
-                      + ", ".join(f"TELEGRAM_CHAT_{c}" for c in missing))
-
-    try:
-        process_callbacks(state)          # delete-button presses since the last run
-    except Exception:
-        logging.exception("Callback handling failed")
+        logging.error("No tracking group configured for: "
+                      + ", ".join(f"TELEGRAM_TRACK_{c}" for c in missing)
+                      + " (no alerts or error warnings for these theatres)")
 
     try:
         session = bms_req.Session(impersonate="chrome")
         try:
-            hits, stats = scan(session, state, now)
+            hits, stats, changes = scan(session, state, now)
         finally:
             session.close()
         ok     = sum(s["ok"] for s in stats.values())
         failed = sum(s["failed"] for s in stats.values())
         logging.info(f"BMS requests: {ok} ok, {failed} failed. Alerts to send: {len(hits)}")
         if hits:
-            logging.info(f"Telegram alerts delivered: {send_alerts(hits, state, now)}/{len(hits)}")
-        healthy = check_health(state, stats)
+            logging.info(f"Telegram alerts delivered: {send_alerts(hits, state, tracking, now)}/{len(hits)}")
+        if changes:
+            announce_time_changes(state, tracking, changes)
+        healthy = check_health(meta, stats)
     except Exception as e:
         logging.exception("Run crashed")
         for venue in TARGET_THEATRES:
-            send_error(state, venue, f"🔥 BMS bot crashed: {type(e).__name__}: {str(e)[:300]}")
+            send_error(meta, venue, f"🔥 BMS bot crashed: {type(e).__name__}: {str(e)[:300]}")
 
     try:
-        cleanup_ended(state, now)         # expire old shows, close finished date topics
+        cleanup_ended(state, tracking, now)   # drop finished shows, delete their topics
     except Exception:
         logging.exception("Cleanup failed")
-    save_state(state)
+    save_all(state, meta, now)
     return 0 if healthy else 1
 
 

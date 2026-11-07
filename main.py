@@ -1,1096 +1,847 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Budget seats</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<style>
+"""BookMyShow seat-availability alert scanner for Chennai theatres.
 
-:root {
-  color-scheme: dark;
-  --bg: #090b12;
-  --panel: #121622;
-  --panel-2: #191f2d;
-  --line: rgba(255,255,255,.09);
-  --fg: #f4f5f8;
-  --muted: #929bad;
-  --accent: #f6b94b;
-  --accent-2: #ffda8a;
-  --ok: #48c78e;
-  --mid: #f4b544;
-  --low: #ff776d;
-  --off: #778092;
+Each run scans every bookable date at the target theatres and records every BUDGET
+seat class it sees (price <= MAX_BUDGET_PRICE, even sold out) with its availability.
+
+FILES (one writer each, so nothing ever overwrites anything else)
+
+  docs/state/<VENUE>.json     WRITTEN BY THIS SCANNER, also the Mini App's data source
+      { "20261107": { "28451": {
+            "movie", "language", "dimension", "screen", "time", "start", "end", "url",
+            "duration": 150,                       # movie length in minutes
+            "tags": ["IMAX", "Dolby Atmos"],       # BMS attributes, Atmos, subtitle code
+            "classes": { "SILVER": {"price": 80, "status": "3", "soon_alerted": false,
+                                    "first_seen_status": "0",
+                                    "first_seen_time": "2026-11-07T12:09:58+05:30"} } } },
+        "_updated": "<ISO time of the last real change>" }
+
+  docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
+{ "20261107": { "28451": {
+    "tracked": true,
+    "thread": 4567,
+    "categories": ["SILVER", "GOLD"]
+} } }
+  meta.json                   scanner-private: outage counters + Errors topic ids
+
+TELEGRAM
+  One tracking supergroup (Topics enabled) per theatre: TELEGRAM_CHAT_<VENUE>.
+    - one topic per tracked show (created by the running bot when you press Track)
+    - one "Errors" topic per theatre (created here)
+  This scanner only SENDS (alerts, time-change notices, error warnings) and deletes the
+  topic when the show ends. It never calls getUpdates, so it cannot clash with any
+  other process that polls the same bot token.
+  The bot must be admin in every tracking group with "Manage Topics".
+
+ALERTS (tracked shows only, into that show's topic)
+  - NEW           a class seen for the first time and bookable
+  - NOW AVAILABLE a sold-out class becomes bookable (status 0 -> 1/2/3)
+  - MORE SEATS    a bookable class gets more seats (1 -> 2, 2 -> 3, 1 -> 3)
+  - SHOW SOON     the show is within REMINDER_MINUTES of start (once)
+  Untracked shows are still scanned and stored silently, so tracking one later starts
+  from accurate status.
+
+A show is dropped SHOW_GRACE_MINUTES after its start; its topic is deleted then.
+"""
+import html
+import json
+import logging
+import os
+import sys
+import time
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+
+from curl_cffi import requests as bms_req
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+
+IST = ZoneInfo("Asia/Kolkata")
+
+# Venue codes from BMS's Chennai cinema list
+TARGET_THEATRES = {
+    "INTO": "INOX: The Marina Mall, OMR",
+    "PVHR": "PVR: Heritage RSL ECR",
+    "MCSK": "Miraj Cinemas: Sekaran Mall",
+    "TVHP": "The Vijay Park Multiplex: Injambakkam",
+    "CBMC": "Cinepolis: BSR Mall, OMR",
+    "MAYJ": "MAYAJAAL Multiplex: ECR",
+    "ACON": "AGS Cinemas OMR: Navalur (Vivira Mall)",
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--fg); }
-body {
-  font: 15px/1.45 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
-  background:
-    radial-gradient(ellipse at 85% -10%, rgba(246,185,75,.13), transparent 38%),
-    radial-gradient(ellipse at -10% 35%, rgba(98,116,190,.10), transparent 34%),
-    var(--bg);
-}
-header {
-  padding: 26px 18px 18px;
-  max-width: 760px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-}
-.brand { display:flex; align-items:center; gap:12px; min-width:0; }
-.brand-mark {
-  width: 42px; height: 42px; flex:none; display:grid; place-items:center;
-  border-radius: 14px; color:#17120a; font-size:20px; font-weight:900;
-  background: linear-gradient(145deg, var(--accent-2), #e99a25);
-  box-shadow: 0 7px 24px rgba(246,185,75,.22);
-}
-h1 { font-size: 21px; line-height:1.1; margin:0; font-weight:800; letter-spacing:-.04em; }
-.subhead { color:var(--muted); font-size:12px; margin-top:5px; }
-#upd {
-  color: var(--muted); font-size: 11px; text-align: right;
-  background: rgba(255,255,255,.045); border:1px solid var(--line);
-  padding:7px 10px; border-radius:999px; white-space:nowrap;
-}
-.nav-wrap { max-width:760px; margin:0 auto; }
-.nav-label {
-  padding: 0 18px 7px; color:var(--muted); font-size:10px;
-  font-weight:800; letter-spacing:.14em; text-transform:uppercase;
-}
-.row {
-  display:flex; gap:9px; overflow-x:auto; padding:5px 18px 16px;
-  scrollbar-width:none; scroll-snap-type:x proximity;
-}
-.row::-webkit-scrollbar { display:none; }
-.chip {
-  flex:none; scroll-snap-align:start; border:1px solid var(--line);
-  border-radius:13px; padding:10px 14px; font:inherit; font-size:13px;
-  cursor:pointer; background:var(--panel); color:#cbd1dc;
-  transition: .18s ease;
-}
-.chip[aria-pressed="true"] {
-  color:#1b150b; background:linear-gradient(135deg,var(--accent-2),var(--accent));
-  border-color:transparent; font-weight:800; box-shadow:0 5px 18px rgba(246,185,75,.15);
-}
-.chip small { display:block; font-size:10px; opacity:.72; margin-top:2px; }
-#dates { padding-bottom:17px; }
-#dates .chip { min-width:75px; text-align:center; }
-main {
-  max-width:760px; margin:0 auto; padding: 2px 18px 36px;
-  display:grid; gap:12px;
-}
-.show {
-  position:relative; overflow:hidden;
-  background:linear-gradient(145deg, rgba(26,32,46,.98), rgba(17,21,31,.98));
-  border:1px solid var(--line); border-radius:19px; padding:16px;
-  display:grid; gap:14px; box-shadow:0 10px 30px rgba(0,0,0,.16);
-}
-.show:before {
-  content:""; position:absolute; top:0; left:0; width:3px; height:100%;
-  background:linear-gradient(180deg,var(--accent),transparent 85%); opacity:.8;
-}
-.top { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
-.movie { font-weight:800; font-size:17px; line-height:1.25; letter-spacing:-.025em; }
-.meta { color:var(--muted); font-size:12px; margin-top:5px; }
-.tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:9px; }
-.tag {
-  font-size:10px; font-weight:700; letter-spacing:.02em;
-  padding:4px 8px; border-radius:7px; color:#e7c98f;
-  background:rgba(246,185,75,.10); border:1px solid rgba(246,185,75,.12);
-}
-.time {
-  flex:none; font-size:18px; font-weight:850; white-space:nowrap;
-  font-variant-numeric:tabular-nums; color:var(--accent-2); text-align:right;
-}
-.dur { color:var(--muted); font-size:11px; font-weight:500; margin-top:3px; }
-.classes {
-  display:grid; gap:0; background:rgba(0,0,0,.16);
-  border:1px solid rgba(255,255,255,.055); border-radius:12px; padding:3px 11px;
-}
-.cls { display:flex; align-items:center; gap:9px; font-size:12px; padding:9px 0; }
-.cls + .cls { border-top:1px solid rgba(255,255,255,.055); }
-.cls .name { flex:1; color:#e5e8ef; font-weight:650; }
-.cls .st { color:var(--muted); font-size:11px; min-width:83px; text-align:right; }
-.meter { display:inline-flex; gap:3px; flex:none; }
-.meter i { width:6px; height:11px; border-radius:3px; background:#343c4c; }
-.l3 i:nth-child(-n+3) { background:var(--ok); }
-.l2 i:nth-child(-n+2) { background:var(--mid); }
-.l1 i:nth-child(-n+1) { background:var(--low); }
-.re { display:block; font-size:10px; color:var(--ok); font-weight:700; }
-.actions { display:flex; gap:9px; }
-.btn {
-  flex:1; border:0; border-radius:11px; padding:11px 12px;
-  font:inherit; font-size:12px; font-weight:800; cursor:pointer;
-  background:linear-gradient(135deg,var(--accent-2),var(--accent));
-  color:#1a1409; text-align:center; text-decoration:none;
-  transition:transform .15s ease, filter .15s ease;
-}
-.btn:active { transform:scale(.98); }
-.btn.alt { background:rgba(72,199,142,.10); color:#6ce0a9; box-shadow:inset 0 0 0 1px rgba(72,199,142,.35); }
-.btn.off { background:rgba(255,255,255,.045); color:var(--muted); box-shadow:inset 0 0 0 1px var(--line); cursor:default; }
-.btn.book { flex:none; min-width:88px; background:transparent; color:var(--accent-2); box-shadow:inset 0 0 0 1px rgba(246,185,75,.4); }
-.msg {
-  color:var(--muted); text-align:center; padding:46px 20px;
-  background:var(--panel); border:1px dashed rgba(255,255,255,.13);
-  border-radius:17px; font-size:13px;
-}
-:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
-@media (min-width:600px) {
-  header { padding-top:34px; }
-  .show { padding:19px; }
-  .movie { font-size:19px; }
-}
-.filter-trigger {
-  display:block;
-  width:calc(100% - 36px);
-  max-width:724px;
-  margin:12px auto 16px;
-  padding:12px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--panel);
-  color:var(--fg);
-  font:inherit;
-  font-size:13px;
-  font-weight:700;
-  cursor:pointer;
-}
-.filter-overlay[hidden] { display:none; }
-.filter-overlay {
-  position:fixed;
-  inset:0;
-  z-index:1000;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-}
-.filter-backdrop {
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.72);
-}
-.filter-panel {
-  position:relative;
-  z-index:1;
-  width:100%;
-  max-width:600px;
-  max-height:85vh;
-  overflow-y:auto;
-  padding:20px 18px 28px;
-  padding-bottom:calc(28px + env(safe-area-inset-bottom, 0px));
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-bottom:0;
-  border-radius:20px 20px 0 0;
-  box-shadow:0 -8px 30px rgba(0,0,0,.3);
-}
-.filter-head {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:18px;
-  color:var(--fg);
-  font-size:16px;
-}
-.filter-close {
-  border:0;
-  background:var(--panel-2);
-  color:var(--fg);
-  border-radius:8px;
-  padding:8px 12px;
-  cursor:pointer;
-  font:inherit;
-}
-.filter-wrap {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-}
-.filter-wrap select {
-  width:100%;
-  min-width:0;
-  padding:12px 9px;
-  border-radius:10px;
-  border:1px solid var(--line);
-  background:var(--panel-2);
-  color:var(--fg);
-  font:inherit;
-  font-size:12px;
-}
-.filter-wrap button {
-  grid-column:1 / -1;
-  padding:11px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  background:var(--panel-2);
-  color:var(--muted);
-  font:inherit;
-  font-size:12px;
-  cursor:pointer;
-}
-@media (min-width:600px) {
-  .filter-overlay { align-items:center; padding:20px; }
-  .filter-panel { border-bottom:1px solid var(--line); border-radius:20px; }
+
+# Tracking group per theatre, e.g. TELEGRAM_CHAT_INTO=-1009876543210
+TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
+               for code in TARGET_THEATRES}
+
+SHOW_GRACE         = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # state/alerts end this long after showtime
+REMINDER_MINUTES = int(os.environ.get("REMINDER_MINUTES", "120"))
+MAX_DATES          = int(os.environ.get("MAX_DATES", "7"))
+FAIL_ALERT_AFTER   = 3
+TG_RETRIES         = 4
+CLEANUP_MAX_TRIES  = 5
+ERRORS_THREAD_NAME = "⚠️ Errors"
+STATE_DIR          = os.environ.get("STATE_DIR", "docs/state")
+TRACKING_DIR       = os.environ.get("TRACKING_DIR", "docs/tracking")
+META_FILE          = "meta.json"
+DIVIDER            = "━━━━━━━━━━━━━━━━"
+
+# Category AvailStatus, as checked against live seat maps:
+# 3 = plenty of seats, 2 = filling fast, 1 = last few seats, 0 = sold out
+AVAIL_LABELS = {"3": "Available", "2": "Filling fast", "1": "Almost full"}
+STATUS_NAMES = {"0": "Sold out", **AVAIL_LABELS}
+
+# Same request the BMS website's cinema page makes
+SHOWTIMES_URL   = ("https://in.bookmyshow.com/api/v3/mobile/showtimes/byvenue"
+                   "?dateCode={date}&venueCode={venue}&regionCode=CHEN&memberId=&appCode=WEBV2&lsId=")
+SEAT_LAYOUT_URL = "https://in.bookmyshow.com/movies/chennai/seat-layout/{event}/{venue}/{session}/{date}"
+
+# Headers the BMS website sends with its API calls (User-Agent comes from curl_cffi's impersonation)
+BMS_HEADERS = {
+    "Referer":              "https://in.bookmyshow.com/",
+    "Origin":               "https://in.bookmyshow.com",
+    "Accept":               "application/json, text/plain, */*",
+    "Accept-Language":      "en-IN,en;q=0.9",
+    "x-app-code":           "WEB",
+    "x-platform":           "WEB",
+    "x-platform-code":      "WEB",
+    "x-region-code":        "CHEN",
+    "x-region-slug":        "chennai",
+    "x-geohash":            "tf3",
+    "x-latitude":           "13.056",
+    "x-longitude":          "80.206",
+    "x-location-selection": "manual",
 }
 
 
-/* ── Clean visual refresh ───────────────────────────────── */
-:root {
-  --bg: #080c14;
-  --panel: #111927;
-  --panel-2: #172235;
-  --line: rgba(186, 204, 232, .12);
-  --fg: #f5f7fb;
-  --muted: #9aa9bd;
-  --accent: #f5bd59;
-  --accent-2: #ffdf9b;
-  --ok: #48d6a0;
-  --mid: #f5bd59;
-  --low: #ff817b;
-}
-body {
-  background:
-    radial-gradient(ellipse at 50% -18%, rgba(245,189,89,.16), transparent 43%),
-    radial-gradient(ellipse at 100% 28%, rgba(76,119,190,.10), transparent 34%),
-    var(--bg);
-}
-header {
-  padding-top: 28px;
-  padding-bottom: 22px;
-}
-.brand-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 15px;
-  box-shadow: 0 8px 28px rgba(245,189,89,.20);
-}
-h1 { font-size: 23px; letter-spacing: -.045em; }
-.subhead { font-size: 12px; letter-spacing: .01em; }
-#upd {
-  background: rgba(17,25,39,.78);
-  border-color: var(--line);
-  backdrop-filter: blur(12px);
-}
-.nav-wrap {
-  padding-top: 4px;
-}
-.nav-label {
-  font-size: 10px;
-  letter-spacing: .16em;
-  color: #91a0b5;
-}
-.row {
-  gap: 8px;
-  padding-top: 7px;
-  padding-bottom: 17px;
-}
-.chip {
-  background: rgba(19,29,45,.86);
-  border-color: rgba(186,204,232,.13);
-  border-radius: 14px;
-  padding: 11px 15px;
-  color: #d4dce8;
-  box-shadow: 0 3px 12px rgba(0,0,0,.10);
-}
-.chip[aria-pressed="true"] {
-  background: linear-gradient(135deg, #ffe3a8, #edac42);
-  color: #211707;
-  box-shadow: 0 7px 22px rgba(245,189,89,.19);
-}
-#dates .chip {
-  min-width: 82px;
-  padding: 10px 13px;
-}
-.filter-trigger {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  width: calc(100% - 36px);
-  max-width: 724px;
-  margin: 2px auto 18px;
-  padding: 13px 16px;
-  border: 1px solid rgba(245,189,89,.28);
-  border-radius: 15px;
-  background: linear-gradient(115deg, rgba(245,189,89,.13), rgba(23,34,53,.96) 58%);
-  color: var(--fg);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: .01em;
-  box-shadow: 0 8px 24px rgba(0,0,0,.15), inset 0 1px rgba(255,255,255,.035);
-}
-.filter-trigger:before {
-  content: "☷";
-  color: var(--accent-2);
-  font-size: 17px;
-  line-height: 1;
-}
-.filter-trigger:active { transform: scale(.99); }
-main { gap: 13px; }
-.show {
-  border-radius: 20px;
-  padding: 17px;
-  background: linear-gradient(145deg, rgba(21,32,49,.98), rgba(14,21,33,.98));
-  border-color: rgba(186,204,232,.12);
-  box-shadow: 0 12px 30px rgba(0,0,0,.19), inset 0 1px rgba(255,255,255,.025);
-}
-.show:before {
-  width: 3px;
-  opacity: .95;
-}
-.movie {
-  font-size: 17px;
-  line-height: 1.3;
-}
-.meta {
-  color: #9eacc0;
-  line-height: 1.5;
-}
-.tag {
-  border-radius: 999px;
-  padding: 4px 9px;
-  background: rgba(245,189,89,.09);
-  border-color: rgba(245,189,89,.16);
-  color: #f3d39a;
-}
-.time {
-  color: #ffdc98;
-  font-size: 19px;
-}
-.classes {
-  background: rgba(5,10,18,.28);
-  border-color: rgba(186,204,232,.08);
-  border-radius: 14px;
-  padding: 3px 13px;
-}
-.cls { padding: 10px 0; }
-.cls .name { color: #e8edf5; }
-.cls .st { color: #a5b2c4; }
-.actions { gap: 10px; }
-.btn {
-  min-height: 43px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  font-size: 12px;
-  letter-spacing: .01em;
-  box-shadow: 0 5px 15px rgba(245,189,89,.10);
-}
-.btn.alt {
-  box-shadow: inset 0 0 0 1px rgba(72,214,160,.32);
-}
-.btn.book {
-  min-width: 94px;
-  box-shadow: inset 0 0 0 1px rgba(245,189,89,.38);
-}
-.msg {
-  background: rgba(17,25,39,.78);
-  border: 1px dashed rgba(186,204,232,.18);
-  border-radius: 19px;
-  color: #aab7c8;
-}
-.filter-overlay {
-  align-items: flex-end;
-  padding: 12px;
-}
-.filter-backdrop {
-  background: rgba(2,6,13,.76);
-  backdrop-filter: blur(5px);
-}
-.filter-panel {
-  max-width: 560px;
-  max-height: min(82vh, 720px);
-  padding: 22px 20px calc(24px + env(safe-area-inset-bottom, 0px));
-  background: linear-gradient(160deg, #182438, #101827 72%);
-  border: 1px solid rgba(186,204,232,.15);
-  border-radius: 24px;
-  box-shadow: 0 -15px 55px rgba(0,0,0,.42);
-}
-.filter-head {
-  margin-bottom: 7px;
-  font-size: 18px;
-  letter-spacing: -.02em;
-}
-.filter-head strong:after {
-  content: "Choose what you want to watch";
-  display: block;
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-.filter-close {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255,255,255,.055);
-  color: #e8edf5;
-  font-size: 14px;
-}
-.filter-wrap {
-  grid-template-columns: 1fr 1fr;
-  gap: 11px;
-  padding-top: 17px;
-}
-.filter-wrap select {
-  min-height: 48px;
-  padding: 12px 34px 12px 13px;
-  border-radius: 13px;
-  border-color: rgba(186,204,232,.14);
-  background-color: #1a2940;
-  color: #edf2f8;
-  font-size: 12px;
-  font-weight: 600;
-  outline-offset: 2px;
-}
-.filter-wrap select:focus {
-  border-color: rgba(245,189,89,.65);
-}
-.filter-wrap button {
-  min-height: 45px;
-  margin-top: 3px;
-  border-radius: 13px;
-  border-color: rgba(245,189,89,.24);
-  background: rgba(245,189,89,.08);
-  color: #f5d49b;
-  font-weight: 750;
-}
-@media (min-width:600px) {
-  header { padding-top: 34px; }
-  .show { padding: 20px; }
-  .movie { font-size: 19px; }
-  .filter-overlay { align-items: center; padding: 24px; }
-  .filter-panel { border-radius: 24px; }
-}
-@media (max-width:380px) {
-  #upd { font-size: 10px; padding: 6px 8px; }
-  .brand { gap: 9px; }
-  h1 { font-size: 21px; }
-  .filter-panel { padding-left: 15px; padding-right: 15px; }
-  .filter-wrap { gap: 8px; }
-  .filter-wrap select { font-size: 11px; padding-left: 10px; }
-}
-
-.filter-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  max-width: 724px;
-  margin: 2px auto 18px;
-  padding: 0 16px;
-}
-/* Reset margins on the trigger since the container handles it now */
-.filter-trigger {
-  margin: 0; 
-  flex: 1;
-  max-width: 250px; /* keeps it from stretching too wide */
-}
-.filter-clear-quick {
-  background: rgba(255, 129, 123, 0.1);
-  border: 1px solid rgba(255, 129, 123, 0.25);
-  color: #ff817b;
-  border-radius: 12px;
-  padding: 0 14px;
-  height: 46px; /* Matches the trigger height */
-  font-weight: 700;
-  font-size: 12px;
-  cursor: pointer;
-  transition: transform 0.1s ease;
-}
-.filter-clear-quick:active {
-  transform: scale(0.95);
-}
-
-
-/* Category selection */
-.category-overlay[hidden] { display:none; }
-.category-overlay {
-  position:fixed;
-  inset:0;
-  z-index:1100;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  background:rgba(0,0,0,.72);
-}
-.category-panel {
-  width:100%;
-  max-width:560px;
-  max-height:82vh;
-  overflow-y:auto;
-  padding:22px 20px calc(24px + env(safe-area-inset-bottom, 0px));
-  background:linear-gradient(160deg,#182438,#101827 72%);
-  border:1px solid var(--line);
-  border-radius:24px 24px 0 0;
-}
-.category-head {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  margin-bottom:8px;
-}
-.category-title { font-size:18px; font-weight:800; }
-.category-sub { color:var(--muted); font-size:12px; margin-bottom:17px; }
-.category-option {
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:13px 12px;
-  margin-bottom:8px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:rgba(255,255,255,.035);
-  cursor:pointer;
-}
-.category-option input {
-  width:18px;
-  height:18px;
-  accent-color:var(--accent);
-}
-.category-option span { flex:1; font-size:13px; font-weight:700; }
-.category-price { color:var(--muted); font-size:12px; }
-.category-actions { display:flex; gap:10px; margin-top:18px; }
-.category-actions button {
-  flex:1;
-  min-height:44px;
-  border-radius:12px;
-  font:inherit;
-  font-size:12px;
-  font-weight:800;
-  cursor:pointer;
-}
-.category-cancel {
-  border:1px solid var(--line);
-  background:var(--panel-2);
-  color:var(--fg);
-}
-.category-start {
-  border:0;
-  background:linear-gradient(135deg,var(--accent-2),var(--accent));
-  color:#1a1409;
-}
-@media (min-width:600px) {
-  .category-overlay { align-items:center; padding:20px; }
-  .category-panel { border-radius:24px; }
-}
-
-</style>
-</head>
-<body>
-<header>
-  <div class="brand"><div class="brand-mark" aria-hidden="true">B</div><div><h1>Budget Seats</h1><div class="subhead">Find the best seats before they’re gone</div></div></div>
-  <div id="upd"></div>
-</header>
-<div class="nav-wrap">
-  <div class="nav-label">Choose a theatre</div>
-  <nav class="row" id="venues" aria-label="Theatres"></nav>
-  <div class="nav-label">Select a date</div>
-  <nav class="row" id="dates" aria-label="Dates"></nav>
-</div>
-
-<div class="filter-bar">
-  <button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
-  <button type="button" class="filter-clear-quick" id="filter-clear-quick" hidden>✕ Clear</button>
-</div>
-<div class="filter-overlay" id="filter-overlay" hidden>
-  <div class="filter-backdrop" data-filter-close></div>
-  <section class="filter-panel" role="dialog" aria-modal="true" aria-labelledby="filter-title">
-    <div class="filter-head">
-      <strong id="filter-title">Filter shows</strong>
-      <button type="button" class="filter-close" data-filter-close aria-label="Close filters">✕</button>
-    </div>
-    <div class="filter-wrap" id="filters"></div>
-  </section>
-</div>
-
-<div class="category-overlay" id="category-overlay" hidden>
-  <section class="category-panel" role="dialog" aria-modal="true">
-    <div class="category-head">
-      <div class="category-title">Choose seat categories</div>
-      <button type="button" class="filter-close" id="category-close">✕</button>
-    </div>
-
-    <div class="category-sub" id="category-sub">
-      Select the categories you want alerts for.
-    </div>
-
-    <div id="category-options"></div>
-
-    <div class="category-actions">
-      <button type="button" class="category-cancel" id="category-cancel">
-        Cancel
-      </button>
-      <button type="button" class="category-start" id="category-start">
-        Continue
-      </button>
-    </div>
-  </section>
-</div>
-
-<main id="list"></main>
-<script>
-// ── Settings ──────────────────────────────────────────────
-const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
-const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
-const PENDING_MIN = 1;                    // how long a press shows as "Waiting" before we stop assuming
-const THEATRES = {
-  INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
-  TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
-};
-const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
-
-// ── State ─────────────────────────────────────────────────
-const tg = window.Telegram && window.Telegram.WebApp;
-if (tg) { tg.ready(); tg.expand(); }
-
-const store = {
-  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
-  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
-};
-const S = {
-  venue: store.get("venue", "INTO"),
-  date: null,
-  state: {},
-  track: {},
-  updated: {},
-  failed: {},
-  filters: {
-    movie: "",
-    language: "",
-    dimension: "",
-    screen: "",
-    time: ""
-  }
-};if (!THEATRES[S.venue]) S.venue = "INTO";
-
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-
-// ── Data ──────────────────────────────────────────────────
-async function getJson(folder, venue) {
-  try {
-    const r = await fetch(`${folder}/${venue}.json?t=${Date.now()}`, { cache: "no-store" });
-    if (r.status === 404) return {};
-    return r.ok ? await r.json() : null;
-  } catch { return null; }
-}
-
-async function loadState(venue) {
-  const st = await getJson("state", venue);
-  S.failed[venue] = st === null;
-
-  if (st) {
-    S.updated[venue] = st._updated;
-    delete st._updated;
-    S.state[venue] = st;
-  }
-}
-
-async function loadTracking(venue) {
-  const tr = await getJson("tracking", venue);
-  if (tr !== null) S.track[venue] = tr;
-}
-
-async function load(venue) {
-  await Promise.all([
-    loadState(venue),
-    loadTracking(venue)
-  ]);
-}
-const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
-
-let categorySelection = null;
-
-function openCategoryPicker(v, d, id, show) {
-  const classes = Object.entries(show.classes || {})
-    .filter(([name, c]) => name && Number(c.price) > 0);
-
-  if (!classes.length) {
-    alert("No seat categories are available for this show.");
-    return;
-  }
-
-  categorySelection = { v, d, id, show, classes };
-
-  document.getElementById("category-sub").textContent =
-    `${show.movie || "This show"} · ${show.time || ""} — Select one or more categories.`;
-
-  document.getElementById("category-options").innerHTML =
-    classes.map(([name, c], index) => `
-      <label class="category-option">
-        <input type="checkbox"
-          value="${esc(name)}"
-          ${index === 0 ? "checked" : ""}>
-        <span>${esc(name)}</span>
-        <small class="category-price">₹${esc(c.price)}</small>
-      </label>
-    `).join("");
-
-  document.getElementById("category-overlay").hidden = false;
-}
-
-function closeCategoryPicker() {
-  document.getElementById("category-overlay").hidden = true;
-  categorySelection = null;
-}
-
-function pending(v, d, s) {
-  const p = store.get("pend", {})[`${v}_${d}_${s}`];
-  if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
-  return (p.a === "trk") !== isTracked(v, d, s) ? p.a : null;   // null once the file confirms it
-}
-
-// ── Rendering ─────────────────────────────────────────────
-const live = show => Date.parse(show.end) > Date.now();
-const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
-
-function dateLabel(code) {
-  const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
-  const t = new Date(); t.setHours(0, 0, 0, 0);
-  const diff = Math.round((d - t) / 86400000);
-  const base = d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
-  const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : d.toLocaleDateString("en-IN", { weekday: "short" });
-  return { day, base };
-}
-
-function renderVenues() {
-  document.getElementById("venues").innerHTML = Object.entries(THEATRES).map(([code, name]) =>
-    `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join("");
-}
-
-function datesFor(v) {
-  const st = S.state[v] || {};
-  return Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(live)).sort();
-}
-
-function renderDates() {
-  const dates = datesFor(S.venue);
-  if (!dates.includes(S.date)) S.date = dates[0] || null;
-  document.getElementById("dates").innerHTML = dates.map(d => {
-    const l = dateLabel(d);
-    return `<button class="chip" data-d="${d}" aria-pressed="${d === S.date}">${l.day}<small>${l.base}</small></button>`;
-  }).join("");
-}
-
-function button(v, d, id, show) {
-  const key = `${v}_${d}_${id}`;
-  const p = pending(v, d, id);
-  if (p) {
-  const item = store.get("pend", {})[key];
-
-  const elapsed = item
-    ? Math.floor((Date.now() - item.ts) / 1000)
-    : 0;
-
-  const remaining = Math.max(
-    0,
-    PENDING_MIN * 60 - elapsed
-  );
-
-  const mins = String(Math.floor(remaining / 60)).padStart(2, "0");
-  const secs = String(remaining % 60).padStart(2, "0");
-
-  return `<button class="btn off" disabled>
-    🟡 Waiting for confirmation · ${mins}:${secs}
-  </button>`;
-}
-  if (isTracked(v, d, id)) return `<button class="btn alt" data-a="unt" data-k="${key}">Tracking, tap to stop</button>`;
-  if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
-return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
-}
-
-function renderFilters() {
-  const day = (S.state[S.venue] || {})[S.date] || {};
-
-  // Build choices from every show in this selected theatre/date state.
-  // The show list itself still displays only live shows.
-  const shows = Object.values(day);
-
-  const options = (field) => [...new Set(
-    shows.map(s => String(s[field] || "").trim()).filter(Boolean)
-  )].sort((a, b) => a.localeCompare(b));
-
-  const makeSelect = (id, label, values) => `
-    <select id="filter-${id}" aria-label="${label}">
-      <option value="">All ${label}</option>
-      ${values.map(value =>
-        `<option value="${esc(value)}" ${S.filters[id] === value ? "selected" : ""}>
-          ${esc(value)}
-        </option>`
-      ).join("")}
-    </select>
-  `;
-
-  // Remove selections that are no longer available
-  ["movie", "language", "dimension", "screen"].forEach(field => {
-    if (!options(field).includes(S.filters[field])) {
-      S.filters[field] = "";
-    }
-  });
-
-  document.getElementById("filters").innerHTML = `
-    ${makeSelect("movie", "Movies", options("movie"))}
-    ${makeSelect("language", "Languages", options("language"))}
-    ${makeSelect("dimension", "Dimensions", options("dimension"))}
-    ${makeSelect("screen", "Screens", options("screen"))}
-
-    <select id="filter-time" aria-label="Show time">
-      <option value="">All show times</option>
-      <option value="morning" ${S.filters.time === "morning" ? "selected" : ""}>Morning (before 12 PM)</option>
-      <option value="afternoon" ${S.filters.time === "afternoon" ? "selected" : ""}>Afternoon (12–5 PM)</option>
-      <option value="evening" ${S.filters.time === "evening" ? "selected" : ""}>Evening (5–9 PM)</option>
-      <option value="night" ${S.filters.time === "night" ? "selected" : ""}>Night (9 PM onwards)</option>
-    </select>
-
-    <button type="button" data-filter-reset>Clear all filters</button>
-  `;
-  updateFilterUI()
-}
-
-function matchesFilters(show) {
-  const f = S.filters;
-
-  if (f.movie && show.movie !== f.movie) return false;
-  if (f.language && show.language !== f.language) return false;
-  if (f.dimension && show.dimension !== f.dimension) return false;
-  if (f.screen && show.screen !== f.screen) return false;
-
-  if (f.time) {
-    const hour = Number(
-      new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Asia/Kolkata",
-        hour: "2-digit",
-        hourCycle: "h23"
-      }).formatToParts(new Date(show.start)).find(part => part.type === "hour").value
-    );
-
-    if (f.time === "morning" && !(hour < 12)) return false;
-    if (f.time === "afternoon" && !(hour >= 12 && hour < 17)) return false;
-    if (f.time === "evening" && !(hour >= 17 && hour < 21)) return false;
-    if (f.time === "night" && !(hour >= 21 || hour < 5)) return false;
-  }
-
-  return true;
-}
-
-function renderList() {
-  const el = document.getElementById("list");
-  const v = S.venue;
-  if (S.failed[v] && !S.state[v]) { el.innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and pull to refresh.</div>`; return; }
-  const day = (S.state[v] || {})[S.date] || {};
-  const shows = Object.entries(day)
-    .filter(([, s]) => live(s) && matchesFilters(s))
-    .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
-  if (!shows.length) {
-    el.innerHTML = `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`;
-    return;
-  }
-  el.innerHTML = shows.map(([id, s]) => {
-    const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
-    const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
-    const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
-    const classes = Object.entries(s.classes || {}).map(([name, c]) => `
-      <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
-    return `<article class="show">
-      <div class="top"><div><div class="movie">${esc(s.movie)}</div><div class="meta">${meta}</div>${tags ? `<div class="tags">${tags}</div>` : ""}</div><div class="time">${esc(s.time)}<div class="dur">${dur}</div></div></div>
-      <div class="classes">${classes}</div>
-      <div class="actions">${button(v, S.date, id, s)}<a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a></div>
-    </article>`;
-  }).join("");
-  updateFilterUI()
-}
-
-function renderUpdated() {
-  const u = S.updated[S.venue], el = document.getElementById("upd");
-  if (!u) { el.textContent = ""; return; }
-  const m = Math.max(0, Math.round((Date.now() - Date.parse(u)) / 60000));
-  el.textContent = m < 1 ? "Data Updated just now" : m < 60 ? `Data Updated ${m} min ago` : `Data Updated ${Math.round(m / 60)} h ago`;
-}
-
-function renderAll() {
-  renderVenues();
-  renderDates();
-  renderFilters();
-  renderList();
-  renderUpdated();
-}
-// ── Actions ───────────────────────────────────────────────
-function press(action, key) {
-  const [v, d, id] = key.split("_");
-  const pend = store.get("pend", {});
-  pend[key] = { a: action, ts: Date.now() };
-  store.set("pend", pend);
-  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}`;   // bot reads: action, venue, session, date
-  if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
-  renderList();
-}
-
-function updateFilterUI() {
-  const activeCount = Object.values(S.filters).filter(Boolean).length;
-  const quickClear = document.getElementById("filter-clear-quick");
-  const filterBtn = document.getElementById("filter-open");
-
-  if (activeCount > 0) {
-    quickClear.hidden = false;
-    filterBtn.innerHTML = `⚙ Filters <span style="background:var(--accent);color:#000;padding:2px 6px;border-radius:6px;margin-left:4px">${activeCount}</span>`;
-  } else {
-    quickClear.hidden = true;
-    filterBtn.innerHTML = `⚙ Filters`;
-  }
-}
-
-document.addEventListener("click", async e => {
-  if (e.target.closest("[data-filter-close]")) {
-    document.getElementById("filter-overlay").hidden = true;
-    return;
-  }
-
-  const t = e.target.closest("button");
-  if (!t) return;
-  if (t.id === "category-close" || t.id === "category-cancel") {
-  closeCategoryPicker();
-  return;
-}
-
-if (t.id === "category-start") {
-  if (!categorySelection) return;
-
-  const selected = [
-    ...document.querySelectorAll(
-      "#category-options input[type='checkbox']:checked"
+def console_print(message):
+    """Print timestamped messages in terminal and GitHub Actions."""
+    print(
+        f"[{datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S')}] {message}",
+        flush=True
     )
-  ].map(input => input.value);
-
-  if (!selected.length) {
-    alert("Please select at least one seat category.");
-    return;
-  }
-
-  // Keep the selection locally for the upcoming bot integration.
-  const { v, d, id } = categorySelection;
-  const selections = store.get("categorySelections", {});
-  selections[`${v}_${d}_${id}`] = selected;
-  store.set("categorySelections", selections);
-
-  closeCategoryPicker();
-
-  alert(
-    "Your category selection has been saved in this Mini App. " +
-    "Telegram bot integration is still pending, so alerts have not started yet."
-  );
-  return;
-}
-
-  if (t.id === "filter-open") {
-    document.getElementById("filter-overlay").hidden = false;
-    return;
-  }
-
-  if (t.dataset.filterReset !== undefined) {
-  S.filters = {
-    movie: "",
-    language: "",
-    dimension: "",
-    screen: "",
-    time: ""
-  };
-  renderFilters();
-  renderList();
-  return;
-}
-  if (t.dataset.v) { S.venue = t.dataset.v; store.set("venue", S.venue); S.date = null; renderAll(); await load(S.venue); renderAll(); }
-else if (t.dataset.d) {
-  S.date = t.dataset.d;
-  renderDates();
-  renderFilters();
-  renderList();
-}  else if (t.dataset.a === "pick") {
-  const [v, d, id] = t.dataset.k.split("_");
-  const show = ((S.state[v] || {})[d] || {})[id];
-  if (show) openCategoryPicker(v, d, id, show);
-}
-else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
-if (t.id === "filter-clear-quick") {
-    S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
-    renderFilters();
-    renderList();
-    return;
-  }
-});
-
-document.addEventListener("change", e => {
-  if (!e.target.id || !e.target.id.startsWith("filter-")) return;
-
-  const field = e.target.id.replace("filter-", "");
-  S.filters[field] = e.target.value;
-
-  renderList();
-});
 
 
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") {
-    document.getElementById("filter-overlay").hidden = true;
-  }
-});
+console_print("🤖 BookMyShow alert scanner module loaded.")
+console_print(f"⚙️ Reminder: {REMINDER_MINUTES} minutes before show")
+console_print(f"⚙️ Maximum dates to scan: {MAX_DATES}")
+console_print(f"⚙️ Theatres configured: {len(TARGET_THEATRES)}")
 
-async function refreshAll() {
-  await load(S.venue);
-  renderAll();
-}
+# ───────────────────────── helpers ─────────────────────────
 
-async function refreshState() {
-  const venue = S.venue;
-  await loadState(venue);
-  if (venue === S.venue) renderAll();
-}
 
-async function refreshTracking() {
-  const venue = S.venue;
-  await loadTracking(venue);
-  if (venue === S.venue) renderList();
-}
+def parse_bms_time(value):
+    try:
+        return datetime.strptime(value, "%Y%m%d%H%M").replace(tzinfo=IST)
+    except (TypeError, ValueError):
+        console_print(f"⚠️ Invalid BMS time: {value}")
+        return None
 
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden) refreshAll();
-});
 
-// State JSON: every 30 seconds
-setInterval(() => {
-  if (!document.hidden) refreshState();
-}, 30000);
+def parse_iso(value):
+    try:
+        return datetime.fromisoformat(value)
+    except (TypeError, ValueError):
+        return None
 
-// Tracking JSON: every 5 seconds
-setInterval(() => {
-  if (!document.hidden) refreshTracking();
-}, 5000);
 
-// Countdown: every 1 second (no JSON download)
-setInterval(() => {
-  if (document.hidden) return;
+def format_date(date_code):
+    try:
+        return datetime.strptime(date_code, "%Y%m%d").strftime("%a %d %b")
+    except (TypeError, ValueError):
+        return date_code
 
-  const pending = store.get("pend", {});
 
-  const hasPending = Object.values(pending).some(p =>
-    p && Date.now() - p.ts < PENDING_MIN * 60000
-  );
+def entry_end(show, date_code):
+    """When this stored show expires (showtime + grace). Falls back to the end of its date."""
+    end = parse_iso(show.get("end"))
+    if end:
+        return end
+    try:
+        return datetime.strptime(date_code, "%Y%m%d").replace(tzinfo=IST) + timedelta(days=1)
+    except (TypeError, ValueError):
+        return datetime(2000, 1, 1, tzinfo=IST)
 
-  if (hasPending) renderList();
-}, 1000);
 
-renderAll();
-refreshAll();
-</script>
-</body>
-</html>
+# ───────────────────────── files ─────────────────────────
+
+def read_json(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return default
+
+
+def write_json(path, data):
+    folder = os.path.dirname(path)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=1, sort_keys=True, ensure_ascii=False)
+        f.write("\n")
+    os.replace(tmp, path)
+
+
+def load_state():
+    """state[VENUE] = {date: {session: show}} read from docs/state/<VENUE>.json."""
+    console_print("📂 Loading saved state...")
+    state = {}
+    for venue in TARGET_THEATRES:
+        data = read_json(os.path.join(STATE_DIR, f"{venue}.json"), {})
+        if not isinstance(data, dict):
+            data = {}
+        data.pop("_updated", None)
+        state[venue] = data
+    shows = sum(len(s) for dates in state.values() for s in dates.values())
+    console_print(f"🎬 Shows loaded: {shows}")
+    return state
+
+
+def load_tracking():
+    """tracking[VENUE] = {date: {session: {"tracked", "thread"}}}  (read-only here)."""
+    tracking = {}
+    for venue in TARGET_THEATRES:
+        data = read_json(os.path.join(TRACKING_DIR, f"{venue}.json"), {})
+        tracking[venue] = data if isinstance(data, dict) else {}
+    return tracking
+
+
+def load_meta():
+    meta = read_json(META_FILE, {})
+    if not isinstance(meta, dict):
+        meta = {}
+    meta.setdefault("threads", {})          # "<VENUE>_errors" -> topic id
+    meta.setdefault("fail_streaks", {})     # venue -> consecutive failed runs (capped)
+    meta.setdefault("outage_alerted", [])   # venues whose outage warning was delivered
+    return meta
+
+
+def save_all(state, meta, now):
+    """Write only files whose content really changed, so unchanged runs make no commits."""
+    console_print("💾 Saving state...")
+    for venue, data in state.items():
+        path = os.path.join(STATE_DIR, f"{venue}.json")
+        old = read_json(path, {})
+        if isinstance(old, dict):
+            old.pop("_updated", None)
+        if old == data:
+            continue
+        out = dict(data)
+        out["_updated"] = now.isoformat(timespec="seconds")
+        write_json(path, out)
+    if read_json(META_FILE, {}) != meta:
+        write_json(META_FILE, meta)
+
+
+def get_show(state, venue, date_code, session):
+    return ((state.get(venue) or {}).get(date_code) or {}).get(session)
+
+
+def track_thread(state, tracking, venue, date_code, session):
+    """Topic id for a TRACKED show, else None. If the original topic was deleted and this
+    scanner made a replacement, the replacement is used while the file still lists the old id."""
+    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
+    if not t.get("tracked") or not t.get("thread"):
+        return None
+    s = get_show(state, venue, date_code, session) or {}
+    if s.get("thread") and s.get("thread_for") == t["thread"]:
+        return s["thread"]
+    return t["thread"]
+
+def is_category_tracked(tracking, venue, date_code, session, category):
+    """True only when this category is selected for tracking."""
+    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
+
+    if not t.get("tracked"):
+        return False
+
+    selected = t.get("categories", [])
+
+    if not isinstance(selected, list):
+        return False
+
+    return category.strip().upper() in {
+        str(c).strip().upper() for c in selected
+    }
+
+
+# ───────────────────────── telegram ─────────────────────────
+
+_last_send = {}
+SEND_METHODS = {"sendMessage", "editMessageText", "editMessageReplyMarkup",
+                "createForumTopic", "editForumTopic"}
+
+
+def throttle(chat_id, gap=3.2):
+    """Keep to about 18 messages/min per group (Telegram allows 20)."""
+    wait = _last_send.get(chat_id, 0) + gap - time.monotonic()
+    if wait > 0:
+        time.sleep(wait)
+    _last_send[chat_id] = time.monotonic()
+
+
+def tg_api(method, payload):
+    """Call a Telegram Bot API method via curl_cffi with retries. Returns (ok, body)."""
+    console_print(f"📨 Telegram API request: {method}")
+
+    if not TELEGRAM_BOT_TOKEN:
+        console_print("❌ TELEGRAM_BOT_TOKEN is missing!")
+        return False, {}
+    url  = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}"
+    body = {}
+    if method in SEND_METHODS and payload.get("chat_id"):
+        throttle(payload["chat_id"])
+    for attempt in range(1, TG_RETRIES + 1):
+        console_print(f"🔄 Telegram attempt {attempt}/{TG_RETRIES}: {method}")
+        try:
+            resp = bms_req.post(url, json=payload, timeout=15)
+            try:
+                body = resp.json()
+            except ValueError:
+                body = {}
+            if resp.status_code == 200 and body.get("ok"):
+                console_print(f"✅ Telegram {method} successful.")
+                return True, body
+            desc = body.get("description", "")
+            console_print(f"⚠️ Telegram error: HTTP {resp.status_code} - {desc}")
+            if resp.status_code == 429:
+                wait = int(body.get("parameters", {}).get("retry_after", 5))
+                console_print(f"⏳ Telegram rate limit. Waiting {wait} seconds.")
+                time.sleep(min(wait, 60))
+                continue
+            if 400 <= resp.status_code < 500:
+                console_print("❌ Telegram client error. No retry.")
+                return False, body  # bad token/chat/thread; retrying won't help
+        except Exception as e:
+            console_print(f"❌ Telegram connection error: {type(e).__name__}")
+            # Exception text can contain the URL (bot token), so log only the type
+            logging.warning(f"Telegram {method} attempt {attempt}/{TG_RETRIES}: {type(e).__name__}")
+        if attempt < TG_RETRIES:
+            delay = 2 ** attempt  # 2s, 4s, 8s backoff for network errors and 5xx
+            console_print(f"⏳ Retrying after {delay} seconds...")
+            time.sleep(delay)
+    console_print(f"❌ Telegram {method} failed after all retries.")
+
+    return False, body
+
+
+def errors_note(venue):
+    """First message of a new Errors topic."""
+    return (f"📌 NOTE\n"
+            f"🎟️ {TARGET_THEATRES[venue]}\n"
+            f"{DIVIDER}\n"
+            f"BookMyShow outages, recoveries and\n"
+            f"bot crashes are posted here.")
+
+
+def get_errors_thread(meta, venue, force=False):
+    """Errors topic of this theatre's tracking group, created on first use."""
+    chat_id = TRACK_CHATS.get(venue)
+    key = f"{venue}_errors"
+    if key in meta["threads"] and not force:
+        return meta["threads"][key]
+    ok, body = tg_api("createForumTopic", {"chat_id": chat_id, "name": ERRORS_THREAD_NAME})
+    if not ok:
+        logging.warning(f"{venue}: couldn't create the Errors topic ({body.get('description', '')})")
+        return None
+    thread_id = body["result"]["message_thread_id"]
+    meta["threads"][key] = thread_id
+    tg_api("sendMessage", {"chat_id": chat_id, "message_thread_id": thread_id, "text": errors_note(venue),
+                           "disable_notification": True, "disable_web_page_preview": True})
+    return thread_id
+
+
+def send_error(meta, venue, text):
+    """Post into the theatre's Errors topic; recreate the topic once if it was deleted."""
+    chat_id = TRACK_CHATS.get(venue)
+    if not chat_id:
+        logging.error(f"{venue}: no TELEGRAM_CHAT_{venue} set, can't send")
+        return False
+    thread_id = get_errors_thread(meta, venue)
+    payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
+    if thread_id:
+        payload["message_thread_id"] = thread_id
+    ok, body = tg_api("sendMessage", payload)
+    if not ok and thread_id and "thread" in body.get("description", "").lower():
+        thread_id = get_errors_thread(meta, venue, force=True)
+        payload.pop("message_thread_id", None)
+        if thread_id:
+            payload["message_thread_id"] = thread_id
+        ok, body = tg_api("sendMessage", payload)
+    return ok
+
+
+# ───────────────────────── tracking topics ─────────────────────────
+
+def track_name(date_code, s):
+    return f"{format_date(date_code)} · {s.get('movie', 'Movie')} · {s.get('time', '')}"[:120]
+
+
+def status_text(s):
+    """Seat status summary, used when a deleted topic has to be recreated."""
+    rows = "\n".join(f"💺 {html.escape(d)} · ₹{c['price']:g} · {STATUS_NAMES.get(c['status'], c['status'])}"
+                     for d, c in s.get("classes", {}).items())
+    return (f"🎬 <b>{html.escape(s.get('movie', 'Movie'))}</b>\n🕘 {html.escape(s.get('time', ''))}\n{rows}\n"
+            f'🔗 <a href="{html.escape(s.get("url", ""), quote=True)}">Book seats</a>')
+
+
+def send_track(state, tracking, venue, date_code, session, text):
+    """Send an alert into the tracked show's topic. If the topic was deleted by hand, make a
+    replacement (remembered in state, since tracking/ is not ours to edit) and resend once."""
+    tc = TRACK_CHATS.get(venue)
+    s = get_show(state, venue, date_code, session)
+    thread = track_thread(state, tracking, venue, date_code, session)
+    if not tc or not thread or not s:
+        return False
+    ok, body = tg_api("sendMessage", {"chat_id": tc, "message_thread_id": thread, "text": text,
+                                      "parse_mode": "HTML", "disable_web_page_preview": True})
+    if ok:
+        return True
+    if "thread" not in body.get("description", "").lower():
+        return False
+    original = tracking[venue][date_code][session]["thread"]
+    ok_t, tb = tg_api("createForumTopic", {"chat_id": tc, "name": track_name(date_code, s)})
+    if not ok_t:
+        return False
+    new_thread = tb["result"]["message_thread_id"]
+    s["thread"], s["thread_for"] = new_thread, original
+    tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": status_text(s),
+                           "parse_mode": "HTML", "disable_notification": True,
+                           "disable_web_page_preview": True})
+    ok, _ = tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": text,
+                                   "parse_mode": "HTML", "disable_web_page_preview": True})
+    return ok
+
+
+def announce_time_changes(state, tracking, changes):
+    """Tell tracked shows' topics about a new showtime and rename the topic."""
+    for c in changes:
+        thread = track_thread(state, tracking, c["venue"], c["date"], c["session"])
+        tc = TRACK_CHATS.get(c["venue"])
+        s = get_show(state, c["venue"], c["date"], c["session"])
+        if not (thread and tc and s):
+            continue
+        tg_api("sendMessage", {"chat_id": tc, "message_thread_id": thread,
+                               "text": f"⏰ Time changed: {c['old']} → {c['new']}"})
+        tg_api("editForumTopic", {"chat_id": tc, "message_thread_id": thread,
+                                  "name": track_name(c["date"], s)})
+
+
+# ───────────────────────── BMS fetching ─────────────────────────
+
+def fetch_showtimes(session, venue, date_code):
+    url = SHOWTIMES_URL.format(date=date_code, venue=venue)
+    for _ in range(2):
+        try:
+            r = session.get(url, headers=BMS_HEADERS, timeout=12)
+            if r.status_code == 200:
+                return r.json()
+            logging.warning(f"{venue} {date_code}: HTTP {r.status_code}")
+            if 400 <= r.status_code < 500:
+                return None  # blocked or bad request; retrying won't help
+        except Exception as e:
+            logging.warning(f"{venue} {date_code}: {type(e).__name__}: {e}")
+        time.sleep(2)
+    return None
+
+
+def iter_categories(data):
+    for day in data.get("ShowDetails") or []:
+        for ev in day.get("Event") or []:
+            duration = ev.get("EventDuration") or "0"
+            clean_title = ev.get("EventTitle") or "Movie"
+            for child in ev.get("ChildEvents") or []:
+                for show in child.get("ShowTimes") or []:
+                    for cat in show.get("Categories") or []:
+                        yield day, child, show, cat, duration, clean_title
+
+
+def register_shows(vstate, venue, data, now):
+    """Keep one entry per show under vstate[date][session]. Returns showtime changes found."""
+    changes = []
+    for day, child, show, cat, duration, title in iter_categories(data):
+        try:
+            price = float(cat.get("CurPrice") or 0)
+        except (TypeError, ValueError):
+            continue
+        session_id = show.get("SessionId")
+        date_code  = show.get("ShowDateCode") or day.get("Date")
+        start      = parse_bms_time(show.get("ShowDateTime"))
+        if not (price > 0 and session_id and date_code and start):
+            continue
+        if start + SHOW_GRACE < now:
+            continue
+        sid = str(session_id)
+        entry = vstate.setdefault(date_code, {}).setdefault(sid, {"classes": {}, "time": ""})
+        new_time = show.get("ShowTime") or ""
+        if entry.get("time") and new_time and new_time != entry["time"]:
+            changes.append({"venue": venue, "date": date_code, "session": sid,
+                            "old": entry["time"], "new": new_time})
+        entry["time"]      = new_time or entry.get("time", "")
+        entry["movie"]     = title
+        entry["language"]  = child.get("EventLanguage") or ""
+        entry["dimension"] = child.get("EventDimension") or ""
+        entry["screen"]    = show.get("ScreenName") or ""
+        entry["url"]       = SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
+                                                    session=session_id, date=date_code)
+        entry["start"]     = start.isoformat(timespec="seconds")
+        entry["end"]       = (start + SHOW_GRACE).isoformat(timespec="seconds")
+        entry["duration"]  = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
+        entry["tags"]      = [t for t in (show.get("Attributes"),
+                                          "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else "",
+                                          show.get("SessionSubTitleAcronym")) if t]
+    return changes
+
+
+def check_category(venue, day, child, show, cat, duration, clean_title, vstate, now, seen):
+    """Track one seat class and return an alert dict if it should ping, else None.
+    Adds every class it processes to seen."""
+    try:
+        price = float(cat.get("CurPrice") or 0)
+    except (TypeError, ValueError):
+        return None
+    if price <= 0:
+       return None
+
+    session_id = show.get("SessionId")
+    date_code  = show.get("ShowDateCode") or day.get("Date")
+    if not session_id or not date_code:
+        return None
+    sid = str(session_id)
+    entry = (vstate.get(date_code) or {}).get(sid)
+    if entry is None:
+        return None   # register_shows skipped it (expired or no start time)
+
+    desc   = (cat.get("PriceDesc") or "").strip().upper()
+    status = str(cat.get("AvailStatus", "0"))
+    if status not in STATUS_NAMES:
+        return None
+
+    start = parse_bms_time(show.get("ShowDateTime"))
+    end = start + SHOW_GRACE if start else parse_bms_time(show.get("CutOffDateTime"))
+    if end and end < now:
+        return None
+
+    seen.add((venue, date_code, sid, desc))
+    mins_to_start = (start - now).total_seconds() / 60 if start else None
+    soon = mins_to_start is not None and 0 <= mins_to_start <= REMINDER_MINUTES
+
+    # Extra tags for the alert text
+    sub_acronym = show.get("SessionSubTitleAcronym") or ""
+    attributes = show.get("Attributes") or ""
+    atmos = "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else ""
+    tags = [t for t in (attributes, atmos) if t]
+    extra_tags = " · ".join(tags)
+    sub_tag = f"[{sub_acronym}💬]" if sub_acronym else ""
+
+    # Show start - end time (end = start + duration + 25 min of ads/trailers)
+    time_str = show.get("ShowTime") or ""
+    if start and str(duration).isdigit() and int(duration) > 0:
+        end_time = start + timedelta(minutes=int(duration) + 25)
+        time_str = f"{time_str} - {end_time.strftime('%I:%M %p')}"
+
+    prev = entry["classes"].get(desc)
+    if prev is None:
+        if status == "0":
+            # Sold out right now: store it so a later run can ping when it opens
+            entry["classes"][desc] = {"price": price, "status": "0", "soon_alerted": False,
+                                      "first_seen_status": "0",
+                                      "first_seen_time": now.isoformat(timespec="seconds")}
+            return None
+        kind, prev_status = "new", None
+    else:
+        prev_status = prev.get("status") or "3"
+        if int(status) > int(prev_status):
+            kind = "opened" if prev_status == "0" else "more"
+        elif soon and status != "0" and not prev.get("soon_alerted"):
+            kind = "soon"
+        else:
+            # Classes stored before first_seen existed get their first_seen values from now on
+            prev.setdefault("first_seen_status", prev_status)
+            prev.setdefault("first_seen_time", now.isoformat(timespec="seconds"))
+            prev["status"] = status   # no ping, but keep the stored availability current
+            prev["price"] = price
+            return None
+
+    return {
+        "key": f"{venue}_{date_code}_{sid}_{desc}", "session": sid,
+        "kind": kind, "soon": soon, "mins": mins_to_start,
+        "venue": venue, "date": date_code, "movie": clean_title,
+        "time": time_str, "screen": show.get("ScreenName") or "",
+        "category": desc, "price": price, "status": status, "prev_status": prev_status,
+        "start": start,
+        "censor": child.get("EventCensor") or "", "extra_tags": extra_tags,
+        "trailer": child.get("EventTrailer") or "",
+        "url": SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
+                                      session=session_id, date=date_code),
+        "sub_tag": sub_tag,
+        "dimension": child.get("EventDimension") or "",
+        "language": child.get("EventLanguage") or "",
+    }
+
+
+def scan(session, state, now):
+    """Check every bookable date at every theatre.
+    Returns (hits, stats, changes). stats is {venue: {"ok": n, "failed": n}}."""
+    hits, keys, changes = [], set(), []
+    stats = {venue: {"ok": 0, "failed": 0} for venue in TARGET_THEATRES}
+    seen, scanned = set(), set()
+
+    for venue in TARGET_THEATRES:
+        vstate = state[venue]
+        dates, done = [now.strftime("%Y%m%d")], set()
+        while dates and len(done) < MAX_DATES:
+            date_code = dates.pop(0)
+            if date_code in done:
+                continue
+            done.add(date_code)
+
+            data = fetch_showtimes(session, venue, date_code)
+            time.sleep(0.5)
+
+            if data is None:
+                stats[venue]["failed"] += 1
+                continue
+
+            stats[venue]["ok"] += 1
+            try:
+                changes += register_shows(vstate, venue, data, now)
+            except Exception as e:
+                logging.warning(f"{venue} {date_code}: register_shows failed ({type(e).__name__}: {e})")
+            scanned.add((venue, date_code))
+            scanned.update((venue, d.get("Date")) for d in data.get("ShowDetails") or [])
+
+            if len(done) == 1:
+                dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
+                          if d.get("DateCode") and not d.get("isDisabled")]
+
+            for day, child, show, cat, duration, clean_title in iter_categories(data):
+                try:
+                    hit = check_category(venue, day, child, show, cat, duration, clean_title,
+                                         vstate, now, seen)
+                except Exception as e:
+                    logging.warning(f"{venue} {date_code}: skipped a seat class ({type(e).__name__}: {e})")
+                    continue
+                if hit and hit["key"] not in keys:
+                    keys.add(hit["key"])
+                    hits.append(hit)
+
+    # A class that vanished from a date we did scan is treated as sold out
+    for venue, dates in state.items():
+        for date_code, shows in dates.items():
+            if (venue, date_code) not in scanned:
+                continue
+            for sid, s in shows.items():
+                for desc, c in s.get("classes", {}).items():
+                    if (venue, date_code, sid, desc) not in seen and c.get("status") != "0":
+                        c["status"] = "0"
+
+    return hits, stats, changes
+
+
+def cleanup_ended(state, tracking, now):
+    """Drop shows past their window and delete their tracking topics. If a topic can't be
+    deleted, keep the show and retry on later runs (up to CLEANUP_MAX_TRIES)."""
+    for venue, dates in state.items():
+        for date_code in list(dates):
+            shows = dates[date_code]
+            for sid in list(shows):
+                s = shows[sid]
+                if entry_end(s, date_code) >= now:
+                    continue
+                thread = track_thread(state, tracking, venue, date_code, sid)
+                tc = TRACK_CHATS.get(venue)
+                if thread and tc:
+                    ok, body = tg_api("deleteForumTopic", {"chat_id": tc, "message_thread_id": thread})
+                    gone = "thread" in body.get("description", "").lower()
+                    if not ok and not gone:
+                        s["cleanup_tries"] = s.get("cleanup_tries", 0) + 1
+                        if s["cleanup_tries"] < CLEANUP_MAX_TRIES:
+                            continue                      # retry next run
+                shows.pop(sid)
+            if not shows:
+                dates.pop(date_code)
+
+
+# ───────────────────────── alerts ─────────────────────────
+
+def format_hit(h):
+    lines = []
+    if h["kind"] == "new":
+        lines.append("🆕 NEW SEAT CATEGORY")
+    elif h["kind"] == "opened":
+        lines.append("🔔 NOW AVAILABLE (was sold out)")
+    elif h["kind"] == "more":
+        lines.append(f"📈 MORE SEATS (was {STATUS_NAMES[h['prev_status']].lower()})")
+
+    if h["soon"]:
+        hours, mins = divmod(max(int(h["mins"]), 0), 60)
+        lines.append(f"⏰ SHOW IN {hours}h {mins}m" if hours else f"⏰ SHOW IN {mins} MIN")
+    elif h["mins"] is not None and h["mins"] < 0:
+        lines.append(f"⏰ STARTED {int(-h['mins'])} MIN AGO")
+
+    # Movie title line (title, language, dimension, censor, subtitles)
+    censor_tag = f" ({html.escape(h['censor'])})" if h.get("censor") else ""
+    sub_tag = f" {html.escape(h['sub_tag'])}" if h.get("sub_tag") else ""
+    lang_dim = " · ".join(html.escape(x) for x in (h.get("language"), h.get("dimension")) if x)
+    title_text = html.escape(h["movie"]) + (f" · {lang_dim}" if lang_dim else "")
+
+    if h.get("trailer"):
+        lines.append(f'🎬 <b><a href="{html.escape(h["trailer"], quote=True)}">{title_text}</a></b>{censor_tag}{sub_tag}')
+    else:
+        lines.append(f"🎬 <b>{title_text}</b>{censor_tag}{sub_tag}")
+
+    lines.append(f"🕘 {html.escape(h['time'])}")
+    if h["screen"]:
+        lines.append(f"🖥️ {html.escape(h['screen'])}")
+    if h.get("extra_tags"):
+        lines.append(f"✨ <i>{html.escape(h['extra_tags'])}</i>")
+
+    lines.append(f"💺 {html.escape(h['category'])} · ₹{h['price']:g}")
+    lines.append(f"📊 {AVAIL_LABELS[h['status']]}")
+    lines.append(f'🔗 <a href="{html.escape(h["url"], quote=True)}">Book seats</a>')
+
+    return "\n".join(lines)
+
+
+def record_alert(state, h, now):
+    """Store the class's latest status (and the soon flag) after it was alerted or silently seen.
+    first_seen_status / first_seen_time are set once, the first time the class is stored."""
+    entry = get_show(state, h["venue"], h["date"], h["session"])
+    if entry is None:
+        return
+    prev = entry["classes"].get(h["category"], {})
+    entry["classes"][h["category"]] = {
+        "price": h["price"], "status": h["status"],
+        "soon_alerted": h["soon"] or prev.get("soon_alerted", False),
+        "first_seen_status": prev.get("first_seen_status") or prev.get("status") or h["status"],
+        "first_seen_time": prev.get("first_seen_time") or now.isoformat(timespec="seconds"),
+    }
+
+
+def send_alerts(hits, state, tracking, now):
+    """Send alerts only for selected categories in tracked shows.
+    All other category statuses are still recorded silently."""
+    groups = {}
+
+    for h in sorted(hits, key=lambda h: h["start"] or now):
+
+        thread = track_thread(
+            state, tracking,
+            h["venue"], h["date"], h["session"]
+        )
+
+        category_selected = is_category_tracked(
+            tracking,
+            h["venue"],
+            h["date"],
+            h["session"],
+            h["category"]
+        )
+
+        if thread and category_selected:
+            groups.setdefault(
+                (h["venue"], h["date"], h["session"]), []
+            ).append(h)
+        else:
+            # Keep the category's status current without sending an alert.
+            record_alert(state, h, now)
+
+    sent = 0
+    for (venue, date_code, session), group in groups.items():
+        chunks, current, size = [], [], 0
+        for h in group:
+            block = format_hit(h)
+            if current and size + len(block) + len(DIVIDER) + 2 > 3600:
+                chunks.append(current)
+                current, size = [], 0
+            current.append((h, block))
+            size += len(block) + len(DIVIDER) + 2
+        if current:
+            chunks.append(current)
+        for n, chunk in enumerate(chunks, 1):
+            part = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
+            header = (f"🎟️ <b>{html.escape(TARGET_THEATRES[venue])}</b>\n"
+                      f"📅 {format_date(date_code)} · {len(group)} alert(s){part}")
+            text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
+            if send_track(state, tracking, venue, date_code, session, text):
+                for h, _ in chunk:
+                    record_alert(state, h, now)
+                sent += len(chunk)
+            time.sleep(1)
+    return sent
+
+
+def check_health(meta, stats):
+    """Per theatre: warn in its Errors topic when BMS has failed for several runs in a row,
+    and again when it recovers. Returns False if no theatre could be reached at all."""
+    streaks, alerted = meta["fail_streaks"], meta["outage_alerted"]
+    for venue, s in stats.items():
+        name = TARGET_THEATRES[venue]
+        if s["ok"] == 0:
+            # Capped so a long outage doesn't change meta.json (and commit) every run
+            streaks[venue] = min(streaks.get(venue, 0) + 1, FAIL_ALERT_AFTER)
+            if streaks[venue] == FAIL_ALERT_AFTER and venue not in alerted:
+                if send_error(meta, venue,
+                              f"⚠️ BMS bot: couldn't fetch showtimes for {name} on {FAIL_ALERT_AFTER} "
+                              f"checks in a row ({s['failed']} failed requests). "
+                              f"No alerts for this theatre until it recovers."):
+                    alerted.append(venue)
+        else:
+            if venue in alerted:
+                alerted.remove(venue)
+                send_error(meta, venue, f"✅ BMS bot: {name} is reachable again, alerts resumed.")
+            streaks.pop(venue, None)
+    return any(s["ok"] for s in stats.values())
+
+
+# ───────────────────────── main ─────────────────────────
+
+def main():
+    now      = datetime.now(IST)
+    meta     = load_meta()
+    state    = load_state()
+    tracking = load_tracking()
+    healthy  = False
+
+    tracked = sum(1 for v in tracking.values() for d in v.values() if isinstance(d, dict)
+                  for t in d.values() if isinstance(t, dict) and t.get("tracked"))
+    logging.info(f"Tracked shows in tracking files: {tracked}")
+
+    missing = [code for code, chat in TRACK_CHATS.items() if not chat]
+    if missing:
+        logging.error("No tracking group configured for: "
+                      + ", ".join(f"TELEGRAM_CHAT_{c}" for c in missing)
+                      + " (no alerts or error warnings for these theatres)")
+
+    try:
+        session = bms_req.Session(impersonate="chrome")
+        try:
+            hits, stats, changes = scan(session, state, now)
+        finally:
+            session.close()
+        ok     = sum(s["ok"] for s in stats.values())
+        failed = sum(s["failed"] for s in stats.values())
+        logging.info(f"BMS requests: {ok} ok, {failed} failed. Alerts to send: {len(hits)}")
+        if hits:
+            logging.info(f"Telegram alerts delivered: {send_alerts(hits, state, tracking, now)}/{len(hits)}")
+        if changes:
+            announce_time_changes(state, tracking, changes)
+        healthy = check_health(meta, stats)
+    except Exception as e:
+        logging.exception("Run crashed")
+        for venue in TARGET_THEATRES:
+            send_error(meta, venue, f"🔥 BMS bot crashed: {type(e).__name__}: {str(e)[:300]}")
+
+    try:
+        cleanup_ended(state, tracking, now)   # drop finished shows, delete their topics
+    except Exception:
+        logging.exception("Cleanup failed")
+    save_all(state, meta, now)
+    return 0 if healthy else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

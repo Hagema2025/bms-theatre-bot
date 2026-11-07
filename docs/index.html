@@ -1206,20 +1206,7 @@ document.addEventListener("change", e => {
   }
 });
 
-document.addEventListener("click", e => {
-  const t = e.target.closest("button");
-  if (!t) return;
 
-  if (t.id === "category-close" || t.id === "category-cancel") {
-    closeCategoryPicker();
-    return;
-  }
-
-  if (t.id === "category-save") {
-    saveCategorySelection();
-    return;
-  }
-});
 
 document.addEventListener("change", e => {
   if (!e.target.id || !e.target.id.startsWith("filter-")) return;

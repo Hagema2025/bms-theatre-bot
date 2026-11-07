@@ -63,7 +63,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "1"
+     "status": "0"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -140,34 +140,6 @@
    "time": "10:50 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15591/20261107"
   },
-  "15594": {
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-07T16:30:00+05:30",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "screen": "AUDI03",
-   "start": "2026-11-07T16:00:00+05:30",
-   "tags": [],
-   "time": "04:00 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15594/20261107"
-  },
   "15595": {
    "classes": {
     "EXECUTIVE": {
@@ -210,7 +182,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -1353,7 +1325,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5049,5 +5021,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15863/20261111"
   }
  },
- "_updated": "2026-11-07T16:10:50+05:30"
+ "_updated": "2026-11-07T16:31:25+05:30"
 }

@@ -662,6 +662,60 @@ main { gap: 13px; }
   .category-panel { border-radius:24px; }
 }
 
+/* ── Movie Poster & New Info Styles ─────────────────────── */
+.show-header {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.poster {
+  width: 72px;
+  height: 106px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  flex: none;
+}
+.show-info {
+  flex: 1;
+  min-width: 0; /* Prevents text overflow */
+}
+.show-time {
+  text-align: right;
+  flex: none;
+}
+.movie-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.censor-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border: 1px solid rgba(186, 204, 232, 0.2);
+  border-radius: 5px;
+  color: #a5b2c4;
+  line-height: 1;
+}
+.genre {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+.btn.trailer {
+  flex: none;
+  min-width: 45px;
+  padding: 0;
+  background: rgba(255,255,255,0.05);
+  color: #edf2f8;
+  box-shadow: inset 0 0 0 1px rgba(186, 204, 232, 0.15);
+  font-size: 16px; /* Size for the play icon */
+}
+
 </style>
 </head>
 <body>
@@ -1014,10 +1068,11 @@ function matchesFilters(show) {
 }
 
 function renderList() {
-  const el = $("list"), v = S.venue;
-  if (S.failed[v] && !S.state[v]) {
-    setHtml(el, `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`);
-    return;
+  const el = document.getElementById("list");
+  const v = S.venue;
+  if (S.failed[v] && !S.state[v]) { 
+    setHtml(el, `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`); 
+    return; 
   }
   const day = (S.state[v] || {})[S.date] || {};
   const shows = Object.entries(day)
@@ -1034,13 +1089,41 @@ function renderList() {
     const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
     const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
+    
+    // --- NEW: Extracting extra data ---
+    const censor = s.censor ? `<span class="censor-badge">${esc(s.censor)}</span>` : "";
+    const genre = s.genre ? `<div class="genre">${esc(s.genre).replace(/,/g, ", ")}</div>` : "";
+    const posterImg = s.poster ? `<img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/${s.poster}.jpg" class="poster" loading="lazy" onerror="this.style.display='none'">` : "";
+    const trailerBtn = s.trailer ? `<a class="btn trailer" href="${esc(s.trailer)}" target="_blank" rel="noopener" aria-label="Watch Trailer">▶️</a>` : "";
+
     const classes = Object.entries(s.classes || {}).map(([name, c]) => `
       <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
+    
+    // --- NEW: Updated Layout ---
     return `<article class="show">
-      <div class="top"><div><div class="movie">${esc(s.movie)}</div><div class="meta">${meta}</div>${tags ? `<div class="tags">${tags}</div>` : ""}</div><div class="time">${esc(s.time)}<div class="dur">${dur}</div></div></div>
+      <div class="show-header">
+        ${posterImg}
+        <div class="show-info">
+          <div class="movie-title-wrap">
+            <div class="movie">${esc(s.movie)}</div>
+            ${censor}
+          </div>
+          ${genre}
+          <div class="meta">${meta}</div>
+          ${tags ? `<div class="tags">${tags}</div>` : ""}
+        </div>
+        <div class="show-time">
+          <div class="time">${esc(s.time)}</div>
+          <div class="dur">${dur}</div>
+        </div>
+      </div>
       <div class="classes">${classes}</div>
-      <div class="actions">${button(v, S.date, id, s)}<a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a></div>
+      <div class="actions">
+        ${button(v, S.date, id, s)}
+        ${trailerBtn}
+        <a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a>
+      </div>
     </article>`;
   }).join("");
 
@@ -1048,7 +1131,6 @@ function renderList() {
   tickCountdown();
   updateFilterUI();
 }
-
 function renderUpdated() {
   const u = S.updated[S.venue], el = $("upd");
   if (!u) { el.textContent = ""; return; }

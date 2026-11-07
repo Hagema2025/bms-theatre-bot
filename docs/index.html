@@ -1311,14 +1311,15 @@ function press(action, key, extra = "", intent = null) {
   const pend = store.get("pend", {});
   pend[key] = { a: action, ts: Date.now(), intent };
   store.set("pend", pend);
-  debugLog("========== TELEGRAM TRACK LINK ==========");
+ 
+  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
+  if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
+   debugLog("========== TELEGRAM TRACK LINK ==========");
 debugLog("Action:", action);
 debugLog("Key:", key);
 debugLog("Extra:", extra);
 debugLog("Intent:", intent);
 debugLog("Generated URL:", link);
-  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
-  if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
   renderList();
 }
 

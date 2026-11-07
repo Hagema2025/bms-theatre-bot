@@ -920,7 +920,18 @@ async function loadState(venue) {
 }
 async function loadTracking(venue) {
   const tr = await getJson("tracking", venue);
-  if (tr !== null) S.track[venue] = tr;
+
+  if (tr !== null) {
+    S.track[venue] = tr;
+
+    debugLog("TRACKING DATA CHECK", {
+      venue,
+      date: "20261107",
+      show92670: tr["20261107"]?.["92670"],
+      show92785: tr["20261107"]?.["92785"],
+      ids: Object.keys(tr["20261107"] || {})
+    });
+  }
 }
 async function load(venue) { await Promise.all([loadState(venue), loadTracking(venue)]); }
 
@@ -935,6 +946,7 @@ function sameSet(a, b) {
 
 // Has the bot's saved data caught up with what the user asked for?
 // Has the bot's saved data caught up with what the user asked for?
+
 function confirmed(p, t) {
   debugLog("========== CONFIRM CHECK ==========");
   debugLog("Pending:", p);
@@ -947,67 +959,66 @@ function confirmed(p, t) {
   }
 
   if (!t.tracked) {
-    console.warn("❌ Tracking entry not found or tracked=false");
+    debugLog("Tracking entry not found or tracked=false");
     return false;
   }
 
   const i = p.intent;
 
-  if (!i) {
-    debugLog("No intent; tracked=true is sufficient");
-    return true;
-  }
+  if (!i) return true;
 
   const tMode = t.mode || "all";
 
-  debugLog("Expected mode:", i.mode);
-  debugLog("Saved mode:", tMode);
-
   if (tMode !== i.mode) {
-    console.error("❌ Mode mismatch");
+    debugLog("Mode mismatch:", tMode, i.mode);
     return false;
   }
 
   if (i.mode === "budget") {
     const saved = Number(t.max_price);
     const expected = Number(i.max_price);
-    const result = Math.abs(saved - expected) < 0.01;
-
-    debugLog("Expected budget:", expected);
-    debugLog("Saved budget:", saved);
-    debugLog("Budget confirmed:", result);
-
-    return result;
+    return Number.isFinite(saved) &&
+           Number.isFinite(expected) &&
+           Math.abs(saved - expected) < 0.01;
   }
 
   if (i.mode === "manual") {
-    const normalize = cats => [...new Set(
-      Array.isArray(cats) ? cats : []
-    )].sort();
+    const normalize = cats =>
+      [...new Set(Array.isArray(cats) ? cats : [])].sort();
 
-    const saved = normalize(t.categories);
-    const expected = normalize(i.categories);
-
-    debugLog("Expected categories:", expected);
-    debugLog("Saved categories:", saved);
-
-    const result =
-      JSON.stringify(saved) === JSON.stringify(expected);
-
-    debugLog("Categories confirmed:", result);
-    return result;
+    return JSON.stringify(normalize(t.categories)) ===
+           JSON.stringify(normalize(i.categories));
   }
 
-  debugLog("✅ All-mode confirmed");
   return true;
 }
 
+
 function pending(v, d, s) {
-  const p = store.get("pend", {})[`${v}_${d}_${s}`];
-  if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
-  if (!S.track[v]) return p.a;                 // tracking data not loaded yet
-  return confirmed(p, trackOf(v, d, s)) ? null : p.a;
+  const key = `${v}_${d}_${s}`;
+  const p = store.get("pend", {})[key];
+
+  if (!p) return null;
+
+  const t = trackOf(v, d, s);
+
+  debugLog("PENDING LOOKUP", {
+    key,
+    pending: p,
+    venueExists: !!S.track[v],
+    dateExists: !!S.track[v]?.[d],
+    showExists: !!S.track[v]?.[d]?.[s],
+    actualEntry: t
+  });
+
+  if (Date.now() - p.ts > PENDING_MIN * 60000) {
+    debugLog("Pending expired:", key);
+    return null;
+  }
+
+  return confirmed(p, t) ? null : p.a;
 }
+
 
 function prunePending() {
   const all = store.get("pend", {});

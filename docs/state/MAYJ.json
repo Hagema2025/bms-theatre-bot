@@ -6,7 +6,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SECOND CLASS 3D": {
@@ -203,29 +203,6 @@
    "time": "11:59 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/241737/20261107"
   },
-  "241754": {
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    }
-   },
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-07T16:00:00+05:30",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "screen": "SCREEN 4",
-   "start": "2026-11-07T15:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "03:30 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/241754/20261107"
-  },
   "241755": {
    "classes": {
     "FIRST CLASS": {
@@ -271,36 +248,6 @@
    ],
    "time": "10:00 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/241756/20261107"
-  },
-  "241776": {
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 57.98,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T16:00:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "SCREEN 1",
-   "start": "2026-11-07T15:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "03:30 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/241776/20261107"
   },
   "241777": {
    "classes": {
@@ -1600,7 +1547,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -4927,5 +4874,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242088/20261109"
   }
  },
- "_updated": "2026-11-07T15:50:49+05:30"
+ "_updated": "2026-11-07T16:01:13+05:30"
 }

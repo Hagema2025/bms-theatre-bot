@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Budget seats</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root {
+  --bg: var(--tg-theme-bg-color, #ffffff);
+  --fg: var(--tg-theme-text-color, #16181d);
+  --hint: var(--tg-theme-hint-color, #6b7280);
+  --card: var(--tg-theme-secondary-bg-color, #f1f2f5);
+  --btn: var(--tg-theme-button-color, #2481cc);
+  --btnfg: var(--tg-theme-button-text-color, #ffffff);
+  --ok: #2e9e5b; --mid: #d9962b; --low: #d4533b; --off: #9aa0aa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--tg-theme-bg-color, #151a21);
+    --fg: var(--tg-theme-text-color, #eceef2);
+    --hint: var(--tg-theme-hint-color, #8b94a3);
+    --card: var(--tg-theme-secondary-bg-color, #1e252e);
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); }
+body {
+  font: 15px/1.4 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+}
+header { padding: 14px 16px 4px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+h1 { font-size: 20px; margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+#upd { color: var(--hint); font-size: 12px; text-align: right; }
+.row { display: flex; gap: 8px; overflow-x: auto; padding: 8px 16px; scrollbar-width: none; }
+.row::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; border: 0; border-radius: 18px; padding: 8px 14px; font: inherit; cursor: pointer;
+  background: var(--card); color: var(--fg);
+}
+.chip[aria-pressed="true"] { background: var(--btn); color: var(--btnfg); font-weight: 600; }
+.chip small { display: block; font-size: 11px; opacity: .75; }
+main { padding: 4px 16px 32px; display: grid; gap: 10px; }
+.show { background: var(--card); border-radius: 14px; padding: 12px 14px; display: grid; gap: 8px; }
+.top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.movie { font-weight: 650; font-size: 16px; }
+.meta { color: var(--hint); font-size: 13px; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+.tag { font-size: 11px; padding: 2px 8px; border-radius: 8px; background: color-mix(in srgb, var(--hint) 18%, transparent); }
+.dur { color: var(--hint); font-size: 12px; font-weight: 400; text-align: right; }
+.re { display: block; font-size: 11px; color: var(--ok); }
+.time { font-size: 17px; font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.classes { display: grid; gap: 4px; }
+.cls { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.cls .name { flex: 1; }
+.cls .st { color: var(--hint); font-size: 12px; min-width: 76px; text-align: right; }
+.meter { display: inline-flex; gap: 2px; }
+.meter i { width: 8px; height: 12px; border-radius: 2px; background: color-mix(in srgb, var(--hint) 30%, transparent); }
+.l3 i:nth-child(-n+3) { background: var(--ok); }
+.l2 i:nth-child(-n+2) { background: var(--mid); }
+.l1 i:nth-child(-n+1) { background: var(--low); }
+.actions { display: flex; gap: 8px; }
+.btn {
+  flex: 1; border: 0; border-radius: 10px; padding: 10px 12px; font: inherit; font-weight: 600; cursor: pointer;
+  background: var(--btn); color: var(--btnfg); text-align: center; text-decoration: none;
+}
+.btn.alt { background: transparent; color: var(--btn); box-shadow: inset 0 0 0 1.5px var(--btn); }
+.btn.off { background: transparent; color: var(--hint); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--hint) 40%, transparent); cursor: default; }
+.btn.book { flex: none; background: transparent; color: var(--btn); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--btn) 45%, transparent); }
+.msg { color: var(--hint); text-align: center; padding: 40px 16px; }
+:focus-visible { outline: 2px solid var(--btn); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Budget seats</h1>
+  <div id="upd"></div>
+</header>
+<nav class="row" id="venues" aria-label="Theatres"></nav>
+<nav class="row" id="dates" aria-label="Dates"></nav>
+<main id="list"></main>
+
+<script>
+// ── Settings ──────────────────────────────────────────────
+const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
+const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
+const PENDING_MIN = 20;                    // how long a press shows as "Waiting" before we stop assuming
+const THEATRES = {
+  INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
+  TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
+};
+const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
+
+// ── State ─────────────────────────────────────────────────
+const tg = window.Telegram && window.Telegram.WebApp;
+if (tg) { tg.ready(); tg.expand(); }
+
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+const S = { venue: store.get("venue", "INTO"), date: null, state: {}, track: {}, updated: {}, failed: {} };
+if (!THEATRES[S.venue]) S.venue = "INTO";
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// ── Data ──────────────────────────────────────────────────
+async function getJson(folder, venue) {
+  try {
+    const r = await fetch(`${folder}/${venue}.json?t=${Date.now()}`, { cache: "no-store" });
+    if (r.status === 404) return {};
+    return r.ok ? await r.json() : null;
+  } catch { return null; }
+}
+
+async function load(venue) {
+  const [st, tr] = await Promise.all([getJson("state", venue), getJson("tracking", venue)]);
+  S.failed[venue] = st === null;
+  if (st) { S.updated[venue] = st._updated; delete st._updated; S.state[venue] = st; }
+  S.track[venue] = tr || S.track[venue] || {};
+}
+
+const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
+
+function pending(v, d, s) {
+  const p = store.get("pend", {})[`${v}_${d}_${s}`];
+  if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
+  return (p.a === "trk") !== isTracked(v, d, s) ? p.a : null;   // null once the file confirms it
+}
+
+// ── Rendering ─────────────────────────────────────────────
+const live = show => Date.parse(show.end) > Date.now();
+const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
+
+function dateLabel(code) {
+  const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
+  const t = new Date(); t.setHours(0, 0, 0, 0);
+  const diff = Math.round((d - t) / 86400000);
+  const base = d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : d.toLocaleDateString("en-IN", { weekday: "short" });
+  return { day, base };
+}
+
+function renderVenues() {
+  document.getElementById("venues").innerHTML = Object.entries(THEATRES).map(([code, name]) =>
+    `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join("");
+}
+
+function datesFor(v) {
+  const st = S.state[v] || {};
+  return Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(live)).sort();
+}
+
+function renderDates() {
+  const dates = datesFor(S.venue);
+  if (!dates.includes(S.date)) S.date = dates[0] || null;
+  document.getElementById("dates").innerHTML = dates.map(d => {
+    const l = dateLabel(d);
+    return `<button class="chip" data-d="${d}" aria-pressed="${d === S.date}">${l.day}<small>${l.base}</small></button>`;
+  }).join("");
+}
+
+function button(v, d, id, show) {
+  const key = `${v}_${d}_${id}`;
+  const p = pending(v, d, id);
+  if (p) return `<button class="btn off" disabled>${p === "trk" ? "Waiting for the bot" : "Stopping"}</button>`;
+  if (isTracked(v, d, id)) return `<button class="btn alt" data-a="unt" data-k="${key}">Tracking, tap to stop</button>`;
+  if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
+  return `<button class="btn" data-a="trk" data-k="${key}">Track this show</button>`;
+}
+
+function renderList() {
+  const el = document.getElementById("list");
+  const v = S.venue;
+  if (S.failed[v] && !S.state[v]) { el.innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and pull to refresh.</div>`; return; }
+  const day = (S.state[v] || {})[S.date] || {};
+  const shows = Object.entries(day).filter(([, s]) => live(s)).sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
+  if (!shows.length) { el.innerHTML = `<div class="msg">No budget seats listed for this theatre right now.</div>`; return; }
+  el.innerHTML = shows.map(([id, s]) => {
+    const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
+    const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
+    const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
+    const classes = Object.entries(s.classes || {}).map(([name, c]) => `
+      <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
+    return `<article class="show">
+      <div class="top"><div><div class="movie">${esc(s.movie)}</div><div class="meta">${meta}</div>${tags ? `<div class="tags">${tags}</div>` : ""}</div><div class="time">${esc(s.time)}<div class="dur">${dur}</div></div></div>
+      <div class="classes">${classes}</div>
+      <div class="actions">${button(v, S.date, id, s)}<a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a></div>
+    </article>`;
+  }).join("");
+}
+
+function renderUpdated() {
+  const u = S.updated[S.venue], el = document.getElementById("upd");
+  if (!u) { el.textContent = ""; return; }
+  const m = Math.max(0, Math.round((Date.now() - Date.parse(u)) / 60000));
+  el.textContent = m < 1 ? "Updated just now" : m < 60 ? `Updated ${m} min ago` : `Updated ${Math.round(m / 60)} h ago`;
+}
+
+function renderAll() { renderVenues(); renderDates(); renderList(); renderUpdated(); }
+
+// ── Actions ───────────────────────────────────────────────
+function press(action, key) {
+  const [v, d, id] = key.split("_");
+  const pend = store.get("pend", {});
+  pend[key] = { a: action, ts: Date.now() };
+  store.set("pend", pend);
+  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}`;   // bot reads: action, venue, session, date
+  if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
+  renderList();
+}
+
+document.addEventListener("click", async e => {
+  const t = e.target.closest("button");
+  if (!t) return;
+  if (t.dataset.v) { S.venue = t.dataset.v; store.set("venue", S.venue); S.date = null; renderAll(); await load(S.venue); renderAll(); }
+  else if (t.dataset.d) { S.date = t.dataset.d; renderDates(); renderList(); }
+  else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
+});
+
+async function refresh() { await load(S.venue); renderAll(); }
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+setInterval(refresh, 60000);
+
+renderAll();
+refresh();
+</script>
+</body>
+</html>

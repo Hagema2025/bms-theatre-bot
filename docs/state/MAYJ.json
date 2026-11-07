@@ -168,7 +168,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 89.76,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "3D",
@@ -237,7 +237,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -329,7 +329,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -621,29 +621,6 @@
    "time": "10:30 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/241968/20261107"
   },
-  "241978": {
-   "classes": {
-    "SECOND CLASS": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T12:18:30+05:30",
-     "price": 57.98,
-     "soon_alerted": true,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T13:10:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "SCREEN 11",
-   "start": "2026-11-07T12:40:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "12:40 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/241978/20261107"
-  },
   "241979": {
    "classes": {
     "SECOND CLASS": {
@@ -904,7 +881,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -1013,5 +990,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242071/20261107"
   }
  },
- "_updated": "2026-11-07T13:01:06+05:30"
+ "_updated": "2026-11-07T13:10:50+05:30"
 }

@@ -996,18 +996,6 @@
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "06:15 AM - 09:09 AM"
     },
-    "CBMC_15587_20261107_NORMAL": {
-      "alerted_at": "2026-11-07T09:10:48+05:30",
-      "category": "NORMAL",
-      "date": "20261107",
-      "end": "2026-11-07T11:10:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "10:40 AM - 01:34 PM"
-    },
     "CBMC_15588_20261107_NORMAL": {
       "alerted_at": "2026-11-07T08:01:04+05:30",
       "category": "NORMAL",
@@ -1073,7 +1061,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:00 PM - 07:10 PM"
     },
@@ -1118,7 +1106,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:35 PM - 07:24 PM"
     },
@@ -4965,7 +4953,7 @@
       "movie": "Ramayana",
       "price": 94.84,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "02:30 PM - 06:10 PM"
     },
@@ -5001,7 +4989,7 @@
       "movie": "Ramayana",
       "price": 89.76,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "12:00 PM - 03:40 PM"
     },
@@ -5457,7 +5445,7 @@
       "movie": "Scene",
       "price": 57.98,
       "soon_alerted": true,
-      "status": "3",
+      "status": "0",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "10:50 AM - 01:44 PM"
     },
@@ -5623,7 +5611,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "1",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "01:00 PM - 03:49 PM"
     },
@@ -7135,13 +7123,13 @@
       "time": "10:20 PM - 02:00 AM"
     },
     "PVHR_44853_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-07T11:10:48+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T13:40:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:10 PM - 03:59 PM"
@@ -7214,7 +7202,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "01:10 PM - 03:59 PM"
     },

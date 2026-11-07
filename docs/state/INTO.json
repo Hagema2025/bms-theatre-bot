@@ -7,7 +7,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2"
+     "status": "1"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -214,8 +214,8 @@
      "first_seen_status": "0",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 237.49,
-     "soon_alerted": false,
-     "status": "0"
+     "soon_alerted": true,
+     "status": "1"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -250,7 +250,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": true,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -418,37 +418,6 @@
    "time": "10:45 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92670/20261107"
   },
-  "92683": {
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 237.49,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 94.43,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-07T16:35:00+05:30",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "screen": "SCREEN 1",
-   "start": "2026-11-07T16:05:00+05:30",
-   "tags": [
-    "BIGPIX",
-    "ENG"
-   ],
-   "time": "04:05 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92683/20261107"
-  },
   "92684": {
    "classes": {
     "CLUB": {
@@ -524,8 +493,8 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
+     "soon_alerted": true,
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -5295,5 +5264,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-07T16:31:25+05:30"
+ "_updated": "2026-11-07T16:40:49+05:30"
 }

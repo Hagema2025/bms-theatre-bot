@@ -6,14 +6,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 94.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     }
    },
@@ -131,7 +131,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     }
    },
@@ -155,7 +155,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "0"
+     "status": "1"
     },
     "PRIME": {
      "first_seen_status": "1",
@@ -384,36 +384,6 @@
    "time": "10:40 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/44856/20261107"
   },
-  "44871": {
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 96.74,
-     "soon_alerted": true,
-     "status": "2"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 245.98,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "dimension": "3D",
-   "duration": 110,
-   "end": "2026-11-07T16:35:00+05:30",
-   "language": "English",
-   "movie": "The Cat in the Hat",
-   "screen": "AUDI 06",
-   "start": "2026-11-07T16:05:00+05:30",
-   "tags": [
-    "ENG"
-   ],
-   "time": "04:05 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/PVHR/44871/20261107"
-  },
   "44872": {
    "classes": {
     "CLASSIC": {
@@ -443,36 +413,6 @@
    ],
    "time": "10:45 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/44872/20261107"
-  },
-  "44880": {
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "PRIME": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T16:40:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "AUDI 05",
-   "start": "2026-11-07T16:10:00+05:30",
-   "tags": [
-    "ENG"
-   ],
-   "time": "04:10 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/44880/20261107"
   },
   "44881": {
    "classes": {
@@ -540,14 +480,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 94.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     }
    },
@@ -691,7 +631,7 @@
      "first_seen_time": "2026-11-07T15:27:36+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "0"
+     "status": "1"
     },
     "PRIME": {
      "first_seen_status": "1",
@@ -741,34 +681,6 @@
    "tags": [],
    "time": "10:35 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/PVHR/45090/20261107"
-  },
-  "45093": {
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "2"
-    },
-    "PRIME": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T15:27:36+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-07T16:35:00+05:30",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "screen": "AUDI 10",
-   "start": "2026-11-07T16:05:00+05:30",
-   "tags": [],
-   "time": "04:05 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/PVHR/45093/20261107"
   }
  },
  "20261108": {
@@ -6755,5 +6667,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-07T16:31:25+05:30"
+ "_updated": "2026-11-07T16:40:49+05:30"
 }

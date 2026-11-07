@@ -1,42 +1,5 @@
 {
  "20261107": {
-  "241638": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 237.93,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "SECOND CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 94.84,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-07T22:40:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-07T23:00:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "SCREEN 6",
-   "start": "2026-11-07T22:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/241638/20261107"
-  },
   "241737": {
    "censor": "U",
    "classes": {
@@ -240,84 +203,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/241959/20261107"
   },
-  "241968": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 219.2,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "SECOND CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 89.76,
-     "sold_out_at": "2026-11-07T19:40:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-07T19:40:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-07T22:40:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-07T23:00:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 3",
-   "start": "2026-11-07T22:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/241968/20261107"
-  },
-  "241981": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-07T22:20:48+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-07T22:20:48+05:30"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 57.98,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-07T22:40:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T23:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 11",
-   "start": "2026-11-07T22:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/241981/20261107"
-  },
   "241994": {
    "censor": "UA16+",
    "classes": {
@@ -365,8 +250,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-07T23:01:06+05:30",
      "soon_alerted": true,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-07T23:01:06+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "2",
@@ -529,6 +416,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:10:00+05:30",
@@ -559,6 +453,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:10:00+05:30",
@@ -589,6 +490,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T18:10:00+05:30",
@@ -619,6 +527,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T22:10:00+05:30",
@@ -646,9 +561,18 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 237.9,
+     "prev_price": 237.9,
+     "price": 237.93,
+     "price_changed_at": "2026-11-07T23:01:06+05:30",
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 94.84,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:40:00+05:30",
@@ -676,9 +600,18 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 237.9,
+     "prev_price": 237.9,
+     "price": 237.93,
+     "price_changed_at": "2026-11-07T23:01:06+05:30",
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 94.84,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:40:00+05:30",
@@ -706,9 +639,18 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 237.9,
+     "prev_price": 237.9,
+     "price": 237.93,
+     "price_changed_at": "2026-11-07T23:01:06+05:30",
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 94.84,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T18:40:00+05:30",
@@ -769,6 +711,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T12:10:00+05:30",
@@ -799,6 +748,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T16:10:00+05:30",
@@ -830,6 +786,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:20:52+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T20:10:00+05:30",
@@ -981,6 +944,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "3"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T09:20:00+05:30",
@@ -1012,6 +982,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:50:49+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T12:30:00+05:30",
@@ -1042,6 +1019,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T15:40:00+05:30",
@@ -1072,6 +1056,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T18:50:00+05:30",
@@ -1102,6 +1093,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T22:10:00+05:30",
@@ -1162,6 +1160,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:20:00+05:30",
@@ -1193,6 +1198,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:50:49+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T13:30:00+05:30",
@@ -1224,6 +1236,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T19:31:20+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T16:40:00+05:30",
@@ -1254,6 +1273,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T19:50:00+05:30",
@@ -1285,6 +1311,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T21:50:53+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T23:10:00+05:30",
@@ -1316,6 +1349,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:01:09+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T13:00:00+05:30",
@@ -1346,6 +1386,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T19:20:00+05:30",
@@ -1407,6 +1454,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:01:09+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T11:40:00+05:30",
@@ -1438,6 +1492,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:01:09+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T18:00:00+05:30",
@@ -1466,6 +1527,13 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
      "soon_alerted": false,
      "status": "3"
     }
@@ -1528,6 +1596,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T11:20:00+05:30",
@@ -1589,6 +1664,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T22:20:48+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:10:00+05:30",
@@ -1619,6 +1701,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T13:40:00+05:30",
@@ -1649,6 +1738,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T17:10:00+05:30",
@@ -1679,6 +1775,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T20:40:00+05:30",
@@ -1707,6 +1810,13 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
      "soon_alerted": false,
      "status": "3"
     }
@@ -1860,6 +1970,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T11:10:00+05:30",
@@ -1892,6 +2009,13 @@
      "soon_alerted": false,
      "status": "0",
      "status_changed_at": "2026-11-07T22:50:52+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T15:10:00+05:30",
@@ -1923,6 +2047,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T21:10:51+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T19:10:00+05:30",
@@ -1954,6 +2085,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T21:50:53+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T23:10:00+05:30",
@@ -1985,6 +2123,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:20:48+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:40:00+05:30",
@@ -2015,6 +2160,13 @@
      "price": 219.2,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:40:00+05:30",
@@ -2046,6 +2198,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:31:22+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T18:40:00+05:30",
@@ -2077,6 +2236,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T20:10:51+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T22:40:00+05:30",
@@ -2108,6 +2274,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T20:31:22+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T09:40:00+05:30",
@@ -2139,6 +2312,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T21:01:07+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T12:50:00+05:30",
@@ -2170,6 +2350,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T19:20:53+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T16:00:00+05:30",
@@ -2200,6 +2387,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T19:10:00+05:30",
@@ -2231,6 +2425,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T20:40:51+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T22:40:00+05:30",
@@ -2261,6 +2462,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:30:00+05:30",
@@ -2291,6 +2499,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T20:50:00+05:30",
@@ -2351,6 +2566,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T16:10:00+05:30",
@@ -2382,6 +2604,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:40:52+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T10:40:00+05:30",
@@ -2413,6 +2642,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:20:52+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T13:50:00+05:30",
@@ -2444,6 +2680,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:50:49+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T17:00:00+05:30",
@@ -2474,6 +2717,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T20:10:00+05:30",
@@ -2534,6 +2784,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "1"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:50:00+05:30",
@@ -2565,6 +2822,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T20:20:52+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T21:10:00+05:30",
@@ -2595,6 +2859,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T11:00:00+05:30",
@@ -2626,6 +2897,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T20:40:51+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T14:10:00+05:30",
@@ -2656,6 +2934,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T20:30:00+05:30",
@@ -2747,6 +3032,13 @@
      "soon_alerted": false,
      "status": "2",
      "status_changed_at": "2026-11-07T21:31:28+05:30"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 89.76,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T08:40:00+05:30",
@@ -2775,6 +3067,13 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
      "soon_alerted": false,
      "status": "3"
     }
@@ -2838,6 +3137,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:20:48+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T16:45:00+05:30",
@@ -2899,6 +3205,13 @@
      "price": 183.8,
      "soon_alerted": false,
      "status": "2"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T17:40:00+05:30",
@@ -2930,6 +3243,13 @@
      "soon_alerted": false,
      "status": "1",
      "status_changed_at": "2026-11-07T22:10:52+05:30"
+    },
+    "SECOND CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-07T23:01:06+05:30",
+     "price": 57.98,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-08T17:20:00+05:30",
@@ -3502,7 +3822,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-07T23:01:06+05:30"
     }
    },
    "cutoff": "2026-11-09T12:30:00+05:30",
@@ -5485,5 +5806,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242093/20261109"
   }
  },
- "_updated": "2026-11-07T22:50:52+05:30"
+ "_updated": "2026-11-07T23:01:06+05:30"
 }

@@ -16,8 +16,11 @@ FILES (one writer each, so nothing ever overwrites anything else)
         "_updated": "<ISO time of the last real change>" }
 
   docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
-      { "20261107": { "28451": {"tracked": true, "thread": 4567} } }
-
+{ "20261107": { "28451": {
+    "tracked": true,
+    "thread": 4567,
+    "categories": ["SILVER", "GOLD"]
+} } }
   meta.json                   scanner-private: outage counters + Errors topic ids
 
 TELEGRAM
@@ -71,9 +74,8 @@ TARGET_THEATRES = {
 TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
                for code in TARGET_THEATRES}
 
-MAX_BUDGET_PRICE   = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # only seat classes priced <= this are tracked
-REMINDER_MINUTES   = int(os.environ.get("REMINDER_MINUTES", "120"))
 SHOW_GRACE         = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # state/alerts end this long after showtime
+REMINDER_MINUTES = int(os.environ.get("REMINDER_MINUTES", "120"))
 MAX_DATES          = int(os.environ.get("MAX_DATES", "7"))
 FAIL_ALERT_AFTER   = 3
 TG_RETRIES         = 4
@@ -121,7 +123,6 @@ def console_print(message):
 
 
 console_print("🤖 BookMyShow alert scanner module loaded.")
-console_print(f"⚙️ Budget limit: ₹{MAX_BUDGET_PRICE:.0f}")
 console_print(f"⚙️ Reminder: {REMINDER_MINUTES} minutes before show")
 console_print(f"⚙️ Maximum dates to scan: {MAX_DATES}")
 console_print(f"⚙️ Theatres configured: {len(TARGET_THEATRES)}")
@@ -248,6 +249,22 @@ def track_thread(state, tracking, venue, date_code, session):
     if s.get("thread") and s.get("thread_for") == t["thread"]:
         return s["thread"]
     return t["thread"]
+
+def is_category_tracked(tracking, venue, date_code, session, category):
+    """True only when this category is selected for tracking."""
+    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
+
+    if not t.get("tracked"):
+        return False
+
+    selected = t.get("categories", [])
+
+    if not isinstance(selected, list):
+        return False
+
+    return category.strip().upper() in {
+        str(c).strip().upper() for c in selected
+    }
 
 
 # ───────────────────────── telegram ─────────────────────────
@@ -452,7 +469,7 @@ def register_shows(vstate, venue, data, now):
         session_id = show.get("SessionId")
         date_code  = show.get("ShowDateCode") or day.get("Date")
         start      = parse_bms_time(show.get("ShowDateTime"))
-        if not (0 < price <= MAX_BUDGET_PRICE and session_id and date_code and start):
+        if not (price > 0 and session_id and date_code and start):
             continue
         if start + SHOW_GRACE < now:
             continue
@@ -485,8 +502,8 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
         price = float(cat.get("CurPrice") or 0)
     except (TypeError, ValueError):
         return None
-    if price <= 0 or price > MAX_BUDGET_PRICE:
-        return None   # only budget seats are tracked
+    if price <= 0:
+       return None
 
     session_id = show.get("SessionId")
     date_code  = show.get("ShowDateCode") or day.get("Date")
@@ -521,7 +538,7 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
 
     # Show start - end time (end = start + duration + 25 min of ads/trailers)
     time_str = show.get("ShowTime") or ""
-    if start and duration.isdigit() and int(duration) > 0:
+    if start and str(duration).isdigit() and int(duration) > 0:
         end_time = start + timedelta(minutes=int(duration) + 25)
         time_str = f"{time_str} - {end_time.strftime('%I:%M %p')}"
 
@@ -653,7 +670,7 @@ def cleanup_ended(state, tracking, now):
 def format_hit(h):
     lines = []
     if h["kind"] == "new":
-        lines.append("🆕 NEW BUDGET SEATS")
+        lines.append("🆕 NEW SEAT CATEGORY")
     elif h["kind"] == "opened":
         lines.append("🔔 NOW AVAILABLE (was sold out)")
     elif h["kind"] == "more":
@@ -705,13 +722,31 @@ def record_alert(state, h, now):
 
 
 def send_alerts(hits, state, tracking, now):
-    """Alerts go only to tracked shows, into that show's topic. Untracked hits are recorded
-    silently so their status stays current. Returns alerts delivered."""
+    """Send alerts only for selected categories in tracked shows.
+    All other category statuses are still recorded silently."""
     groups = {}
+
     for h in sorted(hits, key=lambda h: h["start"] or now):
-        if track_thread(state, tracking, h["venue"], h["date"], h["session"]):
-            groups.setdefault((h["venue"], h["date"], h["session"]), []).append(h)
+
+        thread = track_thread(
+            state, tracking,
+            h["venue"], h["date"], h["session"]
+        )
+
+        category_selected = is_category_tracked(
+            tracking,
+            h["venue"],
+            h["date"],
+            h["session"],
+            h["category"]
+        )
+
+        if thread and category_selected:
+            groups.setdefault(
+                (h["venue"], h["date"], h["session"]), []
+            ).append(h)
         else:
+            # Keep the category's status current without sending an alert.
             record_alert(state, h, now)
 
     sent = 0

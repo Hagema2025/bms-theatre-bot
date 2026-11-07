@@ -143,28 +143,86 @@ main {
   .show { padding:19px; }
   .movie { font-size:19px; }
 }
+.filter-trigger {
+  display:block;
+  width:calc(100% - 36px);
+  max-width:724px;
+  margin:12px auto 16px;
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--panel);
+  color:var(--fg);
+  font:inherit;
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+}
+.filter-overlay[hidden] { display:none; }
+.filter-overlay {
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.filter-backdrop {
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.72);
+}
+.filter-panel {
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:600px;
+  max-height:85vh;
+  overflow-y:auto;
+  padding:20px 18px 28px;
+  padding-bottom:calc(28px + env(safe-area-inset-bottom, 0px));
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-bottom:0;
+  border-radius:20px 20px 0 0;
+  box-shadow:0 -8px 30px rgba(0,0,0,.3);
+}
+.filter-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+  color:var(--fg);
+  font-size:16px;
+}
+.filter-close {
+  border:0;
+  background:var(--panel-2);
+  color:var(--fg);
+  border-radius:8px;
+  padding:8px 12px;
+  cursor:pointer;
+  font:inherit;
+}
 .filter-wrap {
-  max-width:760px;
-  margin:0 auto;
-  padding:0 18px 14px;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:9px;
+  gap:10px;
 }
 .filter-wrap select {
   width:100%;
   min-width:0;
-  padding:11px 10px;
+  padding:12px 9px;
   border-radius:10px;
   border:1px solid var(--line);
-  background:var(--panel);
+  background:var(--panel-2);
   color:var(--fg);
   font:inherit;
   font-size:12px;
 }
 .filter-wrap button {
   grid-column:1 / -1;
-  padding:9px;
+  padding:11px;
   border:1px solid var(--line);
   border-radius:10px;
   background:var(--panel-2);
@@ -172,6 +230,10 @@ main {
   font:inherit;
   font-size:12px;
   cursor:pointer;
+}
+@media (min-width:600px) {
+  .filter-overlay { align-items:center; padding:20px; }
+  .filter-panel { border-bottom:1px solid var(--line); border-radius:20px; }
 }
 
 </style>
@@ -181,18 +243,32 @@ main {
   <div class="brand"><div class="brand-mark" aria-hidden="true">B</div><div><h1>Budget Seats</h1><div class="subhead">Find the best seats before they’re gone</div></div></div>
   <div id="upd"></div>
 </header>
-<div class="nav-wrap"><div class="nav-label">Choose a theatre</div><nav class="row" id="venues" aria-label="Theatres"></nav>
-<div class="nav-label">Select a date</div><nav class="row" id="dates" aria-label="Dates"></nav></div>
+<div class="nav-wrap">
+  <div class="nav-label">Choose a theatre</div>
+  <nav class="row" id="venues" aria-label="Theatres"></nav>
+  <div class="nav-label">Select a date</div>
+  <nav class="row" id="dates" aria-label="Dates"></nav>
 </div>
 
-<div class="filter-wrap" id="filters"></div>
+<button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
+
+<div class="filter-overlay" id="filter-overlay" hidden>
+  <div class="filter-backdrop" data-filter-close></div>
+  <section class="filter-panel" role="dialog" aria-modal="true" aria-labelledby="filter-title">
+    <div class="filter-head">
+      <strong id="filter-title">Filter shows</strong>
+      <button type="button" class="filter-close" data-filter-close aria-label="Close filters">✕</button>
+    </div>
+    <div class="filter-wrap" id="filters"></div>
+  </section>
+</div>
 
 <main id="list"></main>
 <script>
 // ── Settings ──────────────────────────────────────────────
 const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
 const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
-const PENDING_MIN = 3;                    // how long a press shows as "Waiting" before we stop assuming
+const PENDING_MIN = 1;                    // how long a press shows as "Waiting" before we stop assuming
 const THEATRES = {
   INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
@@ -326,7 +402,9 @@ function button(v, d, id, show) {
 function renderFilters() {
   const day = (S.state[S.venue] || {})[S.date] || {};
 
-  const shows = Object.values(day).filter(live);
+  // Build choices from every show in this selected theatre/date state.
+  // The show list itself still displays only live shows.
+  const shows = Object.values(day);
 
   const options = (field) => [...new Set(
     shows.map(s => String(s[field] || "").trim()).filter(Boolean)
@@ -377,11 +455,13 @@ function matchesFilters(show) {
   if (f.screen && show.screen !== f.screen) return false;
 
   if (f.time) {
-    const hour = new Date(
-  new Date(show.start).toLocaleString("en-US", {
-    timeZone: "Asia/Kolkata"
-  })
-).getHours();
+    const hour = Number(
+      new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        hourCycle: "h23"
+      }).formatToParts(new Date(show.start)).find(part => part.type === "hour").value
+    );
 
     if (f.time === "morning" && !(hour < 12)) return false;
     if (f.time === "afternoon" && !(hour >= 12 && hour < 17)) return false;
@@ -397,9 +477,13 @@ function renderList() {
   const v = S.venue;
   if (S.failed[v] && !S.state[v]) { el.innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and pull to refresh.</div>`; return; }
   const day = (S.state[v] || {})[S.date] || {};
-const shows = Object.entries(day)
-  .filter(([, s]) => live(s) && matchesFilters(s))
-  .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));  if (!shows.length) { el.innerHTML = `<div class="msg">No budget seats listed for this theatre right now.</div>`; return; }
+  const shows = Object.entries(day)
+    .filter(([, s]) => live(s) && matchesFilters(s))
+    .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
+  if (!shows.length) {
+    el.innerHTML = `<div class="msg">No budget seats listed for this theatre right now.</div>`;
+    return;
+  }
   el.innerHTML = shows.map(([id, s]) => {
     const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
@@ -441,8 +525,19 @@ function press(action, key) {
 }
 
 document.addEventListener("click", async e => {
+  if (e.target.closest("[data-filter-close]")) {
+    document.getElementById("filter-overlay").hidden = true;
+    return;
+  }
+
   const t = e.target.closest("button");
   if (!t) return;
+
+  if (t.id === "filter-open") {
+    document.getElementById("filter-overlay").hidden = false;
+    return;
+  }
+
   if (t.dataset.filterReset !== undefined) {
   S.filters = {
     movie: "",
@@ -465,12 +560,19 @@ else if (t.dataset.d) {
 });
 
 document.addEventListener("change", e => {
-  if (!e.target.id.startsWith("filter-")) return;
+  if (!e.target.id || !e.target.id.startsWith("filter-")) return;
 
   const field = e.target.id.replace("filter-", "");
   S.filters[field] = e.target.value;
 
   renderList();
+});
+
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    document.getElementById("filter-overlay").hidden = true;
+  }
 });
 
 async function refreshAll() {

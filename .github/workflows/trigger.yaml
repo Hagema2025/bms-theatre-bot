@@ -38,5 +38,13 @@ jobs:
         run: |
           git config user.name "bms-bot"
           git config user.email "bms-bot@users.noreply.github.com"
-          git add state.json
-          git diff --cached --quiet || (git commit -m "Update state" && git push)
+          for p in docs/state meta.json; do
+            [ -e "$p" ] && git add -A "$p"
+          done
+          git diff --cached --quiet && exit 0
+          git commit -m "Update state"
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 3
+          done
+          exit 1

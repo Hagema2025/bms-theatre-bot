@@ -1,28 +1,5 @@
 {
  "20261107": {
-  "241620": {
-   "classes": {
-    "SECOND CLASS 3D": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T12:18:30+05:30",
-     "price": 89.76,
-     "soon_alerted": true,
-     "status": "1"
-    }
-   },
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-07T14:30:00+05:30",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "screen": "SCREEN 7",
-   "start": "2026-11-07T14:00:00+05:30",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "02:00 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/241620/20261107"
-  },
   "241621": {
    "classes": {
     "SECOND CLASS 3D": {
@@ -352,7 +329,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "1"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -605,7 +582,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": true,
-     "status": "1"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -628,7 +605,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "3"
     }
    },
    "dimension": "2D",
@@ -835,7 +812,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": true,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -858,7 +835,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -873,29 +850,6 @@
    ],
    "time": "09:00 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242023/20261107"
-  },
-  "242032": {
-   "classes": {
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T12:18:30+05:30",
-     "price": 57.98,
-     "soon_alerted": true,
-     "status": "1"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T14:30:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "SCREEN 16",
-   "start": "2026-11-07T14:00:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "02:00 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242032/20261107"
   },
   "242033": {
    "classes": {
@@ -973,7 +927,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -1059,5 +1013,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242071/20261107"
   }
  },
- "_updated": "2026-11-07T14:20:50+05:30"
+ "_updated": "2026-11-07T14:31:25+05:30"
 }

@@ -91,7 +91,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1"
     }
    },
    "dimension": "2D",
@@ -154,7 +154,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -175,7 +175,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1"
+     "status": "2"
     }
    },
    "dimension": "2D",
@@ -251,27 +251,6 @@
    "tags": [],
    "time": "08:30 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15611/20261107"
-  },
-  "15614": {
-   "classes": {
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T12:18:30+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-07T14:25:00+05:30",
-   "language": "Tamil",
-   "movie": "Scene",
-   "screen": "AUDI08",
-   "start": "2026-11-07T13:55:00+05:30",
-   "tags": [],
-   "time": "01:55 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15614/20261107"
   },
   "15615": {
    "classes": {
@@ -849,7 +828,7 @@
      "first_seen_time": "2026-11-07T12:18:30+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1"
+     "status": "0"
     }
    },
    "dimension": "2D",
@@ -2991,5 +2970,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15863/20261111"
   }
  },
- "_updated": "2026-11-07T14:20:50+05:30"
+ "_updated": "2026-11-07T14:31:25+05:30"
 }

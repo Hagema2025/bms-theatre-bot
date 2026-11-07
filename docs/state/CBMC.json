@@ -8,9 +8,10 @@
      "first_seen_time": "2026-11-07T20:31:22+05:30",
      "price": 183.8,
      "reopened_at": "2026-11-07T22:20:48+05:30",
+     "sold_out_at": "2026-11-07T22:50:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-07T22:20:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-07T22:50:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -73,44 +74,6 @@
    "time": "10:50 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15596/20261107"
-  },
-  "15601": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 233.8,
-     "reopened_at": "2026-11-07T21:50:53+05:30",
-     "sold_out_at": "2026-11-07T22:20:48+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-07T22:20:48+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 104.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-07T22:35:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-07T22:50:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI04",
-   "start": "2026-11-07T22:20:00+05:30",
-   "tags": [],
-   "time": "10:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/15601/20261107"
   },
   "15606": {
    "censor": "UA16+",
@@ -7159,5 +7122,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15910/20261112"
   }
  },
- "_updated": "2026-11-07T22:40:52+05:30"
+ "_updated": "2026-11-07T22:50:52+05:30"
 }

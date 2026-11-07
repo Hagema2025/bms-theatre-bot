@@ -745,7 +745,7 @@ main { gap: 13px; }
 
 <script>
 // ── Settings ──────────────────────────────────────────────
-const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
+const BOT = "Bms_ticketAlert_bot";   // username of the bot that handles Track (no @)
 const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
 const PENDING_MIN = 1;                    // how long a press shows as "Waiting" before we stop assuming
 const THEATRES = {
@@ -831,7 +831,10 @@ function openCategoryPicker(v, d, id, show) {
   }
 
   const key = selectionKey(v, d, id);
-  const saved = store.get("categorySelections", {})[key] || {};
+  const t = (((S.track[v] || {})[d] || {})[id]) || {};
+const saved = t.tracked
+  ? { mode: t.mode, max_price: t.max_price, categories: t.categories }
+  : {};
 
   categorySelection = { v, d, id, show, classes };
 
@@ -877,53 +880,39 @@ function closeCategoryPicker() {
   categorySelection = null;
 }
 
+function notify(msg) {
+  if (tg && tg.showAlert) tg.showAlert(msg); else alert(msg);
+}
+
 function saveCategorySelection() {
   if (!categorySelection) return;
 
-  const mode = document.querySelector(
-    'input[name="track-mode"]:checked'
-  )?.value || "all";
-
-  const maxPrice = Number(
-    document.getElementById("category-budget").value
-  );
-
-  const categories = [
-    ...document.querySelectorAll(
-      "#category-options input[type=checkbox]:checked"
-    )
-  ].map(input => input.value);
+  const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
+  const maxPrice = Number(document.getElementById("category-budget").value);
+  const checked = [...document.querySelectorAll("#category-options input[type=checkbox]:checked")]
+    .map(i => i.value);
 
   if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
-    alert("Please enter a valid maximum price.");
-    return;
+    return notify("Please enter a valid maximum price.");
+  }
+  if (mode === "manual" && !checked.length) {
+    return notify("Please select at least one category.");
   }
 
-  if (mode === "manual" && !categories.length) {
-    alert("Please select at least one category.");
-    return;
+  const { v, d, id, classes } = categorySelection;
+
+  // Compact code for the Telegram link: a | b<price> | m<base36 bitmask>
+  let extra = "a";
+  if (mode === "budget") extra = "b" + Math.round(maxPrice);
+  if (mode === "manual") {
+    let mask = 0;
+    classes.forEach(([name], i) => { if (checked.includes(name)) mask |= (1 << i); });
+    extra = "m" + mask.toString(36);
   }
-
-  const { v, d, id } = categorySelection;
-  const selections = store.get("categorySelections", {});
-
-  selections[selectionKey(v, d, id)] = {
-    mode,
-    max_price: mode === "budget" ? maxPrice : null,
-    categories: mode === "manual" ? categories : []
-  };
-
-  store.set("categorySelections", selections);
 
   closeCategoryPicker();
-
-  alert(
-    "Selection saved on this device. Telegram tracking will be enabled after the bot integration."
-  );
-
-  renderList();
+  press("trk", `${v}_${d}_${id}`, extra);
 }
-
 function pending(v, d, s) {
   const p = store.get("pend", {})[`${v}_${d}_${s}`];
   if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
@@ -1114,12 +1103,12 @@ function renderAll() {
   renderUpdated();
 }
 // ── Actions ───────────────────────────────────────────────
-function press(action, key) {
+function press(action, key, extra = "") {
   const [v, d, id] = key.split("_");
   const pend = store.get("pend", {});
   pend[key] = { a: action, ts: Date.now() };
   store.set("pend", pend);
-  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}`;   // bot reads: action, venue, session, date
+  const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
   if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
   renderList();
 }

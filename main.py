@@ -17,7 +17,7 @@ FILES (one writer each, so nothing ever overwrites anything else)
   meta.json                   scanner-private: outage counters + Errors topic ids
 
 TELEGRAM
-  One tracking supergroup (Topics enabled) per theatre: TELEGRAM_TRACK_<VENUE>.
+  One tracking supergroup (Topics enabled) per theatre: TELEGRAM_CHAT_<VENUE>.
     - one topic per tracked show (created by the running bot when you press Track)
     - one "Errors" topic per theatre (created here)
   This scanner only SENDS (alerts, time-change notices, error warnings) and deletes the
@@ -63,8 +63,8 @@ TARGET_THEATRES = {
     "ACON": "AGS Cinemas OMR: Navalur (Vivira Mall)",
 }
 
-# Tracking group per theatre, e.g. TELEGRAM_TRACK_INTO=-1009876543210
-TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_TRACK_{code}", "").strip()
+# Tracking group per theatre, e.g. TELEGRAM_CHAT_INTO=-1009876543210
+TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
                for code in TARGET_THEATRES}
 
 MAX_BUDGET_PRICE   = float(os.environ.get("MAX_BUDGET_PRICE", "100"))   # only seat classes priced <= this are tracked
@@ -336,7 +336,7 @@ def send_error(meta, venue, text):
     """Post into the theatre's Errors topic; recreate the topic once if it was deleted."""
     chat_id = TRACK_CHATS.get(venue)
     if not chat_id:
-        logging.error(f"{venue}: no TELEGRAM_TRACK_{venue} set, can't send")
+        logging.error(f"{venue}: no TELEGRAM_CHAT_{venue} set, can't send")
         return False
     thread_id = get_errors_thread(meta, venue)
     payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
@@ -762,7 +762,7 @@ def main():
     missing = [code for code, chat in TRACK_CHATS.items() if not chat]
     if missing:
         logging.error("No tracking group configured for: "
-                      + ", ".join(f"TELEGRAM_TRACK_{c}" for c in missing)
+                      + ", ".join(f"TELEGRAM_CHAT_{c}" for c in missing)
                       + " (no alerts or error warnings for these theatres)")
 
     try:

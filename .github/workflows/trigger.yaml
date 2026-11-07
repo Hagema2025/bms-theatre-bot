@@ -1,9 +1,8 @@
 name: BMS bot
 on:
   repository_dispatch:
-    types: [trigger-bms-theatre-check]  # External trigger via cron-job.org or Telegram Bot
-  workflow_dispatch:  # Manual trigger button
- 
+    types: [trigger-bms-theatre-check]
+  workflow_dispatch:
 
 concurrency:
   group: bms-bot
@@ -17,14 +16,25 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4            # code from main
+
+      - uses: actions/checkout@v4            # data branch
+        with:
+          ref: data
+          path: data
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+
       - run: pip install -r requirements.txt
+
       - run: python main.py
         env:
+          STATE_DIR: data/docs/state
+          TRACKING_DIR: data/docs/tracking
+          META_FILE: data/meta.json
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_INTO: ${{ secrets.TELEGRAM_CHAT_INTO }}
           TELEGRAM_CHAT_PVHR: ${{ secrets.TELEGRAM_CHAT_PVHR }}
@@ -33,11 +43,14 @@ jobs:
           TELEGRAM_CHAT_CBMC: ${{ secrets.TELEGRAM_CHAT_CBMC }}
           TELEGRAM_CHAT_MAYJ: ${{ secrets.TELEGRAM_CHAT_MAYJ }}
           TELEGRAM_CHAT_ACON: ${{ secrets.TELEGRAM_CHAT_ACON }}
+
       - name: Save state
         if: always()
+        working-directory: data
         run: |
           git config user.name "bms-bot"
           git config user.email "bms-bot@users.noreply.github.com"
+          # Only state and meta; never touch docs/tracking (the Telegram bot owns it)
           for p in docs/state meta.json; do
             [ -e "$p" ] && git add -A "$p"
           done

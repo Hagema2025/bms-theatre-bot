@@ -585,6 +585,155 @@ main { gap: 13px; }
   .category-panel { border-radius:24px; }
 }
 
+/* Category tracking panel */
+.category-overlay[hidden] { display:none; }
+
+.category-overlay {
+  position:fixed;
+  inset:0;
+  z-index:1100;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  background:rgba(0,0,0,.76);
+  backdrop-filter:blur(5px);
+}
+
+.category-panel {
+  width:100%;
+  max-width:560px;
+  max-height:85vh;
+  overflow-y:auto;
+  padding:22px 20px calc(25px + env(safe-area-inset-bottom, 0px));
+  background:linear-gradient(160deg,#182438,#101827 72%);
+  border:1px solid var(--line);
+  border-radius:24px 24px 0 0;
+}
+
+.category-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.category-sub {
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:17px;
+}
+
+.mode-option {
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  padding:14px 12px;
+  margin-bottom:9px;
+  border:1px solid var(--line);
+  border-radius:13px;
+  background:rgba(255,255,255,.035);
+  cursor:pointer;
+}
+
+.mode-option input {
+  width:18px;
+  height:18px;
+  margin-top:2px;
+  accent-color:var(--accent);
+}
+
+.mode-option span {
+  display:grid;
+  gap:4px;
+}
+
+.mode-option b {
+  font-size:13px;
+}
+
+.mode-option small {
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.4;
+}
+
+#budget-area, #manual-area {
+  padding:10px 12px 15px;
+}
+
+.budget-label {
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+#category-budget {
+  width:100%;
+  padding:13px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:var(--panel-2);
+  color:var(--fg);
+  font:inherit;
+}
+
+.category-check {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:11px 9px;
+  border-bottom:1px solid var(--line);
+  font-size:12px;
+}
+
+.category-check input {
+  width:17px;
+  height:17px;
+  accent-color:var(--accent);
+}
+
+.category-check span { flex:1; }
+
+.category-price {
+  color:var(--muted);
+  font-size:11px;
+}
+
+.category-actions {
+  display:flex;
+  gap:10px;
+  margin-top:17px;
+}
+
+.category-actions button {
+  flex:1;
+  min-height:45px;
+  border-radius:12px;
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.category-cancel {
+  border:1px solid var(--line);
+  background:var(--panel-2);
+  color:var(--fg);
+}
+
+.category-start {
+  border:0;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  color:#1a1409;
+}
+
+@media (min-width:600px) {
+  .category-overlay { align-items:center; padding:20px; }
+  .category-panel { border-radius:24px; }
+}
+
 </style>
 </head>
 <body>
@@ -637,6 +786,57 @@ main { gap: 13px; }
     </div>
   </section>
 </div>
+
+<div class="category-overlay" id="category-overlay" hidden>
+  <section class="category-panel" role="dialog" aria-modal="true">
+    <div class="category-head">
+      <strong>Choose what to track</strong>
+      <button type="button" class="filter-close" id="category-close">✕</button>
+    </div>
+
+    <div class="category-sub" id="category-sub"></div>
+
+    <label class="mode-option">
+      <input type="radio" name="track-mode" value="all">
+      <span>
+        <b>All Categories</b>
+        <small>Include new categories automatically, whatever their price.</small>
+      </span>
+    </label>
+
+    <label class="mode-option">
+      <input type="radio" name="track-mode" value="budget">
+      <span>
+        <b>All Categories Under My Budget</b>
+        <small>Automatically include new categories within your price limit.</small>
+      </span>
+    </label>
+
+    <div id="budget-area" hidden>
+      <label class="budget-label" for="category-budget">Maximum ticket price (₹)</label>
+      <input id="category-budget" type="number" min="1" placeholder="Example: 150">
+    </div>
+
+    <label class="mode-option">
+      <input type="radio" name="track-mode" value="manual">
+      <span>
+        <b>Choose Categories</b>
+        <small>Only the categories you select will be tracked.</small>
+      </span>
+    </label>
+
+    <div id="manual-area" hidden>
+      <div id="category-options"></div>
+    </div>
+
+    <div class="category-actions">
+      <button type="button" class="category-cancel" id="category-cancel">Cancel</button>
+      <button type="button" class="category-start" id="category-save">Save Selection</button>
+    </div>
+  </section>
+</div>
+
+<main id="list"></main>
 
 <main id="list"></main>
 <script>
@@ -709,39 +909,115 @@ async function load(venue) {
 }
 const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
 
+// ── Category tracking selection ──────────────────────────
+
 let categorySelection = null;
+
+function selectionKey(v, d, id) {
+  return `${v}_${d}_${id}`;
+}
 
 function openCategoryPicker(v, d, id, show) {
   const classes = Object.entries(show.classes || {})
     .filter(([name, c]) => name && Number(c.price) > 0);
 
   if (!classes.length) {
-    alert("No seat categories are available for this show.");
+    alert("No seat categories are available.");
     return;
   }
+
+  const key = selectionKey(v, d, id);
+  const saved = store.get("categorySelections", {})[key] || {};
 
   categorySelection = { v, d, id, show, classes };
 
   document.getElementById("category-sub").textContent =
-    `${show.movie || "This show"} · ${show.time || ""} — Select one or more categories.`;
+    `${show.movie || "Show"} · ${show.time || ""}`;
+
+  document.querySelectorAll('input[name="track-mode"]').forEach(input => {
+    input.checked = input.value === (saved.mode || "all");
+  });
+
+  document.getElementById("category-budget").value =
+    saved.max_price ?? "";
+
+  const selected = saved.categories || [];
 
   document.getElementById("category-options").innerHTML =
-    classes.map(([name, c], index) => `
-      <label class="category-option">
+    classes.map(([name, c]) => `
+      <label class="category-check">
         <input type="checkbox"
           value="${esc(name)}"
-          ${index === 0 ? "checked" : ""}>
+          ${selected.includes(name) ? "checked" : ""}>
         <span>${esc(name)}</span>
         <small class="category-price">₹${esc(c.price)}</small>
       </label>
     `).join("");
 
+  updateCategoryMode();
+
   document.getElementById("category-overlay").hidden = false;
+}
+
+function updateCategoryMode() {
+  const mode = document.querySelector(
+    'input[name="track-mode"]:checked'
+  )?.value || "all";
+
+  document.getElementById("budget-area").hidden = mode !== "budget";
+  document.getElementById("manual-area").hidden = mode !== "manual";
 }
 
 function closeCategoryPicker() {
   document.getElementById("category-overlay").hidden = true;
   categorySelection = null;
+}
+
+function saveCategorySelection() {
+  if (!categorySelection) return;
+
+  const mode = document.querySelector(
+    'input[name="track-mode"]:checked'
+  )?.value || "all";
+
+  const maxPrice = Number(
+    document.getElementById("category-budget").value
+  );
+
+  const categories = [
+    ...document.querySelectorAll(
+      "#category-options input[type=checkbox]:checked"
+    )
+  ].map(input => input.value);
+
+  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
+    alert("Please enter a valid maximum price.");
+    return;
+  }
+
+  if (mode === "manual" && !categories.length) {
+    alert("Please select at least one category.");
+    return;
+  }
+
+  const { v, d, id } = categorySelection;
+  const selections = store.get("categorySelections", {});
+
+  selections[selectionKey(v, d, id)] = {
+    mode,
+    max_price: mode === "budget" ? maxPrice : null,
+    categories: mode === "manual" ? categories : []
+  };
+
+  store.set("categorySelections", selections);
+
+  closeCategoryPicker();
+
+  alert(
+    "Selection saved on this device. Telegram tracking will be enabled after the bot integration."
+  );
+
+  renderList();
 }
 
 function pending(v, d, s) {
@@ -785,30 +1061,38 @@ function renderDates() {
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
   const p = pending(v, d, id);
+
   if (p) {
-  const item = store.get("pend", {})[key];
+    const item = store.get("pend", {})[key];
+    const elapsed = item ? Math.floor((Date.now() - item.ts) / 1000) : 0;
+    const remaining = Math.max(0, PENDING_MIN * 60 - elapsed);
 
-  const elapsed = item
-    ? Math.floor((Date.now() - item.ts) / 1000)
-    : 0;
+    const mins = String(Math.floor(remaining / 60)).padStart(2, "0");
+    const secs = String(remaining % 60).padStart(2, "0");
 
-  const remaining = Math.max(
-    0,
-    PENDING_MIN * 60 - elapsed
-  );
+    return `<button class="btn off" disabled>
+      🟡 Waiting for confirmation · ${mins}:${secs}
+    </button>`;
+  }
 
-  const mins = String(Math.floor(remaining / 60)).padStart(2, "0");
-  const secs = String(remaining % 60).padStart(2, "0");
+  if (isTracked(v, d, id)) {
+    return `
+      <button class="btn alt" data-a="edit" data-k="${key}">
+        ✓ Tracking · Edit
+      </button>
+      <button class="btn off" data-a="unt" data-k="${key}">
+        Stop
+      </button>`;
+  }
 
-  return `<button class="btn off" disabled>
-    🟡 Waiting for confirmation · ${mins}:${secs}
+  if (closed(show)) {
+    return `<button class="btn off" disabled>Tracking closed</button>`;
+  }
+
+  return `<button class="btn" data-a="pick" data-k="${key}">
+    Track this show
   </button>`;
 }
-  if (isTracked(v, d, id)) return `<button class="btn alt" data-a="unt" data-k="${key}">Tracking, tap to stop</button>`;
-  if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
-return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
-}
-
 function renderFilters() {
   const day = (S.state[S.venue] || {})[S.date] || {};
 
@@ -1020,11 +1304,40 @@ else if (t.dataset.d) {
   const show = ((S.state[v] || {})[d] || {})[id];
   if (show) openCategoryPicker(v, d, id, show);
 }
-else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
-if (t.id === "filter-clear-quick") {
+else if (t.dataset.a === "pick" || t.dataset.a === "edit") {
+  const [v, d, id] = t.dataset.k.split("_");
+  const show = ((S.state[v] || {})[d] || {})[id];
+
+  if (show) openCategoryPicker(v, d, id, show);
+}
+else if (t.dataset.a === "unt") {
+  press("unt", t.dataset.k);
+}if (t.id === "filter-clear-quick") {
     S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
     renderFilters();
     renderList();
+    return;
+  }
+});
+
+// Category selection events
+document.addEventListener("change", e => {
+  if (e.target.name === "track-mode") {
+    updateCategoryMode();
+  }
+});
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("button");
+  if (!t) return;
+
+  if (t.id === "category-close" || t.id === "category-cancel") {
+    closeCategoryPicker();
+    return;
+  }
+
+  if (t.id === "category-save") {
+    saveCategorySelection();
     return;
   }
 });

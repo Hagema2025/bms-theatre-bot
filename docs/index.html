@@ -143,6 +143,36 @@ main {
   .show { padding:19px; }
   .movie { font-size:19px; }
 }
+.filter-wrap {
+  max-width:760px;
+  margin:0 auto;
+  padding:0 18px 14px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+.filter-wrap select {
+  width:100%;
+  min-width:0;
+  padding:11px 10px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--fg);
+  font:inherit;
+  font-size:12px;
+}
+.filter-wrap button {
+  grid-column:1 / -1;
+  padding:9px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:var(--panel-2);
+  color:var(--muted);
+  font:inherit;
+  font-size:12px;
+  cursor:pointer;
+}
 
 </style>
 </head>
@@ -153,8 +183,11 @@ main {
 </header>
 <div class="nav-wrap"><div class="nav-label">Choose a theatre</div><nav class="row" id="venues" aria-label="Theatres"></nav>
 <div class="nav-label">Select a date</div><nav class="row" id="dates" aria-label="Dates"></nav></div>
-<main id="list"></main>
+</div>
 
+<div class="filter-wrap" id="filters"></div>
+
+<main id="list"></main>
 <script>
 // ── Settings ──────────────────────────────────────────────
 const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
@@ -174,8 +207,21 @@ const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
 };
-const S = { venue: store.get("venue", "INTO"), date: null, state: {}, track: {}, updated: {}, failed: {} };
-if (!THEATRES[S.venue]) S.venue = "INTO";
+const S = {
+  venue: store.get("venue", "INTO"),
+  date: null,
+  state: {},
+  track: {},
+  updated: {},
+  failed: {},
+  filters: {
+    movie: "",
+    language: "",
+    dimension: "",
+    screen: "",
+    time: ""
+  }
+};if (!THEATRES[S.venue]) S.venue = "INTO";
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -277,13 +323,83 @@ function button(v, d, id, show) {
   return `<button class="btn" data-a="trk" data-k="${key}">Track this show</button>`;
 }
 
+function renderFilters() {
+  const day = (S.state[S.venue] || {})[S.date] || {};
+
+  const shows = Object.values(day).filter(live);
+
+  const options = (field) => [...new Set(
+    shows.map(s => String(s[field] || "").trim()).filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
+
+  const makeSelect = (id, label, values) => `
+    <select id="filter-${id}" aria-label="${label}">
+      <option value="">All ${label}</option>
+      ${values.map(value =>
+        `<option value="${esc(value)}" ${S.filters[id] === value ? "selected" : ""}>
+          ${esc(value)}
+        </option>`
+      ).join("")}
+    </select>
+  `;
+
+  // Remove selections that are no longer available
+  ["movie", "language", "dimension", "screen"].forEach(field => {
+    if (!options(field).includes(S.filters[field])) {
+      S.filters[field] = "";
+    }
+  });
+
+  document.getElementById("filters").innerHTML = `
+    ${makeSelect("movie", "Movies", options("movie"))}
+    ${makeSelect("language", "Languages", options("language"))}
+    ${makeSelect("dimension", "Dimensions", options("dimension"))}
+    ${makeSelect("screen", "Screens", options("screen"))}
+
+    <select id="filter-time" aria-label="Show time">
+      <option value="">All show times</option>
+      <option value="morning" ${S.filters.time === "morning" ? "selected" : ""}>Morning (before 12 PM)</option>
+      <option value="afternoon" ${S.filters.time === "afternoon" ? "selected" : ""}>Afternoon (12–5 PM)</option>
+      <option value="evening" ${S.filters.time === "evening" ? "selected" : ""}>Evening (5–9 PM)</option>
+      <option value="night" ${S.filters.time === "night" ? "selected" : ""}>Night (9 PM onwards)</option>
+    </select>
+
+    <button type="button" data-filter-reset>Clear all filters</button>
+  `;
+}
+
+function matchesFilters(show) {
+  const f = S.filters;
+
+  if (f.movie && show.movie !== f.movie) return false;
+  if (f.language && show.language !== f.language) return false;
+  if (f.dimension && show.dimension !== f.dimension) return false;
+  if (f.screen && show.screen !== f.screen) return false;
+
+  if (f.time) {
+    const hour = new Date(
+  new Date(show.start).toLocaleString("en-US", {
+    timeZone: "Asia/Kolkata"
+  })
+).getHours();
+
+    if (f.time === "morning" && !(hour < 12)) return false;
+    if (f.time === "afternoon" && !(hour >= 12 && hour < 17)) return false;
+    if (f.time === "evening" && !(hour >= 17 && hour < 21)) return false;
+    if (f.time === "night" && !(hour >= 21 || hour < 5)) return false;
+  }
+
+  return true;
+}
+
 function renderList() {
   const el = document.getElementById("list");
   const v = S.venue;
   if (S.failed[v] && !S.state[v]) { el.innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and pull to refresh.</div>`; return; }
   const day = (S.state[v] || {})[S.date] || {};
-  const shows = Object.entries(day).filter(([, s]) => live(s)).sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
-  if (!shows.length) { el.innerHTML = `<div class="msg">No budget seats listed for this theatre right now.</div>`; return; }
+const shows = Object.entries(day)
+  .filter(([, s]) => live(s) && matchesFilters(s))
+  .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));  if (!shows.length) { el.innerHTML = `<div class="msg">No budget seats listed for this theatre right now.</div>`; return; }
   el.innerHTML = shows.map(([id, s]) => {
     const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
@@ -306,8 +422,13 @@ function renderUpdated() {
   el.textContent = m < 1 ? "Updated just now" : m < 60 ? `Updated ${m} min ago` : `Updated ${Math.round(m / 60)} h ago`;
 }
 
-function renderAll() { renderVenues(); renderDates(); renderList(); renderUpdated(); }
-
+function renderAll() {
+  renderVenues();
+  renderDates();
+  renderFilters();
+  renderList();
+  renderUpdated();
+}
 // ── Actions ───────────────────────────────────────────────
 function press(action, key) {
   const [v, d, id] = key.split("_");
@@ -322,9 +443,34 @@ function press(action, key) {
 document.addEventListener("click", async e => {
   const t = e.target.closest("button");
   if (!t) return;
+  if (t.dataset.filterReset !== undefined) {
+  S.filters = {
+    movie: "",
+    language: "",
+    dimension: "",
+    screen: "",
+    time: ""
+  };
+  renderFilters();
+  renderList();
+  return;
+}
   if (t.dataset.v) { S.venue = t.dataset.v; store.set("venue", S.venue); S.date = null; renderAll(); await load(S.venue); renderAll(); }
-  else if (t.dataset.d) { S.date = t.dataset.d; renderDates(); renderList(); }
-  else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
+else if (t.dataset.d) {
+  S.date = t.dataset.d;
+  renderDates();
+  renderFilters();
+  renderList();
+}  else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
+});
+
+document.addEventListener("change", e => {
+  if (!e.target.id.startsWith("filter-")) return;
+
+  const field = e.target.id.replace("filter-", "");
+  S.filters[field] = e.target.value;
+
+  renderList();
 });
 
 async function refreshAll() {

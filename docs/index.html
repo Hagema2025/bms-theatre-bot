@@ -885,11 +885,28 @@ const $ = id => document.getElementById(id);
 const DATA_BASE = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot/data/docs";
 
 async function getJson(folder, venue) {
+  const url = `${DATA_BASE}/${folder}/${venue}.json?t=${Date.now()}`;
+
   try {
-    const r = await fetch(`${DATA_BASE}/${folder}/${venue}.json?t=${Date.now()}`, { cache: "no-store" });
+    const r = await fetch(url, { cache: "no-store" });
+
+    debugLog("FETCH URL:", url);
+    debugLog("HTTP STATUS:", r.status);
+    debugLog("HTTP OK:", r.ok);
+
+    const text = await r.text();
+
+    debugLog("RESPONSE:", text.slice(0, 500));
+
     if (r.status === 404) return {};
-    return r.ok ? await r.json() : null;
-  } catch { return null; }
+    if (!r.ok) return null;
+
+    return JSON.parse(text);
+
+  } catch (e) {
+    debugLog("FETCH ERROR:", String(e));
+    return null;
+  }
 }
 
 async function loadState(venue) {

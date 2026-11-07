@@ -124,8 +124,8 @@
      "first_seen_status": "0",
      "first_seen_time": "2026-11-07T17:56:25+05:30",
      "price": 183.8,
-     "soon_alerted": false,
-     "status": "0"
+     "soon_alerted": true,
+     "status": "2"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -329,36 +329,6 @@
    ],
    "time": "11:35 PM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92685/20261107"
-  },
-  "92739": {
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T17:56:25+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T17:56:25+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-07T19:00:00+05:30",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "screen": "LASER 4",
-   "start": "2026-11-07T18:30:00+05:30",
-   "tags": [
-    "ENG"
-   ],
-   "time": "06:30 PM",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92739/20261107"
   },
   "92740": {
    "classes": {
@@ -2124,7 +2094,7 @@
      "first_seen_time": "2026-11-07T17:56:25+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -5084,5 +5054,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-07T18:50:51+05:30"
+ "_updated": "2026-11-07T19:01:07+05:30"
 }

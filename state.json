@@ -1068,13 +1068,14 @@
       "time": "10:40 AM - 01:34 PM"
     },
     "CBMC_15588_20261107_NORMAL": {
+      "alerted_at": "2026-11-07T08:01:04+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T14:20:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "01:50 PM - 04:44 PM"
     },
@@ -1283,13 +1284,14 @@
       "time": "08:35 AM - 11:29 AM"
     },
     "CBMC_15613_20261107_NORMAL": {
+      "alerted_at": "2026-11-07T08:01:04+05:30",
       "category": "NORMAL",
       "date": "20261107",
       "end": "2026-11-07T12:00:00+05:30",
-      "movie": "Scene - Tamil",
+      "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:30 AM - 02:24 PM"
     },
@@ -1360,18 +1362,6 @@
       "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "11:35 PM - 02:29 AM"
-    },
-    "CBMC_15624_20261107_NORMAL": {
-      "alerted_at": "2026-11-07T06:50:46+05:30",
-      "category": "NORMAL",
-      "date": "20261107",
-      "end": "2026-11-07T08:00:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "2",
-      "theatre": "Cinepolis: BSR Mall, OMR",
-      "time": "07:30 AM - 10:24 AM"
     },
     "CBMC_15626_20261107_NORMAL": {
       "category": "NORMAL",
@@ -2937,7 +2927,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "09:35 AM - 12:24 PM"
     },
@@ -6861,13 +6851,13 @@
       "time": "10:20 PM - 02:00 AM"
     },
     "PVHR_44852_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-07T08:01:04+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T10:30:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:00 AM - 12:49 PM"

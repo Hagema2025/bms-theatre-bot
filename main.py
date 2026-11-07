@@ -1,7 +1,7 @@
 """BookMyShow seat-availability alert scanner for Chennai theatres.
 
-Each run scans every bookable date at the target theatres and records every BUDGET
-seat class it sees (price <= MAX_BUDGET_PRICE, even sold out) with its availability.
+Each run scans every bookable date at the target theatres and records every seat class it
+sees (even sold out) with its availability.
 
 FILES (one writer each, so nothing ever overwrites anything else)
 
@@ -9,10 +9,18 @@ FILES (one writer each, so nothing ever overwrites anything else)
       { "20261107": { "28451": {
             "movie", "language", "dimension", "screen", "time", "start", "end", "url",
             "duration": 150,                       # movie length in minutes
-            "tags": ["IMAX", "Dolby Atmos"],       # BMS attributes, Atmos, subtitle code
+            "tags": ["IMAX", "4K DOLBY ATMOS", "ENG subs"],  # BMS attributes + subtitle code
+            "poster": "jailer-2-et00518674-1793799981",      # BMS EventImageCode
+            "event_code": "ET00518674", "censor": "UA16+", "trailer": "https://...",
+            "genre": "Action,Thriller",
+            "cutoff": "2026-11-07T21:45:00+05:30", # when BMS stops selling this show
+            "first_seen": "2026-11-07T12:09:58+05:30",   # only for shows this scanner added
             "classes": { "SILVER": {"price": 80, "status": "3", "soon_alerted": false,
                                     "first_seen_status": "0",
-                                    "first_seen_time": "2026-11-07T12:09:58+05:30"} } } },
+                                    "first_seen_time": "2026-11-07T12:09:58+05:30",
+                                    "status_changed_at": "...", "sold_out_at": "...",
+                                    "reopened_at": "...",
+                                    "prev_price": 75, "price_changed_at": "..."} } } },
         "_updated": "<ISO time of the last real change>" }
 
   docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
@@ -161,6 +169,46 @@ def entry_end(show, date_code):
         return datetime.strptime(date_code, "%Y%m%d").replace(tzinfo=IST) + timedelta(days=1)
     except (TypeError, ValueError):
         return datetime(2000, 1, 1, tzinfo=IST)
+
+
+def has_subtitles(show):
+    """BMS reuses SessionSubTitle(+Acronym) for things like '4K DOLBY 7.1' (acronym '4K '),
+    so only treat it as subtitles when the text really says so."""
+    return "SUBTITLE" in (show.get("SessionSubTitle") or "").upper()
+
+
+def attr_tags(show):
+    """Format/sound tags from BMS. IsAtmosEnabled is always 'N' in practice (Atmos shows when
+    Attributes says so), so it is only a fallback."""
+    attrs = (show.get("Attributes") or "").strip()
+    tags = [attrs] if attrs else []
+    if show.get("IsAtmosEnabled") == "Y" and "ATMOS" not in attrs.upper():
+        tags.append("Dolby Atmos")
+    return tags
+
+
+def show_tags(show):
+    tags = attr_tags(show)
+    if has_subtitles(show):
+        code = (show.get("SessionSubTitleAcronym") or "").strip()
+        tags.append(f"{code} subs" if code else "Subtitles")
+    return tags
+
+
+def touch_class(c, status, price, now):
+    """Update a stored seat class. Timestamps only change when something really changed,
+    so unchanged runs still make no commits."""
+    iso = now.isoformat(timespec="seconds")
+    old_price, old_status = c.get("price"), c.get("status")
+    if old_price is not None and old_price != price:
+        c["prev_price"], c["price_changed_at"] = old_price, iso
+    if old_status is not None and old_status != status:
+        c["status_changed_at"] = iso
+        if status == "0":
+            c["sold_out_at"] = iso
+        elif old_status == "0":
+            c["reopened_at"] = iso
+    c["price"], c["status"] = price, status
 
 
 # ───────────────────────── files ─────────────────────────
@@ -457,6 +505,7 @@ def fetch_showtimes(session, venue, date_code):
 
 
 def iter_categories(data):
+    """Yields (day, child, show, cat, duration, title, event) for every seat category."""
     for day in data.get("ShowDetails") or []:
         for ev in day.get("Event") or []:
             duration = ev.get("EventDuration") or "0"
@@ -464,13 +513,13 @@ def iter_categories(data):
             for child in ev.get("ChildEvents") or []:
                 for show in child.get("ShowTimes") or []:
                     for cat in show.get("Categories") or []:
-                        yield day, child, show, cat, duration, clean_title
+                        yield day, child, show, cat, duration, clean_title, ev
 
 
 def register_shows(vstate, venue, data, now):
     """Keep one entry per show under vstate[date][session]. Returns showtime changes found."""
     changes = []
-    for day, child, show, cat, duration, title in iter_categories(data):
+    for day, child, show, cat, duration, title, ev in iter_categories(data):
         try:
             price = float(cat.get("CurPrice") or 0)
         except (TypeError, ValueError):
@@ -483,24 +532,33 @@ def register_shows(vstate, venue, data, now):
         if start + SHOW_GRACE < now:
             continue
         sid = str(session_id)
-        entry = vstate.setdefault(date_code, {}).setdefault(sid, {"classes": {}, "time": ""})
+        day_shows = vstate.setdefault(date_code, {})
+        is_new = sid not in day_shows
+        entry = day_shows.setdefault(sid, {"classes": {}, "time": ""})
+        if is_new:
+            entry["first_seen"] = now.isoformat(timespec="seconds")   # set once
         new_time = show.get("ShowTime") or ""
         if entry.get("time") and new_time and new_time != entry["time"]:
             changes.append({"venue": venue, "date": date_code, "session": sid,
                             "old": entry["time"], "new": new_time})
-        entry["time"]      = new_time or entry.get("time", "")
-        entry["movie"]     = title
-        entry["language"]  = child.get("EventLanguage") or ""
-        entry["dimension"] = child.get("EventDimension") or ""
-        entry["screen"]    = show.get("ScreenName") or ""
-        entry["url"]       = SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
-                                                    session=session_id, date=date_code)
-        entry["start"]     = start.isoformat(timespec="seconds")
-        entry["end"]       = (start + SHOW_GRACE).isoformat(timespec="seconds")
-        entry["duration"]  = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
-        entry["tags"]      = [t for t in (show.get("Attributes"),
-                                          "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else "",
-                                          show.get("SessionSubTitleAcronym")) if t]
+        cutoff = parse_bms_time(show.get("CutOffDateTime"))
+        entry["time"]       = new_time or entry.get("time", "")
+        entry["movie"]      = title
+        entry["language"]   = child.get("EventLanguage") or ""
+        entry["dimension"]  = child.get("EventDimension") or ""
+        entry["screen"]     = show.get("ScreenName") or ""
+        entry["url"]        = SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
+                                                     session=session_id, date=date_code)
+        entry["start"]      = start.isoformat(timespec="seconds")
+        entry["end"]        = (start + SHOW_GRACE).isoformat(timespec="seconds")
+        entry["cutoff"]     = cutoff.isoformat(timespec="seconds") if cutoff else ""
+        entry["duration"]   = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
+        entry["tags"]       = show_tags(show)
+        entry["poster"]     = child.get("EventImageCode") or ""
+        entry["event_code"] = child.get("EventCode") or ""
+        entry["censor"]     = child.get("EventCensor") or ""
+        entry["trailer"]    = child.get("EventTrailer") or ""
+        entry["genre"]      = ev.get("EventGenre") or ""
     return changes
 
 
@@ -538,12 +596,9 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
     soon = mins_to_start is not None and 0 <= mins_to_start <= REMINDER_MINUTES
 
     # Extra tags for the alert text
-    sub_acronym = show.get("SessionSubTitleAcronym") or ""
-    attributes = show.get("Attributes") or ""
-    atmos = "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else ""
-    tags = [t for t in (attributes, atmos) if t]
-    extra_tags = " · ".join(tags)
-    sub_tag = f"[{sub_acronym}💬]" if sub_acronym else ""
+    extra_tags = " · ".join(attr_tags(show))
+    sub_acronym = (show.get("SessionSubTitleAcronym") or "").strip()
+    sub_tag = f"[{sub_acronym}💬]" if sub_acronym and has_subtitles(show) else ""
 
     # Show start - end time (end = start + duration + 25 min of ads/trailers)
     time_str = show.get("ShowTime") or ""
@@ -570,8 +625,7 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
             # Classes stored before first_seen existed get their first_seen values from now on
             prev.setdefault("first_seen_status", prev_status)
             prev.setdefault("first_seen_time", now.isoformat(timespec="seconds"))
-            prev["status"] = status   # no ping, but keep the stored availability current
-            prev["price"] = price
+            touch_class(prev, status, price, now)   # no ping, but keep availability current
             return None
 
     return {
@@ -626,7 +680,7 @@ def scan(session, state, now):
                 dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
                           if d.get("DateCode") and not d.get("isDisabled")]
 
-            for day, child, show, cat, duration, clean_title in iter_categories(data):
+            for day, child, show, cat, duration, clean_title, _ev in iter_categories(data):
                 try:
                     hit = check_category(venue, day, child, show, cat, duration, clean_title,
                                          vstate, now, seen)
@@ -645,7 +699,7 @@ def scan(session, state, now):
             for sid, s in shows.items():
                 for desc, c in s.get("classes", {}).items():
                     if (venue, date_code, sid, desc) not in seen and c.get("status") != "0":
-                        c["status"] = "0"
+                        touch_class(c, "0", c.get("price"), now)
 
     return hits, stats, changes
 
@@ -721,13 +775,16 @@ def record_alert(state, h, now):
     entry = get_show(state, h["venue"], h["date"], h["session"])
     if entry is None:
         return
-    prev = entry["classes"].get(h["category"], {})
-    entry["classes"][h["category"]] = {
-        "price": h["price"], "status": h["status"],
-        "soon_alerted": h["soon"] or prev.get("soon_alerted", False),
-        "first_seen_status": prev.get("first_seen_status") or prev.get("status") or h["status"],
-        "first_seen_time": prev.get("first_seen_time") or now.isoformat(timespec="seconds"),
-    }
+    iso = now.isoformat(timespec="seconds")
+    c = entry["classes"].get(h["category"])
+    if c is None:
+        c = entry["classes"][h["category"]] = {
+            "soon_alerted": False, "first_seen_status": h["status"], "first_seen_time": iso}
+    else:
+        c.setdefault("first_seen_status", c.get("status") or h["status"])
+        c.setdefault("first_seen_time", iso)
+    touch_class(c, h["status"], h["price"], now)
+    c["soon_alerted"] = h["soon"] or c.get("soon_alerted", False)
 
 
 def send_alerts(hits, state, tracking, now):
@@ -743,8 +800,8 @@ def send_alerts(hits, state, tracking, now):
         )
 
         category_selected = is_category_tracked(
-    tracking, h["venue"], h["date"], h["session"], h["category"], h["price"]
-)
+            tracking, h["venue"], h["date"], h["session"], h["category"], h["price"]
+        )
 
         if thread and category_selected:
             groups.setdefault(
@@ -850,4 +907,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-  

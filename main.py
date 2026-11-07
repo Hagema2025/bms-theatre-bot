@@ -8,7 +8,11 @@ FILES (one writer each, so nothing ever overwrites anything else)
   docs/state/<VENUE>.json     WRITTEN BY THIS SCANNER, also the Mini App's data source
       { "20261107": { "28451": {
             "movie", "language", "dimension", "screen", "time", "start", "end", "url",
-            "classes": { "SILVER": {"price": 80, "status": "3", "soon_alerted": false} } } },
+            "duration": 150,                       # movie length in minutes
+            "tags": ["IMAX", "Dolby Atmos"],       # BMS attributes, Atmos, subtitle code
+            "classes": { "SILVER": {"price": 80, "status": "3", "soon_alerted": false,
+                                    "first_seen_status": "0",
+                                    "first_seen_time": "2026-11-07T12:09:58+05:30"} } } },
         "_updated": "<ISO time of the last real change>" }
 
   docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
@@ -467,6 +471,10 @@ def register_shows(vstate, venue, data, now):
                                                     session=session_id, date=date_code)
         entry["start"]     = start.isoformat(timespec="seconds")
         entry["end"]       = (start + SHOW_GRACE).isoformat(timespec="seconds")
+        entry["duration"]  = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
+        entry["tags"]      = [t for t in (show.get("Attributes"),
+                                          "Dolby Atmos" if show.get("IsAtmosEnabled") == "Y" else "",
+                                          show.get("SessionSubTitleAcronym")) if t]
     return changes
 
 
@@ -521,7 +529,9 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
     if prev is None:
         if status == "0":
             # Sold out right now: store it so a later run can ping when it opens
-            entry["classes"][desc] = {"price": price, "status": "0", "soon_alerted": False}
+            entry["classes"][desc] = {"price": price, "status": "0", "soon_alerted": False,
+                                      "first_seen_status": "0",
+                                      "first_seen_time": now.isoformat(timespec="seconds")}
             return None
         kind, prev_status = "new", None
     else:
@@ -531,6 +541,9 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
         elif soon and status != "0" and not prev.get("soon_alerted"):
             kind = "soon"
         else:
+            # Classes stored before first_seen existed get their first_seen values from now on
+            prev.setdefault("first_seen_status", prev_status)
+            prev.setdefault("first_seen_time", now.isoformat(timespec="seconds"))
             prev["status"] = status   # no ping, but keep the stored availability current
             prev["price"] = price
             return None
@@ -676,8 +689,9 @@ def format_hit(h):
     return "\n".join(lines)
 
 
-def record_alert(state, h):
-    """Store the class's latest status (and the soon flag) after it was alerted or silently seen."""
+def record_alert(state, h, now):
+    """Store the class's latest status (and the soon flag) after it was alerted or silently seen.
+    first_seen_status / first_seen_time are set once, the first time the class is stored."""
     entry = get_show(state, h["venue"], h["date"], h["session"])
     if entry is None:
         return
@@ -685,6 +699,8 @@ def record_alert(state, h):
     entry["classes"][h["category"]] = {
         "price": h["price"], "status": h["status"],
         "soon_alerted": h["soon"] or prev.get("soon_alerted", False),
+        "first_seen_status": prev.get("first_seen_status") or prev.get("status") or h["status"],
+        "first_seen_time": prev.get("first_seen_time") or now.isoformat(timespec="seconds"),
     }
 
 
@@ -696,7 +712,7 @@ def send_alerts(hits, state, tracking, now):
         if track_thread(state, tracking, h["venue"], h["date"], h["session"]):
             groups.setdefault((h["venue"], h["date"], h["session"]), []).append(h)
         else:
-            record_alert(state, h)
+            record_alert(state, h, now)
 
     sent = 0
     for (venue, date_code, session), group in groups.items():
@@ -717,7 +733,7 @@ def send_alerts(hits, state, tracking, now):
             text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
             if send_track(state, tracking, venue, date_code, session, text):
                 for h, _ in chunk:
-                    record_alert(state, h)
+                    record_alert(state, h, now)
                 sent += len(chunk)
             time.sleep(1)
     return sent

@@ -19,7 +19,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.0,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "03:30 PM - 06:19 PM"
     },
@@ -99,7 +99,7 @@
       "movie": "Ramayana",
       "price": 84.0,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "04:00 PM - 07:40 PM"
     },
@@ -531,18 +531,6 @@
       "status": "0",
       "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
       "time": "10:55 PM - 01:49 AM"
-    },
-    "ACON_48540_20261107_PEARL": {
-      "alerted_at": "2026-11-07T10:10:49+05:30",
-      "category": "PEARL",
-      "date": "20261107",
-      "end": "2026-11-07T10:45:00+05:30",
-      "movie": "Scene",
-      "price": 54.0,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "AGS Cinemas OMR: Navalur (Vivira Mall)",
-      "time": "10:15 AM - 01:09 PM"
     },
     "ACON_48541_20261107_PEARL": {
       "alerted_at": "2026-11-07T07:40:50+05:30",
@@ -1073,7 +1061,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "12:35 PM - 03:45 PM"
     },
@@ -1085,7 +1073,7 @@
       "movie": "Jailer 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:00 PM - 07:10 PM"
     },
@@ -1119,7 +1107,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "2",
+      "status": "0",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "10:25 AM - 01:14 PM"
     },
@@ -1142,7 +1130,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "Cinepolis: BSR Mall, OMR",
       "time": "04:35 PM - 07:24 PM"
     },
@@ -4677,7 +4665,7 @@
       "movie": "Scene",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "04:40 PM - 07:34 PM"
     },
@@ -5001,7 +4989,7 @@
       "movie": "Ramayana",
       "price": 94.84,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "02:30 PM - 06:10 PM"
     },
@@ -5037,7 +5025,7 @@
       "movie": "Ramayana",
       "price": 89.76,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "12:00 PM - 03:40 PM"
     },
@@ -5121,7 +5109,7 @@
       "movie": "Scene",
       "price": 57.98,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "01:20 PM - 04:14 PM"
     },
@@ -5150,13 +5138,13 @@
       "time": "07:40 PM - 10:34 PM"
     },
     "MAYJ_241807_20261107_SECOND CLASS": {
-      "alerted_at": "2026-11-07T08:40:48+05:30",
+      "alerted_at": "2026-11-07T10:50:49+05:30",
       "category": "SECOND CLASS",
       "date": "20261107",
       "end": "2026-11-07T13:20:00+05:30",
       "movie": "Scene",
       "price": 57.98,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "12:50 PM - 03:44 PM"
@@ -5361,7 +5349,7 @@
       "movie": "Scene",
       "price": 57.98,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "12:40 PM - 03:34 PM"
     },
@@ -5581,18 +5569,6 @@
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "12:20 PM - 03:14 PM"
     },
-    "MAYJ_242067_20261107_SECOND CLASS": {
-      "alerted_at": "2026-11-07T08:40:48+05:30",
-      "category": "SECOND CLASS",
-      "date": "20261107",
-      "end": "2026-11-07T10:45:00+05:30",
-      "movie": "Scene",
-      "price": 57.98,
-      "soon_alerted": true,
-      "status": "0",
-      "theatre": "MAYAJAAL Multiplex: ECR",
-      "time": "10:15 AM - 01:09 PM"
-    },
     "MAYJ_242071_20261107_SECOND CLASS": {
       "alerted_at": "2026-11-07T08:40:48+05:30",
       "category": "SECOND CLASS",
@@ -5604,18 +5580,6 @@
       "status": "3",
       "theatre": "MAYAJAAL Multiplex: ECR",
       "time": "05:10 PM - 08:04 PM"
-    },
-    "MCSK_16956_20261107_SPECIAL": {
-      "alerted_at": "2026-11-06T15:50:51+05:30",
-      "category": "SPECIAL",
-      "date": "20261107",
-      "end": "2026-11-07T10:45:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "10:15 AM - 01:09 PM"
     },
     "MCSK_16957_20261107_SPECIAL": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
@@ -6715,18 +6679,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "11:05 PM - 02:45 AM"
     },
-    "PVHR_44291_20261107_CLASSIC": {
-      "alerted_at": "2026-11-07T08:20:46+05:30",
-      "category": "CLASSIC",
-      "date": "20261107",
-      "end": "2026-11-07T10:50:00+05:30",
-      "movie": "Ramayana",
-      "price": 94.43,
-      "soon_alerted": true,
-      "status": "3",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "10:20 AM - 02:00 PM"
-    },
     "PVHR_44292_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T00:50:53+05:30",
       "category": "CLASSIC",
@@ -7106,7 +7058,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "2",
+      "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "12:30 PM - 03:19 PM"
     },

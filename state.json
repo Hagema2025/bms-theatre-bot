@@ -5261,17 +5261,6 @@
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "10:45 PM - 02:25 AM"
     },
-    "MCSK_16966_20261107_SPECIAL": {
-      "category": "SPECIAL",
-      "date": "20261107",
-      "end": "2026-11-07T07:10:00+05:30",
-      "movie": "Mookuthi Amman 2 - Tamil",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "Miraj Cinemas: Sekaran Mall",
-      "time": "06:40 AM - 09:29 AM"
-    },
     "MCSK_16967_20261107_SPECIAL": {
       "category": "SPECIAL",
       "date": "20261107",
@@ -6394,18 +6383,6 @@
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:50 PM - 02:30 AM"
     },
-    "PVHR_44806_20261107_CLASSIC": {
-      "alerted_at": "2026-11-07T04:40:48+05:30",
-      "category": "CLASSIC",
-      "date": "20261107",
-      "end": "2026-11-07T07:05:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": true,
-      "status": "1",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:35 AM - 09:29 AM"
-    },
     "PVHR_44807_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T23:50:51+05:30",
       "category": "CLASSIC",
@@ -6515,13 +6492,13 @@
       "time": "07:35 PM - 10:45 PM"
     },
     "PVHR_44817_20261107_CLASSIC": {
-      "alerted_at": "2026-11-07T01:50:54+05:30",
+      "alerted_at": "2026-11-07T07:10:47+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T09:40:00+05:30",
       "movie": "Scene",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "1",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM - 12:04 PM"
@@ -6646,13 +6623,13 @@
       "time": "09:50 PM - 12:44 AM"
     },
     "PVHR_44830_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
+      "alerted_at": "2026-11-07T07:10:47+05:30",
       "category": "CLASSIC",
       "date": "20261107",
       "end": "2026-11-07T09:40:00+05:30",
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
-      "soon_alerted": false,
+      "soon_alerted": true,
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "09:10 AM - 11:59 AM"
@@ -6953,7 +6930,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:40 PM - 01:29 AM"
     },
@@ -7172,18 +7149,6 @@
       "status": "3",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "10:45 PM - 02:25 AM"
-    },
-    "PVHR_44877_20261107_CLASSIC": {
-      "alerted_at": "2026-11-06T00:50:53+05:30",
-      "category": "CLASSIC",
-      "date": "20261107",
-      "end": "2026-11-07T07:10:00+05:30",
-      "movie": "Scene",
-      "price": 54.35,
-      "soon_alerted": false,
-      "status": "0",
-      "theatre": "PVR: Heritage RSL ECR",
-      "time": "06:40 AM - 09:34 AM"
     },
     "PVHR_44878_20261107_CLASSIC": {
       "alerted_at": "2026-11-06T13:20:50+05:30",
@@ -7552,7 +7517,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": false,
-      "status": "3",
+      "status": "2",
       "theatre": "PVR: Heritage RSL ECR",
       "time": "03:40 PM - 06:29 PM"
     },

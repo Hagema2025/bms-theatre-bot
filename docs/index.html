@@ -741,7 +741,6 @@ main { gap: 13px; }
 <body>
 <header>
   <div class="brand">
-    <!-- Changed 'B' to a Ticket Emoji for a modern feel -->
     <div class="brand-mark" aria-hidden="true">🎫</div>
     <div>
       <h1>Ticket Alerts</h1>
@@ -826,7 +825,8 @@ main { gap: 13px; }
 
 <script>
 
-  const DEBUG = true;
+// Set to true only while debugging. It shows a green log panel to the user.
+const DEBUG = false;
 
 function debugLog(...args) {
   if (!DEBUG) return;
@@ -851,16 +851,23 @@ function debugLog(...args) {
   output.textContent += line + "\n";
   panel.scrollTop = panel.scrollHeight;
 }
+
 // ── Settings ──────────────────────────────────────────────
 const BOT = "Bms_ticketAlert_bot";
 const CUTOFF_MIN = 10;
-const PENDING_MIN = 1;   // how long to wait for the bot to confirm
+const PENDING_MIN = 6;   // must outlast the ~5 min raw.githubusercontent.com cache
 const THEATRES = {
   INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
 };
 const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
 const EMPTY_FILTERS = { movie: "", language: "", dimension: "", screen: "", time: "" };
+
+// Fresh commit passed in by the bot's "Back to app" button (?sha=<40 hex chars>)
+const SHA_PARAM = new URLSearchParams(location.search).get("sha") || "";
+let SHA = /^[0-9a-f]{40}$/.test(SHA_PARAM) ? SHA_PARAM : null;
+const SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
+const activeSha = () => (SHA && Date.now() < SHA_UNTIL) ? SHA : null;
 
 // ── State ─────────────────────────────────────────────────
 const tg = window.Telegram && window.Telegram.WebApp;
@@ -882,38 +889,29 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": 
 const $ = id => document.getElementById(id);
 
 // ── Data ──────────────────────────────────────────────────
-const DATA_BASE = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot/data/docs";
+const RAW = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot";
 
 async function getJson(folder, venue) {
-  const url = `${DATA_BASE}/${folder}/${venue}.json?t=${Date.now()}`;
+  const sha = folder === "tracking" ? activeSha() : null;
+  const urls = [];
+  if (sha) urls.push(`${RAW}/${sha}/docs/${folder}/${venue}.json`);       // fresh, never cached before
+  urls.push(`${RAW}/data/docs/${folder}/${venue}.json?t=${Date.now()}`);  // normal branch (may be ~5 min stale)
 
-  try {
-    const r = await fetch(url, { cache: "no-store" });
-
-    debugLog("FETCH URL:", url);
-    debugLog("HTTP STATUS:", r.status);
-    debugLog("HTTP OK:", r.ok);
-
-    const text = await r.text();
-    debugLog("JSON FETCH TIME:", new Date().toISOString());
-debugLog("JSON CONTENT HAS 92612:",
-  text.includes('"92612"')
-);
-debugLog("JSON CONTENT HAS EXECUTIVE:",
-  text.includes('"EXECUTIVE"')
-);
-
-    debugLog("RESPONSE:", text.slice(0, 500));
-
-    if (r.status === 404) return {};
-    if (!r.ok) return null;
-
-    return JSON.parse(text);
-
-  } catch (e) {
-    debugLog("FETCH ERROR:", String(e));
-    return null;
+  for (const url of urls) {
+    try {
+      const r = await fetch(url, { cache: "no-store" });
+      debugLog("FETCH:", url, r.status);
+      if (r.status === 404) {
+        if (url === urls[urls.length - 1]) return {};
+        continue;                       // SHA not ready yet, try the branch
+      }
+      if (!r.ok) continue;
+      return JSON.parse(await r.text());
+    } catch (e) {
+      debugLog("FETCH ERROR:", String(e));
+    }
   }
+  return null;
 }
 
 async function loadState(venue) {
@@ -935,36 +933,15 @@ async function loadTracking(venue) {
 
   // Ignore an older request if a newer request has started
   if (requestId !== trackingRequestId[venue]) {
-    debugLog("IGNORED OLD TRACKING RESPONSE", {
-      venue,
-      requestId,
-      latestRequestId: trackingRequestId[venue]
-    });
+    debugLog("IGNORED OLD TRACKING RESPONSE", { venue, requestId });
     return;
   }
 
   if (tr !== null) {
     S.track[venue] = tr;
-    debugLog("FRONTEND TRACK CHECK:", {
-  show92612: S.track[venue]?.["20261107"]?.["92612"],
-  time: new Date().toISOString()
-});
-
-    debugLog("TRACKING DATA UPDATED", {
-      venue,
-      requestId,
-      fetchedAt: new Date().toISOString(),
-      show92612: tr["20261107"]?.["92612"],
-      show92670: tr["20261107"]?.["92670"],
-      show92785: tr["20261107"]?.["92785"],
-      ids: Object.keys(tr["20261107"] || {})
-    });
+    debugLog("TRACKING DATA UPDATED", { venue, requestId, fetchedAt: new Date().toISOString() });
   } else {
-    debugLog("TRACKING FETCH FAILED", {
-      venue,
-      requestId,
-      time: new Date().toISOString()
-    });
+    debugLog("TRACKING FETCH FAILED", { venue, requestId, time: new Date().toISOString() });
   }
 }
 
@@ -974,40 +951,17 @@ const trackOf = (v, d, s) => (((S.track[v] || {})[d] || {})[s]) || {};
 const isTracked = (v, d, s) => !!trackOf(v, d, s).tracked;
 
 // ── Pending (waiting for bot) ─────────────────────────────
-function sameSet(a, b) {
-  a = a || []; b = b || [];
-  return a.length === b.length && [...a].sort().join("|") === [...b].sort().join("|");
-}
-
 // Has the bot's saved data caught up with what the user asked for?
-// Has the bot's saved data caught up with what the user asked for?
-
 function confirmed(p, t) {
-  debugLog("========== CONFIRM CHECK ==========");
-  debugLog("Pending:", p);
-  debugLog("Tracking JSON entry:", t);
+  if (p.a === "unt") return !t.tracked;
 
-  if (p.a === "unt") {
-    const result = !t.tracked;
-    debugLog("Untrack confirmed:", result);
-    return result;
-  }
-
-  if (!t.tracked) {
-    debugLog("Tracking entry not found or tracked=false");
-    return false;
-  }
+  if (!t.tracked) return false;
 
   const i = p.intent;
-
   if (!i) return true;
 
   const tMode = t.mode || "all";
-
-  if (tMode !== i.mode) {
-    debugLog("Mode mismatch:", tMode, i.mode);
-    return false;
-  }
+  if (tMode !== i.mode) return false;
 
   if (i.mode === "budget") {
     const saved = Number(t.max_price);
@@ -1028,32 +982,23 @@ function confirmed(p, t) {
   return true;
 }
 
-
-
+// Returns the pending action ("trk" / "unt") or null.
+// Expired entries are NOT deleted here, so prunePending() can warn the user.
 function pending(v, d, s) {
   const key = `${v}_${d}_${s}`;
   const all = store.get("pend", {});
   const p = all[key];
-
   if (!p) return null;
 
-  const t = trackOf(v, d, s);
+  if (Date.now() - p.ts > PENDING_MIN * 60000) return null;
 
-  if (Date.now() - p.ts > PENDING_MIN * 60000) {
+  if (confirmed(p, trackOf(v, d, s))) {
     delete all[key];
     store.set("pend", all);
     return null;
   }
-
-  if (confirmed(p, t)) {
-    delete all[key];
-    store.set("pend", all);
-    return null;
-  }
-
   return p.a;
 }
-
 
 function prunePending() {
   const all = store.get("pend", {});
@@ -1061,29 +1006,23 @@ function prunePending() {
 
   for (const [key, p] of Object.entries(all)) {
     const [v, d, id] = key.split("_");
+    const expired = Date.now() - p.ts > PENDING_MIN * 60000;
+    const isConfirmed = !!S.track[v] && confirmed(p, trackOf(v, d, id));
 
-    const expired =
-      Date.now() - p.ts > PENDING_MIN * 60000;
-
-    const t = trackOf(v, d, id);
-    const isConfirmed = !!S.track[v] && confirmed(p, t);
-
-    debugLog("PENDING STATUS:", {
-      key,
-      expired,
-      isConfirmed,
-      savedTracking: t
-    });
+    debugLog("PENDING STATUS:", { key, expired, isConfirmed });
 
     if (expired || isConfirmed) {
       delete all[key];
       changed = true;
-      debugLog("PENDING REMOVED:", key);
+      if (expired && !isConfirmed) {
+        notify("Couldn't confirm your last request. Open the bot in Telegram to check, then try again.");
+      }
     }
   }
 
   if (changed) store.set("pend", all);
 }
+
 // ── Category tracking selection ──────────────────────────
 let categorySelection = null;
 
@@ -1095,20 +1034,19 @@ function openCategoryPicker(v, d, id, show) {
   const classes = Object.entries(show.classes || {}).filter(([name, c]) => name && Number(c.price) > 0);
   if (!classes.length) return notify("No seat categories are available.");
 
-const key = `${v}_${d}_${id}`;
-const pend = store.get("pend", {})[key];
+  const key = `${v}_${d}_${id}`;
+  const pend = store.get("pend", {})[key];
+  const t = trackOf(v, d, id);
 
-const t = trackOf(v, d, id);
-
-const saved = pend && Date.now() - pend.ts <= PENDING_MIN * 60000
-  ? (pend.intent || {})
-  : t.tracked
-    ? {
-        mode: t.mode || "all",
-        max_price: t.max_price,
-        categories: t.categories || []
-      }
-    : {};
+  const saved = pend && Date.now() - pend.ts <= PENDING_MIN * 60000
+    ? (pend.intent || {})
+    : t.tracked
+      ? {
+          mode: t.mode || "all",
+          max_price: t.max_price,
+          categories: t.categories || []
+        }
+      : {};
   categorySelection = { v, d, id, show, classes };
 
   $("category-sub").textContent = `${show.movie || "Show"} · ${show.time || ""}`;
@@ -1138,40 +1076,17 @@ function closeCategoryPicker() {
 }
 
 function saveCategorySelection() {
-  debugLog("========== SAVE TRACKING ==========");
+  if (!categorySelection) return;
 
-  if (!categorySelection) {
-    console.error("❌ categorySelection is missing");
-    return;
-  }
-
-  const mode = document.querySelector(
-    'input[name="track-mode"]:checked'
-  )?.value || "all";
-
+  const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
   const maxPrice = Math.round(Number($("category-budget").value));
-
   const checked = [
-    ...document.querySelectorAll(
-      "#category-options input[type=checkbox]:checked"
-    )
+    ...document.querySelectorAll("#category-options input[type=checkbox]:checked")
   ].map(i => i.value);
 
   const { v, d, id, classes } = categorySelection;
 
-  debugLog("Venue:", v);
-  debugLog("Date:", d);
-  debugLog("Show ID:", id);
-  debugLog("Selected mode:", mode);
-  debugLog("Selected budget:", maxPrice);
-  debugLog("Selected categories:", checked);
-
-  const oldTracking = trackOf(v, d, id);
-
-  debugLog("Previous tracking data:", oldTracking);
-
-  if (mode === "budget" &&
-      (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
+  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
     return notify("Please enter a valid maximum price.");
   }
 
@@ -1197,13 +1112,13 @@ function saveCategorySelection() {
     categories: mode === "manual" ? checked : []
   };
 
-  debugLog("Deep-link extra:", extra);
-  debugLog("Pending intent:", intent);
+  debugLog("Deep-link extra:", extra, "intent:", intent);
 
   closeCategoryPicker();
 
   press("trk", `${v}_${d}_${id}`, extra, intent);
 }
+
 // ── Rendering ─────────────────────────────────────────────
 const live = show => Date.parse(show.end) > Date.now();
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
@@ -1246,34 +1161,29 @@ function renderDates() {
 
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
+  const action = pending(v, d, id);
 
-  // Check whether the bot has confirmed the request
-  const pendingAction = pending(v, d, id);
-
-  if (pendingAction) {
+  // Waiting for the bot: honest "syncing" state with an escape hatch
+  if (action) {
     const pend = store.get("pend", {})[key];
     const intent = pend?.intent;
+    let label = action === "unt" ? "Stopping…" : "Syncing…";
 
-    let label = "Waiting for confirmation";
-
-    if (pendingAction === "trk" && intent) {
+    if (action === "trk" && intent) {
       if (intent.mode === "manual") {
-        label = `Saving · ${intent.categories.join(", ")}`;
+        label = `Syncing · ${intent.categories.join(", ")}`;
       } else if (intent.mode === "budget") {
-        label = `Saving · Under ₹${intent.max_price}`;
+        label = `Syncing · Under ₹${intent.max_price}`;
       } else {
-        label = "Saving · All Categories";
+        label = "Syncing · All Categories";
       }
-    } else if (pendingAction === "unt") {
-      label = "Stopping tracking";
     }
 
-    return `<button class="btn off" disabled data-wait="${key}">
-      🟡 ${esc(label)} · <span class="cd"></span>
-    </button>`;
+    return `<button class="btn off" disabled data-wait="${key}">🟡 ${esc(label)} · <span class="cd"></span></button>
+            <button class="btn off" data-a="cancel" data-k="${key}">Cancel</button>`;
   }
 
-  // Once confirmed, immediately show the saved tracking state
+  // Confirmed by the file
   if (isTracked(v, d, id)) {
     return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
             <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;
@@ -1360,8 +1270,7 @@ function renderList() {
     const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
     const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
-    
-    // --- NEW: Extracting extra data ---
+
     const censor = s.censor ? `<span class="censor-badge">${esc(s.censor)}</span>` : "";
     const genre = s.genre ? `<div class="genre">${esc(s.genre).replace(/,/g, ", ")}</div>` : "";
     const posterImg = s.poster ? `<img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/${s.poster}.jpg" class="poster" loading="lazy" onerror="this.style.display='none'">` : "";
@@ -1370,9 +1279,7 @@ function renderList() {
     const classes = Object.entries(s.classes || {}).map(([name, c]) => `
       <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
-    
-    // --- NEW: Updated Layout ---
-    // --- NEW: Grid Optimized Layout ---
+
     return `<article class="show">
       <div class="show-header">
         ${posterImg}
@@ -1404,6 +1311,7 @@ function renderList() {
   tickCountdown();
   updateFilterUI();
 }
+
 function renderUpdated() {
   const u = S.updated[S.venue], el = $("upd");
   if (!u) { el.textContent = ""; return; }
@@ -1433,12 +1341,8 @@ function press(action, key, extra = "", intent = null) {
   const [v, d, id] = key.split("_");
   const pend = store.get("pend", {});
 
-  debugLog("========== NEW REQUEST ==========");
-  debugLog("Key:", key);
-  debugLog("Action:", action);
-  debugLog("New intent:", intent);
-  debugLog("Existing pending:", pend[key]);
-  debugLog("Current tracking:", trackOf(v, d, id));
+  // A new request makes any older SHA stale, so stop using it
+  SHA = null;
 
   pend[key] = {
     a: action,
@@ -1503,6 +1407,11 @@ document.addEventListener("click", async e => {
     if (show) openCategoryPicker(v, d, id, show);
   } else if (t.dataset.a === "unt") {
     press("unt", t.dataset.k);
+  } else if (t.dataset.a === "cancel") {
+    const all = store.get("pend", {});
+    delete all[t.dataset.k];
+    store.set("pend", all);
+    renderList();
   }
 });
 

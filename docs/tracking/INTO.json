@@ -2,9 +2,11 @@
   "20261107": {
     "92625": {
       "tracked": true,
-      "mode": "budget",
-      "max_price": 100.0,
-      "categories": [],
+      "mode": "manual",
+      "max_price": null,
+      "categories": [
+        "EXECUTIVE"
+      ],
       "user_id": 8344846885,
       "movie": "Scene",
       "time": "08:30 PM",
@@ -12,7 +14,7 @@
       "message_thread_id": 456,
       "summary_msg_id": 458,
       "status_msg_id": 459,
-      "updated": "2026-11-07T20:27:43.476376+05:30"
+      "updated": "2026-11-07T20:28:57.484034+05:30"
     }
   }
 }

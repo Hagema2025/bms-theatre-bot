@@ -3966,7 +3966,7 @@
       "movie": "Mookuthi Amman 2",
       "price": 54.35,
       "soon_alerted": true,
-      "status": "3",
+      "status": "2",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "06:30 AM - 09:19 AM"
     },
@@ -4307,7 +4307,7 @@
       "movie": "Ramayana",
       "price": 89.35,
       "soon_alerted": false,
-      "status": "1",
+      "status": "0",
       "theatre": "INOX: The Marina Mall, OMR",
       "time": "07:50 PM - 11:30 PM"
     },
@@ -5443,13 +5443,14 @@
       "time": "03:40 PM - 06:50 PM"
     },
     "MCSK_16976_20261107_SPECIAL": {
+      "alerted_at": "2026-11-07T05:50:52+05:30",
       "category": "SPECIAL",
       "date": "20261107",
       "end": "2026-11-07T19:35:00+05:30",
-      "movie": "Ramayana - Hindi",
+      "movie": "Ramayana",
       "price": 59.43,
       "soon_alerted": false,
-      "status": "0",
+      "status": "3",
       "theatre": "Miraj Cinemas: Sekaran Mall",
       "time": "07:05 PM - 10:45 PM"
     },

@@ -480,6 +480,111 @@ main { gap: 13px; }
   .filter-wrap select { font-size: 11px; padding-left: 10px; }
 }
 
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 724px;
+  margin: 2px auto 18px;
+  padding: 0 16px;
+}
+/* Reset margins on the trigger since the container handles it now */
+.filter-trigger {
+  margin: 0; 
+  flex: 1;
+  max-width: 250px; /* keeps it from stretching too wide */
+}
+.filter-clear-quick {
+  background: rgba(255, 129, 123, 0.1);
+  border: 1px solid rgba(255, 129, 123, 0.25);
+  color: #ff817b;
+  border-radius: 12px;
+  padding: 0 14px;
+  height: 46px; /* Matches the trigger height */
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.filter-clear-quick:active {
+  transform: scale(0.95);
+}
+
+
+/* Category selection */
+.category-overlay[hidden] { display:none; }
+.category-overlay {
+  position:fixed;
+  inset:0;
+  z-index:1100;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  background:rgba(0,0,0,.72);
+}
+.category-panel {
+  width:100%;
+  max-width:560px;
+  max-height:82vh;
+  overflow-y:auto;
+  padding:22px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+  background:linear-gradient(160deg,#182438,#101827 72%);
+  border:1px solid var(--line);
+  border-radius:24px 24px 0 0;
+}
+.category-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:8px;
+}
+.category-title { font-size:18px; font-weight:800; }
+.category-sub { color:var(--muted); font-size:12px; margin-bottom:17px; }
+.category-option {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 12px;
+  margin-bottom:8px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.035);
+  cursor:pointer;
+}
+.category-option input {
+  width:18px;
+  height:18px;
+  accent-color:var(--accent);
+}
+.category-option span { flex:1; font-size:13px; font-weight:700; }
+.category-price { color:var(--muted); font-size:12px; }
+.category-actions { display:flex; gap:10px; margin-top:18px; }
+.category-actions button {
+  flex:1;
+  min-height:44px;
+  border-radius:12px;
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+.category-cancel {
+  border:1px solid var(--line);
+  background:var(--panel-2);
+  color:var(--fg);
+}
+.category-start {
+  border:0;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  color:#1a1409;
+}
+@media (min-width:600px) {
+  .category-overlay { align-items:center; padding:20px; }
+  .category-panel { border-radius:24px; }
+}
+
 </style>
 </head>
 <body>
@@ -494,8 +599,10 @@ main { gap: 13px; }
   <nav class="row" id="dates" aria-label="Dates"></nav>
 </div>
 
-<button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
-
+<div class="filter-bar">
+  <button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
+  <button type="button" class="filter-clear-quick" id="filter-clear-quick" hidden>✕ Clear</button>
+</div>
 <div class="filter-overlay" id="filter-overlay" hidden>
   <div class="filter-backdrop" data-filter-close></div>
   <section class="filter-panel" role="dialog" aria-modal="true" aria-labelledby="filter-title">
@@ -504,6 +611,30 @@ main { gap: 13px; }
       <button type="button" class="filter-close" data-filter-close aria-label="Close filters">✕</button>
     </div>
     <div class="filter-wrap" id="filters"></div>
+  </section>
+</div>
+
+<div class="category-overlay" id="category-overlay" hidden>
+  <section class="category-panel" role="dialog" aria-modal="true">
+    <div class="category-head">
+      <div class="category-title">Choose seat categories</div>
+      <button type="button" class="filter-close" id="category-close">✕</button>
+    </div>
+
+    <div class="category-sub" id="category-sub">
+      Select the categories you want alerts for.
+    </div>
+
+    <div id="category-options"></div>
+
+    <div class="category-actions">
+      <button type="button" class="category-cancel" id="category-cancel">
+        Cancel
+      </button>
+      <button type="button" class="category-start" id="category-start">
+        Continue
+      </button>
+    </div>
   </section>
 </div>
 
@@ -578,6 +709,41 @@ async function load(venue) {
 }
 const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
 
+let categorySelection = null;
+
+function openCategoryPicker(v, d, id, show) {
+  const classes = Object.entries(show.classes || {})
+    .filter(([name, c]) => name && Number(c.price) > 0);
+
+  if (!classes.length) {
+    alert("No seat categories are available for this show.");
+    return;
+  }
+
+  categorySelection = { v, d, id, show, classes };
+
+  document.getElementById("category-sub").textContent =
+    `${show.movie || "This show"} · ${show.time || ""} — Select one or more categories.`;
+
+  document.getElementById("category-options").innerHTML =
+    classes.map(([name, c], index) => `
+      <label class="category-option">
+        <input type="checkbox"
+          value="${esc(name)}"
+          ${index === 0 ? "checked" : ""}>
+        <span>${esc(name)}</span>
+        <small class="category-price">₹${esc(c.price)}</small>
+      </label>
+    `).join("");
+
+  document.getElementById("category-overlay").hidden = false;
+}
+
+function closeCategoryPicker() {
+  document.getElementById("category-overlay").hidden = true;
+  categorySelection = null;
+}
+
 function pending(v, d, s) {
   const p = store.get("pend", {})[`${v}_${d}_${s}`];
   if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
@@ -640,7 +806,7 @@ function button(v, d, id, show) {
 }
   if (isTracked(v, d, id)) return `<button class="btn alt" data-a="unt" data-k="${key}">Tracking, tap to stop</button>`;
   if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
-  return `<button class="btn" data-a="trk" data-k="${key}">Track this show</button>`;
+return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
 }
 
 function renderFilters() {
@@ -688,6 +854,7 @@ function renderFilters() {
 
     <button type="button" data-filter-reset>Clear all filters</button>
   `;
+  updateFilterUI()
 }
 
 function matchesFilters(show) {
@@ -741,13 +908,14 @@ function renderList() {
       <div class="actions">${button(v, S.date, id, s)}<a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a></div>
     </article>`;
   }).join("");
+  updateFilterUI()
 }
 
 function renderUpdated() {
   const u = S.updated[S.venue], el = document.getElementById("upd");
   if (!u) { el.textContent = ""; return; }
   const m = Math.max(0, Math.round((Date.now() - Date.parse(u)) / 60000));
-  el.textContent = m < 1 ? "Updated just now" : m < 60 ? `Updated ${m} min ago` : `Updated ${Math.round(m / 60)} h ago`;
+  el.textContent = m < 1 ? "Data Updated just now" : m < 60 ? `Data Updated ${m} min ago` : `Data Updated ${Math.round(m / 60)} h ago`;
 }
 
 function renderAll() {
@@ -768,6 +936,20 @@ function press(action, key) {
   renderList();
 }
 
+function updateFilterUI() {
+  const activeCount = Object.values(S.filters).filter(Boolean).length;
+  const quickClear = document.getElementById("filter-clear-quick");
+  const filterBtn = document.getElementById("filter-open");
+
+  if (activeCount > 0) {
+    quickClear.hidden = false;
+    filterBtn.innerHTML = `⚙ Filters <span style="background:var(--accent);color:#000;padding:2px 6px;border-radius:6px;margin-left:4px">${activeCount}</span>`;
+  } else {
+    quickClear.hidden = true;
+    filterBtn.innerHTML = `⚙ Filters`;
+  }
+}
+
 document.addEventListener("click", async e => {
   if (e.target.closest("[data-filter-close]")) {
     document.getElementById("filter-overlay").hidden = true;
@@ -776,6 +958,39 @@ document.addEventListener("click", async e => {
 
   const t = e.target.closest("button");
   if (!t) return;
+  if (t.id === "category-close" || t.id === "category-cancel") {
+  closeCategoryPicker();
+  return;
+}
+
+if (t.id === "category-start") {
+  if (!categorySelection) return;
+
+  const selected = [
+    ...document.querySelectorAll(
+      "#category-options input[type='checkbox']:checked"
+    )
+  ].map(input => input.value);
+
+  if (!selected.length) {
+    alert("Please select at least one seat category.");
+    return;
+  }
+
+  // Keep the selection locally for the upcoming bot integration.
+  const { v, d, id } = categorySelection;
+  const selections = store.get("categorySelections", {});
+  selections[`${v}_${d}_${id}`] = selected;
+  store.set("categorySelections", selections);
+
+  closeCategoryPicker();
+
+  alert(
+    "Your category selection has been saved in this Mini App. " +
+    "Telegram bot integration is still pending, so alerts have not started yet."
+  );
+  return;
+}
 
   if (t.id === "filter-open") {
     document.getElementById("filter-overlay").hidden = false;
@@ -800,7 +1015,18 @@ else if (t.dataset.d) {
   renderDates();
   renderFilters();
   renderList();
-}  else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
+}  else if (t.dataset.a === "pick") {
+  const [v, d, id] = t.dataset.k.split("_");
+  const show = ((S.state[v] || {})[d] || {})[id];
+  if (show) openCategoryPicker(v, d, id, show);
+}
+else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
+if (t.id === "filter-clear-quick") {
+    S.filters = { movie: "", language: "", dimension: "", screen: "", time: "" };
+    renderFilters();
+    renderList();
+    return;
+  }
 });
 
 document.addEventListener("change", e => {

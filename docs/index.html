@@ -1360,11 +1360,15 @@ function press(action, key, extra = "", intent = null) {
 
   renderList();
 
+
   if (tg && tg.openTelegramLink) {
     tg.openTelegramLink(link);
+    // Close the Mini App so the user lands in the bot chat and taps "Back to app"
+    setTimeout(() => { try { tg.close(); } catch {} }, 300);
   } else {
-    window.open(link, "_blank");
+    window.open(link, "_blank");   // normal browser: leave the page open
   }
+
 }
 
 function clearFilters() {

@@ -143,8 +143,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-07T20:20:52+05:30",
      "soon_alerted": false,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-07T20:20:52+05:30"
     }
    },
    "cutoff": "2026-11-07T23:00:00+05:30",
@@ -173,7 +175,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-07T20:10:51+05:30"
     },
@@ -181,7 +183,7 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-07T19:20:53+05:30"
     }
@@ -772,8 +774,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-07T20:10:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-07T20:20:52+05:30"
     }
    },
    "cutoff": "2026-11-08T18:10:00+05:30",
@@ -1640,7 +1642,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-07T20:20:52+05:30"
     }
    },
    "cutoff": "2026-11-09T17:40:00+05:30",
@@ -2636,5 +2639,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/TVHP/26444/20261112"
   }
  },
- "_updated": "2026-11-07T20:10:51+05:30"
+ "_updated": "2026-11-07T20:20:52+05:30"
 }

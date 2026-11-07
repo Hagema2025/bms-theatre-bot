@@ -825,6 +825,32 @@ main { gap: 13px; }
 <main id="list"></main>
 
 <script>
+
+  const DEBUG = true;
+
+function debugLog(...args) {
+  if (!DEBUG) return;
+
+  const panel = document.getElementById("debug-panel");
+  const output = document.getElementById("debug-output");
+
+  if (!panel || !output) return;
+
+  panel.style.display = "block";
+
+  const line = args.map(x => {
+    try {
+      return typeof x === "object"
+        ? JSON.stringify(x)
+        : String(x);
+    } catch {
+      return String(x);
+    }
+  }).join(" ");
+
+  output.textContent += line + "\n";
+  panel.scrollTop = panel.scrollHeight;
+}
 // ── Settings ──────────────────────────────────────────────
 const BOT = "Bms_ticketAlert_bot";
 const CUTOFF_MIN = 10;
@@ -893,35 +919,72 @@ function sameSet(a, b) {
 // Has the bot's saved data caught up with what the user asked for?
 // Has the bot's saved data caught up with what the user asked for?
 function confirmed(p, t) {
-  if (p.a === "unt") return !t.tracked;
+  debugLog("========== CONFIRM CHECK ==========");
+  debugLog("Pending:", p);
+  debugLog("Tracking JSON entry:", t);
 
-  if (!t.tracked) return false;
+  if (p.a === "unt") {
+    const result = !t.tracked;
+    debugLog("Untrack confirmed:", result);
+    return result;
+  }
+
+  if (!t.tracked) {
+    console.warn("❌ Tracking entry not found or tracked=false");
+    return false;
+  }
 
   const i = p.intent;
-  if (!i) return true;
+
+  if (!i) {
+    debugLog("No intent; tracked=true is sufficient");
+    return true;
+  }
 
   const tMode = t.mode || "all";
 
-  if (tMode !== i.mode) return false;
+  debugLog("Expected mode:", i.mode);
+  debugLog("Saved mode:", tMode);
+
+  if (tMode !== i.mode) {
+    console.error("❌ Mode mismatch");
+    return false;
+  }
 
   if (i.mode === "budget") {
-    return Math.abs(
-      Number(t.max_price) - Number(i.max_price)
-    ) < 0.01;
+    const saved = Number(t.max_price);
+    const expected = Number(i.max_price);
+    const result = Math.abs(saved - expected) < 0.01;
+
+    debugLog("Expected budget:", expected);
+    debugLog("Saved budget:", saved);
+    debugLog("Budget confirmed:", result);
+
+    return result;
   }
 
   if (i.mode === "manual") {
-  const tCats = Array.isArray(t.categories) ? t.categories : [];
-  const iCats = Array.isArray(i.categories) ? i.categories : [];
+    const normalize = cats => [...new Set(
+      Array.isArray(cats) ? cats : []
+    )].sort();
 
-  const normalize = cats => [...new Set(cats)].sort();
+    const saved = normalize(t.categories);
+    const expected = normalize(i.categories);
 
-  return JSON.stringify(normalize(tCats)) ===
-         JSON.stringify(normalize(iCats));
-}
+    debugLog("Expected categories:", expected);
+    debugLog("Saved categories:", saved);
 
+    const result =
+      JSON.stringify(saved) === JSON.stringify(expected);
+
+    debugLog("Categories confirmed:", result);
+    return result;
+  }
+
+  debugLog("✅ All-mode confirmed");
   return true;
 }
+
 function pending(v, d, s) {
   const p = store.get("pend", {})[`${v}_${d}_${s}`];
   if (!p || Date.now() - p.ts > PENDING_MIN * 60000) return null;
@@ -982,33 +1045,72 @@ function closeCategoryPicker() {
 }
 
 function saveCategorySelection() {
-  if (!categorySelection) return;
-  const mode = document.querySelector('input[name="track-mode"]:checked')?.value || "all";
-  const maxPrice = Math.round(Number($("category-budget").value));
-  const checked = [...document.querySelectorAll("#category-options input[type=checkbox]:checked")].map(i => i.value);
+  debugLog("========== SAVE TRACKING ==========");
 
-  if (mode === "budget" && (!Number.isFinite(maxPrice) || maxPrice <= 0)) return notify("Please enter a valid maximum price.");
-  if (mode === "manual" && !checked.length) return notify("Please select at least one category.");
+  if (!categorySelection) {
+    console.error("❌ categorySelection is missing");
+    return;
+  }
+
+  const mode = document.querySelector(
+    'input[name="track-mode"]:checked'
+  )?.value || "all";
+
+  const maxPrice = Math.round(Number($("category-budget").value));
+
+  const checked = [
+    ...document.querySelectorAll(
+      "#category-options input[type=checkbox]:checked"
+    )
+  ].map(i => i.value);
 
   const { v, d, id, classes } = categorySelection;
 
-  // Compact code for the bot link: a | b<price> | m<base36 bitmask>
+  debugLog("Venue:", v);
+  debugLog("Date:", d);
+  debugLog("Show ID:", id);
+  debugLog("Selected mode:", mode);
+  debugLog("Selected budget:", maxPrice);
+  debugLog("Selected categories:", checked);
+
+  const oldTracking = trackOf(v, d, id);
+
+  debugLog("Previous tracking data:", oldTracking);
+
+  if (mode === "budget" &&
+      (!Number.isFinite(maxPrice) || maxPrice <= 0)) {
+    return notify("Please enter a valid maximum price.");
+  }
+
+  if (mode === "manual" && !checked.length) {
+    return notify("Please select at least one category.");
+  }
+
   let extra = "a";
+
   if (mode === "budget") extra = "b" + maxPrice;
+
   if (mode === "manual") {
     let mask = 0;
-    classes.forEach(([name], i) => { if (checked.includes(name)) mask |= (1 << i); });
+    classes.forEach(([name], i) => {
+      if (checked.includes(name)) mask |= (1 << i);
+    });
     extra = "m" + mask.toString(36);
   }
 
-  closeCategoryPicker();
-  press("trk", `${v}_${d}_${id}`, extra, {
+  const intent = {
     mode,
     max_price: mode === "budget" ? maxPrice : null,
     categories: mode === "manual" ? checked : []
-  });
-}
+  };
 
+  debugLog("Deep-link extra:", extra);
+  debugLog("Pending intent:", intent);
+
+  closeCategoryPicker();
+
+  press("trk", `${v}_${d}_${id}`, extra, intent);
+}
 // ── Rendering ─────────────────────────────────────────────
 const live = show => Date.parse(show.end) > Date.now();
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
@@ -1209,6 +1311,12 @@ function press(action, key, extra = "", intent = null) {
   const pend = store.get("pend", {});
   pend[key] = { a: action, ts: Date.now(), intent };
   store.set("pend", pend);
+  debugLog("========== TELEGRAM TRACK LINK ==========");
+debugLog("Action:", action);
+debugLog("Key:", key);
+debugLog("Extra:", extra);
+debugLog("Intent:", intent);
+debugLog("Generated URL:", link);
   const link = `https://t.me/${BOT}?start=${action}_${v}_${id}_${d}${extra ? "_" + extra : ""}`;
   if (tg && tg.openTelegramLink) tg.openTelegramLink(link); else window.open(link, "_blank");
   renderList();
@@ -1317,5 +1425,27 @@ setInterval(() => { if (!document.hidden) tickCountdown(); }, 1000);
 renderAll();
 refreshAll();
 </script>
+<div id="debug-panel" style="
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  right:10px;
+  max-height:220px;
+  overflow:auto;
+  background:#111;
+  color:#00ff90;
+  padding:10px;
+  border:1px solid #555;
+  border-radius:8px;
+  font:11px monospace;
+  z-index:99999;
+  display:none;
+">
+  <div style="display:flex;justify-content:space-between">
+    <b>DEBUG LOG</b>
+    <button onclick="document.getElementById('debug-panel').style.display='none'">Close</button>
+  </div>
+  <pre id="debug-output" style="white-space:pre-wrap"></pre>
+</div>
 </body>
 </html>

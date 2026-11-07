@@ -159,7 +159,7 @@ main {
 // ── Settings ──────────────────────────────────────────────
 const BOT = "YOUR_RUNNING_BOT_USERNAME";   // username of the bot that handles Track (no @)
 const CUTOFF_MIN = 10;                     // keep equal to the bot's tracking cutoff
-const PENDING_MIN = 20;                    // how long a press shows as "Waiting" before we stop assuming
+const PENDING_MIN = 3;                    // how long a press shows as "Waiting" before we stop assuming
 const THEATRES = {
   INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
@@ -188,13 +188,28 @@ async function getJson(folder, venue) {
   } catch { return null; }
 }
 
-async function load(venue) {
-  const [st, tr] = await Promise.all([getJson("state", venue), getJson("tracking", venue)]);
+async function loadState(venue) {
+  const st = await getJson("state", venue);
   S.failed[venue] = st === null;
-  if (st) { S.updated[venue] = st._updated; delete st._updated; S.state[venue] = st; }
-  S.track[venue] = tr || S.track[venue] || {};
+
+  if (st) {
+    S.updated[venue] = st._updated;
+    delete st._updated;
+    S.state[venue] = st;
+  }
 }
 
+async function loadTracking(venue) {
+  const tr = await getJson("tracking", venue);
+  if (tr !== null) S.track[venue] = tr;
+}
+
+async function load(venue) {
+  await Promise.all([
+    loadState(venue),
+    loadTracking(venue)
+  ]);
+}
 const isTracked = (v, d, s) => !!(((S.track[v] || {})[d] || {})[s] || {}).tracked;
 
 function pending(v, d, s) {
@@ -238,7 +253,25 @@ function renderDates() {
 function button(v, d, id, show) {
   const key = `${v}_${d}_${id}`;
   const p = pending(v, d, id);
-  if (p) return `<button class="btn off" disabled>${p === "trk" ? "Waiting for the bot" : "Stopping"}</button>`;
+  if (p) {
+  const item = store.get("pend", {})[key];
+
+  const elapsed = item
+    ? Math.floor((Date.now() - item.ts) / 1000)
+    : 0;
+
+  const remaining = Math.max(
+    0,
+    PENDING_MIN * 60 - elapsed
+  );
+
+  const mins = String(Math.floor(remaining / 60)).padStart(2, "0");
+  const secs = String(remaining % 60).padStart(2, "0");
+
+  return `<button class="btn off" disabled>
+    🟡 Waiting for confirmation · ${mins}:${secs}
+  </button>`;
+}
   if (isTracked(v, d, id)) return `<button class="btn alt" data-a="unt" data-k="${key}">Tracking, tap to stop</button>`;
   if (closed(show)) return `<button class="btn off" disabled>Tracking closed</button>`;
   return `<button class="btn" data-a="trk" data-k="${key}">Track this show</button>`;
@@ -294,12 +327,52 @@ document.addEventListener("click", async e => {
   else if (t.dataset.a) press(t.dataset.a, t.dataset.k);
 });
 
-async function refresh() { await load(S.venue); renderAll(); }
-document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
-setInterval(refresh, 60000);
+async function refreshAll() {
+  await load(S.venue);
+  renderAll();
+}
+
+async function refreshState() {
+  const venue = S.venue;
+  await loadState(venue);
+  if (venue === S.venue) renderAll();
+}
+
+async function refreshTracking() {
+  const venue = S.venue;
+  await loadTracking(venue);
+  if (venue === S.venue) renderList();
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) refreshAll();
+});
+
+// State JSON: every 30 seconds
+setInterval(() => {
+  if (!document.hidden) refreshState();
+}, 30000);
+
+// Tracking JSON: every 5 seconds
+setInterval(() => {
+  if (!document.hidden) refreshTracking();
+}, 5000);
+
+// Countdown: every 1 second (no JSON download)
+setInterval(() => {
+  if (document.hidden) return;
+
+  const pending = store.get("pend", {});
+
+  const hasPending = Object.values(pending).some(p =>
+    p && Date.now() - p.ts < PENDING_MIN * 60000
+  );
+
+  if (hasPending) renderList();
+}, 1000);
 
 renderAll();
-refresh();
+refreshAll();
 </script>
 </body>
 </html>

@@ -83,7 +83,7 @@ CLEANUP_MAX_TRIES  = 5
 ERRORS_THREAD_NAME = "⚠️ Errors"
 STATE_DIR          = os.environ.get("STATE_DIR", "docs/state")
 TRACKING_DIR       = os.environ.get("TRACKING_DIR", "docs/tracking")
-META_FILE          = "meta.json"
+META_FILE          = os.environ.get("META_FILE", "meta.json")
 DIVIDER            = "━━━━━━━━━━━━━━━━"
 
 # Category AvailStatus, as checked against live seat maps:
@@ -239,33 +239,42 @@ def get_show(state, venue, date_code, session):
     return ((state.get(venue) or {}).get(date_code) or {}).get(session)
 
 
+def tracking_entry(tracking, venue, date_code, session):
+    return ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
+
+
+def entry_thread(t):
+    return t.get("message_thread_id") or t.get("thread")
+
+
 def track_thread(state, tracking, venue, date_code, session):
-    """Topic id for a TRACKED show, else None. If the original topic was deleted and this
-    scanner made a replacement, the replacement is used while the file still lists the old id."""
-    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
-    if not t.get("tracked") or not t.get("thread"):
+    """Topic id for a TRACKED show, else None (a replacement topic wins if the original was deleted)."""
+    t = tracking_entry(tracking, venue, date_code, session)
+    orig = entry_thread(t)
+    if not t.get("tracked") or not orig:
         return None
     s = get_show(state, venue, date_code, session) or {}
-    if s.get("thread") and s.get("thread_for") == t["thread"]:
+    if s.get("thread") and s.get("thread_for") == orig:
         return s["thread"]
-    return t["thread"]
+    return orig
 
-def is_category_tracked(tracking, venue, date_code, session, category):
-    """True only when this category is selected for tracking."""
-    t = ((tracking.get(venue) or {}).get(date_code) or {}).get(session) or {}
 
+def is_category_tracked(tracking, venue, date_code, session, category, price):
+    t = tracking_entry(tracking, venue, date_code, session)
     if not t.get("tracked"):
         return False
-
-    selected = t.get("categories", [])
-
-    if not isinstance(selected, list):
+    mode = t.get("mode")
+    if mode == "all":
+        return True
+    if mode == "budget":
+        try:
+            return price <= float(t.get("max_price"))
+        except (TypeError, ValueError):
+            return False
+    cats = t.get("categories")
+    if not isinstance(cats, list):
         return False
-
-    return category.strip().upper() in {
-        str(c).strip().upper() for c in selected
-    }
-
+    return category.strip().upper() in {str(c).strip().upper() for c in cats}
 
 # ───────────────────────── telegram ─────────────────────────
 
@@ -401,7 +410,7 @@ def send_track(state, tracking, venue, date_code, session, text):
         return True
     if "thread" not in body.get("description", "").lower():
         return False
-    original = tracking[venue][date_code][session]["thread"]
+    original = entry_thread(tracking_entry(tracking, venue, date_code, session))
     ok_t, tb = tg_api("createForumTopic", {"chat_id": tc, "name": track_name(date_code, s)})
     if not ok_t:
         return False
@@ -734,12 +743,8 @@ def send_alerts(hits, state, tracking, now):
         )
 
         category_selected = is_category_tracked(
-            tracking,
-            h["venue"],
-            h["date"],
-            h["session"],
-            h["category"]
-        )
+    tracking, h["venue"], h["date"], h["session"], h["category"], h["price"]
+)
 
         if thread and category_selected:
             groups.setdefault(
@@ -845,3 +850,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+  

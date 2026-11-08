@@ -529,7 +529,9 @@ async function submitBatchTracking(actions, intents = {}) {
       const key = `${a.venue}_${a.date}_${a.session}`;
       const r = results[i];
       if (resultOk(r)) {
-        S.local[key] = { tracked: true, ts: Date.now(), ...(intents[key] || { mode: "all", max_price: null, categories: [] }) };
+        S.local[key] = a.action === "untrack"
+          ? { tracked: false, ts: Date.now() }
+          : { tracked: true, ts: Date.now(), ...(intents[key] || { mode: "all", max_price: null, categories: [] }) };
         S.selected.delete(key);
       } else {
         const show = ((S.state[a.venue] || {})[a.date] || {})[a.session];
@@ -544,7 +546,7 @@ async function submitBatchTracking(actions, intents = {}) {
       useFreshSha(sha);
       refreshTracking([...new Set(actions.map(a => a.venue))]);
     }
-    if (failedLines.length) notify(`Tracked: ${data.succeeded}\nFailed: ${data.failed}\n\n` + failedLines.join("\n"));
+    if (failedLines.length) notify(`Succeeded: ${data.succeeded}\nFailed: ${data.failed}\n\n` + failedLines.join("\n"));
   } catch (e) {
     console.error("Batch tracking error:", e);
     notify(e.message || "Unable to submit batch tracking.");
@@ -1249,7 +1251,8 @@ document.addEventListener("click", async e => {
     const show = ((S.state[v] || {})[d] || {})[id];
     if (show) openCategoryPicker(v, d, id, show);
   } else if (t.dataset.a === "unt") {
-    press("unt", t.dataset.k);
+    const [v, d, id] = t.dataset.k.split("_");
+    submitBatchTracking([{ action: "untrack", venue: v, session: id, date: d }], {});
   } else if (t.dataset.a === "cancel") {
     const all = store.get("pend", {});
     delete all[t.dataset.k];

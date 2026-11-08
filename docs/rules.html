@@ -35,6 +35,8 @@ main{max-width:760px;margin:0 auto;padding:0 18px 120px}
 .rule-desc b{color:#e8edf5;font-weight:700}
 .match{font-size:12px;color:var(--ok);font-weight:700;margin-bottom:10px}
 .match.none{color:var(--muted);font-weight:600}
+button.match{display:block;width:100%;background:none;border:0;padding:0;font:inherit;font-size:12px;font-weight:700;text-align:left;cursor:pointer}
+button.match:after{content:"  ›";font-weight:800}
 .stats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
 .stat{font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.3)}
 .stat.dim{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--line);font-weight:700}
@@ -51,28 +53,42 @@ main{max-width:760px;margin:0 auto;padding:0 18px 120px}
 details.sec{margin-top:8px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
 details.sec>summary{cursor:pointer;list-style:none;padding:10px 12px;font-size:12px;font-weight:800;color:#e8edf5;display:flex;justify-content:space-between;align-items:center}
 details.sec>summary::-webkit-details-marker{display:none}
-details.sec>summary:after{content:"▾";color:var(--muted)}
+details.sec>summary:after{content:"▾";color:var(--muted);margin-left:8px}
 details.sec[open]>summary:after{content:"▴"}
 .sec-body{padding:2px 12px 12px}
 .t-date{margin:10px 0 4px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2)}
-.t-theatre{margin:6px 0 4px;font-size:12px;font-weight:800}
 .t-movie{padding:7px 9px;margin-bottom:6px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)}
 .t-title{font-size:12px;font-weight:800}
 .t-lang{font-size:10px;color:var(--muted);font-weight:700;margin:1px 0 5px}
 .t-chips{display:flex;flex-wrap:wrap;gap:5px}
 .t-chip{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.25)}
 .t-chip.past{opacity:.45}
-.topic{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;font-size:12px}
-.topic+.topic{border-top:1px solid rgba(255,255,255,.06)}
-.topic span{color:var(--muted);font-size:11px;display:block}
-.topic a{color:var(--accent-2);font-weight:800;font-size:12px;text-decoration:none;padding:5px 11px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
+.t-chip.got{color:var(--ok);border-color:rgba(72,214,160,.4);background:rgba(72,214,160,.1)}
+details.show{margin-top:6px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)}
+details.show>summary{cursor:pointer;list-style:none;padding:7px 9px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+details.show>summary::-webkit-details-marker{display:none}
+details.show>summary:after{content:"▾";margin-left:auto;color:var(--muted);font-size:11px}
+details.show[open]>summary:after{content:"▴"}
+.s-when{font-size:10px;font-weight:700;color:var(--ok)}
+.s-when.wait{color:var(--accent-2)}
+.s-cnt{font-size:10px;font-weight:700;color:var(--muted)}
+.s-body{padding:0 9px 8px}
+.s-screen{font-size:10px;color:var(--muted);font-weight:700;margin:0 0 2px}
+.cat{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;padding:6px 0;border-top:1px solid rgba(255,255,255,.06);font-size:11px}
+.cat-n{font-weight:800;color:#e8edf5}
+.cat-p{color:var(--accent-2);font-weight:800}
+.cat-s{color:var(--muted);font-weight:700}
+.cat-w{margin-left:auto;font-size:10px;font-weight:700;color:var(--ok)}
+.cat.wait .cat-w{color:var(--accent-2)}
+.cat.skip{opacity:.55}
+.cat.skip .cat-w{color:var(--muted)}
 .empty{color:var(--muted);font-size:12px;padding:4px 0}
 /* editor */
 .overlay[hidden]{display:none}
 .overlay{position:fixed;inset:0;z-index:1100;display:flex;align-items:flex-end;justify-content:center;background:rgba(2,6,13,.76);backdrop-filter:blur(5px)}
 .panel{width:100%;max-width:600px;max-height:90vh;overflow-y:auto;padding:22px 20px calc(25px + env(safe-area-inset-bottom,0px));background:linear-gradient(160deg,#182438,#101827 72%);border:1px solid var(--line);border-radius:24px 24px 0 0}
-.panel-head{display:flex;justify-content:space-between;align-items:center;font-size:18px;margin-bottom:14px}
-.x{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.055);color:#e8edf5;font:inherit;cursor:pointer}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:18px;margin-bottom:14px}
+.x{width:36px;height:36px;flex:none;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.055);color:#e8edf5;font:inherit;cursor:pointer}
 @media(min-width:600px){.overlay{align-items:center;padding:20px}.panel{border-radius:24px}}
 .f{margin-bottom:18px}
 .f>label,.f>.lbl{display:block;font-size:12px;font-weight:800;color:var(--accent-2);margin-bottom:4px}
@@ -94,6 +110,7 @@ input[type=text],input[type=number],input[type=date],input[type=time],select{wid
 textarea{width:100%;min-height:200px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0c1320;color:#cfe3ff;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace}
 .twin{display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--muted);font-size:12px}.twin b{flex:1;min-width:44px;color:#e8edf5;font-size:13px}.twin input{width:auto;flex:none;min-height:42px}
 .dirty{color:var(--accent-2);font-size:12px;font-weight:700}
+/* week + theatre sections */
 details.wk{margin-top:8px;border:1px solid rgba(167,139,250,.3);border-radius:14px;background:rgba(167,139,250,.05)}
 details.wk>summary{cursor:pointer;list-style:none;padding:11px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 details.wk>summary::-webkit-details-marker{display:none}
@@ -106,8 +123,12 @@ details.wk[open]>summary:after{content:"▴"}
 .tp-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0 4px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07)}
 .tp-head:first-child{border-top:0;padding-top:0;margin-top:2px}
 .tp-head b{font-size:13px}
-.tp-head a{color:var(--accent-2);font-weight:800;font-size:11px;text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
-.tp-none{font-size:10px;color:var(--muted);font-weight:700}
+.tp-none{font-size:10px;color:var(--muted);font-weight:700;white-space:nowrap}
+details.vt>summary{gap:8px}
+details.vt>summary>span:first-child{flex:1;min-width:0}
+.vt-n{margin-left:6px;font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.3)}
+.vt-n.zero{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--line)}
+details.vt>summary a{color:var(--accent-2);font-weight:800;font-size:11px;text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
 </style>
 </head>
 <body>
@@ -150,6 +171,13 @@ details.wk[open]>summary:after{content:"▴"}
       <button class="btn ghost" id="io-copy">Copy</button>
       <button class="btn" id="io-import">Import</button>
     </div>
+  </section>
+</div>
+
+<div class="overlay" id="mt-ov" hidden>
+  <section class="panel" role="dialog" aria-modal="true" aria-label="Matching shows">
+    <div class="panel-head"><strong id="mt-title">Matching shows</strong><button class="x" id="mt-close" aria-label="Close">✕</button></div>
+    <div id="mt-body"></div>
   </section>
 </div>
 
@@ -217,7 +245,6 @@ function dateLabel(code) {
   const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : d.toLocaleDateString("en-IN", { weekday: "short" });
   return `${day}, ${base}`;
 }
-const ymd = code => new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6)).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
 
 // ── State ─────────────────────────────────────────────────
 let rules = store.get("rules_draft", { rules: [] }).rules || [];
@@ -263,6 +290,7 @@ async function loadThreads() {
 }
 const uniq = f => [...new Set(shows.map(x => String(f(x) || "").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
 const priced = s => Object.entries(s.classes || {}).filter(([n, c]) => n && Number(c.price) > 0);
+const key = x => `${x.v}_${x.d}_${x.id}`;
 
 // Shows a rule has already tracked (from the scanner's tracked_by_rules marks)
 function trackedBy(rule) {
@@ -309,6 +337,7 @@ function trackedCats(r, s) {
   if (r.mode === "budget") return p.filter(([, c]) => Number(c.price) <= Number(r.max_price));
   return p;
 }
+const matchesOf = r => shows.filter(x => ruleMatches(r, x) && trackedCats(r, x.s).length);
 
 // ── List ──────────────────────────────────────────────────
 function describe(r) {
@@ -326,7 +355,6 @@ function describe(r) {
   return parts.join(" · ");
 }
 
-// Tracked shows grouped: date > theatre > movie (language · format) > time chips
 // ── Weeks: Monday to Sunday, same as the scanner's weekly topics ──
 const toCode = d => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
 function wkStart(code) {
@@ -335,18 +363,41 @@ function wkStart(code) {
   return d;
 }
 const wkKey = code => toCode(wkStart(code));
-function wkLabel(key) {
-  const s = wkStart(key), e = new Date(s); e.setDate(e.getDate() + 6);
+function wkLabel(k) {
+  const s = wkStart(k), e = new Date(s); e.setDate(e.getDate() + 6);
   const f = d => d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
   return `${f(s)} – ${f(e)}`;
 }
-function wkTag(key) {
-  const diff = Math.round((wkStart(key) - wkStart(toCode(new Date()))) / 604800000);
+function wkTag(k) {
+  const diff = Math.round((wkStart(k) - wkStart(toCode(new Date()))) / 604800000);
   return diff === 0 ? "This week" : diff === 1 ? "Next week" : "";
 }
 
-// Tracked shows of one theatre: date > movie (language · format) > time chips
-function dayBlocks(arr) {
+// One show: summary = time + when it was tracked; body = every seat category with its own status
+const STATUS = { "0": "Sold out", "1": "Almost full", "2": "Filling fast", "3": "Available" };
+const laterMs = (a, b) => Math.max(Date.parse(a) || 0, Date.parse(b) || 0);
+function showRow(x, rule, got, ns) {
+  const at = got.get(key(x));
+  const cats = priced(x.s).sort((p, q) => Number(p[1].price) - Number(q[1].price));
+  const ok = new Set(trackedCats(rule, x.s).map(([n]) => n));
+  const past = Date.now() > Date.parse(x.s.start);
+  const sk = `${ns}:${rule.id}:${key(x)}`;
+  const rows = cats.map(([n, c]) => {
+    let cls = "skip", w = "over budget, not tracked";
+    if (ok.has(n)) {
+      if (at) { cls = ""; w = `tracked ${fmtWhen(new Date(laterMs(at, c.first_seen_time)).toISOString())}`; }
+      else { cls = "wait"; w = "waiting for next scan"; }
+    }
+    return `<div class="cat ${cls}"><span class="cat-n">${esc(n)}</span><span class="cat-p">₹${esc(Number(c.price))}</span><span class="cat-s">${esc(STATUS[c.status] || c.status || "")}</span><span class="cat-w">${esc(w)}</span></div>`;
+  }).join("");
+  const when = at ? `<span class="s-when">⚡ tracked ${esc(fmtWhen(at))}</span>` : `<span class="s-when wait">⏳ waiting for next scan</span>`;
+  return `<details class="show" data-sec="${esc(sk)}" ${sk in openSecs && openSecs[sk] ? "open" : ""}>
+    <summary><span class="t-chip${past ? " past" : ""}${at ? " got" : ""}">${esc(x.s.time)}</span>${when}<span class="s-cnt">${ok.size} of ${cats.length} categor${cats.length === 1 ? "y" : "ies"}</span></summary>
+    <div class="s-body">${x.s.screen ? `<p class="s-screen">${esc(x.s.screen)}</p>` : ""}${rows || `<div class="empty">No seat categories listed.</div>`}</div></details>`;
+}
+
+// Shows of one theatre: date > movie (language · format) > one expandable row per show
+function dayBlocks(arr, rule, got, ns) {
   const byDay = {};
   arr.forEach(x => (byDay[x.d] = byDay[x.d] || []).push(x));
   return Object.keys(byDay).sort().map(d => {
@@ -363,11 +414,11 @@ function dayBlocks(arr) {
     return `<div class="t-date">${esc(dateLabel(d))}</div>` + movies.map(m => `
       <div class="t-movie"><div class="t-title">${esc(m.movie)}</div>
         <div class="t-lang">${esc([m.lang, m.dim].filter(Boolean).join(" · "))}</div>
-        <div class="t-chips">${m.a.map(x => `<span class="t-chip${Date.now() > Date.parse(x.s.start) ? " past" : ""}" title="${esc(x.s.screen || "")}">${esc(x.s.time)}</span>`).join("")}</div></div>`).join("");
+        ${m.a.map(x => showRow(x, rule, got, ns)).join("")}</div>`).join("");
   }).join("");
 }
 
-// One collapsible block per week: theatre > its Telegram topic > tracked shows
+// One collapsible block per week; inside it one collapsible section per theatre (closed by default)
 function weeksHtml(rule, tr, waitingList, tp) {
   const weeks = {};
   const W = k => (weeks[k] = weeks[k] || { tracked: [], waiting: 0, topics: [] });
@@ -376,15 +427,17 @@ function weeksHtml(rule, tr, waitingList, tp) {
   tp.forEach(t => { if (t.week_start) W(String(t.week_start)).topics.push(t); });
 
   const order = Object.keys(THEATRES);
+  const got = new Map(tr.map(x => [key(x), x.at]));
   return Object.keys(weeks).sort().map((k, i) => {
     const w = weeks[k];
     const sk = `${rule.id}:${k}`;
     const open = sk in openSecs ? openSecs[sk] : i === 0;
     const venues = [...new Set([...w.tracked.map(x => x.v), ...w.topics.map(t => t.venue)])]
       .sort((a, b) => order.indexOf(a) - order.indexOf(b));
+    const trackedVenues = new Set(w.tracked.map(x => x.v)).size;
     const bits = [];
     if (w.tracked.length) bits.push(`⚡ ${w.tracked.length} tracked`);
-    if (venues.length) bits.push(`${venues.length} theatre${venues.length === 1 ? "" : "s"}`);
+    if (trackedVenues) bits.push(`${trackedVenues} theatre${trackedVenues === 1 ? "" : "s"}`);
     if (w.waiting) bits.push(`⏳ ${w.waiting} waiting for next scan`);
     const tag = wkTag(k);
 
@@ -392,9 +445,15 @@ function weeksHtml(rule, tr, waitingList, tp) {
       const t = w.topics.find(t => t.venue === v);
       const link = t ? topicLink(t) : "";
       const mine = w.tracked.filter(x => x.v === v);
-      return `<div class="tp-head"><b>${esc(THEATRES[v] || v)}</b>
-          ${link ? `<a href="${esc(link)}" data-tglink target="_blank" rel="noopener">Open topic ↗</a>` : `<span class="tp-none">${t ? "Topic created" : "No topic yet"}</span>`}</div>`
-        + (mine.length ? dayBlocks(mine) : `<div class="empty">No shows tracked in this topic yet.</div>`);
+      const vk = `${sk}:${v}`;
+      const vopen = vk in openSecs ? openSecs[vk] : false;   // closed by default
+      return `<details class="sec vt" data-sec="${esc(vk)}" ${vopen ? "open" : ""}>
+        <summary>
+          <span>${esc(THEATRES[v] || v)} <span class="vt-n${mine.length ? "" : " zero"}">${mine.length} tracked</span></span>
+          ${link ? `<a href="${esc(link)}" data-tglink>Open topic ↗</a>` : `<span class="tp-none">${t ? "Topic created" : "No topic yet"}</span>`}
+        </summary>
+        <div class="sec-body">${mine.length ? dayBlocks(mine, rule, got, "w") : `<div class="empty">No shows tracked in this topic yet.</div>`}</div>
+      </details>`;
     }).join("") : `<div class="empty">No topic yet. It is created on the next scan, then these shows get tracked.</div>`;
 
     return `<details class="wk" data-sec="${esc(sk)}" ${open ? "open" : ""}>
@@ -410,7 +469,7 @@ function renderList() {
   const savedById = Object.fromEntries(savedRules.map(r => [r.id, JSON.stringify(r)]));
 
   const allTracked = new Set();
-  rules.forEach(r => trackedBy(r).forEach(x => allTracked.add(`${x.v}_${x.d}_${x.id}`)));
+  rules.forEach(r => trackedBy(r).forEach(x => allTracked.add(key(x))));
   const activeN = rules.filter(r => r.enabled).length;
   $("summary").innerHTML = rules.length && live.length
     ? `<div class="summary">⚡ ${activeN} of ${rules.length} rule${rules.length === 1 ? "" : "s"} on · ${allTracked.size} upcoming show${allTracked.size === 1 ? "" : "s"} auto-tracked in total</div>` : "";
@@ -422,16 +481,16 @@ function renderList() {
 
   $("list").innerHTML = rules.map((r, i) => {
     // matches = passes the filters AND has a seat within the rule's budget (same as the scanner)
-    const m = shows.filter(x => ruleMatches(r, x) && trackedCats(r, x.s).length);
+    const m = matchesOf(r);
     const tr = trackedBy(r);
-    const trKeys = new Set(tr.map(x => `${x.v}_${x.d}_${x.id}`));
-    const waitingList = m.filter(x => !trKeys.has(`${x.v}_${x.d}_${x.id}`));
+    const trKeys = new Set(tr.map(key));
+    const waitingList = m.filter(x => !trKeys.has(key(x)));
     const movies = [...new Set(m.map(x => x.s.movie))];
     const isSaved = savedById[r.id] === JSON.stringify(r);
     const unsaved = !isSaved ? `<span class="badge-unsaved">${savedById[r.id] ? "Edited · not saved" : "New · not saved"}</span>` : "";
 
     const match = !shows.length ? "" : m.length
-      ? `<div class="match">${m.length} open show${m.length === 1 ? "" : "s"} match now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</div>`
+      ? `<button type="button" class="match" data-matches="${i}">${m.length} open show${m.length === 1 ? "" : "s"} match now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</button>`
       : `<div class="match none">No open shows match right now. It will catch new ones.</div>`;
 
     const theatreN = new Set(tr.map(x => x.v)).size, movieN = new Set(tr.map(x => x.s.movie)).size;
@@ -458,6 +517,25 @@ function renderList() {
       </div></article>`;
   }).join("");
 }
+
+// ── Matching-shows overlay ────────────────────────────────
+function openMatches(i) {
+  const r = rules[i]; if (!r) return;
+  const m = matchesOf(r);
+  const got = new Map(trackedBy(r).map(x => [key(x), x.at]));
+  const order = Object.keys(THEATRES);
+  const by = {};
+  m.forEach(x => (by[x.v] = by[x.v] || []).push(x));
+  $("mt-title").textContent = `${r.name || "Rule"} · ${m.length} open show${m.length === 1 ? "" : "s"}`;
+  $("mt-body").innerHTML = (m.length ? `<p class="hint">Tap a show to see each seat category and when it was tracked. Green times are already tracked.</p>` : "") +
+    (Object.keys(by).sort((a, b) => order.indexOf(a) - order.indexOf(b)).map(v => {
+      const arr = by[v];
+      const done = arr.filter(x => got.has(key(x))).length;
+      return `<div class="tp-head"><b>${esc(THEATRES[v] || v)}</b><span class="tp-none">${arr.length} open · ${done} tracked</span></div>${dayBlocks(arr, r, got, "m")}`;
+    }).join("") || `<div class="empty">No open shows match right now.</div>`);
+  $("mt-ov").hidden = false;
+}
+
 // ── Editor ────────────────────────────────────────────────
 const chip = (g, val, label, on) => `<button type="button" class="chip" data-g="${g}" data-val="${esc(val)}" aria-pressed="${on}">${esc(label)}</button>`;
 function openEditor(r, isNew) {
@@ -486,7 +564,7 @@ function openEditor(r, isNew) {
       <div id="m-budget" hidden><input type="number" id="f-price" min="1" inputmode="numeric" placeholder="Maximum price in ₹" value="${esc(d.max_price ?? "")}"></div>
     </div>
     <p class="err" id="ed-err"></p>
-    <div class="f" id="ed-preview" class="hint"></div>
+    <div class="f hint" id="ed-preview"></div>
     <div class="sticky"><button class="btn ghost" id="ed-cancel">Cancel</button><button class="btn" id="ed-save">${isNew ? "Add rule" : "Update rule"}</button></div>`;
   modeUI(); renderTime(); preview();
   $("ed").hidden = false;
@@ -526,8 +604,7 @@ function preview() {
   readInputs();
   const el = $("ed-preview"); if (!el) return;
   const probe = { ...draft, enabled: true };
-  const m = shows.filter(x => ruleMatches(probe, x) && trackedCats(probe, x.s).length);
-  el.className = "hint";
+  const m = matchesOf(probe);
   el.textContent = shows.length ? `Would track ${m.length} of the ${shows.length} shows listed right now.` : "Loading current shows…";
 }
 function validate() {
@@ -623,9 +700,20 @@ document.addEventListener("toggle", e => {
   store.set("rules_open", openSecs);
 }, true);
 document.addEventListener("click", e => {
+  // Telegram topic links: always handled in JS so they open inside Telegram and don't toggle the <details>
   const a = e.target.closest("a[data-tglink]");
-  if (a && tg && tg.openTelegramLink) { e.preventDefault(); tg.openTelegramLink(a.href); return; }
+  if (a) {
+    e.preventDefault();
+    const url = a.href;
+    try { if (tg && tg.openTelegramLink) { tg.openTelegramLink(url); return; } } catch {}
+    if (!window.open(url, "_blank")) location.href = url;
+    return;
+  }
+  // tap on the dark backdrop closes the matching-shows overlay
+  if (e.target.id === "mt-ov") { $("mt-ov").hidden = true; return; }
   const t = e.target.closest("button"); if (!t) return;
+  if (t.id === "mt-close") { $("mt-ov").hidden = true; return; }
+  if (t.dataset.matches !== undefined) return openMatches(+t.dataset.matches);
   if (t.id === "new") return openEditor(blank(), true);
   if (t.id === "save") return saveRules();
   if (t.id === "ed-close" || t.id === "ed-cancel") { draft = null; $("ed").hidden = true; return; }
@@ -681,7 +769,7 @@ document.addEventListener("input", e => {
   }
   if (draft && e.target.closest("#ed-body") && e.target.id !== "f-name") preview(); });
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape") { draft = null; $("ed").hidden = true; $("io-ov").hidden = true; }
+  if (e.key === "Escape") { draft = null; $("ed").hidden = true; $("io-ov").hidden = true; $("mt-ov").hidden = true; }
   if (e.key === "Enter" && e.target.id === "pin") login();
 });
 window.addEventListener("beforeunload", e => { if (JSON.stringify(rules) !== saved) { e.preventDefault(); e.returnValue = ""; } });

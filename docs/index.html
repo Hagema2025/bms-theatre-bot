@@ -1610,6 +1610,11 @@ function button(v, d, id, show) {
     return `<button class="btn off" disabled>Tracking closed</button>`;
   }
 
+  // NEW: batch mode is active, so block single-show tracking
+  if (S.selected.size > 0) {
+    return `<button class="btn off" disabled>Track this show(Multiselect in progress)</button>`;
+  }
+
   return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
 }
 
@@ -1902,6 +1907,8 @@ document.addEventListener("change", e => {
   }
   if (e.target.matches("[data-select-key]")) {
     const key = e.target.dataset.selectKey;
+        const before = S.selected.size;          // NEW
+
 
     if (e.target.checked) {
       S.selected.add(key);
@@ -1910,6 +1917,8 @@ document.addEventListener("change", e => {
     }
 
     updateBatchUI();
+     // NEW: redraw only when we cross between 0 and 1+ selected
+    if ((before === 0) !== (S.selected.size === 0)) renderList();
     return;
   }
 });

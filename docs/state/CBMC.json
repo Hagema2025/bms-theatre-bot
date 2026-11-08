@@ -117,47 +117,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/15545/20261108"
   },
-  "15629": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "reopened_at": "2026-11-08T11:50:51+05:30",
-     "sold_out_at": "2026-11-08T12:31:32+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T12:31:32+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-08T07:40:55+05:30",
-     "sold_out_at": "2026-11-08T09:10:46+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T09:10:46+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T14:05:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-08T14:20:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI02",
-   "start": "2026-11-08T13:50:00+05:30",
-   "tags": [],
-   "time": "01:50 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15629/20261108"
-  },
   "15630": {
    "censor": "UA16+",
    "classes": {
@@ -885,9 +844,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 59.43,
      "reopened_at": "2026-11-08T07:40:55+05:30",
+     "sold_out_at": "2026-11-08T14:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T14:01:09+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T14:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T17:15:00+05:30",
@@ -1141,9 +1101,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-08T13:01:07+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T14:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T13:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T14:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2714,9 +2675,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-08T08:20:48+05:30",
+     "sold_out_at": "2026-11-08T14:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T13:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T14:20:51+05:30"
     }
    },
    "cutoff": "2026-11-09T07:30:00+05:30",
@@ -6867,5 +6829,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15916/20261112"
   }
  },
- "_updated": "2026-11-08T14:10:51+05:30"
+ "_updated": "2026-11-08T14:20:51+05:30"
 }

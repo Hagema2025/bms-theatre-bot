@@ -1,13 +1,12 @@
-
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Auto-track Rules</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script async src="https://telegram.org/js/telegram-web-app.js" onload="window.tgReady&&window.tgReady()"></script>
 <style>
-:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--low:#ff817b}
+:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--low:#ff817b;--rule:#a78bfa}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg)}
 body{font:15px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);background:radial-gradient(ellipse at 50% -18%,rgba(245,189,89,.16),transparent 43%),var(--bg)}
@@ -26,15 +25,21 @@ main{max-width:760px;margin:0 auto;padding:0 18px 120px}
 .bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .bar .grow{flex:1}
 .msg{color:#aab7c8;text-align:center;padding:40px 20px;background:rgba(17,25,39,.78);border:1px dashed rgba(186,204,232,.18);border-radius:18px;font-size:13px}
+.summary{margin:0 0 14px;padding:11px 14px;border-radius:14px;font-size:12px;font-weight:700;color:#d9ccff;background:rgba(167,139,250,.09);border:1px solid rgba(167,139,250,.28)}
 .rule{padding:14px;margin-bottom:12px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98))}
 .rule.off{opacity:.55}
 .rule-top{display:flex;align-items:center;gap:10px;justify-content:space-between}
-.rule-name{font-size:16px;font-weight:800;letter-spacing:-.02em;margin:0}
+.rule-name{font-size:16px;font-weight:800;letter-spacing:-.02em;margin:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge-unsaved{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;color:var(--accent-2);border:1px solid rgba(245,189,89,.4);background:rgba(245,189,89,.1)}
 .rule-desc{color:var(--muted);font-size:12px;margin:6px 0 10px}
 .rule-desc b{color:#e8edf5;font-weight:700}
 .match{font-size:12px;color:var(--ok);font-weight:700;margin-bottom:10px}
 .match.none{color:var(--muted);font-weight:600}
-.rule-actions{display:flex;gap:8px;flex-wrap:wrap}
+.stats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.stat{font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.3)}
+.stat.dim{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--line);font-weight:700}
+.waiting{font-size:11px;color:var(--accent-2);font-weight:700;margin:-2px 0 10px}
+.rule-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .sw{position:relative;width:44px;height:26px;flex:none}
 .sw input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
 .sw span{position:absolute;inset:0;border-radius:99px;background:#343c4c;transition:background .15s}
@@ -42,6 +47,26 @@ main{max-width:760px;margin:0 auto;padding:0 18px 120px}
 .sw input:checked+span{background:var(--ok)}
 .sw input:checked+span:after{transform:translateX(18px)}
 .sw input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+/* tracked / topics sections */
+details.sec{margin-top:8px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
+details.sec>summary{cursor:pointer;list-style:none;padding:10px 12px;font-size:12px;font-weight:800;color:#e8edf5;display:flex;justify-content:space-between;align-items:center}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary:after{content:"▾";color:var(--muted)}
+details.sec[open]>summary:after{content:"▴"}
+.sec-body{padding:2px 12px 12px}
+.t-date{margin:10px 0 4px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2)}
+.t-theatre{margin:6px 0 4px;font-size:12px;font-weight:800}
+.t-movie{padding:7px 9px;margin-bottom:6px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)}
+.t-title{font-size:12px;font-weight:800}
+.t-lang{font-size:10px;color:var(--muted);font-weight:700;margin:1px 0 5px}
+.t-chips{display:flex;flex-wrap:wrap;gap:5px}
+.t-chip{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.25)}
+.t-chip.past{opacity:.45}
+.topic{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;font-size:12px}
+.topic+.topic{border-top:1px solid rgba(255,255,255,.06)}
+.topic span{color:var(--muted);font-size:11px;display:block}
+.topic a{color:var(--accent-2);font-weight:800;font-size:12px;text-decoration:none;padding:5px 11px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
+.empty{color:var(--muted);font-size:12px;padding:4px 0}
 /* editor */
 .overlay[hidden]{display:none}
 .overlay{position:fixed;inset:0;z-index:1100;display:flex;align-items:flex-end;justify-content:center;background:rgba(2,6,13,.76);backdrop-filter:blur(5px)}
@@ -90,6 +115,7 @@ textarea{width:100%;min-height:200px;padding:12px;border-radius:12px;border:1px 
     <button class="btn ghost" id="io">Import / Export</button>
     <button class="btn" id="save">Save rules</button>
   </div>
+  <div id="summary"></div>
   <div id="list"></div>
 </main>
 
@@ -154,21 +180,40 @@ const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
 };
-const tg = window.Telegram && window.Telegram.WebApp;
-if (tg) { tg.ready(); tg.expand(); }
+// Telegram loads async so a slow telegram.org never blocks the page
+let tg = null;
+window.tgReady = () => { if (window.Telegram && window.Telegram.WebApp) { tg = window.Telegram.WebApp; try { tg.ready(); tg.expand(); } catch {} } };
+window.tgReady();
 let toastT;
 function toast(m, ms = 4500) { const t = $("toast"); t.textContent = m; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, ms); }
 const uid = () => "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
-const blank = () => ({ id: uid(), name: "", enabled: true, venues: [], movie: "", languages: [], days: [], per_day: false, time: { from: "", to: "" }, day_times: {}, per_day: false, time: { from: "", to: "" }, day_times: {}, from: "", to: "", mode: "all", max_price: null });
+const blank = () => ({ id: uid(), name: "", enabled: true, venues: [], movie: "", languages: [], days: [], per_day: false, time: { from: "", to: "" }, day_times: {}, from: "", to: "", mode: "all", max_price: null });
 
 const normRule = r => { const o = { ...blank(), ...r, mode: r.mode === "budget" ? "budget" : "all" }; delete o.categories; delete o.times; delete o.dimensions; delete o.screen; return o; };
+
+const fmtWhen = iso => {
+  const t = Date.parse(iso);
+  return t ? new Date(t).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "—";
+};
+function dateLabel(code) {
+  const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
+  const t = new Date(); t.setHours(0, 0, 0, 0);
+  const diff = Math.round((d - t) / 86400000);
+  const base = d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : d.toLocaleDateString("en-IN", { weekday: "short" });
+  return `${day}, ${base}`;
+}
+const ymd = code => new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6)).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
 
 // ── State ─────────────────────────────────────────────────
 let rules = store.get("rules_draft", { rules: [] }).rules || [];
 let saved = JSON.stringify(store.get("rules_saved", { rules: [] }).rules || []);
-let shows = [];                    // flattened live shows from all theatres, for previews and suggestions
+let live = [];                     // every unexpired show (includes ones past the tracking cutoff)
+let shows = [];                    // live shows still open for tracking, for previews and suggestions
+let threads = {};                  // docs/rule_threads.json: weekly Telegram topics
 let token = sessionStorage.getItem("tracking_token") || null;
 let draft = null, editingNew = false, pendingSave = false;
+let openSecs = new Set(store.get("rules_open", []));   // which collapsible sections are open
 
 const config = () => ({ version: 1, updated: new Date().toISOString(), rules });
 function persist() {
@@ -176,7 +221,7 @@ function persist() {
   $("dirty").hidden = JSON.stringify(rules) === saved;
 }
 
-// ── Load current shows (for suggestions + match preview) ──
+// ── Load shows + weekly topics ────────────────────────────
 async function loadShows() {
   const out = [];
   await Promise.all(Object.keys(THEATRES).map(async v => {
@@ -190,11 +235,37 @@ async function loadShows() {
       }
     } catch {}
   }));
-  shows = out.filter(x => Date.parse(x.s.end) > Date.now() && Date.now() <= Date.parse(x.s.start) + CUTOFF_MIN * 60000);
+  live = out.filter(x => Date.parse(x.s.end) > Date.now());
+  shows = live.filter(x => Date.now() <= Date.parse(x.s.start) + CUTOFF_MIN * 60000);
   renderList();
+}
+async function loadThreads() {
+  try {
+    const r = await fetch(`${RAW}/data/docs/rule_threads.json?t=${Date.now()}`, { cache: "no-store" });
+    if (r.status === 404) { threads = {}; renderList(); return; }
+    if (!r.ok) return;
+    const j = await r.json();
+    if (j && typeof j === "object") { threads = j; renderList(); }
+  } catch {}
 }
 const uniq = f => [...new Set(shows.map(x => String(f(x) || "").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
 const priced = s => Object.entries(s.classes || {}).filter(([n, c]) => n && Number(c.price) > 0);
+
+// Shows a rule has already tracked (from the scanner's tracked_by_rules marks)
+function trackedBy(rule) {
+  const out = [];
+  live.forEach(x => {
+    const t = (x.s.tracked_by_rules || []).find(t => t.rule_id === rule.id);
+    if (t) out.push({ ...x, at: t.tracked_at });
+  });
+  return out;
+}
+const topicsOf = rule => Object.values(threads).filter(t => t && t.rule_id === rule.id && t.thread_id)
+  .sort((a, b) => String(a.week_start).localeCompare(String(b.week_start)) || String(a.venue).localeCompare(String(b.venue)));
+function topicLink(t) {
+  const id = String(t.chat_id || "").replace(/^-100/, "");
+  return /^\d+$/.test(id) ? `https://t.me/c/${id}/${t.thread_id}` : "";
+}
 
 // ── Matching (same logic the worker should use) ───────────
 const DAY_ORDER = [1, 2, 3, 4, 5, 6, 0];
@@ -241,22 +312,92 @@ function describe(r) {
   parts.push(r.mode === "budget" ? `seats up to ₹${esc(r.max_price)}` : "all seat types");
   return parts.join(" · ");
 }
+
+// Tracked shows grouped: date > theatre > movie (language · format) > time chips
+function trackedTree(list) {
+  const tree = {};
+  list.forEach(x => {
+    const day = tree[x.d] = tree[x.d] || {};
+    const th = day[x.v] = day[x.v] || {};
+    const k = `${x.s.movie || "Show"}\u0000${x.s.language || ""}\u0000${x.s.dimension || ""}`;
+    (th[k] = th[k] || []).push(x);
+  });
+  const order = Object.keys(THEATRES);
+  return Object.keys(tree).sort().map(d => {
+    const theatres = Object.keys(tree[d]).sort((a, b) => order.indexOf(a) - order.indexOf(b)).map(v => {
+      const movies = Object.entries(tree[d][v]).map(([k, arr]) => {
+        const [movie, lang, dim] = k.split("\u0000");
+        arr.sort((a, b) => Date.parse(a.s.start) - Date.parse(b.s.start));
+        return { movie, lang, dim, arr, first: Date.parse(arr[0].s.start) };
+      }).sort((a, b) => a.first - b.first || a.movie.localeCompare(b.movie));
+      return `<div class="t-theatre">${esc(THEATRES[v] || v)}</div>` + movies.map(m => `
+        <div class="t-movie"><div class="t-title">${esc(m.movie)}</div>
+          <div class="t-lang">${esc([m.lang, m.dim].filter(Boolean).join(" · "))}</div>
+          <div class="t-chips">${m.arr.map(x => `<span class="t-chip${Date.now() > Date.parse(x.s.start) ? " past" : ""}" title="${esc(x.s.screen || "")}">${esc(x.s.time)}</span>`).join("")}</div></div>`).join("");
+    }).join("");
+    return `<div class="t-date">${esc(dateLabel(d))}</div>${theatres}`;
+  }).join("");
+}
+
+function secHtml(key, title, body, count) {
+  return `<details class="sec" data-sec="${esc(key)}" ${openSecs.has(key) ? "open" : ""}>
+    <summary><span>${title}${count != null ? ` · ${count}` : ""}</span></summary><div class="sec-body">${body}</div></details>`;
+}
+
 function renderList() {
   persist();
+  const savedRules = (() => { try { return JSON.parse(saved); } catch { return []; } })();
+  const savedById = Object.fromEntries(savedRules.map(r => [r.id, JSON.stringify(r)]));
+
+  const allTracked = new Set();
+  rules.forEach(r => trackedBy(r).forEach(x => allTracked.add(`${x.v}_${x.d}_${x.id}`)));
+  const activeN = rules.filter(r => r.enabled).length;
+  $("summary").innerHTML = rules.length && live.length
+    ? `<div class="summary">⚡ ${activeN} of ${rules.length} rule${rules.length === 1 ? "" : "s"} on · ${allTracked.size} upcoming show${allTracked.size === 1 ? "" : "s"} auto-tracked in total</div>` : "";
+
   if (!rules.length) {
     $("list").innerHTML = `<div class="msg">No rules yet.<br>Add a rule and every new show that fits it will be tracked for you.</div>`;
     return;
   }
+
   $("list").innerHTML = rules.map((r, i) => {
     const m = shows.filter(x => ruleMatches(r, x));
+    const tr = trackedBy(r);
+    const trKeys = new Set(tr.map(x => `${x.v}_${x.d}_${x.id}`));
+    const waiting = m.filter(x => trackedCats(r, x.s).length && !trKeys.has(`${x.v}_${x.d}_${x.id}`)).length;
     const movies = [...new Set(m.map(x => x.s.movie))];
+    const isSaved = savedById[r.id] === JSON.stringify(r);
+    const unsaved = !isSaved ? `<span class="badge-unsaved">${savedById[r.id] ? "Edited · not saved" : "New · not saved"}</span>` : "";
+
     const match = !shows.length ? "" : m.length
       ? `<div class="match">Matches ${m.length} show${m.length === 1 ? "" : "s"} right now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</div>`
       : `<div class="match none">No current shows match yet. It will catch new ones.</div>`;
+
+    const theatreN = new Set(tr.map(x => x.v)).size, movieN = new Set(tr.map(x => x.s.movie)).size;
+    const last = tr.reduce((a, x) => Math.max(a, Date.parse(x.at) || 0), 0);
+    const stats = tr.length ? `<div class="stats">
+        <span class="stat">⚡ ${tr.length} tracked</span>
+        <span class="stat dim">${theatreN} theatre${theatreN === 1 ? "" : "s"}</span>
+        <span class="stat dim">${movieN} movie${movieN === 1 ? "" : "s"}</span>
+        ${last ? `<span class="stat dim">last pickup ${esc(fmtWhen(new Date(last).toISOString()))}</span>` : ""}</div>`
+      : (live.length ? `<div class="stats"><span class="stat dim">Nothing tracked yet</span></div>` : "");
+    const wait = waiting && isSaved && r.enabled ? `<div class="waiting">⏳ ${waiting} matching show${waiting === 1 ? "" : "s"} will be picked up on the next scan</div>`
+      : waiting && !isSaved ? `<div class="waiting">Save this rule so the scanner can start tracking its ${waiting} match${waiting === 1 ? "" : "es"}</div>` : "";
+
+    const trackedSec = tr.length ? secHtml(`${r.id}:t`, "Tracked shows", trackedTree(tr), tr.length) : "";
+
+    const tp = topicsOf(r);
+    const topicRows = tp.map(t => {
+      const link = topicLink(t);
+      return `<div class="topic"><div><b>${esc(THEATRES[t.venue] || t.venue)}</b><span>${esc(ymd(t.week_start))} – ${esc(ymd(t.week_end))}</span></div>
+        ${link ? `<a href="${esc(link)}" data-tglink target="_blank" rel="noopener">Open ↗</a>` : ""}</div>`;
+    }).join("");
+    const topicSec = tp.length ? secHtml(`${r.id}:p`, "Telegram topics", topicRows, tp.length) : "";
+
     return `<article class="rule ${r.enabled ? "" : "off"}">
-      <div class="rule-top"><h2 class="rule-name">${esc(r.name || "Untitled rule")}</h2>
+      <div class="rule-top"><h2 class="rule-name">${esc(r.name || "Untitled rule")}${unsaved}</h2>
         <label class="sw"><input type="checkbox" data-toggle="${i}" ${r.enabled ? "checked" : ""} aria-label="Rule enabled"><span></span></label></div>
-      <p class="rule-desc">${describe(r)}</p>${match}
+      <p class="rule-desc">${describe(r)}</p>${match}${stats}${wait}${trackedSec}${topicSec}
       <div class="rule-actions">
         <button class="btn ghost sm" data-edit="${i}">Edit</button>
         <button class="btn ghost sm" data-dup="${i}">Duplicate</button>
@@ -389,6 +530,7 @@ async function saveRules() {
     if (data.success === false || data.ok === false) throw new Error(data.error || data.message || "Save failed.");
     saved = JSON.stringify(rules); store.set("rules_saved", { rules, updated: cfg.updated }); persist();
     useFreshSha(data.commit_sha);
+    renderList();
     toast("Rules saved to GitHub. The worker uses them on its next run.");
   } catch (e) {
     toast((e.message || "Could not reach the server.") + " Your rules are kept on this device. Use Import / Export to copy the JSON.", 7000);
@@ -422,7 +564,15 @@ async function loadRemote() {
 }
 
 // ── Events ────────────────────────────────────────────────
+// <details> "toggle" doesn't bubble, so listen in the capture phase to remember what is open
+document.addEventListener("toggle", e => {
+  const k = e.target && e.target.dataset && e.target.dataset.sec; if (!k) return;
+  if (e.target.open) openSecs.add(k); else openSecs.delete(k);
+  store.set("rules_open", [...openSecs]);
+}, true);
 document.addEventListener("click", e => {
+  const a = e.target.closest("a[data-tglink]");
+  if (a && tg && tg.openTelegramLink) { e.preventDefault(); tg.openTelegramLink(a.href); return; }
   const t = e.target.closest("button"); if (!t) return;
   if (t.id === "new") return openEditor(blank(), true);
   if (t.id === "save") return saveRules();
@@ -486,10 +636,11 @@ window.addEventListener("beforeunload", e => { if (JSON.stringify(rules) !== sav
 
 renderList();
 loadShows();
+loadThreads();
 loadRemote();
-setInterval(() => { if (!document.hidden) loadShows(); }, 120000);
+setInterval(() => { if (!document.hidden) { loadShows(); loadThreads(); } }, 120000);
 setInterval(() => { if (!document.hidden) loadRemote(); }, 60000);
-document.addEventListener("visibilitychange", () => { if (!document.hidden) loadRemote(); });
+document.addEventListener("visibilitychange", () => { if (!document.hidden) { loadRemote(); loadShows(); } });
 </script>
 </body>
 </html>

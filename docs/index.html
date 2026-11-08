@@ -91,38 +91,41 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 12px}
 .tag{font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;color:#f3d39a;background:rgba(245,189,89,.09);border:1px solid rgba(245,189,89,.16)}
 
-/* theatre > movie > combo > tiles */
-.th-head{display:flex;align-items:baseline;justify-content:space-between;margin:18px 2px 2px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-2)}
-.th-head:first-child{margin-top:0}
-.th-head small{color:var(--muted);font-size:11px;font-weight:600;letter-spacing:0;text-transform:none}
-.movie-name{margin:12px 2px 6px;font-size:16px;font-weight:800;letter-spacing:-.02em}
-.combo{padding:12px;margin-bottom:10px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98));box-shadow:0 8px 22px rgba(0,0,0,.16)}
-.combo-head{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:start;margin-bottom:11px}
-.combo-head.no-poster{grid-template-columns:1fr}
+/* movie > language > format row > tiles */
+.movie{padding:12px;margin-bottom:14px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98));box-shadow:0 8px 22px rgba(0,0,0,.16)}
+.movie-head{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start;margin-bottom:6px}
+.movie-head.no-poster{grid-template-columns:1fr}
 .poster{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:8px;background:rgba(255,255,255,.03);box-shadow:0 5px 15px rgba(0,0,0,.3)}
-.combo-lang{font-size:13px;font-weight:800;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.movie-name{margin:0;font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.movie-meta{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:6px;color:var(--muted);font-size:11px}
 .censor-badge{font-size:9px;font-weight:800;padding:2px 5px;border:1px solid rgba(186,204,232,.2);border-radius:5px;color:#a5b2c4;line-height:1.2}
-.genre{color:var(--muted);font-size:11px;margin-top:3px}
-.combo-actions{display:flex;align-items:center;gap:10px;margin-top:8px}
-.combo-trailer{color:var(--accent-2);font-size:11px;font-weight:800;text-decoration:none}
-.combo-sel{border:1px solid rgba(245,189,89,.3);background:rgba(245,189,89,.08);color:#f5d49b;border-radius:9px;padding:5px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+.genre{color:var(--muted);font-size:11px;margin-top:4px}
+.combo-trailer{display:inline-block;margin-top:7px;color:var(--accent-2);font-size:11px;font-weight:800;text-decoration:none}
+.lang-block{margin-top:12px}
+.lang-head{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;color:var(--accent-2);margin:0 2px 6px}
+.lang-head .combo-trailer{margin:0;font-size:10px}
+.fmt-row{margin-bottom:8px}
+.fmt-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px 6px;font-size:12px;font-weight:700;color:#d4dce8}
+.fmt-head small{color:var(--muted);font-size:10px;font-weight:600;margin-left:6px}
+.combo-sel{border:1px solid rgba(245,189,89,.3);background:rgba(245,189,89,.08);color:#f5d49b;border-radius:9px;padding:4px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
 .tile{display:flex;align-items:center;gap:7px;min-height:46px;padding:7px 8px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);cursor:pointer}
 .tile.sel{border-color:var(--accent);background:rgba(245,189,89,.12)}
 .tile.tracked{border-color:rgba(72,214,160,.45);background:rgba(72,214,160,.08)}
 .tile.pend{opacity:.7}
 .tile.closed{opacity:.5}
+.tile.soldout{opacity:.38}
 .tile-check{width:16px;height:16px;margin:0;flex:none;accent-color:var(--accent)}
 .tile-main{flex:1;min-width:0;display:grid}
 .tile-time{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tile-screen{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile-fmt{font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tile-meta{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--ok);font-weight:800}
 .dot{width:8px;height:8px;border-radius:50%;background:#4a5468;display:inline-block}
 .dot.s3{background:var(--ok)}.dot.s2{background:var(--mid)}.dot.s1{background:var(--low)}
 .detail-time{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .detail-time b{font-size:20px;color:var(--accent-2)}
 .detail-time span{color:var(--muted);font-size:12px}
-.grp-head{margin:8px 2px 0}
 
 /* batch bar, select bar, toast, selection list */
 .select-bar{max-width:760px;margin:0 auto;padding:0 18px 12px;display:flex;justify-content:flex-end}
@@ -234,7 +237,7 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
     <div class="panel-sub" id="sort-sub"></div>
     <label class="mode-option"><input type="radio" name="sort-mode" value="time-asc"><span><b>Time · earliest first</b><small>Movies with the earliest show first; show times in order.</small></span></label>
     <label class="mode-option"><input type="radio" name="sort-mode" value="time-desc"><span><b>Time · latest first</b><small>Movies with the latest show first; show times reversed.</small></span></label>
-    <label class="mode-option"><input type="radio" name="sort-mode" value="movie-asc"><span><b>Movie · A to Z</b><small>Movies alphabetically inside each theatre.</small></span></label>
+    <label class="mode-option"><input type="radio" name="sort-mode" value="movie-asc"><span><b>Movie · A to Z</b><small>Movies in alphabetical order.</small></span></label>
     <div class="panel-actions"><button type="button" class="btn-go" id="sort-done">Done</button></div>
   </section>
 </div>
@@ -295,14 +298,14 @@ const S = {
   selected: new Set(),
   local: {}   // API-confirmed results: key -> { tracked, ts, mode, max_price, categories }
 };
-if (S.venue !== "ALL" && !THEATRES[S.venue]) S.venue = "INTO";
+if (!THEATRES[S.venue]) S.venue = "INTO";   // also resets a stored "ALL"
 S.sort = (() => {
   const x = store.get("sort", null);
   if (x && ["time", "movie", "theatre"].includes(x.by) && ["asc", "desc"].includes(x.dir)) return x;
   return { by: "time", dir: "asc" };
 })();
 
-const venuesOf = v => v === "ALL" ? Object.keys(THEATRES) : [v];
+const venuesOf = v => [v];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const $ = id => document.getElementById(id);
 
@@ -668,6 +671,7 @@ function saveCategorySelection() {
 // ── Helpers ───────────────────────────────────────────────
 const live = show => Date.parse(show.end) > Date.now();
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
+const fmtDur = m => m ? `${Math.floor(m / 60)}h ${m % 60}m` : "";
 
 function dateLabel(code) {
   const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
@@ -703,8 +707,7 @@ function selectableKeys() {
 
 // ── Top navigation ────────────────────────────────────────
 function renderVenues() {
-  const all = [["ALL", "All Theatres"], ...Object.entries(THEATRES)];
-  setHtml($("venues"), all.map(([code, name]) =>
+  setHtml($("venues"), Object.entries(THEATRES).map(([code, name]) =>
     `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join(""));
 }
 
@@ -916,7 +919,7 @@ function updateBatchUI() {
 // ── Sorting ───────────────────────────────────────────────
 function effectiveSort() {
   let { by, dir } = S.sort;
-  if (by === "theatre") by = "movie";     // layout is always theatre first
+  if (by === "theatre") by = "movie";
   if (by !== "time") dir = "asc";
   return { by, dir };
 }
@@ -926,48 +929,60 @@ function updateSortUI() {
   $("sort-open").textContent = by === "time" ? (dir === "asc" ? "Time ↑" : "Time ↓") : "Movie A–Z";
   const val = by === "time" ? `time-${dir}` : "movie-asc";
   document.querySelectorAll('input[name="sort-mode"]').forEach(i => { i.checked = i.value === val; });
-  const vname = S.venue === "ALL" ? "All theatres" : THEATRES[S.venue];
   const dl = S.date ? dateLabel(S.date) : null;
-  $("sort-sub").textContent = vname + (dl ? ` · ${dl.day}, ${dl.base}` : "");
+  $("sort-sub").textContent = (THEATRES[S.venue] || "") + (dl ? ` · ${dl.day}, ${dl.base}` : "");
 }
 
-// ── Render: theatre > movie > language+format combo > tiles ──
+// ── Render: movie > language > format row > tiles ──────────
 const bestStatus = s => Math.max(0, ...pricedClasses(s).map(([, c]) => Number(c.status) || 0));
+const soldOut = s => pricedClasses(s).length > 0 && bestStatus(s) === 0;
+
+const FMT = [["IMAX", /imax/i], ["Dolby Atmos", /atmos/i], ["4K", /\b4k\b/i]];
+function fmtTags(s) {
+  const txt = [...(s.tags || []), s.screen || ""].join(" ");
+  const dim = String(s.dimension || "");
+  return FMT.filter(([, r]) => r.test(txt) && !r.test(dim)).map(([n]) => n);
+}
+
+function mostCommon(arr) {
+  const c = {};
+  let best = "", n = 0;
+  arr.forEach(x => { c[x] = (c[x] || 0) + 1; if (c[x] > n) { n = c[x]; best = x; } });
+  return best;
+}
 
 function groupShows(items) {
   const { by, dir } = effectiveSort();
   const sign = dir === "desc" ? -1 : 1;
-  const order = Object.keys(THEATRES);
   const st = it => Date.parse(it.s.start) || 0;
-  const theatres = {};
+  const movies = {};
 
   items.forEach(it => {
-    const t = theatres[it.v] = theatres[it.v] || { v: it.v, count: 0, movies: {} };
-    t.count++;
     const name = String(it.s.movie || "");
-    const m = t.movies[name] = t.movies[name] || { name, first: Infinity, combos: {} };
+    const m = movies[name] = movies[name] || { name, first: Infinity, items: [], langs: {} };
     m.first = Math.min(m.first, st(it));
+    m.items.push(it);
     const lang = String(it.s.language || "—"), dim = String(it.s.dimension || "—");
-    const c = m.combos[lang + "\u0000" + dim] = m.combos[lang + "\u0000" + dim] || { lang, dim, first: Infinity, items: [] };
-    c.first = Math.min(c.first, st(it));
-    c.items.push(it);
+    const l = m.langs[lang] = m.langs[lang] || { lang, first: Infinity, items: [], dims: {} };
+    l.first = Math.min(l.first, st(it));
+    l.items.push(it);
+    const d = l.dims[dim] = l.dims[dim] || { dim, first: Infinity, items: [] };
+    d.first = Math.min(d.first, st(it));
+    d.items.push(it);
   });
 
-  return Object.values(theatres)
-    .sort((a, b) => order.indexOf(a.v) - order.indexOf(b.v))
-    .map(t => {
-      const movies = Object.values(t.movies).sort(by === "time"
-        ? (a, b) => (a.first - b.first) * sign || a.name.localeCompare(b.name)
-        : (a, b) => a.name.localeCompare(b.name));
-      movies.forEach(m => {
-        const combos = Object.values(m.combos);
-        const langFirst = {};
-        combos.forEach(c => { langFirst[c.lang] = Math.min(langFirst[c.lang] ?? Infinity, c.first); });
-        combos.sort((a, b) => langFirst[a.lang] - langFirst[b.lang] || a.lang.localeCompare(b.lang) || a.first - b.first || a.dim.localeCompare(b.dim));
-        combos.forEach(c => c.items.sort((a, b) => (st(a) - st(b)) * sign));
-        m.list = combos;
+  return Object.values(movies)
+    .sort(by === "time"
+      ? (a, b) => (a.first - b.first) * sign || a.name.localeCompare(b.name)
+      : (a, b) => a.name.localeCompare(b.name))
+    .map(m => {
+      const langs = Object.values(m.langs).sort((a, b) => a.first - b.first || a.lang.localeCompare(b.lang));
+      langs.forEach(l => {
+        l.list = Object.values(l.dims).sort((a, b) => a.first - b.first || a.dim.localeCompare(b.dim));
+        l.list.forEach(d => d.items.sort((a, b) => (st(a) - st(b)) * sign));
       });
-      return { v: t.v, count: t.count, movies };
+      m.list = langs;
+      return m;
     });
 }
 
@@ -975,38 +990,63 @@ function tileHtml(it) {
   const { v, id, s, key } = it;
   const tracked = isTracked(v, S.date, id);
   const pend = pending(v, S.date, id);
-  const cls = ["tile", tracked ? "tracked" : "", pend ? "pend" : "", closed(s) ? "closed" : "", S.selected.has(key) ? "sel" : ""].join(" ");
+  const dim = soldOut(s) && !tracked;
+  const cls = ["tile", tracked ? "tracked" : "", pend ? "pend" : "", closed(s) ? "closed" : "", dim ? "soldout" : "", S.selected.has(key) ? "sel" : ""].join(" ");
   const box = canSelectShow(it)
     ? `<input type="checkbox" class="tile-check" data-select-key="${key}" ${S.selected.has(key) ? "checked" : ""} aria-label="Select ${esc(s.time)}">` : "";
+  const fmt = fmtTags(s).join(" · ");
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
     ${box}
-    <span class="tile-main"><span class="tile-time">${esc(s.time)}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}</span>
+    <span class="tile-main"><span class="tile-time">${esc(s.time)}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${esc(fmt)}</span>` : ""}</span>
     <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}</span>
   </div>`;
 }
 
-function comboHtml(c) {
-  const s0 = c.items[0].s;
-  const poster = s0.poster
-    ? `<img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/${esc(s0.poster)}.jpg" class="poster" loading="lazy" onerror="this.style.display='none'">` : "";
-  const censor = s0.censor ? `<span class="censor-badge">${esc(s0.censor)}</span>` : "";
-  const genre = s0.genre ? `<div class="genre">${esc(s0.genre).replace(/,/g, ", ")}</div>` : "";
-  const trailer = s0.trailer ? `<a class="combo-trailer" href="${esc(s0.trailer)}" target="_blank" rel="noopener">▶ Trailer</a>` : "";
-  const selectable = c.items.filter(canSelectShow);
-  const allOn = selectable.length && selectable.every(i => S.selected.has(i.key));
-  const selBtn = selectable.length
-    ? `<button type="button" class="combo-sel" data-combo-select="${c.items.map(i => i.key).join(",")}">${allOn ? "Deselect all" : "Select all"}</button>` : "";
+function movieHtml(m) {
+  const shows = m.items.map(i => i.s);
+  const sorted = [...shows].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  const withPoster = sorted.find(s => s.poster) || sorted[0];
+  const withGenre = sorted.find(s => s.genre) || sorted[0];
+  const withCensor = sorted.find(s => s.censor) || sorted[0];
+  const movieDur = Number(mostCommon(shows.map(s => s.duration).filter(Boolean))) || 0;
+  const movieTrailer = mostCommon(shows.map(s => s.trailer).filter(Boolean));
 
-  return `<div class="combo">
-    <div class="combo-head${poster ? "" : " no-poster"}">
+  const poster = withPoster.poster
+    ? `<img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/${esc(withPoster.poster)}.jpg" class="poster" loading="lazy" onerror="this.style.display='none'">` : "";
+  const censor = withCensor.censor ? `<span class="censor-badge">${esc(withCensor.censor)}</span>` : "";
+  const dur = movieDur ? `<span>${esc(fmtDur(movieDur))}</span>` : "";
+  const genre = withGenre.genre ? `<div class="genre">${esc(withGenre.genre).replace(/,/g, ", ")}</div>` : "";
+  const trailer = movieTrailer ? `<a class="combo-trailer" href="${esc(movieTrailer)}" target="_blank" rel="noopener">▶ Trailer</a>` : "";
+
+  const langs = m.list.map(l => {
+    const lt = mostCommon(l.items.map(i => i.s.trailer).filter(Boolean));
+    const ltHtml = lt && lt !== movieTrailer ? `<a class="combo-trailer" href="${esc(lt)}" target="_blank" rel="noopener">▶ Trailer</a>` : "";
+    const rows = l.list.map(d => {
+      const rowDur = Number(mostCommon(d.items.map(i => i.s.duration).filter(Boolean))) || 0;
+      const durNote = rowDur && rowDur !== movieDur ? `<small>${esc(fmtDur(rowDur))}</small>` : "";
+      const selectable = d.items.filter(canSelectShow);
+      const allOn = selectable.length && selectable.every(i => S.selected.has(i.key));
+      const selBtn = selectable.length
+        ? `<button type="button" class="combo-sel" data-combo-select="${d.items.map(i => i.key).join(",")}">${allOn ? "Deselect all" : "Select all"}</button>` : "";
+      return `<div class="fmt-row">
+        <div class="fmt-head"><span>${esc(d.dim === "—" ? "Standard" : d.dim)}${durNote}</span>${selBtn}</div>
+        <div class="tiles">${d.items.map(tileHtml).join("")}</div>
+      </div>`;
+    }).join("");
+    return `<div class="lang-block"><div class="lang-head"><span>${esc(l.lang)}</span>${ltHtml}</div>${rows}</div>`;
+  }).join("");
+
+  return `<div class="movie">
+    <div class="movie-head${poster ? "" : " no-poster"}">
       ${poster}
       <div>
-        <div class="combo-lang">${esc(c.lang)} · ${esc(c.dim)} ${censor}</div>
+        <h2 class="movie-name">${esc(m.name)}</h2>
+        <div class="movie-meta">${censor}${dur}</div>
         ${genre}
-        <div class="combo-actions">${trailer}${selBtn}</div>
+        ${trailer}
       </div>
     </div>
-    <div class="tiles">${c.items.map(tileHtml).join("")}</div>
+    ${langs}
   </div>`;
 }
 
@@ -1028,10 +1068,7 @@ function renderList() {
     return;
   }
 
-  setHtml(el, groupShows(items).map(t =>
-    `<div class="th-head">${esc(THEATRES[t.v] || t.v)}<small>${t.count} show${t.count === 1 ? "" : "s"}</small></div>` +
-    t.movies.map(m => `<div class="movie-name">${esc(m.name)}</div>` + m.list.map(comboHtml).join("")).join("")
-  ).join(""));
+  setHtml(el, groupShows(items).map(movieHtml).join(""));
 
   if (!$("detail-overlay").hidden) renderDetail();
   tickCountdown();
@@ -1050,7 +1087,7 @@ function renderDetail() {
   const s = ((S.state[v] || {})[d] || {})[id];
   if (!s || !live(s)) { closeDetail(); return; }
 
-  const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
+  const dur = fmtDur(s.duration);
   const meta = [THEATRES[v], s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
   const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
   const classes = Object.entries(s.classes || {}).map(([name, c]) => `

@@ -74,45 +74,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/44298/20261108"
   },
-  "44814": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "PRIME": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "reopened_at": "2026-11-08T15:10:50+05:30",
-     "sold_out_at": "2026-11-08T15:40:52+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T15:40:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T17:10:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-08T16:55:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 02",
-   "start": "2026-11-08T16:25:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "04:25 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/44814/20261108"
-  },
   "44815": {
    "censor": "UA16+",
    "classes": {
@@ -441,8 +402,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T11:50:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T17:01:13+05:30"
     }
    },
    "cutoff": "2026-11-08T23:25:00+05:30",
@@ -577,44 +538,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/44888/20261108"
   },
-  "45012": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    },
-    "PRIME": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-08T15:40:52+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T15:40:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T17:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-08T17:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 07",
-   "start": "2026-11-08T16:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "04:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45012/20261108"
-  },
   "45013": {
    "censor": "UA16+",
    "classes": {
@@ -734,10 +657,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
+     "reopened_at": "2026-11-08T17:01:13+05:30",
      "sold_out_at": "2026-11-08T16:50:53+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T16:50:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T17:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "2",
@@ -855,7 +779,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T17:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6198,5 +6123,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-08T16:50:53+05:30"
+ "_updated": "2026-11-08T17:01:13+05:30"
 }

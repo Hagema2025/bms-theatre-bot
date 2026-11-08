@@ -8,10 +8,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
      "reopened_at": "2026-11-08T21:01:10+05:30",
-     "sold_out_at": "2026-11-08T20:50:54+05:30",
+     "sold_out_at": "2026-11-08T21:10:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T21:01:10+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T21:10:51+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -118,39 +118,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26328/20261108"
   },
-  "26333": {
-   "censor": "UA16+",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.0,
-     "sold_out_at": "2026-11-08T18:01:10+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T18:01:10+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T21:20:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-08T21:05:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 5",
-   "start": "2026-11-08T20:35:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "08:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26333/20261108"
-  },
   "26447": {
    "censor": "UA16+",
    "classes": {
@@ -234,19 +201,20 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
+     "sold_out_at": "2026-11-08T21:10:51+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T18:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T21:10:51+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
-     "reopened_at": "2026-11-08T20:40:55+05:30",
+     "reopened_at": "2026-11-08T21:10:51+05:30",
      "sold_out_at": "2026-11-08T21:01:10+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T21:01:10+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T21:10:51+05:30"
     }
    },
    "cutoff": "2026-11-08T22:25:00+05:30",
@@ -279,8 +247,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-07T20:10:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T21:10:51+05:30"
     }
    },
    "cutoff": "2026-11-09T10:25:00+05:30",
@@ -706,8 +674,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T20:40:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T21:10:51+05:30"
     }
    },
    "cutoff": "2026-11-09T08:30:00+05:30",
@@ -2925,5 +2893,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/TVHP/26498/20261114"
   }
  },
- "_updated": "2026-11-08T21:01:10+05:30"
+ "_updated": "2026-11-08T21:10:51+05:30"
 }

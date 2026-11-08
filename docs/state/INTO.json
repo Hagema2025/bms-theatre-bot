@@ -40,44 +40,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92602/20261108"
   },
-  "92616": {
-   "censor": "A",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 59.43,
-     "reopened_at": "2026-11-08T19:31:26+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-08T19:31:26+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T20:20:00+05:30",
-   "dimension": "2D",
-   "duration": 158,
-   "end": "2026-11-08T20:05:00+05:30",
-   "event_code": "ET00521913",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Crime,Thriller",
-   "language": "Malayalam",
-   "movie": "Disco",
-   "poster": "disco-et00521913-1791786447",
-   "screen": "SCREEN 8",
-   "start": "2026-11-08T19:35:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "07:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=EzMxyEKB0cg",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521913/INTO/92616/20261108"
-  },
   "92617": {
    "censor": "UA13+",
    "classes": {
@@ -291,8 +253,10 @@
      "first_seen_status": "0",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-08T20:10:50+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-08T20:10:50+05:30"
     }
    },
    "cutoff": "2026-11-08T21:00:00+05:30",
@@ -4810,5 +4774,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-08T20:01:12+05:30"
+ "_updated": "2026-11-08T20:10:50+05:30"
 }

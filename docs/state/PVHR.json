@@ -298,46 +298,6 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/PVHR/44815/20261108"
   },
-  "44823": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-08T08:40:49+05:30",
-     "sold_out_at": "2026-11-08T08:31:21+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:40:49+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2"
-    }
-   },
-   "cutoff": "2026-11-08T09:55:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-08T09:40:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 01",
-   "start": "2026-11-08T09:10:00+05:30",
-   "tags": [
-    "ENG subs"
-   ],
-   "time": "09:10 AM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/44823/20261108"
-  },
   "44824": {
    "censor": "UA16+",
    "classes": {
@@ -487,46 +447,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/44827/20261108"
   },
-  "44836": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-08T00:10:55+05:30",
-     "sold_out_at": "2026-11-08T09:10:46+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T09:10:46+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-08T09:55:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-08T09:40:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI 03",
-   "start": "2026-11-08T09:10:00+05:30",
-   "tags": [
-    "ENG subs"
-   ],
-   "time": "09:10 AM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/44836/20261108"
-  },
   "44837": {
    "censor": "UA16+",
    "classes": {
@@ -583,7 +503,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:40:51+05:30"
     }
    },
    "cutoff": "2026-11-08T16:25:00+05:30",
@@ -1022,8 +943,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T09:31:22+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T09:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "2",
@@ -2446,7 +2367,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T09:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "2",
@@ -7175,5 +7097,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-08T09:31:22+05:30"
+ "_updated": "2026-11-08T09:40:51+05:30"
 }

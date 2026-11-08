@@ -77,43 +77,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/ACON/48500/20261108"
   },
-  "48501": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.0,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-08T09:25:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-08T09:40:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 2",
-   "start": "2026-11-08T09:10:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "09:10 AM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/ACON/48501/20261108"
-  },
   "48502": {
    "censor": "U",
    "classes": {
@@ -167,7 +130,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T09:40:51+05:30"
     }
    },
    "cutoff": "2026-11-08T16:25:00+05:30",
@@ -626,8 +590,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:01:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:40:51+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2520,5 +2484,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48593/20261112"
   }
  },
- "_updated": "2026-11-08T09:31:22+05:30"
+ "_updated": "2026-11-08T09:40:51+05:30"
 }

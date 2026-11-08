@@ -187,13 +187,16 @@ def attr_tags(show):
         tags.append("Dolby Atmos")
     return tags
 
-
 def show_tags(show):
-    tags = attr_tags(show)
-    if has_subtitles(show):
-        code = (show.get("SessionSubTitleAcronym") or "").strip()
-        tags.append(f"{code} subs" if code else "Subtitles")
-    return tags
+    return attr_tags(show)          # format/sound only: IMAX, 4K DOLBY ATMOS, ...
+
+
+def show_subs(show):
+    """Subtitle label kept out of tags, e.g. 'ENG subs'. Empty string if none."""
+    if not has_subtitles(show):
+        return ""
+    code = (show.get("SessionSubTitleAcronym") or "").strip()
+    return f"{code} subs" if code else "Subtitles"
 
 
 def touch_class(c, status, price, now):
@@ -568,6 +571,7 @@ def register_shows(vstate, venue, data, now):
         entry["cutoff"]     = cutoff.isoformat(timespec="seconds") if cutoff else ""
         entry["duration"]   = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
         entry["tags"]       = show_tags(show)
+        entry["subs"]       = show_subs(show)
         entry["poster"]     = child.get("EventImageCode") or ""
         entry["event_code"] = child.get("EventCode") or ""
         entry["censor"]     = child.get("EventCensor") or ""

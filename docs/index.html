@@ -54,6 +54,7 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .filter-wrap select{width:100%;min-width:0;min-height:48px;padding:12px 34px 12px 13px;border-radius:13px;border:1px solid rgba(186,204,232,.14);background-color:#1a2940;color:#edf2f8;font:inherit;font-size:12px;font-weight:600}
 .filter-wrap button{grid-column:1/-1;min-height:45px;border-radius:13px;border:1px solid rgba(245,189,89,.24);background:rgba(245,189,89,.08);color:#f5d49b;font:inherit;font-size:12px;font-weight:750;cursor:pointer}
 .mode-option{display:flex;align-items:flex-start;gap:11px;padding:14px 12px;margin-bottom:9px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.035);cursor:pointer}
+.mode-option[hidden]{display:none}
 .mode-option input{width:18px;height:18px;margin-top:2px;accent-color:var(--accent)}
 .mode-option span{display:grid;gap:4px}
 .mode-option b{font-size:13px}
@@ -197,7 +198,7 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
       <label class="budget-label" for="category-budget">Maximum ticket price (₹)</label>
       <input id="category-budget" type="number" min="1" placeholder="Example: 150">
     </div>
-    <label class="mode-option"><input type="radio" name="track-mode" value="manual"><span><b>Choose Categories</b><small>Only the categories you select will be tracked.</small></span></label>
+    <label class="mode-option" id="manual-option"><input type="radio" name="track-mode" value="manual"><span><b>Choose Categories</b><small>Only the categories you select will be tracked.</small></span></label>
     <div id="manual-area" hidden><div id="category-options"></div></div>
     <div class="panel-actions">
       <button type="button" class="btn-cancel" id="category-cancel">Cancel</button>
@@ -567,6 +568,7 @@ function openCategoryPicker(v, d, id, show) {
     ? (pend.intent || {})
     : t.tracked ? { mode: t.mode || "all", max_price: t.max_price, categories: t.categories || [] } : {};
   categorySelection = { v, d, id, show, classes };
+  $("manual-option").hidden = false;
 
   $("category-sub").textContent = `${show.movie || "Show"} · ${show.time || ""}`;
   document.querySelectorAll('input[name="track-mode"]').forEach(i => { i.checked = i.value === (saved.mode || "all"); });
@@ -592,6 +594,7 @@ function openBatchCategoryPicker() {
   }
   if (!shows.length) return notify("No eligible shows selected.");
   batchSelection = shows;
+  $("manual-option").hidden = true;
 
   const categoryMap = new Map();
   shows.forEach(item => item.classes.forEach(([name]) => categoryMap.set(name, (categoryMap.get(name) || 0) + 1)));
@@ -660,16 +663,18 @@ function saveCategorySelection() {
   }
 
   const { v, d, id, classes } = categorySelection;
-  let extra = "a";
-  if (mode === "budget") extra = "b" + maxPrice;
+  let selection = "a";
+  if (mode === "budget") selection = "b" + maxPrice;
   if (mode === "manual") {
     let mask = 0;
     classes.forEach(([name], i) => { if (checked.includes(name)) mask |= (1 << i); });
-    extra = "m" + mask.toString(36);
+    selection = "m" + mask.toString(36);
   }
   const intent = { mode, max_price: mode === "budget" ? maxPrice : null, categories: mode === "manual" ? checked : [] };
+  const actions = [{ action: "track", venue: v, session: id, date: d, selection }];
+  const intents = { [`${v}_${d}_${id}`]: intent };
   closeCategoryPicker();
-  press("trk", `${v}_${d}_${id}`, extra, intent);
+  return submitBatchTracking(actions, intents);
 }
 
 // ── Helpers ───────────────────────────────────────────────
@@ -719,7 +724,7 @@ function datesFor(v) {
   const set = new Set();
   for (const x of venuesOf(v)) {
     const st = S.state[x] || {};
-    Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(live)).forEach(d => set.add(d));
+    Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(s => live(s) && !closed(s))).forEach(d => set.add(d));
   }
   return [...set].sort();
 }
@@ -1086,7 +1091,7 @@ function renderList() {
     return;
   }
 
-  const items = showsInView().filter(it => live(it.s) && matchesFilters(it.s));
+  const items = showsInView().filter(it => live(it.s) && !closed(it.s) && matchesFilters(it.s));
   if (!items.length) {
     setHtml(el, `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`);
     updateFilterUI();

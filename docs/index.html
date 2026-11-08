@@ -770,6 +770,63 @@ main { gap: 13px; }
 .batch-bar[hidden] { display: none; }
 .batch-count { flex: 1; font-size: 12px; color: var(--muted); }
 
+
+/* Batch bar: wrap so 3 buttons fit on small screens + progress bar */
+.batch-bar { flex-wrap: wrap; overflow: hidden; padding-bottom: 14px; }
+.batch-bar .batch-count { flex: 1 1 100%; }
+.batch-bar .btn { flex: 1; min-height: 40px; }
+.btn:disabled { opacity: .55; cursor: default; }
+.batch-progress {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 5px;
+  background: rgba(255,255,255,.08); overflow: hidden;
+}
+.batch-progress[hidden] { display: none; }
+.batch-progress i {
+  position: absolute; top: 0; bottom: 0; width: 40%; border-radius: 5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  animation: bp 1.1s ease-in-out infinite;
+}
+@keyframes bp { 0% { left: -40%; } 100% { left: 100%; } }
+
+/* Info toast (auto-hides after 5s) */
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  top: calc(14px + env(safe-area-inset-top, 0px)); z-index: 1200;
+  max-width: min(92vw, 420px); padding: 11px 15px; border-radius: 13px;
+  background: #2a1f12; border: 1px solid rgba(245,189,89,.45);
+  color: #ffe3a8; font-size: 12px; font-weight: 600; line-height: 1.4;
+  box-shadow: 0 8px 25px #0009;
+}
+.toast[hidden] { display: none; }
+
+/* View selection panel */
+.sel-item { display: flex; align-items: center; gap: 10px; padding: 11px 4px; border-bottom: 1px solid var(--line); }
+.sel-item .info { flex: 1; min-width: 0; }
+.sel-item b { display: block; font-size: 13px; }
+.sel-item small { color: var(--muted); font-size: 11px; }
+.btn.sel-remove { flex: none; min-height: 34px; padding: 0 12px; }
+
+/* Select all bar */
+.select-bar { max-width: 760px; margin: 0 auto; padding: 0 18px 12px; display: flex; justify-content: flex-end; }
+.select-bar[hidden] { display: none; }
+.select-bar .btn { flex: none; min-height: 38px; padding: 0 16px; }
+
+/* Grouped selection view */
+.sel-date { margin: 14px 0 4px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-2); }
+.sel-theatre { margin: 8px 0 6px; font-size: 13px; font-weight: 800; }
+.sel-movie { padding: 9px 11px; margin-bottom: 8px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.03); }
+.sel-title { font-size: 13px; font-weight: 800; margin-bottom: 6px; }
+.sel-group + .sel-group { margin-top: 8px; }
+.sel-lang { display: block; font-size: 11px; color: var(--muted); font-weight: 700; margin-bottom: 5px; }
+.sel-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sel-chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 6px 5px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; color: #f3d39a; background: rgba(245,189,89,.09); border: 1px solid rgba(245,189,89,.18); }
+.sel-chip button { width: 20px; height: 20px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.1); color: var(--fg); font-size: 10px; cursor: pointer; }
+
+/* Sort + group headers */
+.mode-option[hidden] { display: none; }
+.grp-head { margin: 8px 2px 0; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-2); }
+.grp-head:first-child { margin-top: 0; }
+.sort-trigger:before { content: "⇅"; }
 </style>
 </head>
 <body>
@@ -792,6 +849,7 @@ main { gap: 13px; }
 </div>
 <div class="filter-bar">
   <button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
+  <button type="button" class="filter-trigger sort-trigger" id="sort-open">Time ↑</button>
   <button type="button" class="filter-clear-quick" id="filter-clear-quick" hidden>✕ Clear</button>
 </div>
 <div class="filter-overlay" id="filter-overlay" hidden>
@@ -887,12 +945,65 @@ main { gap: 13px; }
   </section>
 </div>
 
+<div class="select-bar" id="select-bar" hidden>
+  <button class="btn alt" id="select-all" type="button">Select all</button>
+</div>
+
 <main id="list"></main>
 
 <div class="batch-bar" id="batch-bar" hidden>
   <span class="batch-count" id="batch-count">0 shows selected</span>
   <button class="btn off" id="batch-clear" type="button">Clear</button>
+  <button class="btn off" id="batch-view" type="button">View</button>
   <button class="btn" id="batch-continue" type="button">Track Selected</button>
+  <div class="batch-progress" id="batch-progress" hidden><i></i></div>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<div class="category-overlay" id="sort-overlay" hidden>
+  <section class="category-panel" role="dialog" aria-modal="true">
+    <div class="category-head">
+      <strong>Sort shows</strong>
+      <button type="button" class="filter-close" id="sort-close">✕</button>
+    </div>
+    <div class="category-sub" id="sort-sub"></div>
+
+    <label class="mode-option">
+      <input type="radio" name="sort-mode" value="time-asc">
+      <span><b>Time · earliest first</b><small>All shows in start-time order.</small></span>
+    </label>
+    <label class="mode-option">
+      <input type="radio" name="sort-mode" value="time-desc">
+      <span><b>Time · latest first</b><small>All shows, latest start time first.</small></span>
+    </label>
+    <label class="mode-option">
+      <input type="radio" name="sort-mode" value="movie-asc">
+      <span><b>Movie · A to Z</b><small>Movies alphabetically. Each movie's language and format combos stay together, shows in start order.</small></span>
+    </label>
+    <label class="mode-option" id="sort-opt-theatre" hidden>
+      <input type="radio" name="sort-mode" value="theatre-asc">
+      <span><b>Theatre</b><small>Theatre by theatre, then movies A to Z with the same grouping.</small></span>
+    </label>
+
+    <div class="category-actions">
+      <button type="button" class="category-start" id="sort-done">Done</button>
+    </div>
+  </section>
+</div>
+
+<div class="category-overlay" id="sel-overlay" hidden>
+  <section class="category-panel" role="dialog" aria-modal="true">
+    <div class="category-head">
+      <strong>Selected shows</strong>
+      <button type="button" class="filter-close" id="sel-close">✕</button>
+    </div>
+    <div class="category-sub" id="sel-sub"></div>
+    <div id="sel-list"></div>
+    <div class="category-actions">
+      <button type="button" class="category-start" id="sel-done">Done</button>
+    </div>
+  </section>
 </div>
 
 <script>
@@ -966,7 +1077,16 @@ const S = {
   selected: new Set(),
   local: {}   // API-confirmed results: key -> { tracked, ts, mode, max_price, categories }
 };
-if (!THEATRES[S.venue]) S.venue = "INTO";
+if (S.venue !== "ALL" && !THEATRES[S.venue]) S.venue = "INTO";
+
+S.sort = (() => {
+  const x = store.get("sort", null);
+  if (x && ["time", "movie", "theatre"].includes(x.by) && ["asc", "desc"].includes(x.dir)) return x;
+  return { by: "time", dir: "asc" };
+})();
+
+// "ALL" means every theatre at once
+const venuesOf = v => v === "ALL" ? Object.keys(THEATRES) : [v];
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const $ = id => document.getElementById(id);
@@ -1028,7 +1148,9 @@ async function loadTracking(venue) {
   }
 }
 
-async function load(venue) { await Promise.all([loadState(venue), loadTracking(venue)]); }
+async function load(venue) {
+  await Promise.all(venuesOf(venue).map(v => Promise.all([loadState(v), loadTracking(v)])));
+}
 
 // Tracking info for one show. A short-lived overlay (S.local) from the API
 // response takes priority until the GitHub file catches up or the TTL expires.
@@ -1205,13 +1327,16 @@ let batchBusy = false;
 
 function setBatchBusy(on) {
   batchBusy = on;
-  const b = $("batch-continue");
-  b.disabled = on;
-  b.textContent = on ? "Tracking…" : "Track Selected";
+  $("batch-continue").disabled = on;
+  $("batch-clear").disabled = on;
+  $("batch-view").disabled = on;
+  $("batch-continue").textContent = on ? "Tracking…" : "Track Selected";
+  $("batch-progress").hidden = !on;
+  updateBatchUI();
 }
 
 async function submitBatchTracking(actions, intents = {}) {
-    if (batchBusy) return;                 // ← add
+  if (batchBusy) return;
 
   if (!trackingToken) {
     preparedBatchActions = actions;       // keep for retry after login
@@ -1219,6 +1344,8 @@ async function submitBatchTracking(actions, intents = {}) {
     openLogin();
     return;
   }
+
+  setBatchBusy(true);
 
   try {
     const response = await fetch(`${TRACKING_API}/api/tracking`, {
@@ -1277,7 +1404,7 @@ async function submitBatchTracking(actions, intents = {}) {
     const sha = data.commit_sha || (results.find(r => r && r.commit_sha) || {}).commit_sha;
     if (sha) {
       useFreshSha(sha);
-      refreshTracking();   // not awaited, so the alert below isn't delayed
+      refreshTracking([...new Set(actions.map(a => a.venue))]);   // not awaited, so the alert below isn't delayed
     }
 
     if (failedLines.length) {
@@ -1292,8 +1419,7 @@ async function submitBatchTracking(actions, intents = {}) {
   } catch (e) {
     console.error("Batch tracking error:", e);
     notify(e.message || "Unable to submit batch tracking.");
-  }
-  finally {                            // ← add
+  } finally {
     setBatchBusy(false);
   }
 }
@@ -1551,7 +1677,8 @@ function setHtml(el, html) {
 }
 
 function renderVenues() {
-  setHtml($("venues"), Object.entries(THEATRES).map(([code, name]) =>
+  const all = [["ALL", "All Theatres"], ...Object.entries(THEATRES)];
+  setHtml($("venues"), all.map(([code, name]) =>
     `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join(""));
 }
 function getTelegramInitData() {
@@ -1563,8 +1690,14 @@ function getTelegramInitData() {
 }
 
 function datesFor(v) {
-  const st = S.state[v] || {};
-  return Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(live)).sort();
+  const set = new Set();
+  for (const x of venuesOf(v)) {
+    const st = S.state[x] || {};
+    Object.keys(st)
+      .filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(live))
+      .forEach(d => set.add(d));
+  }
+  return [...set].sort();
 }
 
 function renderDates() {
@@ -1602,6 +1735,11 @@ function button(v, d, id, show) {
 
   // Confirmed by the API response or by the file
   if (isTracked(v, d, id)) {
+    // Edit/Stop open Telegram and close the app, which would lose the selection
+    if (S.selected.size > 0) {
+      return `<button class="btn alt" disabled>✓ Tracking</button>
+              <button class="btn off" disabled>Stop</button>`;
+    }
     return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
             <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;
   }
@@ -1610,9 +1748,9 @@ function button(v, d, id, show) {
     return `<button class="btn off" disabled>Tracking closed</button>`;
   }
 
-  // NEW: batch mode is active, so block single-show tracking
+  // Batch selection is active, so block single-show tracking
   if (S.selected.size > 0) {
-    return `<button class="btn off" disabled>Track this show(Multiselect in progress)</button>`;
+    return `<button class="btn off" disabled>Multi-select active</button>`;
   }
 
   return `<button class="btn" data-a="pick" data-k="${key}">Track this show</button>`;
@@ -1622,7 +1760,7 @@ function renderFilters() {
   // Never rebuild while the user is using the panel
   if (!$("filter-overlay").hidden) { updateFilterUI(); return; }
 
-  const shows = Object.values((S.state[S.venue] || {})[S.date] || {});
+  const shows = showsInView().map(x => x.s);
   const options = field => [...new Set(shows.map(s => String(s[field] || "").trim()).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b));
 
@@ -1670,26 +1808,236 @@ function matchesFilters(show) {
   return true;
 }
 
-function renderList() {
-  const el = document.getElementById("list");
-  const v = S.venue;
-  if (S.failed[v] && !S.state[v]) { 
-    setHtml(el, `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`); 
-    return; 
-  }
-  const day = (S.state[v] || {})[S.date] || {};
-  const shows = Object.entries(day)
-    .filter(([, s]) => live(s) && matchesFilters(s))
-    .sort((a, b) => Date.parse(a[1].start) - Date.parse(b[1].start));
+// ── Toast, selection pruning, selection viewer ───────────
+let toastTimer = null;
+function showToast(msg, ms = 5000) {
+  const el = $("toast");
+  el.textContent = msg;
+  el.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.hidden = true; }, ms);
+}
 
-  if (!shows.length) {
+// Drop selected shows that can no longer be tracked. Returns true if anything changed.
+function pruneSelection() {
+  const gone = [];
+  let changed = false;
+
+  for (const key of [...S.selected]) {
+    const [v, d, id] = key.split("_");
+    if (!S.state[v]) continue;                 // venue not loaded yet, keep it
+    const show = ((S.state[v] || {})[d] || {})[id];
+    const unavailable = !show || closed(show) || !live(show);
+
+    if (unavailable || isTracked(v, d, id) || pending(v, d, id)) {
+      S.selected.delete(key);
+      changed = true;
+      if (unavailable) gone.push(show ? `${show.movie} ${show.time}` : "A selected show");
+    }
+  }
+
+  if (gone.length) {
+    showToast(gone.length === 1
+      ? `${gone[0]} is no longer available and was removed from your selection.`
+      : `${gone.length} selected shows are no longer available and were removed from your selection.`);
+  }
+  if (changed) updateBatchUI();
+  return changed;
+}
+
+function renderSelection() {
+  const keys = [...S.selected];
+  $("sel-sub").textContent = `${keys.length} show${keys.length === 1 ? "" : "s"} selected`;
+
+  // date -> theatre -> movie -> (language + dimension) -> shows
+  const tree = {};
+  keys.forEach(key => {
+    const [v, d, id] = key.split("_");
+    const show = ((S.state[v] || {})[d] || {})[id] || {};
+    const movie = show.movie || "Show " + id;
+    const start = Date.parse(show.start) || 0;
+    const lang = show.language || "—";
+    const dim = show.dimension || "—";
+    const gk = lang + "\u0000" + dim;
+
+    tree[d] = tree[d] || {};
+    tree[d][v] = tree[d][v] || {};
+    const m = tree[d][v][movie] = tree[d][v][movie] || { groups: {} };
+    const g = m.groups[gk] = m.groups[gk] || { lang, dim, items: [] };
+    g.items.push({ key, time: show.time || "", start, screen: show.screen || "" });
+  });
+
+  const venueOrder = Object.keys(THEATRES);
+
+  $("sel-list").innerHTML = Object.keys(tree).sort().map(d => {
+    const dl = dateLabel(d);
+    const venues = Object.keys(tree[d]).sort((a, b) => venueOrder.indexOf(a) - venueOrder.indexOf(b));
+
+    return `<div class="sel-date">${esc(dl.day)}, ${esc(dl.base)}</div>` + venues.map(v => {
+      // Movies in alphabetical order
+      const movies = Object.entries(tree[d][v])
+        .map(([name, m]) => ({ name, m }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+      // Movie A (all its language/dimension combos) -> Movie B -> ...
+      return `<div class="sel-theatre">${esc(THEATRES[v] || v)}</div>` + movies.map(({ name, m }) => {
+        const groups = Object.values(m.groups);
+        groups.forEach(g => { g.first = Math.min(...g.items.map(i => i.start)); });
+
+        // Earliest start per language, so a language's combos stay together
+        const langFirst = {};
+        groups.forEach(g => { langFirst[g.lang] = Math.min(langFirst[g.lang] ?? Infinity, g.first); });
+
+        // Same language together (earliest language first), then its combos by start time
+        groups.sort((a, b) =>
+          langFirst[a.lang] - langFirst[b.lang] ||
+          a.lang.localeCompare(b.lang) ||
+          a.first - b.first ||
+          a.dim.localeCompare(b.dim));
+
+        return groups.map(g => `
+          <div class="sel-movie">
+            <div class="sel-title">${esc(name)}</div>
+            <span class="sel-lang">${esc(g.lang)} · ${esc(g.dim)}</span>
+            <div class="sel-chips">${g.items.sort((a, b) => a.start - b.start).map(it =>
+              `<span class="sel-chip"${it.screen ? ` title="${esc(it.screen)}"` : ""}>${esc(it.time)}<button type="button" data-sel-remove="${esc(it.key)}" aria-label="Remove ${esc(it.time)}">✕</button></span>`
+            ).join("")}</div>
+          </div>`).join("");
+      }).join("");
+    }).join("");
+  }).join("");
+}
+function openSelection() {
+  if (!S.selected.size) return;
+  renderSelection();
+  $("sel-overlay").hidden = false;
+}
+function closeSelection() { $("sel-overlay").hidden = true; }
+
+// Shows on the current page (theatre + date + active filters) that can be selected
+function selectableKeys() {
+  return showsInView()
+    .filter(({ s }) => live(s) && matchesFilters(s))
+    .filter(({ v, id, s }) => !isTracked(v, S.date, id) && !closed(s) && !pending(v, S.date, id))
+    .map(x => x.key);
+}
+
+function updateSelectAll() {
+  const keys = selectableKeys();
+  const btn = $("select-all");
+  $("select-bar").hidden = keys.length === 0;
+  if (!keys.length) return;
+  const allOn = keys.every(k => S.selected.has(k));
+  btn.textContent = allOn ? `Deselect all (${keys.length})` : `Select all (${keys.length})`;
+  btn.disabled = batchBusy;
+}
+
+// Every show on the current page (one theatre, or all theatres) for the selected date
+function showsInView() {
+  const out = [];
+  for (const v of venuesOf(S.venue)) {
+    const day = (S.state[v] || {})[S.date] || {};
+    for (const [id, s] of Object.entries(day)) out.push({ v, id, s, key: `${v}_${S.date}_${id}` });
+  }
+  return out;
+}
+
+// ── Sorting ───────────────────────────────────────────────
+function effectiveSort() {
+  let { by, dir } = S.sort;
+  if (by === "theatre" && S.venue !== "ALL") by = "movie";   // same thing for one theatre
+  if (by !== "time") dir = "asc";
+  return { by, dir };
+}
+
+function sortLabel({ by, dir }) {
+  return by === "time" ? (dir === "asc" ? "Time ↑" : "Time ↓")
+    : by === "movie" ? "Movie A–Z" : "Theatre";
+}
+
+function sortItems(items) {
+  const { by, dir } = effectiveSort();
+  const order = Object.keys(THEATRES);
+  const vi = it => order.indexOf(it.v);
+  const st = it => Date.parse(it.s.start) || 0;
+  const movie = it => String(it.s.movie || "");
+  const lang = it => String(it.s.language || "—");
+  const dim = it => String(it.s.dimension || "—");
+
+  if (by === "time") {
+    const sign = dir === "desc" ? -1 : 1;
+    return items.sort((a, b) =>
+      (st(a) - st(b)) * sign || vi(a) - vi(b) || movie(a).localeCompare(movie(b)));
+  }
+
+  // movie / theatre: inside one (theatre + movie), same-language combos stay together,
+  // languages and combos ordered by earliest start, shows in start order.
+  const gk = it => it.v + "\u0000" + movie(it);
+  const langFirst = {}, comboFirst = {};
+  items.forEach(it => {
+    const lk = gk(it) + "\u0000" + lang(it);
+    const ck = lk + "\u0000" + dim(it);
+    langFirst[lk] = Math.min(langFirst[lk] ?? Infinity, st(it));
+    comboFirst[ck] = Math.min(comboFirst[ck] ?? Infinity, st(it));
+  });
+  const lf = it => langFirst[gk(it) + "\u0000" + lang(it)];
+  const cf = it => comboFirst[gk(it) + "\u0000" + lang(it) + "\u0000" + dim(it)];
+
+  const inner = (a, b) =>
+    lf(a) - lf(b) || lang(a).localeCompare(lang(b)) ||
+    cf(a) - cf(b) || dim(a).localeCompare(dim(b)) || st(a) - st(b);
+
+  return items.sort(by === "movie"
+    ? (a, b) => movie(a).localeCompare(movie(b)) || vi(a) - vi(b) || inner(a, b)
+    : (a, b) => vi(a) - vi(b) || movie(a).localeCompare(movie(b)) || inner(a, b));
+}
+
+function updateSortUI() {
+  const eff = effectiveSort();
+  $("sort-open").textContent = sortLabel(eff);
+  const val = eff.by === "time" ? `time-${eff.dir}` : `${eff.by}-asc`;
+  document.querySelectorAll('input[name="sort-mode"]').forEach(i => { i.checked = i.value === val; });
+  $("sort-opt-theatre").hidden = S.venue !== "ALL";
+  const vname = S.venue === "ALL" ? "All theatres" : THEATRES[S.venue];
+  const dl = S.date ? dateLabel(S.date) : null;
+  $("sort-sub").textContent = vname + (dl ? ` · ${dl.day}, ${dl.base}` : "");
+}
+
+function renderList() {
+  pruneSelection();
+  updateBatchUI();
+  updateSortUI();
+  const el = document.getElementById("list");
+
+  if (venuesOf(S.venue).every(x => S.failed[x] && !S.state[x])) {
+    setHtml(el, `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`);
+    return;
+  }
+
+  const items = sortItems(showsInView().filter(it => live(it.s) && matchesFilters(it.s)));
+
+  if (!items.length) {
     setHtml(el, `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`);
     updateFilterUI();
     return;
   }
 
-  const html = shows.map(([id, s]) => {
-    const meta = [s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
+  const { by } = effectiveSort();
+  let lastHead = null;
+
+  const html = items.map(({ v, id, s, key }) => {
+    // Group header when sorting by movie or theatre
+    const head = by === "movie" ? String(s.movie || "")
+      : by === "theatre" ? (THEATRES[v] || v) : null;
+    let headHtml = "";
+    if (head !== null && head !== lastHead) {
+      headHtml = `<div class="grp-head">${esc(head)}</div>`;
+      lastHead = head;
+    }
+
+    // In "All theatres" each card says which theatre it is (unless grouped by theatre)
+    const theatreName = S.venue === "ALL" && by !== "theatre" ? (THEATRES[v] || v) : "";
+    const meta = [theatreName, s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
     const dur = s.duration ? `${Math.floor(s.duration / 60)}h ${s.duration % 60}m` : "";
 
@@ -1701,7 +2049,7 @@ function renderList() {
     const classes = Object.entries(s.classes || {}).map(([name, c]) => `
       <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
-    const key = `${v}_${S.date}_${id}`;
+
     const canSelect = !isTracked(v, S.date, id)
       && !closed(s)
       && !pending(v, S.date, id);
@@ -1714,7 +2062,7 @@ function renderList() {
         Select show
       </label>` : "";
 
-    return `<article class="show">
+    return headHtml + `<article class="show">
     ${selectBox}
       <div class="show-header">
         ${posterImg}
@@ -1726,7 +2074,7 @@ function renderList() {
           ${genre}
           <div class="meta">${meta}</div>
           ${tags ? `<div class="tags">${tags}</div>` : ""}
-          
+
           <div class="show-time-row">
             <div class="time">${esc(s.time)}</div>
             <div class="dur">${dur}</div>
@@ -1749,8 +2097,10 @@ function renderList() {
 }
 
 function renderUpdated() {
-  const u = S.updated[S.venue], el = $("upd");
-  if (!u) { el.textContent = ""; return; }
+  const el = $("upd");
+  const us = venuesOf(S.venue).map(x => S.updated[x]).filter(Boolean);
+  if (!us.length) { el.textContent = ""; return; }
+  const u = us.reduce((a, b) => Date.parse(a) <= Date.parse(b) ? a : b);   // oldest of the loaded theatres
   const m = Math.max(0, Math.round((Date.now() - Date.parse(u)) / 60000));
   el.textContent = m < 1 ? "Data Updated just now" : m < 60 ? `Data Updated ${m} min ago` : `Data Updated ${Math.round(m / 60)} h ago`;
 }
@@ -1766,11 +2116,17 @@ function renderAll() {
 
 function updateBatchUI() {
   const count = S.selected.size;
+  const plural = count === 1 ? "" : "s";
 
   $("batch-bar").hidden = count === 0;
+  $("batch-count").textContent = batchBusy
+    ? `Tracking ${count} show${plural}…`
+    : `${count} show${plural} selected`;
 
-  $("batch-count").textContent =
-    `${count} show${count === 1 ? "" : "s"} selected`;
+  if (!$("sel-overlay").hidden) {
+    if (count === 0) closeSelection(); else renderSelection();
+  }
+  updateSelectAll();
 }
 function updateFilterUI() {
   const n = Object.values(S.filters).filter(Boolean).length;
@@ -1788,7 +2144,7 @@ function press(action, key, extra = "", intent = null) {
 
   // A new request makes any older SHA stale, so stop using it
   SHA = null;
-  delete S.local[key];   // ← add this
+  delete S.local[key];   // hand control back to the file-based pending logic
 
   pend[key] = {
     a: action,
@@ -1833,9 +2189,27 @@ document.addEventListener("click", async e => {
   const t = e.target.closest("button");
   if (!t) return;
 
+  if (t.dataset.selRemove) {
+    S.selected.delete(t.dataset.selRemove);
+    renderList();
+    return;
+  }
+  if (t.id === "batch-view") { openSelection(); return; }
+  if (t.id === "sel-close" || t.id === "sel-done") { closeSelection(); return; }
+  if (t.id === "select-all") {
+    if (batchBusy) return;
+    const keys = selectableKeys();
+    const allOn = keys.every(k => S.selected.has(k));
+    keys.forEach(k => allOn ? S.selected.delete(k) : S.selected.add(k));
+    renderList();
+    return;
+  }
+
   if (t.id === "category-close" || t.id === "category-cancel") return closeCategoryPicker();
   if (t.id === "category-save") return saveCategorySelection();
   if (t.id === "filter-open") { $("filter-overlay").hidden = false; return; }
+  if (t.id === "sort-open") { updateSortUI(); $("sort-overlay").hidden = false; return; }
+  if (t.id === "sort-close" || t.id === "sort-done") { $("sort-overlay").hidden = true; return; }
   if (t.id === "filter-clear-quick" || t.dataset.filterReset !== undefined) return clearFilters();
 
   if (t.dataset.v) {
@@ -1865,14 +2239,14 @@ document.addEventListener("click", async e => {
   }
 
   if (t.id === "batch-clear") {
+    if (batchBusy) return;
     S.selected.clear();
     renderList();
     return;
   }
 
   if (t.id === "batch-continue") {
-        if (batchBusy) return;               // ← add
-
+    if (batchBusy) return;
     openBatchCategoryPicker();
     return;
   }
@@ -1901,14 +2275,21 @@ document.addEventListener("click", async e => {
 
 document.addEventListener("change", e => {
   if (e.target.name === "track-mode") return updateCategoryMode();
+  if (e.target.name === "sort-mode") {
+    const [by, dir] = e.target.value.split("-");
+    S.sort = { by, dir };
+    store.set("sort", S.sort);
+    renderList();
+    return;
+  }
   if (e.target.id && e.target.id.startsWith("filter-")) {
     S.filters[e.target.id.replace("filter-", "")] = e.target.value;
     renderList();
   }
   if (e.target.matches("[data-select-key]")) {
     const key = e.target.dataset.selectKey;
-        const before = S.selected.size;          // NEW
 
+    const before = S.selected.size;
 
     if (e.target.checked) {
       S.selected.add(key);
@@ -1917,7 +2298,7 @@ document.addEventListener("change", e => {
     }
 
     updateBatchUI();
-     // NEW: redraw only when we cross between 0 and 1+ selected
+    // Redraw cards only when crossing between 0 and 1+ selected
     if ((before === 0) !== (S.selected.size === 0)) renderList();
     return;
   }
@@ -1926,6 +2307,8 @@ document.addEventListener("change", e => {
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
     $("filter-overlay").hidden = true;
+    $("sort-overlay").hidden = true;
+    closeSelection();
     if (categorySelection) closeCategoryPicker();
   }
 });
@@ -1940,15 +2323,15 @@ async function refreshAll() {
 
 async function refreshState() {
   const venue = S.venue;
-  await loadState(venue);
+  await Promise.all(venuesOf(venue).map(loadState));
   if (venue === S.venue) { renderDates(); renderFilters(); renderList(); renderUpdated(); }
 }
 
-async function refreshTracking() {
-  const venue = S.venue;
-  await loadTracking(venue);
+// Refresh tracking for the given theatres (default: whatever is on screen)
+async function refreshTracking(vs) {
+  await Promise.all((vs || venuesOf(S.venue)).map(v => loadTracking(v)));
   prunePending();
-  if (venue === S.venue) renderList();   // setHtml skips the DOM if nothing changed
+  renderList();   // setHtml skips the DOM if nothing changed
 }
 
 // Countdown: only updates text, never rebuilds buttons
@@ -1973,11 +2356,16 @@ setInterval(() => { if (!document.hidden) refreshState(); }, 30000);
 // Fast polling only while a Telegram-bot request is pending; slow background sync otherwise
 setInterval(() => {
   if (document.hidden) return;
-  if (Object.keys(store.get("pend", {})).length > 0) refreshTracking();
+  // Only theatres that have a pending Telegram request need the fast poll
+  const pv = [...new Set(Object.keys(store.get("pend", {})).map(k => k.split("_")[0]))].filter(x => THEATRES[x]);
+  if (pv.length) refreshTracking(pv);
 }, 5000);
 setInterval(() => { if (!document.hidden) refreshTracking(); }, 60000);
 
 setInterval(() => { if (!document.hidden) tickCountdown(); }, 1000);
+
+// Catch shows that hit the cutoff while you are still on the page
+setInterval(() => { if (!document.hidden && pruneSelection()) renderList(); }, 1000);
 
 renderAll();
 refreshAll();

@@ -62,11 +62,18 @@ import re
 
 from curl_cffi import requests as bms_req
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 IST = ZoneInfo("Asia/Kolkata")
+
+class ISTFormatter(logging.Formatter):
+    def formatTime(self, record, datefmt=None):
+        return datetime.fromtimestamp(record.created, IST).strftime("%Y-%m-%d %H:%M:%S")
+
+_h = logging.StreamHandler()
+_h.setFormatter(ISTFormatter("%(asctime)s [%(levelname)s] %(message)s"))
+logging.basicConfig(level=logging.INFO, handlers=[_h])
 
 # Venue codes from BMS's Chennai cinema list
 TARGET_THEATRES = {
@@ -204,14 +211,14 @@ def show_subs(show):
     return f"{code} subs" if code else "Subtitles"
 
 
-def touch_class(c, status, price, now):
-    """Update a stored seat class. Timestamps only change when something really changed,
-    so unchanged runs still make no commits."""
+def touch_class(c, status, price, now, label=""):
     iso = now.isoformat(timespec="seconds")
     old_price, old_status = c.get("price"), c.get("status")
     if old_price is not None and old_price != price:
+        logging.info(f"💰 {label}: price {old_price:g} → {price:g}")
         c["prev_price"], c["price_changed_at"] = old_price, iso
     if old_status is not None and old_status != status:
+        logging.info(f"📊 {label}: status {STATUS_NAMES.get(old_status, old_status)} → {STATUS_NAMES.get(status, status)}")
         c["status_changed_at"] = iso
         if status == "0":
             c["sold_out_at"] = iso
@@ -307,6 +314,7 @@ def save_all(state, meta, now):
         out = dict(data)
         out["_updated"] = now.isoformat(timespec="seconds")
         write_json(path, out)
+        logging.info(f"💾 Wrote {path} ({sum(len(d) for d in data.values())} dates)")
     if read_json(META_FILE, {}) != meta:
         write_json(META_FILE, meta)
 
@@ -512,16 +520,22 @@ def announce_time_changes(state, tracking, changes):
 
 def fetch_showtimes(session, venue, date_code):
     url = SHOWTIMES_URL.format(date=date_code, venue=venue)
-    for _ in range(2):
+    for attempt in (1, 2):
+        t0 = time.monotonic()
         try:
             r = session.get(url, headers=BMS_HEADERS, timeout=12)
+            ms = int((time.monotonic() - t0) * 1000)
             if r.status_code == 200:
+                logging.info(f"{venue} {date_code}: HTTP 200 in {ms}ms (try {attempt})")
                 return r.json()
-            logging.warning(f"{venue} {date_code}: HTTP {r.status_code}")
+            server = r.headers.get("server", "?")
+            snippet = (r.text or "")[:120].replace("\n", " ")
+            logging.warning(f"{venue} {date_code}: HTTP {r.status_code} in {ms}ms (try {attempt}) "
+                            f"server={server} body='{snippet}'")
             if 400 <= r.status_code < 500:
-                return None  # blocked or bad request; retrying won't help
+                return None
         except Exception as e:
-            logging.warning(f"{venue} {date_code}: {type(e).__name__}: {e}")
+            logging.warning(f"{venue} {date_code}: {type(e).__name__}: {e} (try {attempt})")
         time.sleep(2)
     return None
 
@@ -559,8 +573,11 @@ def register_shows(vstate, venue, data, now):
         entry = day_shows.setdefault(sid, {"classes": {}, "time": ""})
         if is_new:
             entry["first_seen"] = now.isoformat(timespec="seconds")   # set once
+            logging.info(f"🆕 Show added: {venue} {date_code} {sid} · {title} · "
+                 f"{child.get('EventLanguage')} {child.get('EventDimension')} · {show.get('ShowTime')}")
         new_time = show.get("ShowTime") or ""
         if entry.get("time") and new_time and new_time != entry["time"]:
+            logging.info(f"⏰ Time change: {venue} {date_code}/{sid} {entry['time']} → {new_time}")
             changes.append({"venue": venue, "date": date_code, "session": sid,
                             "old": entry["time"], "new": new_time})
         cutoff = parse_bms_time(show.get("CutOffDateTime"))
@@ -648,7 +665,7 @@ def check_category(venue, day, child, show, cat, duration, clean_title, vstate, 
             # Classes stored before first_seen existed get their first_seen values from now on
             prev.setdefault("first_seen_status", prev_status)
             prev.setdefault("first_seen_time", now.isoformat(timespec="seconds"))
-            touch_class(prev, status, price, now)   # no ping, but keep availability current
+            touch_class(prev, status, price, now, f"{venue} {date_code}/{sid} {desc}")
             return None
 
     return {
@@ -692,6 +709,9 @@ def scan(session, state, now):
                 continue
 
             stats[venue]["ok"] += 1
+            n_shows = sum(len(day.get("Event") or []) for day in data.get("ShowDetails") or [])
+
+            logging.info(f"{venue} {date_code}: {n_shows} movies, {len(vstate.get(date_code, {}))} shows stored")
             try:
                 changes += register_shows(vstate, venue, data, now)
             except Exception as e:
@@ -723,7 +743,10 @@ def scan(session, state, now):
             for sid, s in shows.items():
                 for desc, c in s.get("classes", {}).items():
                     if (venue, date_code, sid, desc) not in seen and c.get("status") != "0":
-                        touch_class(c, "0", c.get("price"), now)
+                        touch_class(c, "0", c.get("price"), now, f"{venue} {date_code}/{sid} {desc} (vanished)")
+
+    logging.info(f"📍 {venue} done: {stats[venue]['ok']} ok / {stats[venue]['failed']} failed of {len(done)} dates")
+
 
     return hits, stats, changes
 
@@ -753,6 +776,7 @@ def cleanup_ended(state, tracking, now):
                 if thread and tc and (venue, thread) not in alive and (venue, thread) not in deleted:
                     ok, body = tg_api("deleteForumTopic", {"chat_id": tc, "message_thread_id": thread})
                     gone = "thread" in body.get("description", "").lower()
+                    logging.info(f"Topic {thread} delete: ok={ok} gone={gone}")
                     if ok or gone:
                         deleted.add((venue, thread))
                         orig = entry_thread(tracking_entry(tracking, venue, date_code, sid))
@@ -760,7 +784,8 @@ def cleanup_ended(state, tracking, now):
                     else:
                         s["cleanup_tries"] = s.get("cleanup_tries", 0) + 1
                         if s["cleanup_tries"] < CLEANUP_MAX_TRIES:
-                            continue                  # retry next run
+                            continue 
+                logging.info(f"🧹 Expired: {venue} {date_code}/{sid} {s.get('movie')} {s.get('time')}")                 # retry next run
                 shows.pop(sid)
             if not shows:
                 dates.pop(date_code)
@@ -979,6 +1004,7 @@ def apply_rules(state, rules, rule_threads, now):
                                     "tracked_at": now.isoformat(timespec="seconds")}]
                     show["tracked_by_rules"] = done
                     count += 1
+                    logging.info(f"✅ Rule '{rule['name']}' matched {venue} {date_code}/{sid} {show.get('movie')} {show.get('time')}")
                     line = (f"• {html.escape(format_date(date_code))} · {html.escape(show.get('time', ''))} · "
                             f"{html.escape(show.get('movie', ''))} "
                             f"({html.escape(' '.join(x for x in (show.get('language'), show.get('dimension')) if x))})")
@@ -1082,7 +1108,7 @@ def record_alert(state, h, now):
     else:
         c.setdefault("first_seen_status", c.get("status") or h["status"])
         c.setdefault("first_seen_time", iso)
-    touch_class(c, h["status"], h["price"], now)
+    touch_class(c, h["status"], h["price"], now, f"{h['venue']} {h['date']}/{h['session']} {h['category']}")
     c["soon_alerted"] = h["soon"] or c.get("soon_alerted", False)
 
 
@@ -1138,6 +1164,10 @@ def send_alerts(hits, state, tracking, now, rules_by_id=None, rule_threads=None)
     for (v, d, s, _rid), (rule, group) in by_rule.items():
         for h in _deliver(group, v, d, lambda t, v=v, d=d, rule=rule: send_rule(rule_threads, rule, v, d, t)):
             dest[h["key"]][1] += 1
+    logging.info(f"Alert plan: {len(hits)} hits → {len(manual)} manual groups, {len(by_rule)} rule groups")
+    for h in hits:
+      logging.info(f"  {h['kind'].upper():6} {h['venue']} {h['date']}/{h['session']} "
+                 f"{h['category']} ₹{h['price']:g} · {h['movie']} · dest={dest[h['key']][0]}")
 
     sent = 0
     for h in hits:
@@ -1205,8 +1235,7 @@ def main():
         if hits or rules_by_id:
             logging.info(f"Telegram alerts delivered: "
                          f"{send_alerts(hits, state, tracking, now, rules_by_id, rule_threads)}/{len(hits)}")
-        if hits:
-            logging.info(f"Telegram alerts delivered: {send_alerts(hits, state, tracking, now)}/{len(hits)}")
+
         if changes:
             announce_time_changes(state, tracking, changes)
         healthy = check_health(meta, stats)
@@ -1224,6 +1253,10 @@ def main():
     except Exception:
         logging.exception("Rule thread cleanup failed")
     save_rule_threads(rule_threads)
+    total_shows = sum(len(s) for d in state.values() for s in d.values())
+    logging.info(f"━━ RUN SUMMARY ━━ healthy={healthy} · shows={total_shows} · "
+             f"hits={len(hits) if 'hits' in locals() else 0} · "
+             f"failed_requests={failed if 'failed' in locals() else '?'}")
     save_all(state, meta, now)
     return 0 if healthy else 1
 

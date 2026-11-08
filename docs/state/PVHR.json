@@ -17,8 +17,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 237.49,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-08T22:40:56+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-08T23:35:00+05:30",
@@ -39,55 +39,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/44298/20261108"
   },
-  "44850": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 89.35,
-     "reopened_at": "2026-11-08T15:01:08+05:30",
-     "sold_out_at": "2026-11-08T19:10:54+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T19:10:54+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 218.8,
-     "reopened_at": "2026-11-08T22:10:53+05:30",
-     "sold_out_at": "2026-11-08T22:40:56+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T22:40:56+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T23:05:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-08T22:50:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI 04",
-   "start": "2026-11-08T22:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "10:20 PM",
-   "tracked_by_rules": [
-    {
-     "rule": "Weekend Vibes",
-     "rule_id": "rmw7xj181lkw",
-     "tracked_at": "2026-11-08T20:22:02+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/44850/20261108"
-  },
   "44862": {
    "censor": "UA16+",
    "classes": {
@@ -105,10 +56,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "reopened_at": "2026-11-08T22:40:56+05:30",
-     "sold_out_at": "2026-11-08T19:31:26+05:30",
+     "sold_out_at": "2026-11-08T22:50:53+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T22:40:56+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-08T23:25:00+05:30",
@@ -287,10 +238,11 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-08T22:50:53+05:30",
      "sold_out_at": "2026-11-08T21:01:10+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T21:01:10+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-08T23:45:00+05:30",
@@ -421,8 +373,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:31:21+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-09T09:55:00+05:30",
@@ -460,10 +412,11 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-08T22:50:53+05:30",
      "sold_out_at": "2026-11-08T19:40:56+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T19:40:56+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-09T13:05:00+05:30",
@@ -1216,7 +1169,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T22:50:53+05:30"
     }
    },
    "cutoff": "2026-11-09T23:15:00+05:30",
@@ -5751,5 +5705,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45088/20261111"
   }
  },
- "_updated": "2026-11-08T22:40:56+05:30"
+ "_updated": "2026-11-08T22:50:53+05:30"
 }

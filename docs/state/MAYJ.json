@@ -597,7 +597,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -721,7 +722,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-08T19:50:00+05:30",
@@ -788,7 +790,7 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-07T20:01:09+05:30"
     },
@@ -796,7 +798,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 57.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-08T09:50:48+05:30"
     }
@@ -1194,38 +1196,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/241892/20261108"
   },
-  "241917": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-08T10:40:50+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T10:40:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T10:25:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-08T10:45:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 13",
-   "start": "2026-11-08T10:15:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:15 AM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/241917/20261108"
-  },
   "241918": {
    "censor": "UA16+",
    "classes": {
@@ -1331,9 +1301,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
+     "sold_out_at": "2026-11-08T10:50:48+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T10:31:21+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-08T11:10:00+05:30",
@@ -1372,8 +1343,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T09:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-08T15:10:00+05:30",
@@ -1411,7 +1382,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-08T19:10:00+05:30",
@@ -1526,8 +1498,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T10:20:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-08T14:40:00+05:30",
@@ -2557,7 +2529,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:50:48+05:30"
     }
    },
    "cutoff": "2026-11-09T14:10:00+05:30",
@@ -5008,5 +4981,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242093/20261109"
   }
  },
- "_updated": "2026-11-08T10:40:50+05:30"
+ "_updated": "2026-11-08T10:50:48+05:30"
 }

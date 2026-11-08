@@ -1,41 +1,5 @@
 {
  "20261108": {
-  "15200": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 252.49,
-     "soon_alerted": true,
-     "status": "1"
-    },
-    "NORMAL": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 109.43,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T09:20:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T10:05:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-08T10:20:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI01",
-   "start": "2026-11-08T09:50:00+05:30",
-   "tags": [],
-   "time": "09:50 AM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/15200/20261108"
-  },
   "15201": {
    "censor": "U",
    "classes": {
@@ -318,8 +282,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T09:20:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T23:35:00+05:30",
@@ -355,8 +319,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T09:31:22+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T12:50:00+05:30",
@@ -545,9 +509,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 104.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
+     "sold_out_at": "2026-11-08T10:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:40:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T15:45:00+05:30",
@@ -609,10 +574,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 233.8,
+     "reopened_at": "2026-11-08T10:20:51+05:30",
      "sold_out_at": "2026-11-08T10:10:48+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T10:10:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -841,10 +807,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-08T10:20:51+05:30",
      "sold_out_at": "2026-11-08T09:40:51+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T09:40:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -964,9 +931,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
+     "sold_out_at": "2026-11-08T10:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T10:10:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T23:55:00+05:30",
@@ -1151,7 +1119,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1230,10 +1199,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-08T09:20:52+05:30",
-     "sold_out_at": "2026-11-08T09:10:46+05:30",
+     "sold_out_at": "2026-11-08T10:20:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T09:20:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-08T23:05:00+05:30",
@@ -1376,8 +1345,8 @@
      "first_seen_time": "2026-11-08T08:31:21+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T10:10:48+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1603,8 +1572,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T08:20:48+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T08:20:48+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-09T14:05:00+05:30",
@@ -2041,8 +2010,8 @@
      "price": 104.35,
      "reopened_at": "2026-11-08T08:20:48+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T08:20:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     }
    },
    "cutoff": "2026-11-09T22:40:00+05:30",
@@ -2290,8 +2259,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T10:10:48+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2659,7 +2628,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T10:20:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6988,5 +6958,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15916/20261112"
   }
  },
- "_updated": "2026-11-08T10:10:48+05:30"
+ "_updated": "2026-11-08T10:20:51+05:30"
 }

@@ -81,18 +81,20 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
+     "reopened_at": "2026-11-08T18:50:52+05:30",
      "sold_out_at": "2026-11-08T18:31:29+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T18:31:29+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T18:50:52+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
+     "sold_out_at": "2026-11-08T18:50:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T13:31:26+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T18:50:52+05:30"
     }
    },
    "cutoff": "2026-11-08T23:35:00+05:30",
@@ -441,8 +443,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 218.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T18:20:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T18:50:52+05:30"
     }
    },
    "cutoff": "2026-11-09T09:35:00+05:30",
@@ -3015,5 +3017,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/TVHP/26498/20261114"
   }
  },
- "_updated": "2026-11-08T18:40:52+05:30"
+ "_updated": "2026-11-08T18:50:52+05:30"
 }

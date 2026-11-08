@@ -117,6 +117,8 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .tile.soldout{opacity:.38}
 .tile-check{width:16px;height:16px;margin:0;flex:none;accent-color:var(--accent)}
 .tile-main{flex:1;min-width:0;display:grid}
+.tile-top{display:flex;align-items:center;gap:6px}
+.tile-top .sub-badge{margin-bottom:2px}
 .tile-time{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tile-screen{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tile-fmt{display:flex;flex-wrap:wrap;align-items:center;gap:2px 5px;margin-top:1px;font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2);line-height:1.25}
@@ -959,6 +961,18 @@ function mostCommon(arr) {
   return best;
 }
 
+// Fixed order for every movie. Missing ones are simply skipped; existing ones are never merged.
+const LANG_ORDER = ["tamil", "english", "hindi", "telugu", "malayalam", "kannada"];   // rest: A to Z
+const langRank = l => { const i = LANG_ORDER.indexOf(String(l).trim().toLowerCase()); return i < 0 ? LANG_ORDER.length : i; };
+function dimRank(d) {   // 2D, 3D, IMAX*, EPIQ*, then the rest (A to Z)
+  const x = String(d).trim().toLowerCase();
+  if (x === "2d") return 0;
+  if (x === "3d") return 1;
+  if (x.includes("imax")) return 2;
+  if (x.includes("epiq")) return 3;
+  return 4;
+}
+
 function groupShows(items) {
   const { by, dir } = effectiveSort();
   const sign = dir === "desc" ? -1 : 1;
@@ -984,9 +998,11 @@ function groupShows(items) {
       ? (a, b) => (a.first - b.first) * sign || a.name.localeCompare(b.name)
       : (a, b) => a.name.localeCompare(b.name))
     .map(m => {
-      const langs = Object.values(m.langs).sort((a, b) => a.first - b.first || a.lang.localeCompare(b.lang));
+      const langs = Object.values(m.langs).sort((a, b) =>
+        langRank(a.lang) - langRank(b.lang) || a.lang.localeCompare(b.lang));
       langs.forEach(l => {
-        l.list = Object.values(l.dims).sort((a, b) => a.first - b.first || a.dim.localeCompare(b.dim));
+        l.list = Object.values(l.dims).sort((a, b) =>
+          dimRank(a.dim) - dimRank(b.dim) || a.dim.localeCompare(b.dim));
         l.list.forEach(d => d.items.sort((a, b) => (st(a) - st(b)) * sign));
       });
       m.list = langs;
@@ -1006,7 +1022,7 @@ function tileHtml(it) {
   const sub = subBadge(s);
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
     ${box}
-    <span class="tile-main"><span class="tile-time">${esc(s.time)}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt || sub ? `<span class="tile-fmt">${fmt}${sub}</span>` : ""}</span>
+    <span class="tile-main"><span class="tile-top"><span class="tile-time">${esc(s.time)}</span>${sub}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</span>
     <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}</span>
   </div>`;
 }

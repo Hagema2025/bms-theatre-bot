@@ -15,8 +15,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 109.43,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-07T21:50:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T10:05:00+05:30",
@@ -538,9 +538,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 104.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
+     "sold_out_at": "2026-11-08T09:01:06+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:20:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T11:50:00+05:30",
@@ -726,8 +727,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T13:45:00+05:30",
@@ -875,9 +876,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
+     "sold_out_at": "2026-11-08T09:01:06+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:31:21+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T11:20:00+05:30",
@@ -950,8 +952,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T08:01:06+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:01:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T17:35:00+05:30",
@@ -987,8 +989,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:50:52+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T23:55:00+05:30",
@@ -1015,8 +1017,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T09:01:06+05:30",
      "soon_alerted": true,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1286,8 +1290,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T07:40:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T23:05:00+05:30",
@@ -1401,8 +1405,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:40:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T20:45:00+05:30",
@@ -2525,8 +2529,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-08T09:01:06+05:30",
      "soon_alerted": false,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2788,8 +2794,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T08:20:48+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:50:52+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-09T07:45:00+05:30",
@@ -4701,10 +4707,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T12:00:00+05:30",
+   "cutoff": "2026-11-11T16:15:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T12:15:00+05:30",
+   "end": "2026-11-11T16:30:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4712,9 +4718,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T11:45:00+05:30",
+   "start": "2026-11-11T16:00:00+05:30",
    "tags": [],
-   "time": "11:45 AM",
+   "time": "04:00 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15820/20261111"
   },
@@ -4773,10 +4779,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T19:25:00+05:30",
+   "cutoff": "2026-11-11T19:40:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T19:40:00+05:30",
+   "end": "2026-11-11T19:55:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4784,9 +4790,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T19:10:00+05:30",
+   "start": "2026-11-11T19:25:00+05:30",
    "tags": [],
-   "time": "07:10 PM",
+   "time": "07:25 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15822/20261111"
   },
@@ -4808,10 +4814,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T23:00:00+05:30",
+   "cutoff": "2026-11-11T23:05:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T23:15:00+05:30",
+   "end": "2026-11-11T23:20:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4819,9 +4825,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T22:45:00+05:30",
+   "start": "2026-11-11T22:50:00+05:30",
    "tags": [],
-   "time": "10:45 PM",
+   "time": "10:50 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15823/20261111"
   },
@@ -5629,6 +5635,76 @@
    "time": "10:20 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/15912/20261111"
+  },
+  "15917": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-11T12:50:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-11T13:05:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-08T09:01:06+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-11T12:35:00+05:30",
+   "tags": [],
+   "time": "12:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15917/20261111"
+  },
+  "15918": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-11T09:45:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-11T10:00:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-08T09:01:06+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI03",
+   "start": "2026-11-11T09:30:00+05:30",
+   "tags": [],
+   "time": "09:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15918/20261111"
   }
  },
  "20261112": {
@@ -6895,7 +6971,77 @@
    "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=l7ojGbmxtr0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15910/20261112"
+  },
+  "15915": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-12T22:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-12T22:50:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-08T09:01:06+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-12T22:20:00+05:30",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/15915/20261112"
+  },
+  "15916": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T09:01:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-12T09:45:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-12T10:00:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-08T09:01:06+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI03",
+   "start": "2026-11-12T09:30:00+05:30",
+   "tags": [],
+   "time": "09:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15916/20261112"
   }
  },
- "_updated": "2026-11-08T08:50:52+05:30"
+ "_updated": "2026-11-08T09:01:06+05:30"
 }

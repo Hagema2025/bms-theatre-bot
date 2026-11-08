@@ -478,7 +478,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T15:40:00+05:30",
@@ -621,7 +622,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T15:40:00+05:30",
@@ -1483,14 +1485,14 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
@@ -1607,7 +1609,8 @@
      "first_seen_time": "2026-11-07T23:01:06+05:30",
      "price": 89.76,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     }
    },
    "cutoff": "2026-11-08T23:10:00+05:30",
@@ -1905,7 +1908,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T09:01:06+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2517,45 +2521,6 @@
    "time": "11:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242038/20261108"
-  },
-  "242046": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 219.2,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-07T21:31:28+05:30"
-    },
-    "SECOND CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T23:01:06+05:30",
-     "price": 89.76,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:10:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T08:40:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-08T09:00:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 9",
-   "start": "2026-11-08T08:30:00+05:30",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "08:30 AM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242046/20261108"
   },
   "242048": {
    "censor": "UA16+",
@@ -5225,5 +5190,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242093/20261109"
   }
  },
- "_updated": "2026-11-08T08:50:52+05:30"
+ "_updated": "2026-11-08T09:01:06+05:30"
 }

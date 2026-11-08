@@ -928,6 +928,7 @@ function debugLog(...args) {
 const BOT = "Bms_ticketAlert_bot";
 const CUTOFF_MIN = 10;
 const PENDING_MIN = 6;   // must outlast the ~5 min raw.githubusercontent.com cache
+const LOCAL_TTL = PENDING_MIN * 60000;   // how long an API-confirmed result overrides the file
 const THEATRES = {
   INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
@@ -938,8 +939,16 @@ const EMPTY_FILTERS = { movie: "", language: "", dimension: "", screen: "", time
 // Fresh commit passed in by the bot's "Back to app" button (?sha=<40 hex chars>)
 const SHA_PARAM = new URLSearchParams(location.search).get("sha") || "";
 let SHA = /^[0-9a-f]{40}$/.test(SHA_PARAM) ? SHA_PARAM : null;
-const SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
+let SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
 const activeSha = () => (SHA && Date.now() < SHA_UNTIL) ? SHA : null;
+
+// Pin tracking reads to a commit we know contains our change
+function useFreshSha(sha) {
+  if (/^[0-9a-f]{40}$/.test(sha || "")) {
+    SHA = sha;
+    SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
+  }
+}
 
 // ── State ─────────────────────────────────────────────────
 const tg = window.Telegram && window.Telegram.WebApp;
@@ -954,8 +963,8 @@ const S = {
   date: null,
   state: {}, track: {}, updated: {}, failed: {},
   filters: { ...EMPTY_FILTERS },
-    selected: new Set()
-
+  selected: new Set(),
+  local: {}   // API-confirmed results: key -> { tracked, ts, mode, max_price, categories }
 };
 if (!THEATRES[S.venue]) S.venue = "INTO";
 
@@ -1021,7 +1030,23 @@ async function loadTracking(venue) {
 
 async function load(venue) { await Promise.all([loadState(venue), loadTracking(venue)]); }
 
-const trackOf = (v, d, s) => (((S.track[v] || {})[d] || {})[s]) || {};
+// Tracking info for one show. A short-lived overlay (S.local) from the API
+// response takes priority until the GitHub file catches up or the TTL expires.
+function trackOf(v, d, s) {
+  const key = `${v}_${d}_${s}`;
+  const base = (((S.track[v] || {})[d] || {})[s]) || {};
+  const o = S.local[key];
+  if (!o) return base;
+
+  // Expired, or the file has caught up -> drop overlay
+  if (Date.now() - o.ts > LOCAL_TTL || !!base.tracked === o.tracked) {
+    delete S.local[key];
+    return base;
+  }
+  return o.tracked
+    ? { ...base, tracked: true, mode: o.mode, max_price: o.max_price, categories: o.categories }
+    : { ...base, tracked: false };
+}
 const isTracked = (v, d, s) => !!trackOf(v, d, s).tracked;
 
 // ── Pending (waiting for bot) ─────────────────────────────
@@ -1167,8 +1192,30 @@ async function trackingLogin() {
   }
 }
 
-async function submitBatchTracking(actions) {
+// Decide whether one entry of data.results means success.
+// Adjust this if your backend uses different field names.
+function resultOk(r) {
+  if (!r) return false;
+  if (typeof r.success === "boolean") return r.success;
+  if (typeof r.ok === "boolean") return r.ok;
+  return ["ok", "success", "tracked"].includes(String(r.status || "").toLowerCase());
+}
+
+let batchBusy = false;
+
+function setBatchBusy(on) {
+  batchBusy = on;
+  const b = $("batch-continue");
+  b.disabled = on;
+  b.textContent = on ? "Tracking…" : "Track Selected";
+}
+
+async function submitBatchTracking(actions, intents = {}) {
+    if (batchBusy) return;                 // ← add
+
   if (!trackingToken) {
+    preparedBatchActions = actions;       // keep for retry after login
+    preparedBatchIntents = intents;
     openLogin();
     return;
   }
@@ -1188,6 +1235,8 @@ async function submitBatchTracking(actions) {
     if (response.status === 401) {
       trackingToken = null;
       sessionStorage.removeItem("tracking_token");
+      preparedBatchActions = actions;     // keep for retry after login
+      preparedBatchIntents = intents;
       openLogin();
       return;
     }
@@ -1196,21 +1245,56 @@ async function submitBatchTracking(actions) {
       throw new Error(data.error || "Tracking request failed.");
     }
 
-    notify(
-      `Batch tracking completed.\n\n` +
-      `Successful: ${data.succeeded}\n` +
-      `Failed: ${data.failed}`
-    );
+    const results = Array.isArray(data.results) ? data.results : [];
+    const failedLines = [];
 
-    if (data.failed > 0) {
-      console.log("Batch tracking results:", data.results);
+    actions.forEach((a, i) => {
+      const key = `${a.venue}_${a.date}_${a.session}`;
+      const r = results[i];
+
+      if (resultOk(r)) {
+        S.local[key] = {
+          tracked: true,
+          ts: Date.now(),
+          ...(intents[key] || { mode: "all", max_price: null, categories: [] })
+        };
+        S.selected.delete(key);
+      } else {
+        const show = ((S.state[a.venue] || {})[a.date] || {})[a.session];
+        failedLines.push(
+          `• ${show ? show.movie + " " + show.time : key}` +
+          (r && (r.message || r.error) ? " – " + (r.message || r.error) : "")
+        );
+        // failed shows stay selected so the user can retry
+      }
+    });
+
+    renderList();      // buttons update instantly from the API response
+    updateBatchUI();
+
+    // Backend returns commit_sha on each successful result (same commit for all).
+    // Read the tracking file at that exact commit so it is fresh, not cached.
+    const sha = data.commit_sha || (results.find(r => r && r.commit_sha) || {}).commit_sha;
+    if (sha) {
+      useFreshSha(sha);
+      refreshTracking();   // not awaited, so the alert below isn't delayed
     }
 
-    await refreshTracking();
+    if (failedLines.length) {
+      notify(
+        `Tracked: ${data.succeeded}\n` +
+        `Failed: ${data.failed}\n\n` +
+        failedLines.join("\n")
+      );
+    }
+    // No toast on full success: the buttons turning green is the feedback.
 
   } catch (e) {
     console.error("Batch tracking error:", e);
     notify(e.message || "Unable to submit batch tracking.");
+  }
+  finally {                            // ← add
+    setBatchBusy(false);
   }
 }
 
@@ -1330,6 +1414,7 @@ function closeCategoryPicker() {
 }
 
 let preparedBatchActions = [];
+let preparedBatchIntents = {};
 
 function saveCategorySelection() {
   const isBatch = batchSelection.length > 0;
@@ -1359,22 +1444,27 @@ function saveCategorySelection() {
   // ── Batch tracking ─────────────────────────────
   if (isBatch) {
     const actions = [];
+    const intents = {};
 
     for (const item of batchSelection) {
       const { v, d, id, classes } = item;
 
       let selection = "a";
+      let intent = { mode: "all", max_price: null, categories: [] };
 
       if (mode === "budget") {
         selection = "b" + maxPrice;
+        intent = { mode: "budget", max_price: maxPrice, categories: [] };
       }
 
       if (mode === "manual") {
         let mask = 0;
+        const names = [];
 
         classes.forEach(([name], i) => {
           if (checked.includes(name)) {
             mask |= (1 << i);
+            names.push(name);
           }
         });
 
@@ -1382,6 +1472,7 @@ function saveCategorySelection() {
         if (mask === 0) continue;
 
         selection = "m" + mask.toString(36);
+        intent = { mode: "manual", max_price: null, categories: names };
       }
 
       actions.push({
@@ -1391,6 +1482,7 @@ function saveCategorySelection() {
         date: d,
         selection
       });
+      intents[`${v}_${d}_${id}`] = intent;
     }
 
     if (!actions.length) {
@@ -1398,13 +1490,12 @@ function saveCategorySelection() {
     }
 
     preparedBatchActions = actions;
-
-    console.log("Prepared batch tracking actions:", actions);
+    preparedBatchIntents = intents;
 
     closeCategoryPicker();
     batchSelection = [];
 
-    return submitBatchTracking(actions);
+    return submitBatchTracking(actions, intents);
   }
 
   // ── Existing individual tracking ───────────────
@@ -1509,7 +1600,7 @@ function button(v, d, id, show) {
             <button class="btn off" data-a="cancel" data-k="${key}">Cancel</button>`;
   }
 
-  // Confirmed by the file
+  // Confirmed by the API response or by the file
   if (isTracked(v, d, id)) {
     return `<button class="btn alt" data-a="edit" data-k="${key}">✓ Tracking · Edit</button>
             <button class="btn off" data-a="unt" data-k="${key}">Stop</button>`;
@@ -1606,17 +1697,17 @@ function renderList() {
       <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
     const key = `${v}_${S.date}_${id}`;
-const canSelect = !isTracked(v, S.date, id)
-  && !closed(s)
-  && !pending(v, S.date, id);
+    const canSelect = !isTracked(v, S.date, id)
+      && !closed(s)
+      && !pending(v, S.date, id);
 
-const selectBox = canSelect ? `
-  <label class="show-select">
-    <input type="checkbox"
-      data-select-key="${key}"
-      ${S.selected.has(key) ? "checked" : ""}>
-    Select show
-  </label>` : "";
+    const selectBox = canSelect ? `
+      <label class="show-select">
+        <input type="checkbox"
+          data-select-key="${key}"
+          ${S.selected.has(key) ? "checked" : ""}>
+        Select show
+      </label>` : "";
 
     return `<article class="show">
     ${selectBox}
@@ -1692,6 +1783,7 @@ function press(action, key, extra = "", intent = null) {
 
   // A new request makes any older SHA stale, so stop using it
   SHA = null;
+  delete S.local[key];   // ← add this
 
   pend[key] = {
     a: action,
@@ -1766,34 +1858,40 @@ document.addEventListener("click", async e => {
     store.set("pend", all);
     renderList();
   }
+
   if (t.id === "batch-clear") {
-  S.selected.clear();
-  renderList();
-  return;
-}
-
-if (t.id === "batch-continue") {
-    openBatchCategoryPicker();
-
-  return;
-}
-
-if (t.id === "login-cancel") {
-  closeLogin();
-  return;
-}
-
-if (t.id === "login-submit") {
-  const success = await trackingLogin();
-
-  if (success && preparedBatchActions.length) {
-    const actions = [...preparedBatchActions];
-    preparedBatchActions = [];
-    await submitBatchTracking(actions);
+    S.selected.clear();
+    renderList();
+    return;
   }
 
-  return;
-}
+  if (t.id === "batch-continue") {
+        if (batchBusy) return;               // ← add
+
+    openBatchCategoryPicker();
+    return;
+  }
+
+  if (t.id === "login-cancel") {
+    preparedBatchActions = [];
+    preparedBatchIntents = {};
+    closeLogin();
+    return;
+  }
+
+  if (t.id === "login-submit") {
+    const success = await trackingLogin();
+
+    if (success && preparedBatchActions.length) {
+      const actions = [...preparedBatchActions];
+      const intents = { ...preparedBatchIntents };
+      preparedBatchActions = [];
+      preparedBatchIntents = {};
+      await submitBatchTracking(actions, intents);
+    }
+
+    return;
+  }
 });
 
 document.addEventListener("change", e => {
@@ -1803,17 +1901,17 @@ document.addEventListener("change", e => {
     renderList();
   }
   if (e.target.matches("[data-select-key]")) {
-  const key = e.target.dataset.selectKey;
+    const key = e.target.dataset.selectKey;
 
-  if (e.target.checked) {
-    S.selected.add(key);
-  } else {
-    S.selected.delete(key);
+    if (e.target.checked) {
+      S.selected.add(key);
+    } else {
+      S.selected.delete(key);
+    }
+
+    updateBatchUI();
+    return;
   }
-
-  updateBatchUI();
-  return;
-}
 });
 
 document.addEventListener("keydown", e => {
@@ -1862,7 +1960,14 @@ function tickCountdown() {
 
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshAll(); });
 setInterval(() => { if (!document.hidden) refreshState(); }, 30000);
-setInterval(() => { if (!document.hidden) refreshTracking(); }, 5000);
+
+// Fast polling only while a Telegram-bot request is pending; slow background sync otherwise
+setInterval(() => {
+  if (document.hidden) return;
+  if (Object.keys(store.get("pend", {})).length > 0) refreshTracking();
+}, 5000);
+setInterval(() => { if (!document.hidden) refreshTracking(); }, 60000);
+
 setInterval(() => { if (!document.hidden) tickCountdown(); }, 1000);
 
 renderAll();

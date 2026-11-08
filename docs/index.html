@@ -119,7 +119,9 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .tile-main{flex:1;min-width:0;display:grid}
 .tile-time{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tile-screen{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tile-fmt{font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile-fmt{display:flex;flex-wrap:wrap;align-items:center;gap:2px 5px;margin-top:1px;font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2);line-height:1.25}
+.sub-badge{position:relative;display:inline-block;margin-bottom:3px;padding:0 4px;border:1px solid var(--ok);border-radius:3px;color:var(--ok);font-size:8px;font-weight:800;line-height:1.35;letter-spacing:.03em}
+.sub-badge:after{content:"";position:absolute;left:3px;bottom:-4px;width:4px;height:4px;background:var(--bg);border-right:1px solid var(--ok);border-bottom:1px solid var(--ok);transform:skewX(-35deg) rotate(35deg) translateY(-1px)}
 .tile-meta{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--ok);font-weight:800}
 .dot{width:8px;height:8px;border-radius:50%;background:#4a5468;display:inline-block}
 .dot.s3{background:var(--ok)}.dot.s2{background:var(--mid)}.dot.s1{background:var(--low)}
@@ -937,13 +939,17 @@ function updateSortUI() {
 const bestStatus = s => Math.max(0, ...pricedClasses(s).map(([, c]) => Number(c.status) || 0));
 const soldOut = s => pricedClasses(s).length > 0 && bestStatus(s) === 0;
 
-const FMT = [["IMAX", /imax/i], ["Dolby Atmos", /atmos/i], ["4K", /\b4k\b/i], ["Big Pix", /big\s*pix/i]];
+// Raw BMS attribute text, exactly as stored (e.g. "4K DOLBY 7.1"). Skipped if the row label already says it.
 function fmtTags(s) {
-  const txt = [...(s.tags || []), s.screen || ""].join(" ");
-  const dim = String(s.dimension || "");
-  const out = FMT.filter(([, r]) => r.test(txt) && !r.test(dim)).map(([n]) => n);
-  if (s.subs) out.push(String(s.subs).trim());   // e.g. "ENG subs"
-  return out;
+  const dim = String(s.dimension || "").toUpperCase();
+  return (s.tags || []).map(t => String(t).trim()).filter(t => t && !dim.includes(t.toUpperCase()));
+}
+// Subtitle badge, e.g. "ENG subs" -> green "ENG" bubble
+function subBadge(s) {
+  if (!s.subs) return "";
+  const c = String(s.subs).replace(/\s*subs?$/i, "").trim();
+  const label = !c || /^subtitles$/i.test(c) ? "SUB" : c;
+  return `<span class="sub-badge" title="${esc(s.subs)}">${esc(label)}</span>`;
 }
 
 function mostCommon(arr) {
@@ -996,10 +1002,11 @@ function tileHtml(it) {
   const cls = ["tile", tracked ? "tracked" : "", pend ? "pend" : "", closed(s) ? "closed" : "", dim ? "soldout" : "", S.selected.has(key) ? "sel" : ""].join(" ");
   const box = canSelectShow(it)
     ? `<input type="checkbox" class="tile-check" data-select-key="${key}" ${S.selected.has(key) ? "checked" : ""} aria-label="Select ${esc(s.time)}">` : "";
-  const fmt = fmtTags(s).join(" · ");
+  const fmt = fmtTags(s).map(t => `<span>${esc(t)}</span>`).join("");
+  const sub = subBadge(s);
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
     ${box}
-    <span class="tile-main"><span class="tile-time">${esc(s.time)}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${esc(fmt)}</span>` : ""}</span>
+    <span class="tile-main"><span class="tile-time">${esc(s.time)}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt || sub ? `<span class="tile-fmt">${fmt}${sub}</span>` : ""}</span>
     <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}</span>
   </div>`;
 }

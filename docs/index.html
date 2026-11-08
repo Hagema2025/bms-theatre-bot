@@ -1127,6 +1127,21 @@ async function loadState(venue) {
   }
 }
 
+// Turns combo records into { date: { session: entry } } so the rest of the app is unchanged.
+// Old date-keyed entries (legacy) are still read.
+function flattenTracking(tr) {
+  const out = {};
+  for (const [k, v] of Object.entries(tr || {})) {
+    if (/^\d{8}$/.test(k)) {                          // legacy: date -> session -> entry
+      out[k] = { ...(out[k] || {}), ...v };
+    } else if (v && v.tracking && v.date) {           // combo record
+      out[v.date] = out[v.date] || {};
+      for (const [sid, e] of Object.entries(v.tracking)) out[v.date][sid] = e;
+    }
+  }
+  return out;
+}
+
 const trackingRequestId = {};
 async function loadTracking(venue) {
   const requestId = (trackingRequestId[venue] || 0) + 1;
@@ -1141,7 +1156,7 @@ async function loadTracking(venue) {
   }
 
   if (tr !== null) {
-    S.track[venue] = tr;
+    S.track[venue] = flattenTracking(tr);
     debugLog("TRACKING DATA UPDATED", { venue, requestId, fetchedAt: new Date().toISOString() });
   } else {
     debugLog("TRACKING FETCH FAILED", { venue, requestId, time: new Date().toISOString() });

@@ -109,26 +109,37 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .fmt-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px 6px;font-size:12px;font-weight:700;color:#d4dce8}
 .fmt-head small{color:var(--muted);font-size:10px;font-weight:600;margin-left:6px}
 .combo-sel{border:1px solid rgba(245,189,89,.3);background:rgba(245,189,89,.08);color:#f5d49b;border-radius:9px;padding:4px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
-.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
-.tile{display:flex;align-items:center;gap:7px;min-height:46px;padding:7px 8px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);cursor:pointer}
+
+/* show tiles: time + subtitle / screen + format / availability bars + status pills */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(136px,1fr));gap:8px}
+.tile{display:flex;flex-direction:column;gap:6px;min-width:0;padding:9px 10px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);cursor:pointer}
 .tile.rule{box-shadow:inset 3px 0 0 var(--rule);background:rgba(167,139,250,.10)}
 .tile.sel{border-color:var(--accent);background:rgba(245,189,89,.12)}
 .tile.tracked{border-color:rgba(72,214,160,.45);background:rgba(72,214,160,.08)}
-.tile.pend{opacity:.7}
+.tile.pend{opacity:.75}
 .tile.closed{opacity:.5}
-.tile.soldout{opacity:.38}
+.tile.soldout{opacity:.45}
 .tile-check{width:16px;height:16px;margin:0;flex:none;accent-color:var(--accent)}
-.tile-main{flex:1;min-width:0;display:grid}
-.tile-top{display:flex;align-items:center;gap:6px}
-.tile-top .sub-badge{margin-bottom:2px}
-.tile-time{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
-.tile-screen{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tile-fmt{display:flex;flex-wrap:wrap;align-items:center;gap:2px 5px;margin-top:1px;font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2);line-height:1.25}
-.sub-badge{position:relative;display:inline-block;margin-bottom:3px;padding:0 4px;border:1px solid var(--ok);border-radius:3px;color:var(--ok);font-size:8px;font-weight:800;line-height:1.35;letter-spacing:.03em}
+.t1{display:flex;align-items:center;gap:6px;min-width:0}
+.tile-time{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.t1 .sub-badge{margin:0 0 0 auto}
+.t2{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;min-width:0;font-size:10px;color:var(--muted)}
+.tile-screen{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile-fmt{display:flex;flex-wrap:wrap;gap:2px 5px;font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-2)}
+.t3{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:5px;min-height:18px}
+.avail{display:inline-flex;gap:3px}
+.avail i{width:14px;height:7px;border-radius:3px;background:#4a5468}
+.avail i.s3{background:var(--ok)}.avail i.s2{background:var(--mid)}.avail i.s1{background:var(--low)}
+.tbadges{display:flex;flex-wrap:wrap;gap:4px;margin-left:auto}
+.tb{font-size:9px;font-weight:800;line-height:1.3;padding:2px 6px;border-radius:999px;white-space:nowrap}
+.tb.auto{color:#d9ccff;background:rgba(167,139,250,.16);border:1px solid rgba(167,139,250,.4)}
+.tb.man{color:var(--ok);background:rgba(72,214,160,.12);border:1px solid rgba(72,214,160,.4)}
+.tb.syn{color:var(--accent-2);background:rgba(245,189,89,.1);border:1px solid rgba(245,189,89,.35)}
+.sub-badge{position:relative;display:inline-block;padding:0 4px;border:1px solid var(--ok);border-radius:3px;color:var(--ok);font-size:8px;font-weight:800;line-height:1.35;letter-spacing:.03em}
 .sub-badge:after{content:"";position:absolute;left:3px;bottom:-4px;width:4px;height:4px;background:var(--bg);border-right:1px solid var(--ok);border-bottom:1px solid var(--ok);transform:skewX(-35deg) rotate(35deg) translateY(-1px)}
-.tile-meta{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--ok);font-weight:800}
-.dot{width:8px;height:8px;border-radius:50%;background:#4a5468;display:inline-block}
-.dot.s3{background:var(--ok)}.dot.s2{background:var(--mid)}.dot.s1{background:var(--low)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0 0 12px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);font-size:10px;font-weight:700;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend i{display:inline-block;width:12px;height:7px;border-radius:3px}
 .detail-time{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .detail-time b{font-size:20px;color:var(--accent-2)}
 .detail-time span{color:var(--muted);font-size:12px}
@@ -281,7 +292,9 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 <script>
 // ── Settings ──────────────────────────────────────────────
 const BOT = "Bms_ticketAlert_bot";
-const CUTOFF_MIN = 10;
+// Minutes after showtime a show is still listed and trackable. 0 = only shows that have not started.
+// Keep this equal to CUTOFF_MIN in rules.html and RULE_CUTOFF_MINUTES in the scanner.
+const CUTOFF_MIN = 0;
 const PENDING_MIN = 6;                    // must outlast the ~5 min raw.githubusercontent.com cache
 const LOCAL_TTL = PENDING_MIN * 60000;    // how long an API-confirmed result overrides the file
 const THEATRES = {
@@ -1051,6 +1064,14 @@ function groupShows(items) {
     });
 }
 
+const LEGEND = `<div class="legend">
+  <span>Bars = seat categories, cheapest → costliest</span>
+  <span><i style="background:var(--ok)"></i>Available</span>
+  <span><i style="background:var(--mid)"></i>Filling fast</span>
+  <span><i style="background:var(--low)"></i>Almost full</span>
+  <span><i style="background:#4a5468"></i>Sold out</span>
+  <span>⚡ Auto-tracked</span><span>✓ Tracking</span></div>`;
+
 function tileHtml(it) {
   const { v, id, s, key } = it;
   const ruled = rulesOf(s).length > 0;
@@ -1061,12 +1082,17 @@ function tileHtml(it) {
   const box = canSelectShow(it)
     ? `<input type="checkbox" class="tile-check" data-select-key="${key}" ${S.selected.has(key) ? "checked" : ""} aria-label="Select ${esc(s.time)}">` : "";
   const fmt = fmtTags(s).map(t => `<span>${esc(t)}</span>`).join("");
-  const sub = subBadge(s);
-  const ruleMark = ruled ? `<span class="rule-mark" title="${esc(rulesOf(s).map(r => r.rule).join(", "))}">⚡</span>` : "";
+  const cats = pricedClasses(s).sort((a, b) => Number(a[1].price) - Number(b[1].price));
+  const bars = cats.map(([n, c]) =>
+    `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
+  const rn = rulesOf(s).map(r => r.rule).join(", ");
+  const badges = (ruled ? `<span class="tb auto" title="${esc(rn)}">⚡ Auto</span>` : "")
+    + (tracked ? `<span class="tb man">✓ Tracking</span>` : "")
+    + (pend ? `<span class="tb syn">… Syncing</span>` : "");
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
-    ${box}
-    <span class="tile-main"><span class="tile-top"><span class="tile-time">${esc(s.time)}</span>${sub}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</span>
-    <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}${ruleMark}</span>
+    <div class="t1">${box}<span class="tile-time">${esc(s.time)}</span>${subBadge(s)}</div>
+    ${s.screen || fmt ? `<div class="t2">${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</div>` : ""}
+    <div class="t3"><span class="avail" aria-label="Seat categories">${bars}</span><span class="tbadges">${badges}</span></div>
   </div>`;
 }
 
@@ -1142,7 +1168,7 @@ function renderList() {
   const names = [...new Set(items.flatMap(i => rulesOf(i.s).map(r => r.rule)))];
   const banner = ruledCount
     ? `<div class="rule-banner">⚡ ${ruledCount} show${ruledCount === 1 ? "" : "s"} auto-tracked by rules · ${esc(names.slice(0, 3).join(", "))}${names.length > 3 ? ` +${names.length - 3}` : ""}</div>` : "";
-  setHtml(el, banner + groupShows(items).map(movieHtml).join(""));
+  setHtml(el, banner + LEGEND + groupShows(items).map(movieHtml).join(""));
 
   if (!$("detail-overlay").hidden) renderDetail();
   tickCountdown();

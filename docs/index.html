@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ticket Alerts</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script async src="https://telegram.org/js/telegram-web-app.js" onload="window.tgReady&&window.tgReady()"></script>
 <style>
-:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--mid:#f5bd59;--low:#ff817b}
+:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--mid:#f5bd59;--low:#ff817b;--rule:#a78bfa}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg)}
 body{font:15px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);background:radial-gradient(ellipse at 50% -18%,rgba(245,189,89,.16),transparent 43%),radial-gradient(ellipse at 100% 28%,rgba(76,119,190,.10),transparent 34%),var(--bg)}
@@ -111,6 +111,7 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .combo-sel{border:1px solid rgba(245,189,89,.3);background:rgba(245,189,89,.08);color:#f5d49b;border-radius:9px;padding:4px 10px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
 .tile{display:flex;align-items:center;gap:7px;min-height:46px;padding:7px 8px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);cursor:pointer}
+.tile.rule{box-shadow:inset 3px 0 0 var(--rule);background:rgba(167,139,250,.10)}
 .tile.sel{border-color:var(--accent);background:rgba(245,189,89,.12)}
 .tile.tracked{border-color:rgba(72,214,160,.45);background:rgba(72,214,160,.08)}
 .tile.pend{opacity:.7}
@@ -131,6 +132,17 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .detail-time{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .detail-time b{font-size:20px;color:var(--accent-2)}
 .detail-time span{color:var(--muted);font-size:12px}
+
+/* rule highlights */
+.rule-mark{color:var(--rule);font-size:12px}
+.rule-pill{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.35)}
+.rule-banner{margin:0 0 14px;padding:10px 13px;border-radius:13px;font-size:12px;font-weight:700;color:#d9ccff;background:rgba(167,139,250,.09);border:1px solid rgba(167,139,250,.28)}
+.rule-box{margin-top:14px;padding:12px 13px;border-radius:14px;background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3)}
+.rule-title{font-size:12px;font-weight:800;color:#d9ccff;margin-bottom:8px}
+.rule-row{display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:6px 0}
+.rule-row+.rule-row{border-top:1px solid rgba(255,255,255,.06)}
+.rule-row span{color:var(--muted);font-size:11px;white-space:nowrap}
+.rule-box small{display:block;margin-top:8px;color:var(--muted);font-size:11px}
 
 /* batch bar, select bar, toast, selection list */
 .select-bar{max-width:760px;margin:0 auto;padding:0 18px 12px;display:flex;justify-content:flex-end}
@@ -277,7 +289,7 @@ const THEATRES = {
   TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
 };
 const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
-const EMPTY_FILTERS = { movie: "", language: "", dimension: "", screen: "", time: "" };
+const EMPTY_FILTERS = { movie: "", language: "", dimension: "", screen: "", time: "", rule: "" };
 const RAW = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot";
 const TRACKING_API = "https://final-bms-bot.onrender.com";
 
@@ -290,10 +302,17 @@ function useFreshSha(sha) {
   if (/^[0-9a-f]{40}$/.test(sha || "")) { SHA = sha; SHA_UNTIL = Date.now() + PENDING_MIN * 60000; }
 }
 
-// ── State ─────────────────────────────────────────────────
-const tg = window.Telegram && window.Telegram.WebApp;
-if (tg) { tg.ready(); tg.expand(); }
+// ── Telegram (loaded async so a slow telegram.org never blocks the page) ──
+let tg = null;
+function initTg() {
+  if (tg || !(window.Telegram && window.Telegram.WebApp)) return;
+  tg = window.Telegram.WebApp;
+  try { tg.ready(); tg.expand(); } catch {}
+}
+window.tgReady = initTg;
+initTg();   // in case the script already finished loading
 
+// ── State ─────────────────────────────────────────────────
 const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
@@ -686,6 +705,11 @@ function saveCategorySelection() {
 const live = show => Date.parse(show.end) > Date.now();
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
 const fmtDur = m => m ? `${Math.floor(m / 60)}h ${m % 60}m` : "";
+const rulesOf = s => Array.isArray(s.tracked_by_rules) ? s.tracked_by_rules : [];
+const fmtWhen = iso => {
+  const t = Date.parse(iso);
+  return t ? new Date(t).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "—";
+};
 
 function dateLabel(code) {
   const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
@@ -800,6 +824,11 @@ function renderFilters() {
       ${timeOpt("evening", "Evening (5–9 PM)")}
       ${timeOpt("night", "Night (9 PM onwards)")}
     </select>
+    <select id="filter-rule" aria-label="Rules">
+      <option value="">All shows</option>
+      <option value="yes" ${S.filters.rule === "yes" ? "selected" : ""}>⚡ Rule-tracked only</option>
+      <option value="no" ${S.filters.rule === "no" ? "selected" : ""}>Not rule-tracked</option>
+    </select>
     <button type="button" data-filter-reset>Clear all filters</button>`);
   updateFilterUI();
 }
@@ -810,6 +839,8 @@ function matchesFilters(show) {
   if (f.language && show.language !== f.language) return false;
   if (f.dimension && show.dimension !== f.dimension) return false;
   if (f.screen && show.screen !== f.screen) return false;
+  if (f.rule === "yes" && !rulesOf(show).length) return false;
+  if (f.rule === "no" && rulesOf(show).length) return false;
   if (f.time) {
     const hour = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", hourCycle: "h23" })
       .formatToParts(new Date(show.start)).find(p => p.type === "hour").value);
@@ -1022,23 +1053,27 @@ function groupShows(items) {
 
 function tileHtml(it) {
   const { v, id, s, key } = it;
+  const ruled = rulesOf(s).length > 0;
   const tracked = isTracked(v, S.date, id);
   const pend = pending(v, S.date, id);
   const dim = soldOut(s) && !tracked;
-  const cls = ["tile", tracked ? "tracked" : "", pend ? "pend" : "", closed(s) ? "closed" : "", dim ? "soldout" : "", S.selected.has(key) ? "sel" : ""].join(" ");
+  const cls = ["tile", tracked ? "tracked" : "", ruled ? "rule" : "", pend ? "pend" : "", closed(s) ? "closed" : "", dim ? "soldout" : "", S.selected.has(key) ? "sel" : ""].join(" ");
   const box = canSelectShow(it)
     ? `<input type="checkbox" class="tile-check" data-select-key="${key}" ${S.selected.has(key) ? "checked" : ""} aria-label="Select ${esc(s.time)}">` : "";
   const fmt = fmtTags(s).map(t => `<span>${esc(t)}</span>`).join("");
   const sub = subBadge(s);
+  const ruleMark = ruled ? `<span class="rule-mark" title="${esc(rulesOf(s).map(r => r.rule).join(", "))}">⚡</span>` : "";
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
     ${box}
     <span class="tile-main"><span class="tile-top"><span class="tile-time">${esc(s.time)}</span>${sub}</span>${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</span>
-    <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}</span>
+    <span class="tile-meta"><i class="dot s${bestStatus(s)}"></i>${tracked ? "✓" : pend ? "…" : ""}${ruleMark}</span>
   </div>`;
 }
 
 function movieHtml(m) {
   const shows = m.items.map(i => i.s);
+  const ruledN = shows.filter(s => rulesOf(s).length).length;
+  const rulePill = ruledN ? `<span class="rule-pill">⚡ ${ruledN} auto-tracked</span>` : "";
   const sorted = [...shows].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
   const withPoster = sorted.find(s => s.poster) || sorted[0];
   const withGenre = sorted.find(s => s.genre) || sorted[0];
@@ -1076,7 +1111,7 @@ function movieHtml(m) {
       ${poster}
       <div>
         <h2 class="movie-name">${esc(m.name)}</h2>
-        <div class="movie-meta">${censor}${dur}</div>
+        <div class="movie-meta">${censor}${dur}${rulePill}</div>
         ${genre}
         ${trailer}
       </div>
@@ -1103,7 +1138,11 @@ function renderList() {
     return;
   }
 
-  setHtml(el, groupShows(items).map(movieHtml).join(""));
+  const ruledCount = items.filter(i => rulesOf(i.s).length).length;
+  const names = [...new Set(items.flatMap(i => rulesOf(i.s).map(r => r.rule)))];
+  const banner = ruledCount
+    ? `<div class="rule-banner">⚡ ${ruledCount} show${ruledCount === 1 ? "" : "s"} auto-tracked by rules · ${esc(names.slice(0, 3).join(", "))}${names.length > 3 ? ` +${names.length - 3}` : ""}</div>` : "";
+  setHtml(el, banner + groupShows(items).map(movieHtml).join(""));
 
   if (!$("detail-overlay").hidden) renderDetail();
   tickCountdown();
@@ -1129,12 +1168,20 @@ function renderDetail() {
     <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
 
+  const rl = rulesOf(s);
+  const ruleBox = rl.length ? `<div class="rule-box">
+    <div class="rule-title">⚡ Auto-tracked by ${rl.length} rule${rl.length === 1 ? "" : "s"}</div>
+    ${rl.map(r => `<div class="rule-row"><b>${esc(r.rule)}</b><span>since ${esc(fmtWhen(r.tracked_at))}</span></div>`).join("")}
+    <small>Alerts go to the rule's weekly topic in Telegram. Tracking manually below adds a separate topic.</small>
+  </div>` : "";
+
   $("detail-title").textContent = s.movie || "Show";
   setHtml($("detail-body"), `
     <div class="panel-sub">${meta}</div>
     <div class="detail-time"><b>${esc(s.time)}</b><span>${dur}</span></div>
     ${tags ? `<div class="tags">${tags}</div>` : ""}
     <div class="classes">${classes}</div>
+    ${ruleBox}
     <div class="actions" style="margin-top:14px">
       ${button(v, d, id, s)}
       <a class="btn book" href="${esc(s.url)}" target="_blank" rel="noopener">Book</a>

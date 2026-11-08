@@ -153,7 +153,7 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1"
     },
     "NORMAL": {
@@ -200,8 +200,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:20:48+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
    "cutoff": "2026-11-08T14:05:00+05:30",
@@ -424,8 +424,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:20:48+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
    "cutoff": "2026-11-08T16:15:00+05:30",
@@ -503,10 +503,10 @@
      "status_changed_at": "2026-11-08T07:40:55+05:30"
     }
    },
-   "cutoff": "2026-11-08T23:05:00+05:30",
+   "cutoff": "2026-11-08T23:10:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-08T23:20:00+05:30",
+   "end": "2026-11-08T23:25:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -514,9 +514,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-08T22:50:00+05:30",
+   "start": "2026-11-08T22:55:00+05:30",
    "tags": [],
-   "time": "10:50 PM",
+   "time": "10:55 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15637/20261108"
   },
@@ -577,14 +577,14 @@
      "price": 104.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:10:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
-   "cutoff": "2026-11-08T15:50:00+05:30",
+   "cutoff": "2026-11-08T15:45:00+05:30",
    "dimension": "3D",
    "duration": 195,
-   "end": "2026-11-08T16:05:00+05:30",
+   "end": "2026-11-08T16:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Adventure,Drama,Mythological",
@@ -592,9 +592,9 @@
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
    "screen": "AUDI04",
-   "start": "2026-11-08T15:35:00+05:30",
+   "start": "2026-11-08T15:30:00+05:30",
    "tags": [],
-   "time": "03:35 PM",
+   "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/15640/20261108"
   },
@@ -653,10 +653,10 @@
      "status_changed_at": "2026-11-08T08:31:21+05:30"
     }
    },
-   "cutoff": "2026-11-08T22:35:00+05:30",
+   "cutoff": "2026-11-08T22:45:00+05:30",
    "dimension": "3D",
    "duration": 195,
-   "end": "2026-11-08T22:50:00+05:30",
+   "end": "2026-11-08T23:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Adventure,Drama,Mythological",
@@ -664,9 +664,9 @@
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
    "screen": "AUDI04",
-   "start": "2026-11-08T22:20:00+05:30",
+   "start": "2026-11-08T22:30:00+05:30",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "10:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/15642/20261108"
   },
@@ -986,8 +986,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-08T08:31:21+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
    "cutoff": "2026-11-08T23:55:00+05:30",
@@ -1137,8 +1137,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:50:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T08:31:21+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
    "cutoff": "2026-11-08T18:55:00+05:30",
@@ -1400,8 +1400,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-08T07:40:55+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-08T07:40:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     }
    },
    "cutoff": "2026-11-08T20:45:00+05:30",
@@ -2024,10 +2024,10 @@
      "status_changed_at": "2026-11-08T08:20:48+05:30"
     }
    },
-   "cutoff": "2026-11-09T15:50:00+05:30",
+   "cutoff": "2026-11-09T15:45:00+05:30",
    "dimension": "3D",
    "duration": 195,
-   "end": "2026-11-09T16:05:00+05:30",
+   "end": "2026-11-09T16:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Adventure,Drama,Mythological",
@@ -2035,9 +2035,9 @@
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
    "screen": "AUDI04",
-   "start": "2026-11-09T15:35:00+05:30",
+   "start": "2026-11-09T15:30:00+05:30",
    "tags": [],
-   "time": "03:35 PM",
+   "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/15682/20261109"
   },
@@ -2097,10 +2097,10 @@
      "status_changed_at": "2026-11-08T08:20:48+05:30"
     }
    },
-   "cutoff": "2026-11-09T22:35:00+05:30",
+   "cutoff": "2026-11-09T22:40:00+05:30",
    "dimension": "3D",
    "duration": 195,
-   "end": "2026-11-09T22:50:00+05:30",
+   "end": "2026-11-09T22:55:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Adventure,Drama,Mythological",
@@ -2108,9 +2108,9 @@
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
    "screen": "AUDI04",
-   "start": "2026-11-09T22:20:00+05:30",
+   "start": "2026-11-09T22:25:00+05:30",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "10:25 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/15684/20261109"
   },
@@ -4651,8 +4651,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T08:40:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4697,10 +4699,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T12:50:00+05:30",
+   "cutoff": "2026-11-11T12:00:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T13:05:00+05:30",
+   "end": "2026-11-11T12:15:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4708,9 +4710,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T12:35:00+05:30",
+   "start": "2026-11-11T11:45:00+05:30",
    "tags": [],
-   "time": "12:35 PM",
+   "time": "11:45 AM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15820/20261111"
   },
@@ -4721,8 +4723,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T08:40:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4767,10 +4771,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T19:40:00+05:30",
+   "cutoff": "2026-11-11T19:25:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T19:55:00+05:30",
+   "end": "2026-11-11T19:40:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4778,9 +4782,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T19:25:00+05:30",
+   "start": "2026-11-11T19:10:00+05:30",
    "tags": [],
-   "time": "07:25 PM",
+   "time": "07:10 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15822/20261111"
   },
@@ -4802,10 +4806,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-11T23:05:00+05:30",
+   "cutoff": "2026-11-11T23:00:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-11T23:20:00+05:30",
+   "end": "2026-11-11T23:15:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-07T19:09:00+05:30",
    "genre": "Action,Thriller",
@@ -4813,9 +4817,9 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-11T22:50:00+05:30",
+   "start": "2026-11-11T22:45:00+05:30",
    "tags": [],
-   "time": "10:50 PM",
+   "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15823/20261111"
   },
@@ -5948,8 +5952,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T21:40:53+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T08:40:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-08T08:40:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6889,5 +6895,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15910/20261112"
   }
  },
- "_updated": "2026-11-08T08:31:21+05:30"
+ "_updated": "2026-11-08T08:40:49+05:30"
 }

@@ -58,6 +58,7 @@ import sys
 import time
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+import re
 
 from curl_cffi import requests as bms_req
 
@@ -247,24 +248,43 @@ def load_state():
     return state
 
 
+def flatten_tracking(data):
+    """Combo records and legacy date entries -> {date: {session: entry}}.
+    Each flattened entry carries the combo's topic id as message_thread_id."""
+    out = {}
+    for k, v in (data or {}).items():
+        if re.fullmatch(r"\d{8}", str(k)) and isinstance(v, dict):          # legacy
+            out.setdefault(k, {}).update(v)
+        elif isinstance(v, dict) and isinstance(v.get("tracking"), dict) and v.get("date"):
+            day = out.setdefault(v["date"], {})
+            for sid, e in v["tracking"].items():
+                day[sid] = {**e,
+                            "message_thread_id": v.get("thread_id"),
+                            "group_chat_id": v.get("group_chat_id")}
+    return out
+
+
 def load_tracking():
-    """tracking[VENUE] = {date: {session: {"tracked", "thread"}}}  (read-only here)."""
+    """tracking[VENUE] = {date: {session: entry}}  (read-only here)."""
     tracking = {}
     for venue in TARGET_THEATRES:
         data = read_json(os.path.join(TRACKING_DIR, f"{venue}.json"), {})
-        tracking[venue] = data if isinstance(data, dict) else {}
+        tracking[venue] = flatten_tracking(data) if isinstance(data, dict) else {}
     return tracking
 
 
+THREAD_MAP = {}   # "<VENUE>_<original thread id>" -> replacement topic id (saved in meta.json)
+
 def load_meta():
+    global THREAD_MAP
     meta = read_json(META_FILE, {})
     if not isinstance(meta, dict):
         meta = {}
-    meta.setdefault("threads", {})          # "<VENUE>_errors" -> topic id
-    meta.setdefault("fail_streaks", {})     # venue -> consecutive failed runs (capped)
-    meta.setdefault("outage_alerted", [])   # venues whose outage warning was delivered
+    meta.setdefault("threads", {})
+    meta.setdefault("fail_streaks", {})
+    meta.setdefault("outage_alerted", [])
+    THREAD_MAP = meta.setdefault("thread_map", {})
     return meta
-
 
 def save_all(state, meta, now):
     """Write only files whose content really changed, so unchanged runs make no commits."""
@@ -296,15 +316,12 @@ def entry_thread(t):
 
 
 def track_thread(state, tracking, venue, date_code, session):
-    """Topic id for a TRACKED show, else None (a replacement topic wins if the original was deleted)."""
+    """Topic id for a TRACKED show, else None. A replacement wins if the original was deleted."""
     t = tracking_entry(tracking, venue, date_code, session)
     orig = entry_thread(t)
     if not t.get("tracked") or not orig:
         return None
-    s = get_show(state, venue, date_code, session) or {}
-    if s.get("thread") and s.get("thread_for") == orig:
-        return s["thread"]
-    return orig
+    return THREAD_MAP.get(f"{venue}_{orig}", orig)
 
 
 def is_category_tracked(tracking, venue, date_code, session, category, price):
@@ -463,7 +480,7 @@ def send_track(state, tracking, venue, date_code, session, text):
     if not ok_t:
         return False
     new_thread = tb["result"]["message_thread_id"]
-    s["thread"], s["thread_for"] = new_thread, original
+    THREAD_MAP[f"{venue}_{original}"] = new_thread
     tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": status_text(s),
                            "parse_mode": "HTML", "disable_notification": True,
                            "disable_web_page_preview": True})
@@ -473,7 +490,7 @@ def send_track(state, tracking, venue, date_code, session, text):
 
 
 def announce_time_changes(state, tracking, changes):
-    """Tell tracked shows' topics about a new showtime and rename the topic."""
+    """Tell the combo topic about a new showtime."""
     for c in changes:
         thread = track_thread(state, tracking, c["venue"], c["date"], c["session"])
         tc = TRACK_CHATS.get(c["venue"])
@@ -481,11 +498,8 @@ def announce_time_changes(state, tracking, changes):
         if not (thread and tc and s):
             continue
         tg_api("sendMessage", {"chat_id": tc, "message_thread_id": thread,
-                               "text": f"⏰ Time changed: {c['old']} → {c['new']}"})
-        tg_api("editForumTopic", {"chat_id": tc, "message_thread_id": thread,
-                                  "name": track_name(c["date"], s)})
-
-
+                               "text": f"⏰ {s.get('movie', 'Show')}: time changed {c['old']} → {c['new']}"})
+        
 # ───────────────────────── BMS fetching ─────────────────────────
 
 def fetch_showtimes(session, venue, date_code):
@@ -705,9 +719,20 @@ def scan(session, state, now):
 
 
 def cleanup_ended(state, tracking, now):
-    """Drop shows past their window and delete their tracking topics. If a topic can't be
-    deleted, keep the show and retry on later runs (up to CLEANUP_MAX_TRIES)."""
+    """Drop shows past their window. Delete a combo topic only when none of its
+    tracked shows is still running. Failed deletes are retried (CLEANUP_MAX_TRIES)."""
+    alive = set()
     for venue, dates in state.items():
+        for date_code, shows in dates.items():
+            for sid, s in shows.items():
+                if entry_end(s, date_code) >= now:
+                    t = track_thread(state, tracking, venue, date_code, sid)
+                    if t:
+                        alive.add((venue, t))
+
+    deleted = set()
+    for venue, dates in state.items():
+        tc = TRACK_CHATS.get(venue)
         for date_code in list(dates):
             shows = dates[date_code]
             for sid in list(shows):
@@ -715,19 +740,20 @@ def cleanup_ended(state, tracking, now):
                 if entry_end(s, date_code) >= now:
                     continue
                 thread = track_thread(state, tracking, venue, date_code, sid)
-                tc = TRACK_CHATS.get(venue)
-                if thread and tc:
+                if thread and tc and (venue, thread) not in alive and (venue, thread) not in deleted:
                     ok, body = tg_api("deleteForumTopic", {"chat_id": tc, "message_thread_id": thread})
                     gone = "thread" in body.get("description", "").lower()
-                    if not ok and not gone:
+                    if ok or gone:
+                        deleted.add((venue, thread))
+                        orig = entry_thread(tracking_entry(tracking, venue, date_code, sid))
+                        THREAD_MAP.pop(f"{venue}_{orig}", None)
+                    else:
                         s["cleanup_tries"] = s.get("cleanup_tries", 0) + 1
                         if s["cleanup_tries"] < CLEANUP_MAX_TRIES:
-                            continue                      # retry next run
+                            continue                  # retry next run
                 shows.pop(sid)
             if not shows:
                 dates.pop(date_code)
-
-
 # ───────────────────────── alerts ─────────────────────────
 
 def format_hit(h):

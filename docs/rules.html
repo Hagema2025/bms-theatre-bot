@@ -1,1 +1,495 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auto-track Rules</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--low:#ff817b}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg)}
+body{font:15px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);background:radial-gradient(ellipse at 50% -18%,rgba(245,189,89,.16),transparent 43%),var(--bg)}
+header{max-width:760px;margin:0 auto;padding:28px 18px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.mark{width:46px;height:46px;flex:none;display:grid;place-items:center;border-radius:15px;color:#17120a;font-size:20px;background:linear-gradient(145deg,var(--accent-2),#e99a25)}
+h1{font-size:23px;line-height:1.1;margin:0;font-weight:800;letter-spacing:-.045em}
+.sub{color:var(--muted);font-size:12px;margin-top:5px}
+main{max-width:760px;margin:0 auto;padding:0 18px 120px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.btn{min-height:43px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:10px 16px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;background:linear-gradient(135deg,var(--accent-2),var(--accent));color:#1a1409}
+.btn:disabled{opacity:.55;cursor:default}
+.btn.ghost{background:rgba(255,255,255,.045);color:#d4dce8;box-shadow:inset 0 0 0 1px var(--line)}
+.btn.sm{min-height:34px;padding:6px 12px;font-size:12px}
+.btn.danger{background:rgba(255,129,123,.1);color:var(--low);box-shadow:inset 0 0 0 1px rgba(255,129,123,.28)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.bar .grow{flex:1}
+.msg{color:#aab7c8;text-align:center;padding:40px 20px;background:rgba(17,25,39,.78);border:1px dashed rgba(186,204,232,.18);border-radius:18px;font-size:13px}
+.rule{padding:14px;margin-bottom:12px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98))}
+.rule.off{opacity:.55}
+.rule-top{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.rule-name{font-size:16px;font-weight:800;letter-spacing:-.02em;margin:0}
+.rule-desc{color:var(--muted);font-size:12px;margin:6px 0 10px}
+.rule-desc b{color:#e8edf5;font-weight:700}
+.match{font-size:12px;color:var(--ok);font-weight:700;margin-bottom:10px}
+.match.none{color:var(--muted);font-weight:600}
+.rule-actions{display:flex;gap:8px;flex-wrap:wrap}
+.sw{position:relative;width:44px;height:26px;flex:none}
+.sw input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.sw span{position:absolute;inset:0;border-radius:99px;background:#343c4c;transition:background .15s}
+.sw span:after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .15s}
+.sw input:checked+span{background:var(--ok)}
+.sw input:checked+span:after{transform:translateX(18px)}
+.sw input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+/* editor */
+.overlay[hidden]{display:none}
+.overlay{position:fixed;inset:0;z-index:1100;display:flex;align-items:flex-end;justify-content:center;background:rgba(2,6,13,.76);backdrop-filter:blur(5px)}
+.panel{width:100%;max-width:600px;max-height:90vh;overflow-y:auto;padding:22px 20px calc(25px + env(safe-area-inset-bottom,0px));background:linear-gradient(160deg,#182438,#101827 72%);border:1px solid var(--line);border-radius:24px 24px 0 0}
+.panel-head{display:flex;justify-content:space-between;align-items:center;font-size:18px;margin-bottom:14px}
+.x{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.055);color:#e8edf5;font:inherit;cursor:pointer}
+@media(min-width:600px){.overlay{align-items:center;padding:20px}.panel{border-radius:24px}}
+.f{margin-bottom:18px}
+.f>label,.f>.lbl{display:block;font-size:12px;font-weight:800;color:var(--accent-2);margin-bottom:4px}
+.hint{color:var(--muted);font-size:11px;margin:0 0 8px}
+input[type=text],input[type=number],input[type=date],input[type=time],select{width:100%;min-height:46px;padding:11px 13px;border-radius:12px;border:1px solid rgba(186,204,232,.14);background:#1a2940;color:#edf2f8;font:inherit;font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid rgba(186,204,232,.13);border-radius:12px;padding:9px 13px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;background:rgba(19,29,45,.86);color:#d4dce8}
+.chip[aria-pressed="true"]{background:linear-gradient(135deg,#ffe3a8,#edac42);color:#211707;font-weight:800;border-color:transparent}
+.mode{display:flex;gap:10px;align-items:flex-start;padding:12px;margin-bottom:8px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035);cursor:pointer}
+.mode input{width:18px;height:18px;margin-top:2px;accent-color:var(--accent)}
+.mode b{font-size:13px;display:block}
+.mode small{color:var(--muted);font-size:11px}
+.sticky{display:flex;gap:10px;margin-top:8px}
+.sticky .btn{flex:1}
+.err{color:var(--low);font-size:12px;min-height:16px;margin:8px 0 0}
+.toast{position:fixed;left:50%;transform:translateX(-50%);top:calc(14px + env(safe-area-inset-top,0px));z-index:1300;max-width:min(92vw,420px);padding:11px 15px;border-radius:13px;background:#2a1f12;border:1px solid rgba(245,189,89,.45);color:#ffe3a8;font-size:12px;font-weight:600}
+.toast[hidden]{display:none}
+textarea{width:100%;min-height:200px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0c1320;color:#cfe3ff;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.twin{display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--muted);font-size:12px}.twin b{flex:1;min-width:44px;color:#e8edf5;font-size:13px}.twin input{width:auto;flex:none;min-height:42px}
+.dirty{color:var(--accent-2);font-size:12px;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">⚡</div>
+    <div>
+      <h1>Auto-track rules</h1>
+      <div class="sub">Any new show that matches a rule is tracked automatically</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px"><span class="dirty" id="dirty" hidden>Unsaved</span><a href="index.html" class="btn ghost sm" style="text-decoration:none">← Shows</a></div>
+</header>
+
+<main>
+  <div class="bar">
+    <button class="btn" id="new">+ New rule</button>
+    <span class="grow"></span>
+    <button class="btn ghost" id="io">Import / Export</button>
+    <button class="btn" id="save">Save rules</button>
+  </div>
+  <div id="list"></div>
+</main>
+
+<div class="overlay" id="ed" hidden>
+  <section class="panel" role="dialog" aria-modal="true" aria-label="Rule editor">
+    <div class="panel-head"><strong id="ed-title">New rule</strong><button class="x" id="ed-close" aria-label="Close">✕</button></div>
+    <div id="ed-body"></div>
+  </section>
+</div>
+
+<div class="overlay" id="io-ov" hidden>
+  <section class="panel" role="dialog" aria-modal="true" aria-label="Import or export">
+    <div class="panel-head"><strong>Import / Export</strong><button class="x" id="io-close" aria-label="Close">✕</button></div>
+    <p class="hint">This is the exact JSON the worker will read. Paste a saved config and press Import to replace the rules on this page.</p>
+    <textarea id="io-text" spellcheck="false"></textarea>
+    <p class="err" id="io-err"></p>
+    <div class="sticky">
+      <button class="btn ghost" id="io-copy">Copy</button>
+      <button class="btn" id="io-import">Import</button>
+    </div>
+  </section>
+</div>
+
+<div class="overlay" id="login" hidden style="align-items:center;padding:20px">
+  <section class="panel" style="max-width:360px;border-radius:16px">
+    <h2 style="margin:0 0 6px">🔐 Enter PIN</h2>
+    <p class="hint">Enter the 6-digit PIN to save rules.</p>
+    <input type="text" id="pin" inputmode="numeric" maxlength="6" placeholder="6-digit PIN" autocomplete="off" style="-webkit-text-security:disc">
+    <p class="err" id="login-err"></p>
+    <div class="sticky"><button class="btn ghost" id="login-cancel">Cancel</button><button class="btn" id="login-go">Unlock</button></div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+// ── Settings ──────────────────────────────────────────────
+const THEATRES = {
+  INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
+  TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
+};
+const RAW = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot";
+const API = "https://final-bms-bot.onrender.com";
+const RULES_URL = API + "/api/rules";           // POST: bot API commits docs/rules.json to the data branch (like /api/tracking)
+const PENDING_MIN = 6;                          // must outlast the ~5 min raw.githubusercontent.com cache
+let SHA = null, SHA_UNTIL = 0;
+try { const x = JSON.parse(localStorage.getItem("rules_sha")); if (x && /^[0-9a-f]{40}$/.test(x.sha) && x.until > Date.now()) { SHA = x.sha; SHA_UNTIL = x.until; } } catch {}
+const activeSha = () => (SHA && Date.now() < SHA_UNTIL) ? SHA : null;
+function useFreshSha(sha) {
+  if (!/^[0-9a-f]{40}$/.test(sha || "")) return;
+  SHA = sha; SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
+  try { localStorage.setItem("rules_sha", JSON.stringify({ sha: SHA, until: SHA_UNTIL })); } catch {}
+}
+const CUTOFF_MIN = 10;
+const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const BASE_LANGS = ["Tamil", "English", "Hindi", "Telugu", "Malayalam", "Kannada"];
+
+// ── Helpers ───────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+const tg = window.Telegram && window.Telegram.WebApp;
+if (tg) { tg.ready(); tg.expand(); }
+let toastT;
+function toast(m, ms = 4500) { const t = $("toast"); t.textContent = m; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, ms); }
+const uid = () => "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+const blank = () => ({ id: uid(), name: "", enabled: true, venues: [], movie: "", languages: [], days: [], per_day: false, time: { from: "", to: "" }, day_times: {}, per_day: false, time: { from: "", to: "" }, day_times: {}, from: "", to: "", mode: "all", max_price: null });
+
+const normRule = r => { const o = { ...blank(), ...r, mode: r.mode === "budget" ? "budget" : "all" }; delete o.categories; delete o.times; delete o.dimensions; delete o.screen; return o; };
+
+// ── State ─────────────────────────────────────────────────
+let rules = store.get("rules_draft", { rules: [] }).rules || [];
+let saved = JSON.stringify(store.get("rules_saved", { rules: [] }).rules || []);
+let shows = [];                    // flattened live shows from all theatres, for previews and suggestions
+let token = sessionStorage.getItem("tracking_token") || null;
+let draft = null, editingNew = false, pendingSave = false;
+
+const config = () => ({ version: 1, updated: new Date().toISOString(), rules });
+function persist() {
+  store.set("rules_draft", { rules });
+  $("dirty").hidden = JSON.stringify(rules) === saved;
+}
+
+// ── Load current shows (for suggestions + match preview) ──
+async function loadShows() {
+  const out = [];
+  await Promise.all(Object.keys(THEATRES).map(async v => {
+    try {
+      const r = await fetch(`${RAW}/data/docs/state/${v}.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!r.ok) return;
+      const st = await r.json();
+      for (const [d, day] of Object.entries(st)) {
+        if (!/^\d{8}$/.test(d)) continue;
+        for (const [id, s] of Object.entries(day)) out.push({ v, d, id, s });
+      }
+    } catch {}
+  }));
+  shows = out.filter(x => Date.parse(x.s.end) > Date.now() && Date.now() <= Date.parse(x.s.start) + CUTOFF_MIN * 60000);
+  renderList();
+}
+const uniq = f => [...new Set(shows.map(x => String(f(x) || "").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+const priced = s => Object.entries(s.classes || {}).filter(([n, c]) => n && Number(c.price) > 0);
+
+// ── Matching (same logic the worker should use) ───────────
+const DAY_ORDER = [1, 2, 3, 4, 5, 6, 0];
+const PRESETS = { morning: { from: "", to: "11:59" }, afternoon: { from: "12:00", to: "16:59" }, evening: { from: "17:00", to: "20:59" }, night: { from: "21:00", to: "" }, any: { from: "", to: "" } };
+function minIST(start) {
+  const p = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date(start));
+  return Number(p.find(x => x.type === "hour").value) * 60 + Number(p.find(x => x.type === "minute").value);
+}
+const toMin = t => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
+const inWin = (w, m) => !w || ((!w.from || m >= toMin(w.from)) && (!w.to || m <= toMin(w.to)));
+const t12 = t => { let [h, m] = t.split(":").map(Number); const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12; return `${h}:${String(m).padStart(2, "0")} ${ap}`; };
+const winText = w => !w || (!w.from && !w.to) ? "" : w.from && w.to ? `${t12(w.from)}–${t12(w.to)}` : w.from ? `from ${t12(w.from)}` : `until ${t12(w.to)}`;
+function ruleMatches(r, x) {
+  const s = x.s, ci = (a, b) => String(a || "").toLowerCase().includes(String(b).toLowerCase());
+  if (r.venues.length && !r.venues.includes(x.v)) return false;
+  if (r.movie && !ci(s.movie, r.movie)) return false;
+  if (r.languages.length && !r.languages.some(l => l.toLowerCase() === String(s.language || "").toLowerCase())) return false;
+  const dow = new Date(+x.d.slice(0, 4), +x.d.slice(4, 6) - 1, +x.d.slice(6)).getDay();
+  if (r.days.length && !r.days.includes(dow)) return false;
+  if (!inWin(r.per_day ? (r.day_times || {})[dow] : r.time, minIST(s.start))) return false;
+  if (r.from && x.d < r.from.replace(/-/g, "")) return false;
+  if (r.to && x.d > r.to.replace(/-/g, "")) return false;
+  return true;
+}
+// Which categories would be tracked on a show under the rule's category mode
+function trackedCats(r, s) {
+  const p = priced(s);
+  if (r.mode === "budget") return p.filter(([, c]) => Number(c.price) <= Number(r.max_price));
+  return p;
+}
+
+// ── List ──────────────────────────────────────────────────
+function describe(r) {
+  const j = (a, m) => a.length ? a.slice(0, m).join(", ") + (a.length > m ? ` +${a.length - m}` : "") : "";
+  const parts = [
+    `<b>${r.venues.length ? esc(j(r.venues.map(v => THEATRES[v] || v), 2)) : "Any theatre"}</b>`,
+    r.movie ? `movie “${esc(r.movie)}”` : "any movie",
+    r.languages.length ? esc(j(r.languages, 3)) : "any language",
+  ];
+  const dd = DAY_ORDER.filter(x => r.days.includes(x));
+  if (r.per_day && dd.length) parts.push(esc(dd.map(x => `${DAYS[x]} ${winText((r.day_times || {})[x]) || "all day"}`).join(", ")));
+  else { parts.push(winText(r.time) ? esc(winText(r.time)) : "any time"); if (dd.length && dd.length < 7) parts.push(esc(dd.map(x => DAYS[x]).join(" "))); }
+  if (r.from || r.to) parts.push(`${esc(r.from || "…")} to ${esc(r.to || "…")}`);
+  parts.push(r.mode === "budget" ? `seats up to ₹${esc(r.max_price)}` : "all seat types");
+  return parts.join(" · ");
+}
+function renderList() {
+  persist();
+  if (!rules.length) {
+    $("list").innerHTML = `<div class="msg">No rules yet.<br>Add a rule and every new show that fits it will be tracked for you.</div>`;
+    return;
+  }
+  $("list").innerHTML = rules.map((r, i) => {
+    const m = shows.filter(x => ruleMatches(r, x));
+    const movies = [...new Set(m.map(x => x.s.movie))];
+    const match = !shows.length ? "" : m.length
+      ? `<div class="match">Matches ${m.length} show${m.length === 1 ? "" : "s"} right now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</div>`
+      : `<div class="match none">No current shows match yet. It will catch new ones.</div>`;
+    return `<article class="rule ${r.enabled ? "" : "off"}">
+      <div class="rule-top"><h2 class="rule-name">${esc(r.name || "Untitled rule")}</h2>
+        <label class="sw"><input type="checkbox" data-toggle="${i}" ${r.enabled ? "checked" : ""} aria-label="Rule enabled"><span></span></label></div>
+      <p class="rule-desc">${describe(r)}</p>${match}
+      <div class="rule-actions">
+        <button class="btn ghost sm" data-edit="${i}">Edit</button>
+        <button class="btn ghost sm" data-dup="${i}">Duplicate</button>
+        <button class="btn danger sm" data-del="${i}">Delete</button>
+      </div></article>`;
+  }).join("");
+}
+
+// ── Editor ────────────────────────────────────────────────
+const chip = (g, val, label, on) => `<button type="button" class="chip" data-g="${g}" data-val="${esc(val)}" aria-pressed="${on}">${esc(label)}</button>`;
+function openEditor(r, isNew) {
+  draft = JSON.parse(JSON.stringify(r)); editingNew = isNew;
+  $("ed-title").textContent = isNew ? "New rule" : "Edit rule";
+  const d = draft;
+  const langs = [...new Set([...BASE_LANGS, ...uniq(x => x.s.language), ...d.languages])];
+  const movies = uniq(x => x.s.movie);
+  $("ed-body").innerHTML = `
+    <div class="f"><label for="f-name">Rule name *</label><p class="hint">Required. Used as the Telegram thread name, so keep it unique.</p><input type="text" id="f-name" maxlength="100" value="${esc(d.name)}" placeholder="Example: Leo Tamil weekend evenings"></div>
+    <div class="f"><span class="lbl">Theatres</span><p class="hint">Leave all unselected to cover every theatre.</p>
+      <div class="chips">${Object.entries(THEATRES).map(([c, n]) => chip("venues", c, n, d.venues.includes(c))).join("")}</div></div>
+    <div class="f"><label for="f-movie">Movie name contains</label><p class="hint">Works for movies that are not listed yet. Leave empty for any movie.</p>
+      <input type="text" id="f-movie" list="movie-list" value="${esc(d.movie)}" placeholder="Example: Leo">
+      <datalist id="movie-list">${movies.map(m => `<option value="${esc(m)}">`).join("")}</datalist></div>
+    <div class="f"><span class="lbl">Languages</span><p class="hint">Leave all unselected to track every language.</p><div class="chips">${langs.map(l => chip("languages", l, l, d.languages.includes(l))).join("")}</div></div>
+    <div class="f"><span class="lbl">Days of the week</span><p class="hint">Leave all unselected for every day.</p>
+      <div class="chips" style="margin-bottom:8px"><button type="button" class="chip" data-dpreset="weekdays">Weekdays</button><button type="button" class="chip" data-dpreset="weekends">Weekends</button><button type="button" class="chip" data-dpreset="every">Every day</button></div>
+      <div class="chips">${DAY_ORDER.map(i => chip("days", i, DAYS[i], d.days.includes(i))).join("")}</div></div>
+    <div class="f"><span class="lbl">Show time</span><div id="time-area"></div></div>
+    <div class="f"><span class="lbl">Date range</span><p class="hint">Optional. Both dates are included, for example 10-11-2026 to 10-11-2027. Leave empty to cover all upcoming dates.</p>
+      <div class="two"><input type="date" id="f-from" value="${esc(d.from)}" aria-label="From date"><input type="date" id="f-to" value="${esc(d.to)}" aria-label="To date"></div></div>
+    <div class="f"><span class="lbl">Seat categories to track</span>
+      <label class="mode"><input type="radio" name="mode" value="all" ${d.mode === "all" ? "checked" : ""}><span><b>All categories</b><small>Including new ones, whatever the price.</small></span></label>
+      <label class="mode"><input type="radio" name="mode" value="budget" ${d.mode === "budget" ? "checked" : ""}><span><b>Under my budget</b><small>Only categories priced at or below your limit.</small></span></label>
+      <div id="m-budget" hidden><input type="number" id="f-price" min="1" inputmode="numeric" placeholder="Maximum price in ₹" value="${esc(d.max_price ?? "")}"></div>
+    </div>
+    <p class="err" id="ed-err"></p>
+    <div class="f" id="ed-preview" class="hint"></div>
+    <div class="sticky"><button class="btn ghost" id="ed-cancel">Cancel</button><button class="btn" id="ed-save">${isNew ? "Add rule" : "Update rule"}</button></div>`;
+  modeUI(); renderTime(); preview();
+  $("ed").hidden = false;
+}
+function winRow(key, label, w) {
+  w = w || {};
+  return `<div class="twin"><b>${label}</b><input type="time" data-t="${key}" data-e="from" value="${esc(w.from || "")}" aria-label="${label} from"><span>to</span><input type="time" data-t="${key}" data-e="to" value="${esc(w.to || "")}" aria-label="${label} to"></div>`;
+}
+function renderTime() {
+  const d = draft, el = $("time-area"); if (!el) return;
+  if (!d.days.length) d.per_day = false;
+  const toggle = `<button type="button" class="chip" data-perday aria-pressed="${d.per_day}">Different timing for each day</button>`;
+  if (d.per_day) {
+    const ds = DAY_ORDER.filter(x => d.days.includes(x));
+    el.innerHTML = `<p class="hint">24-hour times. Leave a day empty to track that whole day.</p>` + ds.map(x => winRow(x, DAYS[x], d.day_times[x])).join("") +
+      `<div class="chips"><button type="button" class="chip" data-copy>Copy first day to all</button>${toggle}</div>`;
+  } else {
+    const names = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", night: "Night", any: "Any time" };
+    el.innerHTML = `<p class="hint">Optional. 24-hour times, for example 18:00 to 23:59. Leave empty for any time.</p>` + winRow("all", d.days.length ? "Selected days" : "Every day", d.time) +
+      `<div class="chips">${Object.keys(PRESETS).map(k => `<button type="button" class="chip" data-pt="${k}">${names[k]}</button>`).join("")}${d.days.length ? toggle : ""}</div>`;
+  }
+}
+function modeUI() {
+  const m = document.querySelector('input[name="mode"]:checked')?.value || "all";
+  $("m-budget").hidden = m !== "budget";
+}
+// Pull text inputs into the draft
+function readInputs() {
+  const g = id => $(id) ? $(id).value.trim() : "";
+  draft.name = g("f-name"); draft.movie = g("f-movie");
+  draft.from = g("f-from"); draft.to = g("f-to");
+  draft.mode = document.querySelector('input[name="mode"]:checked')?.value || "all";
+  draft.max_price = draft.mode === "budget" ? Math.round(Number(g("f-price"))) || null : null;
+}
+function preview() {
+  if (!draft) return;
+  readInputs();
+  const el = $("ed-preview"); if (!el) return;
+  const probe = { ...draft, enabled: true };
+  const m = shows.filter(x => ruleMatches(probe, x) && trackedCats(probe, x.s).length);
+  el.className = "hint";
+  el.textContent = shows.length ? `Would track ${m.length} of the ${shows.length} shows listed right now.` : "Loading current shows…";
+}
+function validate() {
+  const d = draft;
+  if (!d.name) return "Enter a rule name. It becomes the Telegram thread name.";
+  if (rules.some(r => r.id !== d.id && (r.name || "").trim().toLowerCase() === d.name.toLowerCase())) return "Another rule already uses this name.";
+  if (d.mode === "budget" && !(d.max_price > 0)) return "Enter a maximum price in ₹.";
+  if (d.from && d.to && d.from > d.to) return "The start date is after the end date.";
+  const bad = w => w && w.from && w.to && w.from > w.to;
+  if (d.per_day && d.days.length) {
+    if (d.days.some(x => bad(d.day_times[x]))) return "A day's start time is after its end time.";
+    d.day_times = Object.fromEntries(d.days.filter(x => d.day_times[x]).map(x => [x, d.day_times[x]]));
+    d.time = { from: "", to: "" };
+  } else {
+    if (bad(d.time)) return "The start time is after the end time.";
+    d.per_day = false; d.day_times = {};
+  }
+  return "";
+}
+function saveDraft() {
+  readInputs();
+  const err = validate();
+  if (err) { $("ed-err").textContent = err; return; }
+  if (editingNew) rules.push(draft); else rules = rules.map(r => r.id === draft.id ? draft : r);
+  draft = null; $("ed").hidden = true; renderList();
+}
+
+// ── Save to server (worker) ───────────────────────────────
+async function login() {
+  const pin = $("pin").value.trim(), er = $("login-err"), b = $("login-go");
+  if (!/^\d{6}$/.test(pin)) { er.textContent = "Enter a valid 6-digit PIN."; return; }
+  b.disabled = true; er.textContent = "Verifying…";
+  try {
+    const r = await fetch(API + "/api/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password: pin }) });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || "Login failed.");
+    token = data.token; sessionStorage.setItem("tracking_token", token);
+    $("login").hidden = true;
+    if (pendingSave) { pendingSave = false; saveRules(); }
+  } catch (e) { er.textContent = e.message || "Unable to connect."; }
+  finally { b.disabled = false; }
+}
+async function saveRules() {
+  if (!token) { pendingSave = true; $("pin").value = ""; $("login-err").textContent = ""; $("login").hidden = false; return; }
+  const b = $("save"); b.disabled = true; b.textContent = "Saving…";
+  const cfg = config();
+  try {
+    const r = await fetch(RULES_URL, { method: "POST", headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` }, body: JSON.stringify(cfg) });
+    if (r.status === 401) { token = null; sessionStorage.removeItem("tracking_token"); pendingSave = true; $("login").hidden = false; return; }
+    if (!r.ok) { let m = ""; try { m = (await r.json()).error; } catch {} throw new Error(m || `Server returned ${r.status}.`); }
+    const data = await r.json().catch(() => ({}));
+    if (data.success === false || data.ok === false) throw new Error(data.error || data.message || "Save failed.");
+    saved = JSON.stringify(rules); store.set("rules_saved", { rules, updated: cfg.updated }); persist();
+    useFreshSha(data.commit_sha);
+    toast("Rules saved to GitHub. The worker uses them on its next run.");
+  } catch (e) {
+    toast((e.message || "Could not reach the server.") + " Your rules are kept on this device. Use Import / Export to copy the JSON.", 7000);
+  } finally { b.disabled = false; b.textContent = "Save rules"; }
+}
+async function getRemote() {
+  const sha = activeSha(), urls = [];
+  if (sha) urls.push(`${RAW}/${sha}/docs/rules.json`);          // fresh, never cached before
+  urls.push(`${RAW}/data/docs/rules.json?t=${Date.now()}`);     // normal branch (may be ~5 min stale)
+  for (const url of urls) {
+    try {
+      const r = await fetch(url, { cache: "no-store" });
+      if (r.status === 404) { if (url === urls[urls.length - 1]) return { rules: [] }; continue; }
+      if (!r.ok) continue;
+      return JSON.parse(await r.text());
+    } catch {}
+  }
+  return null;
+}
+async function loadRemote() {
+  if (draft || JSON.stringify(rules) !== saved) return;          // never overwrite an open editor or unsaved edits
+  const c = await getRemote();
+  if (!c || !Array.isArray(c.rules)) return;
+  if (draft || JSON.stringify(rules) !== saved) return;
+  const mine = store.get("rules_saved", {}).updated || "";
+  if (mine && String(c.updated || "") < mine) return;            // GitHub hasn't caught up with our last save
+  const next = c.rules.map(normRule);
+  if (JSON.stringify(next) === saved) return;
+  rules = next; saved = JSON.stringify(rules);
+  store.set("rules_saved", { rules, updated: c.updated || mine }); renderList();
+}
+
+// ── Events ────────────────────────────────────────────────
+document.addEventListener("click", e => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.id === "new") return openEditor(blank(), true);
+  if (t.id === "save") return saveRules();
+  if (t.id === "ed-close" || t.id === "ed-cancel") { draft = null; $("ed").hidden = true; return; }
+  if (t.id === "ed-save") return saveDraft();
+  if (t.id === "io") { $("io-text").value = JSON.stringify(config(), null, 2); $("io-err").textContent = ""; $("io-ov").hidden = false; return; }
+  if (t.id === "io-close") { $("io-ov").hidden = true; return; }
+  if (t.id === "io-copy") { navigator.clipboard?.writeText($("io-text").value).then(() => toast("Copied."), () => { $("io-text").select(); toast("Press copy on the selected text."); }); return; }
+  if (t.id === "io-import") {
+    try {
+      const c = JSON.parse($("io-text").value);
+      if (!c || !Array.isArray(c.rules)) throw new Error("Expected an object with a rules list.");
+      rules = c.rules.map(normRule);
+      $("io-ov").hidden = true; renderList(); toast(`Imported ${rules.length} rule${rules.length === 1 ? "" : "s"}. Press Save rules to keep them.`);
+    } catch (er) { $("io-err").textContent = "Invalid JSON: " + er.message; }
+    return;
+  }
+  if (t.id === "login-cancel") { pendingSave = false; $("login").hidden = true; return; }
+  if (t.id === "login-go") return login();
+  if (t.dataset.edit !== undefined) return openEditor(rules[+t.dataset.edit], false);
+  if (t.dataset.dup !== undefined) { const r = JSON.parse(JSON.stringify(rules[+t.dataset.dup])); r.id = uid(); r.name = (r.name || "Rule") + " copy"; rules.splice(+t.dataset.dup + 1, 0, r); return renderList(); }
+  if (t.dataset.del !== undefined) { const r = rules[+t.dataset.del]; if (confirm(`Delete “${r.name || "Untitled rule"}”?`)) { rules.splice(+t.dataset.del, 1); renderList(); } return; }
+  if (draft && t.dataset.dpreset) {
+    draft.days = t.dataset.dpreset === "weekdays" ? [1, 2, 3, 4, 5] : t.dataset.dpreset === "weekends" ? [6, 0] : [];
+    document.querySelectorAll('[data-g="days"]').forEach(b => b.setAttribute("aria-pressed", draft.days.includes(Number(b.dataset.val))));
+    renderTime(); preview(); return;
+  }
+  if (draft && t.dataset.pt) { draft.time = { ...PRESETS[t.dataset.pt] }; renderTime(); preview(); return; }
+  if (draft && t.dataset.perday !== undefined) { draft.per_day = !draft.per_day; renderTime(); preview(); return; }
+  if (draft && t.dataset.copy !== undefined) {
+    const ds = DAY_ORDER.filter(x => draft.days.includes(x));
+    const first = draft.day_times[ds[0]] || { from: "", to: "" };
+    ds.forEach(x => draft.day_times[x] = { ...first });
+    renderTime(); preview(); return;
+  }
+  if (t.dataset.g && draft) {
+    const arr = draft[t.dataset.g], val = t.dataset.g === "days" ? Number(t.dataset.val) : t.dataset.val;
+    const i = arr.indexOf(val); if (i < 0) arr.push(val); else arr.splice(i, 1);
+    t.setAttribute("aria-pressed", i < 0);
+    if (t.dataset.g === "days") renderTime();
+    preview();
+  }
+});
+document.addEventListener("change", e => {
+  if (e.target.dataset.toggle !== undefined) { rules[+e.target.dataset.toggle].enabled = e.target.checked; renderList(); return; }
+  if (e.target.name === "mode") { modeUI(); }
+  if (draft) preview();
+});
+document.addEventListener("input", e => {
+  if (draft && e.target.dataset.t !== undefined) {
+    const k = e.target.dataset.t;
+    const w = k === "all" ? draft.time : (draft.day_times[k] = draft.day_times[k] || { from: "", to: "" });
+    w[e.target.dataset.e] = e.target.value;
+  }
+  if (draft && e.target.closest("#ed-body") && e.target.id !== "f-name") preview(); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { draft = null; $("ed").hidden = true; $("io-ov").hidden = true; }
+  if (e.key === "Enter" && e.target.id === "pin") login();
+});
+window.addEventListener("beforeunload", e => { if (JSON.stringify(rules) !== saved) { e.preventDefault(); e.returnValue = ""; } });
+
+renderList();
+loadShows();
+loadRemote();
+setInterval(() => { if (!document.hidden) loadShows(); }, 120000);
+setInterval(() => { if (!document.hidden) loadRemote(); }, 60000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) loadRemote(); });
+</script>
+</body>
+</html>

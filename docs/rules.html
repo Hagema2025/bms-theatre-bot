@@ -37,6 +37,7 @@ main{max-width:760px;margin:0 auto;padding:0 18px 120px}
 .match.none{color:var(--muted);font-weight:600}
 button.match{display:block;width:100%;background:none;border:0;padding:0;font:inherit;font-size:12px;font-weight:700;text-align:left;cursor:pointer}
 button.match:after{content:"  ›";font-weight:800}
+.info{font-size:11px;color:var(--muted);margin:-2px 0 10px;line-height:1.45}
 .stats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
 .stat{font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.3)}
 .stat.dim{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--line);font-weight:700}
@@ -211,7 +212,8 @@ function useFreshSha(sha) {
   SHA = sha; SHA_UNTIL = Date.now() + PENDING_MIN * 60000;
   try { localStorage.setItem("rules_sha", JSON.stringify({ sha: SHA, until: SHA_UNTIL })); } catch {}
 }
-const CUTOFF_MIN = 10;
+const GRACE_MIN = 30;   // scanner SHOW_GRACE_MINUTES: shows stay listed/tracked this long after they start
+const CUTOFF_MIN = 0;   // minutes after showtime a show still counts as open (0 = only shows that have not started)
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const BASE_LANGS = ["Tamil", "English", "Hindi", "Telugu", "Malayalam", "Kannada"];
 
@@ -297,7 +299,7 @@ function trackedBy(rule) {
   const out = [];
   live.forEach(x => {
     const t = (x.s.tracked_by_rules || []).find(t => t.rule_id === rule.id);
-    if (t) out.push({ ...x, at: t.tracked_at });
+    if (t) out.push({ ...x, at: t.tracked_at, cats: t.cats || {} });
   });
   return out;
 }
@@ -377,7 +379,7 @@ function wkTag(k) {
 const STATUS = { "0": "Sold out", "1": "Almost full", "2": "Filling fast", "3": "Available" };
 const laterMs = (a, b) => Math.max(Date.parse(a) || 0, Date.parse(b) || 0);
 function showRow(x, rule, got, ns) {
-  const at = got.get(key(x));
+  const g = got.get(key(x)), at = g && g.at, tc = (g && g.cats) || {};
   const cats = priced(x.s).sort((p, q) => Number(p[1].price) - Number(q[1].price));
   const ok = new Set(trackedCats(rule, x.s).map(([n]) => n));
   const past = Date.now() > Date.parse(x.s.start);
@@ -385,7 +387,7 @@ function showRow(x, rule, got, ns) {
   const rows = cats.map(([n, c]) => {
     let cls = "skip", w = "over budget, not tracked";
     if (ok.has(n)) {
-      if (at) { cls = ""; w = `tracked ${fmtWhen(new Date(laterMs(at, c.first_seen_time)).toISOString())}`; }
+      if (at) { cls = ""; w = `tracked ${fmtWhen(tc[n] || new Date(laterMs(at, c.first_seen_time)).toISOString())}`; }
       else { cls = "wait"; w = "waiting for next scan"; }
     }
     return `<div class="cat ${cls}"><span class="cat-n">${esc(n)}</span><span class="cat-p">₹${esc(Number(c.price))}</span><span class="cat-s">${esc(STATUS[c.status] || c.status || "")}</span><span class="cat-w">${esc(w)}</span></div>`;
@@ -427,7 +429,7 @@ function weeksHtml(rule, tr, waitingList, tp) {
   tp.forEach(t => { if (t.week_start) W(String(t.week_start)).topics.push(t); });
 
   const order = Object.keys(THEATRES);
-  const got = new Map(tr.map(x => [key(x), x.at]));
+  const got = new Map(tr.map(x => [key(x), { at: x.at, cats: x.cats }]));
   return Object.keys(weeks).sort().map((k, i) => {
     const w = weeks[k];
     const sk = `${rule.id}:${k}`;
@@ -504,12 +506,15 @@ function renderList() {
     const note = !isSaved && waitingList.length ? `<div class="waiting">Save this rule so the scanner can start tracking its ${waitingList.length} match${waitingList.length === 1 ? "" : "es"}</div>`
       : !r.enabled ? `<div class="waiting">Rule is off. The scanner ignores it until you switch it on.</div>` : "";
 
+    const started = tr.filter(x => Date.now() > Date.parse(x.s.start)).length;
+    const info = tr.length ? `<p class="info">ⓘ <b>Open</b> counts only shows that have not started yet. <b>Tracked</b> also includes shows that started less than ${GRACE_MIN} min ago${started ? `, so ${started} of the ${tr.length} tracked ${started === 1 ? "show has" : "shows have"} already started` : ""}.</p>` : "";
+
     const weeks = weeksHtml(r, tr, r.enabled && isSaved ? waitingList : [], topicsOf(r));
 
     return `<article class="rule ${r.enabled ? "" : "off"}">
       <div class="rule-top"><h2 class="rule-name">${esc(r.name || "Untitled rule")}${unsaved}</h2>
         <label class="sw"><input type="checkbox" data-toggle="${i}" ${r.enabled ? "checked" : ""} aria-label="Rule enabled"><span></span></label></div>
-      <p class="rule-desc">${describe(r)}</p>${match}${stats}${note}${weeks}
+      <p class="rule-desc">${describe(r)}</p>${match}${stats}${info}${note}${weeks}
       <div class="rule-actions">
         <button class="btn ghost sm" data-edit="${i}">Edit</button>
         <button class="btn ghost sm" data-dup="${i}">Duplicate</button>
@@ -522,12 +527,12 @@ function renderList() {
 function openMatches(i) {
   const r = rules[i]; if (!r) return;
   const m = matchesOf(r);
-  const got = new Map(trackedBy(r).map(x => [key(x), x.at]));
+  const got = new Map(trackedBy(r).map(x => [key(x), { at: x.at, cats: x.cats }]));
   const order = Object.keys(THEATRES);
   const by = {};
   m.forEach(x => (by[x.v] = by[x.v] || []).push(x));
   $("mt-title").textContent = `${r.name || "Rule"} · ${m.length} open show${m.length === 1 ? "" : "s"}`;
-  $("mt-body").innerHTML = (m.length ? `<p class="hint">Tap a show to see each seat category and when it was tracked. Green times are already tracked.</p>` : "") +
+  $("mt-body").innerHTML = (m.length ? `<p class="hint">Only shows that have not started yet are listed here, so the tracked count on the rule card can be higher. Tap a show to see each seat category and when it was tracked. Green times are already tracked.</p>` : "") +
     (Object.keys(by).sort((a, b) => order.indexOf(a) - order.indexOf(b)).map(v => {
       const arr = by[v];
       const done = arr.filter(x => got.has(key(x))).length;

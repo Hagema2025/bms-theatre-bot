@@ -273,10 +273,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 237.49,
+     "reopened_at": "2026-11-08T16:40:50+05:30",
      "sold_out_at": "2026-11-08T05:50:50+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T05:50:50+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-08T16:40:50+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -544,50 +545,6 @@
    "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92675/20261108"
-  },
-  "92688": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 237.49,
-     "reopened_at": "2026-11-08T15:50:51+05:30",
-     "sold_out_at": "2026-11-08T16:01:09+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-08T16:01:09+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 94.43,
-     "reopened_at": "2026-11-08T16:01:09+05:30",
-     "sold_out_at": "2026-11-08T14:10:51+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-08T16:01:09+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T16:50:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-08T16:35:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "SCREEN 1",
-   "start": "2026-11-08T16:05:00+05:30",
-   "subs": "ENG subs",
-   "tags": [
-    "BIGPIX"
-   ],
-   "time": "04:05 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92688/20261108"
   },
   "92689": {
    "censor": "UA16+",
@@ -5185,5 +5142,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-08T16:31:25+05:30"
+ "_updated": "2026-11-08T16:40:50+05:30"
 }

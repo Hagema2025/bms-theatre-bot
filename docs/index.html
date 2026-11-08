@@ -937,11 +937,13 @@ function updateSortUI() {
 const bestStatus = s => Math.max(0, ...pricedClasses(s).map(([, c]) => Number(c.status) || 0));
 const soldOut = s => pricedClasses(s).length > 0 && bestStatus(s) === 0;
 
-const FMT = [["IMAX", /imax/i], ["Dolby Atmos", /atmos/i], ["4K", /\b4k\b/i]];
+const FMT = [["IMAX", /imax/i], ["Dolby Atmos", /atmos/i], ["4K", /\b4k\b/i], ["Big Pix", /big\s*pix/i]];
 function fmtTags(s) {
   const txt = [...(s.tags || []), s.screen || ""].join(" ");
   const dim = String(s.dimension || "");
-  return FMT.filter(([, r]) => r.test(txt) && !r.test(dim)).map(([n]) => n);
+  const out = FMT.filter(([, r]) => r.test(txt) && !r.test(dim)).map(([n]) => n);
+  if (s.subs) out.push(String(s.subs).trim());   // e.g. "ENG subs"
+  return out;
 }
 
 function mostCommon(arr) {
@@ -1089,7 +1091,7 @@ function renderDetail() {
 
   const dur = fmtDur(s.duration);
   const meta = [THEATRES[v], s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
-  const tags = (s.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
+  const tags = [...(s.tags || []), ...(s.subs ? [s.subs] : [])].map(t => `<span class="tag">${esc(t)}</span>`).join("");
   const classes = Object.entries(s.classes || {}).map(([name, c]) => `
     <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");

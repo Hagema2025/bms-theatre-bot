@@ -855,6 +855,38 @@ main { gap: 13px; }
   </section>
 </div>
 
+<div id="login-overlay" hidden style="
+  position:fixed; inset:0; z-index:100000;
+  background:rgba(0,0,0,.85);
+  display:none; align-items:center; justify-content:center;
+  padding:20px;
+">
+  <section style="
+    width:100%; max-width:360px; padding:24px;
+    border-radius:16px; background:var(--panel);
+  ">
+    <h2 style="margin-top:0">🔐 Enter PIN</h2>
+    <p>Enter the 6-digit PIN to enable batch tracking.</p>
+
+    <input
+      id="tracking-pin"
+      type="password"
+      inputmode="numeric"
+      maxlength="6"
+      placeholder="6-digit PIN"
+      autocomplete="off"
+      style="width:100%;box-sizing:border-box;padding:14px"
+    >
+
+    <p id="login-error" style="color:#ff6464"></p>
+
+    <div style="display:flex;gap:10px">
+      <button class="btn off" id="login-cancel">Cancel</button>
+      <button class="btn" id="login-submit">Unlock</button>
+    </div>
+  </section>
+</div>
+
 <main id="list"></main>
 
 <div class="batch-bar" id="batch-bar" hidden>
@@ -1077,6 +1109,111 @@ function notify(msg) {
   }
 }
 
+const TRACKING_API = "https://final-bms-bot.onrender.com";
+
+let trackingToken = sessionStorage.getItem("tracking_token") || null;
+
+function openLogin() {
+  const overlay = $("login-overlay");
+  overlay.hidden = false;
+  overlay.style.display = "flex";
+  $("tracking-pin").value = "";
+  $("login-error").textContent = "";
+}
+
+function closeLogin() {
+  $("login-overlay").hidden = true;
+  $("login-overlay").style.display = "none";
+}
+
+async function trackingLogin() {
+  const pin = $("tracking-pin").value.trim();
+  const error = $("login-error");
+  const button = $("login-submit");
+
+  if (!/^\d{6}$/.test(pin)) {
+    error.textContent = "Enter a valid 6-digit PIN.";
+    return false;
+  }
+
+  button.disabled = true;
+  error.textContent = "Verifying...";
+
+  try {
+    const response = await fetch(`${TRACKING_API}/api/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password: pin })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Login failed.");
+    }
+
+    trackingToken = data.token;
+    sessionStorage.setItem("tracking_token", trackingToken);
+
+    closeLogin();
+    return true;
+
+  } catch (e) {
+    error.textContent = e.message || "Unable to connect.";
+    return false;
+
+  } finally {
+    button.disabled = false;
+  }
+}
+
+async function submitBatchTracking(actions) {
+  if (!trackingToken) {
+    openLogin();
+    return;
+  }
+
+  try {
+    const response = await fetch(`${TRACKING_API}/api/tracking`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${trackingToken}`
+      },
+      body: JSON.stringify({ actions })
+    });
+
+    const data = await response.json();
+
+    if (response.status === 401) {
+      trackingToken = null;
+      sessionStorage.removeItem("tracking_token");
+      openLogin();
+      return;
+    }
+
+    if (!response.ok) {
+      throw new Error(data.error || "Tracking request failed.");
+    }
+
+    notify(
+      `Batch tracking completed.\n\n` +
+      `Successful: ${data.succeeded}\n` +
+      `Failed: ${data.failed}`
+    );
+
+    if (data.failed > 0) {
+      console.log("Batch tracking results:", data.results);
+    }
+
+    await refreshTracking();
+
+  } catch (e) {
+    console.error("Batch tracking error:", e);
+    notify(e.message || "Unable to submit batch tracking.");
+  }
+}
+
 function openCategoryPicker(v, d, id, show) {
   batchSelection = [];
   const classes = Object.entries(show.classes || {}).filter(([name, c]) => name && Number(c.price) > 0);
@@ -1267,11 +1404,7 @@ function saveCategorySelection() {
     closeCategoryPicker();
     batchSelection = [];
 
-    notify(
-      `${actions.length} tracking actions prepared. API submission is the next step. Nothing has been saved yet.`
-    );
-
-    return;
+    return submitBatchTracking(actions);
   }
 
   // ── Existing individual tracking ───────────────
@@ -1329,6 +1462,13 @@ function setHtml(el, html) {
 function renderVenues() {
   setHtml($("venues"), Object.entries(THEATRES).map(([code, name]) =>
     `<button class="chip" data-v="${code}" aria-pressed="${code === S.venue}">${esc(name)}</button>`).join(""));
+}
+function getTelegramInitData() {
+  if (!tg || !tg.initData) {
+    return null;
+  }
+
+  return tg.initData;
 }
 
 function datesFor(v) {
@@ -1634,6 +1774,23 @@ document.addEventListener("click", async e => {
 
 if (t.id === "batch-continue") {
     openBatchCategoryPicker();
+
+  return;
+}
+
+if (t.id === "login-cancel") {
+  closeLogin();
+  return;
+}
+
+if (t.id === "login-submit") {
+  const success = await trackingLogin();
+
+  if (success && preparedBatchActions.length) {
+    const actions = [...preparedBatchActions];
+    preparedBatchActions = [];
+    await submitBatchTracking(actions);
+  }
 
   return;
 }

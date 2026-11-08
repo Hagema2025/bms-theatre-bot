@@ -143,8 +143,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T16:01:09+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-09T00:40:53+05:30"
     }
    },
    "cutoff": "2026-11-09T16:10:00+05:30",
@@ -174,8 +174,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-09T00:40:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T00:40:53+05:30"
     }
    },
    "cutoff": "2026-11-09T09:50:00+05:30",
@@ -816,6 +818,37 @@
    "time": "11:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26499/20261109"
+  },
+  "26500": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-09T09:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-09T09:25:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 3",
+   "start": "2026-11-09T08:55:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:55 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26500/20261109"
   }
  },
  "20261110": {
@@ -2657,5 +2690,255 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/TVHP/26498/20261114"
   }
  },
- "_updated": "2026-11-09T00:31:27+05:30"
+ "20261115": {
+  "26490": {
+   "censor": "U",
+   "classes": {
+    "ELITE+3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 218.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T09:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-15T09:00:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 5",
+   "start": "2026-11-15T08:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26490/20261115"
+  },
+  "26491": {
+   "censor": "U",
+   "classes": {
+    "ELITE+3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 218.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T13:05:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-15T12:50:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 5",
+   "start": "2026-11-15T12:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "12:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26491/20261115"
+  },
+  "26492": {
+   "censor": "U",
+   "classes": {
+    "ELITE+3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 218.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T16:55:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-15T16:40:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 5",
+   "start": "2026-11-15T16:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "04:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26492/20261115"
+  },
+  "26493": {
+   "censor": "U",
+   "classes": {
+    "ELITE+3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 218.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T20:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-15T20:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 5",
+   "start": "2026-11-15T20:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26493/20261115"
+  },
+  "26494": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T09:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T09:05:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 4",
+   "start": "2026-11-15T08:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:35 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26494/20261115"
+  },
+  "26495": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T12:35:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T12:20:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 4",
+   "start": "2026-11-15T11:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26495/20261115"
+  },
+  "26496": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T15:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T15:35:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 4",
+   "start": "2026-11-15T15:05:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "03:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26496/20261115"
+  },
+  "26497": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T00:40:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T19:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T18:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-09T00:40:53+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 4",
+   "start": "2026-11-15T18:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26497/20261115"
+  }
+ },
+ "_updated": "2026-11-09T00:40:53+05:30"
 }

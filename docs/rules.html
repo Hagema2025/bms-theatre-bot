@@ -94,6 +94,20 @@ input[type=text],input[type=number],input[type=date],input[type=time],select{wid
 textarea{width:100%;min-height:200px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0c1320;color:#cfe3ff;font:12px/1.5 ui-monospace,Menlo,Consolas,monospace}
 .twin{display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--muted);font-size:12px}.twin b{flex:1;min-width:44px;color:#e8edf5;font-size:13px}.twin input{width:auto;flex:none;min-height:42px}
 .dirty{color:var(--accent-2);font-size:12px;font-weight:700}
+details.wk{margin-top:8px;border:1px solid rgba(167,139,250,.3);border-radius:14px;background:rgba(167,139,250,.05)}
+details.wk>summary{cursor:pointer;list-style:none;padding:11px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+details.wk>summary::-webkit-details-marker{display:none}
+details.wk>summary:after{content:"▾";color:var(--muted)}
+details.wk[open]>summary:after{content:"▴"}
+.wk-title{font-size:13px;font-weight:800;color:#e8edf5}
+.wk-sub{display:block;font-size:11px;color:var(--muted);font-weight:700;margin-top:2px}
+.wk-tag{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;margin-left:6px;color:#d9ccff;background:rgba(167,139,250,.16);border:1px solid rgba(167,139,250,.35)}
+.wk-body{padding:0 12px 12px}
+.tp-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0 4px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07)}
+.tp-head:first-child{border-top:0;padding-top:0;margin-top:2px}
+.tp-head b{font-size:13px}
+.tp-head a{color:var(--accent-2);font-weight:800;font-size:11px;text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
+.tp-none{font-size:10px;color:var(--muted);font-weight:700}
 </style>
 </head>
 <body>
@@ -213,8 +227,7 @@ let shows = [];                    // live shows still open for tracking, for pr
 let threads = {};                  // docs/rule_threads.json: weekly Telegram topics
 let token = sessionStorage.getItem("tracking_token") || null;
 let draft = null, editingNew = false, pendingSave = false;
-let openSecs = new Set(store.get("rules_open", []));   // which collapsible sections are open
-
+let openSecs = (() => { const o = store.get("rules_open", {}); return Array.isArray(o) ? {} : o; })();   // key -> open?
 const config = () => ({ version: 1, updated: new Date().toISOString(), rules });
 function persist() {
   store.set("rules_draft", { rules });
@@ -314,34 +327,81 @@ function describe(r) {
 }
 
 // Tracked shows grouped: date > theatre > movie (language · format) > time chips
-function trackedTree(list) {
-  const tree = {};
-  list.forEach(x => {
-    const day = tree[x.d] = tree[x.d] || {};
-    const th = day[x.v] = day[x.v] || {};
-    const k = `${x.s.movie || "Show"}\u0000${x.s.language || ""}\u0000${x.s.dimension || ""}`;
-    (th[k] = th[k] || []).push(x);
-  });
-  const order = Object.keys(THEATRES);
-  return Object.keys(tree).sort().map(d => {
-    const theatres = Object.keys(tree[d]).sort((a, b) => order.indexOf(a) - order.indexOf(b)).map(v => {
-      const movies = Object.entries(tree[d][v]).map(([k, arr]) => {
-        const [movie, lang, dim] = k.split("\u0000");
-        arr.sort((a, b) => Date.parse(a.s.start) - Date.parse(b.s.start));
-        return { movie, lang, dim, arr, first: Date.parse(arr[0].s.start) };
-      }).sort((a, b) => a.first - b.first || a.movie.localeCompare(b.movie));
-      return `<div class="t-theatre">${esc(THEATRES[v] || v)}</div>` + movies.map(m => `
-        <div class="t-movie"><div class="t-title">${esc(m.movie)}</div>
-          <div class="t-lang">${esc([m.lang, m.dim].filter(Boolean).join(" · "))}</div>
-          <div class="t-chips">${m.arr.map(x => `<span class="t-chip${Date.now() > Date.parse(x.s.start) ? " past" : ""}" title="${esc(x.s.screen || "")}">${esc(x.s.time)}</span>`).join("")}</div></div>`).join("");
-    }).join("");
-    return `<div class="t-date">${esc(dateLabel(d))}</div>${theatres}`;
+// ── Weeks: Monday to Sunday, same as the scanner's weekly topics ──
+const toCode = d => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+function wkStart(code) {
+  const d = new Date(+code.slice(0, 4), +code.slice(4, 6) - 1, +code.slice(6));
+  d.setDate(d.getDate() - (d.getDay() + 6) % 7);
+  return d;
+}
+const wkKey = code => toCode(wkStart(code));
+function wkLabel(key) {
+  const s = wkStart(key), e = new Date(s); e.setDate(e.getDate() + 6);
+  const f = d => d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  return `${f(s)} – ${f(e)}`;
+}
+function wkTag(key) {
+  const diff = Math.round((wkStart(key) - wkStart(toCode(new Date()))) / 604800000);
+  return diff === 0 ? "This week" : diff === 1 ? "Next week" : "";
+}
+
+// Tracked shows of one theatre: date > movie (language · format) > time chips
+function dayBlocks(arr) {
+  const byDay = {};
+  arr.forEach(x => (byDay[x.d] = byDay[x.d] || []).push(x));
+  return Object.keys(byDay).sort().map(d => {
+    const g = {};
+    byDay[d].forEach(x => {
+      const k = `${x.s.movie || "Show"}\u0000${x.s.language || ""}\u0000${x.s.dimension || ""}`;
+      (g[k] = g[k] || []).push(x);
+    });
+    const movies = Object.entries(g).map(([k, a]) => {
+      const [movie, lang, dim] = k.split("\u0000");
+      a.sort((p, q) => Date.parse(p.s.start) - Date.parse(q.s.start));
+      return { movie, lang, dim, a, first: Date.parse(a[0].s.start) };
+    }).sort((p, q) => p.first - q.first || p.movie.localeCompare(q.movie));
+    return `<div class="t-date">${esc(dateLabel(d))}</div>` + movies.map(m => `
+      <div class="t-movie"><div class="t-title">${esc(m.movie)}</div>
+        <div class="t-lang">${esc([m.lang, m.dim].filter(Boolean).join(" · "))}</div>
+        <div class="t-chips">${m.a.map(x => `<span class="t-chip${Date.now() > Date.parse(x.s.start) ? " past" : ""}" title="${esc(x.s.screen || "")}">${esc(x.s.time)}</span>`).join("")}</div></div>`).join("");
   }).join("");
 }
 
-function secHtml(key, title, body, count) {
-  return `<details class="sec" data-sec="${esc(key)}" ${openSecs.has(key) ? "open" : ""}>
-    <summary><span>${title}${count != null ? ` · ${count}` : ""}</span></summary><div class="sec-body">${body}</div></details>`;
+// One collapsible block per week: theatre > its Telegram topic > tracked shows
+function weeksHtml(rule, tr, waitingList, tp) {
+  const weeks = {};
+  const W = k => (weeks[k] = weeks[k] || { tracked: [], waiting: 0, topics: [] });
+  tr.forEach(x => W(wkKey(x.d)).tracked.push(x));
+  waitingList.forEach(x => { W(wkKey(x.d)).waiting++; });
+  tp.forEach(t => { if (t.week_start) W(String(t.week_start)).topics.push(t); });
+
+  const order = Object.keys(THEATRES);
+  return Object.keys(weeks).sort().map((k, i) => {
+    const w = weeks[k];
+    const sk = `${rule.id}:${k}`;
+    const open = sk in openSecs ? openSecs[sk] : i === 0;
+    const venues = [...new Set([...w.tracked.map(x => x.v), ...w.topics.map(t => t.venue)])]
+      .sort((a, b) => order.indexOf(a) - order.indexOf(b));
+    const bits = [];
+    if (w.tracked.length) bits.push(`⚡ ${w.tracked.length} tracked`);
+    if (venues.length) bits.push(`${venues.length} theatre${venues.length === 1 ? "" : "s"}`);
+    if (w.waiting) bits.push(`⏳ ${w.waiting} waiting for next scan`);
+    const tag = wkTag(k);
+
+    const body = venues.length ? venues.map(v => {
+      const t = w.topics.find(t => t.venue === v);
+      const link = t ? topicLink(t) : "";
+      const mine = w.tracked.filter(x => x.v === v);
+      return `<div class="tp-head"><b>${esc(THEATRES[v] || v)}</b>
+          ${link ? `<a href="${esc(link)}" data-tglink target="_blank" rel="noopener">Open topic ↗</a>` : `<span class="tp-none">${t ? "Topic created" : "No topic yet"}</span>`}</div>`
+        + (mine.length ? dayBlocks(mine) : `<div class="empty">No shows tracked in this topic yet.</div>`);
+    }).join("") : `<div class="empty">No topic yet. It is created on the next scan, then these shows get tracked.</div>`;
+
+    return `<details class="wk" data-sec="${esc(sk)}" ${open ? "open" : ""}>
+      <summary><span><span class="wk-title">${esc(wkLabel(k))}${tag ? `<span class="wk-tag">${tag}</span>` : ""}</span>
+        <span class="wk-sub">${esc(bits.join(" · ") || "Nothing yet")}</span></span></summary>
+      <div class="wk-body">${body}</div></details>`;
+  }).join("");
 }
 
 function renderList() {
@@ -361,17 +421,18 @@ function renderList() {
   }
 
   $("list").innerHTML = rules.map((r, i) => {
-    const m = shows.filter(x => ruleMatches(r, x));
+    // matches = passes the filters AND has a seat within the rule's budget (same as the scanner)
+    const m = shows.filter(x => ruleMatches(r, x) && trackedCats(r, x.s).length);
     const tr = trackedBy(r);
     const trKeys = new Set(tr.map(x => `${x.v}_${x.d}_${x.id}`));
-    const waiting = m.filter(x => trackedCats(r, x.s).length && !trKeys.has(`${x.v}_${x.d}_${x.id}`)).length;
+    const waitingList = m.filter(x => !trKeys.has(`${x.v}_${x.d}_${x.id}`));
     const movies = [...new Set(m.map(x => x.s.movie))];
     const isSaved = savedById[r.id] === JSON.stringify(r);
     const unsaved = !isSaved ? `<span class="badge-unsaved">${savedById[r.id] ? "Edited · not saved" : "New · not saved"}</span>` : "";
 
     const match = !shows.length ? "" : m.length
-      ? `<div class="match">Matches ${m.length} show${m.length === 1 ? "" : "s"} right now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</div>`
-      : `<div class="match none">No current shows match yet. It will catch new ones.</div>`;
+      ? `<div class="match">${m.length} open show${m.length === 1 ? "" : "s"} match now · ${esc(movies.slice(0, 3).join(", "))}${movies.length > 3 ? ` +${movies.length - 3}` : ""}</div>`
+      : `<div class="match none">No open shows match right now. It will catch new ones.</div>`;
 
     const theatreN = new Set(tr.map(x => x.v)).size, movieN = new Set(tr.map(x => x.s.movie)).size;
     const last = tr.reduce((a, x) => Math.max(a, Date.parse(x.at) || 0), 0);
@@ -381,23 +442,15 @@ function renderList() {
         <span class="stat dim">${movieN} movie${movieN === 1 ? "" : "s"}</span>
         ${last ? `<span class="stat dim">last pickup ${esc(fmtWhen(new Date(last).toISOString()))}</span>` : ""}</div>`
       : (live.length ? `<div class="stats"><span class="stat dim">Nothing tracked yet</span></div>` : "");
-    const wait = waiting && isSaved && r.enabled ? `<div class="waiting">⏳ ${waiting} matching show${waiting === 1 ? "" : "s"} will be picked up on the next scan</div>`
-      : waiting && !isSaved ? `<div class="waiting">Save this rule so the scanner can start tracking its ${waiting} match${waiting === 1 ? "" : "es"}</div>` : "";
+    const note = !isSaved && waitingList.length ? `<div class="waiting">Save this rule so the scanner can start tracking its ${waitingList.length} match${waitingList.length === 1 ? "" : "es"}</div>`
+      : !r.enabled ? `<div class="waiting">Rule is off. The scanner ignores it until you switch it on.</div>` : "";
 
-    const trackedSec = tr.length ? secHtml(`${r.id}:t`, "Tracked shows", trackedTree(tr), tr.length) : "";
-
-    const tp = topicsOf(r);
-    const topicRows = tp.map(t => {
-      const link = topicLink(t);
-      return `<div class="topic"><div><b>${esc(THEATRES[t.venue] || t.venue)}</b><span>${esc(ymd(t.week_start))} – ${esc(ymd(t.week_end))}</span></div>
-        ${link ? `<a href="${esc(link)}" data-tglink target="_blank" rel="noopener">Open ↗</a>` : ""}</div>`;
-    }).join("");
-    const topicSec = tp.length ? secHtml(`${r.id}:p`, "Telegram topics", topicRows, tp.length) : "";
+    const weeks = weeksHtml(r, tr, r.enabled && isSaved ? waitingList : [], topicsOf(r));
 
     return `<article class="rule ${r.enabled ? "" : "off"}">
       <div class="rule-top"><h2 class="rule-name">${esc(r.name || "Untitled rule")}${unsaved}</h2>
         <label class="sw"><input type="checkbox" data-toggle="${i}" ${r.enabled ? "checked" : ""} aria-label="Rule enabled"><span></span></label></div>
-      <p class="rule-desc">${describe(r)}</p>${match}${stats}${wait}${trackedSec}${topicSec}
+      <p class="rule-desc">${describe(r)}</p>${match}${stats}${note}${weeks}
       <div class="rule-actions">
         <button class="btn ghost sm" data-edit="${i}">Edit</button>
         <button class="btn ghost sm" data-dup="${i}">Duplicate</button>
@@ -405,7 +458,6 @@ function renderList() {
       </div></article>`;
   }).join("");
 }
-
 // ── Editor ────────────────────────────────────────────────
 const chip = (g, val, label, on) => `<button type="button" class="chip" data-g="${g}" data-val="${esc(val)}" aria-pressed="${on}">${esc(label)}</button>`;
 function openEditor(r, isNew) {
@@ -567,8 +619,8 @@ async function loadRemote() {
 // <details> "toggle" doesn't bubble, so listen in the capture phase to remember what is open
 document.addEventListener("toggle", e => {
   const k = e.target && e.target.dataset && e.target.dataset.sec; if (!k) return;
-  if (e.target.open) openSecs.add(k); else openSecs.delete(k);
-  store.set("rules_open", [...openSecs]);
+  openSecs[k] = e.target.open;
+  store.set("rules_open", openSecs);
 }, true);
 document.addEventListener("click", e => {
   const a = e.target.closest("a[data-tglink]");

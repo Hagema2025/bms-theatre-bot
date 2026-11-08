@@ -93,6 +93,11 @@ ERRORS_THREAD_NAME = "⚠️ Errors"
 STATE_DIR          = os.environ.get("STATE_DIR", "docs/state")
 TRACKING_DIR       = os.environ.get("TRACKING_DIR", "docs/tracking")
 META_FILE          = os.environ.get("META_FILE", "meta.json")
+RULES_FILE        = os.environ.get("RULES_FILE", "docs/rules.json")
+RULE_THREADS_FILE = os.environ.get("RULE_THREADS_FILE", "docs/rule_threads.json")
+RULE_CUTOFF       = timedelta(minutes=int(os.environ.get("RULE_CUTOFF_MINUTES", "10")))  # no new rule-tracking this long after start
+SHOW_PRICES       = {}   # (venue, date, session) -> prices seen this run
+DAY_ABBR          = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DIVIDER            = "━━━━━━━━━━━━━━━━"
 
 # Category AvailStatus, as checked against live seat maps:
@@ -693,6 +698,7 @@ def scan(session, state, now):
                 logging.warning(f"{venue} {date_code}: register_shows failed ({type(e).__name__}: {e})")
             scanned.add((venue, date_code))
             scanned.update((venue, d.get("Date")) for d in data.get("ShowDetails") or [])
+            collect_prices(venue, data)
 
             if len(done) == 1:
                 dates += [d.get("DateCode") for d in data.get("ShowDatesArray") or []
@@ -758,6 +764,269 @@ def cleanup_ended(state, tracking, now):
                 shows.pop(sid)
             if not shows:
                 dates.pop(date_code)
+
+# ───────────────────────── auto-track rules ─────────────────────────
+
+def load_rules():
+    cfg = read_json(RULES_FILE, {})
+    rules = cfg.get("rules") if isinstance(cfg, dict) else []
+    return [r for r in (rules or []) if isinstance(r, dict) and r.get("id") and r.get("name")]
+
+
+def load_rule_threads():
+    data = read_json(RULE_THREADS_FILE, {})
+    return data if isinstance(data, dict) else {}
+
+
+def save_rule_threads(rule_threads):
+    if read_json(RULE_THREADS_FILE, {}) != rule_threads:
+        write_json(RULE_THREADS_FILE, rule_threads)
+
+
+def collect_prices(venue, data):
+    """Remember every seat price seen for each show this run (used for budget rules)."""
+    for day, child, show, cat, *_ in iter_categories(data):
+        try:
+            price = float(cat.get("CurPrice") or 0)
+        except (TypeError, ValueError):
+            continue
+        sid = show.get("SessionId")
+        date_code = show.get("ShowDateCode") or day.get("Date")
+        if price > 0 and sid and date_code:
+            SHOW_PRICES.setdefault((venue, date_code, str(sid)), []).append(price)
+
+
+def _min_price(venue, date_code, sid, show):
+    prices = SHOW_PRICES.get((venue, date_code, sid)) or \
+             [c.get("price") for c in (show.get("classes") or {}).values()]
+    prices = [float(p) for p in prices if p]
+    return min(prices) if prices else None
+
+
+def _hm(t):
+    h, m = t.split(":")
+    return int(h) * 60 + int(m)
+
+
+def _in_window(w, minutes):
+    if not isinstance(w, dict):
+        return True
+    if w.get("from") and minutes < _hm(w["from"]):
+        return False
+    if w.get("to") and minutes > _hm(w["to"]):
+        return False
+    return True
+
+
+def rule_matches(rule, venue, date_code, show):
+    """Same logic as ruleMatches() in rules.html."""
+    venues = [str(v).upper() for v in (rule.get("venues") or [])]
+    if venues and venue not in venues:
+        return False
+
+    movie = str(rule.get("movie") or "").strip().lower()
+    if movie and movie not in str(show.get("movie") or "").lower():
+        return False
+
+    langs = [str(x).lower() for x in (rule.get("languages") or [])]
+    if langs and str(show.get("language") or "").lower() not in langs:
+        return False
+
+    dow = (datetime.strptime(date_code, "%Y%m%d").weekday() + 1) % 7      # Sunday = 0, like the page
+    days = rule.get("days") or []
+    if days and dow not in days:
+        return False
+
+    d_from = str(rule.get("from") or "").replace("-", "")
+    d_to = str(rule.get("to") or "").replace("-", "")
+    if d_from and date_code < d_from:
+        return False
+    if d_to and date_code > d_to:
+        return False
+
+    start = parse_iso(show.get("start"))
+    if not start:
+        return False
+    local = start.astimezone(IST)
+    window = (rule.get("day_times") or {}).get(str(dow)) if rule.get("per_day") else rule.get("time")
+    return _in_window(window, local.hour * 60 + local.minute)
+
+
+def week_bounds(date_code):
+    d = datetime.strptime(date_code, "%Y%m%d").date()
+    monday = d - timedelta(days=d.weekday())
+    return monday, monday + timedelta(days=6)
+
+
+def _fmt_day(d):
+    return f"{d.strftime('%a')}, {d.day} {d.strftime('%b')}"          # Mon, 9 Nov
+
+
+def rule_thread_name(rule_name, ws, we):
+    suffix = f" | {_fmt_day(ws)} to {_fmt_day(we)}"
+    return (rule_name[:128 - len(suffix)] + suffix)[:128]
+
+
+def _win_text(w):
+    w = w or {}
+    if not (w.get("from") or w.get("to")):
+        return "any time"
+    return f"{w.get('from') or '00:00'}–{w.get('to') or '23:59'}"
+
+
+def describe_rule(rule):
+    days = [d for d in (1, 2, 3, 4, 5, 6, 0) if d in (rule.get("days") or [])]
+    if rule.get("per_day") and days:
+        when = ", ".join(f"{DAY_ABBR[d]} {_win_text((rule.get('day_times') or {}).get(str(d)))}" for d in days)
+    else:
+        when = (" ".join(DAY_ABBR[d] for d in days) or "Every day") + " · " + _win_text(rule.get("time"))
+    seats = f"Seats up to ₹{rule.get('max_price')}" if rule.get("mode") == "budget" else "All seat types"
+    return " · ".join([rule.get("movie") or "Any movie",
+                       ", ".join(rule.get("languages") or []) or "Any language", when, seats])
+
+
+def ensure_rule_thread(rule_threads, venue, rule, ws, we):
+    """Find or create the topic for (rule, theatre, week). Returns its record or None."""
+    chat = TRACK_CHATS.get(venue)
+    if not chat:
+        return None
+    key = f"{venue}_{rule['id']}_{ws:%Y%m%d}"
+    name = rule_thread_name(rule["name"], ws, we)
+    ent = rule_threads.get(key)
+
+    if ent and ent.get("thread_id"):
+        if ent.get("rule_name") != rule["name"]:                      # rule was renamed
+            tg_api("editForumTopic", {"chat_id": chat, "message_thread_id": ent["thread_id"], "name": name})
+            ent["rule_name"] = rule["name"]
+        return ent
+
+    ok, body = tg_api("createForumTopic", {"chat_id": chat, "name": name})
+    if not ok:
+        return None
+    thread_id = body["result"]["message_thread_id"]
+    ent = ent or {}
+    ent.update(venue=venue, rule_id=rule["id"], rule_name=rule["name"],
+               week_start=f"{ws:%Y%m%d}", week_end=f"{we:%Y%m%d}",
+               chat_id=str(chat), thread_id=thread_id,
+               created=datetime.now(IST).isoformat(timespec="seconds"))
+    rule_threads[key] = ent
+    tg_api("sendMessage", {
+        "chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
+        "disable_notification": True, "disable_web_page_preview": True,
+        "text": (f"📌 <b>{html.escape(rule['name'])}</b>\n"
+                 f"🎟️ {html.escape(TARGET_THEATRES[venue])}\n"
+                 f"📅 {_fmt_day(ws)} to {_fmt_day(we)}\n"
+                 f"⚙️ {html.escape(describe_rule(rule))}\n\n"
+                 f"🔔 Alerts for shows matching this rule appear in this topic.")})
+    return ent
+
+
+def _post_rule(rule_threads, rule, venue, ws, we, text):
+    """Send into the rule's weekly topic. If the topic was deleted by hand, make a new one once."""
+    for _ in range(2):
+        ent = ensure_rule_thread(rule_threads, venue, rule, ws, we)
+        if not ent:
+            return False
+        ok, body = tg_api("sendMessage", {
+            "chat_id": ent["chat_id"], "message_thread_id": ent["thread_id"], "text": text,
+            "parse_mode": "HTML", "disable_web_page_preview": True})
+        if ok:
+            return True
+        if "thread" not in body.get("description", "").lower():
+            return False
+        ent["thread_id"] = None                                       # forces a new topic next loop
+    return False
+
+
+def send_rule(rule_threads, rule, venue, date_code, text):
+    ws, we = week_bounds(date_code)
+    return _post_rule(rule_threads, rule, venue, ws, we, text)
+
+
+def apply_rules(state, rules, rule_threads, now):
+    """Mark every new matching show as tracked by the rule, creating weekly topics as needed.
+    Returns how many (show, rule) pairs were added."""
+    by_id = {r["id"]: r for r in rules}
+    added, count = {}, 0
+
+    for venue, dates in state.items():
+        if not TRACK_CHATS.get(venue):
+            continue
+        for date_code, shows in dates.items():
+            for sid, show in shows.items():
+                for t in show.get("tracked_by_rules") or []:          # keep names in sync after a rename
+                    r = by_id.get(t.get("rule_id"))
+                    if r and t.get("rule") != r["name"]:
+                        t["rule"] = r["name"]
+
+                start = parse_iso(show.get("start"))
+                if not start or now > start + RULE_CUTOFF:
+                    continue
+                done = show.get("tracked_by_rules") or []
+                have = {t.get("rule_id") for t in done}
+
+                for rule in rules:
+                    if rule["id"] in have or not rule_matches(rule, venue, date_code, show):
+                        continue
+                    if rule.get("mode") == "budget":
+                        low = _min_price(venue, date_code, sid, show)
+                        if low is None or low > float(rule.get("max_price") or 0):
+                            continue
+                    ws, we = week_bounds(date_code)
+                    if not ensure_rule_thread(rule_threads, venue, rule, ws, we):
+                        continue                                       # try again next run
+                    done = done + [{"rule": rule["name"], "rule_id": rule["id"],
+                                    "tracked_at": now.isoformat(timespec="seconds")}]
+                    show["tracked_by_rules"] = done
+                    count += 1
+                    line = (f"• {html.escape(format_date(date_code))} · {html.escape(show.get('time', ''))} · "
+                            f"{html.escape(show.get('movie', ''))} "
+                            f"({html.escape(' '.join(x for x in (show.get('language'), show.get('dimension')) if x))})")
+                    added.setdefault((venue, rule["id"], ws), (rule, we, []))[2].append(line)
+
+    # one message per topic listing what was just tracked
+    for (venue, _rid, ws), (rule, we, lines) in added.items():
+        for i in range(0, len(lines), 25):
+            part = lines[i:i + 25]
+            _post_rule(rule_threads, rule, venue, ws, we,
+                       f"✅ Now tracking {len(lines)} show(s)\n" + "\n".join(part))
+            time.sleep(1)
+    return count
+
+
+def rules_on_show(show, by_id):
+    return [by_id[t["rule_id"]] for t in (show or {}).get("tracked_by_rules") or []
+            if t.get("rule_id") in by_id]
+
+
+def rule_category_ok(rule, price):
+    if rule.get("mode") == "budget":
+        try:
+            return price <= float(rule.get("max_price"))
+        except (TypeError, ValueError):
+            return False
+    return True
+
+
+def cleanup_rule_threads(rule_threads, now):
+    """Delete a weekly topic once its week is over (Monday 03:00 IST)."""
+    for key, ent in list(rule_threads.items()):
+        try:
+            end = datetime.strptime(ent["week_end"], "%Y%m%d").replace(tzinfo=IST) + timedelta(days=1, hours=3)
+        except (KeyError, ValueError):
+            rule_threads.pop(key, None)
+            continue
+        if now < end:
+            continue
+        gone = True
+        if ent.get("thread_id") and ent.get("chat_id"):
+            ok, body = tg_api("deleteForumTopic", {"chat_id": ent["chat_id"], "message_thread_id": ent["thread_id"]})
+            gone = ok or "thread" in body.get("description", "").lower()
+        tries = ent.get("tries", 0) + 1
+        if gone or tries >= CLEANUP_MAX_TRIES:
+            rule_threads.pop(key, None)
+        else:
+            ent["tries"] = tries
 # ───────────────────────── alerts ─────────────────────────
 
 def format_hit(h):
@@ -817,54 +1086,66 @@ def record_alert(state, h, now):
     c["soon_alerted"] = h["soon"] or c.get("soon_alerted", False)
 
 
-def send_alerts(hits, state, tracking, now):
-    """Send alerts only for selected categories in tracked shows.
-    All other category statuses are still recorded silently."""
-    groups = {}
+def _deliver(group, venue, date_code, send_fn):
+    """Send one show's alerts in messages under 3600 characters. Returns the hits delivered."""
+    chunks, current, size = [], [], 0
+    for h in group:
+        block = format_hit(h)
+        if current and size + len(block) + len(DIVIDER) + 2 > 3600:
+            chunks.append(current)
+            current, size = [], 0
+        current.append((h, block))
+        size += len(block) + len(DIVIDER) + 2
+    if current:
+        chunks.append(current)
+
+    delivered = []
+    for n, chunk in enumerate(chunks, 1):
+        part = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
+        header = (f"🎟️ <b>{html.escape(TARGET_THEATRES[venue])}</b>\n"
+                  f"📅 {format_date(date_code)} · {len(group)} alert(s){part}")
+        text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
+        if send_fn(text):
+            delivered += [h for h, _ in chunk]
+        time.sleep(1)
+    return delivered
+
+
+def send_alerts(hits, state, tracking, now, rules_by_id=None, rule_threads=None):
+    """Alerts go to the show's manual topic and/or the topic of each rule tracking it.
+    Everything else is recorded silently."""
+    rules_by_id, rule_threads = rules_by_id or {}, rule_threads if rule_threads is not None else {}
+    manual, by_rule, dest = {}, {}, {}          # dest[hit key] = [destinations, delivered]
 
     for h in sorted(hits, key=lambda h: h["start"] or now):
+        dest[h["key"]] = [0, 0]
+        v, d, s = h["venue"], h["date"], h["session"]
 
-        thread = track_thread(
-            state, tracking,
-            h["venue"], h["date"], h["session"]
-        )
+        if track_thread(state, tracking, v, d, s) and \
+           is_category_tracked(tracking, v, d, s, h["category"], h["price"]):
+            manual.setdefault((v, d, s), []).append(h)
+            dest[h["key"]][0] += 1
 
-        category_selected = is_category_tracked(
-            tracking, h["venue"], h["date"], h["session"], h["category"], h["price"]
-        )
+        for rule in rules_on_show(get_show(state, v, d, s), rules_by_id):
+            if rule_category_ok(rule, h["price"]):
+                by_rule.setdefault((v, d, s, rule["id"]), (rule, []))[1].append(h)
+                dest[h["key"]][0] += 1
 
-        if thread and category_selected:
-            groups.setdefault(
-                (h["venue"], h["date"], h["session"]), []
-            ).append(h)
-        else:
-            # Keep the category's status current without sending an alert.
-            record_alert(state, h, now)
+    for (v, d, s), group in manual.items():
+        for h in _deliver(group, v, d, lambda t, v=v, d=d, s=s: send_track(state, tracking, v, d, s, t)):
+            dest[h["key"]][1] += 1
+
+    for (v, d, s, _rid), (rule, group) in by_rule.items():
+        for h in _deliver(group, v, d, lambda t, v=v, d=d, rule=rule: send_rule(rule_threads, rule, v, d, t)):
+            dest[h["key"]][1] += 1
 
     sent = 0
-    for (venue, date_code, session), group in groups.items():
-        chunks, current, size = [], [], 0
-        for h in group:
-            block = format_hit(h)
-            if current and size + len(block) + len(DIVIDER) + 2 > 3600:
-                chunks.append(current)
-                current, size = [], 0
-            current.append((h, block))
-            size += len(block) + len(DIVIDER) + 2
-        if current:
-            chunks.append(current)
-        for n, chunk in enumerate(chunks, 1):
-            part = f" ({n}/{len(chunks)})" if len(chunks) > 1 else ""
-            header = (f"🎟️ <b>{html.escape(TARGET_THEATRES[venue])}</b>\n"
-                      f"📅 {format_date(date_code)} · {len(group)} alert(s){part}")
-            text = f"{header}\n{DIVIDER}\n" + f"\n{DIVIDER}\n".join(b for _, b in chunk)
-            if send_track(state, tracking, venue, date_code, session, text):
-                for h, _ in chunk:
-                    record_alert(state, h, now)
-                sent += len(chunk)
-            time.sleep(1)
+    for h in hits:
+        n, ok = dest[h["key"]]
+        if n == 0 or ok:                         # nothing to send, or at least one copy delivered
+            record_alert(state, h, now)
+        sent += ok
     return sent
-
 
 def check_health(meta, stats):
     """Per theatre: warn in its Errors topic when BMS has failed for several runs in a row,
@@ -896,6 +1177,8 @@ def main():
     meta     = load_meta()
     state    = load_state()
     tracking = load_tracking()
+    rules_by_id  = {r["id"]: r for r in load_rules() if r.get("enabled", True)}
+    rule_threads = load_rule_threads()
     healthy  = False
 
     tracked = sum(1 for v in tracking.values() for d in v.values() if isinstance(d, dict)
@@ -916,7 +1199,12 @@ def main():
             session.close()
         ok     = sum(s["ok"] for s in stats.values())
         failed = sum(s["failed"] for s in stats.values())
-        logging.info(f"BMS requests: {ok} ok, {failed} failed. Alerts to send: {len(hits)}")
+        newly = apply_rules(state, list(rules_by_id.values()), rule_threads, now)
+        if newly:
+            logging.info(f"Rules: {newly} show(s) newly tracked")
+        if hits or rules_by_id:
+            logging.info(f"Telegram alerts delivered: "
+                         f"{send_alerts(hits, state, tracking, now, rules_by_id, rule_threads)}/{len(hits)}")
         if hits:
             logging.info(f"Telegram alerts delivered: {send_alerts(hits, state, tracking, now)}/{len(hits)}")
         if changes:
@@ -931,6 +1219,11 @@ def main():
         cleanup_ended(state, tracking, now)   # drop finished shows, delete their topics
     except Exception:
         logging.exception("Cleanup failed")
+    try:
+        cleanup_rule_threads(rule_threads, now)
+    except Exception:
+        logging.exception("Rule thread cleanup failed")
+    save_rule_threads(rule_threads)
     save_all(state, meta, now)
     return 0 if healthy else 1
 

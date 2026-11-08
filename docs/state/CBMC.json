@@ -1,47 +1,5 @@
 {
  "20261108": {
-  "15201": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 252.49,
-     "reopened_at": "2026-11-08T18:10:50+05:30",
-     "sold_out_at": "2026-11-08T18:01:10+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T18:10:50+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 109.43,
-     "reopened_at": "2026-11-08T07:40:55+05:30",
-     "sold_out_at": "2026-11-08T15:31:21+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T15:31:21+05:30"
-    }
-   },
-   "cutoff": "2026-11-08T18:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-08T18:30:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI01",
-   "start": "2026-11-08T18:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "06:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/15201/20261108"
-  },
   "15202": {
    "censor": "U",
    "classes": {
@@ -1656,8 +1614,10 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-08T18:31:29+05:30",
      "soon_alerted": false,
-     "status": "1"
+     "status": "0",
+     "status_changed_at": "2026-11-08T18:31:29+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6764,5 +6724,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15925/20261112"
   }
  },
- "_updated": "2026-11-08T18:20:52+05:30"
+ "_updated": "2026-11-08T18:31:29+05:30"
 }

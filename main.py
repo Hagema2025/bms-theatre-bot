@@ -1033,6 +1033,31 @@ def rule_category_ok(rule, price):
             return False
     return True
 
+def stamp_rule_categories(state, rules_by_id, now):
+    """Per rule and show, record when each seat category first qualified (category-level tracked time).
+    Shows tracked before this existed are backfilled once from their tracked_at / first_seen_time."""
+    iso = now.isoformat(timespec="seconds")
+    for dates in state.values():
+        for shows in dates.values():
+            for show in shows.values():
+                for t in show.get("tracked_by_rules") or []:
+                    rule = rules_by_id.get(t.get("rule_id"))
+                    if not rule:
+                        continue
+                    legacy = "cats" not in t
+                    cats = t.setdefault("cats", {})
+                    for name, c in (show.get("classes") or {}).items():
+                        price = c.get("price")
+                        if name in cats or not price or not rule_category_ok(rule, price):
+                            continue
+                        stamp = iso
+                        if legacy:
+                            cand = [x for x in (parse_iso(t.get("tracked_at")),
+                                                parse_iso(c.get("first_seen_time"))) if x]
+                            if cand:
+                                stamp = max(cand).isoformat(timespec="seconds")
+                        cats[name] = stamp
+
 
 def cleanup_rule_threads(rule_threads, now):
     """Delete a weekly topic once its week is over (Monday 03:00 IST)."""
@@ -1235,6 +1260,7 @@ def main():
         if hits or rules_by_id:
             logging.info(f"Telegram alerts delivered: "
                          f"{send_alerts(hits, state, tracking, now, rules_by_id, rule_threads)}/{len(hits)}")
+        stamp_rule_categories(state, rules_by_id, now)
 
         if changes:
             announce_time_changes(state, tracking, changes)

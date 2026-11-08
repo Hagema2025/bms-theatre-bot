@@ -398,10 +398,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
+     "reopened_at": "2026-11-08T12:31:32+05:30",
      "sold_out_at": "2026-11-07T22:01:09+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-07T22:01:09+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-08T12:31:32+05:30"
     },
     "PEARL": {
      "first_seen_status": "3",
@@ -518,10 +519,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "reopened_at": "2026-11-08T11:31:22+05:30",
-     "sold_out_at": "2026-11-07T22:20:48+05:30",
+     "sold_out_at": "2026-11-08T12:31:32+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T11:31:22+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-08T12:31:32+05:30"
     },
     "PEARL": {
      "first_seen_status": "1",
@@ -1313,7 +1314,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-08T12:31:32+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1787,6 +1789,154 @@
    "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48585/20261110"
+  },
+  "48601": {
+   "censor": "U",
+   "classes": {
+    "DIAMOND 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 230.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL 3D": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 89.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-10T19:00:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-10T19:15:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-08T12:31:32+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 2",
+   "start": "2026-11-10T18:45:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/ACON/48601/20261110"
+  },
+  "48602": {
+   "censor": "U",
+   "classes": {
+    "DIAMOND 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 230.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL 3D": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 89.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-10T22:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-10T23:00:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-08T12:31:32+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 2",
+   "start": "2026-11-10T22:30:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/ACON/48602/20261110"
+  },
+  "48603": {
+   "censor": "U",
+   "classes": {
+    "DIAMOND 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 230.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL 3D": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 89.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-10T12:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-10T12:30:00+05:30",
+   "event_code": "ET00523155",
+   "first_seen": "2026-11-08T12:31:32+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
+   "screen": "SCREEN 2",
+   "start": "2026-11-10T12:00:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/ACON/48603/20261110"
+  },
+  "48604": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-10T16:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-10T16:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-08T12:31:32+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-10T15:45:00+05:30",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48604/20261110"
   }
  },
  "20261111": {
@@ -2132,8 +2282,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-08T12:31:32+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-08T12:31:32+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2457,7 +2609,44 @@
    "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48593/20261112"
+  },
+  "48605": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-08T12:31:32+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-12T10:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-12T10:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-08T12:31:32+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 4",
+   "start": "2026-11-12T10:15:00+05:30",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:15 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48605/20261112"
   }
  },
- "_updated": "2026-11-08T12:20:50+05:30"
+ "_updated": "2026-11-08T12:31:32+05:30"
 }

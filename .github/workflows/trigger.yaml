@@ -35,6 +35,8 @@ jobs:
           STATE_DIR: data/docs/state
           TRACKING_DIR: data/docs/tracking
           META_FILE: data/meta.json
+          RULES_FILE: data/docs/rules.json
+          RULE_THREADS_FILE: data/docs/rule_threads.json
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_INTO: ${{ secrets.TELEGRAM_CHAT_INTO }}
           TELEGRAM_CHAT_PVHR: ${{ secrets.TELEGRAM_CHAT_PVHR }}
@@ -51,7 +53,7 @@ jobs:
           git config user.name "bms-bot"
           git config user.email "bms-bot@users.noreply.github.com"
           # Only state and meta; never touch docs/tracking (the Telegram bot owns it)
-          for p in docs/state meta.json; do
+          for p in docs/state docs/rule_threads.json meta.json; do
             [ -e "$p" ] && git add -A "$p"
           done
           git diff --cached --quiet && exit 0

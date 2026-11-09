@@ -147,9 +147,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-09T14:50:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T09:01:08+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T14:50:52+05:30"
     }
    },
    "cutoff": "2026-11-09T18:35:00+05:30",
@@ -210,39 +211,6 @@
    "time": "09:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26353/20261109"
-  },
-  "26356": {
-   "censor": "UA16+",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.0,
-     "sold_out_at": "2026-11-09T11:31:27+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T11:31:27+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T15:00:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-09T14:45:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 5",
-   "start": "2026-11-09T14:15:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "02:15 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26356/20261109"
   },
   "26357": {
    "censor": "UA16+",
@@ -317,10 +285,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 218.0,
+     "reopened_at": "2026-11-09T14:50:52+05:30",
      "sold_out_at": "2026-11-09T14:40:52+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T14:40:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T14:50:52+05:30"
     }
    },
    "cutoff": "2026-11-09T19:45:00+05:30",
@@ -2603,5 +2572,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26497/20261115"
   }
  },
- "_updated": "2026-11-09T14:40:52+05:30"
+ "_updated": "2026-11-09T14:50:52+05:30"
 }

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tracked Shows</title>
+<script async src="https://telegram.org/js/telegram-web-app.js" onload="window.tgReady&&window.tgReady()"></script>
+<style>
+:root{color-scheme:dark;--bg:#080c14;--panel:#111927;--panel-2:#172235;--line:rgba(186,204,232,.12);--fg:#f5f7fb;--muted:#9aa9bd;--accent:#f5bd59;--accent-2:#ffdf9b;--ok:#48d6a0;--mid:#f5bd59;--low:#ff817b;--rule:#a78bfa}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--fg)}
+body{font:15px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);background:radial-gradient(ellipse at 50% -18%,rgba(245,189,89,.16),transparent 43%),radial-gradient(ellipse at 100% 28%,rgba(76,119,190,.10),transparent 34%),var(--bg)}
+a{color:inherit}
+header{padding:24px 18px 14px;max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{width:44px;height:44px;flex:none;display:grid;place-items:center;border-radius:14px;color:#17120a;font-size:19px;background:linear-gradient(145deg,var(--accent-2),#e99a25)}
+h1{font-size:22px;line-height:1.1;margin:0;font-weight:800;letter-spacing:-.04em}
+.subhead{color:var(--muted);font-size:12px;margin-top:4px}
+.hlinks{display:flex;gap:8px;align-items:center}
+.pill{color:var(--accent-2);font-size:12px;font-weight:800;text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid rgba(245,189,89,.38);background:rgba(245,189,89,.08);white-space:nowrap}
+#upd{max-width:760px;margin:0 auto;padding:0 18px 10px;color:var(--muted);font-size:11px}
+.wrap{max-width:760px;margin:0 auto}
+.tabs{display:flex;gap:6px;margin:0 18px 14px;padding:5px;border:1px solid var(--line);border-radius:16px;background:rgba(17,25,39,.8)}
+.tabs button{flex:1;border:0;border-radius:12px;padding:11px 8px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;background:transparent;color:#c4cfdf}
+.tabs button[aria-pressed="true"]{background:linear-gradient(135deg,#ffe3a8,#edac42);color:#211707}
+.tabs small{font-weight:700;opacity:.75;margin-left:4px}
+.lvl-label{padding:0 18px 4px;color:#91a0b5;font-size:11px;font-weight:700}
+.row{display:flex;gap:8px;overflow-x:auto;padding:4px 18px 12px;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid rgba(186,204,232,.13);border-radius:13px;padding:9px 14px;font:inherit;font-size:13px;cursor:pointer;background:rgba(19,29,45,.86);color:#d4dce8;text-align:left}
+.chip small{display:block;font-size:10px;opacity:.75;margin-top:2px}
+.chip[aria-pressed="true"]{background:linear-gradient(135deg,#ffe3a8,#edac42);color:#211707;font-weight:800;border-color:transparent}
+.chip.zero{opacity:.5}
+.chip.r[aria-pressed="true"]{background:linear-gradient(135deg,#e2d8ff,#a78bfa)}
+main{padding:2px 18px 40px}
+.msg{color:#aab7c8;text-align:center;padding:40px 20px;background:rgba(17,25,39,.78);border:1px dashed rgba(186,204,232,.18);border-radius:18px;font-size:13px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* overview */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+.stat{padding:14px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98))}
+.stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:12px}
+.stat.man b{color:var(--ok)}.stat.rul b{color:#d9ccff}.stat.soon b{color:var(--accent-2)}.stat.warn b{color:var(--low)}
+.h2{font-size:14px;font-weight:800;margin:18px 2px 8px}
+.card{border:1px solid var(--line);border-radius:16px;background:rgba(17,25,39,.8);overflow:hidden}
+.li{display:flex;align-items:center;gap:10px;padding:12px 14px;font-size:13px;width:100%;border:0;background:transparent;color:inherit;font-family:inherit;text-align:left}
+.li+.li{border-top:1px solid rgba(255,255,255,.06)}
+button.li{cursor:pointer}
+.li .grow{flex:1;min-width:0}
+.li .grow b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.li .grow span{color:var(--muted);font-size:11px}
+.num{font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.num.m{color:var(--ok);background:rgba(72,214,160,.12);border:1px solid rgba(72,214,160,.35)}
+.num.r{color:#d9ccff;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.35)}
+.num.t{color:var(--accent-2);background:rgba(245,189,89,.1);border:1px solid rgba(245,189,89,.3)}
+.num.z{color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--line)}
+
+/* date / movie / variant / show */
+.t-date{margin:4px 2px 10px;font-size:12px;font-weight:800;color:var(--accent-2)}
+.movie{padding:12px;margin-bottom:14px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(21,32,49,.98),rgba(14,21,33,.98))}
+.movie-head{display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:start;margin-bottom:8px}
+.movie-head.np{grid-template-columns:1fr}
+.poster{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:8px;background:rgba(255,255,255,.03)}
+.movie-name{margin:0;font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.movie-meta{color:var(--muted);font-size:11px;margin-top:5px}
+.variant{margin-top:10px;padding:10px;border:1px solid rgba(186,204,232,.1);border-radius:13px;background:rgba(5,10,18,.3)}
+.v-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.v-title{font-size:13px;font-weight:800;color:var(--accent-2)}
+.v-title small{color:var(--muted);font-weight:600;font-size:11px;margin-left:6px}
+.tl{font-size:11px;font-weight:800;color:var(--accent-2);text-decoration:none;padding:5px 10px;border-radius:999px;border:1px solid rgba(245,189,89,.35);background:rgba(245,189,89,.07);white-space:nowrap}
+.tl.none{color:var(--muted);border-color:var(--line);background:transparent;font-weight:600}
+details.show{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035);margin-bottom:7px}
+details.show>summary{list-style:none;display:flex;align-items:center;gap:9px;padding:10px 12px;cursor:pointer;font-size:12px}
+details.show>summary::-webkit-details-marker{display:none}
+details.show>summary:after{content:"▾";margin-left:auto;color:var(--muted);transition:transform .15s}
+details.show[open]>summary:after{transform:rotate(180deg)}
+.st-time{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.st-time.past{color:var(--muted)}
+.avail{display:inline-flex;gap:3px}
+.avail i{width:14px;height:7px;border-radius:3px;background:#4a5468}
+.avail i.s3{background:var(--ok)}.avail i.s2{background:var(--mid)}.avail i.s1{background:var(--low)}
+.sbody{padding:2px 12px 12px}
+.scr{color:var(--muted);font-size:11px;margin:0 0 6px}
+.cat{display:flex;align-items:center;gap:8px;font-size:12px;padding:7px 0}
+.cat+.cat{border-top:1px solid rgba(255,255,255,.055)}
+.cat .n{flex:1;font-weight:650}
+.cat .p{color:var(--muted);font-size:11px}
+.cat .s{color:#a5b2c4;font-size:11px;min-width:78px;text-align:right}
+.cat .w{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.cat .w.y{color:var(--ok);background:rgba(72,214,160,.12);border:1px solid rgba(72,214,160,.35)}
+.cat .w.n{color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.cat.skip{opacity:.55}
+.book{display:inline-block;margin-top:8px;font-size:12px;font-weight:800;color:var(--accent-2);text-decoration:none;padding:7px 14px;border-radius:11px;border:1px solid rgba(245,189,89,.38)}
+.tag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px}
+.tag.m{color:var(--ok);background:rgba(72,214,160,.12);border:1px solid rgba(72,214,160,.35)}
+.tag.r{color:#d9ccff;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.35)}
+.tag.live{color:var(--low);background:rgba(255,129,123,.1);border:1px solid rgba(255,129,123,.3)}
+.rule-info{margin:0 18px 12px;padding:10px 13px;border-radius:13px;font-size:12px;color:#d9ccff;background:rgba(167,139,250,.09);border:1px solid rgba(167,139,250,.28)}
+.rule-info b{display:block;margin-bottom:3px}
+.rule-info span{color:var(--muted);font-size:11px}
+.rule-info .off{color:var(--low);font-weight:800}
+.toolbar{display:flex;justify-content:flex-end;margin:0 18px 8px}
+.toolbar button{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);border-radius:10px;padding:6px 11px;font:inherit;font-size:11px;font-weight:700;cursor:pointer}
+@media(min-width:600px){.stats{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">📌</div>
+    <div>
+      <h1>Tracked Shows</h1>
+      <div class="subhead">Everything the bot is watching, in one place</div>
+    </div>
+  </div>
+  <div class="hlinks"><a class="pill" href="index.html">🎫 Track</a><a class="pill" href="rules.html">⚡ Rules</a></div>
+</header>
+<div id="upd"></div>
+
+<div class="wrap">
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div id="nav"></div>
+  <main id="main"></main>
+</div>
+
+<script>
+// ── Settings ──────────────────────────────────────────────
+const RAW = "https://raw.githubusercontent.com/Hagema2025/bms-theatre-bot";
+const THEATRES = {
+  INTO: "INOX Marina Mall", PVHR: "PVR Heritage ECR", MCSK: "Miraj Sekaran Mall",
+  TVHP: "Vijay Park Injambakkam", CBMC: "Cinepolis BSR Mall", MAYJ: "Mayajaal ECR", ACON: "AGS Navalur"
+};
+// Fallback for topic links when a tracking record has no group_chat_id.
+// Put each tracking group's chat id here, e.g. INTO: "-1009876543210"
+const CHATS = { INTO: "", PVHR: "", MCSK: "", TVHP: "", CBMC: "", MAYJ: "", ACON: "" };
+const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
+const SOON_MIN = 180;      // "starting soon" window on the overview
+const REFRESH_MS = 45000;
+
+// ── Helpers ───────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+let tg = null;
+window.tgReady = () => { if (window.Telegram && window.Telegram.WebApp) { tg = window.Telegram.WebApp; try { tg.ready(); tg.expand(); } catch {} } };
+window.tgReady();
+
+const pad = n => String(n).padStart(2, "0");
+const toCode = d => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+const parseCode = c => new Date(+c.slice(0, 4), +c.slice(4, 6) - 1, +c.slice(6));
+function dateLabel(code) {
+  const d = parseCode(code), t = new Date(); t.setHours(0, 0, 0, 0);
+  const diff = Math.round((d - t) / 86400000);
+  const base = d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  const day = diff === 0 ? "Today" : diff === 1 ? "Tomorrow" : d.toLocaleDateString("en-IN", { weekday: "short" });
+  return { day, base };
+}
+function wkStart(code) { const d = parseCode(code); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return d; }
+const wkKey = code => toCode(wkStart(code));
+function wkLabel(k) {
+  const s = wkStart(k), e = new Date(s); e.setDate(e.getDate() + 6);
+  const f = d => d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  return `${f(s)} – ${f(e)}`;
+}
+function wkTag(k) {
+  const diff = Math.round((wkStart(k) - wkStart(toCode(new Date()))) / 604800000);
+  return diff === 0 ? "This week" : diff === 1 ? "Next week" : "";
+}
+const fmtWhen = iso => {
+  const t = Date.parse(iso);
+  return t ? new Date(t).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "—";
+};
+const fmtDur = m => m ? `${Math.floor(m / 60)}h ${m % 60}m` : "";
+const priced = s => Object.entries(s.classes || {}).filter(([n, c]) => n && Number(c.price) > 0).sort((a, b) => Number(a[1].price) - Number(b[1].price));
+const best = s => Math.max(0, ...priced(s).map(([, c]) => Number(c.status) || 0));
+const alive = s => Date.parse(s.end) > Date.now();
+const started = s => Date.now() > Date.parse(s.start);
+const key = x => `${x.v}_${x.d}_${x.id}`;
+function topicLink(chat, thread) {
+  const id = String(chat || "").replace(/^-100/, "");
+  return /^\d+$/.test(id) && thread ? `https://t.me/c/${id}/${thread}` : "";
+}
+const langRank = l => { const i = ["tamil", "english", "hindi", "telugu", "malayalam", "kannada"].indexOf(String(l).trim().toLowerCase()); return i < 0 ? 9 : i; };
+const dimRank = d => { const x = String(d).toLowerCase(); return x === "2d" ? 0 : x === "3d" ? 1 : x.includes("imax") ? 2 : x.includes("epiq") ? 3 : 4; };
+
+// ── Data ──────────────────────────────────────────────────
+const D = { shows: [], manual: {}, rules: [], threads: {}, updated: "" };   // manual[key] = {mode,max_price,categories,thread,chat}
+const open = new Set();   // keys of expanded <details>
+
+async function fetchJson(path) {
+  try {
+    const r = await fetch(`${RAW}/data/docs/${path}?t=${Date.now()}`, { cache: "no-store" });
+    if (r.status === 404) return {};
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+function flattenTracking(v, tr) {
+  const out = {};
+  const put = (d, sid, e, thread, chat) => {
+    if (!e || !e.tracked) return;
+    out[`${v}_${d}_${sid}`] = {
+      mode: e.mode || "manual", max_price: e.max_price, categories: e.categories || [],
+      thread: thread || e.message_thread_id || e.thread || null,
+      chat: chat || e.group_chat_id || CHATS[v] || ""
+    };
+  };
+  for (const [k, val] of Object.entries(tr || {})) {
+    if (/^\d{8}$/.test(k) && val && typeof val === "object") {            // legacy: date -> session -> entry
+      for (const [sid, e] of Object.entries(val)) put(k, sid, e);
+    } else if (val && val.tracking && val.date) {                          // combo: one topic per record
+      for (const [sid, e] of Object.entries(val.tracking)) put(val.date, sid, e, val.thread_id, val.group_chat_id);
+    }
+  }
+  return out;
+}
+
+async function loadAll() {
+  const shows = [], manual = {};
+  let newest = 0, anyOk = false;
+  await Promise.all(Object.keys(THEATRES).map(async v => {
+    const [st, tr] = await Promise.all([fetchJson(`state/${v}.json`), fetchJson(`tracking/${v}.json`)]);
+    if (st) {
+      anyOk = true;
+      newest = Math.max(newest, Date.parse(st._updated) || 0);
+      for (const [d, day] of Object.entries(st)) {
+        if (!/^\d{8}$/.test(d)) continue;
+        for (const [id, s] of Object.entries(day)) shows.push({ v, d, id, s });
+      }
+    }
+    if (tr) Object.assign(manual, flattenTracking(v, tr));
+  }));
+  const rules = await fetchJson("rules.json"), threads = await fetchJson("rule_threads.json");
+  if (!anyOk) { $("main").innerHTML = `<div class="msg">Couldn’t load shows. Check your connection and try again.</div>`; return; }
+  D.shows = shows.filter(x => alive(x.s));
+  D.manual = manual;
+  D.rules = Array.isArray(rules && rules.rules) ? rules.rules.filter(r => r && r.id && r.name) : D.rules;
+  D.threads = threads && typeof threads === "object" ? threads : D.threads;
+  D.updated = newest ? new Date(newest).toISOString() : "";
+  render();
+}
+
+// ── Derived lists ─────────────────────────────────────────
+const manualShows = () => D.shows.filter(x => D.manual[key(x)]);
+const ruledShows = () => D.shows.filter(x => (x.s.tracked_by_rules || []).length);
+const ruleOf = id => D.rules.find(r => r.id === id);
+function ruleHits(rule) {
+  const out = [];
+  D.shows.forEach(x => {
+    const t = (x.s.tracked_by_rules || []).find(t => t.rule_id === rule.id);
+    if (t) out.push({ ...x, at: t.tracked_at });
+  });
+  return out;
+}
+function manualCatOk(t, name, price) {
+  if (t.mode === "all") return true;
+  if (t.mode === "budget") return Number(price) <= Number(t.max_price);
+  return (t.categories || []).map(c => String(c).trim().toUpperCase()).includes(String(name).trim().toUpperCase());
+}
+const ruleCatOk = (rule, price) => rule.mode !== "budget" || Number(price) <= Number(rule.max_price);
+function trackedText(t) {
+  return t.mode === "all" ? "All categories" : t.mode === "budget" ? `Under ₹${t.max_price}` : (t.categories || []).join(", ") || "Selected categories";
+}
+
+// ── View state (kept in the URL so topic links can deep-link) ──
+const P = new URLSearchParams(location.search);
+const S = { tab: P.get("tab") || "overview", v: P.get("v") || "", d: P.get("d") || "", rule: P.get("rule") || "", week: P.get("week") || "" };
+function sync() {
+  const q = new URLSearchParams();
+  if (S.tab !== "overview") q.set("tab", S.tab);
+  ["v", "d", "rule", "week"].forEach(k => { if (S[k]) q.set(k, S[k]); });
+  history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : ""));
+}
+function setHtml(el, html) { if (el.dataset.h === html) return; el.dataset.h = html; el.innerHTML = html; }
+
+// ── Shared pieces ─────────────────────────────────────────
+const bars = s => priced(s).map(([n, c]) => `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
+
+// One show row: time, availability bars, expand for every seat category with tracked / not tracked
+function showRow(x, catOk, note) {
+  const s = x.s, sk = "s:" + key(x) + ":" + (note || "");
+  const rows = priced(s).map(([n, c]) => {
+    const ok = catOk(n, c.price);
+    return `<div class="cat${ok ? "" : " skip"}"><span class="n">${esc(n)}</span><span class="p">₹${esc(Number(c.price))}</span><span class="s">${esc(STATUS[c.status] || "")}</span><span class="w ${ok ? "y" : "n"}">${ok ? "tracked" : "not tracked"}</span></div>`;
+  }).join("");
+  const extras = [s.screen, ...(s.tags || []), s.subs].filter(Boolean).map(esc).join(" · ");
+  return `<details class="show" data-k="${esc(sk)}" ${open.has(sk) ? "open" : ""}>
+    <summary><span class="st-time${started(s) ? " past" : ""}">${esc(s.time)}</span><span class="avail">${bars(s)}</span>${started(s) ? `<span class="tag live">started</span>` : ""}${note ? `<span style="color:var(--muted);font-size:11px">${esc(note)}</span>` : ""}</summary>
+    <div class="sbody">${extras ? `<p class="scr">${extras}</p>` : ""}${rows || `<div class="scr">No seat categories listed.</div>`}
+      ${s.url ? `<a class="book" href="${esc(s.url)}" target="_blank" rel="noopener">Book seats</a>` : ""}</div></details>`;
+}
+
+// date -> movie -> variant (language · format) -> shows.  rowFn(x) builds each show row, topicFn(items) gives the topic link
+function dayView(items, rowFn, topicFn) {
+  const byDay = {};
+  items.forEach(x => (byDay[x.d] = byDay[x.d] || []).push(x));
+  return Object.keys(byDay).sort().map(d => {
+    const movies = {};
+    byDay[d].forEach(x => (movies[x.s.movie || "Show"] = movies[x.s.movie || "Show"] || []).push(x));
+    const l = dateLabel(d);
+    return `<div class="t-date">${esc(l.day)}, ${esc(l.base)}</div>` + Object.entries(movies)
+      .map(([name, arr]) => ({ name, arr, first: Math.min(...arr.map(x => Date.parse(x.s.start))) }))
+      .sort((a, b) => a.first - b.first || a.name.localeCompare(b.name))
+      .map(m => {
+        const ref = m.arr.find(x => x.s.poster) || m.arr[0];
+        const meta = [ref.s.censor, fmtDur(ref.s.duration), (ref.s.genre || "").replace(/,/g, ", ")].filter(Boolean).map(esc).join(" · ");
+        const poster = ref.s.poster ? `<img class="poster" loading="lazy" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/${esc(ref.s.poster)}.jpg" onerror="this.style.display='none'">` : "";
+        const vars = {};
+        m.arr.forEach(x => { const k = `${x.s.language || "—"}\u0000${x.s.dimension || "—"}`; (vars[k] = vars[k] || []).push(x); });
+        const variants = Object.entries(vars).map(([k, a]) => {
+          const [lang, dim] = k.split("\u0000");
+          a.sort((p, q) => Date.parse(p.s.start) - Date.parse(q.s.start));
+          return { lang, dim, a };
+        }).sort((p, q) => langRank(p.lang) - langRank(q.lang) || dimRank(p.dim) - dimRank(q.dim) || p.dim.localeCompare(q.dim));
+        return `<div class="movie">
+          <div class="movie-head${poster ? "" : " np"}">${poster}<div><h2 class="movie-name">${esc(m.name)}</h2><div class="movie-meta">${meta}</div></div></div>
+          ${variants.map(v => {
+            const link = topicFn ? topicFn(v.a) : "";
+            return `<div class="variant"><div class="v-head"><span class="v-title">${esc(v.lang)} ${esc(v.dim === "—" ? "" : v.dim)}<small>${v.a.length} show${v.a.length === 1 ? "" : "s"}</small></span>
+              ${topicFn ? (link ? `<a class="tl" href="${esc(link)}" data-tg>Open topic ↗</a>` : `<span class="tl none">No topic</span>`) : ""}</div>
+              ${v.a.map(rowFn).join("")}</div>`;
+          }).join("")}
+        </div>`;
+      }).join("");
+  }).join("");
+}
+
+const chipV = (code, n, on, sub) => `<button class="chip${n ? "" : " zero"}" data-v="${code}" aria-pressed="${on}">${esc(THEATRES[code])}<small>${sub != null ? sub : n + " tracked"}</small></button>`;
+const dChip = (d, n, on) => { const l = dateLabel(d); return `<button class="chip" data-d="${d}" aria-pressed="${on}">${esc(l.day)}<small>${esc(l.base)} · ${n}</small></button>`; };
+
+// ── Overview ──────────────────────────────────────────────
+function renderOverview() {
+  const man = manualShows(), rul = ruledShows();
+  const all = new Map();
+  man.forEach(x => all.set(key(x), { ...x, m: true }));
+  rul.forEach(x => all.set(key(x), { ...(all.get(key(x)) || x), r: true }));
+  const list = [...all.values()];
+  const soon = list.filter(x => { const m = (Date.parse(x.s.start) - Date.now()) / 60000; return m >= 0 && m <= SOON_MIN; })
+    .sort((a, b) => Date.parse(a.s.start) - Date.parse(b.s.start));
+  const tight = list.filter(x => !started(x.s) && best(x.s) <= 1).length;
+
+  const perV = Object.keys(THEATRES).map(v => ({ v, m: man.filter(x => x.v === v).length, r: rul.filter(x => x.v === v).length }));
+  const mins = x => { const m = Math.round((Date.parse(x.s.start) - Date.now()) / 60000); return m >= 60 ? `in ${Math.floor(m / 60)}h ${m % 60}m` : `in ${m} min`; };
+
+  return `<div class="stats">
+    <div class="stat man"><b>${man.length}</b><span>Manually tracked</span></div>
+    <div class="stat rul"><b>${rul.length}</b><span>Tracked by rules</span></div>
+    <div class="stat soon"><b>${soon.length}</b><span>Starting in 3 hours</span></div>
+    <div class="stat warn"><b>${tight}</b><span>Almost full or sold out</span></div>
+  </div>
+  <div class="h2">Starting soon</div>
+  <div class="card">${soon.length ? soon.map(x => `<button class="li" data-go="${x.m ? "manual" : "rules"}" data-v="${x.v}" data-d="${x.d}">
+      <div class="grow"><b>${esc(x.s.movie)} · ${esc([x.s.language, x.s.dimension].filter(Boolean).join(" "))}</b><span>${esc(THEATRES[x.v])} · ${esc(x.s.time)} · ${esc(mins(x))}</span></div>
+      <span class="avail">${bars(x.s)}</span>${x.m ? `<span class="num m">Manual</span>` : ""}${x.r ? `<span class="num r">Rule</span>` : ""}</button>`).join("")
+    : `<div class="li"><div class="grow"><span>No tracked show starts in the next 3 hours.</span></div></div>`}</div>
+  <div class="h2">By theatre</div>
+  <div class="card">${perV.map(p => `<button class="li" data-go="${p.m || !p.r ? "manual" : "rules"}" data-v="${p.v}">
+      <div class="grow"><b>${esc(THEATRES[p.v])}</b></div>
+      <span class="num ${p.m ? "m" : "z"}">${p.m} manual</span><span class="num ${p.r ? "r" : "z"}">${p.r} rule</span></button>`).join("")}</div>`;
+}
+
+// ── Manual: theatre > date > movie > variant > show ───────
+function renderManual() {
+  const man = manualShows();
+  const count = v => man.filter(x => x.v === v).length;
+  if (!THEATRES[S.v]) S.v = Object.keys(THEATRES).find(v => count(v)) || Object.keys(THEATRES)[0];
+  const inV = man.filter(x => x.v === S.v);
+  const dates = [...new Set(inV.map(x => x.d))].sort();
+  if (!dates.includes(S.d)) S.d = dates[0] || "";
+
+  const nav = `<div class="lvl-label">Theatre</div><nav class="row">${Object.keys(THEATRES).map(v => chipV(v, count(v), v === S.v)).join("")}</nav>`
+    + (dates.length ? `<div class="lvl-label">Date</div><nav class="row">${dates.map(d => dState(d, inV)).join("")}</nav>` : "");
+  const items = inV.filter(x => x.d === S.d);
+  const body = items.length ? dayView(items,
+    x => { const t = D.manual[key(x)]; return showRow(x, (n, p) => manualCatOk(t, n, p), trackedText(t)); },
+    arr => { const t = D.manual[key(arr[0])]; return topicLink(t.chat, arr.map(x => D.manual[key(x)].thread).find(Boolean)); })
+    : `<div class="msg">Nothing is manually tracked at ${esc(THEATRES[S.v])}.<br><span style="display:block;margin-top:7px">Track a show from the Track page and it appears here.</span></div>`;
+  return { nav, body };
+}
+const dState = (d, inV) => dChip(d, inV.filter(x => x.d === d).length, d === S.d);
+
+// ── Rules: rule > week > theatre > date > movie > show ────
+function renderRules() {
+  if (!D.rules.length) return { nav: "", body: `<div class="msg">No rules yet.<br><span style="display:block;margin-top:7px">Create one on the Rules page.</span></div>` };
+  if (!ruleOf(S.rule)) S.rule = D.rules[0].id;
+  const rule = ruleOf(S.rule), hits = ruleHits(rule);
+  const topics = Object.values(D.threads).filter(t => t && t.rule_id === rule.id && t.thread_id);
+
+  const wk = {};
+  hits.forEach(x => (wk[wkKey(x.d)] = wk[wkKey(x.d)] || { n: 0 }).n++);
+  topics.forEach(t => { if (t.week_start) wk[String(t.week_start)] = wk[String(t.week_start)] || { n: 0 }; });
+  const weeks = Object.keys(wk).sort();
+  if (!weeks.includes(S.week)) S.week = weeks.find(w => wkTag(w) === "This week") || weeks[0] || "";
+
+  const inW = hits.filter(x => wkKey(x.d) === S.week);
+  const venuesAll = Object.keys(THEATRES).filter(v => inW.some(x => x.v === v) || topics.some(t => t.venue === v && String(t.week_start) === S.week));
+  if (!venuesAll.includes(S.v)) S.v = venuesAll[0] || "";
+
+  const desc = [rule.movie || "Any movie", (rule.languages || []).join(", ") || "Any language", rule.mode === "budget" ? `Seats up to ₹${rule.max_price}` : "All seat types"].map(esc).join(" · ");
+  const info = `<div class="rule-info"><b>${esc(rule.name)}${rule.enabled === false ? ` <span class="off">(paused)</span>` : ""}</b><span>${desc}</span></div>`;
+  const nav = `<div class="lvl-label">Rule</div><nav class="row">${D.rules.map(r => `<button class="chip r" data-rule="${esc(r.id)}" aria-pressed="${r.id === S.rule}">${esc(r.name)}<small>${ruleHits(r).length} shows</small></button>`).join("")}</nav>${info}`
+    + (weeks.length ? `<div class="lvl-label">Week</div><nav class="row">${weeks.map(w => `<button class="chip r" data-week="${w}" aria-pressed="${w === S.week}">${esc(wkLabel(w))}<small>${esc(wkTag(w) ? wkTag(w) + " · " : "")}${wk[w].n} shows</small></button>`).join("")}</nav>` : "")
+    + (venuesAll.length ? `<div class="lvl-label">Theatre</div><nav class="row">${venuesAll.map(v => `<button class="chip r" data-v="${v}" aria-pressed="${v === S.v}">${esc(THEATRES[v])}<small>${inW.filter(x => x.v === v).length} tracked</small></button>`).join("")}</nav>` : "");
+
+  const topic = topics.find(t => t.venue === S.v && String(t.week_start) === S.week);
+  const link = topic ? topicLink(topic.chat_id, topic.thread_id) : "";
+  const items = inW.filter(x => x.v === S.v);
+  let body;
+  if (!weeks.length) body = `<div class="msg">This rule hasn’t matched any show yet.<br><span style="display:block;margin-top:7px">Matching shows are picked up on the next scan.</span></div>`;
+  else if (!items.length) body = `<div class="msg">No shows tracked at this theatre for this week yet.</div>`;
+  else body = (link ? `<div class="toolbar"><a class="tl" href="${esc(link)}" data-tg>Open this week’s topic ↗</a></div>` : "")
+    + dayView(items, x => showRow(x, (n, p) => ruleCatOk(rule, p), "tracked " + fmtWhen(x.at)));
+  return { nav, body };
+}
+
+// ── Page ──────────────────────────────────────────────────
+function render() {
+  const mc = manualShows().length, rc = ruledShows().length;
+  setHtml($("tabs"), [["overview", "Overview", ""], ["manual", "Manual", mc], ["rules", "Rules", rc]]
+    .map(([id, l, n]) => `<button role="tab" data-tab="${id}" aria-pressed="${S.tab === id}">${l}${n !== "" ? `<small>${n}</small>` : ""}</button>`).join(""));
+  let nav = "", body;
+  if (S.tab === "manual") ({ nav, body } = renderManual());
+  else if (S.tab === "rules") ({ nav, body } = renderRules());
+  else body = renderOverview();
+  setHtml($("nav"), nav);
+  setHtml($("main"), body);
+  const m = D.updated ? Math.max(0, Math.round((Date.now() - Date.parse(D.updated)) / 60000)) : null;
+  $("upd").textContent = m == null ? "" : m < 1 ? "Data updated just now" : m < 60 ? `Data updated ${m} min ago` : `Data updated ${Math.round(m / 60)} h ago`;
+  sync();
+}
+
+// ── Events ────────────────────────────────────────────────
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[data-tg]");
+  if (a && tg && tg.openTelegramLink) { e.preventDefault(); tg.openTelegramLink(a.href); return; }
+  const b = e.target.closest("button");
+  if (!b) return;
+  const d = b.dataset;
+  if (d.tab) { S.tab = d.tab; render(); return; }
+  if (d.go) { S.tab = d.go; S.v = d.v || S.v; S.d = d.d || ""; render(); window.scrollTo(0, 0); return; }
+  if (d.rule) { S.rule = d.rule; S.week = ""; S.v = ""; render(); return; }
+  if (d.week) { S.week = d.week; S.v = ""; render(); return; }
+  if (d.v) { S.v = d.v; if (S.tab === "manual") S.d = ""; render(); return; }
+  if (d.d) { S.d = d.d; render(); }
+});
+document.addEventListener("toggle", e => {
+  const k = e.target.dataset && e.target.dataset.k;
+  if (!k) return;
+  e.target.open ? open.add(k) : open.delete(k);
+}, true);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) loadAll(); });
+setInterval(() => { if (!document.hidden) loadAll(); }, REFRESH_MS);
+loadAll();
+</script>
+</body>
+</html>

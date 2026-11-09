@@ -244,9 +244,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T11:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -904,8 +905,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-09T15:10:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-09T22:40:00+05:30",
@@ -935,9 +936,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T09:50:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-09T20:50:00+05:30",
@@ -1248,9 +1250,10 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T13:40:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-09T17:10:00+05:30",
@@ -2659,8 +2662,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-08T11:31:22+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-10T17:45:00+05:30",
@@ -2744,6 +2749,44 @@
    "time": "11:50 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242201/20261110"
+  },
+  "242213": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 246.4,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 97.14,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-10T17:45:00+05:30",
+   "dimension": "3D",
+   "duration": 110,
+   "end": "2026-11-10T18:05:00+05:30",
+   "event_code": "ET00524691",
+   "first_seen": "2026-11-09T15:50:55+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "The Cat in the Hat",
+   "poster": "the-cat-in-the-hat-et00524691-1793796951",
+   "screen": "SCREEN 10",
+   "start": "2026-11-10T17:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/MAYJ/242213/20261110"
   }
  },
  "20261111": {
@@ -3870,8 +3913,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-08T11:31:22+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-11T17:45:00+05:30",
@@ -3955,6 +4000,44 @@
    "time": "11:50 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242206/20261111"
+  },
+  "242214": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 246.4,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 97.14,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-11T17:45:00+05:30",
+   "dimension": "3D",
+   "duration": 110,
+   "end": "2026-11-11T18:05:00+05:30",
+   "event_code": "ET00524691",
+   "first_seen": "2026-11-09T15:50:55+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "The Cat in the Hat",
+   "poster": "the-cat-in-the-hat-et00524691-1793796951",
+   "screen": "SCREEN 10",
+   "start": "2026-11-11T17:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/MAYJ/242214/20261111"
   }
  },
  "20261112": {
@@ -5081,8 +5164,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-08T11:31:22+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T15:50:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T15:50:55+05:30"
     }
    },
    "cutoff": "2026-11-12T17:45:00+05:30",
@@ -5166,7 +5251,45 @@
    "time": "11:50 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242211/20261112"
+  },
+  "242215": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 246.4,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "SECOND CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T15:50:55+05:30",
+     "price": 97.14,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-12T17:45:00+05:30",
+   "dimension": "3D",
+   "duration": 110,
+   "end": "2026-11-12T18:05:00+05:30",
+   "event_code": "ET00524691",
+   "first_seen": "2026-11-09T15:50:55+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "The Cat in the Hat",
+   "poster": "the-cat-in-the-hat-et00524691-1793796951",
+   "screen": "SCREEN 10",
+   "start": "2026-11-12T17:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/MAYJ/242215/20261112"
   }
  },
- "_updated": "2026-11-09T15:31:42+05:30"
+ "_updated": "2026-11-09T15:50:55+05:30"
 }

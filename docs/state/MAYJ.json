@@ -2313,8 +2313,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-09T05:20:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T06:01:09+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2421,7 +2421,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-08T18:50:52+05:30"
     },
@@ -2429,7 +2429,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T00:01:19+05:30",
      "price": 57.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -2460,7 +2460,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-08T19:50:53+05:30"
     }
@@ -2708,7 +2708,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T22:01:09+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-08T17:50:50+05:30"
     },
@@ -2716,7 +2716,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T00:01:19+05:30",
      "price": 57.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -2748,8 +2748,8 @@
      "first_seen_time": "2026-11-07T22:10:52+05:30",
      "price": 219.2,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-08T14:01:09+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T06:01:09+05:30"
     }
    },
    "cutoff": "2026-11-09T07:10:00+05:30",
@@ -6508,5 +6508,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242211/20261112"
   }
  },
- "_updated": "2026-11-09T05:31:29+05:30"
+ "_updated": "2026-11-09T06:01:09+05:30"
 }

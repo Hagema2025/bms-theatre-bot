@@ -104,7 +104,7 @@ RULES_FILE        = os.environ.get("RULES_FILE", "docs/rules.json")
 RULE_THREADS_FILE = os.environ.get("RULE_THREADS_FILE", "docs/rule_threads.json")
 RULE_CUTOFF       = timedelta(minutes=int(os.environ.get("RULE_CUTOFF_MINUTES", "10")))  # no new rule-tracking this long after start
 
-TRACKED_URL = os.environ.get("TRACKED_PAGE_URL", "").strip()
+TRACKED_URL = os.environ.get("TRACKED_PAGE_URL", "https://hagema2025.github.io/bms-theatre-bot/tracked.html").strip()
 
 def page_button(**params):
     """Inline 'open dashboard' button, or None when no URL is configured."""

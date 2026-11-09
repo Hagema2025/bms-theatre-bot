@@ -41,44 +41,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92665/20261109"
   },
-  "92793": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "1",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-10T00:01:19+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-10T00:01:19+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-10T00:30:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-10T00:15:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 6",
-   "start": "2026-11-09T23:45:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "11:45 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92793/20261109"
-  },
   "92815": {
    "censor": "U",
    "classes": {
@@ -97,7 +59,7 @@
      "status": "0"
     }
    },
-   "cleanup_tries": 1,
+   "cleanup_tries": 2,
    "cutoff": "2026-11-10T00:20:00+05:30",
    "dimension": "3D",
    "duration": 195,
@@ -156,6 +118,17 @@
     "BIGPIX"
    ],
    "time": "09:20 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92707/20261110"
   },
@@ -194,6 +167,17 @@
     "BIGPIX"
    ],
    "time": "12:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92708/20261110"
   },
@@ -232,6 +216,17 @@
     "BIGPIX"
    ],
    "time": "04:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92709/20261110"
   },
@@ -270,6 +265,17 @@
     "BIGPIX"
    ],
    "time": "08:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92710/20261110"
   },
@@ -306,6 +312,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92721/20261110"
   },
@@ -344,6 +361,17 @@
     "Atmos"
    ],
    "time": "09:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92727/20261110"
   },
@@ -380,6 +408,17 @@
    "subs": "",
    "tags": [],
    "time": "12:20 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92728/20261110"
   },
@@ -418,6 +457,17 @@
     "Atmos"
    ],
    "time": "04:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92729/20261110"
   },
@@ -454,6 +504,17 @@
    "subs": "",
    "tags": [],
    "time": "07:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92730/20261110"
   },
@@ -492,6 +553,17 @@
     "Atmos"
    ],
    "time": "11:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92731/20261110"
   },
@@ -528,6 +600,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92749/20261110"
   },
@@ -564,6 +647,17 @@
    "subs": "",
    "tags": [],
    "time": "02:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/92750/20261110"
   },
@@ -603,6 +697,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "06:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92751/20261110"
   },
@@ -639,6 +744,17 @@
    "subs": "",
    "tags": [],
    "time": "10:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/92752/20261110"
   },
@@ -675,6 +791,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:35 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92757/20261110"
   },
@@ -711,6 +838,17 @@
    "subs": "",
    "tags": [],
    "time": "12:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92758/20261110"
   },
@@ -747,6 +885,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92759/20261110"
   },
@@ -783,6 +932,17 @@
    "subs": "",
    "tags": [],
    "time": "07:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92760/20261110"
   },
@@ -819,6 +979,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92761/20261110"
   },
@@ -855,6 +1026,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:45 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92767/20261110"
   },
@@ -891,6 +1073,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=u0yUYgZ0s30",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00475942/INTO/92769/20261110"
   },
@@ -927,6 +1120,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92771/20261110"
   },
@@ -963,6 +1167,17 @@
    "subs": "",
    "tags": [],
    "time": "10:10 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92794/20261110"
   },
@@ -999,6 +1214,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "02:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/INTO/92795/20261110"
   },
@@ -1035,6 +1261,17 @@
    "subs": "",
    "tags": [],
    "time": "05:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92796/20261110"
   },
@@ -1071,6 +1308,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92797/20261110"
   },
@@ -1107,6 +1355,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:30 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92802/20261110"
   },
@@ -1143,6 +1402,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "01:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92803/20261110"
   },
@@ -1179,6 +1449,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92804/20261110"
   },
@@ -1217,6 +1498,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "08:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92805/20261110"
   },
@@ -1253,6 +1545,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "11:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92806/20261110"
   },
@@ -1290,6 +1593,17 @@
    "subs": "",
    "tags": [],
    "time": "06:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92818/20261110"
   },
@@ -1308,8 +1622,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T00:11:03+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-10T00:20:59+05:30"
     }
    },
    "cutoff": "2026-11-10T13:45:00+05:30",
@@ -1327,6 +1641,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "01:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92826/20261110"
   },
@@ -1363,6 +1688,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "07:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92827/20261110"
   }
@@ -1403,6 +1739,17 @@
     "BIGPIX"
    ],
    "time": "09:20 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92712/20261111"
   },
@@ -1441,6 +1788,17 @@
     "BIGPIX"
    ],
    "time": "12:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92713/20261111"
   },
@@ -1479,6 +1837,17 @@
     "BIGPIX"
    ],
    "time": "04:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92714/20261111"
   },
@@ -1517,6 +1886,17 @@
     "BIGPIX"
    ],
    "time": "08:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92715/20261111"
   },
@@ -1553,6 +1933,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/92726/20261111"
   },
@@ -1591,6 +1982,17 @@
     "Atmos"
    ],
    "time": "09:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92732/20261111"
   },
@@ -1627,6 +2029,17 @@
    "subs": "",
    "tags": [],
    "time": "12:20 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92733/20261111"
   },
@@ -1665,6 +2078,17 @@
     "Atmos"
    ],
    "time": "04:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92734/20261111"
   },
@@ -1701,6 +2125,17 @@
    "subs": "",
    "tags": [],
    "time": "07:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92735/20261111"
   },
@@ -1739,6 +2174,17 @@
     "Atmos"
    ],
    "time": "11:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92736/20261111"
   },
@@ -1775,6 +2221,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92753/20261111"
   },
@@ -1811,6 +2268,17 @@
    "subs": "",
    "tags": [],
    "time": "02:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/92754/20261111"
   },
@@ -1847,6 +2315,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "06:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92755/20261111"
   },
@@ -1884,6 +2363,17 @@
    "subs": "",
    "tags": [],
    "time": "10:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/92756/20261111"
   },
@@ -1920,6 +2410,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:35 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92762/20261111"
   },
@@ -1956,6 +2457,17 @@
    "subs": "",
    "tags": [],
    "time": "12:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92763/20261111"
   },
@@ -1992,6 +2504,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92764/20261111"
   },
@@ -2028,6 +2551,17 @@
    "subs": "",
    "tags": [],
    "time": "07:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92765/20261111"
   },
@@ -2064,6 +2598,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92766/20261111"
   },
@@ -2100,6 +2645,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:45 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92772/20261111"
   },
@@ -2136,6 +2692,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=u0yUYgZ0s30",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00475942/INTO/92774/20261111"
   },
@@ -2172,6 +2739,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "10:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92776/20261111"
   },
@@ -2208,6 +2786,17 @@
    "subs": "",
    "tags": [],
    "time": "10:10 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92798/20261111"
   },
@@ -2244,6 +2833,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "02:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/INTO/92799/20261111"
   },
@@ -2280,6 +2880,17 @@
    "subs": "",
    "tags": [],
    "time": "05:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92800/20261111"
   },
@@ -2316,6 +2927,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92801/20261111"
   },
@@ -2352,6 +2974,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "09:30 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92807/20261111"
   },
@@ -2388,6 +3021,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "01:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92808/20261111"
   },
@@ -2424,6 +3068,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "04:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92809/20261111"
   },
@@ -2460,6 +3115,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "08:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92810/20261111"
   },
@@ -2496,6 +3162,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "11:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   },
@@ -2532,6 +3209,17 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "01:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92828/20261111"
   },
@@ -2568,9 +3256,20 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "07:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-10T00:20:59+05:30",
+      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
+     },
+     "rule": "test",
+     "rule_id": "rmw9m6k2nxa7",
+     "tracked_at": "2026-11-10T00:20:59+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92829/20261111"
   }
  },
- "_updated": "2026-11-10T00:11:03+05:30"
+ "_updated": "2026-11-10T00:20:59+05:30"
 }

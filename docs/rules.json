@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T18:49:41.915Z",
+  "updated": "2026-11-09T18:54:10.496Z",
   "rules": [
     {
       "id": "rmw9hsgbj5m8",
@@ -40,25 +40,6 @@
       "to": "",
       "mode": "budget",
       "max_price": 130
-    },
-    {
-      "id": "rmw9m6k2nxa7",
-      "name": "test",
-      "enabled": true,
-      "venues": [],
-      "movie": "",
-      "languages": [],
-      "days": [],
-      "per_day": false,
-      "time": {
-        "from": "",
-        "to": ""
-      },
-      "day_times": {},
-      "from": "",
-      "to": "",
-      "mode": "all",
-      "max_price": null
     }
   ]
 }

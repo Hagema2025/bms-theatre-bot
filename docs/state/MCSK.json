@@ -245,7 +245,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-09T09:50:50+05:30"
     },
@@ -254,10 +254,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-09T12:40:52+05:30",
-     "sold_out_at": "2026-11-09T12:31:31+05:30",
+     "sold_out_at": "2026-11-09T14:10:58+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T12:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T14:10:58+05:30"
     }
    },
    "cutoff": "2026-11-09T16:55:00+05:30",
@@ -361,19 +361,21 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-09T14:10:58+05:30",
      "sold_out_at": "2026-11-09T13:50:52+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T13:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T14:10:58+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-08T12:01:09+05:30",
+     "sold_out_at": "2026-11-09T14:10:58+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-09T11:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T14:10:58+05:30"
     }
    },
    "cutoff": "2026-11-09T16:25:00+05:30",
@@ -2522,5 +2524,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MCSK/17079/20261112"
   }
  },
- "_updated": "2026-11-09T14:01:11+05:30"
+ "_updated": "2026-11-09T14:10:58+05:30"
 }

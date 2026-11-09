@@ -1,1 +1,45 @@
-{}
+{
+  "version": 1,
+  "updated": "2026-11-09T16:46:41.543Z",
+  "rules": [
+    {
+      "id": "rmw9hsgbj5m8",
+      "name": "Weekend vibes",
+      "enabled": true,
+      "venues": [],
+      "movie": "",
+      "languages": [
+        "Tamil",
+        "English"
+      ],
+      "days": [
+        0,
+        5,
+        6
+      ],
+      "per_day": true,
+      "time": {
+        "from": "",
+        "to": ""
+      },
+      "day_times": {
+        "0": {
+          "from": "",
+          "to": ""
+        },
+        "5": {
+          "from": "19:00",
+          "to": ""
+        },
+        "6": {
+          "from": "",
+          "to": ""
+        }
+      },
+      "from": "",
+      "to": "",
+      "mode": "budget",
+      "max_price": 130
+    }
+  ]
+}

@@ -140,6 +140,7 @@ const targetDim = params.get("dimension");
 // Rule specific params
 const ruleId = params.get("rule_id");      
 const weekStart = params.get("week");
+
 // ── Data Fetching ─────────────────────────────────────────
 async function fetchJson(path) {
   try {
@@ -253,7 +254,6 @@ function groupShows(items) {
 }
 
 function tileHtml(it) {
-  // Extract the attached tracking data (trk)
   const { d, id, s, trk } = it;
   const dim = soldOut(s);
   const cls = ["tile", closed(s) ? "closed" : "", dim ? "soldout" : ""].join(" ");
@@ -261,7 +261,6 @@ function tileHtml(it) {
   const cats = priced(s).sort((a, b) => Number(a[1].price) - Number(b[1].price));
   const bars = cats.map(([n, c]) => `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
   
-  // Format the tracking label
   let trkLabel = "";
   if (trk) {
     let txt = "All categories";
@@ -320,7 +319,6 @@ function renderShows() {
     return;
   }
   
-  // Group by date first if viewing rule (which spans a week), otherwise just group movies
   let html = "";
   if (viewType === "rule") {
     const byDate = {};
@@ -379,11 +377,10 @@ async function init() {
     return;
   }
 
-if (viewType === "tracked") {
+  if (viewType === "tracked") {
     $("h-icon").textContent = "🎟️";
     $("h-title").textContent = targetMovie || THEATRES[venue];
     
-    // Build a nice subheader
     const subParts = [THEATRES[venue], dateLabel(targetDate), targetLang, targetDim].filter(Boolean);
     $("h-sub").textContent = subParts.join(" · ");
 
@@ -395,15 +392,10 @@ if (viewType === "tracked") {
     showsToRender = [];
     for (const [id, s] of Object.entries(dayState)) {
       if (dayTracking[id] && dayTracking[id].tracked && live(s)) {
-        // Filter out shows that don't match the combo topic
         if (targetMovie && s.movie !== targetMovie) continue;
         if (targetLang && s.language !== targetLang) continue;
         if (targetDim && s.dimension !== targetDim) continue;
         
-        // Change this line:
-        // showsToRender.push({ d: targetDate, id, s });
-        
-        // To this:
         showsToRender.push({ d: targetDate, id, s, trk: dayTracking[id] });
       }
     }
@@ -420,19 +412,18 @@ if (viewType === "tracked") {
 
     $("h-icon").textContent = "⚡";
     $("h-title").textContent = rule.name;
-// Figure out the rule's criteria
+
     let crit = "All categories";
     if (rule.mode === "budget") crit = `Up to ₹${rule.max_price}`;
     
-    // Put it in the header instead of on every tile
     $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;    
-    // Calculate week bounds (Monday to Sunday) based on weekStart (e.g. "20261109")
+    
     const wsYear = +weekStart.slice(0, 4);
     const wsMonth = +weekStart.slice(4, 6) - 1;
     const wsDay = +weekStart.slice(6);
     const startDate = new Date(wsYear, wsMonth, wsDay);
     const endDate = new Date(startDate);
-    endDate.setDate(endDate.getDate() + 6); // Add 6 days for Sunday
+    endDate.setDate(endDate.getDate() + 6);
 
     const startCode = weekStart;
     const endCode = `${endDate.getFullYear()}${String(endDate.getMonth() + 1).padStart(2, "0")}${String(endDate.getDate()).padStart(2, "0")}`;
@@ -442,15 +433,8 @@ if (viewType === "tracked") {
       if (/^\d{8}$/.test(d) && d >= startCode && d <= endCode) {
         for (const [id, s] of Object.entries(day)) {
           if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
-            // Change this line:
-          // showsToRender.push({ d, id, s });
-          
-          // To this:
-// Inside the viewType === "rule" loop:
-          if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
-            // Do NOT pass `trk: rule` here anymore. Just pass the show.
             showsToRender.push({ d, id, s }); 
-          }          }
+          }          
         }
       }
     }

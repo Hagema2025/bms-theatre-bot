@@ -1657,10 +1657,10 @@
      "first_seen_time": "2026-11-07T21:40:53+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-09T04:50:54+05:30",
-     "sold_out_at": "2026-11-09T04:20:50+05:30",
+     "sold_out_at": "2026-11-09T07:31:22+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-09T04:50:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T07:31:22+05:30"
     }
    },
    "cutoff": "2026-11-09T08:00:00+05:30",
@@ -1752,45 +1752,6 @@
    "time": "08:00 PM",
    "trailer": "https://www.youtube.com/watch?v=l7ojGbmxtr0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15921/20261109"
-  },
-  "15923": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-08T16:31:25+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-08T22:40:56+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-08T16:31:25+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-09T06:31:28+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-09T06:31:28+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T07:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-09T07:30:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-08T16:31:25+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI01",
-   "start": "2026-11-09T07:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "07:00 AM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15923/20261109"
   }
  },
  "20261110": {
@@ -6027,5 +5988,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15925/20261112"
   }
  },
- "_updated": "2026-11-09T07:10:51+05:30"
+ "_updated": "2026-11-09T07:31:22+05:30"
 }

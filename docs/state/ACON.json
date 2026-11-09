@@ -1,48 +1,5 @@
 {
  "20261109": {
-  "48519": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.0,
-     "sold_out_at": "2026-11-09T17:50:55+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T17:50:55+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.0,
-     "reopened_at": "2026-11-09T06:20:52+05:30",
-     "sold_out_at": "2026-11-09T16:09:05+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T16:09:05+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T19:00:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-09T19:15:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 1",
-   "start": "2026-11-09T18:45:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "06:45 PM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48519/20261109"
-  },
   "48520": {
    "censor": "UA16+",
    "classes": {
@@ -300,9 +257,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.0,
      "reopened_at": "2026-11-09T15:31:42+05:30",
+     "sold_out_at": "2026-11-09T19:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T18:01:13+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T19:20:55+05:30"
     }
    },
    "cutoff": "2026-11-09T23:10:00+05:30",
@@ -2395,5 +2353,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/ACON/48625/20261112"
   }
  },
- "_updated": "2026-11-09T18:50:54+05:30"
+ "_updated": "2026-11-09T19:20:55+05:30"
 }

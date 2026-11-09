@@ -45,6 +45,7 @@ jobs:
           TELEGRAM_CHAT_CBMC: ${{ secrets.TELEGRAM_CHAT_CBMC }}
           TELEGRAM_CHAT_MAYJ: ${{ secrets.TELEGRAM_CHAT_MAYJ }}
           TELEGRAM_CHAT_ACON: ${{ secrets.TELEGRAM_CHAT_ACON }}
+          MINI_APP_URL:  ${{ secrets.MINI_APP_URL }}
 
       - name: Save state
         if: always()

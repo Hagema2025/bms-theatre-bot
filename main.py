@@ -118,7 +118,8 @@ def _rule_markup(venue: str, rule_id: str, ws: datetime) -> dict:
     
     return {
         "inline_keyboard": [[
-            {"text": "🔍 View Matched Shows", "web_app": {"url": url}}
+            # Use "url" instead of "web_app"
+            {"text": "🔍 View Matched Shows", "url": url}
         ]]
     }
 

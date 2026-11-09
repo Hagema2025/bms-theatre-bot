@@ -78,9 +78,6 @@ main{max-width:760px;margin:0 auto;padding:24px 18px 36px}
 .detail-time{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .detail-time b{font-size:20px;color:var(--accent-2)}
 .detail-time span{color:var(--muted);font-size:12px}
-
-.rule-banner{margin:0 0 14px;padding:10px 13px;border-radius:13px;font-size:12px;font-weight:700;color:#d9ccff;background:rgba(167,139,250,.09);border:1px solid rgba(167,139,250,.28)}
-.rule-mark{color:var(--rule);font-size:12px}
 </style>
 </head>
 <body>
@@ -115,7 +112,6 @@ const THEATRES = {
 };
 const STATUS = { "3": "Available", "2": "Filling fast", "1": "Almost full", "0": "Sold out" };
 const CUTOFF_MIN = 0;
-const PENDING_MIN = 6;
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const closed = show => Date.now() > Date.parse(show.start) + CUTOFF_MIN * 60000;
@@ -144,7 +140,9 @@ const weekStart = params.get("week");
 // ── Data Fetching ─────────────────────────────────────────
 async function fetchJson(path) {
   try {
-    const r = await fetch(`${RAW}/docs/${path}?t=${Date.now()}`, { cache: "no-store" });
+    // 1-minute cache buster for instant subsequent loads
+    const cacheBuster = Math.floor(Date.now() / 60000); 
+    const r = await fetch(`${RAW}/docs/${path}?t=${cacheBuster}`);
     if (r.ok) return await r.json();
   } catch (e) {}
   return null;
@@ -154,7 +152,7 @@ async function fetchJson(path) {
 let stateData = {};
 let trackingData = {};
 let rulesData = [];
-let showsToRender = []; // Array of { d: date, id: session, s: show }
+let showsToRender = []; // Array of { d: date, id: session, s: show, trk: trackingInfo }
 
 // ── Rule Logic (from rules.html) ──────────────────────────
 const toMin = t => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
@@ -261,6 +259,7 @@ function tileHtml(it) {
   const cats = priced(s).sort((a, b) => Number(a[1].price) - Number(b[1].price));
   const bars = cats.map(([n, c]) => `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
   
+  // Format the tracking label if passed
   let trkLabel = "";
   if (trk) {
     let txt = "All categories";
@@ -416,7 +415,7 @@ async function init() {
     let crit = "All categories";
     if (rule.mode === "budget") crit = `Up to ₹${rule.max_price}`;
     
-    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;    
+    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;
     
     const wsYear = +weekStart.slice(0, 4);
     const wsMonth = +weekStart.slice(4, 6) - 1;
@@ -433,8 +432,9 @@ async function init() {
       if (/^\d{8}$/.test(d) && d >= startCode && d <= endCode) {
         for (const [id, s] of Object.entries(day)) {
           if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
+            // No trk property passed here, so the tile doesn't render individual tags
             showsToRender.push({ d, id, s }); 
-          }          
+          }
         }
       }
     }

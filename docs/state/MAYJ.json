@@ -266,7 +266,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-09T10:01:08+05:30"
     },
@@ -390,10 +390,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-09T13:31:28+05:30",
      "sold_out_at": "2026-11-09T13:10:51+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T13:10:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -1037,9 +1038,10 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T17:31:28+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -1613,39 +1615,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242053/20261109"
   },
-  "242055": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 219.2,
-     "sold_out_at": "2026-11-09T11:10:49+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T11:10:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T13:10:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-09T13:30:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 12",
-   "start": "2026-11-09T13:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242055/20261109"
-  },
   "242056": {
    "censor": "U",
    "classes": {
@@ -1831,9 +1800,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-08T18:10:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -1950,10 +1920,10 @@
      "first_seen_time": "2026-11-09T00:01:19+05:30",
      "price": 57.98,
      "reopened_at": "2026-11-09T11:40:58+05:30",
-     "sold_out_at": "2026-11-09T11:20:52+05:30",
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T11:40:58+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     }
    },
    "cutoff": "2026-11-09T19:55:00+05:30",
@@ -5610,5 +5580,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242211/20261112"
   }
  },
- "_updated": "2026-11-09T13:20:51+05:30"
+ "_updated": "2026-11-09T13:31:28+05:30"
 }

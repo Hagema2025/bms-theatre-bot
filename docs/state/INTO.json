@@ -113,47 +113,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92607/20261109"
   },
-  "92619": {
-   "censor": "UA 7+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 202.49,
-     "sold_out_at": "2026-11-09T13:10:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T13:10:51+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 59.43,
-     "reopened_at": "2026-11-09T12:50:52+05:30",
-     "sold_out_at": "2026-11-09T13:10:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T13:10:51+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T13:45:00+05:30",
-   "dimension": "2D",
-   "duration": 126,
-   "end": "2026-11-09T13:30:00+05:30",
-   "event_code": "ET00524282",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Adventure,Drama,Kids",
-   "language": "Telugu",
-   "movie": "Summer Holidays",
-   "poster": "summer-holidays-et00524282-1793080177",
-   "screen": "SCREEN 8",
-   "start": "2026-11-09T13:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "01:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=l7ojGbmxtr0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/INTO/92619/20261109"
-  },
   "92620": {
    "censor": "UA16+",
    "classes": {
@@ -198,8 +157,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -1022,8 +983,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T13:20:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     }
    },
    "cutoff": "2026-11-10T00:30:00+05:30",
@@ -2040,8 +2001,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -2112,8 +2075,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -2505,6 +2470,42 @@
    "time": "11:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92806/20261110"
+  },
+  "92818": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T13:31:28+05:30",
+     "price": 218.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-09T13:31:28+05:30",
+     "price": 89.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-10T19:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-10T19:05:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-09T13:31:28+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-10T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92818/20261110"
   }
  },
  "20261111": {
@@ -3460,8 +3461,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -3532,8 +3535,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 202.49,
+     "sold_out_at": "2026-11-09T13:31:28+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T13:31:28+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -3922,5 +3927,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-09T13:20:51+05:30"
+ "_updated": "2026-11-09T13:31:28+05:30"
 }

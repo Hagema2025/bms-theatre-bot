@@ -103,6 +103,18 @@ META_FILE          = os.environ.get("META_FILE", "meta.json")
 RULES_FILE        = os.environ.get("RULES_FILE", "docs/rules.json")
 RULE_THREADS_FILE = os.environ.get("RULE_THREADS_FILE", "docs/rule_threads.json")
 RULE_CUTOFF       = timedelta(minutes=int(os.environ.get("RULE_CUTOFF_MINUTES", "10")))  # no new rule-tracking this long after start
+
+TRACKED_URL = os.environ.get("TRACKED_PAGE_URL", "").strip()
+
+def page_button(**params):
+    """Inline 'open dashboard' button, or None when no URL is configured."""
+    if not TRACKED_URL:
+        return None
+    from urllib.parse import urlencode
+    q = urlencode({k: v for k, v in params.items() if v})
+    return {"inline_keyboard": [[{"text": "📌 Open tracked shows",
+                                  "url": f"{TRACKED_URL}?{q}" if q else TRACKED_URL}]]}
+
 SHOW_PRICES       = {}   # (venue, date, session) -> prices seen this run
 DAY_ABBR          = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DIVIDER            = "━━━━━━━━━━━━━━━━"
@@ -500,8 +512,12 @@ def send_track(state, tracking, venue, date_code, session, text):
     tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": status_text(s),
                            "parse_mode": "HTML", "disable_notification": True,
                            "disable_web_page_preview": True})
-    ok, _ = tg_api("sendMessage", {"chat_id": tc, "message_thread_id": new_thread, "text": text,
-                                   "parse_mode": "HTML", "disable_web_page_preview": True})
+    markup = page_button(tab="manual", v=venue, d=date_code)
+    payload = {"chat_id": tc, "message_thread_id": thread, "text": text,
+               "parse_mode": "HTML", "disable_web_page_preview": True}
+    if markup:
+        payload["reply_markup"] = markup
+    ok, body = tg_api("sendMessage", payload)
     return ok
 
 
@@ -935,14 +951,17 @@ def ensure_rule_thread(rule_threads, venue, rule, ws, we):
                chat_id=str(chat), thread_id=thread_id,
                created=datetime.now(IST).isoformat(timespec="seconds"))
     rule_threads[key] = ent
-    tg_api("sendMessage", {
-        "chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
-        "disable_notification": True, "disable_web_page_preview": True,
-        "text": (f"📌 <b>{html.escape(rule['name'])}</b>\n"
+    markup = page_button(tab="rules", rule=rule["id"], week=f"{ws:%Y%m%d}", v=venue)
+    first = {"chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
+             "disable_notification": True, "disable_web_page_preview": True,
+             "text": (f"📌 <b>{html.escape(rule['name'])}</b>\n"
                  f"🎟️ {html.escape(TARGET_THEATRES[venue])}\n"
                  f"📅 {_fmt_day(ws)} to {_fmt_day(we)}\n"
                  f"⚙️ {html.escape(describe_rule(rule))}\n\n"
-                 f"🔔 Alerts for shows matching this rule appear in this topic.")})
+                 f"🔔 Alerts for shows matching this rule appear in this topic.")}   # keep your existing text block unchanged
+    if markup:
+        first["reply_markup"] = markup
+    tg_api("sendMessage", first)
     return ent
 
 
@@ -952,9 +971,12 @@ def _post_rule(rule_threads, rule, venue, ws, we, text):
         ent = ensure_rule_thread(rule_threads, venue, rule, ws, we)
         if not ent:
             return False
-        ok, body = tg_api("sendMessage", {
-            "chat_id": ent["chat_id"], "message_thread_id": ent["thread_id"], "text": text,
-            "parse_mode": "HTML", "disable_web_page_preview": True})
+        markup = page_button(tab="rules", rule=rule["id"], week=f"{ws:%Y%m%d}", v=venue)
+        payload = {"chat_id": ent["chat_id"], "message_thread_id": ent["thread_id"], "text": text,
+                   "parse_mode": "HTML", "disable_web_page_preview": True}
+        if markup:
+            payload["reply_markup"] = markup
+        ok, body = tg_api("sendMessage", payload)
         if ok:
             return True
         if "thread" not in body.get("description", "").lower():

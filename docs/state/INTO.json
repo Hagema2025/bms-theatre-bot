@@ -567,7 +567,7 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-08T18:31:29+05:30"
     },
@@ -1444,42 +1444,6 @@
    "time": "11:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92793/20261109"
-  },
-  "92813": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-08T10:40:50+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-08T10:40:50+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-09T07:15:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-09T07:00:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-08T10:40:50+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 7",
-   "start": "2026-11-09T06:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "06:30 AM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92813/20261109"
   }
  },
  "20261110": {
@@ -4314,5 +4278,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
   }
  },
- "_updated": "2026-11-09T06:50:51+05:30"
+ "_updated": "2026-11-09T07:01:05+05:30"
 }

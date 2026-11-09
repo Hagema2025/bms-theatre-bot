@@ -1,45 +1,4 @@
 {
- "20261109": {
-  "48525": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.0,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-09T23:31:35+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-09T23:45:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-10T00:00:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 2",
-   "start": "2026-11-09T23:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "11:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48525/20261109"
-  }
- },
  "20261110": {
   "48567": {
    "censor": "UA16+",
@@ -277,7 +236,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 213.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-10T00:01:19+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -1984,5 +1944,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/ACON/48625/20261112"
   }
  },
- "_updated": "2026-11-09T23:41:06+05:30"
+ "_updated": "2026-11-10T00:01:19+05:30"
 }

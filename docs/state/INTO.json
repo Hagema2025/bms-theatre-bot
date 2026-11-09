@@ -1,41 +1,5 @@
 {
  "20261109": {
-  "92622": {
-   "censor": "UA13+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-09T23:40:00+05:30",
-   "dimension": "2D",
-   "duration": 137,
-   "end": "2026-11-09T23:25:00+05:30",
-   "event_code": "ET00495822",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy",
-   "language": "Hindi",
-   "movie": "Udta Teer",
-   "poster": "udta-teer-et00495822-1793796439",
-   "screen": "SCREEN 8",
-   "start": "2026-11-09T22:55:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92622/20261109"
-  },
   "92665": {
    "censor": "UA16+",
    "classes": {
@@ -44,9 +8,10 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "reopened_at": "2026-11-09T22:50:55+05:30",
+     "sold_out_at": "2026-11-09T23:31:35+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-09T22:50:55+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T23:31:35+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -2603,5 +2568,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92829/20261111"
   }
  },
- "_updated": "2026-11-09T23:20:53+05:30"
+ "_updated": "2026-11-09T23:31:35+05:30"
 }

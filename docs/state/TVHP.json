@@ -89,7 +89,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 320.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-09T17:31:29+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -237,49 +238,6 @@
    "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26422/20261109"
-  },
-  "26454": {
-   "censor": "U",
-   "classes": {
-    "BUDGET": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T16:20:53+05:30",
-     "price": 59.94,
-     "sold_out_at": "2026-11-09T17:21:00+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-09T17:21:00+05:30"
-    },
-    "ELITE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.0,
-     "reopened_at": "2026-11-09T09:01:08+05:30",
-     "sold_out_at": "2026-11-09T09:31:22+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T09:31:22+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T17:40:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-09T17:25:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "SCREEN 1",
-   "start": "2026-11-09T16:55:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "04:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26454/20261109"
   },
   "26455": {
    "censor": "UA16+",
@@ -2523,5 +2481,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26497/20261115"
   }
  },
- "_updated": "2026-11-09T17:21:00+05:30"
+ "_updated": "2026-11-09T17:31:29+05:30"
 }

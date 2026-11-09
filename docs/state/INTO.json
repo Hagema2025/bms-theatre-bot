@@ -1,47 +1,5 @@
 {
  "20261109": {
-  "92605": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "2",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 183.8,
-     "reopened_at": "2026-11-09T16:09:05+05:30",
-     "sold_out_at": "2026-11-09T15:31:42+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-09T16:09:05+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-07T19:09:00+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-07T19:31:20+05:30",
-     "sold_out_at": "2026-11-08T19:31:26+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-08T19:31:26+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T17:15:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-09T17:00:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-07T19:09:00+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 7",
-   "start": "2026-11-09T16:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "04:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92605/20261109"
-  },
   "92606": {
    "censor": "UA16+",
    "classes": {
@@ -59,8 +17,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-09T14:20:52+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-09T14:40:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T17:01:15+05:30"
     }
    },
    "cutoff": "2026-11-09T20:15:00+05:30",
@@ -326,10 +284,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 218.8,
      "reopened_at": "2026-11-09T15:50:55+05:30",
-     "sold_out_at": "2026-11-09T12:20:53+05:30",
+     "sold_out_at": "2026-11-09T17:01:15+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T15:50:55+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T17:01:15+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -492,10 +450,10 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 54.35,
      "reopened_at": "2026-11-09T16:09:05+05:30",
-     "sold_out_at": "2026-11-09T06:20:52+05:30",
+     "sold_out_at": "2026-11-09T17:01:15+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T16:09:05+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-09T17:01:15+05:30"
     }
    },
    "cutoff": "2026-11-09T21:00:00+05:30",
@@ -767,8 +725,8 @@
      "first_seen_time": "2026-11-09T13:10:51+05:30",
      "price": 89.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-09T16:40:56+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-09T17:01:15+05:30"
     }
    },
    "cutoff": "2026-11-10T00:20:00+05:30",
@@ -917,7 +875,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-09T17:01:15+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -3788,5 +3747,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92829/20261111"
   }
  },
- "_updated": "2026-11-09T16:50:51+05:30"
+ "_updated": "2026-11-09T17:01:15+05:30"
 }

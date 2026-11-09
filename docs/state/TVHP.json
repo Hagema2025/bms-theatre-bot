@@ -47,7 +47,8 @@
      "first_seen_time": "2026-11-09T16:20:53+05:30",
      "price": 59.94,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-09T16:40:56+05:30"
     },
     "ELITE": {
      "first_seen_status": "3",
@@ -126,7 +127,8 @@
      "first_seen_time": "2026-11-09T16:20:53+05:30",
      "price": 59.94,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-09T16:40:56+05:30"
     },
     "ELITE": {
      "first_seen_status": "2",
@@ -281,9 +283,9 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T16:20:53+05:30",
      "price": 59.94,
-     "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T16:31:34+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-09T16:40:56+05:30"
     },
     "ELITE": {
      "first_seen_status": "3",
@@ -2516,5 +2518,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26497/20261115"
   }
  },
- "_updated": "2026-11-09T16:31:34+05:30"
+ "_updated": "2026-11-09T16:40:56+05:30"
 }

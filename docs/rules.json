@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T15:42:31.690Z",
+  "updated": "2026-11-09T15:53:15.614Z",
   "rules": [
     {
       "id": "rmw7xj181lkw",
@@ -40,6 +40,28 @@
       "to": "",
       "mode": "budget",
       "max_price": 130
+    },
+    {
+      "id": "rmw9fx26j8bi",
+      "name": "testing",
+      "enabled": true,
+      "venues": [],
+      "movie": "",
+      "languages": [
+        "Tamil",
+        "English"
+      ],
+      "days": [],
+      "per_day": false,
+      "time": {
+        "from": "",
+        "to": ""
+      },
+      "day_times": {},
+      "from": "",
+      "to": "",
+      "mode": "all",
+      "max_price": null
     }
   ]
 }

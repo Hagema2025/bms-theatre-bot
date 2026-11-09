@@ -253,16 +253,29 @@ function groupShows(items) {
 }
 
 function tileHtml(it) {
-  const { d, id, s } = it;
+  // Extract the attached tracking data (trk)
+  const { d, id, s, trk } = it;
   const dim = soldOut(s);
   const cls = ["tile", closed(s) ? "closed" : "", dim ? "soldout" : ""].join(" ");
   const fmt = fmtTags(s).map(t => `<span>${esc(t)}</span>`).join("");
   const cats = priced(s).sort((a, b) => Number(a[1].price) - Number(b[1].price));
   const bars = cats.map(([n, c]) => `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
+  
+  // Format the tracking label
+  let trkLabel = "";
+  if (trk) {
+    let txt = "All categories";
+    if (trk.mode === "budget") txt = `Up to ₹${trk.max_price}`;
+    else if (trk.mode === "manual") txt = (trk.categories || []).join(", ");
+    
+    trkLabel = `<div style="font-size:10px;font-weight:800;color:var(--accent-2);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${esc(txt)}">🏷 ${esc(txt)}</div>`;
+  }
+
   return `<div class="${cls}" data-open="${esc(d)}_${esc(id)}" role="button" tabindex="0">
     <div class="t1"><span class="tile-time">${esc(s.time)}</span>${subBadge(s)}</div>
     ${s.screen || fmt ? `<div class="t2">${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</div>` : ""}
     <div class="t3"><span class="avail">${bars}</span></div>
+    ${trkLabel}
   </div>`;
 }
 
@@ -387,7 +400,11 @@ if (viewType === "tracked") {
         if (targetLang && s.language !== targetLang) continue;
         if (targetDim && s.dimension !== targetDim) continue;
         
-        showsToRender.push({ d: targetDate, id, s });
+        // Change this line:
+        // showsToRender.push({ d: targetDate, id, s });
+        
+        // To this:
+        showsToRender.push({ d: targetDate, id, s, trk: dayTracking[id] });
       }
     }
   } else if (viewType === "rule") {
@@ -403,8 +420,12 @@ if (viewType === "tracked") {
 
     $("h-icon").textContent = "⚡";
     $("h-title").textContent = rule.name;
-    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows`;
+// Figure out the rule's criteria
+    let crit = "All categories";
+    if (rule.mode === "budget") crit = `Up to ₹${rule.max_price}`;
     
+    // Put it in the header instead of on every tile
+    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;    
     // Calculate week bounds (Monday to Sunday) based on weekStart (e.g. "20261109")
     const wsYear = +weekStart.slice(0, 4);
     const wsMonth = +weekStart.slice(4, 6) - 1;
@@ -421,8 +442,15 @@ if (viewType === "tracked") {
       if (/^\d{8}$/.test(d) && d >= startCode && d <= endCode) {
         for (const [id, s] of Object.entries(day)) {
           if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
-            showsToRender.push({ d, id, s });
-          }
+            // Change this line:
+          // showsToRender.push({ d, id, s });
+          
+          // To this:
+// Inside the viewType === "rule" loop:
+          if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
+            // Do NOT pass `trk: rule` here anymore. Just pass the show.
+            showsToRender.push({ d, id, s }); 
+          }          }
         }
       }
     }

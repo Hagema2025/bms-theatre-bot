@@ -113,7 +113,7 @@ def _rule_markup(venue: str, rule_id: str, ws: datetime) -> dict:
         return None
         
     # Strip query params and index.html to get the base directory
-    base = MINI_APP_URL.split("?")[0].replace("index.html", "").rstrip("/")
+    base = MINI_APP_URL
     url = f"{base}/tracked.html?view=rule&venue={venue}&rule_id={rule_id}&week={ws.strftime('%Y%m%d')}"
     
     return {

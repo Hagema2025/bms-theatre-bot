@@ -106,6 +106,21 @@ RULE_CUTOFF       = timedelta(minutes=int(os.environ.get("RULE_CUTOFF_MINUTES", 
 SHOW_PRICES       = {}   # (venue, date, session) -> prices seen this run
 DAY_ABBR          = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DIVIDER            = "━━━━━━━━━━━━━━━━"
+MINI_APP_URL = os.environ.get("MINI_APP_URL")
+
+def _rule_markup(venue: str, rule_id: str, ws: datetime) -> dict:
+    if not MINI_APP_URL:
+        return None
+        
+    # Strip query params and index.html to get the base directory
+    base = MINI_APP_URL.split("?")[0].replace("index.html", "").rstrip("/")
+    url = f"{base}/tracked.html?view=rule&venue={venue}&rule_id={rule_id}&week={ws.strftime('%Y%m%d')}"
+    
+    return {
+        "inline_keyboard": [[
+            {"text": "🔍 View Matched Shows", "web_app": {"url": url}}
+        ]]
+    }
 
 # Category AvailStatus, as checked against live seat maps:
 # 3 = plenty of seats, 2 = filling fast, 1 = last few seats, 0 = sold out
@@ -935,6 +950,7 @@ def ensure_rule_thread(rule_threads, venue, rule, ws, we):
                chat_id=str(chat), thread_id=thread_id,
                created=datetime.now(IST).isoformat(timespec="seconds"))
     rule_threads[key] = ent
+    markup = _rule_markup(venue, rule["id"], ws)
     tg_api("sendMessage", {
         "chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
         "disable_notification": True, "disable_web_page_preview": True,
@@ -942,7 +958,7 @@ def ensure_rule_thread(rule_threads, venue, rule, ws, we):
                  f"🎟️ {html.escape(TARGET_THEATRES[venue])}\n"
                  f"📅 {_fmt_day(ws)} to {_fmt_day(we)}\n"
                  f"⚙️ {html.escape(describe_rule(rule))}\n\n"
-                 f"🔔 Alerts for shows matching this rule appear in this topic.")})
+                 f"🔔 Alerts for shows matching this rule appear in this topic."),**({"reply_markup": markup} if markup else {})})
     return ent
 
 

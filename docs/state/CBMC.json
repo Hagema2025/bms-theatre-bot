@@ -209,10 +209,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-09T20:31:31+05:30",
      "sold_out_at": "2026-11-09T20:20:57+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T20:20:57+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -287,10 +288,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-09T20:31:31+05:30",
      "sold_out_at": "2026-11-09T19:51:06+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T19:51:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -407,10 +409,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-09T20:31:31+05:30",
      "sold_out_at": "2026-11-09T20:20:57+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T20:20:57+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -479,85 +482,6 @@
    "trailer": "https://www.youtube.com/watch?v=EzMxyEKB0cg",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521913/CBMC/15920/20261109"
   },
-  "15921": {
-   "censor": "UA 7+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-08T13:01:07+05:30",
-     "price": 202.49,
-     "sold_out_at": "2026-11-09T10:01:08+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T10:01:08+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-08T13:01:07+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-09T20:15:00+05:30",
-   "dimension": "2D",
-   "duration": 126,
-   "end": "2026-11-09T20:30:00+05:30",
-   "event_code": "ET00524282",
-   "first_seen": "2026-11-08T13:01:07+05:30",
-   "genre": "Adventure,Drama,Kids",
-   "language": "Telugu",
-   "movie": "Summer Holidays",
-   "poster": "summer-holidays-et00524282-1793080177",
-   "screen": "AUDI08",
-   "start": "2026-11-09T20:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "08:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=l7ojGbmxtr0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524282/CBMC/15921/20261109"
-  },
-  "15927": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T10:01:08+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-09T15:31:42+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T15:31:42+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T10:01:08+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-09T10:31:29+05:30",
-     "sold_out_at": "2026-11-09T10:50:50+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-09T10:50:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-09T20:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-09T20:30:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-09T10:01:08+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI08",
-   "start": "2026-11-09T20:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "08:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15927/20261109"
-  },
   "15928": {
    "censor": "U",
    "classes": {
@@ -608,7 +532,8 @@
      "first_seen_time": "2026-11-07T19:09:00+05:30",
      "price": 252.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -840,8 +765,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-09T18:20:49+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-09T18:20:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     }
    },
    "cutoff": "2026-11-10T18:45:00+05:30",
@@ -952,8 +877,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-09T10:31:29+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T20:10:54+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     }
    },
    "cutoff": "2026-11-10T09:45:00+05:30",
@@ -1360,8 +1285,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-09T10:40:50+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-09T10:40:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     }
    },
    "cutoff": "2026-11-10T10:10:00+05:30",
@@ -1769,8 +1694,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-09T10:40:50+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-09T18:01:13+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     }
    },
    "cutoff": "2026-11-10T11:45:00+05:30",
@@ -5005,8 +4930,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-08T09:01:06+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-09T20:31:31+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-09T20:31:31+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5071,5 +4998,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15925/20261112"
   }
  },
- "_updated": "2026-11-09T20:20:57+05:30"
+ "_updated": "2026-11-09T20:31:31+05:30"
 }

@@ -138,15 +138,41 @@ const ruleId = params.get("rule_id");
 const weekStart = params.get("week");
 
 // ── Data Fetching ─────────────────────────────────────────
-async function fetchJson(path) {
+// fresh=true: always hits the network (rules.json is tiny and must never be stale).
+// fresh=false: 60s cache bucket (big state/tracking files).
+// Returns data, {} on 404, null on network/server failure.
+async function fetchJson(path, fresh) {
   try {
-    // 1-minute cache buster for instant subsequent loads
-    const cacheBuster = Math.floor(Date.now() / 60000); 
-    const r = await fetch(`${RAW}/docs/${path}?t=${cacheBuster}`);
+    const t = fresh ? Date.now() : Math.floor(Date.now() / 60000);
+    const r = await fetch(`${RAW}/docs/${path}?t=${t}`, fresh ? { cache: "no-store" } : undefined);
     if (r.ok) return await r.json();
+    if (r.status === 404) return {};
   } catch (e) {}
   return null;
 }
+
+// Cache of the already-trimmed slice (one date or one week) so repeat opens render instantly.
+const CACHE_PREFIX = "trk_cache_v1:";
+const CACHE_KEY = `${CACHE_PREFIX}${viewType}:${venue}:${ruleId || ""}:${weekStart || targetDate || ""}`;
+function readCache() {
+  try {
+    const c = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (c && c.data && Date.now() - c.ts < 6 * 3600e3) return c.data;
+  } catch (e) {}
+  return null;
+}
+function writeCache(data) {
+  try {
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith(CACHE_PREFIX) && k !== CACHE_KEY) {
+        try { if (Date.now() - JSON.parse(localStorage.getItem(k)).ts > 864e5) localStorage.removeItem(k); } catch (e) { localStorage.removeItem(k); }
+      }
+    }
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data }));
+  } catch (e) {}
+}
+function dropCache() { try { localStorage.removeItem(CACHE_KEY); } catch (e) {} }
 
 // ── State ─────────────────────────────────────────────────
 let stateData = {};
@@ -364,87 +390,89 @@ document.addEventListener("click", e => {
 });
 
 // ── Initialization ────────────────────────────────────────
-async function init() {
-  if (!THEATRES[venue]) {
-    $("list").innerHTML = `<div class="msg">Invalid venue code.</div>`;
-    return;
-  }
+const dayCode = d => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+const msg = t => { $("list").innerHTML = `<div class="msg">${esc(t)}</div>`; };
 
-  stateData = await fetchJson(`state/${venue}.json`);
-  if (!stateData) {
-    $("list").innerHTML = `<div class="msg">Couldn't load data for ${esc(THEATRES[venue])}.</div>`;
-    return;
-  }
+// Fetch state (+ tracking) in parallel and keep only the slice this page needs.
+async function loadSlice(startCode, endCode) {
+  const [st, trRaw] = await Promise.all([
+    fetchJson(`state/${venue}.json`),
+    viewType === "tracked" ? fetchJson(`tracking/${venue}.json`) : null
+  ]);
+  if (!st) return null;
+  const state = {};
+  for (const [d, day] of Object.entries(st)) if (/^\d{8}$/.test(d) && d >= startCode && d <= endCode) state[d] = day;
+  const tracking = viewType === "tracked" ? (flattenTracking(trRaw)[targetDate] || {}) : null;
+  return { state, tracking };
+}
 
+function applyData(data, rule) {
+  stateData = data.state;
+  showsToRender = [];
   if (viewType === "tracked") {
-    $("h-icon").textContent = "🎟️";
-    $("h-title").textContent = targetMovie || THEATRES[venue];
-    
-    const subParts = [THEATRES[venue], dateLabel(targetDate), targetLang, targetDim].filter(Boolean);
-    $("h-sub").textContent = subParts.join(" · ");
-
-    const rawTracking = await fetchJson(`tracking/${venue}.json`);
-    const tracking = flattenTracking(rawTracking);
-    const dayTracking = tracking[targetDate] || {};
-    const dayState = stateData[targetDate] || {};
-    
-    showsToRender = [];
-    for (const [id, s] of Object.entries(dayState)) {
-      if (dayTracking[id] && dayTracking[id].tracked && live(s)) {
-        if (targetMovie && s.movie !== targetMovie) continue;
-        if (targetLang && s.language !== targetLang) continue;
-        if (targetDim && s.dimension !== targetDim) continue;
-        
-        showsToRender.push({ d: targetDate, id, s, trk: dayTracking[id] });
-      }
-    }
-  } else if (viewType === "rule") {
-    const rulesObj = await fetchJson("rules.json");
-    rulesData = rulesObj && rulesObj.rules ? rulesObj.rules : [];
-    const rule = rulesData.find(r => r.id === ruleId);
-    
-    if (!rule) {
-      $("h-title").textContent = "Rule Not Found";
-      $("list").innerHTML = `<div class="msg">The rule you are looking for does not exist or was deleted.</div>`;
-      return;
-    }
-
-    $("h-icon").textContent = "⚡";
-    $("h-title").textContent = rule.name;
-
-    let crit = "All categories";
-    if (rule.mode === "budget") crit = `Up to ₹${rule.max_price}`;
-    
-    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;
-    
-    const wsYear = +weekStart.slice(0, 4);
-    const wsMonth = +weekStart.slice(4, 6) - 1;
-    const wsDay = +weekStart.slice(6);
-    const startDate = new Date(wsYear, wsMonth, wsDay);
-    const endDate = new Date(startDate);
-    endDate.setDate(endDate.getDate() + 6);
-
-    const startCode = weekStart;
-    const endCode = `${endDate.getFullYear()}${String(endDate.getMonth() + 1).padStart(2, "0")}${String(endDate.getDate()).padStart(2, "0")}`;
-
-    showsToRender = [];
-    for (const [d, day] of Object.entries(stateData)) {
-      if (/^\d{8}$/.test(d) && d >= startCode && d <= endCode) {
-        for (const [id, s] of Object.entries(day)) {
-          if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) {
-            // No trk property passed here, so the tile doesn't render individual tags
-            showsToRender.push({ d, id, s }); 
-          }
-        }
-      }
+    const dayTracking = data.tracking || {};
+    for (const [id, s] of Object.entries(stateData[targetDate] || {})) {
+      if (!(dayTracking[id] && dayTracking[id].tracked && live(s))) continue;
+      if (targetMovie && s.movie !== targetMovie) continue;
+      if (targetLang && s.language !== targetLang) continue;
+      if (targetDim && s.dimension !== targetDim) continue;
+      showsToRender.push({ d: targetDate, id, s, trk: dayTracking[id] });
     }
   } else {
+    for (const [d, day] of Object.entries(stateData)) {
+      for (const [id, s] of Object.entries(day)) {
+        if (live(s) && ruleMatches(rule, d, s) && trackedCats(rule, s).length > 0) showsToRender.push({ d, id, s });
+      }
+    }
+  }
+  renderShows();
+}
+
+async function init() {
+  if (!THEATRES[venue]) return msg("Invalid venue code.");
+
+  let startCode, endCode, rule = null, rulePromise = null;
+
+  if (viewType === "tracked") {
+    if (!/^\d{8}$/.test(targetDate || "")) return msg("Invalid date.");
+    $("h-icon").textContent = "🎟️";
+    $("h-title").textContent = targetMovie || THEATRES[venue];
+    $("h-sub").textContent = [THEATRES[venue], dateLabel(targetDate), targetLang, targetDim].filter(Boolean).join(" · ");
+    startCode = endCode = targetDate;
+  } else if (viewType === "rule") {
+    if (!ruleId || !/^\d{8}$/.test(weekStart || "")) { $("h-title").textContent = "Error"; return msg("Invalid link."); }
+    const s0 = new Date(+weekStart.slice(0, 4), +weekStart.slice(4, 6) - 1, +weekStart.slice(6));
+    const e0 = new Date(s0); e0.setDate(e0.getDate() + 6);
+    startCode = weekStart; endCode = dayCode(e0);
+    rulePromise = fetchJson("rules.json", true);          // always fresh, started in parallel with state
+  } else {
     $("h-title").textContent = "Error";
-    $("list").innerHTML = `<div class="msg">Invalid view type.</div>`;
-    return;
+    return msg("Invalid view type.");
   }
 
-  renderShows();
+  const cached = readCache();
+  const fresh = loadSlice(startCode, endCode);             // network request already in flight
+
+  if (viewType === "rule") {
+    const rulesObj = await rulePromise;
+    if (rulesObj === null) { $("h-title").textContent = "Rule"; return msg("Couldn't verify this rule. Check your connection and retry."); }
+    rule = (Array.isArray(rulesObj.rules) ? rulesObj.rules : []).find(r => r.id === ruleId);
+    if (!rule) {
+      dropCache();
+      $("h-icon").textContent = "⚡";
+      $("h-title").textContent = "Rule Not Found";
+      return msg("The rule you are looking for does not exist or was deleted.");
+    }
+    $("h-icon").textContent = "⚡";
+    $("h-title").textContent = rule.name;
+    const crit = rule.mode === "budget" ? `Up to ₹${rule.max_price}` : "All categories";
+    $("h-sub").textContent = `${THEATRES[venue]} · Matching shows · 🏷 ${crit}`;
+  }
+
+  if (cached) applyData(cached, rule);                     // instant paint from cache
+  const data = await fresh;                                // then replace with live data
+  if (data) { writeCache(data); applyData(data, rule); }
+  else if (!cached) msg(`Couldn't load data for ${THEATRES[venue]}.`);
 }
 
 init();

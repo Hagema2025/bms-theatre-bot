@@ -7,19 +7,20 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-10T20:10:56+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-10T15:50:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-10T20:10:56+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.0,
      "reopened_at": "2026-11-10T19:01:16+05:30",
-     "sold_out_at": "2026-11-10T17:51:04+05:30",
+     "sold_out_at": "2026-11-10T20:10:56+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-10T20:01:10+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-10T20:10:56+05:30"
     }
    },
    "cutoff": "2026-11-10T20:00:00+05:30",
@@ -110,7 +111,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 213.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-10T20:10:56+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -1920,5 +1922,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/ACON/48625/20261112"
   }
  },
- "_updated": "2026-11-10T20:01:10+05:30"
+ "_updated": "2026-11-10T20:10:56+05:30"
 }

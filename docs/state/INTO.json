@@ -214,11 +214,11 @@
      "first_seen_status": "1",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 59.43,
-     "reopened_at": "2026-11-09T22:41:01+05:30",
+     "reopened_at": "2026-11-10T18:40:56+05:30",
      "sold_out_at": "2026-11-10T15:01:11+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T15:01:11+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-10T18:40:56+05:30"
     }
    },
    "cutoff": "2026-11-10T19:15:00+05:30",
@@ -494,9 +494,9 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T13:50:51+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-10T18:40:56+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -1181,8 +1181,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T17:01:15+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-10T18:40:56+05:30"
     }
    },
    "cutoff": "2026-11-12T00:40:00+05:30",
@@ -1892,8 +1892,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 94.43,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T14:01:14+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-10T18:40:56+05:30"
     }
    },
    "cutoff": "2026-11-11T17:45:00+05:30",
@@ -2206,6 +2206,114 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92811/20261111"
+  },
+  "92819": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 218.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 89.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-11T10:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-11T10:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-10T18:40:56+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-11T10:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92819/20261111"
+  },
+  "92820": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 218.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 89.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-11T14:55:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-11T14:40:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-10T18:40:56+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-11T14:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92820/20261111"
+  },
+  "92821": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 218.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 89.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-11T19:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-11T19:05:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-10T18:40:56+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-11T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92821/20261111"
   },
   "92823": {
    "censor": "U",
@@ -3554,7 +3662,79 @@
    "time": "11:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92862/20261112"
+  },
+  "92863": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-12T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-12T20:05:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-10T18:40:56+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "SCREEN 8",
+   "start": "2026-11-12T19:35:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92863/20261112"
+  },
+  "92864": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-10T18:40:56+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-12T13:45:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-12T13:30:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-10T18:40:56+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "SCREEN 8",
+   "start": "2026-11-12T13:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92864/20261112"
   }
  },
- "_updated": "2026-11-10T18:20:54+05:30"
+ "_updated": "2026-11-10T18:40:56+05:30"
 }

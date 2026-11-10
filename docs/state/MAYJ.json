@@ -422,7 +422,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-10T18:10:52+05:30"
     }
    },
    "cutoff": "2026-11-10T18:25:00+05:30",
@@ -743,59 +744,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242201/20261110"
   },
-  "242213": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 246.4,
-     "sold_out_at": "2026-11-10T15:40:54+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T15:40:54+05:30"
-    },
-    "SECOND CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 97.14,
-     "sold_out_at": "2026-11-10T15:40:54+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T15:40:54+05:30"
-    }
-   },
-   "cutoff": "2026-11-10T17:45:00+05:30",
-   "dimension": "3D",
-   "duration": 110,
-   "end": "2026-11-10T18:05:00+05:30",
-   "event_code": "ET00524691",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
-   "language": "English",
-   "movie": "The Cat in the Hat",
-   "poster": "the-cat-in-the-hat-et00524691-1793796951",
-   "screen": "SCREEN 10",
-   "start": "2026-11-10T17:35:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:35 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "FIRST CLASS 3D": "2026-11-10T00:20:59+05:30",
-      "SECOND CLASS 3D": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/MAYJ/242213/20261110"
-  },
   "242245": {
    "censor": "U",
    "classes": {
@@ -962,8 +910,8 @@
      "first_seen_time": "2026-11-10T15:40:54+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-10T18:01:10+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-10T18:10:52+05:30"
     }
    },
    "cutoff": "2026-11-10T18:00:00+05:30",
@@ -1047,39 +995,6 @@
    "time": "11:55 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242254/20261110"
-  },
-  "242255": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T15:40:54+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-10T18:01:10+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-10T18:01:10+05:30"
-    }
-   },
-   "cutoff": "2026-11-10T17:45:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-10T18:05:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-10T15:40:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 10",
-   "start": "2026-11-10T17:35:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242255/20261110"
   }
  },
  "20261111": {
@@ -6033,5 +5948,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242242/20261115"
   }
  },
- "_updated": "2026-11-10T18:01:10+05:30"
+ "_updated": "2026-11-10T18:10:52+05:30"
 }

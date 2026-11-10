@@ -644,7 +644,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T03:31:29+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6338,7 +6339,135 @@
    "time": "10:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/PVHR/45261/20261115"
+  },
+  "45274": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T14:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T14:25:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-11T03:31:29+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 10",
+   "start": "2026-11-15T13:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-11T03:31:29+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-11T03:31:29+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/45274/20261115"
+  },
+  "45276": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T20:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T20:15:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-11T03:31:29+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 10",
+   "start": "2026-11-15T19:45:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-11T03:31:29+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-11T03:31:29+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/45276/20261115"
+  },
+  "45277": {
+   "censor": "",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T03:31:29+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T23:40:00+05:30",
+   "dimension": "2D",
+   "duration": 0,
+   "end": "2026-11-15T23:25:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-11T03:31:29+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1787658136",
+   "screen": "AUDI 10",
+   "start": "2026-11-15T22:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:55 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   }
  },
- "_updated": "2026-11-11T03:10:57+05:30"
+ "_updated": "2026-11-11T03:31:29+05:30"
 }

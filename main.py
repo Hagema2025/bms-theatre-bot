@@ -814,6 +814,52 @@ def load_rules():
     return [r for r in (rules or []) if isinstance(r, dict) and r.get("id") and r.get("name")]
 
 
+def all_rule_ids():
+    """Ids of every rule in rules.json (enabled or not). None if the file is missing/unreadable,
+    so a failed read can never be mistaken for 'all rules deleted'."""
+    cfg = read_json(RULES_FILE, None)
+    if not isinstance(cfg, dict) or not isinstance(cfg.get("rules"), list):
+        return None
+    return {r["id"] for r in cfg["rules"] if isinstance(r, dict) and r.get("id")}
+
+
+def prune_deleted_rules(state, rule_threads, known_ids):
+    """Drop everything that still points at a rule that no longer exists:
+    tracked_by_rules marks on shows, and the rule's weekly Telegram topics (with their button)."""
+    if known_ids is None:
+        return
+    marks = 0
+    for dates in state.values():
+        for shows in dates.values():
+            for show in shows.values():
+                tb = show.get("tracked_by_rules")
+                if not tb:
+                    continue
+                keep = [t for t in tb if t.get("rule_id") in known_ids]
+                if len(keep) != len(tb):
+                    marks += len(tb) - len(keep)
+                    if keep:
+                        show["tracked_by_rules"] = keep
+                    else:
+                        show.pop("tracked_by_rules", None)
+    topics = 0
+    for key, ent in list(rule_threads.items()):
+        if ent.get("rule_id") in known_ids:
+            continue
+        gone = True
+        if ent.get("thread_id") and ent.get("chat_id"):
+            ok, body = tg_api("deleteForumTopic", {"chat_id": ent["chat_id"], "message_thread_id": ent["thread_id"]})
+            gone = ok or "thread" in body.get("description", "").lower()
+        tries = ent.get("tries", 0) + 1
+        if gone or tries >= CLEANUP_MAX_TRIES:
+            rule_threads.pop(key, None)
+            topics += 1
+        else:
+            ent["tries"] = tries
+    if marks or topics:
+        logging.info(f"Deleted rules: removed {marks} show mark(s) and {topics} topic(s)")
+
+
 def load_rule_threads():
     data = read_json(RULE_THREADS_FILE, {})
     return data if isinstance(data, dict) else {}
@@ -1271,6 +1317,7 @@ def main():
             session.close()
         ok     = sum(s["ok"] for s in stats.values())
         failed = sum(s["failed"] for s in stats.values())
+        prune_deleted_rules(state, rule_threads, all_rule_ids())
         newly = apply_rules(state, list(rules_by_id.values()), rule_threads, now)
         if newly:
             logging.info(f"Rules: {newly} show(s) newly tracked")

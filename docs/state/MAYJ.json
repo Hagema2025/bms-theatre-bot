@@ -295,7 +295,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-10T11:10:49+05:30"
     }
    },
    "cutoff": "2026-11-10T11:10:00+05:30",
@@ -663,7 +664,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -950,8 +951,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 237.9,
+     "sold_out_at": "2026-11-10T11:10:49+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-10T11:10:49+05:30"
     }
    },
    "cutoff": "2026-11-10T10:55:00+05:30",
@@ -5918,5 +5921,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242242/20261115"
   }
  },
- "_updated": "2026-11-10T10:50:50+05:30"
+ "_updated": "2026-11-10T11:10:49+05:30"
 }

@@ -308,10 +308,10 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 59.43,
      "reopened_at": "2026-11-09T22:41:01+05:30",
-     "sold_out_at": "2026-11-09T22:31:32+05:30",
+     "sold_out_at": "2026-11-10T15:01:11+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-09T22:41:01+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-10T15:01:11+05:30"
     }
    },
    "cutoff": "2026-11-10T19:15:00+05:30",
@@ -625,54 +625,6 @@
    "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92771/20261110"
   },
-  "92795": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 245.98,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 96.74,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-10T14:31:30+05:30"
-    }
-   },
-   "cutoff": "2026-11-10T15:10:00+05:30",
-   "dimension": "3D",
-   "duration": 110,
-   "end": "2026-11-10T14:55:00+05:30",
-   "event_code": "ET00524691",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
-   "language": "English",
-   "movie": "The Cat in the Hat",
-   "poster": "the-cat-in-the-hat-et00524691-1793796951",
-   "screen": "SCREEN 5",
-   "start": "2026-11-10T14:25:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "02:25 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "CLUB": "2026-11-10T00:20:59+05:30",
-      "EXECUTIVE": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=hJAoAaWdnJQ",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524691/INTO/92795/20261110"
-  },
   "92796": {
    "censor": "U",
    "classes": {
@@ -680,7 +632,7 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-10T11:50:51+05:30"
     },
@@ -886,11 +838,11 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
-     "reopened_at": "2026-11-10T12:20:55+05:30",
+     "reopened_at": "2026-11-10T15:01:11+05:30",
      "sold_out_at": "2026-11-10T14:50:52+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T14:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-10T15:01:11+05:30"
     }
    },
    "cutoff": "2026-11-11T00:30:00+05:30",
@@ -2675,5 +2627,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92829/20261111"
   }
  },
- "_updated": "2026-11-10T14:50:52+05:30"
+ "_updated": "2026-11-10T15:01:11+05:30"
 }

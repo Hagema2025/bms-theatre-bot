@@ -41,48 +41,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/TVHP/26372/20261110"
   },
-  "26375": {
-   "censor": "UA16+",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.0,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-10T14:01:14+05:30"
-    }
-   },
-   "cutoff": "2026-11-10T17:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-10T17:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 4",
-   "start": "2026-11-10T16:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "04:30 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "ELITE": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26375/20261110"
-  },
   "26376": {
    "censor": "UA16+",
    "classes": {
@@ -173,7 +131,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 218.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-10T13:01:09+05:30"
     }
@@ -326,7 +284,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T12:20:55+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -3052,5 +3010,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26497/20261115"
   }
  },
- "_updated": "2026-11-10T16:31:29+05:30"
+ "_updated": "2026-11-10T17:01:15+05:30"
 }

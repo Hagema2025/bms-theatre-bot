@@ -156,7 +156,7 @@
      "first_seen_status": "2",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 223.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-10T01:01:19+05:30"
     },
@@ -245,53 +245,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MCSK/17032/20261110"
-  },
-  "17035": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-10T16:55:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-10T16:40:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 3",
-   "start": "2026-11-10T16:10:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "04:10 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-10T00:20:59+05:30",
-      "SPECIAL": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MCSK/17035/20261110"
   },
   "17036": {
    "censor": "UA16+",
@@ -2228,5 +2181,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MCSK/17079/20261112"
   }
  },
- "_updated": "2026-11-10T16:20:56+05:30"
+ "_updated": "2026-11-10T16:40:55+05:30"
 }

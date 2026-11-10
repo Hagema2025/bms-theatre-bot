@@ -56,10 +56,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 260.98,
+     "reopened_at": "2026-11-10T12:50:56+05:30",
      "sold_out_at": "2026-11-10T07:10:51+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T07:10:51+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-10T12:50:56+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -69,10 +70,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-10T16:05:00+05:30",
+   "cutoff": "2026-11-10T15:55:00+05:30",
    "dimension": "3D",
    "duration": 110,
-   "end": "2026-11-10T16:20:00+05:30",
+   "end": "2026-11-10T16:10:00+05:30",
    "event_code": "ET00524691",
    "first_seen": "2026-11-09T22:10:54+05:30",
    "genre": "Adventure,Animation,Comedy,Family,Fantasy",
@@ -80,10 +81,10 @@
    "movie": "The Cat in the Hat",
    "poster": "the-cat-in-the-hat-et00524691-1793796951",
    "screen": "AUDI04",
-   "start": "2026-11-10T15:50:00+05:30",
+   "start": "2026-11-10T15:40:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "03:50 PM",
+   "time": "03:40 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -247,55 +248,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/15743/20261110"
-  },
-  "15746": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-10T07:10:51+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T07:10:51+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-10T12:30:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-10T12:45:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI02",
-   "start": "2026-11-10T12:15:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "12:15 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-10T00:20:59+05:30",
-      "NORMAL": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15746/20261110"
   },
   "15747": {
    "censor": "UA16+",
@@ -1001,8 +953,8 @@
      "price": 104.35,
      "reopened_at": "2026-11-10T07:10:51+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T11:31:23+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-10T12:50:56+05:30"
     }
    },
    "cutoff": "2026-11-10T18:00:00+05:30",
@@ -1482,9 +1434,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T07:10:51+05:30",
      "price": 183.8,
+     "sold_out_at": "2026-11-10T12:50:56+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T11:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-10T12:50:56+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4910,5 +4863,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15946/20261112"
   }
  },
- "_updated": "2026-11-10T12:40:50+05:30"
+ "_updated": "2026-11-10T12:50:56+05:30"
 }

@@ -294,7 +294,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -327,49 +327,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242188/20261110"
-  },
-  "242200": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-10T21:10:54+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-10T21:10:54+05:30"
-    }
-   },
-   "cutoff": "2026-11-10T20:55:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-10T21:15:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 10",
-   "start": "2026-11-10T20:45:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "08:45 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "FIRST CLASS": "2026-11-10T00:20:59+05:30"
-     },
-     "rule": "test",
-     "rule_id": "rmw9m6k2nxa7",
-     "tracked_at": "2026-11-10T00:20:59+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242200/20261110"
   },
   "242201": {
    "censor": "UA16+",
@@ -481,7 +438,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T15:40:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -5520,5 +5477,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242242/20261115"
   }
  },
- "_updated": "2026-11-10T21:10:54+05:30"
+ "_updated": "2026-11-10T21:20:55+05:30"
 }

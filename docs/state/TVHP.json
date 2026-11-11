@@ -1,38 +1,5 @@
 {
  "20261111": {
-  "26395": {
-   "censor": "UA16+",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.0,
-     "sold_out_at": "2026-11-10T15:31:25+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T15:31:25+05:30"
-    }
-   },
-   "cutoff": "2026-11-11T14:25:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-11T14:10:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 3",
-   "start": "2026-11-11T13:40:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "01:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/TVHP/26395/20261111"
-  },
   "26396": {
    "censor": "UA16+",
    "classes": {
@@ -427,8 +394,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T15:40:54+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-11T14:10:50+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T14:10:50+05:30"
     }
    },
    "cutoff": "2026-11-11T14:30:00+05:30",
@@ -2243,5 +2212,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26529/20261115"
   }
  },
- "_updated": "2026-11-11T13:50:51+05:30"
+ "_updated": "2026-11-11T14:10:50+05:30"
 }

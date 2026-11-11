@@ -475,44 +475,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/15830/20261111"
   },
-  "15832": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "reopened_at": "2026-11-11T09:50:55+05:30",
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T10:10:54+05:30"
-    }
-   },
-   "cutoff": "2026-11-11T10:55:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-11T11:10:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI06",
-   "start": "2026-11-11T10:40:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "10:40 AM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/15832/20261111"
-  },
   "15834": {
    "censor": "UA16+",
    "classes": {
@@ -603,8 +565,8 @@
      "price": 54.35,
      "reopened_at": "2026-11-11T10:40:51+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-11T11:01:13+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-11T11:10:54+05:30"
     }
    },
    "cutoff": "2026-11-11T11:45:00+05:30",
@@ -705,7 +667,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -6043,5 +6005,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16079/20261115"
   }
  },
- "_updated": "2026-11-11T11:01:13+05:30"
+ "_updated": "2026-11-11T11:10:54+05:30"
 }

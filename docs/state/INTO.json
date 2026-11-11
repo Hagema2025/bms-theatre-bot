@@ -196,10 +196,11 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
+     "reopened_at": "2026-11-11T09:10:51+05:30",
      "sold_out_at": "2026-11-11T09:01:14+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-11T09:01:14+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-11T09:10:51+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -244,8 +245,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 89.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-10T20:01:10+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-11T09:10:51+05:30"
     }
    },
    "cutoff": "2026-11-11T13:05:00+05:30",
@@ -312,8 +313,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 218.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-11T05:40:56+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-11T09:10:51+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -1164,8 +1165,8 @@
      "first_seen_time": "2026-11-10T18:40:56+05:30",
      "price": 89.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T08:31:28+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-11T09:10:51+05:30"
     }
    },
    "cutoff": "2026-11-11T10:45:00+05:30",
@@ -2855,7 +2856,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00508520/INTO/92870/20261113"
   },
   "92871": {
-   "censor": "",
+   "censor": "UA13+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -3674,8 +3675,44 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92896/20261113"
   },
-  "92898": {
+  "92897": {
    "censor": "",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-13T14:15:00+05:30",
+   "dimension": "2D",
+   "duration": 0,
+   "end": "2026-11-13T14:00:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-11T09:10:51+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 8",
+   "start": "2026-11-13T13:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/INTO/92897/20261113"
+  },
+  "92898": {
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -3689,12 +3726,13 @@
      "first_seen_time": "2026-11-11T02:01:22+05:30",
      "price": 59.43,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T09:10:51+05:30"
     }
    },
    "cutoff": "2026-11-13T16:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 143,
    "end": "2026-11-13T16:00:00+05:30",
    "event_code": "ET00514068",
    "first_seen": "2026-11-11T02:01:22+05:30",
@@ -5181,7 +5219,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00069291/INTO/92953/20261114"
   },
   "92954": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -5200,7 +5238,7 @@
    },
    "cutoff": "2026-11-14T16:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 143,
    "end": "2026-11-14T16:00:00+05:30",
    "event_code": "ET00514068",
    "first_seen": "2026-11-11T02:01:22+05:30",
@@ -5390,6 +5428,52 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92963/20261114"
   },
+  "92969": {
+   "censor": "",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-14T14:15:00+05:30",
+   "dimension": "2D",
+   "duration": 0,
+   "end": "2026-11-14T14:00:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-11T09:10:51+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 8",
+   "start": "2026-11-14T13:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-11T09:10:51+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-11T09:10:51+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/INTO/92969/20261114"
+  },
   "92970": {
    "censor": "A",
    "classes": {
@@ -5437,7 +5521,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00508520/INTO/92970/20261114"
   },
   "92971": {
-   "censor": "",
+   "censor": "UA13+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -6721,7 +6805,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00069291/INTO/92957/20261115"
   },
   "92958": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -6740,7 +6824,7 @@
    },
    "cutoff": "2026-11-15T16:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 143,
    "end": "2026-11-15T16:00:00+05:30",
    "event_code": "ET00514068",
    "first_seen": "2026-11-11T05:40:56+05:30",
@@ -6930,6 +7014,52 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92967/20261115"
   },
+  "92973": {
+   "censor": "",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-11T09:10:51+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T14:15:00+05:30",
+   "dimension": "2D",
+   "duration": 0,
+   "end": "2026-11-15T14:00:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-11T09:10:51+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 8",
+   "start": "2026-11-15T13:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-11T09:10:51+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-11T09:10:51+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/INTO/92973/20261115"
+  },
   "92974": {
    "censor": "A",
    "classes": {
@@ -6977,7 +7107,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00508520/INTO/92974/20261115"
   },
   "92975": {
-   "censor": "",
+   "censor": "UA13+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -7069,5 +7199,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-11T09:01:14+05:30"
+ "_updated": "2026-11-11T09:10:51+05:30"
 }

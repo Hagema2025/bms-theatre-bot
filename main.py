@@ -20,8 +20,15 @@ FILES (one writer each, so nothing ever overwrites anything else)
                                     "first_seen_time": "2026-11-07T12:09:58+05:30",
                                     "status_changed_at": "...", "sold_out_at": "...",
                                     "reopened_at": "...",
-                                    "prev_price": 75, "price_changed_at": "..."} } } },
+                                    "prev_price": 75, "price_changed_at": "...",
+                                    "history": [["<ISO time>", "s", "3", "2"],    # status change
+                                                ["<ISO time>", "p", 75, 80]]} } } },  # price change
         "_updated": "<ISO time of the last real change>" }
+
+  History: every status or price change of a seat class is appended to its "history" list
+  (oldest first) and lives as long as the show does. HISTORY_MAX caps the list so a class that
+  flaps every scan can't bloat the file: when it is exceeded the FIRST event is kept plus the
+  newest HISTORY_MAX - 1 ones. Set HISTORY_MAX=0 for no cap at all.
 
   docs/tracking/<VENUE>.json  WRITTEN ONLY BY YOUR RUNNING BOT, read-only here
 { "20261107": { "28451": {
@@ -93,6 +100,7 @@ TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
 SHOW_GRACE         = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # state/alerts end this long after showtime
 REMINDER_MINUTES = int(os.environ.get("REMINDER_MINUTES", "120"))
 MAX_DATES          = int(os.environ.get("MAX_DATES", "7"))
+HISTORY_MAX        = int(os.environ.get("HISTORY_MAX", "300"))   # per seat class; 0 = no cap
 FAIL_ALERT_AFTER   = 3
 TG_RETRIES         = 4
 CLEANUP_MAX_TRIES  = 5
@@ -163,6 +171,7 @@ console_print("🤖 BookMyShow alert scanner module loaded.")
 console_print(f"⚙️ Reminder: {REMINDER_MINUTES} minutes before show")
 console_print(f"⚙️ Maximum dates to scan: {MAX_DATES}")
 console_print(f"⚙️ Theatres configured: {len(TARGET_THEATRES)}")
+console_print(f"⚙️ History cap per seat class: {HISTORY_MAX or 'none'}")
 
 # ───────────────────────── helpers ─────────────────────────
 
@@ -246,7 +255,9 @@ def touch_class(c, status, price, now, label=""):
     if events:
         hist = c.setdefault("history", [])
         hist.extend(events)
-        del hist[:-40]                      # keep the latest 40 changes per class
+        if HISTORY_MAX and len(hist) > HISTORY_MAX:
+            # keep the very first event (where the story starts) + the newest ones
+            del hist[1:len(hist) - (HISTORY_MAX - 1)]
     c["price"], c["status"] = price, status
 
 
@@ -1005,14 +1016,15 @@ def ensure_rule_thread(rule_threads, venue, rule, ws, we):
                created=datetime.now(IST).isoformat(timespec="seconds"))
     rule_threads[key] = ent
     markup = _rule_markup(venue, rule["id"], ws)
-    ok_h, hb =tg_api("sendMessage", {
+    ok_h, hb = tg_api("sendMessage", {
         "chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
         "disable_notification": False, "disable_web_page_preview": True,
         "text": (f"📌 <b>{html.escape(rule['name'])}</b>\n"
                  f"🎟️ {html.escape(TARGET_THEATRES[venue])}\n"
                  f"📅 {_fmt_day(ws)} to {_fmt_day(we)}\n"
                  f"⚙️ {html.escape(describe_rule(rule))}\n\n"
-                 f"🔔 Alerts for shows matching this rule appear in this topic."),**({"reply_markup": markup} if markup else {})})
+                 f"🔔 Alerts for shows matching this rule appear in this topic."),
+        **({"reply_markup": markup} if markup else {})})
 
     if ok_h:
         tg_api("pinChatMessage", {"chat_id": chat, "message_id": hb["result"]["message_id"],

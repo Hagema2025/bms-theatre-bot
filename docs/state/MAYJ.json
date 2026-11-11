@@ -70,7 +70,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T20:31:26+05:30"
     }
    },
    "cutoff": "2026-11-11T20:40:00+05:30",
@@ -340,37 +341,6 @@
    "time": "11:50 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242206/20261111"
-  },
-  "242258": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T15:50:54+05:30",
-     "price": 219.2,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-11T20:10:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-11T20:30:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-10T15:50:54+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 5",
-   "start": "2026-11-11T20:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "08:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242258/20261111"
   },
   "242264": {
    "censor": "U",
@@ -7365,5 +7335,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242423/20261115"
   }
  },
- "_updated": "2026-11-11T20:20:50+05:30"
+ "_updated": "2026-11-11T20:31:26+05:30"
 }

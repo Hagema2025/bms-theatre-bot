@@ -230,9 +230,11 @@ def show_subs(show):
 def touch_class(c, status, price, now, label=""):
     iso = now.isoformat(timespec="seconds")
     old_price, old_status = c.get("price"), c.get("status")
+    events = []
     if old_price is not None and old_price != price:
         logging.info(f"💰 {label}: price {old_price:g} → {price:g}")
         c["prev_price"], c["price_changed_at"] = old_price, iso
+        events.append([iso, "p", old_price, price])
     if old_status is not None and old_status != status:
         logging.info(f"📊 {label}: status {STATUS_NAMES.get(old_status, old_status)} → {STATUS_NAMES.get(status, status)}")
         c["status_changed_at"] = iso
@@ -240,6 +242,11 @@ def touch_class(c, status, price, now, label=""):
             c["sold_out_at"] = iso
         elif old_status == "0":
             c["reopened_at"] = iso
+        events.append([iso, "s", old_status, status])
+    if events:
+        hist = c.setdefault("history", [])
+        hist.extend(events)
+        del hist[:-40]                      # keep the latest 40 changes per class
     c["price"], c["status"] = price, status
 
 

@@ -12,12 +12,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-11T23:40:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-11T23:40:53+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-11T23:01:09+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-11T23:40:53+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5492,5 +5499,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16097/20261115"
   }
  },
- "_updated": "2026-11-11T23:31:23+05:30"
+ "_updated": "2026-11-11T23:40:53+05:30"
 }

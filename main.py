@@ -998,14 +998,18 @@ def ensure_rule_thread(rule_threads, venue, rule, ws, we):
                created=datetime.now(IST).isoformat(timespec="seconds"))
     rule_threads[key] = ent
     markup = _rule_markup(venue, rule["id"], ws)
-    tg_api("sendMessage", {
+    ok_h, hb =tg_api("sendMessage", {
         "chat_id": chat, "message_thread_id": thread_id, "parse_mode": "HTML",
-        "disable_notification": True, "disable_web_page_preview": True,
+        "disable_notification": False, "disable_web_page_preview": True,
         "text": (f"📌 <b>{html.escape(rule['name'])}</b>\n"
                  f"🎟️ {html.escape(TARGET_THEATRES[venue])}\n"
                  f"📅 {_fmt_day(ws)} to {_fmt_day(we)}\n"
                  f"⚙️ {html.escape(describe_rule(rule))}\n\n"
                  f"🔔 Alerts for shows matching this rule appear in this topic."),**({"reply_markup": markup} if markup else {})})
+
+    if ok_h:
+        tg_api("pinChatMessage", {"chat_id": chat, "message_id": hb["result"]["message_id"],
+                                  "disable_notification": False})
     return ent
 
 
@@ -1035,7 +1039,7 @@ def apply_rules(state, rules, rule_threads, now):
     """Mark every new matching show as tracked by the rule, creating weekly topics as needed.
     Returns how many (show, rule) pairs were added."""
     by_id = {r["id"]: r for r in rules}
-    added, count = {}, 0
+    count = 0
 
     for venue, dates in state.items():
         if not TRACK_CHATS.get(venue):
@@ -1068,18 +1072,6 @@ def apply_rules(state, rules, rule_threads, now):
                     show["tracked_by_rules"] = done
                     count += 1
                     logging.info(f"✅ Rule '{rule['name']}' matched {venue} {date_code}/{sid} {show.get('movie')} {show.get('time')}")
-                    line = (f"• {html.escape(format_date(date_code))} · {html.escape(show.get('time', ''))} · "
-                            f"{html.escape(show.get('movie', ''))} "
-                            f"({html.escape(' '.join(x for x in (show.get('language'), show.get('dimension')) if x))})")
-                    added.setdefault((venue, rule["id"], ws), (rule, we, []))[2].append(line)
-
-    # one message per topic listing what was just tracked
-    for (venue, _rid, ws), (rule, we, lines) in added.items():
-        for i in range(0, len(lines), 25):
-            part = lines[i:i + 25]
-            _post_rule(rule_threads, rule, venue, ws, we,
-                       f"✅ Now tracking {len(lines)} show(s)\n" + "\n".join(part))
-            time.sleep(1)
     return count
 
 

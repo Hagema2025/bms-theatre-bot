@@ -81,7 +81,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -237,8 +238,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 89.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T12:50:55+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -615,7 +616,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 237.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     }
    },
    "cutoff": "2026-11-11T15:15:00+05:30",
@@ -824,8 +826,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-11T12:20:54+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1008,7 +1010,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1261,8 +1264,8 @@
      "first_seen_time": "2026-11-10T15:20:52+05:30",
      "price": 54.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T12:50:55+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-11T13:20:55+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7304,5 +7307,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   }
  },
- "_updated": "2026-11-11T13:10:47+05:30"
+ "_updated": "2026-11-11T13:20:55+05:30"
 }

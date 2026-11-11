@@ -40,44 +40,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92736/20261111"
   },
-  "92776": {
-   "censor": "UA13+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 202.49,
-     "sold_out_at": "2026-11-11T22:31:28+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-11T22:31:28+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-11T23:40:00+05:30",
-   "dimension": "2D",
-   "duration": 137,
-   "end": "2026-11-11T23:25:00+05:30",
-   "event_code": "ET00495822",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy",
-   "language": "Hindi",
-   "movie": "Udta Teer",
-   "poster": "udta-teer-et00495822-1793796439",
-   "screen": "SCREEN 8",
-   "start": "2026-11-11T22:55:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92776/20261111"
-  },
   "92811": {
    "censor": "UA16+",
    "classes": {
@@ -1266,12 +1228,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-11T23:31:23+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-11T23:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-11T23:31:23+05:30"
     }
    },
    "cutoff": "2026-11-13T00:40:00+05:30",
@@ -6326,5 +6294,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-11T23:20:52+05:30"
+ "_updated": "2026-11-11T23:31:23+05:30"
 }

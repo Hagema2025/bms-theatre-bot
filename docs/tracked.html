@@ -78,6 +78,25 @@ main{max-width:760px;margin:0 auto;padding:24px 18px 36px}
 .detail-time{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
 .detail-time b{font-size:20px;color:var(--accent-2)}
 .detail-time span{color:var(--muted);font-size:12px}
+
+/* history timeline */
+.cls-wrap+.cls-wrap{border-top:1px solid rgba(255,255,255,.055)}
+.cls-wrap .cls+.cls{border-top:0}
+.hist{margin:0 0 8px}
+.hist summary{cursor:pointer;color:var(--muted);font-size:11px;padding:0 0 6px 2px;list-style:none}
+.hist summary::-webkit-details-marker{display:none}
+.hist summary:before{content:"▸ "}
+.hist[open] summary:before{content:"▾ "}
+.tl{margin:0 0 4px 6px;padding-left:12px;border-left:1px solid var(--line)}
+.tl-row{position:relative;font-size:11px;color:#c9d3e1;padding:3px 0}
+.tl-row:before{content:"";position:absolute;left:-17px;top:8px;width:9px;height:9px;border-radius:50%;background:#4a5468;border:2px solid #101827}
+.tl-row.s3:before{background:var(--ok)}
+.tl-row.s2:before{background:var(--mid)}
+.tl-row.s1:before{background:var(--low)}
+.tl-row.s0:before{background:#6b7486}
+.tl-row.p:before{background:var(--rule)}
+.tl-row small{display:block;color:var(--muted);font-size:10px}
+.tl-note{font-size:11px;color:var(--accent-2);margin:2px 0 6px 2px}
 </style>
 </head>
 <body>
@@ -359,6 +378,34 @@ function renderShows() {
   $("list").innerHTML = html;
 }
 
+const fmtWhen = iso => {
+  const t = Date.parse(iso);
+  return t ? new Date(t).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", hour12: true }) : "";
+};
+const spanText = ms => {
+  const m = Math.max(1, Math.round(ms / 60000));
+  if (m < 60) return `${m}m`;
+  const h = Math.floor(m / 60);
+  return h < 48 ? `${h}h ${m % 60}m` : `${Math.floor(h / 24)}d ${h % 24}h`;
+};
+
+function historyHtml(c) {
+  const ev = [];
+  if (c.first_seen_time) ev.push({ t: c.first_seen_time, cls: "s" + (c.first_seen_status || ""), txt: `First seen · ${STATUS[c.first_seen_status] || ""}` });
+  for (const h of (c.history || [])) {
+    if (h[1] === "s") ev.push({ t: h[0], cls: "s" + h[3], txt: `${STATUS[h[2]] || h[2]} → ${STATUS[h[3]] || h[3]}` });
+    else if (h[1] === "p") ev.push({ t: h[0], cls: "p", txt: `Price ₹${h[2]} → ₹${h[3]}` });
+  }
+  if (ev.length < 2 && !c.sold_out_at) return "";
+  ev.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  let note = "";
+  if (c.status === "0" && c.sold_out_at && c.first_seen_time && c.first_seen_status !== "0") {
+    note = `<div class="tl-note">Sold out ${spanText(Date.parse(c.sold_out_at) - Date.parse(c.first_seen_time))} after it was first seen</div>`;
+  }
+  const rows = ev.map(e => `<div class="tl-row ${esc(e.cls)}">${esc(e.txt)}<small>${esc(fmtWhen(e.t))}</small></div>`).join("");
+  return `<details class="hist"><summary>History (${ev.length})</summary>${note}<div class="tl">${rows}</div></details>`;
+}
+
 // ── Detail Sheet ──────────────────────────────────────────
 document.addEventListener("click", e => {
   if (e.target.id === "detail-close" || e.target.id === "detail-overlay") {
@@ -375,8 +422,11 @@ document.addEventListener("click", e => {
     const meta = [THEATRES[venue] || venue, s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
     const tags = [...(s.tags || []), ...(s.subs ? [s.subs] : [])].map(t => `<span class="tag">${esc(t)}</span>`).join("");
     const classes = Object.entries(s.classes || {}).map(([name, c]) => `
-      <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}</span></div>`).join("");
+      <div class="cls-wrap">
+        <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}</span></div>
+        ${historyHtml(c)}
+      </div>`).join("");
 
     $("detail-title").textContent = s.movie || "Show";
     $("detail-body").innerHTML = `

@@ -163,8 +163,10 @@
      "first_seen_status": "0",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-11T15:10:52+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-11T15:10:52+05:30"
     }
    },
    "cutoff": "2026-11-11T16:15:00+05:30",
@@ -478,44 +480,6 @@
    "time": "06:40 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/15838/20261111"
-  },
-  "15839": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 59.43,
-     "reopened_at": "2026-11-11T13:50:51+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-11T13:50:51+05:30"
-    }
-   },
-   "cutoff": "2026-11-11T14:55:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-11T15:10:00+05:30",
-   "event_code": "ET00518312",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Telugu",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
-   "screen": "AUDI07",
-   "start": "2026-11-11T14:40:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/15839/20261111"
   },
   "15843": {
    "censor": "UA16+",
@@ -5762,5 +5726,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16079/20261115"
   }
  },
- "_updated": "2026-11-11T15:01:10+05:30"
+ "_updated": "2026-11-11T15:10:52+05:30"
 }

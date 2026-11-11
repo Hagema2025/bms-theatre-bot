@@ -112,42 +112,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MCSK/17051/20261111"
   },
-  "17055": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-11T20:05:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-11T19:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 3",
-   "start": "2026-11-11T19:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "07:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MCSK/17055/20261111"
-  },
   "17056": {
    "censor": "UA16+",
    "classes": {
@@ -2680,8 +2644,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T23:40:00+05:30",
@@ -2774,8 +2740,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 94.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T12:45:00+05:30",
@@ -2820,8 +2788,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T16:40:00+05:30",
@@ -3006,8 +2976,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T16:05:00+05:30",
@@ -3052,8 +3024,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 94.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T19:15:00+05:30",
@@ -3190,8 +3164,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T13:15:00+05:30",
@@ -3328,8 +3304,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
      "price": 54.35,
+     "sold_out_at": "2026-11-11T19:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T19:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T23:10:00+05:30",
@@ -3361,5 +3339,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17137/20261115"
   }
  },
- "_updated": "2026-11-11T19:40:53+05:30"
+ "_updated": "2026-11-11T19:50:51+05:30"
 }

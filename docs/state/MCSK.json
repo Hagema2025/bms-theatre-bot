@@ -1,42 +1,5 @@
 {
  "20261111": {
-  "17045": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T15:31:19+05:30"
-    },
-    "SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-11T17:25:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-11T17:10:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 1",
-   "start": "2026-11-11T16:40:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "04:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17045/20261111"
-  },
   "17046": {
    "censor": "UA16+",
    "classes": {
@@ -129,8 +92,8 @@
      "price": 94.35,
      "reopened_at": "2026-11-10T16:01:11+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-11T17:01:09+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-11T17:10:53+05:30"
     }
    },
    "cutoff": "2026-11-11T19:25:00+05:30",
@@ -266,7 +229,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "SPECIAL": {
@@ -982,5 +945,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MCSK/17079/20261112"
   }
  },
- "_updated": "2026-11-11T17:01:09+05:30"
+ "_updated": "2026-11-11T17:10:53+05:30"
 }

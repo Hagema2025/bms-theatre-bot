@@ -213,7 +213,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 59.43,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T16:50:51+05:30"
     }
    },
    "cutoff": "2026-11-11T19:15:00+05:30",
@@ -279,7 +280,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T16:50:51+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -381,45 +383,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92766/20261111"
   },
-  "92774": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 59.43,
-     "reopened_at": "2026-11-11T16:10:51+05:30",
-     "sold_out_at": "2026-11-11T16:31:24+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-11T16:31:24+05:30"
-    }
-   },
-   "cutoff": "2026-11-11T17:00:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-11T16:45:00+05:30",
-   "event_code": "ET00475942",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Comedy,Family,Thriller",
-   "language": "Telugu",
-   "movie": "Aadarsha Kutumbam House No: 47 (AK 47)",
-   "poster": "aadarsha-kutumbam-house-no-47-ak-47-et00475942-1790590991",
-   "screen": "SCREEN 8",
-   "start": "2026-11-11T16:15:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "04:15 PM",
-   "trailer": "https://www.youtube.com/watch?v=u0yUYgZ0s30",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00475942/INTO/92774/20261111"
-  },
   "92776": {
    "censor": "UA13+",
    "classes": {
@@ -504,7 +467,8 @@
      "first_seen_time": "2026-11-09T22:10:54+05:30",
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-11T16:50:51+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -6707,5 +6671,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-11T16:40:50+05:30"
+ "_updated": "2026-11-11T16:50:51+05:30"
 }

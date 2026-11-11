@@ -489,7 +489,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T15:40:54+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1371,8 +1371,10 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T17:51:04+05:30",
      "price": 183.0,
+     "sold_out_at": "2026-11-11T11:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-11T11:50:53+05:30"
     }
    },
    "cutoff": "2026-11-12T15:45:00+05:30",
@@ -2334,5 +2336,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26529/20261115"
   }
  },
- "_updated": "2026-11-11T11:31:26+05:30"
+ "_updated": "2026-11-11T11:50:53+05:30"
 }

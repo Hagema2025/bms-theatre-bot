@@ -1,62 +1,5 @@
 {
  "20261112": {
-  "92847": {
-   "censor": "UA13+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "history": [
-      [
-       "2026-11-12T22:10:50+05:30",
-       "s",
-       "3",
-       "1"
-      ],
-      [
-       "2026-11-12T22:31:24+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-12T23:10:49+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 59.43,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-12T23:10:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-12T23:40:00+05:30",
-   "dimension": "2D",
-   "duration": 137,
-   "end": "2026-11-12T23:25:00+05:30",
-   "event_code": "ET00495822",
-   "first_seen": "2026-11-10T16:31:29+05:30",
-   "genre": "Action,Comedy",
-   "language": "Hindi",
-   "movie": "Udta Teer",
-   "poster": "udta-teer-et00495822-1793796439",
-   "screen": "SCREEN 8",
-   "start": "2026-11-12T22:55:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=hN_ZUElLH44",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00495822/INTO/92847/20261112"
-  },
   "92852": {
    "censor": "U",
    "classes": {
@@ -2140,12 +2083,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-12T23:31:19+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-12T23:10:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-12T23:31:19+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3376,14 +3325,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-12T23:31:19+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 237.49,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-12T23:10:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-12T23:31:19+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -6100,5 +6055,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-12T23:20:51+05:30"
+ "_updated": "2026-11-12T23:31:19+05:30"
 }

@@ -126,42 +126,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17066/20261112"
   },
-  "17068": {
-   "censor": "U",
-   "classes": {
-    "3D EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 223.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "3D SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "price": 94.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-12T15:20:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-12T15:05:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 2",
-   "start": "2026-11-12T14:35:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MCSK/17068/20261112"
-  },
   "17069": {
    "censor": "U",
    "classes": {
@@ -208,13 +172,20 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T15:10:51+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 94.35,
      "reopened_at": "2026-11-12T12:20:47+05:30",
+     "sold_out_at": "2026-11-12T15:10:51+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T14:50:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-12T15:10:51+05:30"
     }
    },
    "cutoff": "2026-11-12T19:25:00+05:30",
@@ -4740,5 +4711,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17188/20261118"
   }
  },
- "_updated": "2026-11-12T15:01:07+05:30"
+ "_updated": "2026-11-12T15:10:51+05:30"
 }

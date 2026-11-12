@@ -502,9 +502,19 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-12T15:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 237.9,
+     "sold_out_at": "2026-11-12T15:10:51+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T15:10:51+05:30"
     }
    },
    "cutoff": "2026-11-12T14:55:00+05:30",
@@ -750,16 +760,36 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-12T15:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 246.4,
+     "sold_out_at": "2026-11-12T15:10:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T15:10:51+05:30"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-12T15:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 97.14,
+     "sold_out_at": "2026-11-12T15:10:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T15:10:51+05:30"
     }
    },
    "cutoff": "2026-11-12T17:45:00+05:30",
@@ -998,6 +1028,37 @@
    "time": "11:15 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242275/20261112"
+  },
+  "242427": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-12T15:10:51+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-12T17:45:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-12T18:05:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-12T15:10:51+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "SCREEN 10",
+   "start": "2026-11-12T17:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242427/20261112"
   }
  },
  "20261113": {
@@ -6533,5 +6594,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242426/20261115"
   }
  },
- "_updated": "2026-11-12T15:01:07+05:30"
+ "_updated": "2026-11-12T15:10:51+05:30"
 }

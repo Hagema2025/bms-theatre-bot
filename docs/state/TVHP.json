@@ -313,9 +313,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T17:10:56+05:30",
+     "history": [
+      [
+       "2026-11-12T17:20:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-12T17:20:54+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T17:20:54+05:30"
     }
    },
    "cutoff": "2026-11-12T17:40:00+05:30",
@@ -1632,6 +1642,99 @@
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26538/20261115"
+  },
+  "26541": {
+   "censor": "U",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-12T17:20:54+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T16:00:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-15T15:45:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-12T17:20:54+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 3",
+   "start": "2026-11-15T15:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26541/20261115"
+  },
+  "26542": {
+   "censor": "U",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-12T17:20:54+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T20:00:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-15T19:45:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-12T17:20:54+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 3",
+   "start": "2026-11-15T19:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26542/20261115"
+  },
+  "26583": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-12T17:20:54+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T11:55:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-15T11:40:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-12T17:20:54+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "SCREEN 2",
+   "start": "2026-11-15T11:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:10 AM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/TVHP/26583/20261115"
   }
  },
  "20261116": {
@@ -2570,5 +2673,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/TVHP/26572/20261118"
   }
  },
- "_updated": "2026-11-12T17:10:53+05:30"
+ "_updated": "2026-11-12T17:20:54+05:30"
 }

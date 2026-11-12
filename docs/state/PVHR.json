@@ -6,16 +6,36 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
+     "history": [
+      [
+       "2026-11-12T08:40:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-12T08:40:50+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T08:40:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
+     "history": [
+      [
+       "2026-11-12T08:40:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-12T08:40:50+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T08:40:50+05:30"
     }
    },
    "cutoff": "2026-11-12T10:15:00+05:30",
@@ -1181,14 +1201,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -6444,5 +6464,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   }
  },
- "_updated": "2026-11-12T08:31:19+05:30"
+ "_updated": "2026-11-12T08:40:50+05:30"
 }

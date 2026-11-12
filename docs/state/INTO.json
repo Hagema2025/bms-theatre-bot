@@ -447,12 +447,20 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T16:31:29+05:30",
+     "history": [
+      [
+       "2026-11-12T16:01:07+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 94.43,
-     "reopened_at": "2026-11-11T03:50:53+05:30",
+     "reopened_at": "2026-11-12T16:01:07+05:30",
      "sold_out_at": "2026-11-11T04:10:51+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-11T04:10:51+05:30"
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-12T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-12T16:50:00+05:30",
@@ -575,9 +583,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T16:31:29+05:30",
+     "history": [
+      [
+       "2026-11-12T16:01:07+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 218.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T16:01:07+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -1388,7 +1405,7 @@
    },
    "cutoff": "2026-11-13T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-13T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-11T02:31:28+05:30",
@@ -3774,14 +3791,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-12T16:01:07+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 94.43,
-     "reopened_at": "2026-11-11T08:01:09+05:30",
+     "reopened_at": "2026-11-12T16:01:07+05:30",
      "sold_out_at": "2026-11-12T15:50:51+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-12T15:50:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-14T15:30:00+05:30",
@@ -4271,7 +4294,7 @@
    },
    "cutoff": "2026-11-14T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-14T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-11T02:31:28+05:30",
@@ -6009,7 +6032,7 @@
    },
    "cutoff": "2026-11-15T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-15T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-11T02:31:28+05:30",
@@ -6084,5 +6107,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-12T15:50:51+05:30"
+ "_updated": "2026-11-12T16:01:07+05:30"
 }

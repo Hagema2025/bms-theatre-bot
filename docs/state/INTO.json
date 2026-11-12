@@ -360,46 +360,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92842/20261112"
   },
-  "92844": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "price": 183.8,
-     "sold_out_at": "2026-11-10T17:01:15+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T17:01:15+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "price": 54.35,
-     "sold_out_at": "2026-11-10T17:01:15+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-10T17:01:15+05:30"
-    }
-   },
-   "cutoff": "2026-11-12T13:45:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-12T13:30:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-10T16:31:29+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 8",
-   "start": "2026-11-12T13:00:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "01:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92844/20261112"
-  },
   "92845": {
    "censor": "UA16+",
    "classes": {
@@ -686,14 +646,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-12T13:31:23+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 89.35,
      "reopened_at": "2026-11-12T13:20:50+05:30",
-     "sold_out_at": "2026-11-12T13:01:05+05:30",
+     "sold_out_at": "2026-11-12T13:31:23+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-12T13:20:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-12T13:31:23+05:30"
     }
    },
    "cutoff": "2026-11-13T00:20:00+05:30",
@@ -1134,53 +1100,6 @@
    "time": "07:35 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92863/20261112"
-  },
-  "92864": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T18:40:56+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T18:40:56+05:30",
-     "history": [
-      [
-       "2026-11-12T12:50:49+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-12T12:50:49+05:30",
-     "sold_out_at": "2026-11-11T04:10:51+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-12T12:50:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-12T13:45:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-12T13:30:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-10T18:40:56+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 8",
-   "start": "2026-11-12T13:00:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "01:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92864/20261112"
   },
   "92979": {
    "censor": "U",
@@ -2492,7 +2411,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1787658136",
+   "poster": "itllu-arjuna-et00514068-1794469657",
    "screen": "SCREEN 6",
    "start": "2026-11-13T15:30:00+05:30",
    "subs": "",
@@ -3502,9 +3421,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T05:40:56+05:30",
+     "history": [
+      [
+       "2026-11-12T13:31:23+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T13:31:23+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4071,7 +3999,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1787658136",
+   "poster": "itllu-arjuna-et00514068-1794469657",
    "screen": "SCREEN 6",
    "start": "2026-11-14T15:30:00+05:30",
    "subs": "",
@@ -5474,14 +5402,20 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T13:31:23+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 237.49,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T13:20:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-12T13:31:23+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -5755,7 +5689,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1787658136",
+   "poster": "itllu-arjuna-et00514068-1794469657",
    "screen": "SCREEN 6",
    "start": "2026-11-15T15:30:00+05:30",
    "subs": "",
@@ -6149,5 +6083,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-12T13:20:50+05:30"
+ "_updated": "2026-11-12T13:31:23+05:30"
 }

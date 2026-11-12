@@ -84,14 +84,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-12T23:01:16+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-12T22:40:52+05:30",
-     "sold_out_at": "2026-11-11T04:10:51+05:30",
+     "sold_out_at": "2026-11-12T23:01:16+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-12T22:50:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-12T23:01:16+05:30"
     }
    },
    "cutoff": "2026-11-12T23:35:00+05:30",
@@ -768,12 +774,20 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T02:01:22+05:30",
+     "history": [
+      [
+       "2026-11-12T23:01:16+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 94.43,
-     "reopened_at": "2026-11-11T11:40:52+05:30",
+     "reopened_at": "2026-11-12T23:01:16+05:30",
      "sold_out_at": "2026-11-11T14:50:50+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-11T14:50:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-12T23:01:16+05:30"
     }
    },
    "cutoff": "2026-11-13T19:45:00+05:30",
@@ -1408,12 +1422,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-12T23:01:16+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T22:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T23:01:16+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2271,9 +2291,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T05:01:09+05:30",
+     "history": [
+      [
+       "2026-11-12T23:01:16+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T23:01:16+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -6222,5 +6251,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-12T22:50:52+05:30"
+ "_updated": "2026-11-12T23:01:16+05:30"
 }

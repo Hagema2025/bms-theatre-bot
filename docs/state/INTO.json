@@ -143,12 +143,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-12T23:10:49+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-12T22:31:24+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T23:10:49+05:30"
     }
    },
    "cutoff": "2026-11-12T23:40:00+05:30",
@@ -1499,12 +1505,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T23:10:49+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T22:40:52+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-12T23:10:49+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2297,12 +2309,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T23:10:49+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T23:01:16+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-12T23:10:49+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3527,14 +3545,20 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-12T23:10:49+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 237.49,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T20:31:30+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T23:10:49+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -6251,5 +6275,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-12T23:01:16+05:30"
+ "_updated": "2026-11-12T23:10:49+05:30"
 }

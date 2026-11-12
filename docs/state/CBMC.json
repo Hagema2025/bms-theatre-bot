@@ -24,12 +24,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T14:10:51+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 233.8,
+     "sold_out_at": "2026-11-12T14:10:51+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-12T13:31:23+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-12T14:10:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -569,13 +576,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T14:10:51+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-12T12:01:07+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-12T13:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T14:10:51+05:30"
     }
    },
    "cutoff": "2026-11-12T15:55:00+05:30",
@@ -638,9 +651,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-12T14:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-12T14:10:51+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-12T14:10:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -674,9 +697,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-12T14:10:51+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T14:10:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5193,5 +5225,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16097/20261115"
   }
  },
- "_updated": "2026-11-12T14:01:05+05:30"
+ "_updated": "2026-11-12T14:10:51+05:30"
 }

@@ -502,43 +502,6 @@
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92842/20261112"
   },
-  "92843": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T16:31:29+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T22:20:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-12T10:30:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-12T10:15:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-10T16:31:29+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 8",
-   "start": "2026-11-12T09:45:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "09:45 AM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92843/20261112"
-  },
   "92844": {
    "censor": "UA16+",
    "classes": {
@@ -935,7 +898,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T16:31:29+05:30",
      "price": 218.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -1117,12 +1080,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-12T10:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T10:10:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T10:20:50+05:30"
     }
    },
    "cutoff": "2026-11-13T00:40:00+05:30",
@@ -1418,12 +1387,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T10:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 89.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-12T07:31:19+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T10:20:50+05:30"
     }
    },
    "cutoff": "2026-11-12T10:45:00+05:30",
@@ -1469,12 +1444,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-12T10:20:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-12T09:50:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-12T10:20:50+05:30"
     }
    },
    "cutoff": "2026-11-12T14:55:00+05:30",
@@ -1973,9 +1954,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T01:20:58+05:30",
+     "history": [
+      [
+       "2026-11-12T10:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 218.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T10:20:50+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3507,10 +3497,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T05:40:56+05:30",
+     "history": [
+      [
+       "2026-11-12T10:20:50+05:30",
+       "s",
+       "1",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-12T10:20:50+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-11T13:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-12T10:20:50+05:30"
     }
    },
    "cutoff": "2026-11-15T00:40:00+05:30",
@@ -6261,5 +6260,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92976/20261115"
   }
  },
- "_updated": "2026-11-12T10:10:48+05:30"
+ "_updated": "2026-11-12T10:20:50+05:30"
 }

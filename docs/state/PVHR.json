@@ -6,9 +6,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
+     "history": [
+      [
+       "2026-11-12T12:50:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-12T12:50:49+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -981,7 +990,7 @@
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-12T12:01:07+05:30"
     },
@@ -989,7 +998,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1226,83 +1235,6 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45150/20261112"
-  },
-  "45152": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T19:10:56+05:30",
-     "history": [
-      [
-       "2026-11-12T11:20:53+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-12T11:31:21+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-12T11:40:51+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-12T11:50:53+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-12T12:10:53+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-12T12:31:26+05:30",
-       "s",
-       "0",
-       "1"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-12T12:31:26+05:30",
-     "sold_out_at": "2026-11-12T12:10:53+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-12T12:31:26+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T19:10:56+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-12T13:05:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-12T12:50:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-10T19:10:56+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 01",
-   "start": "2026-11-12T12:20:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "12:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45152/20261112"
   },
   "45153": {
    "censor": "UA16+",
@@ -6197,5 +6129,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   }
  },
- "_updated": "2026-11-12T12:31:26+05:30"
+ "_updated": "2026-11-12T12:50:49+05:30"
 }

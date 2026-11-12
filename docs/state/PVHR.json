@@ -319,14 +319,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
      "price": 94.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T19:10:56+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -573,71 +573,6 @@
    "time": "10:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45128/20261112"
-  },
-  "45129": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T19:10:56+05:30",
-     "history": [
-      [
-       "2026-11-12T10:01:07+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-12T10:50:54+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-12T11:01:08+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-12T11:10:53+05:30",
-       "s",
-       "0",
-       "1"
-      ]
-     ],
-     "price": 89.35,
-     "reopened_at": "2026-11-12T11:10:53+05:30",
-     "sold_out_at": "2026-11-12T11:01:08+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-12T11:10:53+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T19:10:56+05:30",
-     "price": 218.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-12T12:45:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-12T12:30:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-10T19:10:56+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI 06",
-   "start": "2026-11-12T12:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "12:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45129/20261112"
   },
   "45130": {
    "censor": "U",
@@ -919,12 +854,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-12T12:31:26+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 89.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-12T11:40:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T12:31:26+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1322,14 +1263,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-12T12:31:26+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-12T11:50:53+05:30",
+     "reopened_at": "2026-11-12T12:31:26+05:30",
      "sold_out_at": "2026-11-12T12:10:53+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-12T12:10:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-12T12:31:26+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3016,7 +2963,7 @@
    "genre": "Drama,Thriller",
    "language": "Tamil",
    "movie": "Gondhal",
-   "poster": "gondhal-et00525569-1793885879",
+   "poster": "gondhal-et00525569-1794465733",
    "screen": "AUDI 10",
    "start": "2026-11-13T17:05:00+05:30",
    "subs": "",
@@ -6250,5 +6197,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   }
  },
- "_updated": "2026-11-12T12:20:47+05:30"
+ "_updated": "2026-11-12T12:31:26+05:30"
 }

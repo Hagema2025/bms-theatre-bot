@@ -871,12 +871,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T14:20:52+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T14:10:47+05:30"
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-13T14:20:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -1169,14 +1175,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-13T14:20:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-13T13:50:51+05:30",
-     "sold_out_at": "2026-11-13T11:01:06+05:30",
+     "sold_out_at": "2026-11-13T14:20:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T13:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T14:20:52+05:30"
     }
    },
    "cutoff": "2026-11-13T17:30:00+05:30",
@@ -1206,7 +1218,7 @@
      "price": 202.49,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3",
      "status_changed_at": "2026-11-11T08:01:09+05:30"
     },
@@ -5733,5 +5745,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T14:10:47+05:30"
+ "_updated": "2026-11-13T14:20:52+05:30"
 }

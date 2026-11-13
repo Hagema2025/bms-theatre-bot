@@ -526,14 +526,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-13T14:20:52+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 200.0,
      "reopened_at": "2026-11-12T19:31:26+05:30",
-     "sold_out_at": "2026-11-11T21:20:48+05:30",
+     "sold_out_at": "2026-11-13T14:20:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-12T19:31:26+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T14:20:52+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1700,14 +1706,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-13T14:20:52+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 200.0,
      "reopened_at": "2026-11-12T19:31:26+05:30",
-     "sold_out_at": "2026-11-11T21:20:48+05:30",
+     "sold_out_at": "2026-11-13T14:20:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-12T19:31:26+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T14:20:52+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2550,7 +2562,55 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48685/20261115"
+  },
+  "48689": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:20:52+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:20:52+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-15T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T16:55:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:20:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 1",
+   "start": "2026-11-15T16:25:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "04:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-13T14:20:52+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-13T14:20:52+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48689/20261115"
   }
  },
- "_updated": "2026-11-13T14:01:02+05:30"
+ "_updated": "2026-11-13T14:20:52+05:30"
 }

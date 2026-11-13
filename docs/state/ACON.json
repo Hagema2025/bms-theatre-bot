@@ -7,7 +7,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -234,9 +234,18 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
+     "history": [
+      [
+       "2026-11-13T13:50:51+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 213.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-13T13:50:51+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -448,46 +457,6 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48641/20261113"
   },
-  "48642": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "price": 183.0,
-     "sold_out_at": "2026-11-11T16:10:51+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-11T16:10:51+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T13:35:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-13T13:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-10T20:31:33+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 1",
-   "start": "2026-11-13T13:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/ACON/48642/20261113"
-  },
   "48643": {
    "censor": "UA16+",
    "classes": {
@@ -584,54 +553,6 @@
    "time": "04:30 PM",
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/ACON/48644/20261113"
-  },
-  "48686": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:10:51+05:30",
-     "history": [
-      [
-       "2026-11-13T13:40:51+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.0,
-     "sold_out_at": "2026-11-13T13:40:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-13T13:40:51+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-11T16:10:51+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T13:35:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-13T13:50:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-11T16:10:51+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 1",
-   "start": "2026-11-13T13:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48686/20261113"
   }
  },
  "20261114": {
@@ -2622,5 +2543,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48685/20261115"
   }
  },
- "_updated": "2026-11-13T13:40:51+05:30"
+ "_updated": "2026-11-13T13:50:51+05:30"
 }

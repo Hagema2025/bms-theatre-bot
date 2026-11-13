@@ -1,111 +1,5 @@
 {
  "20261113": {
-  "92878": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-13T12:10:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T21:21:04+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T21:31:24+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-13T21:41:08+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 237.49,
-     "reopened_at": "2026-11-11T11:40:52+05:30",
-     "sold_out_at": "2026-11-11T07:31:24+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T21:41:08+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-13T21:10:53+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-13T21:21:04+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T21:31:24+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T22:31:39+05:30",
-       "s",
-       "2",
-       "0"
-      ],
-      [
-       "2026-11-13T22:40:54+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-13T23:11:08+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 94.43,
-     "reopened_at": "2026-11-13T22:40:54+05:30",
-     "sold_out_at": "2026-11-13T22:31:39+05:30",
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T23:11:08+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T00:05:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-13T23:50:00+05:30",
-   "event_code": "ET00523155",
-   "first_seen": "2026-11-11T02:01:22+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Telugu",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
-   "screen": "SCREEN 5",
-   "start": "2026-11-13T23:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "11:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92878/20261113"
-  },
   "92880": {
    "censor": "U",
    "classes": {
@@ -5245,12 +5139,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T23:50:53+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T23:40:51+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-13T23:50:53+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -5433,5 +5333,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T23:40:51+05:30"
+ "_updated": "2026-11-13T23:50:53+05:30"
 }

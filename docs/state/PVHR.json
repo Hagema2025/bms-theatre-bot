@@ -1,113 +1,4 @@
 {
- "20261113": {
-  "45191": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T01:50:58+05:30",
-     "history": [
-      [
-       "2026-11-13T13:31:19+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T17:40:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T17:50:56+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-13T18:01:06+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T19:31:19+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-13T19:31:19+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T19:31:19+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T01:50:58+05:30",
-     "history": [
-      [
-       "2026-11-13T13:50:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T20:40:54+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T22:10:53+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-13T23:01:09+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T23:01:09+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T00:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T00:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-11T01:50:58+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 05",
-   "start": "2026-11-13T23:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "11:30 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "CLASSIC": "2026-11-11T01:50:58+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T01:50:58+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45191/20261113"
-  }
- },
  "20261114": {
   "45202": {
    "censor": "UA16+",
@@ -1305,9 +1196,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T02:31:28+05:30",
+     "history": [
+      [
+       "2026-11-14T00:01:11+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T00:01:11+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1863,12 +1763,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T00:01:11+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T23:50:53+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-14T00:01:11+05:30"
     }
    },
    "cutoff": "2026-11-14T10:35:00+05:30",
@@ -4782,9 +4688,18 @@
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T03:10:57+05:30",
+     "history": [
+      [
+       "2026-11-14T00:01:11+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T00:01:11+05:30"
     }
    },
    "cutoff": "2026-11-15T20:05:00+05:30",
@@ -5503,5 +5418,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/PVHR/45291/20261115"
   }
  },
- "_updated": "2026-11-13T23:50:53+05:30"
+ "_updated": "2026-11-14T00:01:11+05:30"
 }

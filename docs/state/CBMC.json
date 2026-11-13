@@ -114,12 +114,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T14:40:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T16:50:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T14:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -252,65 +258,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16055/20261113"
-  },
-  "16058": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T17:01:15+05:30",
-     "history": [
-      [
-       "2026-11-13T12:40:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T12:50:51+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T14:10:47+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 233.8,
-     "reopened_at": "2026-11-10T17:20:56+05:30",
-     "sold_out_at": "2026-11-10T17:10:56+05:30",
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-13T14:10:47+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T17:01:15+05:30",
-     "price": 104.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T14:25:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-13T14:40:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-10T17:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI04",
-   "start": "2026-11-13T14:10:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:10 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16058/20261113"
   },
   "16059": {
    "censor": "U",
@@ -909,7 +856,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T18:01:07+05:30",
      "price": 210.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -944,9 +891,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T18:01:07+05:30",
+     "history": [
+      [
+       "2026-11-13T14:40:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-13T14:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1221,13 +1177,20 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-13T14:40:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-13T14:20:52+05:30",
+     "sold_out_at": "2026-11-13T14:40:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T14:31:25+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T14:40:50+05:30"
     }
    },
    "cutoff": "2026-11-13T15:30:00+05:30",
@@ -3913,12 +3876,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-13T14:40:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T14:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T14:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5704,5 +5673,3575 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16163/20261115"
   }
  },
- "_updated": "2026-11-13T14:31:25+05:30"
+ "20261116": {
+  "16128": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T22:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T22:50:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-16T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16128/20261116"
+  },
+  "16129": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T12:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-16T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16129/20261116"
+  },
+  "16130": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T15:40:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-16T15:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16130/20261116"
+  },
+  "16131": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T19:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T19:40:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-16T19:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16131/20261116"
+  },
+  "16133": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T23:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-16T23:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16133/20261116"
+  },
+  "16134": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T18:50:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-16T19:05:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-16T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16134/20261116"
+  },
+  "16135": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T10:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T10:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-16T10:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16135/20261116"
+  },
+  "16136": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T14:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T14:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-16T14:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16136/20261116"
+  },
+  "16137": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T18:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T18:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-16T18:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16137/20261116"
+  },
+  "16138": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T22:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T22:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-16T22:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16138/20261116"
+  },
+  "16139": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T17:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T17:25:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-16T16:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16139/20261116"
+  },
+  "16144": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T11:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-16T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16144/20261116"
+  },
+  "16146": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 92,
+   "end": "2026-11-16T16:55:00+05:30",
+   "event_code": "ET00518333",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "English",
+   "movie": "Ghost Soldier",
+   "poster": "ghost-soldier-et00518333-1789986369",
+   "screen": "AUDI03",
+   "start": "2026-11-16T16:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16146/20261116"
+  },
+  "16147": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T18:25:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-16T18:40:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI07",
+   "start": "2026-11-16T18:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16147/20261116"
+  },
+  "16148": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T13:55:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-16T14:10:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI02",
+   "start": "2026-11-16T13:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16148/20261116"
+  },
+  "16149": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-16T11:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI07",
+   "start": "2026-11-16T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16149/20261116"
+  },
+  "16151": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T15:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T15:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI07",
+   "start": "2026-11-16T15:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16151/20261116"
+  },
+  "16152": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T21:30:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-16T21:45:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "AUDI07",
+   "start": "2026-11-16T21:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/16152/20261116"
+  },
+  "16153": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T18:35:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-16T18:50:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI08",
+   "start": "2026-11-16T18:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16153/20261116"
+  },
+  "16154": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T22:35:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T22:50:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-16T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16154/20261116"
+  },
+  "16155": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T14:25:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-16T14:40:00+05:30",
+   "event_code": "ET00451914",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "ramayana-et00451914-1793772172",
+   "screen": "AUDI08",
+   "start": "2026-11-16T14:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/CBMC/16155/20261116"
+  },
+  "16156": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T22:15:00+05:30",
+   "dimension": "2D",
+   "duration": 143,
+   "end": "2026-11-16T22:30:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1794469657",
+   "screen": "AUDI03",
+   "start": "2026-11-16T22:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16156/20261116"
+  },
+  "16157": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T22:45:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-16T23:00:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-16T22:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16157/20261116"
+  },
+  "16158": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T14:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T14:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-16T13:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16158/20261116"
+  },
+  "16160": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T20:35:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-16T20:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16160/20261116"
+  },
+  "16165": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-16T20:25:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-16T19:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16165/20261116"
+  },
+  "16166": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T17:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-16T16:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16166/20261116"
+  },
+  "16167": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-16T12:30:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-16T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16167/20261116"
+  },
+  "16168": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T10:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T11:05:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-16T10:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:35 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16168/20261116"
+  },
+  "16169": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T23:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-16T23:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16169/20261116"
+  },
+  "16170": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T12:05:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T12:20:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-16T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16170/20261116"
+  },
+  "16171": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T16:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T16:20:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-16T15:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16171/20261116"
+  },
+  "16172": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T19:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-16T19:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-16T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16172/20261116"
+  }
+ },
+ "20261117": {
+  "16173": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T12:05:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T12:20:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-17T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16173/20261117"
+  },
+  "16174": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T16:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T16:20:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-17T15:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16174/20261117"
+  },
+  "16175": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T19:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T19:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-17T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16175/20261117"
+  },
+  "16176": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T23:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-17T23:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16176/20261117"
+  },
+  "16177": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T13:55:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-17T14:10:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI02",
+   "start": "2026-11-17T13:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16177/20261117"
+  },
+  "16178": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T17:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-17T16:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16178/20261117"
+  },
+  "16179": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-17T20:25:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-17T19:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16179/20261117"
+  },
+  "16180": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T22:45:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-17T23:00:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-17T22:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16180/20261117"
+  },
+  "16181": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-17T12:30:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-17T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16181/20261117"
+  },
+  "16182": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 92,
+   "end": "2026-11-17T16:55:00+05:30",
+   "event_code": "ET00518333",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "English",
+   "movie": "Ghost Soldier",
+   "poster": "ghost-soldier-et00518333-1789986369",
+   "screen": "AUDI03",
+   "start": "2026-11-17T16:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16182/20261117"
+  },
+  "16183": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T18:50:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-17T19:05:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-17T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16183/20261117"
+  },
+  "16184": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T22:15:00+05:30",
+   "dimension": "2D",
+   "duration": 143,
+   "end": "2026-11-17T22:30:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1794469657",
+   "screen": "AUDI03",
+   "start": "2026-11-17T22:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16184/20261117"
+  },
+  "16185": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T10:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T10:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-17T10:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16185/20261117"
+  },
+  "16186": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T14:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T14:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-17T14:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16186/20261117"
+  },
+  "16187": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T18:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T18:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-17T18:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16187/20261117"
+  },
+  "16188": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T22:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T22:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-17T22:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16188/20261117"
+  },
+  "16189": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T10:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T11:05:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-17T10:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:35 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16189/20261117"
+  },
+  "16190": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T14:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T14:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-17T13:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16190/20261117"
+  },
+  "16191": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T17:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T17:25:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-17T16:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16191/20261117"
+  },
+  "16192": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T20:35:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-17T20:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16192/20261117"
+  },
+  "16193": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T23:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-17T23:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16193/20261117"
+  },
+  "16194": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T12:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-17T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16194/20261117"
+  },
+  "16195": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T15:40:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-17T15:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16195/20261117"
+  },
+  "16196": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T19:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T19:40:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-17T19:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16196/20261117"
+  },
+  "16197": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T22:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-17T22:50:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-17T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16197/20261117"
+  },
+  "16198": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-17T11:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI07",
+   "start": "2026-11-17T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16198/20261117"
+  },
+  "16199": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T15:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T15:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI07",
+   "start": "2026-11-17T15:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16199/20261117"
+  },
+  "16200": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T18:25:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-17T18:40:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI07",
+   "start": "2026-11-17T18:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16200/20261117"
+  },
+  "16201": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T21:30:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-17T21:45:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "AUDI07",
+   "start": "2026-11-17T21:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/16201/20261117"
+  },
+  "16202": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T11:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-17T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16202/20261117"
+  },
+  "16203": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T14:25:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-17T14:40:00+05:30",
+   "event_code": "ET00451914",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "ramayana-et00451914-1793772172",
+   "screen": "AUDI08",
+   "start": "2026-11-17T14:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/CBMC/16203/20261117"
+  },
+  "16204": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T18:35:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-17T18:50:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI08",
+   "start": "2026-11-17T18:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16204/20261117"
+  },
+  "16205": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T22:35:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T22:50:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-17T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16205/20261117"
+  }
+ },
+ "20261118": {
+  "16206": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T12:05:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T12:20:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-18T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16206/20261118"
+  },
+  "16207": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T16:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T16:20:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-18T15:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16207/20261118"
+  },
+  "16208": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T19:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T19:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI01",
+   "start": "2026-11-18T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16208/20261118"
+  },
+  "16209": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T23:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI01",
+   "start": "2026-11-18T23:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16209/20261118"
+  },
+  "16210": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T13:55:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-18T14:10:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI02",
+   "start": "2026-11-18T13:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16210/20261118"
+  },
+  "16211": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T17:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-18T16:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16211/20261118"
+  },
+  "16212": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-18T20:25:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-18T19:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16212/20261118"
+  },
+  "16213": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T22:45:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-18T23:00:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI02",
+   "start": "2026-11-18T22:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16213/20261118"
+  },
+  "16214": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-18T12:30:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-18T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16214/20261118"
+  },
+  "16215": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 92,
+   "end": "2026-11-18T16:55:00+05:30",
+   "event_code": "ET00518333",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "English",
+   "movie": "Ghost Soldier",
+   "poster": "ghost-soldier-et00518333-1789986369",
+   "screen": "AUDI03",
+   "start": "2026-11-18T16:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16215/20261118"
+  },
+  "16216": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T18:50:00+05:30",
+   "dimension": "2D",
+   "duration": 165,
+   "end": "2026-11-18T19:05:00+05:30",
+   "event_code": "ET00518674",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "Jailer 2",
+   "poster": "jailer-2-et00518674-1793799981",
+   "screen": "AUDI03",
+   "start": "2026-11-18T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16216/20261118"
+  },
+  "16217": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T22:15:00+05:30",
+   "dimension": "2D",
+   "duration": 143,
+   "end": "2026-11-18T22:30:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1794469657",
+   "screen": "AUDI03",
+   "start": "2026-11-18T22:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16217/20261118"
+  },
+  "16218": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T10:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T10:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-18T10:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16218/20261118"
+  },
+  "16219": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T14:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T14:35:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-18T14:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16219/20261118"
+  },
+  "16220": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T18:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T18:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-18T18:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16220/20261118"
+  },
+  "16221": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 252.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 109.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T22:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T22:35:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "AUDI04",
+   "start": "2026-11-18T22:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/CBMC/16221/20261118"
+  },
+  "16222": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T10:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T11:05:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-18T10:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:35 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16222/20261118"
+  },
+  "16223": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T14:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T14:15:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-18T13:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16223/20261118"
+  },
+  "16224": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T17:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T17:25:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI05",
+   "start": "2026-11-18T16:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16224/20261118"
+  },
+  "16225": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T20:35:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-18T20:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16225/20261118"
+  },
+  "16226": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T23:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-18T23:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16226/20261118"
+  },
+  "16227": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T12:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T12:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-18T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16227/20261118"
+  },
+  "16228": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T15:40:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-18T15:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16228/20261118"
+  },
+  "16229": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T19:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T19:40:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI06",
+   "start": "2026-11-18T19:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16229/20261118"
+  },
+  "16230": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T22:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-18T22:50:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI06",
+   "start": "2026-11-18T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16230/20261118"
+  },
+  "16231": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-18T11:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI07",
+   "start": "2026-11-18T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16231/20261118"
+  },
+  "16232": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T15:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T15:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI07",
+   "start": "2026-11-18T15:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16232/20261118"
+  },
+  "16233": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T18:25:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-18T18:40:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "AUDI07",
+   "start": "2026-11-18T18:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16233/20261118"
+  },
+  "16234": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T21:30:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-18T21:45:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "AUDI07",
+   "start": "2026-11-18T21:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/16234/20261118"
+  },
+  "16235": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T11:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-18T11:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16235/20261118"
+  },
+  "16236": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T14:25:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-18T14:40:00+05:30",
+   "event_code": "ET00451914",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "ramayana-et00451914-1793772172",
+   "screen": "AUDI08",
+   "start": "2026-11-18T14:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/CBMC/16236/20261118"
+  },
+  "16237": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T18:35:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-18T18:50:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Adventure,Drama,Mythological",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "AUDI08",
+   "start": "2026-11-18T18:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16237/20261118"
+  },
+  "16238": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T22:35:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T22:50:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-13T14:40:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-18T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16238/20261118"
+  }
+ },
+ "_updated": "2026-11-13T14:40:50+05:30"
 }

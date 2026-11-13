@@ -834,62 +834,6 @@
    "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92899/20261113"
   },
-  "92900": {
-   "censor": "A",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-13T13:50:51+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-13T13:50:51+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-13T18:40:56+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 59.43,
-     "reopened_at": "2026-11-13T18:40:56+05:30",
-     "sold_out_at": "2026-11-11T16:20:52+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-13T18:40:56+05:30"
-    }
-   },
-   "cutoff": "2026-11-13T19:30:00+05:30",
-   "dimension": "2D",
-   "duration": 115,
-   "end": "2026-11-13T19:15:00+05:30",
-   "event_code": "ET00513613",
-   "first_seen": "2026-11-11T02:01:22+05:30",
-   "genre": "Mystery,Thriller",
-   "language": "Malayalam",
-   "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
-   "screen": "SCREEN 6",
-   "start": "2026-11-13T18:45:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "06:45 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/INTO/92900/20261113"
-  },
   "92940": {
    "censor": "U",
    "classes": {
@@ -1120,12 +1064,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T19:20:52+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T19:10:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-13T19:20:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2119,12 +2069,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-13T19:20:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T18:20:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T19:20:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3371,12 +3327,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-13T19:20:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T19:01:09+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T19:20:52+05:30"
     }
    },
    "cutoff": "2026-11-14T10:30:00+05:30",
@@ -5659,5 +5621,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T19:10:50+05:30"
+ "_updated": "2026-11-13T19:20:52+05:30"
 }

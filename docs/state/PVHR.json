@@ -114,7 +114,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-12T22:50:52+05:30"
     }
@@ -393,12 +393,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T17:31:25+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T17:10:53+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-13T17:31:25+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1056,12 +1062,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T17:31:25+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-13T12:31:23+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T17:31:25+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1107,43 +1119,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45194/20261113"
-  },
-  "45195": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T09:10:51+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T09:10:51+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-11T21:01:10+05:30"
-    }
-   },
-   "cutoff": "2026-11-13T17:45:00+05:30",
-   "dimension": "2D",
-   "duration": 121,
-   "end": "2026-11-13T17:30:00+05:30",
-   "event_code": "ET00504975",
-   "first_seen": "2026-11-11T09:10:51+05:30",
-   "genre": "Action,Crime,Thriller",
-   "language": "Tamil",
-   "movie": "Black Gold",
-   "poster": "black-gold-et00504975-1782478984",
-   "screen": "AUDI 07",
-   "start": "2026-11-13T17:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "05:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/PVHR/45195/20261113"
   },
   "45196": {
    "censor": "UA16+",
@@ -6563,5 +6538,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/PVHR/45291/20261115"
   }
  },
- "_updated": "2026-11-13T17:20:56+05:30"
+ "_updated": "2026-11-13T17:31:25+05:30"
 }

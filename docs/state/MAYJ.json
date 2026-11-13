@@ -151,7 +151,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T16:01:08+05:30",
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -285,7 +285,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T16:10:51+05:30",
      "price": 237.9,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -377,9 +377,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T16:10:51+05:30",
+     "history": [
+      [
+       "2026-11-13T20:31:25+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-13T20:31:25+05:30"
     }
    },
    "cutoff": "2026-11-13T20:40:00+05:30",
@@ -711,37 +720,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242491/20261113"
   },
-  "242492": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T10:50:48+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-13T20:10:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-13T20:30:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T10:50:48+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 13",
-   "start": "2026-11-13T20:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "08:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242492/20261113"
-  },
   "242493": {
    "censor": "UA16+",
    "classes": {
@@ -904,7 +882,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T18:20:51+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -6834,5 +6812,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242497/20261115"
   }
  },
- "_updated": "2026-11-13T20:10:53+05:30"
+ "_updated": "2026-11-13T20:31:25+05:30"
 }

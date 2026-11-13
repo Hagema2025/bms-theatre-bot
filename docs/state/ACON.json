@@ -30,12 +30,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-13T20:31:25+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T18:20:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T20:31:25+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -145,7 +151,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T21:20:48+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -710,9 +716,18 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T21:20:48+05:30",
+     "history": [
+      [
+       "2026-11-13T20:31:25+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 213.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-13T20:31:25+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -2349,5 +2364,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48689/20261115"
   }
  },
- "_updated": "2026-11-13T20:20:52+05:30"
+ "_updated": "2026-11-13T20:31:25+05:30"
 }

@@ -132,14 +132,20 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-13T13:40:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-11T21:01:10+05:30",
      "sold_out_at": "2026-11-11T16:31:24+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-13T12:31:23+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T13:40:51+05:30"
     }
    },
    "cutoff": "2026-11-13T17:15:00+05:30",
@@ -635,59 +641,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92884/20261113"
-  },
-  "92885": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T01:20:58+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T01:20:58+05:30",
-     "history": [
-      [
-       "2026-11-12T11:01:08+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-13T13:01:07+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-13T13:01:07+05:30",
-     "sold_out_at": "2026-11-12T11:01:08+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-13T13:01:07+05:30"
-    }
-   },
-   "cutoff": "2026-11-13T13:55:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-13T13:40:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-11T01:20:58+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "LASER 4",
-   "start": "2026-11-13T13:10:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "01:10 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/92885/20261113"
   },
   "92886": {
    "censor": "UA16+",
@@ -1476,14 +1429,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-13T13:40:51+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-13T13:10:52+05:30",
+     "reopened_at": "2026-11-13T13:40:51+05:30",
      "sold_out_at": "2026-11-13T13:20:53+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T13:20:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T13:40:51+05:30"
     }
    },
    "cutoff": "2026-11-13T22:15:00+05:30",
@@ -5804,5 +5763,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T13:31:19+05:30"
+ "_updated": "2026-11-13T13:40:51+05:30"
 }

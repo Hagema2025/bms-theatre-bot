@@ -493,42 +493,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MCSK/17095/20261113"
   },
-  "17096": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T19:31:26+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "SPECIAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-11T19:31:26+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T13:15:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-13T13:00:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-11T19:31:26+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 4",
-   "start": "2026-11-13T12:30:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "12:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MCSK/17096/20261113"
-  },
   "17097": {
    "censor": "UA16+",
    "classes": {
@@ -1348,14 +1312,20 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T13:01:07+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-13T08:40:52+05:30",
      "sold_out_at": "2026-11-11T19:40:53+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T12:10:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T13:01:07+05:30"
     }
    },
    "cutoff": "2026-11-14T16:05:00+05:30",
@@ -4470,5 +4440,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17188/20261118"
   }
  },
- "_updated": "2026-11-13T12:31:23+05:30"
+ "_updated": "2026-11-13T13:01:07+05:30"
 }

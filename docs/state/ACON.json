@@ -115,64 +115,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48632/20261113"
-  },
-  "48641": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "history": [
-      [
-       "2026-11-13T23:11:08+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.0,
-     "sold_out_at": "2026-11-13T23:11:08+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-13T23:11:08+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T23:05:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-13T23:20:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-10T20:31:33+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 1",
-   "start": "2026-11-13T22:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:50 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "PEARL": "2026-11-10T20:31:33+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-10T20:31:33+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48641/20261113"
   }
  },
  "20261114": {
@@ -927,12 +869,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-13T23:20:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 230.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-13T23:11:08+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T23:20:51+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -943,13 +891,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-13T23:20:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 89.0,
      "reopened_at": "2026-11-13T21:41:08+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-13T21:41:08+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-13T23:20:51+05:30"
     }
    },
    "cutoff": "2026-11-14T13:00:00+05:30",
@@ -4875,5 +4829,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-13T23:11:08+05:30"
+ "_updated": "2026-11-13T23:20:51+05:30"
 }

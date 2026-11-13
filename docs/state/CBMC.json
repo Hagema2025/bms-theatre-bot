@@ -804,7 +804,7 @@
      "price": 183.8,
      "reopened_at": "2026-11-10T17:20:56+05:30",
      "sold_out_at": "2026-11-10T17:10:56+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-13T11:31:20+05:30"
     },
@@ -1062,13 +1062,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-13T11:50:47+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-13T11:31:20+05:30",
+     "sold_out_at": "2026-11-13T11:50:47+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-13T11:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T11:50:47+05:30"
     }
    },
    "cutoff": "2026-11-13T12:40:00+05:30",
@@ -1278,52 +1285,6 @@
    "time": "06:45 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16112/20261113"
-  },
-  "16118": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-12T16:20:53+05:30",
-     "history": [
-      [
-       "2026-11-13T11:40:51+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-13T11:40:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-13T11:40:51+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-12T16:20:53+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-13T11:35:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-13T11:50:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-12T16:20:53+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "AUDI02",
-   "start": "2026-11-13T11:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "11:20 AM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16118/20261113"
   },
   "16120": {
    "censor": "UA16+",
@@ -2331,12 +2292,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T11:50:47+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-12T02:31:23+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T11:50:47+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5325,5 +5292,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/16119/20261115"
   }
  },
- "_updated": "2026-11-13T11:40:51+05:30"
+ "_updated": "2026-11-13T11:50:47+05:30"
 }

@@ -631,14 +631,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-13T12:01:07+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 89.35,
-     "reopened_at": "2026-11-11T08:01:09+05:30",
+     "reopened_at": "2026-11-13T12:01:07+05:30",
      "sold_out_at": "2026-11-13T09:31:16+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T09:31:16+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-13T12:01:07+05:30"
     }
    },
    "cutoff": "2026-11-13T12:55:00+05:30",
@@ -1263,7 +1269,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92896/20261113"
   },
   "92897": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -1284,7 +1290,7 @@
    },
    "cutoff": "2026-11-13T14:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 121,
    "end": "2026-11-13T14:00:00+05:30",
    "event_code": "ET00504975",
    "first_seen": "2026-11-11T09:10:51+05:30",
@@ -3488,7 +3494,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92963/20261114"
   },
   "92969": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -3509,7 +3515,7 @@
    },
    "cutoff": "2026-11-14T14:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 121,
    "end": "2026-11-14T14:00:00+05:30",
    "event_code": "ET00504975",
    "first_seen": "2026-11-11T09:10:51+05:30",
@@ -5486,7 +5492,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92967/20261115"
   },
   "92973": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -5516,7 +5522,7 @@
    },
    "cutoff": "2026-11-15T14:15:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 121,
    "end": "2026-11-15T14:00:00+05:30",
    "event_code": "ET00504975",
    "first_seen": "2026-11-11T09:10:51+05:30",
@@ -5881,5 +5887,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T11:40:51+05:30"
+ "_updated": "2026-11-13T12:01:07+05:30"
 }

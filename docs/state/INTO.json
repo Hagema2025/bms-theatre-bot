@@ -847,11 +847,20 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T02:01:22+05:30",
+     "history": [
+      [
+       "2026-11-13T18:40:56+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
+     "reopened_at": "2026-11-13T18:40:56+05:30",
      "sold_out_at": "2026-11-11T16:20:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-11T16:20:52+05:30"
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-13T18:40:56+05:30"
     }
    },
    "cutoff": "2026-11-13T19:30:00+05:30",
@@ -2000,12 +2009,20 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T05:40:56+05:30",
+     "history": [
+      [
+       "2026-11-13T18:40:56+05:30",
+       "s",
+       "2",
+       "1"
+      ]
+     ],
      "price": 218.8,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-11T21:01:10+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T18:40:56+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2390,12 +2407,20 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T03:40:54+05:30",
+     "history": [
+      [
+       "2026-11-13T18:40:56+05:30",
+       "s",
+       "1",
+       "0"
+      ]
+     ],
      "price": 59.43,
      "reopened_at": "2026-11-11T17:20:52+05:30",
-     "sold_out_at": "2026-11-11T17:01:09+05:30",
+     "sold_out_at": "2026-11-13T18:40:56+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-11T17:20:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-13T18:40:56+05:30"
     }
    },
    "cutoff": "2026-11-15T00:20:00+05:30",
@@ -5592,5 +5617,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92991/20261115"
   }
  },
- "_updated": "2026-11-13T18:31:39+05:30"
+ "_updated": "2026-11-13T18:40:56+05:30"
 }

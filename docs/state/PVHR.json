@@ -1,62 +1,5 @@
 {
  "20261113": {
-  "45167": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T10:10:54+05:30",
-     "price": 99.43,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T10:10:54+05:30",
-     "history": [
-      [
-       "2026-11-13T09:01:07+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T09:50:50+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T10:01:06+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 242.49,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-13T10:01:06+05:30"
-    }
-   },
-   "cutoff": "2026-11-13T23:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-13T23:00:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-11T10:10:54+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI 08",
-   "start": "2026-11-13T22:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/45167/20261113"
-  },
   "45169": {
    "censor": "U",
    "classes": {
@@ -539,12 +482,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-13T23:01:09+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-13T22:10:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-13T23:01:09+05:30"
     }
    },
    "cutoff": "2026-11-14T00:15:00+05:30",
@@ -4649,12 +4598,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-13T23:01:09+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T22:40:54+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-13T23:01:09+05:30"
     }
    },
    "cutoff": "2026-11-15T12:55:00+05:30",
@@ -6095,5 +6050,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/PVHR/45291/20261115"
   }
  },
- "_updated": "2026-11-13T22:50:51+05:30"
+ "_updated": "2026-11-13T23:01:09+05:30"
 }

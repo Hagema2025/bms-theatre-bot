@@ -18,13 +18,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T11:50:53+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 183.8,
+     "reopened_at": "2026-11-14T11:50:53+05:30",
      "sold_out_at": "2026-11-14T11:40:50+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T11:40:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T11:50:53+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -407,14 +414,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T11:50:53+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 89.35,
      "reopened_at": "2026-11-14T10:31:22+05:30",
      "sold_out_at": "2026-11-13T10:50:48+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T10:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T11:50:53+05:30"
     }
    },
    "cutoff": "2026-11-14T13:05:00+05:30",
@@ -2171,62 +2184,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92990/20261114"
   },
-  "92993": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T08:40:47+05:30",
-     "price": 210.98,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T08:40:47+05:30",
-     "history": [
-      [
-       "2026-11-14T10:40:49+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 61.74,
-     "sold_out_at": "2026-11-14T10:40:49+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T10:40:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T12:00:00+05:30",
-   "dimension": "2D",
-   "duration": 92,
-   "end": "2026-11-14T11:45:00+05:30",
-   "event_code": "ET00518333",
-   "first_seen": "2026-11-14T08:40:47+05:30",
-   "genre": "Action,Thriller",
-   "language": "English",
-   "movie": "Ghost Soldier",
-   "poster": "ghost-soldier-et00518333-1789986369",
-   "screen": "SCREEN 8",
-   "start": "2026-11-14T11:15:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "11:15 AM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-14T08:40:47+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T08:40:47+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/92993/20261114"
-  },
   "92995": {
    "censor": "U",
    "classes": {
@@ -2261,12 +2218,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T11:50:53+05:30",
+       "s",
+       "1",
+       "3"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T11:40:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-14T11:50:53+05:30"
     }
    },
    "cutoff": "2026-11-14T17:05:00+05:30",
@@ -4587,5 +4550,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92996/20261115"
   }
  },
- "_updated": "2026-11-14T11:40:50+05:30"
+ "_updated": "2026-11-14T11:50:53+05:30"
 }

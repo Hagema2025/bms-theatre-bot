@@ -21,7 +21,7 @@
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-14T13:31:19+05:30"
     },
@@ -34,13 +34,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T21:10:47+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-14T21:01:13+05:30",
-     "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T21:01:13+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-14T21:10:47+05:30"
     }
    },
    "cutoff": "2026-11-14T23:20:00+05:30",
@@ -107,13 +113,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T21:10:47+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 84.0,
      "reopened_at": "2026-11-14T21:01:13+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T21:01:13+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T21:10:47+05:30"
     }
    },
    "cutoff": "2026-11-14T23:15:00+05:30",
@@ -180,13 +192,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T21:10:47+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-14T21:01:13+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T21:01:13+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T21:10:47+05:30"
     }
    },
    "cutoff": "2026-11-14T23:45:00+05:30",
@@ -3885,5 +3903,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-14T21:01:13+05:30"
+ "_updated": "2026-11-14T21:10:47+05:30"
 }

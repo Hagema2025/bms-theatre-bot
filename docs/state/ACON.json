@@ -28,9 +28,19 @@
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
+     "history": [
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.0,
+     "reopened_at": "2026-11-14T21:01:13+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     }
    },
    "cutoff": "2026-11-14T23:20:00+05:30",
@@ -84,16 +94,26 @@
       ]
      ],
      "price": 213.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-14T13:10:49+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-11T21:20:48+05:30",
+     "history": [
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 84.0,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-14T21:01:13+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     }
    },
    "cutoff": "2026-11-14T23:15:00+05:30",
@@ -154,9 +174,19 @@
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-11T21:20:48+05:30",
+     "history": [
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.0,
+     "reopened_at": "2026-11-14T21:01:13+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     }
    },
    "cutoff": "2026-11-14T23:45:00+05:30",
@@ -680,12 +710,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 230.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T20:50:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -850,12 +886,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T20:50:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1189,12 +1231,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T21:01:13+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T09:20:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T21:01:13+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3837,5 +3885,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-14T20:50:50+05:30"
+ "_updated": "2026-11-14T21:01:13+05:30"
 }

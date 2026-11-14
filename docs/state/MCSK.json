@@ -226,14 +226,20 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-14T14:50:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T12:10:55+05:30",
      "sold_out_at": "2026-11-11T19:40:53+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T13:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T14:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T23:40:00+05:30",
@@ -1970,12 +1976,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T14:50:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T23:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T14:50:52+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "3",
@@ -4137,5 +4149,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17188/20261118"
   }
  },
- "_updated": "2026-11-14T14:40:48+05:30"
+ "_updated": "2026-11-14T14:50:52+05:30"
 }

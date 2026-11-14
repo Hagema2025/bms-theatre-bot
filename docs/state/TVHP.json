@@ -226,12 +226,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T14:50:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-13T16:31:26+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T14:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T22:00:00+05:30",
@@ -389,52 +395,6 @@
    "time": "06:25 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26536/20261114"
-  },
-  "26537": {
-   "censor": "U",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-12T16:50:51+05:30",
-     "history": [
-      [
-       "2026-11-13T14:01:02+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T11:11:04+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.0,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T11:11:04+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T15:05:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-14T14:50:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-12T16:50:51+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "SCREEN 3",
-   "start": "2026-11-14T14:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "02:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26537/20261114"
   },
   "26586": {
    "censor": "U",
@@ -2831,5 +2791,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26604/20261119"
   }
  },
- "_updated": "2026-11-14T14:40:48+05:30"
+ "_updated": "2026-11-14T14:50:52+05:30"
 }

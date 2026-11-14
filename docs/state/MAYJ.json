@@ -18,19 +18,36 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 219.2,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T14:31:30+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T15:10:57+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.76,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-14T18:10:00+05:30",
@@ -778,9 +795,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T16:10:51+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -1679,86 +1705,6 @@
    "trailer": "youtube.com/watch?si=hrYsm8NG7wJuh9ZH&v=lv8PRGQ6fRM&feature=youtu.be",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525569/MAYJ/242429/20261114"
   },
-  "242441": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T09:31:16+05:30",
-     "history": [
-      [
-       "2026-11-14T13:50:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T17:31:19+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T18:01:11+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T15:10:57+05:30",
-     "history": [
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 57.98,
-     "sold_out_at": "2026-11-14T18:01:11+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T17:45:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T18:05:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T09:31:16+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 13",
-   "start": "2026-11-14T17:35:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:35 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SECOND CLASS": "2026-11-14T15:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T15:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242441/20261114"
-  },
   "242442": {
    "censor": "UA16+",
    "classes": {
@@ -1995,12 +1941,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T17:31:19+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-14T23:10:00+05:30",
@@ -2444,12 +2396,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T14:20:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2472,12 +2431,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-14T18:00:00+05:30",
@@ -2522,12 +2488,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T14:20:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2538,12 +2511,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T15:40:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-14T18:00:00+05:30",
@@ -6025,5 +6005,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242512/20261115"
   }
  },
- "_updated": "2026-11-14T18:01:11+05:30"
+ "_updated": "2026-11-14T18:11:06+05:30"
 }

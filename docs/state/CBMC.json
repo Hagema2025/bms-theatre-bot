@@ -308,14 +308,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-14T18:01:11+05:30",
-     "sold_out_at": "2026-11-14T13:50:52+05:30",
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1780,13 +1786,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-14T12:40:53+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T12:40:53+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-15T12:35:00+05:30",
@@ -3382,13 +3394,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T12:50:49+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T12:50:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-15T14:05:00+05:30",
@@ -3548,13 +3566,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T14:31:30+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T14:31:30+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-15T20:25:00+05:30",
@@ -3683,9 +3707,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T18:01:07+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3777,10 +3811,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-15T22:35:00+05:30",
+   "cutoff": "2026-11-15T22:05:00+05:30",
    "dimension": "2D",
    "duration": 143,
-   "end": "2026-11-15T22:50:00+05:30",
+   "end": "2026-11-15T22:20:00+05:30",
    "event_code": "ET00514068",
    "first_seen": "2026-11-11T18:01:07+05:30",
    "genre": "Action,Drama,Romantic",
@@ -3788,10 +3822,10 @@
    "movie": "Itllu Arjuna",
    "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI05",
-   "start": "2026-11-15T22:20:00+05:30",
+   "start": "2026-11-15T21:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "09:50 PM",
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16097/20261115"
   },
@@ -4069,10 +4103,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-15T19:00:00+05:30",
+   "cutoff": "2026-11-15T18:55:00+05:30",
    "dimension": "2D",
    "duration": 149,
-   "end": "2026-11-15T19:15:00+05:30",
+   "end": "2026-11-15T19:10:00+05:30",
    "event_code": "ET00525702",
    "first_seen": "2026-11-12T16:10:51+05:30",
    "genre": "Crime,Psychological,Thriller",
@@ -4080,10 +4114,10 @@
    "movie": "John Doe",
    "poster": "john-doe-et00525702-1794051624",
    "screen": "AUDI05",
-   "start": "2026-11-15T18:45:00+05:30",
+   "start": "2026-11-15T18:40:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "06:45 PM",
+   "time": "06:40 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -4531,13 +4565,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T12:40:53+05:30",
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     }
    },
    "cutoff": "2026-11-15T15:35:00+05:30",
@@ -4610,9 +4651,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T21:31:24+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4649,6 +4700,98 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=bwFwsUHq-_k",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00069291/CBMC/16240/20261115"
+  },
+  "16261": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-15T15:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T15:45:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-14T18:11:06+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-15T15:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-14T18:11:06+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-14T18:11:06+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16261/20261115"
+  },
+  "16262": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-15T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T22:25:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-14T18:11:06+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-15T21:55:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-14T18:11:06+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-14T18:11:06+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16262/20261115"
   }
  },
  "20261116": {
@@ -4891,9 +5034,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 233.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5107,9 +5260,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 210.98,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5191,21 +5354,21 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-16T13:55:00+05:30",
+   "cutoff": "2026-11-16T15:45:00+05:30",
    "dimension": "2D",
    "duration": 144,
-   "end": "2026-11-16T14:10:00+05:30",
+   "end": "2026-11-16T16:00:00+05:30",
    "event_code": "ET00517348",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Comedy,Devotional,Fantasy,Thriller",
    "language": "Tamil",
    "movie": "Mookuthi Amman 2",
    "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI02",
-   "start": "2026-11-16T13:40:00+05:30",
+   "screen": "AUDI03",
+   "start": "2026-11-16T15:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:40 PM",
+   "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16148/20261116"
   },
@@ -5905,10 +6068,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-16T12:30:00+05:30",
+   "cutoff": "2026-11-16T12:35:00+05:30",
    "dimension": "2D",
    "duration": 149,
-   "end": "2026-11-16T12:45:00+05:30",
+   "end": "2026-11-16T12:50:00+05:30",
    "event_code": "ET00525702",
    "first_seen": "2026-11-14T12:31:20+05:30",
    "genre": "Crime,Psychological,Thriller",
@@ -5916,12 +6079,84 @@
    "movie": "John Doe",
    "poster": "john-doe-et00525702-1794051624",
    "screen": "AUDI03",
-   "start": "2026-11-16T12:15:00+05:30",
+   "start": "2026-11-16T12:20:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "12:15 PM",
+   "time": "12:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16260/20261116"
+  },
+  "16263": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T23:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-14T18:11:06+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI01",
+   "start": "2026-11-16T23:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16263/20261116"
+  },
+  "16264": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-14T18:11:06+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T14:50:00+05:30",
+   "dimension": "2D",
+   "duration": 92,
+   "end": "2026-11-16T15:05:00+05:30",
+   "event_code": "ET00518333",
+   "first_seen": "2026-11-14T18:11:06+05:30",
+   "genre": "Action,Thriller",
+   "language": "English",
+   "movie": "Ghost Soldier",
+   "poster": "ghost-soldier-et00518333-1789986369",
+   "screen": "AUDI02",
+   "start": "2026-11-16T14:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16264/20261116"
   }
  },
  "20261117": {
@@ -6097,21 +6332,21 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-17T13:55:00+05:30",
+   "cutoff": "2026-11-17T15:45:00+05:30",
    "dimension": "2D",
    "duration": 144,
-   "end": "2026-11-17T14:10:00+05:30",
+   "end": "2026-11-17T16:00:00+05:30",
    "event_code": "ET00517348",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Comedy,Devotional,Fantasy,Thriller",
    "language": "Tamil",
    "movie": "Mookuthi Amman 2",
    "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI02",
-   "start": "2026-11-17T13:40:00+05:30",
+   "screen": "AUDI03",
+   "start": "2026-11-17T15:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:40 PM",
+   "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16177/20261117"
   },
@@ -6287,21 +6522,21 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-17T16:40:00+05:30",
+   "cutoff": "2026-11-17T14:50:00+05:30",
    "dimension": "2D",
    "duration": 92,
-   "end": "2026-11-17T16:55:00+05:30",
+   "end": "2026-11-17T15:05:00+05:30",
    "event_code": "ET00518333",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Action,Thriller",
    "language": "English",
    "movie": "Ghost Soldier",
    "poster": "ghost-soldier-et00518333-1789986369",
-   "screen": "AUDI03",
-   "start": "2026-11-17T16:25:00+05:30",
+   "screen": "AUDI02",
+   "start": "2026-11-17T14:35:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:25 PM",
+   "time": "02:35 PM",
    "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16182/20261117"
   },
@@ -6400,9 +6635,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 233.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6556,10 +6801,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-17T12:30:00+05:30",
+   "cutoff": "2026-11-17T12:35:00+05:30",
    "dimension": "2D",
    "duration": 149,
-   "end": "2026-11-17T12:45:00+05:30",
+   "end": "2026-11-17T12:50:00+05:30",
    "event_code": "ET00525702",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Crime,Psychological,Thriller",
@@ -6567,10 +6812,10 @@
    "movie": "John Doe",
    "poster": "john-doe-et00525702-1794051624",
    "screen": "AUDI03",
-   "start": "2026-11-17T12:15:00+05:30",
+   "start": "2026-11-17T12:20:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "12:15 PM",
+   "time": "12:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16189/20261117"
   },
@@ -7331,21 +7576,21 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-18T13:55:00+05:30",
+   "cutoff": "2026-11-18T15:45:00+05:30",
    "dimension": "2D",
    "duration": 144,
-   "end": "2026-11-18T14:10:00+05:30",
+   "end": "2026-11-18T16:00:00+05:30",
    "event_code": "ET00517348",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Comedy,Devotional,Fantasy,Thriller",
    "language": "Tamil",
    "movie": "Mookuthi Amman 2",
    "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI02",
-   "start": "2026-11-18T13:40:00+05:30",
+   "screen": "AUDI03",
+   "start": "2026-11-18T15:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:40 PM",
+   "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16210/20261118"
   },
@@ -7492,10 +7737,10 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-18T12:15:00+05:30",
+   "cutoff": "2026-11-18T12:20:00+05:30",
    "dimension": "2D",
    "duration": 165,
-   "end": "2026-11-18T12:30:00+05:30",
+   "end": "2026-11-18T12:35:00+05:30",
    "event_code": "ET00518674",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Action,Thriller",
@@ -7503,10 +7748,10 @@
    "movie": "Jailer 2",
    "poster": "jailer-2-et00518674-1793799981",
    "screen": "AUDI03",
-   "start": "2026-11-18T12:00:00+05:30",
+   "start": "2026-11-18T12:05:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "12:00 PM",
+   "time": "12:05 PM",
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16214/20261118"
   },
@@ -7528,21 +7773,21 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-18T16:40:00+05:30",
+   "cutoff": "2026-11-18T14:50:00+05:30",
    "dimension": "2D",
    "duration": 92,
-   "end": "2026-11-18T16:55:00+05:30",
+   "end": "2026-11-18T15:05:00+05:30",
    "event_code": "ET00518333",
    "first_seen": "2026-11-13T14:40:50+05:30",
    "genre": "Action,Thriller",
    "language": "English",
    "movie": "Ghost Soldier",
    "poster": "ghost-soldier-et00518333-1789986369",
-   "screen": "AUDI03",
-   "start": "2026-11-18T16:25:00+05:30",
+   "screen": "AUDI02",
+   "start": "2026-11-18T14:35:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:25 PM",
+   "time": "02:35 PM",
    "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16215/20261118"
   },
@@ -7634,9 +7879,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 233.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -7778,9 +8033,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-14T18:11:06+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-14T18:11:06+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T18:11:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -9003,5 +9268,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16258/20261119"
   }
  },
- "_updated": "2026-11-14T18:01:11+05:30"
+ "_updated": "2026-11-14T18:11:06+05:30"
 }

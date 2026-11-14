@@ -54,14 +54,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-15T00:01:10+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 89.35,
      "reopened_at": "2026-11-14T23:31:18+05:30",
      "sold_out_at": "2026-11-11T13:31:19+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T23:31:18+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T00:01:10+05:30"
     }
    },
    "cutoff": "2026-11-15T00:25:00+05:30",
@@ -191,110 +197,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92918/20261114"
-  },
-  "92928": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T05:40:56+05:30",
-     "history": [
-      [
-       "2026-11-13T21:41:08+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T21:50:51+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T22:01:11+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T22:10:53+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T22:40:54+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T17:01:04+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T17:01:04+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T05:40:56+05:30",
-     "history": [
-      [
-       "2026-11-14T23:20:53+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T23:40:50+05:30",
-       "s",
-       "1",
-       "2"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-14T23:20:53+05:30",
-     "sold_out_at": "2026-11-11T18:41:21+05:30",
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T23:40:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T00:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-15T00:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-11T05:40:56+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 3",
-   "start": "2026-11-14T23:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [
-    "Atmos"
-   ],
-   "time": "11:30 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-11T05:40:56+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T05:40:56+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/92928/20261114"
   },
   "92942": {
    "censor": "U",
@@ -3136,5 +3038,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92996/20261115"
   }
  },
- "_updated": "2026-11-14T23:50:50+05:30"
+ "_updated": "2026-11-15T00:01:10+05:30"
 }

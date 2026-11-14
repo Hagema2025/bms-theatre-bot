@@ -34,12 +34,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T19:31:18+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 89.76,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T18:50:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:31:18+05:30"
     }
    },
    "cutoff": "2026-11-14T22:10:00+05:30",
@@ -401,69 +407,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242299/20261114"
-  },
-  "242310": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:01:08+05:30",
-     "history": [
-      [
-       "2026-11-14T10:20:49+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T15:01:14+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 219.2,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T15:01:14+05:30"
-    },
-    "SECOND CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T15:10:57+05:30",
-     "price": 89.76,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-14T19:10:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-14T19:30:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-11T16:01:08+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 8",
-   "start": "2026-11-14T19:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "07:00 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SECOND CLASS 3D": "2026-11-14T15:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T15:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242310/20261114"
   },
   "242311": {
    "censor": "U",
@@ -853,12 +796,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T19:31:18+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T14:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:31:18+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -964,78 +913,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242376/20261114"
   },
-  "242388": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:20:52+05:30",
-     "history": [
-      [
-       "2026-11-13T23:01:09+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T15:20:51+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T15:20:51+05:30"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T15:10:57+05:30",
-     "history": [
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 57.98,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T19:10:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-14T19:30:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-11T16:20:52+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "SCREEN 14",
-   "start": "2026-11-14T19:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "07:00 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SECOND CLASS": "2026-11-14T15:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T15:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242388/20261114"
-  },
   "242389": {
    "censor": "U",
    "classes": {
@@ -1060,12 +937,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T19:31:18+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T16:01:03+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:31:18+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -1076,12 +959,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T19:31:18+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T18:01:11+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:31:18+05:30"
     }
    },
    "cutoff": "2026-11-14T23:10:00+05:30",
@@ -1882,12 +1771,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T19:31:18+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T19:01:08+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:31:18+05:30"
     }
    },
    "cutoff": "2026-11-15T00:05:00+05:30",
@@ -5685,5 +5580,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242512/20261115"
   }
  },
- "_updated": "2026-11-14T19:20:52+05:30"
+ "_updated": "2026-11-14T19:31:18+05:30"
 }

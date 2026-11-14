@@ -1,111 +1,5 @@
 {
  "20261114": {
-  "92905": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T05:01:09+05:30",
-     "history": [
-      [
-       "2026-11-14T03:50:53+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-14T09:10:52+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T10:01:02+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-14T12:50:49+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T14:50:52+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-14T15:31:17+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T15:50:50+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 218.8,
-     "reopened_at": "2026-11-14T15:31:17+05:30",
-     "sold_out_at": "2026-11-14T15:50:50+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T15:50:50+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T05:01:09+05:30",
-     "history": [
-      [
-       "2026-11-13T03:01:04+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 89.35,
-     "reopened_at": "2026-11-11T08:01:09+05:30",
-     "sold_out_at": "2026-11-13T03:01:04+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T03:01:04+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T16:55:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-14T16:40:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-11T05:01:09+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 1",
-   "start": "2026-11-14T16:10:00+05:30",
-   "subs": "",
-   "tags": [
-    "BIGPIX"
-   ],
-   "time": "04:10 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-11T05:01:09+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T05:01:09+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/92905/20261114"
-  },
   "92906": {
    "censor": "UA16+",
    "classes": {
@@ -314,12 +208,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:40:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-14T16:40:48+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T17:31:25+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T16:40:48+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4148,12 +4049,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:40:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-14T16:40:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T12:40:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T16:40:48+05:30"
     }
    },
    "cutoff": "2026-11-15T10:30:00+05:30",
@@ -4343,5 +4251,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92996/20261115"
   }
  },
- "_updated": "2026-11-14T16:31:22+05:30"
+ "_updated": "2026-11-14T16:40:48+05:30"
 }

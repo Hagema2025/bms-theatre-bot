@@ -1680,14 +1680,20 @@
        "s",
        "0",
        "2"
+      ],
+      [
+       "2026-11-14T08:31:21+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T07:50:50+05:30",
      "sold_out_at": "2026-11-13T20:01:11+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T07:50:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T08:31:21+05:30"
     }
    },
    "cutoff": "2026-11-14T09:00:00+05:30",
@@ -2289,52 +2295,6 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16106/20261114"
-  },
-  "16113": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-12T16:20:53+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-12T16:20:53+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-14T08:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T08:30:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-12T16:20:53+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "AUDI05",
-   "start": "2026-11-14T08:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "08:00 AM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "NORMAL": "2026-11-12T16:20:53+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-12T16:20:53+05:30"
-    }
-   ],
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16113/20261114"
   },
   "16115": {
    "censor": "U",
@@ -9229,5 +9189,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16258/20261119"
   }
  },
- "_updated": "2026-11-14T08:20:47+05:30"
+ "_updated": "2026-11-14T08:31:21+05:30"
 }

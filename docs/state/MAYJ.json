@@ -197,9 +197,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-14T11:20:48+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T11:20:48+05:30"
     }
    },
    "cutoff": "2026-11-14T19:40:00+05:30",
@@ -1609,14 +1618,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T11:20:48+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-13T17:40:50+05:30",
      "sold_out_at": "2026-11-13T09:31:16+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-13T17:40:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T11:20:48+05:30"
     }
    },
    "cutoff": "2026-11-14T11:30:00+05:30",
@@ -2354,9 +2369,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T09:40:54+05:30",
+     "history": [
+      [
+       "2026-11-14T11:20:48+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T11:20:48+05:30"
     }
    },
    "cutoff": "2026-11-14T16:45:00+05:30",
@@ -5904,5 +5928,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242503/20261115"
   }
  },
- "_updated": "2026-11-14T11:11:04+05:30"
+ "_updated": "2026-11-14T11:20:48+05:30"
 }

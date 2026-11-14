@@ -28,9 +28,19 @@
     "PEARL 3D": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-11T21:20:48+05:30",
+     "history": [
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 84.0,
+     "reopened_at": "2026-11-14T16:50:52+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T19:35:00+05:30",
@@ -154,9 +164,19 @@
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
+     "history": [
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.0,
+     "reopened_at": "2026-11-14T16:50:52+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T20:10:00+05:30",
@@ -355,19 +375,35 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 230.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T11:01:05+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
+     "history": [
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 89.0,
+     "reopened_at": "2026-11-14T16:50:52+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T19:55:00+05:30",
@@ -446,61 +482,6 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48660/20261114"
-  },
-  "48663": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:01:08+05:30",
-     "history": [
-      [
-       "2026-11-12T19:31:26+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-13T14:40:50+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 200.0,
-     "reopened_at": "2026-11-12T19:31:26+05:30",
-     "sold_out_at": "2026-11-13T14:40:50+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T14:40:50+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-11T16:01:08+05:30",
-     "price": 59.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-14T16:35:00+05:30",
-   "dimension": "2D",
-   "duration": 143,
-   "end": "2026-11-14T16:50:00+05:30",
-   "event_code": "ET00514068",
-   "first_seen": "2026-11-11T16:01:08+05:30",
-   "genre": "Action,Drama,Romantic",
-   "language": "Telugu",
-   "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
-   "screen": "SCREEN 1",
-   "start": "2026-11-14T16:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "04:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/ACON/48663/20261114"
   },
   "48664": {
    "censor": "UA16+",
@@ -616,12 +597,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-14T16:50:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T09:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -656,13 +644,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:50:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-14T15:31:17+05:30",
+     "sold_out_at": "2026-11-14T16:50:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T16:31:22+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T16:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T16:40:00+05:30",
@@ -4268,5 +4263,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-14T16:40:48+05:30"
+ "_updated": "2026-11-14T16:50:52+05:30"
 }

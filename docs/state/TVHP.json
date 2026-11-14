@@ -264,12 +264,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T15:50:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T12:01:11+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T15:50:50+05:30"
     }
    },
    "cutoff": "2026-11-14T23:00:00+05:30",
@@ -368,12 +374,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T15:50:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 218.0,
+     "sold_out_at": "2026-11-14T15:50:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T10:31:22+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T15:50:50+05:30"
     }
    },
    "cutoff": "2026-11-14T16:10:00+05:30",
@@ -1120,9 +1133,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-12T17:20:54+05:30",
+     "history": [
+      [
+       "2026-11-14T15:50:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-14T15:50:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-14T15:50:50+05:30"
     }
    },
    "cutoff": "2026-11-15T11:55:00+05:30",
@@ -1349,6 +1372,68 @@
    "time": "07:50 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26600/20261115"
+  },
+  "26605": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T15:50:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T11:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T10:55:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-14T15:50:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 1",
+   "start": "2026-11-15T10:25:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:25 AM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26605/20261115"
+  },
+  "26606": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T15:50:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-15T12:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-15T11:45:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-14T15:50:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 2",
+   "start": "2026-11-15T11:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:15 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26606/20261115"
   }
  },
  "20261116": {
@@ -2763,5 +2848,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26604/20261119"
   }
  },
- "_updated": "2026-11-14T15:40:50+05:30"
+ "_updated": "2026-11-14T15:50:50+05:30"
 }

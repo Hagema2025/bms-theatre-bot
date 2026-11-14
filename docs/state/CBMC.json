@@ -389,14 +389,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 109.43,
-     "reopened_at": "2026-11-14T09:50:51+05:30",
+     "reopened_at": "2026-11-14T19:50:52+05:30",
      "sold_out_at": "2026-11-14T19:40:50+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-14T19:40:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T22:25:00+05:30",
@@ -1043,14 +1049,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T19:40:50+05:30",
-     "sold_out_at": "2026-11-14T19:31:18+05:30",
+     "sold_out_at": "2026-11-14T19:50:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T19:40:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     }
    },
    "cutoff": "2026-11-14T23:35:00+05:30",
@@ -3849,13 +3861,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T19:20:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T19:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     }
    },
    "cutoff": "2026-11-15T18:55:00+05:30",
@@ -3966,12 +3984,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T19:31:18+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4210,9 +4234,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T13:01:07+05:30",
+     "history": [
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4288,13 +4321,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T19:50:52+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T19:20:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T19:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T19:50:52+05:30"
     }
    },
    "cutoff": "2026-11-15T08:15:00+05:30",
@@ -4633,6 +4672,42 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16262/20261115"
+  },
+  "16280": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-14T19:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-14T19:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-15T07:50:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-15T08:05:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-14T19:50:52+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI04",
+   "start": "2026-11-15T07:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:35 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16280/20261115"
   }
  },
  "20261116": {
@@ -9627,5 +9702,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-14T19:40:50+05:30"
+ "_updated": "2026-11-14T19:50:52+05:30"
 }

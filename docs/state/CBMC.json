@@ -376,9 +376,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T17:40:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T17:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1349,7 +1358,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI05",
    "start": "2026-11-14T22:20:00+05:30",
    "subs": "",
@@ -2928,13 +2937,19 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-14T17:40:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T16:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T17:40:50+05:30"
     }
    },
    "cutoff": "2026-11-15T09:35:00+05:30",
@@ -3720,7 +3735,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI05",
    "start": "2026-11-15T22:20:00+05:30",
    "subs": "",
@@ -4218,13 +4233,20 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T17:40:50+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T12:50:49+05:30",
+     "sold_out_at": "2026-11-14T17:40:50+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T15:10:57+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-14T17:40:50+05:30"
     }
    },
    "cutoff": "2026-11-15T12:20:00+05:30",
@@ -5364,7 +5386,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI03",
    "start": "2026-11-16T22:00:00+05:30",
    "subs": "",
@@ -6297,7 +6319,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI03",
    "start": "2026-11-17T22:00:00+05:30",
    "subs": "",
@@ -7531,7 +7553,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "AUDI03",
    "start": "2026-11-18T22:00:00+05:30",
    "subs": "",
@@ -8915,5 +8937,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16258/20261119"
   }
  },
- "_updated": "2026-11-14T17:31:19+05:30"
+ "_updated": "2026-11-14T17:40:50+05:30"
 }

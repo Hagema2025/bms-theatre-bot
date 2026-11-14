@@ -1010,7 +1010,7 @@
       ]
      ],
      "price": 210.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-14T16:31:22+05:30"
     },
@@ -1295,12 +1295,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-14T17:40:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T17:31:19+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T17:40:50+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2988,7 +2994,7 @@
    "genre": "Action,Drama,Romantic",
    "language": "Telugu",
    "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794469657",
+   "poster": "itllu-arjuna-et00514068-1794657347",
    "screen": "SCREEN 6",
    "start": "2026-11-15T15:30:00+05:30",
    "subs": "",
@@ -3794,5 +3800,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/92996/20261115"
   }
  },
- "_updated": "2026-11-14T17:31:19+05:30"
+ "_updated": "2026-11-14T17:40:50+05:30"
 }

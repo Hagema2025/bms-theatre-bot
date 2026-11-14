@@ -605,109 +605,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45243/20261114"
   },
-  "45257": {
-   "censor": "A",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:31:28+05:30",
-     "history": [
-      [
-       "2026-11-13T20:40:54+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T22:10:53+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T22:20:54+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-14T07:31:18+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T21:20:49+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 59.43,
-     "sold_out_at": "2026-11-14T21:20:49+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T21:20:49+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:31:28+05:30",
-     "history": [
-      [
-       "2026-11-14T13:10:49+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T17:50:51+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-14T19:01:08+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T21:20:49+05:30",
-       "s",
-       "1",
-       "2"
-      ]
-     ],
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T21:20:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T23:05:00+05:30",
-   "dimension": "2D",
-   "duration": 115,
-   "end": "2026-11-14T22:50:00+05:30",
-   "event_code": "ET00513613",
-   "first_seen": "2026-11-11T02:31:28+05:30",
-   "genre": "Mystery,Thriller",
-   "language": "Malayalam",
-   "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
-   "screen": "AUDI 07",
-   "start": "2026-11-14T22:20:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:20 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/PVHR/45257/20261114"
-  },
   "45265": {
    "censor": "U",
    "classes": {
@@ -947,13 +844,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T22:50:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 89.35,
+     "reopened_at": "2026-11-14T22:50:50+05:30",
      "sold_out_at": "2026-11-14T22:40:50+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T22:40:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T22:50:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7766,5 +7670,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45423/20261118"
   }
  },
- "_updated": "2026-11-14T22:40:50+05:30"
+ "_updated": "2026-11-14T22:50:50+05:30"
 }

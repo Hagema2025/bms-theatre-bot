@@ -180,156 +180,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17104/20261114"
   },
-  "17106": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T19:31:26+05:30",
-     "history": [
-      [
-       "2026-11-13T09:40:54+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T18:50:55+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-13T18:50:55+05:30"
-    },
-    "SPECIAL": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T19:31:26+05:30",
-     "history": [
-      [
-       "2026-11-13T08:50:55+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-13T17:50:56+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T18:01:06+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T18:20:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T18:40:56+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T21:10:53+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T21:21:04+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-13T21:31:24+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T21:50:51+05:30",
-       "s",
-       "2",
-       "0"
-      ],
-      [
-       "2026-11-13T22:01:11+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-13T22:50:51+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T23:01:09+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-13T23:11:08+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T01:10:52+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-13T23:11:08+05:30",
-     "sold_out_at": "2026-11-14T01:10:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-14T01:10:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T16:40:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T16:25:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-11T19:31:26+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 2",
-   "start": "2026-11-14T15:55:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:55 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SPECIAL": "2026-11-11T19:31:26+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T19:31:26+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17106/20261114"
-  },
   "17107": {
    "censor": "U",
    "classes": {
@@ -621,7 +471,7 @@
       ]
      ],
      "price": 223.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-13T22:10:53+05:30"
     },
@@ -1463,12 +1313,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-14T16:31:22+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T16:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T16:31:22+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "3",
@@ -3924,5 +3780,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17188/20261118"
   }
  },
- "_updated": "2026-11-14T16:20:52+05:30"
+ "_updated": "2026-11-14T16:31:22+05:30"
 }

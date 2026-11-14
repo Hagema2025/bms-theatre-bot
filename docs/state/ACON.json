@@ -357,14 +357,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T14:31:30+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 84.0,
-     "reopened_at": "2026-11-13T21:41:08+05:30",
+     "reopened_at": "2026-11-14T14:31:30+05:30",
      "sold_out_at": "2026-11-14T14:20:48+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T14:20:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T14:31:30+05:30"
     }
    },
    "cutoff": "2026-11-14T16:20:00+05:30",
@@ -472,12 +478,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T14:31:30+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T13:01:07+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T14:31:30+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -790,7 +802,7 @@
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-14T09:50:51+05:30"
     },
@@ -1087,9 +1099,18 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
+     "history": [
+      [
+       "2026-11-14T14:31:30+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 213.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T14:31:30+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -4384,5 +4405,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-14T14:20:48+05:30"
+ "_updated": "2026-11-14T14:31:30+05:30"
 }

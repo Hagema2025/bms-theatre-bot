@@ -106,9 +106,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:10:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T16:35:00+05:30",
@@ -238,9 +248,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:10:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T23:45:00+05:30",
@@ -305,9 +325,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T19:05:00+05:30",
@@ -509,9 +539,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T14:25:00+05:30",
@@ -564,9 +604,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 109.43,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T18:25:00+05:30",
@@ -615,9 +665,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 109.43,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T22:25:00+05:30",
@@ -850,14 +910,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-13T18:50:55+05:30",
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "sold_out_at": "2026-11-13T19:10:50+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T19:10:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T19:20:00+05:30",
@@ -928,9 +994,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T22:30:00+05:30",
@@ -1133,9 +1209,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T22:50:00+05:30",
@@ -1249,9 +1335,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:10:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T17:15:00+05:30",
@@ -1352,14 +1448,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-12T20:40:52+05:30",
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "sold_out_at": "2026-11-12T22:01:09+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-12T22:01:09+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T20:25:00+05:30",
@@ -1442,9 +1544,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:10:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T23:35:00+05:30",
@@ -1551,145 +1663,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16016/20261114"
-  },
-  "16017": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T17:20:56+05:30",
-     "history": [
-      [
-       "2026-11-13T12:40:52+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T13:01:07+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-13T13:40:51+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T09:41:01+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T09:41:01+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T09:41:01+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T17:20:56+05:30",
-     "history": [
-      [
-       "2026-11-13T15:10:49+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-13T17:31:25+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T17:40:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T17:50:56+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-13T18:31:39+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-13T18:40:56+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-13T19:01:09+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-13T19:20:52+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-13T19:31:19+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-13T21:21:04+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-13T19:31:19+05:30",
-     "sold_out_at": "2026-11-13T21:21:04+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T21:21:04+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T09:35:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-14T09:50:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-10T17:20:56+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "AUDI07",
-   "start": "2026-11-14T09:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "09:20 AM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "NORMAL": "2026-11-10T17:20:56+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-10T17:20:56+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/CBMC/16017/20261114"
   },
   "16088": {
    "censor": "UA16+",
@@ -1852,19 +1825,35 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T01:50:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-11T17:40:52+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T22:50:00+05:30",
@@ -2029,13 +2018,19 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T09:31:33+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T09:41:01+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T11:35:00+05:30",
@@ -2088,9 +2083,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-12T16:10:51+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T19:00:00+05:30",
@@ -2200,109 +2205,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/CBMC/16115/20261114"
   },
-  "16125": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T12:50:51+05:30",
-     "history": [
-      [
-       "2026-11-13T19:50:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T09:01:07+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T09:41:01+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T09:41:01+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T09:41:01+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T12:50:51+05:30",
-     "history": [
-      [
-       "2026-11-14T08:20:47+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-14T08:51:05+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T09:01:07+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-14T09:10:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T09:41:01+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-14T08:20:47+05:30",
-     "sold_out_at": "2026-11-14T09:41:01+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T09:41:01+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T09:30:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T09:45:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T12:50:51+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI03",
-   "start": "2026-11-14T09:15:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "09:15 AM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "NORMAL": "2026-11-13T12:50:51+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-13T12:50:51+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16125/20261114"
-  },
   "16161": {
    "censor": "U",
    "classes": {
@@ -2337,13 +2239,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-14T09:41:01+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-14T09:41:01+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-14T15:35:00+05:30",
@@ -2444,9 +2352,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T08:35:00+05:30",
@@ -2853,9 +2771,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T10:25:00+05:30",
@@ -3384,9 +3312,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-10T17:20:56+05:30",
+     "history": [
+      [
+       "2026-11-14T09:50:51+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-14T09:50:51+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-14T09:50:51+05:30"
     }
    },
    "cutoff": "2026-11-15T09:35:00+05:30",
@@ -9080,5 +9018,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16258/20261119"
   }
  },
- "_updated": "2026-11-14T09:41:01+05:30"
+ "_updated": "2026-11-14T09:50:51+05:30"
 }

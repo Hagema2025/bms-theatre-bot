@@ -92,12 +92,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T18:20:57+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 219.2,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T12:50:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T18:20:57+05:30"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
@@ -165,9 +171,18 @@
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T15:10:57+05:30",
+     "history": [
+      [
+       "2026-11-14T18:20:57+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-14T18:20:57+05:30"
     }
    },
    "cutoff": "2026-11-14T19:40:00+05:30",
@@ -584,12 +599,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T18:20:57+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 219.2,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T15:01:14+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T18:20:57+05:30"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
@@ -961,47 +982,6 @@
    "time": "10:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/242345/20261114"
-  },
-  "242359": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:10:51+05:30",
-     "history": [
-      [
-       "2026-11-12T17:20:54+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-12T17:20:54+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-12T17:20:54+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T18:00:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-14T18:20:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-11T16:10:51+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 11",
-   "start": "2026-11-14T17:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:50 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242359/20261114"
   },
   "242360": {
    "censor": "UA16+",
@@ -1390,47 +1370,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242399/20261114"
   },
-  "242404": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:20:52+05:30",
-     "history": [
-      [
-       "2026-11-13T21:50:51+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 202.5,
-     "sold_out_at": "2026-11-13T21:50:51+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T21:50:51+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T18:00:00+05:30",
-   "dimension": "2D",
-   "duration": 117,
-   "end": "2026-11-14T18:20:00+05:30",
-   "event_code": "ET00525663",
-   "first_seen": "2026-11-11T16:20:52+05:30",
-   "genre": "Adventure,Comedy,Thriller",
-   "language": "Malayalam",
-   "movie": "Melcow Pondicherry",
-   "poster": "melcow-pondicherry-et00525663-1793960558",
-   "screen": "SCREEN 15",
-   "start": "2026-11-14T17:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:50 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525663/MAYJ/242404/20261114"
-  },
   "242407": {
    "censor": "UA16+",
    "classes": {
@@ -1663,47 +1602,6 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242425/20261114"
-  },
-  "242429": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-12T19:31:26+05:30",
-     "history": [
-      [
-       "2026-11-13T17:20:56+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-13T17:20:56+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T17:20:56+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T18:00:00+05:30",
-   "dimension": "2D",
-   "duration": 120,
-   "end": "2026-11-14T18:20:00+05:30",
-   "event_code": "ET00525569",
-   "first_seen": "2026-11-12T19:31:26+05:30",
-   "genre": "Drama,Thriller",
-   "language": "Tamil",
-   "movie": "Gondhal",
-   "poster": "gondhal-et00525569-1794465733",
-   "screen": "SCREEN 11",
-   "start": "2026-11-14T17:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:50 PM",
-   "trailer": "youtube.com/watch?si=hrYsm8NG7wJuh9ZH&v=lv8PRGQ6fRM&feature=youtu.be",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525569/MAYJ/242429/20261114"
   },
   "242442": {
    "censor": "UA16+",
@@ -2383,178 +2281,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242488/20261114"
-  },
-  "242500": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T17:20:56+05:30",
-     "history": [
-      [
-       "2026-11-14T14:20:48+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T18:11:06+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T18:11:06+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:11:06+05:30"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T15:10:57+05:30",
-     "history": [
-      [
-       "2026-11-14T17:31:19+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T17:40:50+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T18:11:06+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 57.98,
-     "sold_out_at": "2026-11-14T18:11:06+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:11:06+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T18:00:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T18:20:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T17:20:56+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 11",
-   "start": "2026-11-14T17:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:50 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SECOND CLASS": "2026-11-14T15:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T15:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242500/20261114"
-  },
-  "242504": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T21:50:51+05:30",
-     "history": [
-      [
-       "2026-11-14T14:20:48+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T18:11:06+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T18:11:06+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:11:06+05:30"
-    },
-    "SECOND CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T15:10:57+05:30",
-     "history": [
-      [
-       "2026-11-14T15:40:50+05:30",
-       "s",
-       "3",
-       "1"
-      ],
-      [
-       "2026-11-14T18:11:06+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 57.98,
-     "sold_out_at": "2026-11-14T18:11:06+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:11:06+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T18:00:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T18:20:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T21:50:51+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 15",
-   "start": "2026-11-14T17:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "05:50 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "SECOND CLASS": "2026-11-14T15:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T15:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242504/20261114"
   },
   "242505": {
    "censor": "UA16+",
@@ -6005,5 +5731,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242512/20261115"
   }
  },
- "_updated": "2026-11-14T18:11:06+05:30"
+ "_updated": "2026-11-14T18:20:57+05:30"
 }

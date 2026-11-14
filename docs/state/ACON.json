@@ -63,130 +63,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48649/20261114"
   },
-  "48652": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "history": [
-      [
-       "2026-11-13T01:31:20+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T00:20:48+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T18:40:58+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-14T19:01:08+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T20:01:11+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.0,
-     "reopened_at": "2026-11-14T19:01:08+05:30",
-     "sold_out_at": "2026-11-14T20:01:11+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T20:01:11+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "history": [
-      [
-       "2026-11-14T16:50:52+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-14T17:10:48+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T17:20:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-14T17:50:51+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-14T18:01:11+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-14T19:10:46+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.0,
-     "reopened_at": "2026-11-14T18:01:11+05:30",
-     "sold_out_at": "2026-11-14T19:10:46+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-14T19:10:46+05:30"
-    }
-   },
-   "cutoff": "2026-11-14T20:10:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-14T20:25:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-10T20:31:33+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 3",
-   "start": "2026-11-14T19:55:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "07:55 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "PEARL": "2026-11-10T20:31:33+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-10T20:31:33+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48652/20261114"
-  },
   "48654": {
    "censor": "U",
    "classes": {
@@ -320,7 +196,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -947,12 +823,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-14T20:31:19+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-14T09:10:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-14T20:31:19+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3934,5 +3816,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-14T20:10:48+05:30"
+ "_updated": "2026-11-14T20:31:19+05:30"
 }

@@ -1,5 +1,9 @@
 {
- "fail_streaks": {},
+ "fail_streaks": {
+  "CBMC": 1,
+  "INTO": 1,
+  "PVHR": 1
+ },
  "outage_alerted": [],
  "thread_map": {},
  "threads": {}

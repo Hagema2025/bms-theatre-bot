@@ -413,14 +413,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T17:20:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 252.49,
-     "reopened_at": "2026-11-15T11:31:26+05:30",
+     "reopened_at": "2026-11-15T17:20:50+05:30",
      "sold_out_at": "2026-11-15T17:10:50+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T17:10:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T17:20:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1267,52 +1273,6 @@
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/CBMC/16097/20261115"
   },
-  "16108": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-12T16:10:51+05:30",
-     "history": [
-      [
-       "2026-11-13T14:01:02+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 202.49,
-     "sold_out_at": "2026-11-13T14:01:02+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T14:01:02+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-12T16:10:51+05:30",
-     "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-15T17:00:00+05:30",
-   "dimension": "2D",
-   "duration": 117,
-   "end": "2026-11-15T17:15:00+05:30",
-   "event_code": "ET00525663",
-   "first_seen": "2026-11-12T16:10:51+05:30",
-   "genre": "Adventure,Comedy,Thriller",
-   "language": "Malayalam",
-   "movie": "Melcow Pondicherry",
-   "poster": "melcow-pondicherry-et00525663-1793960558",
-   "screen": "AUDI02",
-   "start": "2026-11-15T16:45:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "04:45 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525663/CBMC/16108/20261115"
-  },
   "16109": {
    "censor": "UA16+",
    "classes": {
@@ -1499,7 +1459,7 @@
       ]
      ],
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T16:01:05+05:30"
     },
@@ -6762,5 +6722,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-15T17:10:50+05:30"
+ "_updated": "2026-11-15T17:20:50+05:30"
 }

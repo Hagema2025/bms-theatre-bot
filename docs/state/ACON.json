@@ -7,7 +7,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-10T20:31:33+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -283,14 +283,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T17:20:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.0,
-     "reopened_at": "2026-11-15T15:50:52+05:30",
+     "reopened_at": "2026-11-15T17:20:50+05:30",
      "sold_out_at": "2026-11-15T17:10:50+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-15T17:10:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T17:20:50+05:30"
     }
    },
    "cutoff": "2026-11-15T20:10:00+05:30",
@@ -392,7 +398,7 @@
       ]
      ],
      "price": 213.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T07:40:52+05:30"
     },
@@ -421,7 +427,7 @@
      ],
      "price": 84.0,
      "reopened_at": "2026-11-15T15:50:52+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T16:40:50+05:30"
     }
@@ -3013,5 +3019,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-15T17:10:50+05:30"
+ "_updated": "2026-11-15T17:20:50+05:30"
 }

@@ -1,79 +1,4 @@
 {
- "20261115": {
-  "48675": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T21:20:48+05:30",
-     "history": [
-      [
-       "2026-11-15T20:01:09+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T23:01:05+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 183.0,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T23:01:05+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-11T21:20:48+05:30",
-     "history": [
-      [
-       "2026-11-15T23:50:50+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 54.0,
-     "reopened_at": "2026-11-15T23:50:50+05:30",
-     "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-15T23:50:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T23:45:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-16T00:00:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-11T21:20:48+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 2",
-   "start": "2026-11-15T23:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "11:30 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "PEARL": "2026-11-11T21:20:48+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T21:20:48+05:30"
-    }
-   ],
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48675/20261115"
-  }
- },
  "20261116": {
   "48692": {
    "censor": "UA16+",
@@ -2986,5 +2911,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48763/20261119"
   }
  },
- "_updated": "2026-11-15T23:50:50+05:30"
+ "_updated": "2026-11-16T00:01:08+05:30"
 }

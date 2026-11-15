@@ -471,96 +471,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/92952/20261115"
   },
-  "92967": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-15T17:50:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T20:01:09+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-15T20:10:52+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-15T20:10:52+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:01:22+05:30",
-     "history": [
-      [
-       "2026-11-15T20:01:09+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-15T20:20:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T20:31:21+05:30",
-       "s",
-       "2",
-       "3"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-15T20:01:09+05:30",
-     "sold_out_at": "2026-11-11T13:31:19+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-15T20:31:21+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T20:50:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-15T20:35:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-11T02:01:22+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 7",
-   "start": "2026-11-15T20:05:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "08:05 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-11T02:01:22+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T02:01:22+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92967/20261115"
-  },
   "92976": {
    "censor": "UA16+",
    "classes": {
@@ -568,7 +478,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T02:31:28+05:30",
      "price": 210.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -3220,5 +3130,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93098/20261118"
   }
  },
- "_updated": "2026-11-15T20:31:21+05:30"
+ "_updated": "2026-11-15T20:40:59+05:30"
 }

@@ -247,75 +247,6 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48670/20261115"
   },
-  "48671": {
-   "censor": "U",
-   "classes": {
-    "DIAMOND 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "history": [
-      [
-       "2026-11-14T14:31:30+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T14:50:52+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-14T15:01:14+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 213.0,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-14T15:01:14+05:30"
-    },
-    "PEARL 3D": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T20:31:33+05:30",
-     "price": 84.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-15T09:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T09:30:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-10T20:31:33+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 2",
-   "start": "2026-11-15T09:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "09:00 AM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "PEARL 3D": "2026-11-10T20:31:33+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-10T20:31:33+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48671/20261115"
-  },
   "48672": {
    "censor": "U",
    "classes": {
@@ -899,12 +830,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-15T09:31:22+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-15T09:31:22+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-15T02:31:19+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T09:31:22+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3697,5 +3635,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-15T08:31:22+05:30"
+ "_updated": "2026-11-15T09:31:22+05:30"
 }

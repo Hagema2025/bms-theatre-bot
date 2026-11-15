@@ -192,13 +192,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-15T16:10:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-15T15:50:52+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-15T15:50:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T16:10:50+05:30"
     }
    },
    "cutoff": "2026-11-15T16:50:00+05:30",
@@ -700,13 +706,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-15T16:10:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 84.0,
      "reopened_at": "2026-11-15T15:50:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-15T15:50:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T16:10:50+05:30"
     }
    },
    "cutoff": "2026-11-15T19:35:00+05:30",
@@ -833,13 +845,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-15T16:10:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-15T15:50:52+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-15T15:50:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T16:10:50+05:30"
     }
    },
    "cutoff": "2026-11-15T16:40:00+05:30",
@@ -1639,17 +1657,51 @@
   "48712": {
    "censor": "U",
    "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:10:50+05:30",
+     "price": 130.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:40:54+05:30",
-     "price": 230.0,
+     "history": [
+      [
+       "2026-11-15T16:10:50+05:30",
+       "p",
+       230.0,
+       30.0
+      ]
+     ],
+     "prev_price": 230.0,
+     "price": 30.0,
+     "price_changed_at": "2026-11-15T16:10:50+05:30",
      "soon_alerted": false,
      "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T16:10:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-13T22:40:54+05:30",
-     "price": 89.0,
+     "history": [
+      [
+       "2026-11-15T16:10:50+05:30",
+       "p",
+       89.0,
+       30.0
+      ]
+     ],
+     "prev_price": 89.0,
+     "price": 30.0,
+     "price_changed_at": "2026-11-15T16:10:50+05:30",
      "soon_alerted": false,
      "status": "0"
     }
@@ -1715,17 +1767,51 @@
   "48714": {
    "censor": "U",
    "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:10:50+05:30",
+     "price": 130.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:40:54+05:30",
-     "price": 230.0,
+     "history": [
+      [
+       "2026-11-15T16:10:50+05:30",
+       "p",
+       230.0,
+       30.0
+      ]
+     ],
+     "prev_price": 230.0,
+     "price": 30.0,
+     "price_changed_at": "2026-11-15T16:10:50+05:30",
      "soon_alerted": false,
      "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T16:10:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-13T22:40:54+05:30",
-     "price": 89.0,
+     "history": [
+      [
+       "2026-11-15T16:10:50+05:30",
+       "p",
+       89.0,
+       30.0
+      ]
+     ],
+     "prev_price": 89.0,
+     "price": 30.0,
+     "price_changed_at": "2026-11-15T16:10:50+05:30",
      "soon_alerted": false,
      "status": "0"
     }
@@ -3313,5 +3399,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
   }
  },
- "_updated": "2026-11-15T15:50:52+05:30"
+ "_updated": "2026-11-15T16:10:50+05:30"
 }

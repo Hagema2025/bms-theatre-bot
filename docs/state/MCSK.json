@@ -360,9 +360,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
+     "history": [
+      [
+       "2026-11-15T19:20:47+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-15T19:20:47+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "3",
@@ -408,9 +417,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T19:31:26+05:30",
+     "history": [
+      [
+       "2026-11-15T19:20:47+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-15T19:20:47+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "3",
@@ -1668,7 +1686,7 @@
    "end": "2026-11-18T16:20:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1776,7 +1794,7 @@
    "end": "2026-11-18T12:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1848,7 +1866,7 @@
    "end": "2026-11-18T19:10:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1884,7 +1902,7 @@
    "end": "2026-11-18T23:10:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1920,7 +1938,7 @@
    "end": "2026-11-18T11:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1992,7 +2010,7 @@
    "end": "2026-11-18T19:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2028,7 +2046,7 @@
    "end": "2026-11-18T23:00:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-12T00:01:15+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2185,5 +2203,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MCSK/17188/20261118"
   }
  },
- "_updated": "2026-11-15T19:10:50+05:30"
+ "_updated": "2026-11-15T19:20:47+05:30"
 }

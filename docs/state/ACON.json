@@ -169,7 +169,7 @@
    "end": "2026-11-15T20:10:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-10T20:31:33+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -359,7 +359,7 @@
    "end": "2026-11-15T23:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-11T21:20:48+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -444,7 +444,7 @@
    "end": "2026-11-15T19:50:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-11T21:20:48+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -562,9 +562,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -638,9 +648,19 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 230.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -732,7 +752,7 @@
    "end": "2026-11-16T19:00:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -846,7 +866,7 @@
    "end": "2026-11-16T15:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -922,7 +942,7 @@
    "end": "2026-11-16T22:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -960,7 +980,7 @@
    "end": "2026-11-16T12:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1036,7 +1056,7 @@
    "end": "2026-11-16T19:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1125,6 +1145,82 @@
    "time": "04:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48707/20261116"
+  },
+  "48756": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T12:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T12:45:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 2",
+   "start": "2026-11-16T12:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48756/20261116"
+  },
+  "48757": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T20:00:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 1",
+   "start": "2026-11-16T19:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48757/20261116"
   }
  },
  "20261117": {
@@ -1210,9 +1306,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 120.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1286,9 +1392,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T16:10:50+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 130.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "DIAMOND 3D": {
      "first_seen_status": "3",
@@ -1299,13 +1415,21 @@
        "p",
        230.0,
        30.0
+      ],
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "prev_price": 230.0,
      "price": 30.0,
      "price_changed_at": "2026-11-15T16:10:50+05:30",
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1409,11 +1533,17 @@
        "p",
        230.0,
        30.0
+      ],
+      [
+       "2026-11-15T18:50:53+05:30",
+       "p",
+       30.0,
+       160.0
       ]
      ],
-     "prev_price": 230.0,
-     "price": 30.0,
-     "price_changed_at": "2026-11-15T16:10:50+05:30",
+     "prev_price": 30.0,
+     "price": 160.0,
+     "price_changed_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
      "status": "3"
     },
@@ -1433,11 +1563,17 @@
        "p",
        89.0,
        30.0
+      ],
+      [
+       "2026-11-15T18:50:53+05:30",
+       "p",
+       30.0,
+       89.0
       ]
      ],
-     "prev_price": 89.0,
-     "price": 30.0,
-     "price_changed_at": "2026-11-15T16:10:50+05:30",
+     "prev_price": 30.0,
+     "price": 89.0,
+     "price_changed_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
      "status": "0"
     }
@@ -1448,7 +1584,7 @@
    "end": "2026-11-17T19:00:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T22:40:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -1562,7 +1698,7 @@
    "end": "2026-11-17T15:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1638,7 +1774,7 @@
    "end": "2026-11-17T22:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1676,7 +1812,7 @@
    "end": "2026-11-17T12:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1752,7 +1888,7 @@
    "end": "2026-11-17T19:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -1803,6 +1939,82 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48723/20261117"
+  },
+  "48758": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 120.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T12:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T12:45:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 2",
+   "start": "2026-11-17T12:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48758/20261117"
+  },
+  "48759": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 120.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-17T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T20:00:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 1",
+   "start": "2026-11-17T19:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48759/20261117"
   }
  },
  "20261118": {
@@ -1888,9 +2100,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:31:39+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1964,9 +2186,19 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:31:39+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 230.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -2058,7 +2290,7 @@
    "end": "2026-11-18T19:00:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -2172,7 +2404,7 @@
    "end": "2026-11-18T15:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2248,7 +2480,7 @@
    "end": "2026-11-18T22:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2286,7 +2518,7 @@
    "end": "2026-11-18T12:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2362,7 +2594,7 @@
    "end": "2026-11-18T19:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2413,6 +2645,82 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48739/20261118"
+  },
+  "48760": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T12:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T12:45:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 2",
+   "start": "2026-11-18T12:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48760/20261118"
+  },
+  "48761": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-18T20:00:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 1",
+   "start": "2026-11-18T19:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48761/20261118"
   }
  },
  "20261119": {
@@ -2498,9 +2806,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:31:39+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2574,9 +2892,19 @@
     "DIAMOND 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:31:39+05:30",
+     "history": [
+      [
+       "2026-11-15T18:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 230.0,
+     "sold_out_at": "2026-11-15T18:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T18:50:53+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -2668,7 +2996,7 @@
    "end": "2026-11-19T19:00:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -2782,7 +3110,7 @@
    "end": "2026-11-19T15:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2858,7 +3186,7 @@
    "end": "2026-11-19T22:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2896,7 +3224,7 @@
    "end": "2026-11-19T12:15:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2972,7 +3300,7 @@
    "end": "2026-11-19T19:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T22:31:39+05:30",
-   "genre": "Action,Adventure,Drama",
+   "genre": "Action,Adventure,Drama,Mythological",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -3023,7 +3351,83 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48755/20261119"
+  },
+  "48762": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-19T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-19T20:00:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 1",
+   "start": "2026-11-19T19:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48762/20261119"
+  },
+  "48763": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T18:50:53+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-19T12:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-19T12:45:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T18:50:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 2",
+   "start": "2026-11-19T12:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48763/20261119"
   }
  },
- "_updated": "2026-11-15T18:01:05+05:30"
+ "_updated": "2026-11-15T18:50:53+05:30"
 }

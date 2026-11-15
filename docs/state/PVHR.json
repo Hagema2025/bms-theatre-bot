@@ -304,9 +304,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T03:10:57+05:30",
+     "history": [
+      [
+       "2026-11-15T16:31:22+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-15T16:31:22+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -633,12 +642,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-15T16:31:22+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-15T16:01:05+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T16:31:22+05:30"
     }
    },
    "cutoff": "2026-11-15T17:00:00+05:30",
@@ -1397,7 +1412,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T10:50:53+05:30",
      "price": 99.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
@@ -1418,7 +1433,7 @@
       ]
      ],
      "price": 242.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T00:20:52+05:30"
     }
@@ -2012,12 +2027,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T16:31:22+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-15T16:20:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T16:31:22+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3424,6 +3445,150 @@
    "time": "04:35 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46341/20261116"
+  },
+  "46342": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T20:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T20:10:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 10",
+   "start": "2026-11-16T19:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46342/20261116"
+  },
+  "46343": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 143,
+   "end": "2026-11-16T23:15:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1794657347",
+   "screen": "AUDI 10",
+   "start": "2026-11-16T22:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/46343/20261116"
+  },
+  "46350": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T11:15:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-16T11:00:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "AUDI 07",
+   "start": "2026-11-16T10:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/PVHR/46350/20261116"
+  },
+  "46351": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T13:55:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-16T13:40:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 07",
+   "start": "2026-11-16T13:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46351/20261116"
   }
  },
  "20261117": {
@@ -5112,6 +5277,258 @@
    "time": "10:25 PM",
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45418/20261117"
+  },
+  "46344": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T17:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T17:05:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 10",
+   "start": "2026-11-17T16:35:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46344/20261117"
+  },
+  "46345": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T20:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T20:10:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 10",
+   "start": "2026-11-17T19:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46345/20261117"
+  },
+  "46346": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 143,
+   "end": "2026-11-17T23:15:00+05:30",
+   "event_code": "ET00514068",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Action,Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Itllu Arjuna",
+   "poster": "itllu-arjuna-et00514068-1794657347",
+   "screen": "AUDI 10",
+   "start": "2026-11-17T22:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/46346/20261117"
+  },
+  "46352": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T14:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-17T14:25:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI 07",
+   "start": "2026-11-17T13:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46352/20261117"
+  },
+  "46353": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T17:45:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-17T17:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "AUDI 07",
+   "start": "2026-11-17T17:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "05:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/PVHR/46353/20261117"
+  },
+  "46354": {
+   "censor": "A",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T20:25:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-17T20:10:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1794734666",
+   "screen": "AUDI 07",
+   "start": "2026-11-17T19:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/PVHR/46354/20261117"
+  },
+  "46355": {
+   "censor": "A",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T23:00:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-17T22:45:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-15T16:31:22+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1794734666",
+   "screen": "AUDI 07",
+   "start": "2026-11-17T22:15:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/PVHR/46355/20261117"
   }
  },
  "20261118": {
@@ -6882,5 +7299,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45423/20261118"
   }
  },
- "_updated": "2026-11-15T16:20:49+05:30"
+ "_updated": "2026-11-15T16:31:22+05:30"
 }

@@ -579,7 +579,7 @@
      "price": 183.8,
      "reopened_at": "2026-11-13T20:10:53+05:30",
      "sold_out_at": "2026-11-13T19:40:52+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3",
      "status_changed_at": "2026-11-13T20:10:53+05:30"
     }
@@ -611,7 +611,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T09:40:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -942,9 +942,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:31:19+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-16T14:55:00+05:30",
@@ -1985,9 +1995,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T21:10:47+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-16T19:50:00+05:30",
@@ -2009,6 +2029,68 @@
    "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242667/20261116"
+  },
+  "242675": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-16T15:15:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "SCREEN 2",
+   "start": "2026-11-16T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/MAYJ/242675/20261116"
+  },
+  "242679": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-16T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-16T20:10:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-16T19:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242679/20261116"
   }
  },
  "20261117": {
@@ -2204,9 +2286,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:31:19+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-17T14:55:00+05:30",
@@ -3247,9 +3339,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T21:10:47+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-17T19:50:00+05:30",
@@ -3271,6 +3373,68 @@
    "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242669/20261117"
+  },
+  "242676": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-17T15:15:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "SCREEN 2",
+   "start": "2026-11-17T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/MAYJ/242676/20261117"
+  },
+  "242680": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-17T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-17T20:10:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-17T19:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242680/20261117"
   }
  },
  "20261118": {
@@ -3466,9 +3630,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:31:19+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-18T14:55:00+05:30",
@@ -4509,9 +4683,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T21:10:47+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-18T19:50:00+05:30",
@@ -4533,6 +4717,68 @@
    "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242671/20261118"
+  },
+  "242677": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-18T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-18T15:15:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "SCREEN 2",
+   "start": "2026-11-18T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/MAYJ/242677/20261118"
+  },
+  "242681": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-18T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-18T20:10:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-18T19:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242681/20261118"
   }
  },
  "20261119": {
@@ -4728,9 +4974,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:31:19+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-19T14:55:00+05:30",
@@ -5771,9 +6027,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T21:10:47+05:30",
+     "history": [
+      [
+       "2026-11-15T22:01:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T22:01:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T22:01:18+05:30"
     }
    },
    "cutoff": "2026-11-19T19:50:00+05:30",
@@ -5795,7 +6061,69 @@
    "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242673/20261119"
+  },
+  "242678": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-19T15:15:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "SCREEN 2",
+   "start": "2026-11-19T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/MAYJ/242678/20261119"
+  },
+  "242682": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T22:01:18+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-19T20:10:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-15T22:01:18+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-19T19:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242682/20261119"
   }
  },
- "_updated": "2026-11-15T21:40:55+05:30"
+ "_updated": "2026-11-15T22:01:18+05:30"
 }

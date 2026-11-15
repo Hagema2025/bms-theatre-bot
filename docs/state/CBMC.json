@@ -472,14 +472,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 233.8,
-     "reopened_at": "2026-11-15T13:20:59+05:30",
+     "reopened_at": "2026-11-15T13:40:50+05:30",
      "sold_out_at": "2026-11-15T13:31:20+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T13:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -787,13 +793,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 233.8,
+     "reopened_at": "2026-11-15T13:40:50+05:30",
      "sold_out_at": "2026-11-15T11:01:03+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-15T11:01:03+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1118,12 +1131,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T13:40:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T12:40:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1256,12 +1276,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-15T10:40:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1458,13 +1484,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 183.8,
+     "reopened_at": "2026-11-15T13:40:50+05:30",
      "sold_out_at": "2026-11-15T13:20:59+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T13:20:59+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2048,12 +2081,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T13:40:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T13:40:50+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-14T20:50:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T13:40:50+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2543,7 +2583,7 @@
    "end": "2026-11-16T22:50:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2615,7 +2655,7 @@
    "end": "2026-11-16T15:40:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2822,7 +2862,7 @@
    "end": "2026-11-16T14:40:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -2858,7 +2898,7 @@
    "end": "2026-11-16T18:40:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -2894,7 +2934,7 @@
    "end": "2026-11-16T22:40:00+05:30",
    "event_code": "ET00493076",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
@@ -3120,7 +3160,7 @@
    "end": "2026-11-16T11:30:00+05:30",
    "event_code": "ET00518313",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
@@ -3192,7 +3232,7 @@
    "end": "2026-11-16T21:45:00+05:30",
    "event_code": "ET00518312",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Telugu",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
@@ -3228,7 +3268,7 @@
    "end": "2026-11-16T18:50:00+05:30",
    "event_code": "ET00518313",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
@@ -3300,7 +3340,7 @@
    "end": "2026-11-16T14:45:00+05:30",
    "event_code": "ET00451914",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Hindi",
    "movie": "Ramayana",
    "poster": "ramayana-et00451914-1793772172",
@@ -3690,7 +3730,7 @@
    "end": "2026-11-16T12:20:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -3762,7 +3802,7 @@
    "end": "2026-11-16T19:30:00+05:30",
    "event_code": "ET00523997",
    "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
+   "genre": "Action,Adventure,Drama",
    "language": "Tamil",
    "movie": "Ramayana",
    "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
@@ -7602,5 +7642,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-15T13:31:20+05:30"
+ "_updated": "2026-11-15T13:40:50+05:30"
 }

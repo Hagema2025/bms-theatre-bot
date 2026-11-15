@@ -163,12 +163,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T23:01:05+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T22:50:54+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T23:01:05+05:30"
     }
    },
    "cutoff": "2026-11-15T23:25:00+05:30",
@@ -355,81 +361,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45247/20261115"
-  },
-  "45269": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T10:50:53+05:30",
-     "price": 99.43,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T10:50:53+05:30",
-     "history": [
-      [
-       "2026-11-15T15:01:06+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T17:20:50+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-15T18:20:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T19:31:20+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-15T20:10:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T20:31:21+05:30",
-       "s",
-       "2",
-       "3"
-      ]
-     ],
-     "price": 242.49,
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-15T20:31:21+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T23:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T23:00:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-11T10:50:53+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI 08",
-   "start": "2026-11-15T22:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/45269/20261115"
   },
   "45277": {
    "censor": "UA16+",
@@ -6202,5 +6133,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-15T22:50:54+05:30"
+ "_updated": "2026-11-15T23:01:05+05:30"
 }

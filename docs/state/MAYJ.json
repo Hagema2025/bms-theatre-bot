@@ -6,9 +6,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-09T22:10:54+05:30",
+     "history": [
+      [
+       "2026-11-15T23:01:05+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T23:01:05+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-15T23:01:05+05:30"
     }
    },
    "cutoff": "2026-11-15T22:50:00+05:30",
@@ -72,37 +82,6 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/MAYJ/242291/20261115"
   },
-  "242303": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:01:08+05:30",
-     "price": 219.2,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-15T22:40:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T23:00:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-11T16:01:08+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 3",
-   "start": "2026-11-15T22:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242303/20261115"
-  },
   "242315": {
    "censor": "U",
    "classes": {
@@ -134,37 +113,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242315/20261115"
   },
-  "242327": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T17:10:53+05:30",
-     "price": 202.5,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-15T22:40:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-15T23:00:00+05:30",
-   "event_code": "ET00451914",
-   "first_seen": "2026-11-11T17:10:53+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "ramayana-et00451914-1793772172",
-   "screen": "SCREEN 4",
-   "start": "2026-11-15T22:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/MAYJ/242327/20261115"
-  },
   "242339": {
    "censor": "UA16+",
    "classes": {
@@ -195,37 +143,6 @@
    "time": "11:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242339/20261115"
-  },
-  "242348": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS 3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T16:10:51+05:30",
-     "price": 237.9,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-15T22:40:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T23:00:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-11T16:10:51+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "SCREEN 6",
-   "start": "2026-11-15T22:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/242348/20261115"
   },
   "242366": {
    "censor": "UA16+",
@@ -6103,5 +6020,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242682/20261119"
   }
  },
- "_updated": "2026-11-15T22:50:54+05:30"
+ "_updated": "2026-11-15T23:01:05+05:30"
 }

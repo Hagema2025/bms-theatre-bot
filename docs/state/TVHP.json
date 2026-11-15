@@ -70,12 +70,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-15T20:20:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-15T17:01:05+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T20:20:52+05:30"
     }
    },
    "cutoff": "2026-11-15T22:05:00+05:30",
@@ -138,59 +144,6 @@
    "time": "11:15 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/TVHP/26594/20261115"
-  },
-  "26600": {
-   "censor": "UA16+",
-   "classes": {
-    "ELITE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T13:20:50+05:30",
-     "history": [
-      [
-       "2026-11-15T13:01:04+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T15:01:06+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T18:50:53+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.0,
-     "sold_out_at": "2026-11-15T18:50:53+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T18:50:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T20:35:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-15T20:20:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-14T13:20:50+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 1",
-   "start": "2026-11-15T19:50:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "07:50 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26600/20261115"
   },
   "26607": {
    "censor": "U",
@@ -1822,5 +1775,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26611/20261119"
   }
  },
- "_updated": "2026-11-15T20:10:52+05:30"
+ "_updated": "2026-11-15T20:20:52+05:30"
 }

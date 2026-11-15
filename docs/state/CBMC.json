@@ -1113,97 +1113,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16037/20261115"
   },
-  "16039": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-10T17:20:56+05:30",
-     "history": [
-      [
-       "2026-11-14T22:50:50+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T12:40:54+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T13:40:50+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-15T13:40:50+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T13:40:50+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-10T17:20:56+05:30",
-     "history": [
-      [
-       "2026-11-15T10:31:19+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-15T11:20:49+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T11:31:26+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-15T10:31:19+05:30",
-     "sold_out_at": "2026-11-15T11:31:26+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T11:31:26+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T13:35:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-15T13:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-10T17:20:56+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI07",
-   "start": "2026-11-15T13:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "01:20 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "NORMAL": "2026-11-10T17:20:56+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-10T17:20:56+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16039/20261115"
-  },
   "16040": {
    "censor": "UA16+",
    "classes": {
@@ -4085,6 +3994,42 @@
    "time": "11:20 AM",
    "trailer": "https://www.youtube.com/watch?v=bwFwsUHq-_k",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00069291/CBMC/16275/20261116"
+  },
+  "16283": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-15T13:50:51+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-15T13:50:51+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-16T13:15:00+05:30",
+   "dimension": "2D",
+   "duration": 115,
+   "end": "2026-11-16T13:30:00+05:30",
+   "event_code": "ET00513613",
+   "first_seen": "2026-11-15T13:50:51+05:30",
+   "genre": "Mystery,Thriller",
+   "language": "Malayalam",
+   "movie": "Bouma",
+   "poster": "bouma-et00513613-1787311528",
+   "screen": "AUDI03",
+   "start": "2026-11-16T13:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16283/20261116"
   }
  },
  "20261117": {
@@ -7642,5 +7587,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-15T13:40:50+05:30"
+ "_updated": "2026-11-15T13:50:51+05:30"
 }

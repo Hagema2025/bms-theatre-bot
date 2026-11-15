@@ -425,14 +425,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-15T15:10:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 89.35,
      "reopened_at": "2026-11-15T14:50:48+05:30",
-     "sold_out_at": "2026-11-15T14:40:50+05:30",
+     "sold_out_at": "2026-11-15T15:10:50+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-15T14:50:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T15:10:50+05:30"
     }
    },
    "cutoff": "2026-11-15T20:40:00+05:30",
@@ -1201,7 +1207,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "SCREEN 6",
    "start": "2026-11-15T18:45:00+05:30",
    "subs": "ENG subs",
@@ -1351,12 +1357,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T15:10:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 210.98,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T15:01:06+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-15T15:10:50+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2652,7 +2664,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "SCREEN 6",
    "start": "2026-11-16T18:45:00+05:30",
    "subs": "ENG subs",
@@ -3280,7 +3292,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "SCREEN 6",
    "start": "2026-11-17T18:45:00+05:30",
    "subs": "ENG subs",
@@ -3770,7 +3782,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "SCREEN 6",
    "start": "2026-11-18T18:45:00+05:30",
    "subs": "ENG subs",
@@ -3996,5 +4008,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93095/20261118"
   }
  },
- "_updated": "2026-11-15T15:01:06+05:30"
+ "_updated": "2026-11-15T15:10:50+05:30"
 }

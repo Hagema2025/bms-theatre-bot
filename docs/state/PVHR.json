@@ -330,12 +330,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T15:10:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-15T15:10:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T10:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T15:10:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1531,61 +1538,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45253/20261115"
   },
-  "45258": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T03:10:57+05:30",
-     "history": [
-      [
-       "2026-11-15T15:01:06+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-15T15:01:06+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T03:10:57+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-15T15:20:00+05:30",
-   "dimension": "2D",
-   "duration": 105,
-   "end": "2026-11-15T15:05:00+05:30",
-   "event_code": "ET00069291",
-   "first_seen": "2026-11-11T03:10:57+05:30",
-   "genre": "Comedy,Romantic",
-   "language": "Tamil",
-   "movie": "Titanic",
-   "poster": "titanic-et00069291-1792046229",
-   "screen": "AUDI 07",
-   "start": "2026-11-15T14:35:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:35 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "CLASSIC": "2026-11-11T03:10:57+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T03:10:57+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=bwFwsUHq-_k",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00069291/PVHR/45258/20261115"
-  },
   "45259": {
    "censor": "UA16+",
    "classes": {
@@ -1732,7 +1684,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-15T19:45:00+05:30",
    "subs": "ENG subs",
@@ -1768,7 +1720,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-15T22:20:00+05:30",
    "subs": "ENG subs",
@@ -1950,7 +1902,7 @@
      "price": 183.8,
      "reopened_at": "2026-11-13T11:31:20+05:30",
      "sold_out_at": "2026-11-12T21:20:53+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-15T14:20:51+05:30"
     }
@@ -2163,114 +2115,6 @@
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45277/20261115"
   },
-  "45283": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T13:50:52+05:30",
-     "history": [
-      [
-       "2026-11-15T09:40:46+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T09:50:49+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-15T10:50:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T11:50:54+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T13:31:20+05:30",
-       "s",
-       "1",
-       "0"
-      ],
-      [
-       "2026-11-15T14:01:07+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-15T14:20:51+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 89.35,
-     "reopened_at": "2026-11-15T14:01:07+05:30",
-     "sold_out_at": "2026-11-15T14:20:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T14:20:51+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T13:50:52+05:30",
-     "history": [
-      [
-       "2026-11-14T15:31:17+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-14T22:20:53+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 218.8,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-14T22:20:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T15:20:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T15:05:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-14T13:50:52+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI 04",
-   "start": "2026-11-15T14:35:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:35 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "CLASSIC": "2026-11-14T13:50:52+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-14T13:50:52+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45283/20261115"
-  },
   "45284": {
    "censor": "U",
    "classes": {
@@ -2405,12 +2249,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T15:10:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-15T15:10:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T10:20:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T15:10:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3459,7 +3310,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-16T19:05:00+05:30",
    "subs": "ENG subs",
@@ -3495,7 +3346,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-16T21:40:00+05:30",
    "subs": "ENG subs",
@@ -6713,7 +6564,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-18T19:05:00+05:30",
    "subs": "ENG subs",
@@ -6783,7 +6634,7 @@
    "genre": "Mystery,Thriller",
    "language": "Malayalam",
    "movie": "Bouma",
-   "poster": "bouma-et00513613-1787311528",
+   "poster": "bouma-et00513613-1794734666",
    "screen": "AUDI 07",
    "start": "2026-11-18T21:40:00+05:30",
    "subs": "ENG subs",
@@ -7321,5 +7172,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45423/20261118"
   }
  },
- "_updated": "2026-11-15T15:01:06+05:30"
+ "_updated": "2026-11-15T15:10:50+05:30"
 }

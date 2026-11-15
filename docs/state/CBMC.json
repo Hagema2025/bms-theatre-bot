@@ -781,7 +781,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-11T18:01:07+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -865,99 +865,6 @@
    ],
    "trailer": "youtube.com/watch?si=hrYsm8NG7wJuh9ZH&v=lv8PRGQ6fRM&feature=youtu.be",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525569/CBMC/16109/20261115"
-  },
-  "16163": {
-   "censor": "A",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:10:47+05:30",
-     "history": [
-      [
-       "2026-11-15T00:20:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T15:40:47+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T15:50:52+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-15T16:01:05+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T19:40:48+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 202.49,
-     "sold_out_at": "2026-11-15T19:40:48+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-15T19:40:48+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:10:47+05:30",
-     "history": [
-      [
-       "2026-11-14T19:20:52+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-15T02:01:10+05:30",
-       "s",
-       "3",
-       "1"
-      ],
-      [
-       "2026-11-15T12:01:07+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 59.43,
-     "reopened_at": "2026-11-14T19:20:52+05:30",
-     "sold_out_at": "2026-11-15T12:01:07+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-15T12:01:07+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T19:35:00+05:30",
-   "dimension": "2D",
-   "duration": 115,
-   "end": "2026-11-15T19:50:00+05:30",
-   "event_code": "ET00513613",
-   "first_seen": "2026-11-13T14:10:47+05:30",
-   "genre": "Mystery,Thriller",
-   "language": "Malayalam",
-   "movie": "Bouma",
-   "poster": "bouma-et00513613-1794734666",
-   "screen": "AUDI02",
-   "start": "2026-11-15T19:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "07:20 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16163/20261115"
   },
   "16262": {
    "censor": "UA16+",
@@ -6219,5 +6126,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-15T19:40:48+05:30"
+ "_updated": "2026-11-15T19:50:48+05:30"
 }

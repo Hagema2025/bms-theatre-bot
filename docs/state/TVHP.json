@@ -1,75 +1,5 @@
 {
  "20261115": {
-  "26492": {
-   "censor": "U",
-   "classes": {
-    "ELITE+3D": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-09T22:10:54+05:30",
-     "history": [
-      [
-       "2026-11-12T14:31:26+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-12T17:10:53+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-12T18:10:48+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-13T18:10:50+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-14T10:50:50+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T11:20:49+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 218.0,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T11:20:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T16:55:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-15T16:40:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-09T22:10:54+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "SCREEN 5",
-   "start": "2026-11-15T16:10:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY ATMOS"
-   ],
-   "time": "04:10 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26492/20261115"
-  },
   "26493": {
    "censor": "U",
    "classes": {
@@ -217,12 +147,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-15T16:40:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-15T12:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-15T16:40:50+05:30"
     }
    },
    "cutoff": "2026-11-15T20:00:00+05:30",
@@ -1992,5 +1928,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26611/20261119"
   }
  },
- "_updated": "2026-11-15T16:20:49+05:30"
+ "_updated": "2026-11-15T16:40:50+05:30"
 }

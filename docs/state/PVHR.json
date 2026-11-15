@@ -305,7 +305,7 @@
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T10:50:51+05:30"
     },
@@ -363,7 +363,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T04:50:51+05:30"
     }
@@ -1936,14 +1936,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-15T14:10:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-15T13:31:20+05:30",
-     "sold_out_at": "2026-11-14T22:11:01+05:30",
+     "sold_out_at": "2026-11-15T14:10:48+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T13:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T14:10:48+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -2537,7 +2543,7 @@
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T10:20:50+05:30"
     },
@@ -2559,7 +2565,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-15T12:01:07+05:30"
     }
@@ -7444,5 +7450,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45423/20261118"
   }
  },
- "_updated": "2026-11-15T14:01:07+05:30"
+ "_updated": "2026-11-15T14:10:48+05:30"
 }

@@ -1678,12 +1678,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-15T14:10:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-15T14:10:48+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T11:31:26+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-15T14:10:48+05:30"
     }
    },
    "cutoff": "2026-11-15T14:20:00+05:30",
@@ -2196,47 +2203,6 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242464/20261115"
-  },
-  "242471": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T09:40:54+05:30",
-     "history": [
-      [
-       "2026-11-13T19:40:52+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-13T19:40:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-13T19:40:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T13:50:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-15T14:10:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T09:40:54+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 10",
-   "start": "2026-11-15T13:40:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242471/20261115"
   },
   "242472": {
    "censor": "UA16+",
@@ -7851,5 +7817,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242673/20261119"
   }
  },
- "_updated": "2026-11-15T14:01:07+05:30"
+ "_updated": "2026-11-15T14:10:48+05:30"
 }

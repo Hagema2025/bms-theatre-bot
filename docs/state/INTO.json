@@ -772,7 +772,7 @@
      "price": 94.43,
      "reopened_at": "2026-11-11T08:01:09+05:30",
      "sold_out_at": "2026-11-11T07:31:24+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-15T11:20:49+05:30"
     }
@@ -1103,102 +1103,6 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/92967/20261115"
-  },
-  "92974": {
-   "censor": "A",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:31:28+05:30",
-     "history": [
-      [
-       "2026-11-14T17:50:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T15:01:06+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T15:10:50+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-15T15:20:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-15T16:20:49+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-15T16:31:22+05:30",
-       "s",
-       "2",
-       "1"
-      ]
-     ],
-     "price": 210.98,
-     "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-15T16:31:22+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-11T02:31:28+05:30",
-     "history": [
-      [
-       "2026-11-15T16:01:05+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 61.74,
-     "reopened_at": "2026-11-15T16:01:05+05:30",
-     "sold_out_at": "2026-11-11T13:20:55+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-15T16:01:05+05:30"
-    }
-   },
-   "cutoff": "2026-11-15T17:15:00+05:30",
-   "dimension": "2D",
-   "duration": 130,
-   "end": "2026-11-15T17:00:00+05:30",
-   "event_code": "ET00508520",
-   "first_seen": "2026-11-11T02:31:28+05:30",
-   "genre": "Biography,Drama",
-   "language": "English",
-   "movie": "I Play Rocky",
-   "poster": "i-play-rocky-et00508520-1784704530",
-   "screen": "SCREEN 8",
-   "start": "2026-11-15T16:30:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "04:30 PM",
-   "tracked_by_rules": [
-    {
-     "cats": {
-      "EXECUTIVE": "2026-11-11T02:31:28+05:30"
-     },
-     "rule": "Weekend vibes",
-     "rule_id": "rmw9hsgbj5m8",
-     "tracked_at": "2026-11-11T02:31:28+05:30"
-    }
-   ],
-   "trailer": "https://www.youtube.com/watch?v=0BkSLX9zDy0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00508520/INTO/92974/20261115"
   },
   "92975": {
    "censor": "UA13+",
@@ -3842,5 +3746,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93098/20261118"
   }
  },
- "_updated": "2026-11-15T16:50:49+05:30"
+ "_updated": "2026-11-15T17:01:05+05:30"
 }

@@ -36,14 +36,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-15T15:31:16+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 218.8,
-     "reopened_at": "2026-11-15T11:20:49+05:30",
+     "reopened_at": "2026-11-15T15:31:16+05:30",
      "sold_out_at": "2026-11-15T13:01:04+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-15T13:01:04+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-15T15:31:16+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -1379,7 +1385,7 @@
    },
    "cutoff": "2026-11-15T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-15T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-11T02:31:28+05:30",
@@ -2755,7 +2761,7 @@
    },
    "cutoff": "2026-11-16T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-16T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -3404,7 +3410,7 @@
    },
    "cutoff": "2026-11-17T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-17T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -3930,7 +3936,7 @@
    },
    "cutoff": "2026-11-18T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-18T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -4055,5 +4061,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93098/20261118"
   }
  },
- "_updated": "2026-11-15T15:20:50+05:30"
+ "_updated": "2026-11-15T15:31:16+05:30"
 }

@@ -6,9 +6,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:10:48+05:30",
+     "history": [
+      [
+       "2026-11-16T23:31:26+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-16T23:31:26+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T23:31:26+05:30"
     }
    },
    "cutoff": "2026-11-16T23:20:00+05:30",
@@ -61,78 +71,6 @@
    "time": "11:15 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/242553/20261116"
-  },
-  "242575": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T20:40:50+05:30",
-     "history": [
-      [
-       "2026-11-14T20:50:50+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 202.5,
-     "sold_out_at": "2026-11-14T20:50:50+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-14T20:50:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-16T23:10:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-16T23:30:00+05:30",
-   "event_code": "ET00451914",
-   "first_seen": "2026-11-14T20:40:50+05:30",
-   "genre": "Action,Adventure,Drama,Mythological",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "ramayana-et00451914-1793772172",
-   "screen": "SCREEN 4",
-   "start": "2026-11-16T23:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "11:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/MAYJ/242575/20261116"
-  },
-  "242648": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T20:50:50+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-16T23:10:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-16T23:30:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-14T20:50:50+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 10",
-   "start": "2026-11-16T23:00:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "11:00 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242648/20261116"
   }
  },
  "20261117": {
@@ -5766,5 +5704,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242722/20261119"
   }
  },
- "_updated": "2026-11-16T23:20:53+05:30"
+ "_updated": "2026-11-16T23:31:26+05:30"
 }

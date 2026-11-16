@@ -540,51 +540,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45313/20261116"
   },
-  "45314": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "history": [
-      [
-       "2026-11-16T11:10:52+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-16T11:10:52+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-16T11:45:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-16T11:30:00+05:30",
-   "event_code": "ET00518313",
-   "first_seen": "2026-11-15T11:40:48+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
-   "screen": "AUDI 05",
-   "start": "2026-11-16T11:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "11:00 AM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/PVHR/45314/20261116"
-  },
   "45315": {
    "censor": "U",
    "classes": {
@@ -1192,7 +1147,7 @@
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-16T09:31:17+05:30"
     },
@@ -1200,7 +1155,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T11:50:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -5382,5 +5337,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-16T11:10:52+05:30"
+ "_updated": "2026-11-16T11:31:21+05:30"
 }

@@ -300,14 +300,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-16T17:01:10+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-16T16:01:10+05:30",
+     "reopened_at": "2026-11-16T17:01:10+05:30",
      "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-16T16:50:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-16T17:01:10+05:30"
     }
    },
    "cutoff": "2026-11-16T17:10:00+05:30",
@@ -327,52 +333,6 @@
    "time": "04:55 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16139/20261116"
-  },
-  "16146": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-14T18:11:06+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 210.98,
-     "sold_out_at": "2026-11-14T18:11:06+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:11:06+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "price": 61.74,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-16T16:40:00+05:30",
-   "dimension": "2D",
-   "duration": 92,
-   "end": "2026-11-16T16:55:00+05:30",
-   "event_code": "ET00518333",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Thriller",
-   "language": "English",
-   "movie": "Ghost Soldier",
-   "poster": "ghost-soldier-et00518333-1789986369",
-   "screen": "AUDI03",
-   "start": "2026-11-16T16:25:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "04:25 PM",
-   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16146/20261116"
   },
   "16147": {
    "censor": "UA16+",
@@ -856,7 +816,7 @@
       ]
      ],
      "price": 233.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-15T23:10:49+05:30"
     },
@@ -4636,5 +4596,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-16T16:50:51+05:30"
+ "_updated": "2026-11-16T17:01:10+05:30"
 }

@@ -638,9 +638,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
+     "history": [
+      [
+       "2026-11-16T16:20:52+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 61.74,
      "soon_alerted": false,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-16T16:20:52+05:30"
     }
    },
    "cutoff": "2026-11-16T20:20:00+05:30",
@@ -706,122 +715,6 @@
    "time": "10:35 PM",
    "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/93040/20261116"
-  },
-  "93050": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T13:40:50+05:30",
-     "history": [
-      [
-       "2026-11-16T15:41:05+05:30",
-       "s",
-       "3",
-       "2"
-      ]
-     ],
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-16T15:41:05+05:30"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T13:40:50+05:30",
-     "history": [
-      [
-       "2026-11-15T14:01:07+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T14:20:51+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-15T16:40:50+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-15T22:20:51+05:30",
-       "s",
-       "2",
-       "0"
-      ],
-      [
-       "2026-11-15T22:31:24+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-15T22:40:52+05:30",
-       "s",
-       "2",
-       "0"
-      ],
-      [
-       "2026-11-15T22:50:54+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-15T23:10:49+05:30",
-       "s",
-       "2",
-       "0"
-      ],
-      [
-       "2026-11-15T23:20:55+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-15T23:50:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-16T08:31:23+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-15T23:20:55+05:30",
-     "sold_out_at": "2026-11-16T08:31:23+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T08:31:23+05:30"
-    }
-   },
-   "cutoff": "2026-11-16T16:30:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-16T16:15:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-15T13:40:50+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 7",
-   "start": "2026-11-16T15:45:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "03:45 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93050/20261116"
   },
   "93051": {
    "censor": "UA16+",
@@ -3694,5 +3587,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-16T16:10:50+05:30"
+ "_updated": "2026-11-16T16:20:52+05:30"
 }

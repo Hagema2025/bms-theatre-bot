@@ -294,13 +294,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-16T16:01:10+05:30",
+     "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-16T16:40:56+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     }
    },
    "cutoff": "2026-11-16T17:10:00+05:30",
@@ -755,13 +762,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-16T15:51:04+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-16T16:40:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     }
    },
    "cutoff": "2026-11-16T17:05:00+05:30",
@@ -2152,9 +2165,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:20:57+05:30",
+     "history": [
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2188,9 +2211,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:31:18+05:30",
+     "history": [
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2459,9 +2492,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3688,9 +3731,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:31:18+05:30",
+     "history": [
+      [
+       "2026-11-16T16:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-16T16:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T16:50:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4583,5 +4636,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16278/20261119"
   }
  },
- "_updated": "2026-11-16T16:40:56+05:30"
+ "_updated": "2026-11-16T16:50:51+05:30"
 }

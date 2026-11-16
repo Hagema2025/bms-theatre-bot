@@ -341,58 +341,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/93028/20261116"
   },
-  "93039": {
-   "censor": "UA13+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "price": 210.98,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "history": [
-      [
-       "2026-11-16T16:20:52+05:30",
-       "s",
-       "3",
-       "1"
-      ],
-      [
-       "2026-11-16T17:01:10+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 61.74,
-     "sold_out_at": "2026-11-16T17:01:10+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T17:01:10+05:30"
-    }
-   },
-   "cutoff": "2026-11-16T20:20:00+05:30",
-   "dimension": "2D",
-   "duration": 0,
-   "end": "2026-11-16T20:05:00+05:30",
-   "event_code": "ET00516584",
-   "first_seen": "2026-11-15T12:01:07+05:30",
-   "genre": "Adventure,Animation,Fantasy",
-   "language": "English",
-   "movie": "Wildwood",
-   "poster": "wildwood-et00516584-1789022312",
-   "screen": "SCREEN 8",
-   "start": "2026-11-16T19:35:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "07:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=wwvxi4T5y_A",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516584/INTO/93039/20261116"
-  },
   "93040": {
    "censor": "UA16+",
    "classes": {
@@ -2454,12 +2402,19 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-16T20:11:03+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T20:11:03+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-16T12:40:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-16T20:11:03+05:30"
     }
    },
    "cutoff": "2026-11-18T16:30:00+05:30",
@@ -2529,9 +2484,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-16T20:11:03+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T20:11:03+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T20:11:03+05:30"
     }
    },
    "cutoff": "2026-11-18T12:15:00+05:30",
@@ -2605,9 +2570,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-16T20:11:03+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T20:11:03+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T20:11:03+05:30"
     }
    },
    "cutoff": "2026-11-18T20:05:00+05:30",
@@ -2717,9 +2692,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-16T20:11:03+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T20:11:03+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T20:11:03+05:30"
     }
    },
    "cutoff": "2026-11-18T16:20:00+05:30",
@@ -2829,9 +2814,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-16T20:11:03+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T20:11:03+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T20:11:03+05:30"
     }
    },
    "cutoff": "2026-11-18T15:55:00+05:30",
@@ -3219,5 +3214,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-16T20:01:11+05:30"
+ "_updated": "2026-11-16T20:11:03+05:30"
 }

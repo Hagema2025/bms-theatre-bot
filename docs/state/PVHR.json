@@ -1,41 +1,5 @@
 {
  "20261116": {
-  "45298": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-16T12:05:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-16T11:50:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-15T11:40:48+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 01",
-   "start": "2026-11-16T11:20:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "11:20 AM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45298/20261116"
-  },
   "45299": {
    "censor": "UA16+",
    "classes": {
@@ -994,9 +958,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T11:50:54+05:30",
+     "history": [
+      [
+       "2026-11-16T11:50:50+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-16T11:50:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1291,9 +1264,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T16:31:22+05:30",
+     "history": [
+      [
+       "2026-11-16T11:50:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-16T11:50:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5337,5 +5319,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-16T11:31:21+05:30"
+ "_updated": "2026-11-16T11:50:50+05:30"
 }

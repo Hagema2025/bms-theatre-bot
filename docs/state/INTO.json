@@ -485,12 +485,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-16T14:50:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T14:50:53+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-16T12:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-16T14:50:53+05:30"
     }
    },
    "cutoff": "2026-11-16T23:20:00+05:30",
@@ -1372,9 +1379,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
+     "history": [
+      [
+       "2026-11-16T14:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 94.43,
+     "sold_out_at": "2026-11-16T14:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T14:50:53+05:30"
     }
    },
    "cutoff": "2026-11-17T15:30:00+05:30",
@@ -1545,9 +1562,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
+     "history": [
+      [
+       "2026-11-16T14:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-16T14:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T14:50:53+05:30"
     }
    },
    "cutoff": "2026-11-17T16:15:00+05:30",
@@ -1807,9 +1834,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:10:51+05:30",
+     "history": [
+      [
+       "2026-11-16T14:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-16T14:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T14:50:53+05:30"
     }
    },
    "cutoff": "2026-11-17T13:00:00+05:30",
@@ -2227,9 +2264,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:10:51+05:30",
+     "history": [
+      [
+       "2026-11-16T14:50:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-16T14:50:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-16T14:50:53+05:30"
     }
    },
    "cutoff": "2026-11-17T11:45:00+05:30",
@@ -3975,5 +4022,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-16T14:40:50+05:30"
+ "_updated": "2026-11-16T14:50:53+05:30"
 }

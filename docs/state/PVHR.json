@@ -43,14 +43,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T11:40:48+05:30",
      "price": 89.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T11:40:48+05:30",
      "price": 218.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -107,42 +107,6 @@
    "time": "09:45 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45301/20261116"
-  },
-  "45302": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T11:40:48+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-16T12:40:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-16T12:25:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-15T11:40:48+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "AUDI 02",
-   "start": "2026-11-16T11:55:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "11:55 AM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/PVHR/45302/20261116"
   },
   "45303": {
    "censor": "UA16+",
@@ -5346,5 +5310,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-16T12:20:56+05:30"
+ "_updated": "2026-11-16T12:31:27+05:30"
 }

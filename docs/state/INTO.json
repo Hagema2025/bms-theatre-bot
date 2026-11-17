@@ -1394,12 +1394,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-17T20:31:32+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 89.35,
+     "sold_out_at": "2026-11-17T20:31:32+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-17T20:01:14+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:31:32+05:30"
     }
    },
    "cutoff": "2026-11-18T23:25:00+05:30",
@@ -2797,13 +2804,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-17T20:31:32+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 59.43,
+     "reopened_at": "2026-11-17T20:31:32+05:30",
      "sold_out_at": "2026-11-17T20:20:56+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-17T20:20:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-17T20:31:32+05:30"
     }
    },
    "cutoff": "2026-11-19T16:00:00+05:30",
@@ -3142,6 +3156,42 @@
    "trailer": "https://www.youtube.com/watch?v=wwvxi4T5y_A",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516584/INTO/93130/20261119"
   },
+  "93132": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:31:32+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:31:32+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 132,
+   "end": "2026-11-19T23:00:00+05:30",
+   "event_code": "ET00521598",
+   "first_seen": "2026-11-17T20:31:32+05:30",
+   "genre": "Action,Drama",
+   "language": "Malayalam",
+   "movie": "Bachelor Party D'eux",
+   "poster": "bachelor-party-d-eux-et00521598-1791544764",
+   "screen": "SCREEN 8",
+   "start": "2026-11-19T22:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/INTO/93132/20261119"
+  },
   "93133": {
    "censor": "UA16+",
    "classes": {
@@ -3287,5 +3337,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/93136/20261119"
   }
  },
- "_updated": "2026-11-17T20:20:56+05:30"
+ "_updated": "2026-11-17T20:31:32+05:30"
 }

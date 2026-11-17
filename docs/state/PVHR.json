@@ -1,41 +1,5 @@
 {
  "20261117": {
-  "45341": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 89.35,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 218.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T15:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-17T15:00:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-14T18:50:49+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI 01",
-   "start": "2026-11-17T14:30:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/45341/20261117"
-  },
   "45342": {
    "censor": "UA16+",
    "classes": {
@@ -254,12 +218,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-17T15:01:09+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-17T14:50:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-17T15:01:09+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -371,12 +341,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-17T15:01:09+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-17T14:50:55+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-17T15:01:09+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1406,14 +1382,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T16:31:22+05:30",
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T16:31:22+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -3553,5 +3529,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-17T14:50:55+05:30"
+ "_updated": "2026-11-17T15:01:09+05:30"
 }

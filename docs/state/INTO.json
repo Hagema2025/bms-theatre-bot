@@ -7,7 +7,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -585,52 +585,6 @@
    "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/INTO/93044/20261117"
   },
-  "93053": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "price": 122.44,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "history": [
-      [
-       "2026-11-16T14:50:53+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-16T14:50:53+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T14:50:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T13:00:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-17T12:45:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-16T12:10:51+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "SCREEN 7",
-   "start": "2026-11-17T12:15:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "12:15 PM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/INTO/93053/20261117"
-  },
   "93054": {
    "censor": "UA16+",
    "classes": {
@@ -864,12 +818,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-17T12:50:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-17T12:31:28+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-17T12:50:52+05:30"
     }
    },
    "cutoff": "2026-11-17T23:25:00+05:30",
@@ -1246,52 +1206,6 @@
    "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/93088/20261117"
-  },
-  "93094": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T13:40:50+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T13:40:50+05:30",
-     "history": [
-      [
-       "2026-11-16T14:20:50+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-16T14:20:50+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T14:20:50+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T13:00:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T12:45:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-15T13:40:50+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 6",
-   "start": "2026-11-17T12:15:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "12:15 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93094/20261117"
   },
   "93097": {
    "censor": "U",
@@ -2841,5 +2755,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-17T12:41:08+05:30"
+ "_updated": "2026-11-17T12:50:52+05:30"
 }

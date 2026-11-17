@@ -339,7 +339,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
      "price": 150.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL 3D": {
@@ -559,54 +559,6 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48723/20261117"
-  },
-  "48758": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T18:50:53+05:30",
-     "history": [
-      [
-       "2026-11-17T12:41:08+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 120.0,
-     "sold_out_at": "2026-11-17T12:41:08+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T12:41:08+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-15T18:50:53+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-17T12:30:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T12:45:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-15T18:50:53+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 2",
-   "start": "2026-11-17T12:15:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "12:15 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48758/20261117"
   },
   "48759": {
    "censor": "UA16+",
@@ -2059,5 +2011,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48763/20261119"
   }
  },
- "_updated": "2026-11-17T12:41:08+05:30"
+ "_updated": "2026-11-17T12:50:52+05:30"
 }

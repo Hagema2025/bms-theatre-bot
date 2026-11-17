@@ -789,54 +789,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93072/20261117"
   },
-  "93078": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "history": [
-      [
-       "2026-11-16T14:31:26+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-16T14:31:26+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T14:31:26+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T15:55:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T15:40:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-16T12:10:51+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 3",
-   "start": "2026-11-17T15:10:00+05:30",
-   "subs": "ENG subs",
-   "tags": [
-    "Atmos"
-   ],
-   "time": "03:10 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93078/20261117"
-  },
   "93079": {
    "censor": "U",
    "classes": {
@@ -1511,9 +1463,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
+     "history": [
+      [
+       "2026-11-17T15:40:51+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-17T15:40:51+05:30"
     }
    },
    "cutoff": "2026-11-18T22:15:00+05:30",
@@ -2632,5 +2593,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-17T15:31:23+05:30"
+ "_updated": "2026-11-17T15:40:51+05:30"
 }

@@ -351,52 +351,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/93032/20261117"
   },
-  "93041": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "history": [
-      [
-       "2026-11-16T15:01:23+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-16T15:01:23+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T15:01:23+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T14:15:00+05:30",
-   "dimension": "2D",
-   "duration": 121,
-   "end": "2026-11-17T14:00:00+05:30",
-   "event_code": "ET00504975",
-   "first_seen": "2026-11-15T12:01:07+05:30",
-   "genre": "Action,Crime,Thriller",
-   "language": "Tamil",
-   "movie": "Black Gold",
-   "poster": "black-gold-et00504975-1782478984",
-   "screen": "SCREEN 8",
-   "start": "2026-11-17T13:30:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "01:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/INTO/93041/20261117"
-  },
   "93042": {
    "censor": "A",
    "classes": {
@@ -1206,12 +1160,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-17T14:01:11+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-17T13:50:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-17T14:01:11+05:30"
     }
    },
    "cutoff": "2026-11-17T19:40:00+05:30",
@@ -2723,5 +2683,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-17T13:50:55+05:30"
+ "_updated": "2026-11-17T14:01:11+05:30"
 }

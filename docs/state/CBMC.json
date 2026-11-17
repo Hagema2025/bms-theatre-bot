@@ -127,9 +127,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-17T19:10:52+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-17T19:10:52+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-17T19:10:52+05:30"
     }
    },
    "cutoff": "2026-11-17T20:15:00+05:30",
@@ -185,69 +195,6 @@
    "time": "10:35 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16180/20261117"
-  },
-  "16183": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-14T07:10:47+05:30",
-       "s",
-       "3",
-       "0"
-      ],
-      [
-       "2026-11-14T12:31:20+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 183.8,
-     "reopened_at": "2026-11-14T12:31:20+05:30",
-     "sold_out_at": "2026-11-14T07:10:47+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T12:31:20+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-17T17:51:04+05:30",
-       "s",
-       "0",
-       "3"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-17T17:51:04+05:30",
-     "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-17T17:51:04+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T18:55:00+05:30",
-   "dimension": "2D",
-   "duration": 165,
-   "end": "2026-11-17T19:10:00+05:30",
-   "event_code": "ET00518674",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Thriller",
-   "language": "Tamil",
-   "movie": "Jailer 2",
-   "poster": "jailer-2-et00518674-1793799981",
-   "screen": "AUDI03",
-   "start": "2026-11-17T18:40:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "06:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/CBMC/16183/20261117"
   },
   "16184": {
    "censor": "UA16+",
@@ -343,9 +290,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-17T19:10:52+05:30",
+       "s",
+       "0",
+       "2"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-17T19:10:52+05:30",
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-17T19:10:52+05:30"
     }
    },
    "cutoff": "2026-11-17T20:20:00+05:30",
@@ -448,13 +405,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-17T19:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-17T18:20:49+05:30",
+     "sold_out_at": "2026-11-17T19:10:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-17T18:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-17T19:10:52+05:30"
     }
    },
    "cutoff": "2026-11-17T19:25:00+05:30",
@@ -3910,5 +3874,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-17T18:50:48+05:30"
+ "_updated": "2026-11-17T19:10:52+05:30"
 }

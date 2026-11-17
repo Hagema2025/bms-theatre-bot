@@ -256,9 +256,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:10:51+05:30",
+     "history": [
+      [
+       "2026-11-17T22:40:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-17T22:40:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2991,9 +3000,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T20:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T22:40:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-17T22:40:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T22:40:52+05:30"
     }
    },
    "cutoff": "2026-11-19T13:00:00+05:30",
@@ -3073,9 +3092,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T20:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T22:40:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-17T22:40:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T22:40:52+05:30"
     }
    },
    "cutoff": "2026-11-19T19:50:00+05:30",
@@ -3283,9 +3312,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T20:31:32+05:30",
+     "history": [
+      [
+       "2026-11-17T22:40:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-17T22:40:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T22:40:52+05:30"
     }
    },
    "cutoff": "2026-11-19T23:15:00+05:30",
@@ -3481,5 +3520,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/93136/20261119"
   }
  },
- "_updated": "2026-11-17T22:31:27+05:30"
+ "_updated": "2026-11-17T22:40:52+05:30"
 }

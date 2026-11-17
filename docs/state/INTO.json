@@ -177,14 +177,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-17T19:31:23+05:30",
-     "sold_out_at": "2026-11-17T19:20:49+05:30",
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-17T19:31:23+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-17T22:15:00+05:30",
@@ -204,52 +210,6 @@
    "time": "09:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/93032/20261117"
-  },
-  "93043": {
-   "censor": "UA13+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "price": 210.98,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "history": [
-      [
-       "2026-11-16T15:01:23+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 61.74,
-     "sold_out_at": "2026-11-16T15:01:23+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T15:01:23+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T20:20:00+05:30",
-   "dimension": "2D",
-   "duration": 0,
-   "end": "2026-11-17T20:05:00+05:30",
-   "event_code": "ET00516584",
-   "first_seen": "2026-11-15T12:01:07+05:30",
-   "genre": "Adventure,Animation,Fantasy",
-   "language": "English",
-   "movie": "Wildwood",
-   "poster": "wildwood-et00516584-1789022312",
-   "screen": "SCREEN 8",
-   "start": "2026-11-17T19:35:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "07:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=wwvxi4T5y_A",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516584/INTO/93043/20261117"
   },
   "93044": {
    "censor": "UA16+",
@@ -1039,7 +999,7 @@
    },
    "cutoff": "2026-11-18T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-18T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -1455,9 +1415,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-18T12:05:00+05:30",
@@ -1587,9 +1557,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-18T11:45:00+05:30",
@@ -1671,9 +1651,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-18T19:10:00+05:30",
@@ -1827,9 +1817,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:20:56+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-18T20:15:00+05:30",
@@ -1963,9 +1963,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T15:20:50+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-18T19:40:00+05:30",
@@ -2126,6 +2136,78 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/INTO/93121/20261119"
   },
+  "93122": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:10:55+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:10:55+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T16:00:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-19T15:45:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-17T20:10:55+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 6",
+   "start": "2026-11-19T15:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/INTO/93122/20261119"
+  },
+  "93123": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:10:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T20:10:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T12:50:00+05:30",
+   "dimension": "2D",
+   "duration": 144,
+   "end": "2026-11-19T12:35:00+05:30",
+   "event_code": "ET00517348",
+   "first_seen": "2026-11-17T20:10:55+05:30",
+   "genre": "Comedy,Devotional,Fantasy,Thriller",
+   "language": "Tamil",
+   "movie": "Mookuthi Amman 2",
+   "poster": "mookuthi-amman-2-et00517348-1793776148",
+   "screen": "SCREEN 6",
+   "start": "2026-11-19T12:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "12:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/93123/20261119"
+  },
   "93128": {
    "censor": "UA16+",
    "classes": {
@@ -2185,9 +2267,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T19:31:23+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 61.74,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-19T17:15:00+05:30",
@@ -2221,14 +2313,24 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T19:31:23+05:30",
+     "history": [
+      [
+       "2026-11-17T20:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 61.74,
+     "sold_out_at": "2026-11-17T20:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T20:10:55+05:30"
     }
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-19T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -2245,5 +2347,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516584/INTO/93130/20261119"
   }
  },
- "_updated": "2026-11-17T20:01:14+05:30"
+ "_updated": "2026-11-17T20:10:55+05:30"
 }

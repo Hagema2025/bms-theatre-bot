@@ -1,53 +1,5 @@
 {
  "20261117": {
-  "48708": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T22:20:54+05:30",
-     "history": [
-      [
-       "2026-11-17T13:41:07+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 120.0,
-     "sold_out_at": "2026-11-17T13:41:07+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T13:41:07+05:30"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T22:20:54+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-17T13:35:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-17T13:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 1",
-   "start": "2026-11-17T13:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/ACON/48708/20261117"
-  },
   "48709": {
    "censor": "UA16+",
    "classes": {
@@ -463,7 +415,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
      "price": 120.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -2021,5 +1973,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48763/20261119"
   }
  },
- "_updated": "2026-11-17T13:41:07+05:30"
+ "_updated": "2026-11-17T13:50:55+05:30"
 }

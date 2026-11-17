@@ -800,42 +800,6 @@
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/PVHR/45392/20261117"
   },
-  "45399": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 99.43,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 242.49,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T15:20:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-17T15:05:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-14T18:50:49+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI 08",
-   "start": "2026-11-17T14:35:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "02:35 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/45399/20261117"
-  },
   "45400": {
    "censor": "U",
    "classes": {
@@ -1235,12 +1199,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-17T15:10:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-17T14:20:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-17T15:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3529,5 +3499,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46357/20261118"
   }
  },
- "_updated": "2026-11-17T15:01:09+05:30"
+ "_updated": "2026-11-17T15:10:52+05:30"
 }

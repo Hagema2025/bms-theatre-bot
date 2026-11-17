@@ -224,9 +224,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-17T15:50:54+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-17T15:50:54+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-17T15:50:54+05:30"
     }
    },
    "cutoff": "2026-11-17T17:05:00+05:30",
@@ -876,81 +886,6 @@
    "time": "11:00 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16285/20261117"
-  },
-  "16289": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-17T00:10:57+05:30",
-     "history": [
-      [
-       "2026-11-17T15:40:51+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-17T15:40:51+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T15:40:51+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-17T00:10:57+05:30",
-     "history": [
-      [
-       "2026-11-17T14:20:53+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-17T14:31:29+05:30",
-       "s",
-       "3",
-       "0"
-      ],
-      [
-       "2026-11-17T14:40:52+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-17T15:10:52+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-17T14:40:52+05:30",
-     "sold_out_at": "2026-11-17T15:10:52+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T15:10:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T15:35:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T15:50:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-17T00:10:57+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "AUDI03",
-   "start": "2026-11-17T15:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:20 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16289/20261117"
   },
   "16296": {
    "censor": "UA16+",
@@ -4279,5 +4214,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-17T15:40:51+05:30"
+ "_updated": "2026-11-17T15:50:54+05:30"
 }

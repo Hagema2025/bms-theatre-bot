@@ -473,9 +473,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T12:10:51+05:30",
+     "history": [
+      [
+       "2026-11-17T15:50:54+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-17T15:50:54+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -893,42 +902,6 @@
    "time": "10:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93080/20261117"
-  },
-  "93086": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "price": 59.43,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T16:05:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-17T15:50:00+05:30",
-   "event_code": "ET00451914",
-   "first_seen": "2026-11-16T12:10:51+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "ramayana-et00451914-1793772172",
-   "screen": "LASER 4",
-   "start": "2026-11-17T15:20:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "03:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/93086/20261117"
   },
   "93087": {
    "censor": "UA16+",
@@ -2593,5 +2566,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/INTO/93101/20261118"
   }
  },
- "_updated": "2026-11-17T15:40:51+05:30"
+ "_updated": "2026-11-17T15:50:54+05:30"
 }

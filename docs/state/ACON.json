@@ -164,7 +164,7 @@
      "prev_price": 30.0,
      "price": 160.0,
      "price_changed_at": "2026-11-15T18:50:53+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -1859,5 +1859,199 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48763/20261119"
   }
  },
- "_updated": "2026-11-17T16:20:51+05:30"
+ "20261120": {
+  "48764": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-20T06:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T06:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-17T16:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794808665",
+   "screen": "SCREEN 4",
+   "start": "2026-11-20T06:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-17T16:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-17T16:31:22+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48764/20261120"
+  },
+  "48770": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-20T06:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T06:45:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-17T16:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794808665",
+   "screen": "SCREEN 3",
+   "start": "2026-11-20T06:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:15 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-17T16:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-17T16:31:22+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48770/20261120"
+  },
+  "48771": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-20T06:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T06:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-17T16:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794808665",
+   "screen": "SCREEN 2",
+   "start": "2026-11-20T06:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-17T16:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-17T16:31:22+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48771/20261120"
+  },
+  "48772": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-17T16:31:22+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-20T06:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T07:00:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-17T16:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794808665",
+   "screen": "SCREEN 1",
+   "start": "2026-11-20T06:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:30 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-17T16:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-17T16:31:22+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48772/20261120"
+  }
+ },
+ "_updated": "2026-11-17T16:31:22+05:30"
 }

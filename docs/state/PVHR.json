@@ -1,119 +1,4 @@
 {
- "20261117": {
-  "45401": {
-   "censor": "U",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 99.43,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 242.49,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T23:30:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-17T23:15:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-14T18:50:49+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "AUDI 08",
-   "start": "2026-11-17T22:45:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:45 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/45401/20261117"
-  },
-  "46346": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:31:22+05:30",
-     "history": [
-      [
-       "2026-11-17T15:40:51+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-17T15:50:54+05:30",
-       "s",
-       "2",
-       "3"
-      ],
-      [
-       "2026-11-17T18:01:08+05:30",
-       "s",
-       "3",
-       "0"
-      ],
-      [
-       "2026-11-17T18:10:52+05:30",
-       "s",
-       "0",
-       "2"
-      ],
-      [
-       "2026-11-17T20:40:55+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-17T21:20:52+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 59.43,
-     "reopened_at": "2026-11-17T18:10:52+05:30",
-     "sold_out_at": "2026-11-17T21:20:52+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T21:20:52+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:31:22+05:30",
-     "price": 202.49,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T23:30:00+05:30",
-   "dimension": "2D",
-   "duration": 143,
-   "end": "2026-11-17T23:15:00+05:30",
-   "event_code": "ET00514068",
-   "first_seen": "2026-11-15T16:31:22+05:30",
-   "genre": "Action,Drama,Romantic",
-   "language": "Telugu",
-   "movie": "Itllu Arjuna",
-   "poster": "itllu-arjuna-et00514068-1794657347",
-   "screen": "AUDI 10",
-   "start": "2026-11-17T22:45:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "10:45 PM",
-   "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/46346/20261117"
-  }
- },
  "20261118": {
   "45344": {
    "censor": "UA16+",
@@ -1626,9 +1511,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
+     "history": [
+      [
+       "2026-11-17T23:20:50+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-17T23:20:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3632,5 +3526,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/PVHR/46399/20261119"
   }
  },
- "_updated": "2026-11-17T23:10:53+05:30"
+ "_updated": "2026-11-17T23:20:50+05:30"
 }

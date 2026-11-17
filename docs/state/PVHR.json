@@ -751,14 +751,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1064,42 +1064,6 @@
    "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/46346/20261117"
-  },
-  "46353": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:31:22+05:30",
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:31:22+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-17T17:45:00+05:30",
-   "dimension": "2D",
-   "duration": 121,
-   "end": "2026-11-17T17:30:00+05:30",
-   "event_code": "ET00504975",
-   "first_seen": "2026-11-15T16:31:22+05:30",
-   "genre": "Action,Crime,Thriller",
-   "language": "Tamil",
-   "movie": "Black Gold",
-   "poster": "black-gold-et00504975-1782478984",
-   "screen": "AUDI 07",
-   "start": "2026-11-17T17:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "05:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/PVHR/46353/20261117"
   },
   "46354": {
    "censor": "A",
@@ -4661,5 +4625,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/PVHR/46399/20261119"
   }
  },
- "_updated": "2026-11-17T17:20:52+05:30"
+ "_updated": "2026-11-17T17:31:26+05:30"
 }

@@ -70,54 +70,6 @@
    "time": "11:20 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/INTO/93020/20261117"
-  },
-  "93072": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:10:51+05:30",
-     "history": [
-      [
-       "2026-11-16T14:31:26+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-16T14:31:26+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T14:31:26+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T23:50:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T23:35:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-16T12:10:51+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "SCREEN 2",
-   "start": "2026-11-17T23:05:00+05:30",
-   "subs": "ENG subs",
-   "tags": [
-    "Atmos"
-   ],
-   "time": "11:05 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93072/20261117"
   }
  },
  "20261118": {
@@ -478,12 +430,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-17T23:41:03+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-17T15:40:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-17T23:41:03+05:30"
     }
    },
    "cutoff": "2026-11-18T22:15:00+05:30",
@@ -3310,5 +3268,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/INTO/93136/20261119"
   }
  },
- "_updated": "2026-11-17T23:31:29+05:30"
+ "_updated": "2026-11-17T23:41:03+05:30"
 }

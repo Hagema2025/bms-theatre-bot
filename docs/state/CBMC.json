@@ -728,59 +728,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16197/20261117"
   },
-  "16199": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-17T14:10:55+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-17T14:20:53+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-17T14:10:55+05:30",
-     "sold_out_at": "2026-11-17T14:20:53+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-17T14:20:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-17T15:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T15:30:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI07",
-   "start": "2026-11-17T15:00:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:00 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16199/20261117"
-  },
   "16200": {
    "censor": "UA16+",
    "classes": {
@@ -869,9 +816,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-17T15:31:23+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-17T15:31:23+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4199,7 +4155,7 @@
  },
  "20261217": {
   "16292": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -4235,7 +4191,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16292/20261217"
   },
   "16293": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -4281,7 +4237,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16293/20261217"
   },
   "16294": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -4317,7 +4273,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16294/20261217"
   },
   "16295": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "EXECUTIVE": {
      "first_seen_status": "1",
@@ -4363,5 +4319,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-17T15:10:52+05:30"
+ "_updated": "2026-11-17T15:31:23+05:30"
 }

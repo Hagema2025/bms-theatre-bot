@@ -6,9 +6,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
+     "history": [
+      [
+       "2026-11-17T23:01:09+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 120.0,
+     "sold_out_at": "2026-11-17T23:01:09+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-17T23:01:09+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -38,53 +48,24 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/ACON/48711/20261117"
   },
-  "48715": {
-   "censor": "UA16+",
-   "classes": {
-    "DIAMOND": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T22:20:54+05:30",
-     "price": 120.0,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "PEARL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T22:20:54+05:30",
-     "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-17T22:45:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-17T23:00:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-13T22:20:54+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "SCREEN 2",
-   "start": "2026-11-17T22:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "10:30 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48715/20261117"
-  },
   "48723": {
    "censor": "UA16+",
    "classes": {
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T22:20:54+05:30",
+     "history": [
+      [
+       "2026-11-17T23:01:09+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 120.0,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-17T23:01:09+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3921,5 +3902,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48835/20261122"
   }
  },
- "_updated": "2026-11-17T22:50:55+05:30"
+ "_updated": "2026-11-17T23:01:09+05:30"
 }

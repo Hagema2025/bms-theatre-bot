@@ -2465,9 +2465,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:50:52+05:30",
+     "history": [
+      [
+       "2026-11-18T23:01:14+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-18T23:01:14+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4396,7 +4405,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -4442,7 +4451,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -4478,7 +4487,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -4524,7 +4533,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -4541,5 +4550,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T22:50:52+05:30"
+ "_updated": "2026-11-18T23:01:14+05:30"
 }

@@ -7,7 +7,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-15T12:01:07+05:30",
      "price": 237.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -549,7 +549,7 @@
    },
    "cutoff": "2026-11-18T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-18T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -3009,7 +3009,7 @@
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-19T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -3527,12 +3527,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:31:23+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T07:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T07:45:00+05:30",
@@ -3587,9 +3594,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T05:31:23+05:30",
+     "history": [
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T11:35:00+05:30",
@@ -3650,12 +3666,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T07:40:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T19:40:00+05:30",
@@ -3716,12 +3738,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T08:10:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T23:30:00+05:30",
@@ -4095,9 +4123,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T07:40:51+05:30",
+     "history": [
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4395,9 +4432,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T08:01:11+05:30",
+     "history": [
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T16:10:00+05:30",
@@ -4489,9 +4536,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T08:01:11+05:30",
+     "history": [
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T23:35:00+05:30",
@@ -4687,9 +4744,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T08:01:11+05:30",
+     "history": [
+      [
+       "2026-11-18T08:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T20:55:00+05:30",
@@ -4767,7 +4834,237 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93198/20261121"
+  },
+  "93204": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T09:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-21T09:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-18T08:31:23+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "LASER 4",
+   "start": "2026-11-21T09:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "09:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T08:31:23+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:31:23+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93204/20261121"
+  },
+  "93205": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T13:30:00+05:30",
+   "dimension": "2D",
+   "duration": 136,
+   "end": "2026-11-21T13:15:00+05:30",
+   "event_code": "ET00522599",
+   "first_seen": "2026-11-18T08:31:23+05:30",
+   "genre": "Crime,Drama,Thriller",
+   "language": "Tamil",
+   "movie": "Sathyavan Savithiri",
+   "poster": "sathyavan-savithiri-et00522599-1792070672",
+   "screen": "LASER 4",
+   "start": "2026-11-21T12:45:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "12:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T08:31:23+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:31:23+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93205/20261121"
+  },
+  "93206": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T16:30:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-21T16:15:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T08:31:23+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "LASER 4",
+   "start": "2026-11-21T15:45:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "03:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T08:31:23+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:31:23+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93206/20261121"
+  },
+  "93207": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T19:30:00+05:30",
+   "dimension": "2D",
+   "duration": 136,
+   "end": "2026-11-21T19:15:00+05:30",
+   "event_code": "ET00522599",
+   "first_seen": "2026-11-18T08:31:23+05:30",
+   "genre": "Crime,Drama,Thriller",
+   "language": "Tamil",
+   "movie": "Sathyavan Savithiri",
+   "poster": "sathyavan-savithiri-et00522599-1792070672",
+   "screen": "LASER 4",
+   "start": "2026-11-21T18:45:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "06:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T08:31:23+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:31:23+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93207/20261121"
+  },
+  "93208": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:31:23+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T22:35:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-21T22:20:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T08:31:23+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "LASER 4",
+   "start": "2026-11-21T21:50:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "09:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T08:31:23+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:31:23+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93208/20261121"
   }
  },
- "_updated": "2026-11-18T08:20:48+05:30"
+ "_updated": "2026-11-18T08:31:23+05:30"
 }

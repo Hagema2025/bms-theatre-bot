@@ -413,10 +413,13 @@ function historyHtml(c, hk) {
   }
   if (ev.length < 2 && !c.sold_out_at) return "";
   ev.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
-  let note = "";
-  if (c.status === "0" && c.sold_out_at && c.first_seen_time && c.first_seen_status !== "0") {
-    note = `<div class="tl-note">Sold out ${spanText(Date.parse(c.sold_out_at) - Date.parse(c.first_seen_time))} after it was first seen</div>`;
-  }
+ let note = "";
+const firstSold = (c.history || []).find(h => h[1] === "s" && h[3] === "0");
+const reopens = (c.history || []).filter(h => h[1] === "s" && h[2] === "0" && h[3] !== "0").length;
+if (firstSold && c.first_seen_time && c.first_seen_status !== "0") {
+  note = `<div class="tl-note">First sold out ${spanText(Date.parse(firstSold[0]) - Date.parse(c.first_seen_time))} after it was first seen`
+       + (reopens ? ` · reopened ${reopens}×` : "") + `</div>`;
+}
   const rows = ev.map(e => `<div class="tl-row ${esc(e.cls)}">${esc(e.txt)}<small>${esc(fmtWhen(e.t))}</small></div>`).join("");
   const keep = hk ? ` data-hk="${esc(hk)}" ${typeof showOpen !== "undefined" && showOpen[hk] ? "open" : ""}` : "";
   return `<details class="hist"${keep}><summary>History (${ev.length})</summary>${note}<div class="tl">${rows}</div></details>`;
@@ -551,7 +554,7 @@ function renderList() {
       : !r.enabled ? `<div class="waiting">Rule is off. The scanner ignores it until you switch it on.</div>` : "";
 
     const started = tr.filter(x => Date.now() > Date.parse(x.s.start)).length;
-    const info = tr.length ? `<p class="info">ⓘ <b>Open</b> counts only shows that have not started yet. <b>Tracked</b> also includes shows that started less than ${GRACE_MIN} min ago${started ? `, so ${started} of the ${tr.length} tracked ${started === 1 ? "show has" : "shows have"} already started` : ""}.</p>` : "";
+    const info = tr.length ? `<p class="info">ⓘ <b>Open</b> counts only shows that have not started yet. Tracked</b> also includes shows that already started today${started ? `, so ${started} of the ${tr.length} tracked ${started === 1 ? "show has" : "shows have"} already started` : ""}.</p>` : "";
 
     const weeks = weeksHtml(r, tr, r.enabled && isSaved ? waitingList : [], topicsOf(r));
 

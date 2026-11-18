@@ -347,12 +347,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T19:40:53+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T19:40:53+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-18T18:01:09+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T19:40:53+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2628,6 +2635,78 @@
    "time": "01:20 PM",
    "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/CBMC/16329/20261119"
+  },
+  "16330": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T19:40:53+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-18T19:40:53+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-19T14:25:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-19T14:40:00+05:30",
+   "event_code": "ET00518312",
+   "first_seen": "2026-11-18T19:40:53+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518312-1792999972",
+   "screen": "AUDI08",
+   "start": "2026-11-19T14:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/CBMC/16330/20261119"
+  },
+  "16331": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T19:40:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-18T19:40:53+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-19T11:05:00+05:30",
+   "dimension": "2D",
+   "duration": 132,
+   "end": "2026-11-19T11:20:00+05:30",
+   "event_code": "ET00526330",
+   "first_seen": "2026-11-18T19:40:53+05:30",
+   "genre": "Action,Drama",
+   "language": "Tamil",
+   "movie": "Bachelor Party D'eux",
+   "poster": "bachelor-party-d-eux-et00526330-1794904407",
+   "screen": "AUDI05",
+   "start": "2026-11-19T10:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=4uCKr5Ch4UA",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526330/CBMC/16331/20261119"
   }
  },
  "20261217": {
@@ -2796,5 +2875,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T19:31:34+05:30"
+ "_updated": "2026-11-18T19:40:53+05:30"
 }

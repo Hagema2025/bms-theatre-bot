@@ -1827,12 +1827,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T00:10:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-19T19:40:00+05:30",
@@ -3424,14 +3430,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T11:51:02+05:30",
-     "sold_out_at": "2026-11-18T11:40:52+05:30",
+     "sold_out_at": "2026-11-18T12:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T11:51:02+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-20T07:45:00+05:30",
@@ -4118,6 +4130,190 @@
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93168/20261120"
   },
+  "93242": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T06:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T06:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-18T12:20:55+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 5",
+   "start": "2026-11-20T06:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "06:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T12:20:55+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:20:55+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93242/20261120"
+  },
+  "93243": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T08:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T08:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-18T12:20:55+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 6",
+   "start": "2026-11-20T08:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T12:20:55+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:20:55+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93243/20261120"
+  },
+  "93244": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T09:45:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-20T09:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T12:20:55+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 7",
+   "start": "2026-11-20T09:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T12:20:55+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:20:55+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/INTO/93244/20261120"
+  },
+  "93245": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T07:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-20T07:00:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-18T12:20:55+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-20T06:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "06:30 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T12:20:55+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:20:55+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93245/20261120"
+  },
   "93246": {
    "censor": "UA16+",
    "classes": {
@@ -4163,6 +4359,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93246/20261120"
+  },
+  "93247": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-20T10:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T12:20:55+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 3",
+   "start": "2026-11-20T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-18T12:20:55+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:20:55+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93247/20261120"
   }
  },
  "20261121": {
@@ -4386,12 +4628,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T12:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T09:40:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-21T19:40:00+05:30",
@@ -5516,12 +5765,19 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 61.74,
+     "sold_out_at": "2026-11-18T12:20:55+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T12:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-21T20:25:00+05:30",
@@ -5698,12 +5954,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
+     "sold_out_at": "2026-11-18T12:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T11:51:02+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-21T13:10:00+05:30",
@@ -5795,12 +6058,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
+     "sold_out_at": "2026-11-18T12:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T11:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-21T20:00:00+05:30",
@@ -7183,12 +7453,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T12:20:55+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T11:51:02+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T12:20:55+05:30"
     }
    },
    "cutoff": "2026-11-22T16:35:00+05:30",
@@ -7348,5 +7624,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/INTO/93241/20261122"
   }
  },
- "_updated": "2026-11-18T12:10:49+05:30"
+ "_updated": "2026-11-18T12:20:55+05:30"
 }

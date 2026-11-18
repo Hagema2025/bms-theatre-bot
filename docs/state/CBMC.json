@@ -1,68 +1,5 @@
 {
  "20261118": {
-  "16207": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T16:01:08+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-18T16:01:08+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T16:01:08+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T14:40:52+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-18T15:01:07+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-18T14:40:52+05:30",
-     "sold_out_at": "2026-11-18T15:01:07+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T15:01:07+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T15:55:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-18T16:10:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI01",
-   "start": "2026-11-18T15:40:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:40 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16207/20261118"
-  },
   "16208": {
    "censor": "U",
    "classes": {
@@ -417,7 +354,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
      "price": 252.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -989,7 +926,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T00:10:57+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -2672,7 +2609,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T14:00:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2718,7 +2655,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T17:15:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2754,7 +2691,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T20:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2800,7 +2737,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T23:45:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2817,5 +2754,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T16:01:08+05:30"
+ "_updated": "2026-11-18T16:10:49+05:30"
 }

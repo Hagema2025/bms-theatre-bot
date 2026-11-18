@@ -4216,9 +4216,18 @@
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T02:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T07:10:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T07:10:49+05:30"
     }
    },
    "cutoff": "2026-11-20T15:25:00+05:30",
@@ -8167,5 +8176,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/46525/20261122"
   }
  },
- "_updated": "2026-11-18T05:31:23+05:30"
+ "_updated": "2026-11-18T07:10:49+05:30"
 }

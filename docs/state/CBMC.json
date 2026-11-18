@@ -313,14 +313,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-18T12:01:06+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-14T12:31:20+05:30",
-     "sold_out_at": "2026-11-14T07:10:47+05:30",
+     "sold_out_at": "2026-11-18T12:01:06+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-14T12:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:01:06+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1134,52 +1140,6 @@
    "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16238/20261118"
-  },
-  "16267": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:20:57+05:30",
-     "history": [
-      [
-       "2026-11-14T18:31:18+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-14T18:31:18+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-14T18:31:18+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-14T18:20:57+05:30",
-     "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
-    }
-   },
-   "cutoff": "2026-11-18T11:45:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-18T12:00:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-14T18:20:57+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI02",
-   "start": "2026-11-18T11:30:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "11:30 AM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16267/20261118"
   },
   "16274": {
    "censor": "UA16+",
@@ -3050,5 +3010,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T11:51:02+05:30"
+ "_updated": "2026-11-18T12:01:06+05:30"
 }

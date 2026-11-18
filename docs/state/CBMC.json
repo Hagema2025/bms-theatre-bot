@@ -182,14 +182,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T15:50:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T15:10:49+05:30",
-     "sold_out_at": "2026-11-18T14:50:49+05:30",
+     "sold_out_at": "2026-11-18T15:50:53+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-18T15:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T15:50:53+05:30"
     }
    },
    "cutoff": "2026-11-18T16:50:00+05:30",
@@ -571,81 +577,6 @@
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16226/20261118"
   },
-  "16228": {
-   "censor": "U",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T15:40:54+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 233.8,
-     "sold_out_at": "2026-11-18T15:40:54+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T15:40:54+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T14:20:51+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-18T14:40:52+05:30",
-       "s",
-       "3",
-       "0"
-      ],
-      [
-       "2026-11-18T14:50:49+05:30",
-       "s",
-       "0",
-       "1"
-      ],
-      [
-       "2026-11-18T15:01:07+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 104.35,
-     "reopened_at": "2026-11-18T14:50:49+05:30",
-     "sold_out_at": "2026-11-18T15:01:07+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T15:01:07+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T15:35:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-18T15:50:00+05:30",
-   "event_code": "ET00523997",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Tamil",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
-   "screen": "AUDI06",
-   "start": "2026-11-18T15:20:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16228/20261118"
-  },
   "16229": {
    "censor": "UA16+",
    "classes": {
@@ -892,69 +823,6 @@
    "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16238/20261118"
-  },
-  "16274": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:31:18+05:30",
-     "history": [
-      [
-       "2026-11-18T15:40:54+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-18T15:40:54+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T15:40:54+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-14T18:31:18+05:30",
-     "history": [
-      [
-       "2026-11-18T14:20:51+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-18T14:40:52+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "reopened_at": "2026-11-18T14:20:51+05:30",
-     "sold_out_at": "2026-11-18T14:40:52+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T14:40:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T15:30:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-18T15:45:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-14T18:31:18+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "AUDI03",
-   "start": "2026-11-18T15:15:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "03:15 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/CBMC/16274/20261118"
   },
   "16279": {
    "censor": "U",
@@ -2853,5 +2721,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T15:40:54+05:30"
+ "_updated": "2026-11-18T15:50:53+05:30"
 }

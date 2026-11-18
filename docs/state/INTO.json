@@ -537,7 +537,7 @@
    },
    "cutoff": "2026-11-18T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-18T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-15T12:01:07+05:30",
@@ -1159,52 +1159,6 @@
    "time": "10:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93084/20261118"
-  },
-  "93089": {
-   "censor": "UA16+",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:20:56+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T12:20:56+05:30",
-     "history": [
-      [
-       "2026-11-17T20:20:56+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-17T20:20:56+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-17T20:20:56+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T12:55:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-18T12:40:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-16T12:20:56+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "LASER 4",
-   "start": "2026-11-18T12:10:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "12:10 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/INTO/93089/20261118"
   },
   "93090": {
    "censor": "U",
@@ -1849,12 +1803,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T12:20:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-19T19:40:00+05:30",
@@ -2886,7 +2846,7 @@
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-19T20:05:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -3774,14 +3734,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T12:31:20+05:30",
-     "sold_out_at": "2026-11-18T12:10:49+05:30",
+     "sold_out_at": "2026-11-18T12:40:53+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T12:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-20T23:30:00+05:30",
@@ -4171,13 +4137,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-18T12:40:53+05:30",
      "sold_out_at": "2026-11-18T12:31:20+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-18T12:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-20T06:45:00+05:30",
@@ -4322,9 +4295,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T12:20:55+05:30",
+     "history": [
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-20T07:15:00+05:30",
@@ -6496,9 +6478,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T09:01:04+05:30",
+     "history": [
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-22T23:30:00+05:30",
@@ -6899,12 +6890,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T12:01:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-22T17:10:00+05:30",
@@ -7563,9 +7560,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T09:01:04+05:30",
+     "history": [
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     }
    },
    "cutoff": "2026-11-22T20:00:00+05:30",
@@ -7679,5 +7685,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/INTO/93241/20261122"
   }
  },
- "_updated": "2026-11-18T12:31:20+05:30"
+ "_updated": "2026-11-18T12:40:53+05:30"
 }

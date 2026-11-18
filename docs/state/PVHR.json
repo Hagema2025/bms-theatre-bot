@@ -222,9 +222,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
+     "history": [
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -998,14 +1007,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 99.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 242.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -3959,9 +3968,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T02:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T12:40:53+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T12:40:53+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7831,6 +7849,144 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46549/20261121"
+  },
+  "46550": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T17:55:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-21T17:40:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T12:40:53+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "AUDI 05",
+   "start": "2026-11-21T17:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "05:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T12:40:53+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:40:53+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46550/20261121"
+  },
+  "46551": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T20:50:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-21T20:35:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T12:40:53+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "AUDI 05",
+   "start": "2026-11-21T20:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T12:40:53+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:40:53+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46551/20261121"
+  },
+  "46552": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:40:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T23:45:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-21T23:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-18T12:40:53+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "AUDI 05",
+   "start": "2026-11-21T23:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "11:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T12:40:53+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:40:53+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46552/20261121"
   }
  },
  "20261122": {
@@ -9562,5 +9718,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/46525/20261122"
   }
  },
- "_updated": "2026-11-18T12:31:20+05:30"
+ "_updated": "2026-11-18T12:40:53+05:30"
 }

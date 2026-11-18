@@ -4345,12 +4345,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-18T08:10:49+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-18T07:31:21+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-18T08:10:49+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5060,6 +5066,144 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/PVHR/46443/20261120"
+  },
+  "46444": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-20T09:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-20T09:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:25 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46444/20261120"
+  },
+  "46445": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T13:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-20T13:15:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-20T12:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46445/20261120"
+  },
+  "46446": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-20T19:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-20T19:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46446/20261120"
   }
  },
  "20261121": {
@@ -6532,6 +6676,98 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46502/20261121"
   },
+  "46507": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-21T09:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-21T09:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:25 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46507/20261121"
+  },
+  "46508": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T13:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-21T13:15:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-21T12:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46508/20261121"
+  },
   "46509": {
    "censor": "UA13+",
    "classes": {
@@ -6567,6 +6803,52 @@
    "time": "04:05 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46509/20261121"
+  },
+  "46510": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-21T19:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-21T19:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46510/20261121"
   },
   "46511": {
    "censor": "UA13+",
@@ -7985,6 +8267,98 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46506/20261122"
   },
+  "46512": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-22T09:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-22T09:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:25 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46512/20261122"
+  },
+  "46513": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T13:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-22T13:15:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-22T12:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:45 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46513/20261122"
+  },
   "46514": {
    "censor": "UA13+",
    "classes": {
@@ -8020,6 +8394,52 @@
    "time": "04:05 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46514/20261122"
+  },
+  "46515": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T08:10:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-22T19:55:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-18T08:10:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI 09",
+   "start": "2026-11-22T19:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T08:10:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T08:10:49+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/PVHR/46515/20261122"
   },
   "46516": {
    "censor": "UA13+",
@@ -8232,5 +8652,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/46525/20261122"
   }
  },
- "_updated": "2026-11-18T08:01:11+05:30"
+ "_updated": "2026-11-18T08:10:49+05:30"
 }

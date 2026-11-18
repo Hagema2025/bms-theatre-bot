@@ -1,51 +1,5 @@
 {
  "20261118": {
-  "93021": {
-   "censor": "U",
-   "classes": {
-    "CLUB": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "price": 237.49,
-     "soon_alerted": true,
-     "status": "3"
-    },
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T12:01:07+05:30",
-     "history": [
-      [
-       "2026-11-17T20:20:56+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 94.43,
-     "sold_out_at": "2026-11-17T20:20:56+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-17T20:20:56+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T11:15:00+05:30",
-   "dimension": "3D",
-   "duration": 195,
-   "end": "2026-11-18T11:00:00+05:30",
-   "event_code": "ET00493076",
-   "first_seen": "2026-11-15T12:01:07+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
-   "screen": "SCREEN 5",
-   "start": "2026-11-18T10:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "10:30 AM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93021/20261118"
-  },
   "93022": {
    "censor": "U",
    "classes": {
@@ -3665,12 +3619,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-18T11:01:08+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T10:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T11:01:08+05:30"
     }
    },
    "cutoff": "2026-11-20T11:35:00+05:30",
@@ -3823,12 +3783,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-18T11:01:08+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T10:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T11:01:08+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3934,14 +3900,20 @@
        "s",
        "0",
        "2"
+      ],
+      [
+       "2026-11-18T11:01:08+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T10:31:22+05:30",
      "sold_out_at": "2026-11-18T09:40:51+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T10:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T11:01:08+05:30"
     }
    },
    "cutoff": "2026-11-20T08:15:00+05:30",
@@ -5579,7 +5551,7 @@
    "genre": "Comedy",
    "language": "Hindi",
    "movie": "Party Animals",
-   "poster": "party-animals-et00519397-1790504593",
+   "poster": "party-animals-et00519397-1794978798",
    "screen": "SCREEN 6",
    "start": "2026-11-21T22:50:00+05:30",
    "subs": "",
@@ -5625,12 +5597,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T11:01:08+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
+     "sold_out_at": "2026-11-18T11:01:08+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T10:50:46+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T11:01:08+05:30"
     }
    },
    "cutoff": "2026-11-21T09:45:00+05:30",
@@ -6996,12 +6975,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T11:01:08+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T10:50:46+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-18T11:01:08+05:30"
     }
    },
    "cutoff": "2026-11-22T09:45:00+05:30",
@@ -7233,5 +7218,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/INTO/93241/20261122"
   }
  },
- "_updated": "2026-11-18T10:50:46+05:30"
+ "_updated": "2026-11-18T11:01:08+05:30"
 }

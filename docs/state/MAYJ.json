@@ -224,7 +224,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:40:50+05:30",
      "price": 202.5,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -4692,9 +4692,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T15:50:53+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T08:10:00+05:30",
@@ -4847,9 +4857,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T10:10:00+05:30",
@@ -4878,9 +4898,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T14:10:00+05:30",
@@ -4909,9 +4939,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T18:10:00+05:30",
@@ -4940,9 +4980,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-20T22:10:00+05:30",
@@ -4964,6 +5014,37 @@
    "time": "10:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242893/20261120"
+  },
+  "242902": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T16:31:23+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T15:30:00+05:30",
+   "dimension": "2D",
+   "duration": 141,
+   "end": "2026-11-20T15:50:00+05:30",
+   "event_code": "ET00524867",
+   "first_seen": "2026-11-18T16:31:23+05:30",
+   "genre": "Crime,Suspense,Thriller",
+   "language": "Hindi",
+   "movie": "Pratap",
+   "poster": "pratap-et00524867-1794908639",
+   "screen": "SCREEN 15",
+   "start": "2026-11-20T15:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=MVR9TY6tpE8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524867/MAYJ/242902/20261120"
   }
  },
  "20261121": {
@@ -6585,9 +6666,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T10:10:00+05:30",
@@ -6616,9 +6707,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T14:10:00+05:30",
@@ -6647,9 +6748,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T18:10:00+05:30",
@@ -6678,9 +6789,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-21T22:10:00+05:30",
@@ -8323,9 +8444,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-22T10:10:00+05:30",
@@ -8354,9 +8485,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-22T14:10:00+05:30",
@@ -8385,9 +8526,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-22T18:10:00+05:30",
@@ -8416,9 +8567,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:20:57+05:30",
+     "history": [
+      [
+       "2026-11-18T16:31:23+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:31:23+05:30"
     }
    },
    "cutoff": "2026-11-22T22:10:00+05:30",
@@ -8442,5 +8603,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/242901/20261122"
   }
  },
- "_updated": "2026-11-18T16:20:57+05:30"
+ "_updated": "2026-11-18T16:31:23+05:30"
 }

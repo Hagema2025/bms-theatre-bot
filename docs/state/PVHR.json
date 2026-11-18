@@ -1539,12 +1539,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T12:50:51+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T12:50:51+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T08:50:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T12:50:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9716,7 +9723,53 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/PVHR/46525/20261122"
+  },
+  "46553": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:50:51+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T12:50:51+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T10:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-22T10:10:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-18T12:50:51+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 04",
+   "start": "2026-11-22T09:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:40 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-18T12:50:51+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-18T12:50:51+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46553/20261122"
   }
  },
- "_updated": "2026-11-18T12:40:53+05:30"
+ "_updated": "2026-11-18T12:50:51+05:30"
 }

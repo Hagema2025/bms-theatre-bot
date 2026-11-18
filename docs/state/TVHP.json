@@ -6,9 +6,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-12T17:01:08+05:30",
+     "history": [
+      [
+       "2026-11-18T22:10:56+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-18T22:10:56+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T22:10:56+05:30"
     }
    },
    "cutoff": "2026-11-18T22:30:00+05:30",
@@ -2221,16 +2231,43 @@
     "BUDGET+BROWINE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:40:52+05:30",
+     "history": [
+      [
+       "2026-11-18T22:10:56+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 320.0,
+     "sold_out_at": "2026-11-18T22:10:56+05:30",
+     "soon_alerted": false,
+     "status": "0",
+     "status_changed_at": "2026-11-18T22:10:56+05:30"
+    },
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T22:10:56+05:30",
+     "price": 183.0,
      "soon_alerted": false,
      "status": "3"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:40:52+05:30",
+     "history": [
+      [
+       "2026-11-18T22:10:56+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 320.0,
+     "sold_out_at": "2026-11-18T22:10:56+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T22:10:56+05:30"
     }
    },
    "cutoff": "2026-11-23T10:45:00+05:30",
@@ -2354,16 +2391,43 @@
     "BUDGET+BROWINE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T21:41:12+05:30",
+     "history": [
+      [
+       "2026-11-18T22:10:56+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 320.0,
+     "sold_out_at": "2026-11-18T22:10:56+05:30",
+     "soon_alerted": false,
+     "status": "0",
+     "status_changed_at": "2026-11-18T22:10:56+05:30"
+    },
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T22:10:56+05:30",
+     "price": 183.0,
      "soon_alerted": false,
      "status": "3"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T21:41:12+05:30",
+     "history": [
+      [
+       "2026-11-18T22:10:56+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 320.0,
+     "sold_out_at": "2026-11-18T22:10:56+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T22:10:56+05:30"
     }
    },
    "cutoff": "2026-11-24T10:45:00+05:30",
@@ -2480,5 +2544,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26763/20261124"
   }
  },
- "_updated": "2026-11-18T21:50:52+05:30"
+ "_updated": "2026-11-18T22:10:56+05:30"
 }

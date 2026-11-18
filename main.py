@@ -98,6 +98,7 @@ TRACK_CHATS = {code: os.environ.get(f"TELEGRAM_CHAT_{code}", "").strip()
                for code in TARGET_THEATRES}
 
 SHOW_GRACE         = timedelta(minutes=int(os.environ.get("SHOW_GRACE_MINUTES", "30")))  # state/alerts end this long after showtime
+KEEP_AFTER_MIDNIGHT = timedelta(minutes=int(os.environ.get("KEEP_AFTER_MIDNIGHT_MINUTES", "30")))
 REMINDER_MINUTES = int(os.environ.get("REMINDER_MINUTES", "120"))
 MAX_DATES          = int(os.environ.get("MAX_DATES", "7"))
 HISTORY_MAX        = int(os.environ.get("HISTORY_MAX", "300"))   # per seat class; 0 = no cap
@@ -623,7 +624,7 @@ def register_shows(vstate, venue, data, now):
         entry["url"]        = SEAT_LAYOUT_URL.format(event=child.get("EventCode"), venue=venue,
                                                      session=session_id, date=date_code)
         entry["start"]      = start.isoformat(timespec="seconds")
-        entry["end"]        = (start + SHOW_GRACE).isoformat(timespec="seconds")
+        entry["end"]        = day_end(date_code).isoformat(timespec="seconds")
         entry["cutoff"]     = cutoff.isoformat(timespec="seconds") if cutoff else ""
         entry["duration"]   = int(duration) if str(duration).isdigit() else 0   # movie length in minutes
         entry["tags"]       = show_tags(show)
@@ -775,6 +776,8 @@ def scan(session, state, now):
             if (venue, date_code) not in scanned:
                 continue
             for sid, s in shows.items():
+                if alerts_over(s, now):
+                    continue          # started: keep the last real statu
                 for desc, c in s.get("classes", {}).items():
                     if (venue, date_code, sid, desc) not in seen and c.get("status") != "0":
                         touch_class(c, "0", c.get("price"), now, f"{venue} {date_code}/{sid} {desc} (vanished)")
@@ -786,13 +789,13 @@ def scan(session, state, now):
 
 
 def cleanup_ended(state, tracking, now):
-    """Drop shows past their window. Delete a combo topic only when none of its
-    tracked shows is still running. Failed deletes are retried (CLEANUP_MAX_TRIES)."""
+    """1) Delete a show's topic once alerts are over (and no other show in that topic is still live).
+       2) Remove the show from state at next day 12:30 AM."""
     alive = set()
     for venue, dates in state.items():
         for date_code, shows in dates.items():
             for sid, s in shows.items():
-                if entry_end(s, date_code) >= now:
+                if not alerts_over(s, now):
                     t = track_thread(state, tracking, venue, date_code, sid)
                     if t:
                         alive.add((venue, t))
@@ -800,14 +803,16 @@ def cleanup_ended(state, tracking, now):
     deleted = set()
     for venue, dates in state.items():
         tc = TRACK_CHATS.get(venue)
-        for date_code in list(dates):
-            shows = dates[date_code]
-            for sid in list(shows):
-                s = shows[sid]
-                if entry_end(s, date_code) >= now:
+        for date_code, shows in dates.items():
+            for sid, s in shows.items():
+                if s.get("topic_deleted") or not alerts_over(s, now):
                     continue
                 thread = track_thread(state, tracking, venue, date_code, sid)
-                if thread and tc and (venue, thread) not in alive and (venue, thread) not in deleted:
+                if not thread or not tc:
+                    continue
+                if (venue, thread) in alive:
+                    continue
+                if (venue, thread) not in deleted:
                     ok, body = tg_api("deleteForumTopic", {"chat_id": tc, "message_thread_id": thread})
                     gone = "thread" in body.get("description", "").lower()
                     logging.info(f"Topic {thread} delete: ok={ok} gone={gone}")
@@ -818,11 +823,41 @@ def cleanup_ended(state, tracking, now):
                     else:
                         s["cleanup_tries"] = s.get("cleanup_tries", 0) + 1
                         if s["cleanup_tries"] < CLEANUP_MAX_TRIES:
-                            continue 
-                logging.info(f"🧹 Expired: {venue} {date_code}/{sid} {s.get('movie')} {s.get('time')}")                 # retry next run
-                shows.pop(sid)
+                            continue          # retry next run
+                s["topic_deleted"] = True     # don't try again on later runs
+
+    for venue, dates in state.items():
+        for date_code in list(dates):
+            shows = dates[date_code]
+            for sid in list(shows):
+                s = shows[sid]
+                if entry_end(s, date_code) < now:
+                    logging.info(f"🧹 Expired: {venue} {date_code}/{sid} {s.get('movie')} {s.get('time')}")
+                    shows.pop(sid)
             if not shows:
                 dates.pop(date_code)
+def day_end(date_code):
+    """Next day 12:30 AM IST for a show's date."""
+    d = datetime.strptime(date_code, "%Y%m%d").replace(tzinfo=IST)
+    return d + timedelta(days=1) + KEEP_AFTER_MIDNIGHT
+
+
+def alerts_over(show, now):
+    """Alerts and the Telegram topic stop SHOW_GRACE after the show starts."""
+    start = parse_iso(show.get("start"))
+    return bool(start) and start + SHOW_GRACE < now
+
+
+def apply_day_end(state):
+    """Every show lives until next day 12:30 AM. Also fixes shows saved with the old end."""
+    for dates in state.values():
+        for date_code, shows in dates.items():
+            try:
+                end = day_end(date_code).isoformat(timespec="seconds")
+            except ValueError:
+                continue
+            for s in shows.values():
+                s["end"] = end
 
 # ───────────────────────── auto-track rules ─────────────────────────
 
@@ -1346,6 +1381,7 @@ def main():
             send_error(meta, venue, f"🔥 BMS bot crashed: {type(e).__name__}: {str(e)[:300]}")
 
     try:
+        apply_day_end(state)
         cleanup_ended(state, tracking, now)   # drop finished shows, delete their topics
     except Exception:
         logging.exception("Cleanup failed")

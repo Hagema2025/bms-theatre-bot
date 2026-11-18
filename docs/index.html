@@ -178,6 +178,25 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .sel-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 6px 5px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#f3d39a;background:rgba(245,189,89,.09);border:1px solid rgba(245,189,89,.18)}
 .sel-chip button{width:20px;height:20px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:var(--fg);font-size:10px;cursor:pointer}
 .rules-link{color:var(--accent-2);font-size:12px;font-weight:800;text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid rgba(245,189,89,.38);background:rgba(245,189,89,.08);white-space:nowrap}
+
+/* history timeline */
+.cls-wrap+.cls-wrap{border-top:1px solid rgba(255,255,255,.055)}
+.cls-wrap .cls+.cls{border-top:0}
+.hist{margin:0 0 8px}
+.hist summary{cursor:pointer;color:var(--muted);font-size:11px;padding:0 0 6px 2px;list-style:none}
+.hist summary::-webkit-details-marker{display:none}
+.hist summary:before{content:"▸ "}
+.hist[open] summary:before{content:"▾ "}
+.tl{margin:0 0 4px 6px;padding-left:12px;border-left:1px solid var(--line)}
+.tl-row{position:relative;font-size:11px;color:#c9d3e1;padding:3px 0}
+.tl-row:before{content:"";position:absolute;left:-17px;top:8px;width:9px;height:9px;border-radius:50%;background:#4a5468;border:2px solid #101827}
+.tl-row.s3:before{background:var(--ok)}
+.tl-row.s2:before{background:var(--mid,#f5bd59)}
+.tl-row.s1:before{background:var(--low)}
+.tl-row.s0:before{background:#6b7486}
+.tl-row.p:before{background:var(--rule)}
+.tl-row small{display:block;color:var(--muted);font-size:10px}
+.tl-note{font-size:11px;color:var(--accent-2);margin:2px 0 6px 2px}
 </style>
 </head>
 <body>
@@ -1181,6 +1200,31 @@ let detailKey = null;
 function openDetail(key) { detailKey = key; renderDetail(); }
 function closeDetail() { detailKey = null; $("detail-overlay").hidden = true; }
 
+const spanText = ms => {
+  const m = Math.max(1, Math.round(ms / 60000));
+  if (m < 60) return `${m}m`;
+  const h = Math.floor(m / 60);
+  return h < 48 ? `${h}h ${m % 60}m` : `${Math.floor(h / 24)}d ${h % 24}h`;
+};
+// hk (optional): key used to remember whether this history is open between refreshes
+function historyHtml(c, hk) {
+  const ev = [];
+  if (c.first_seen_time) ev.push({ t: c.first_seen_time, cls: "s" + (c.first_seen_status || ""), txt: `First seen · ${STATUS[c.first_seen_status] || ""}` });
+  for (const h of (c.history || [])) {
+    if (h[1] === "s") ev.push({ t: h[0], cls: "s" + h[3], txt: `${STATUS[h[2]] || h[2]} → ${STATUS[h[3]] || h[3]}` });
+    else if (h[1] === "p") ev.push({ t: h[0], cls: "p", txt: `Price ₹${h[2]} → ₹${h[3]}` });
+  }
+  if (ev.length < 2 && !c.sold_out_at) return "";
+  ev.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  let note = "";
+  if (c.status === "0" && c.sold_out_at && c.first_seen_time && c.first_seen_status !== "0") {
+    note = `<div class="tl-note">Sold out ${spanText(Date.parse(c.sold_out_at) - Date.parse(c.first_seen_time))} after it was first seen</div>`;
+  }
+  const rows = ev.map(e => `<div class="tl-row ${esc(e.cls)}">${esc(e.txt)}<small>${esc(fmtWhen(e.t))}</small></div>`).join("");
+  const keep = hk ? ` data-hk="${esc(hk)}" ${typeof showOpen !== "undefined" && showOpen[hk] ? "open" : ""}` : "";
+  return `<details class="hist"${keep}><summary>History (${ev.length})</summary>${note}<div class="tl">${rows}</div></details>`;
+}
+
 function renderDetail() {
   if (!detailKey) return;
   const [v, d, id] = detailKey.split("_");
@@ -1191,8 +1235,8 @@ function renderDetail() {
   const meta = [THEATRES[v], s.language, s.dimension, s.screen].filter(Boolean).map(esc).join(" · ");
   const tags = [...(s.tags || []), ...(s.subs ? [s.subs] : [])].map(t => `<span class="tag">${esc(t)}</span>`).join("");
   const classes = Object.entries(s.classes || {}).map(([name, c]) => `
-    <div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>`).join("");
+    <div class="cls-wrap"><div class="cls"><span class="meter l${esc(c.status)}" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="name">${esc(name)} ₹${esc(c.price)}</span><span class="st">${STATUS[c.status] || ""}${c.first_seen_status === "0" && c.status !== "0" ? '<span class="re">reopened</span>' : ""}</span></div>${historyHtml(c)}</div>`).join("");
 
   const rl = rulesOf(s);
   const ruleBox = rl.length ? `<div class="rule-box">

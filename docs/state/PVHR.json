@@ -540,58 +540,6 @@
    "trailer": "https://www.youtube.com/watch?v=RkH_FE0w--0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00514068/PVHR/45423/20261118"
   },
-  "46348": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:40:50+05:30",
-     "history": [
-      [
-       "2026-11-16T20:01:11+05:30",
-       "s",
-       "3",
-       "1"
-      ],
-      [
-       "2026-11-17T13:31:39+05:30",
-       "s",
-       "1",
-       "0"
-      ]
-     ],
-     "price": 54.35,
-     "sold_out_at": "2026-11-17T13:31:39+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-17T13:31:39+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-15T16:40:50+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-18T20:25:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-18T20:10:00+05:30",
-   "event_code": "ET00525702",
-   "first_seen": "2026-11-15T16:40:50+05:30",
-   "genre": "Crime,Psychological,Thriller",
-   "language": "Tamil",
-   "movie": "John Doe",
-   "poster": "john-doe-et00525702-1794051624",
-   "screen": "AUDI 10",
-   "start": "2026-11-18T19:40:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "07:40 PM",
-   "trailer": "",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/PVHR/46348/20261118"
-  },
   "46349": {
    "censor": "UA16+",
    "classes": {
@@ -1685,9 +1633,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T16:20:51+05:30",
+     "history": [
+      [
+       "2026-11-18T20:11:01+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T20:11:01+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4583,9 +4540,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T02:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T20:11:01+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T20:11:01+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4846,9 +4812,18 @@
     "PRIME": {
      "first_seen_status": "2",
      "first_seen_time": "2026-11-18T02:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T20:11:01+05:30",
+       "s",
+       "2",
+       "1"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-18T20:11:01+05:30"
     }
    },
    "cutoff": "2026-11-21T22:45:00+05:30",
@@ -8322,9 +8297,18 @@
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:50:48+05:30",
+     "history": [
+      [
+       "2026-11-18T20:11:01+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 242.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T20:11:01+05:30"
     }
    },
    "cutoff": "2026-11-22T16:00:00+05:30",
@@ -9272,5 +9256,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46562/20261122"
   }
  },
- "_updated": "2026-11-18T20:01:08+05:30"
+ "_updated": "2026-11-18T20:11:01+05:30"
 }

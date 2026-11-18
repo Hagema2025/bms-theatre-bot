@@ -968,47 +968,6 @@
    "trailer": "https://www.youtube.com/watch?v=FW_PPcr1sPE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518674/MAYJ/242663/20261118"
   },
-  "242670": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T21:10:47+05:30",
-     "history": [
-      [
-       "2026-11-16T15:10:52+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-16T15:10:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-16T15:10:52+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T13:30:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-18T13:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-14T21:10:47+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 10",
-   "start": "2026-11-18T13:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242670/20261118"
-  },
   "242671": {
    "censor": "UA16+",
    "classes": {
@@ -1307,47 +1266,6 @@
    "time": "09:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/242703/20261118"
-  },
-  "242705": {
-   "censor": "UA16+",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-16T15:10:52+05:30",
-     "history": [
-      [
-       "2026-11-18T13:40:53+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 183.8,
-     "sold_out_at": "2026-11-18T13:40:53+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T13:40:53+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T13:30:00+05:30",
-   "dimension": "2D",
-   "duration": 144,
-   "end": "2026-11-18T13:50:00+05:30",
-   "event_code": "ET00517348",
-   "first_seen": "2026-11-16T15:10:52+05:30",
-   "genre": "Comedy,Devotional,Fantasy,Thriller",
-   "language": "Tamil",
-   "movie": "Mookuthi Amman 2",
-   "poster": "mookuthi-amman-2-et00517348-1793776148",
-   "screen": "SCREEN 14",
-   "start": "2026-11-18T13:20:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "01:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=v263z3rTcLw",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00517348/MAYJ/242705/20261118"
   },
   "242706": {
    "censor": "UA16+",
@@ -1904,9 +1822,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T13:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-18T13:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T13:50:51+05:30"
     }
    },
    "cutoff": "2026-11-19T18:40:00+05:30",
@@ -1935,9 +1863,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T13:50:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-18T13:50:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T13:50:51+05:30"
     }
    },
    "cutoff": "2026-11-19T14:40:00+05:30",
@@ -3318,6 +3256,68 @@
    "time": "11:00 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242722/20261119"
+  },
+  "242831": {
+   "censor": "A",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T13:50:51+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T14:40:00+05:30",
+   "dimension": "2D",
+   "duration": 132,
+   "end": "2026-11-19T15:00:00+05:30",
+   "event_code": "ET00521598",
+   "first_seen": "2026-11-18T13:50:51+05:30",
+   "genre": "Action,Drama",
+   "language": "Malayalam",
+   "movie": "Bachelor Party D'eux",
+   "poster": "bachelor-party-d-eux-et00521598-1791544764",
+   "screen": "SCREEN 4",
+   "start": "2026-11-19T14:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/MAYJ/242831/20261119"
+  },
+  "242832": {
+   "censor": "A",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T13:50:51+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-19T18:40:00+05:30",
+   "dimension": "2D",
+   "duration": 132,
+   "end": "2026-11-19T19:00:00+05:30",
+   "event_code": "ET00521598",
+   "first_seen": "2026-11-18T13:50:51+05:30",
+   "genre": "Action,Drama",
+   "language": "Malayalam",
+   "movie": "Bachelor Party D'eux",
+   "poster": "bachelor-party-d-eux-et00521598-1791544764",
+   "screen": "SCREEN 4",
+   "start": "2026-11-19T18:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/MAYJ/242832/20261119"
   }
  },
  "20261120": {
@@ -6674,5 +6674,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/242830/20261122"
   }
  },
- "_updated": "2026-11-18T13:40:53+05:30"
+ "_updated": "2026-11-18T13:50:51+05:30"
 }

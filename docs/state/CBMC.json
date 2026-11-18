@@ -19,13 +19,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T15:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T14:40:52+05:30",
+     "sold_out_at": "2026-11-18T15:01:07+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-18T14:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T15:01:07+05:30"
     }
    },
    "cutoff": "2026-11-18T15:55:00+05:30",
@@ -269,75 +276,6 @@
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00513613/CBMC/16213/20261118"
   },
-  "16215": {
-   "censor": "UA16+",
-   "classes": {
-    "EXECUTIVE": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T14:50:49+05:30",
-       "s",
-       "3",
-       "0"
-      ]
-     ],
-     "price": 210.98,
-     "sold_out_at": "2026-11-18T14:50:49+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T14:50:49+05:30"
-    },
-    "NORMAL": {
-     "first_seen_status": "0",
-     "first_seen_time": "2026-11-13T14:40:50+05:30",
-     "history": [
-      [
-       "2026-11-18T13:31:22+05:30",
-       "s",
-       "0",
-       "3"
-      ],
-      [
-       "2026-11-18T14:40:52+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-18T14:50:49+05:30",
-       "s",
-       "2",
-       "0"
-      ]
-     ],
-     "price": 61.74,
-     "reopened_at": "2026-11-18T13:31:22+05:30",
-     "sold_out_at": "2026-11-18T14:50:49+05:30",
-     "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-18T14:50:49+05:30"
-    }
-   },
-   "cutoff": "2026-11-18T14:40:00+05:30",
-   "dimension": "2D",
-   "duration": 92,
-   "end": "2026-11-18T14:55:00+05:30",
-   "event_code": "ET00518333",
-   "first_seen": "2026-11-13T14:40:50+05:30",
-   "genre": "Action,Thriller",
-   "language": "English",
-   "movie": "Ghost Soldier",
-   "poster": "ghost-soldier-et00518333-1789986369",
-   "screen": "AUDI02",
-   "start": "2026-11-18T14:25:00+05:30",
-   "subs": "",
-   "tags": [],
-   "time": "02:25 PM",
-   "trailer": "https://www.youtube.com/watch?v=l0pTZqZWs-c",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518333/CBMC/16215/20261118"
-  },
   "16216": {
    "censor": "UA16+",
    "classes": {
@@ -499,7 +437,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -658,14 +596,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T15:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-18T14:50:49+05:30",
-     "sold_out_at": "2026-11-18T14:40:52+05:30",
+     "sold_out_at": "2026-11-18T15:01:07+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-18T14:50:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T15:01:07+05:30"
     }
    },
    "cutoff": "2026-11-18T15:35:00+05:30",
@@ -2685,7 +2629,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T14:00:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2731,7 +2675,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T17:15:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2767,7 +2711,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T20:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2813,7 +2757,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 155,
+   "duration": 0,
    "end": "2026-12-17T23:45:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2830,5 +2774,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T14:50:49+05:30"
+ "_updated": "2026-11-18T15:01:07+05:30"
 }

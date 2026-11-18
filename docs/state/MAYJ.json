@@ -320,37 +320,6 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518312/MAYJ/242571/20261118"
   },
-  "242578": {
-   "censor": "U",
-   "classes": {
-    "FIRST CLASS": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T20:40:50+05:30",
-     "price": 202.5,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-18T14:40:00+05:30",
-   "dimension": "2D",
-   "duration": 195,
-   "end": "2026-11-18T15:00:00+05:30",
-   "event_code": "ET00451914",
-   "first_seen": "2026-11-14T20:40:50+05:30",
-   "genre": "Action,Adventure,Drama",
-   "language": "Hindi",
-   "movie": "Ramayana",
-   "poster": "ramayana-et00451914-1793772172",
-   "screen": "SCREEN 4",
-   "start": "2026-11-18T14:30:00+05:30",
-   "subs": "",
-   "tags": [
-    "4K DOLBY 7.1"
-   ],
-   "time": "02:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00451914/MAYJ/242578/20261118"
-  },
   "242579": {
    "censor": "U",
    "classes": {
@@ -1077,9 +1046,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-16T15:10:52+05:30",
+     "history": [
+      [
+       "2026-11-18T15:01:07+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T15:01:07+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T15:01:07+05:30"
     }
    },
    "cutoff": "2026-11-18T14:50:00+05:30",
@@ -7594,5 +7573,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242865/20261122"
   }
  },
- "_updated": "2026-11-18T14:50:49+05:30"
+ "_updated": "2026-11-18T15:01:07+05:30"
 }

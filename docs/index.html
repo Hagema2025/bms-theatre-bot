@@ -197,6 +197,9 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 .tl-row.p:before{background:var(--rule)}
 .tl-row small{display:block;color:var(--muted);font-size:10px}
 .tl-note{font-size:11px;color:var(--accent-2);margin:2px 0 6px 2px}
+.closed-toggle{flex:none;padding:13px 14px;border:1px solid var(--line);border-radius:15px;background:rgba(23,34,53,.96);color:var(--muted);font:inherit;font-size:13px;font-weight:800;cursor:pointer;white-space:nowrap}
+.closed-toggle[aria-pressed="true"]{border-color:rgba(245,189,89,.5);background:rgba(245,189,89,.14);color:var(--accent-2)}
+.tb.cl{color:var(--muted);background:rgba(255,255,255,.06);border:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -223,6 +226,7 @@ main{max-width:760px;margin:0 auto;padding:2px 18px 36px}
 <div class="filter-bar">
   <button type="button" class="filter-trigger" id="filter-open">⚙ Filters</button>
   <button type="button" class="filter-trigger sort-trigger" id="sort-open">Time ↑</button>
+  <button type="button" class="closed-toggle" id="closed-toggle" aria-pressed="false">🕘 Closed</button>
   <button type="button" class="filter-clear-quick" id="filter-clear-quick" hidden>✕ Clear</button>
 </div>
 
@@ -363,6 +367,9 @@ S.sort = (() => {
   if (x && ["time", "movie", "theatre"].includes(x.by) && ["asc", "desc"].includes(x.dir)) return x;
   return { by: "time", dir: "asc" };
 })();
+
+S.showClosed = store.get("showClosed", false);
+const visible = s => live(s) && (S.showClosed || !closed(s));
 
 const venuesOf = v => [v];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -785,7 +792,7 @@ function datesFor(v) {
   const set = new Set();
   for (const x of venuesOf(v)) {
     const st = S.state[x] || {};
-    Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(s => live(s) && !closed(s))).forEach(d => set.add(d));
+Object.keys(st).filter(d => /^\d{8}$/.test(d) && Object.values(st[d]).some(visible)).forEach(d => set.add(d));
   }
   return [...set].sort();
 }
@@ -1106,8 +1113,9 @@ function tileHtml(it) {
     `<i class="s${esc(c.status)}" title="${esc(n)} ₹${esc(c.price)} · ${esc(STATUS[c.status] || "")}"></i>`).join("");
   const rn = rulesOf(s).map(r => r.rule).join(", ");
   const badges = (ruled ? `<span class="tb auto" title="${esc(rn)}">⚡ Auto</span>` : "")
-    + (tracked ? `<span class="tb man">✓ Tracking</span>` : "")
-    + (pend ? `<span class="tb syn">… Syncing</span>` : "");
+  + (tracked ? `<span class="tb man">✓ Tracking</span>` : "")
+  + (pend ? `<span class="tb syn">… Syncing</span>` : "")
+  + (closed(s) ? `<span class="tb cl">Closed</span>` : "");
   return `<div class="${cls}" data-open="${key}" role="button" tabindex="0">
     <div class="t1">${box}<span class="tile-time">${esc(s.time)}</span>${subBadge(s)}</div>
     ${s.screen || fmt ? `<div class="t2">${s.screen ? `<span class="tile-screen">${esc(s.screen)}</span>` : ""}${fmt ? `<span class="tile-fmt">${fmt}</span>` : ""}</div>` : ""}
@@ -1166,6 +1174,7 @@ function movieHtml(m) {
 }
 
 function renderList() {
+$("closed-toggle").setAttribute("aria-pressed", S.showClosed);
   pruneSelection();
   updateBatchUI();
   updateSortUI();
@@ -1176,8 +1185,7 @@ function renderList() {
     return;
   }
 
-  const items = showsInView().filter(it => live(it.s) && !closed(it.s) && matchesFilters(it.s));
-  if (!items.length) {
+const items = showsInView().filter(it => visible(it.s) && matchesFilters(it.s));  if (!items.length) {
     setHtml(el, `<div class="msg">No shows match these filters.<br><span style="display:block;margin-top:7px;color:var(--muted)">Try changing or clearing your filters.</span></div>`);
     updateFilterUI();
     return;
@@ -1217,9 +1225,12 @@ function historyHtml(c, hk) {
   if (ev.length < 2 && !c.sold_out_at) return "";
   ev.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
   let note = "";
-  if (c.status === "0" && c.sold_out_at && c.first_seen_time && c.first_seen_status !== "0") {
-    note = `<div class="tl-note">Sold out ${spanText(Date.parse(c.sold_out_at) - Date.parse(c.first_seen_time))} after it was first seen</div>`;
-  }
+const firstSold = (c.history || []).find(h => h[1] === "s" && h[3] === "0");
+const reopens = (c.history || []).filter(h => h[1] === "s" && h[2] === "0" && h[3] !== "0").length;
+if (firstSold && c.first_seen_time && c.first_seen_status !== "0") {
+  note = `<div class="tl-note">First sold out ${spanText(Date.parse(firstSold[0]) - Date.parse(c.first_seen_time))} after it was first seen`
+       + (reopens ? ` · reopened ${reopens}×` : "") + `</div>`;
+}
   const rows = ev.map(e => `<div class="tl-row ${esc(e.cls)}">${esc(e.txt)}<small>${esc(fmtWhen(e.t))}</small></div>`).join("");
   const keep = hk ? ` data-hk="${esc(hk)}" ${typeof showOpen !== "undefined" && showOpen[hk] ? "open" : ""}` : "";
   return `<details class="hist"${keep}><summary>History (${ev.length})</summary>${note}<div class="tl">${rows}</div></details>`;
@@ -1333,6 +1344,14 @@ document.addEventListener("click", async e => {
   }
   if (t.id === "category-close" || t.id === "category-cancel") return closeCategoryPicker();
   if (t.id === "category-save") return saveCategorySelection();
+  if (t.id === "closed-toggle") {
+  S.showClosed = !S.showClosed;
+  store.set("showClosed", S.showClosed);
+  renderDates();
+  renderFilters();
+  renderList();
+  return;
+}
   if (t.id === "filter-open") { $("filter-overlay").hidden = false; return; }
   if (t.id === "sort-open") { updateSortUI(); $("sort-overlay").hidden = false; return; }
   if (t.id === "sort-close" || t.id === "sort-done") { $("sort-overlay").hidden = true; return; }

@@ -6,9 +6,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -222,9 +232,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -258,9 +278,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -340,9 +370,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-13T14:40:50+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -977,6 +1017,42 @@
    "time": "06:10 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16290/20261118"
+  },
+  "16319": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-18T16:01:08+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-18T16:01:08+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-18T20:00:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-18T20:15:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-18T16:01:08+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI02",
+   "start": "2026-11-18T19:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16319/20261118"
   }
  },
  "20261119": {
@@ -2288,9 +2364,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T10:20:59+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2360,9 +2446,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T10:20:59+05:30",
+     "history": [
+      [
+       "2026-11-18T16:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-18T16:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T16:01:08+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2576,7 +2672,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-17T14:00:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2622,7 +2718,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-17T17:15:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2658,7 +2754,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-17T20:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2704,7 +2800,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-17T23:45:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -2721,5 +2817,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-18T15:50:53+05:30"
+ "_updated": "2026-11-18T16:01:08+05:30"
 }

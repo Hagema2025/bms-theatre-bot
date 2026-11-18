@@ -71,7 +71,7 @@
      "price": 54.35,
      "reopened_at": "2026-11-18T19:40:53+05:30",
      "sold_out_at": "2026-11-18T19:01:16+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-18T19:50:53+05:30"
     },
@@ -79,7 +79,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -113,18 +113,24 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-18T20:01:08+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T19:40:53+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-18T20:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -268,9 +274,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T18:50:49+05:30",
+     "history": [
+      [
+       "2026-11-18T20:01:08+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 89.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T20:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -403,99 +418,6 @@
    "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/45405/20261118"
-  },
-  "45412": {
-   "censor": "UA16+",
-   "classes": {
-    "CLASSIC": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "history": [
-      [
-       "2026-11-18T15:20:54+05:30",
-       "s",
-       "3",
-       "2"
-      ],
-      [
-       "2026-11-18T16:31:23+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-18T17:31:39+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-18T17:40:52+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-18T17:50:51+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-18T18:10:50+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-18T18:20:51+05:30",
-       "s",
-       "1",
-       "2"
-      ],
-      [
-       "2026-11-18T19:01:16+05:30",
-       "s",
-       "2",
-       "1"
-      ],
-      [
-       "2026-11-18T19:10:53+05:30",
-       "s",
-       "1",
-       "2"
-      ]
-     ],
-     "price": 54.35,
-     "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-18T19:10:53+05:30"
-    },
-    "PRIME": {
-     "first_seen_status": "3",
-     "first_seen_time": "2026-11-14T18:50:49+05:30",
-     "price": 183.8,
-     "soon_alerted": true,
-     "status": "3"
-    }
-   },
-   "cutoff": "2026-11-18T20:15:00+05:30",
-   "dimension": "2D",
-   "duration": 149,
-   "end": "2026-11-18T20:00:00+05:30",
-   "event_code": "ET00516631",
-   "first_seen": "2026-11-14T18:50:49+05:30",
-   "genre": "Action,Comedy,Drama",
-   "language": "Tamil",
-   "movie": "Scene",
-   "poster": "scene-et00516631-1793771165",
-   "screen": "AUDI 09",
-   "start": "2026-11-18T19:30:00+05:30",
-   "subs": "ENG subs",
-   "tags": [],
-   "time": "07:30 PM",
-   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
-   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/PVHR/45412/20261118"
   },
   "45413": {
    "censor": "U",
@@ -706,14 +628,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-18T20:01:08+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-18T18:40:52+05:30",
      "sold_out_at": "2026-11-18T08:31:23+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T18:40:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-18T20:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9344,5 +9272,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46562/20261122"
   }
  },
- "_updated": "2026-11-18T19:50:53+05:30"
+ "_updated": "2026-11-18T20:01:08+05:30"
 }

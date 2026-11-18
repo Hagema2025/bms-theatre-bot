@@ -393,12 +393,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-18T08:20:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:20:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-17T23:41:03+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:20:48+05:30"
     }
    },
    "cutoff": "2026-11-18T22:15:00+05:30",
@@ -3760,9 +3767,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T07:31:21+05:30",
+     "history": [
+      [
+       "2026-11-18T08:20:48+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T08:20:48+05:30"
     }
    },
    "cutoff": "2026-11-20T08:15:00+05:30",
@@ -4175,9 +4191,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T07:40:51+05:30",
+     "history": [
+      [
+       "2026-11-18T08:20:48+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-18T08:20:48+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4558,9 +4583,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T08:01:11+05:30",
+     "history": [
+      [
+       "2026-11-18T08:20:48+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-18T08:20:48+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-18T08:20:48+05:30"
     }
    },
    "cutoff": "2026-11-21T13:55:00+05:30",
@@ -4734,5 +4769,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93198/20261121"
   }
  },
- "_updated": "2026-11-18T08:10:49+05:30"
+ "_updated": "2026-11-18T08:20:48+05:30"
 }

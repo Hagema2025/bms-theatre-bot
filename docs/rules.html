@@ -130,6 +130,24 @@ details.vt>summary>span:first-child{flex:1;min-width:0}
 .vt-n{margin-left:6px;font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;color:#d9ccff;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.3)}
 .vt-n.zero{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--line)}
 details.vt>summary a{color:var(--accent-2);font-weight:800;font-size:11px;text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid rgba(245,189,89,.38);white-space:nowrap}
+
+/* history timeline */
+.hist{margin:0 0 8px}
+.hist summary{cursor:pointer;color:var(--muted);font-size:11px;padding:0 0 6px 2px;list-style:none}
+.hist summary::-webkit-details-marker{display:none}
+.hist summary:before{content:"▸ "}
+.hist[open] summary:before{content:"▾ "}
+.tl{margin:0 0 4px 6px;padding-left:12px;border-left:1px solid var(--line)}
+.tl-row{position:relative;font-size:11px;color:#c9d3e1;padding:3px 0}
+.tl-row:before{content:"";position:absolute;left:-17px;top:8px;width:9px;height:9px;border-radius:50%;background:#4a5468;border:2px solid #101827}
+.tl-row.s3:before{background:var(--ok)}
+.tl-row.s2:before{background:var(--mid,#f5bd59)}
+.tl-row.s1:before{background:var(--low)}
+.tl-row.s0:before{background:#6b7486}
+.tl-row.p:before{background:var(--rule)}
+.tl-row small{display:block;color:var(--muted);font-size:10px}
+.tl-note{font-size:11px;color:var(--accent-2);margin:2px 0 6px 2px}
+.cat .hist{flex:0 0 100%;margin:4px 0 0}
 </style>
 </head>
 <body>
@@ -378,6 +396,32 @@ function wkTag(k) {
 // One show: summary = time + when it was tracked; body = every seat category with its own status
 const STATUS = { "0": "Sold out", "1": "Almost full", "2": "Filling fast", "3": "Available" };
 const laterMs = (a, b) => Math.max(Date.parse(a) || 0, Date.parse(b) || 0);
+const showOpen = {};   // open/closed state of show rows + history, kept for this visit only
+const spanText = ms => {
+  const m = Math.max(1, Math.round(ms / 60000));
+  if (m < 60) return `${m}m`;
+  const h = Math.floor(m / 60);
+  return h < 48 ? `${h}h ${m % 60}m` : `${Math.floor(h / 24)}d ${h % 24}h`;
+};
+// hk (optional): key used to remember whether this history is open between refreshes
+function historyHtml(c, hk) {
+  const ev = [];
+  if (c.first_seen_time) ev.push({ t: c.first_seen_time, cls: "s" + (c.first_seen_status || ""), txt: `First seen · ${STATUS[c.first_seen_status] || ""}` });
+  for (const h of (c.history || [])) {
+    if (h[1] === "s") ev.push({ t: h[0], cls: "s" + h[3], txt: `${STATUS[h[2]] || h[2]} → ${STATUS[h[3]] || h[3]}` });
+    else if (h[1] === "p") ev.push({ t: h[0], cls: "p", txt: `Price ₹${h[2]} → ₹${h[3]}` });
+  }
+  if (ev.length < 2 && !c.sold_out_at) return "";
+  ev.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  let note = "";
+  if (c.status === "0" && c.sold_out_at && c.first_seen_time && c.first_seen_status !== "0") {
+    note = `<div class="tl-note">Sold out ${spanText(Date.parse(c.sold_out_at) - Date.parse(c.first_seen_time))} after it was first seen</div>`;
+  }
+  const rows = ev.map(e => `<div class="tl-row ${esc(e.cls)}">${esc(e.txt)}<small>${esc(fmtWhen(e.t))}</small></div>`).join("");
+  const keep = hk ? ` data-hk="${esc(hk)}" ${typeof showOpen !== "undefined" && showOpen[hk] ? "open" : ""}` : "";
+  return `<details class="hist"${keep}><summary>History (${ev.length})</summary>${note}<div class="tl">${rows}</div></details>`;
+}
+
 function showRow(x, rule, got, ns) {
   const g = got.get(key(x)), at = g && g.at, tc = (g && g.cats) || {};
   const cats = priced(x.s).sort((p, q) => Number(p[1].price) - Number(q[1].price));
@@ -390,10 +434,10 @@ function showRow(x, rule, got, ns) {
       if (at) { cls = ""; w = `tracked ${fmtWhen(tc[n] || new Date(laterMs(at, c.first_seen_time)).toISOString())}`; }
       else { cls = "wait"; w = "waiting for next scan"; }
     }
-    return `<div class="cat ${cls}"><span class="cat-n">${esc(n)}</span><span class="cat-p">₹${esc(Number(c.price))}</span><span class="cat-s">${esc(STATUS[c.status] || c.status || "")}</span><span class="cat-w">${esc(w)}</span></div>`;
+    return `<div class="cat ${cls}"><span class="cat-n">${esc(n)}</span><span class="cat-p">₹${esc(Number(c.price))}</span><span class="cat-s">${esc(STATUS[c.status] || c.status || "")}</span><span class="cat-w">${esc(w)}</span>${historyHtml(c, sk + "|" + n)}</div>`;
   }).join("");
   const when = at ? `<span class="s-when">⚡ tracked ${esc(fmtWhen(at))}</span>` : `<span class="s-when wait">⏳ waiting for next scan</span>`;
-  return `<details class="show" data-sec="${esc(sk)}" ${sk in openSecs && openSecs[sk] ? "open" : ""}>
+  return `<details class="show" data-hk="${esc(sk)}" ${showOpen[sk] ? "open" : ""}>
     <summary><span class="t-chip${past ? " past" : ""}${at ? " got" : ""}">${esc(x.s.time)}</span>${when}<span class="s-cnt">${ok.size} of ${cats.length} categor${cats.length === 1 ? "y" : "ies"}</span></summary>
     <div class="s-body">${x.s.screen ? `<p class="s-screen">${esc(x.s.screen)}</p>` : ""}${rows || `<div class="empty">No seat categories listed.</div>`}</div></details>`;
 }
@@ -700,6 +744,8 @@ async function loadRemote() {
 // ── Events ────────────────────────────────────────────────
 // <details> "toggle" doesn't bubble, so listen in the capture phase to remember what is open
 document.addEventListener("toggle", e => {
+  const hk = e.target && e.target.dataset && e.target.dataset.hk;
+  if (hk) { showOpen[hk] = e.target.open; return; }   // show rows + history: remembered for this visit only
   const k = e.target && e.target.dataset && e.target.dataset.sec; if (!k) return;
   openSecs[k] = e.target.open;
   store.set("rules_open", openSecs);

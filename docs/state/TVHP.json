@@ -562,12 +562,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 320.0,
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:31:22+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -665,9 +672,18 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:20:51+05:30",
+     "history": [
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     }
    },
    "cutoff": "2026-11-20T15:40:00+05:30",
@@ -754,12 +770,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 320.0,
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -1274,12 +1297,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:40:55+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -1562,9 +1592,19 @@
     "ELITE+3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T19:20:54+05:30",
+     "history": [
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 218.0,
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     }
    },
    "cutoff": "2026-11-20T12:45:00+05:30",
@@ -1655,6 +1695,37 @@
    "time": "11:45 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26779/20261120"
+  },
+  "26783": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T22:01:20+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T11:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T22:01:20+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 2",
+   "start": "2026-11-20T10:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:40 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26783/20261120"
   }
  },
  "20261121": {
@@ -3435,5 +3506,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26776/20261125"
   }
  },
- "_updated": "2026-11-19T21:50:51+05:30"
+ "_updated": "2026-11-19T22:01:20+05:30"
 }

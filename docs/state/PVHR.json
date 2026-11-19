@@ -2406,9 +2406,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:10:54+05:30",
+     "history": [
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4952,14 +4961,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T19:50:55+05:30",
-     "sold_out_at": "2026-11-19T19:40:54+05:30",
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T21:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5684,12 +5699,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-19T22:01:20+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T06:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6018,9 +6040,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:10:54+05:30",
+     "history": [
+      [
+       "2026-11-19T22:01:20+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T22:01:20+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -11525,5 +11556,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00501652/PVHR/46593/20261122"
   }
  },
- "_updated": "2026-11-19T21:50:51+05:30"
+ "_updated": "2026-11-19T22:01:20+05:30"
 }

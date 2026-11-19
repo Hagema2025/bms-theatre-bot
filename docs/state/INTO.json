@@ -2959,12 +2959,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-19T23:01:11+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T10:50:46+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -3023,14 +3030,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-19T22:40:55+05:30",
+     "reopened_at": "2026-11-19T23:01:11+05:30",
      "sold_out_at": "2026-11-19T22:50:53+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-19T22:50:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     }
    },
    "cutoff": "2026-11-20T07:45:00+05:30",
@@ -4973,6 +4986,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93291/20261120"
+  },
+  "93316": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T23:20:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 5",
+   "start": "2026-11-20T22:35:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-19T23:01:11+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T23:01:11+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93316/20261120"
   }
  },
  "20261121": {
@@ -5082,14 +5141,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T22:50:53+05:30",
-     "sold_out_at": "2026-11-19T05:01:13+05:30",
+     "sold_out_at": "2026-11-19T23:01:11+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T22:50:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     }
    },
    "cutoff": "2026-11-21T07:45:00+05:30",
@@ -7790,9 +7855,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T21:10:52+05:30",
+     "history": [
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -7969,6 +8043,160 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93304/20261121"
+  },
+  "93307": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 140.18,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "SCREEN 7",
+   "start": "2026-11-21T22:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/INTO/93307/20261121"
+  },
+  "93308": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "SCREEN 6",
+   "start": "2026-11-21T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/INTO/93308/20261121"
+  },
+  "93309": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "SCREEN 6",
+   "start": "2026-11-21T13:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/INTO/93309/20261121"
+  },
+  "93311": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T08:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 5",
+   "start": "2026-11-21T08:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-19T23:01:11+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T23:01:11+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93311/20261121"
   }
  },
  "20261122": {
@@ -8075,12 +8303,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T22:01:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -10224,6 +10458,134 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93305/20261122"
+  },
+  "93312": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T08:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 5",
+   "start": "2026-11-22T08:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-19T23:01:11+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T23:01:11+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93312/20261122"
+  },
+  "93313": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T23:20:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 5",
+   "start": "2026-11-22T22:35:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-19T23:01:11+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T23:01:11+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93313/20261122"
+  },
+  "93314": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T23:01:11+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-19T23:01:11+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "SCREEN 6",
+   "start": "2026-11-22T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/INTO/93314/20261122"
   }
  },
  "20261123": {
@@ -10616,9 +10978,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T20:40:54+05:30",
+     "history": [
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "3",
+       "1"
+      ]
+     ],
      "price": 270.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -10676,12 +11047,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 270.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:01:13+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -10739,12 +11116,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 270.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:10:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -10795,12 +11178,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 270.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:10:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -10811,12 +11200,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 121.74,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T21:01:13+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     }
    },
    "cutoff": "2026-12-18T00:30:00+05:30",
@@ -11034,16 +11429,35 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T21:20:53+05:30",
+     "history": [
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 270.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T21:20:53+05:30",
+     "history": [
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 121.74,
+     "sold_out_at": "2026-11-19T23:01:11+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     }
    },
    "cutoff": "2026-12-19T00:30:00+05:30",
@@ -11671,14 +12085,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-19T23:01:11+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 121.74,
      "reopened_at": "2026-11-19T22:50:53+05:30",
-     "sold_out_at": "2026-11-19T22:40:55+05:30",
+     "sold_out_at": "2026-11-19T23:01:11+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T22:50:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T23:01:11+05:30"
     }
    },
    "cutoff": "2026-12-20T00:30:00+05:30",
@@ -11762,5 +12182,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93267/20261220"
   }
  },
- "_updated": "2026-11-19T22:50:53+05:30"
+ "_updated": "2026-11-19T23:01:11+05:30"
 }

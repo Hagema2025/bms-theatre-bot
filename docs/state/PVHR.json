@@ -762,12 +762,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-19T18:10:53+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-19T17:40:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-19T18:10:53+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4692,12 +4698,19 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-19T18:10:53+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-19T18:10:53+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T17:50:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T18:10:53+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4807,6 +4820,78 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46567/20261120"
   },
+  "46568": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T15:10:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-19T18:10:53+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 06",
+   "start": "2026-11-20T14:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46568/20261120"
+  },
+  "46569": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T19:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-19T18:10:53+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 06",
+   "start": "2026-11-20T18:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46569/20261120"
+  },
   "46570": {
    "censor": "U",
    "classes": {
@@ -4852,6 +4937,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46570/20261120"
+  },
+  "46583": {
+   "censor": "A",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 66.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T18:10:53+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 123,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00501652",
+   "first_seen": "2026-11-19T18:10:53+05:30",
+   "genre": "Action,Comedy,Crime,Thriller",
+   "language": "English",
+   "movie": "How to Rob a Bank",
+   "poster": "how-to-rob-a-bank-et00501652-1783341563",
+   "screen": "AUDI 07",
+   "start": "2026-11-20T19:35:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:35 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-19T18:10:53+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T18:10:53+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=ORxw68y3lyw&t=39s",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00501652/PVHR/46583/20261120"
   }
  },
  "20261121": {
@@ -10307,5 +10438,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46578/20261122"
   }
  },
- "_updated": "2026-11-19T18:01:12+05:30"
+ "_updated": "2026-11-19T18:10:53+05:30"
 }

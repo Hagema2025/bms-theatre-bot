@@ -407,9 +407,19 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T20:31:19+05:30",
+     "history": [
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 219.2,
+     "sold_out_at": "2026-11-19T19:40:54+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-19T19:25:00+05:30",
@@ -3884,12 +3894,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T19:31:22+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-20T20:40:00+05:30",
@@ -4748,6 +4764,37 @@
    "time": "06:01 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242936/20261120"
+  },
+  "242937": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-19T19:40:54+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 16",
+   "start": "2026-11-20T16:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "04:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242937/20261120"
   }
  },
  "20261121": {
@@ -6838,6 +6885,37 @@
    "time": "11:55 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242934/20261121"
+  },
+  "242938": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-19T19:40:54+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 16",
+   "start": "2026-11-21T16:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "04:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242938/20261121"
   }
  },
  "20261122": {
@@ -8529,14 +8607,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-18T16:50:50+05:30",
      "sold_out_at": "2026-11-18T16:31:23+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-18T16:50:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-22T15:10:00+05:30",
@@ -8871,7 +8955,38 @@
    "time": "02:00 PM",
    "trailer": "https://www.youtube.com/watch?v=4uCKr5Ch4UA",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526330/MAYJ/242918/20261122"
+  },
+  "242939": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-19T19:40:54+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 16",
+   "start": "2026-11-22T16:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "04:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/242939/20261122"
   }
  },
- "_updated": "2026-11-19T19:31:22+05:30"
+ "_updated": "2026-11-19T19:40:54+05:30"
 }

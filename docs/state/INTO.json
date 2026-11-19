@@ -1540,7 +1540,7 @@
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-20T00:30:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -4630,6 +4630,42 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93247/20261120"
+  },
+  "93277": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "price": 242.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "price": 99.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T15:55:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-19T19:40:54+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 5",
+   "start": "2026-11-20T15:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "03:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93277/20261120"
   }
  },
  "20261121": {
@@ -5189,13 +5225,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-19T19:40:54+05:30",
      "sold_out_at": "2026-11-18T19:20:54+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-18T19:20:54+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-21T08:15:00+05:30",
@@ -7215,16 +7258,36 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:20:51+05:30",
+     "history": [
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 218.8,
+     "sold_out_at": "2026-11-19T19:40:54+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:20:51+05:30",
+     "history": [
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-19T19:40:54+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-21T09:45:00+05:30",
@@ -7261,16 +7324,36 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:31:22+05:30",
+     "history": [
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 218.8,
+     "sold_out_at": "2026-11-19T19:40:54+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:31:22+05:30",
+     "history": [
+      [
+       "2026-11-19T19:40:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 89.35,
+     "sold_out_at": "2026-11-19T19:40:54+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T19:40:54+05:30"
     }
    },
    "cutoff": "2026-11-22T00:15:00+05:30",
@@ -10099,5 +10182,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93267/20261220"
   }
  },
- "_updated": "2026-11-19T19:31:22+05:30"
+ "_updated": "2026-11-19T19:40:54+05:30"
 }

@@ -347,7 +347,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-14T13:20:50+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -686,6 +686,44 @@
    "time": "06:30 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26617/20261120"
+  },
+  "26618": {
+   "censor": "UA16+",
+   "classes": {
+    "BUDGET+BROWINE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T16:50:51+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "ELITE+BROWNIE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T16:50:51+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T07:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-19T16:50:51+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-20T06:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26618/20261120"
   },
   "26620": {
    "censor": "UA16+",
@@ -2063,6 +2101,37 @@
    "time": "12:05 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26758/20261121"
+  },
+  "26780": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T16:50:51+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-19T16:50:51+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 4",
+   "start": "2026-11-21T22:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26780/20261121"
   }
  },
  "20261122": {
@@ -2540,6 +2609,37 @@
    "time": "12:05 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26756/20261122"
+  },
+  "26781": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T16:50:51+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T16:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-19T16:50:51+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 4",
+   "start": "2026-11-22T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "03:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/TVHP/26781/20261122"
   }
  },
  "20261123": {
@@ -3081,5 +3181,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26776/20261125"
   }
  },
- "_updated": "2026-11-19T16:40:52+05:30"
+ "_updated": "2026-11-19T16:50:51+05:30"
 }

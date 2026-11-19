@@ -2159,7 +2159,7 @@
       ]
      ],
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-19T14:20:51+05:30"
     },
@@ -4316,7 +4316,7 @@
      "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
-   "cutoff": "2026-11-20T21:35:00+05:30",
+   "cutoff": "2026-11-20T21:45:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-21T00:30:00+05:30",
@@ -4327,10 +4327,10 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "AUDI07",
-   "start": "2026-11-20T21:20:00+05:30",
+   "start": "2026-11-20T21:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "09:20 PM",
+   "time": "09:30 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -5126,6 +5126,42 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16518/20261120"
+  },
+  "16523": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-20T19:05:00+05:30",
+   "dimension": "2D",
+   "duration": 123,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00501652",
+   "first_seen": "2026-11-19T17:31:25+05:30",
+   "genre": "Action,Comedy,Crime,Thriller",
+   "language": "English",
+   "movie": "How to Rob a Bank",
+   "poster": "how-to-rob-a-bank-et00501652-1783341563",
+   "screen": "AUDI07",
+   "start": "2026-11-20T18:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=ORxw68y3lyw&t=39s",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00501652/CBMC/16523/20261120"
   }
  },
  "20261121": {
@@ -6850,7 +6886,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-21T22:50:00+05:30",
+   "cutoff": "2026-11-21T23:00:00+05:30",
    "dimension": "2D",
    "duration": 132,
    "end": "2026-11-22T00:30:00+05:30",
@@ -6861,10 +6897,10 @@
    "movie": "Bachelor Party D'eux",
    "poster": "bachelor-party-d-eux-et00521598-1791544764",
    "screen": "AUDI05",
-   "start": "2026-11-21T22:35:00+05:30",
+   "start": "2026-11-21T22:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:35 PM",
+   "time": "10:45 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -7229,6 +7265,98 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16516/20261121"
+  },
+  "16519": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-21T22:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-19T17:31:25+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI04",
+   "start": "2026-11-21T22:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T17:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T17:31:25+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16519/20261121"
+  },
+  "16522": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-21T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 123,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00501652",
+   "first_seen": "2026-11-19T17:31:25+05:30",
+   "genre": "Action,Comedy,Crime,Thriller",
+   "language": "English",
+   "movie": "How to Rob a Bank",
+   "poster": "how-to-rob-a-bank-et00501652-1783341563",
+   "screen": "AUDI05",
+   "start": "2026-11-21T20:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T17:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T17:31:25+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=ORxw68y3lyw&t=39s",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00501652/CBMC/16522/20261121"
   }
  },
  "20261122": {
@@ -8374,7 +8502,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-22T22:50:00+05:30",
+   "cutoff": "2026-11-22T23:00:00+05:30",
    "dimension": "2D",
    "duration": 132,
    "end": "2026-11-23T00:30:00+05:30",
@@ -8385,10 +8513,10 @@
    "movie": "Bachelor Party D'eux",
    "poster": "bachelor-party-d-eux-et00521598-1791544764",
    "screen": "AUDI05",
-   "start": "2026-11-22T22:35:00+05:30",
+   "start": "2026-11-22T22:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:35 PM",
+   "time": "10:45 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -9151,6 +9279,98 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16517/20261122"
+  },
+  "16520": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T22:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-19T17:31:25+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI04",
+   "start": "2026-11-22T22:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T17:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T17:31:25+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16520/20261122"
+  },
+  "16521": {
+   "censor": "A",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 123,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00501652",
+   "first_seen": "2026-11-19T17:31:25+05:30",
+   "genre": "Action,Comedy,Crime,Thriller",
+   "language": "English",
+   "movie": "How to Rob a Bank",
+   "poster": "how-to-rob-a-bank-et00501652-1783341563",
+   "screen": "AUDI05",
+   "start": "2026-11-22T20:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T17:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T17:31:25+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=ORxw68y3lyw&t=39s",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00501652/CBMC/16521/20261122"
   }
  },
  "20261217": {
@@ -9899,5 +10119,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16508/20261219"
   }
  },
- "_updated": "2026-11-19T17:20:51+05:30"
+ "_updated": "2026-11-19T17:31:25+05:30"
 }

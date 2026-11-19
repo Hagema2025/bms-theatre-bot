@@ -512,7 +512,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T19:31:23+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1848,20 +1848,37 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-19T20:01:08+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 320.0,
+     "reopened_at": "2026-11-19T20:01:08+05:30",
      "sold_out_at": "2026-11-19T16:31:39+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-19T16:31:39+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-19T20:01:08+05:30"
     },
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T16:31:39+05:30",
+     "history": [
+      [
+       "2026-11-19T20:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-19T20:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-19T20:01:08+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -1872,13 +1889,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-19T20:01:08+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 320.0,
+     "reopened_at": "2026-11-19T20:01:08+05:30",
      "sold_out_at": "2026-11-19T16:31:39+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-19T16:31:39+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-19T20:01:08+05:30"
     }
    },
    "cutoff": "2026-11-21T08:35:00+05:30",
@@ -2079,9 +2103,18 @@
     "ELITE+3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T19:20:54+05:30",
+     "history": [
+      [
+       "2026-11-19T20:01:08+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 218.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T20:01:08+05:30"
     }
    },
    "cutoff": "2026-11-21T20:00:00+05:30",
@@ -3252,5 +3285,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26776/20261125"
   }
  },
- "_updated": "2026-11-19T19:50:55+05:30"
+ "_updated": "2026-11-19T20:01:08+05:30"
 }

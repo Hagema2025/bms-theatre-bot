@@ -329,7 +329,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T16:50:49+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "SPECIAL": {
@@ -677,9 +677,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:10:52+05:30",
+     "history": [
+      [
+       "2026-11-19T10:31:25+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T10:31:25+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "0",
@@ -2376,5 +2385,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/MCSK/17248/20261122"
   }
  },
- "_updated": "2026-11-19T09:31:20+05:30"
+ "_updated": "2026-11-19T10:31:25+05:30"
 }

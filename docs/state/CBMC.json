@@ -1426,13 +1426,19 @@
        "s",
        "1",
        "3"
+      ],
+      [
+       "2026-11-19T10:31:25+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T10:10:51+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-19T10:20:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T10:31:25+05:30"
     }
    },
    "cutoff": "2026-11-19T11:15:00+05:30",
@@ -5077,9 +5083,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-19T10:31:25+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T10:31:25+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6851,9 +6866,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-19T10:31:25+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T10:31:25+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -7869,7 +7893,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -7915,7 +7939,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -7951,7 +7975,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -7997,7 +8021,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -8014,5 +8038,171 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16295/20261217"
   }
  },
- "_updated": "2026-11-19T10:20:51+05:30"
+ "20261218": {
+  "16500": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-12-18T13:45:00+05:30",
+   "dimension": "MS - Infinity Vision",
+   "duration": 155,
+   "end": "2026-12-19T00:30:00+05:30",
+   "event_code": "ET00526287",
+   "first_seen": "2026-11-19T10:31:25+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526287-1794895874",
+   "screen": "AUDI03",
+   "start": "2026-12-18T13:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:30 PM",
+   "trailer": "https://m.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16500/20261218"
+  },
+  "16501": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-12-18T17:00:00+05:30",
+   "dimension": "MS - Infinity Vision",
+   "duration": 155,
+   "end": "2026-12-19T00:30:00+05:30",
+   "event_code": "ET00526287",
+   "first_seen": "2026-11-19T10:31:25+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526287-1794895874",
+   "screen": "AUDI03",
+   "start": "2026-12-18T16:45:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:45 PM",
+   "trailer": "https://m.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16501/20261218"
+  },
+  "16502": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-12-18T20:15:00+05:30",
+   "dimension": "MS - Infinity Vision",
+   "duration": 155,
+   "end": "2026-12-19T00:30:00+05:30",
+   "event_code": "ET00526287",
+   "first_seen": "2026-11-19T10:31:25+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526287-1794895874",
+   "screen": "AUDI03",
+   "start": "2026-12-18T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T10:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:31:25+05:30"
+    }
+   ],
+   "trailer": "https://m.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16502/20261218"
+  },
+  "16503": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-19T10:31:25+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-12-18T23:30:00+05:30",
+   "dimension": "MS - Infinity Vision",
+   "duration": 155,
+   "end": "2026-12-19T00:30:00+05:30",
+   "event_code": "ET00526287",
+   "first_seen": "2026-11-19T10:31:25+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526287-1794895874",
+   "screen": "AUDI03",
+   "start": "2026-12-18T23:15:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "11:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-19T10:31:25+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:31:25+05:30"
+    }
+   ],
+   "trailer": "https://m.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16503/20261218"
+  }
+ },
+ "_updated": "2026-11-19T10:31:25+05:30"
 }

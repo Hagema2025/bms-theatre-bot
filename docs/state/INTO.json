@@ -1518,7 +1518,7 @@
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 130,
    "end": "2026-11-20T00:30:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -6446,12 +6446,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T10:50:50+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-19T10:50:50+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T13:20:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T10:50:50+05:30"
     }
    },
    "cutoff": "2026-11-21T16:35:00+05:30",
@@ -6780,14 +6787,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-19T10:50:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-18T14:10:51+05:30",
-     "sold_out_at": "2026-11-18T14:01:10+05:30",
+     "sold_out_at": "2026-11-19T10:50:50+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T14:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T10:50:50+05:30"
     }
    },
    "cutoff": "2026-11-22T11:35:00+05:30",
@@ -8619,5 +8632,401 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/INTO/93241/20261122"
   }
  },
- "_updated": "2026-11-19T10:31:25+05:30"
+ "20261217": {
+  "93250": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-17T14:10:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-18T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-17T13:25:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "01:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93250/20261217"
+  },
+  "93251": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-17T17:35:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-18T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-17T16:50:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "04:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93251/20261217"
+  },
+  "93252": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-17T21:00:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-18T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-17T20:15:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "08:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93252/20261217"
+  },
+  "93253": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-18T00:25:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-18T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-17T23:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "11:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93253/20261217"
+  }
+ },
+ "20261219": {
+  "93258": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-19T14:10:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-20T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-19T13:25:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "01:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T10:50:50+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:50:50+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93258/20261219"
+  },
+  "93259": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-19T17:35:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-20T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-19T16:50:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "04:50 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T10:50:50+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:50:50+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93259/20261219"
+  },
+  "93260": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-19T21:00:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-20T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-19T20:15:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "08:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T10:50:50+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:50:50+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93260/20261219"
+  },
+  "93261": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-20T00:25:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-20T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-19T23:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "11:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T10:50:50+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:50:50+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93261/20261219"
+  },
+  "93266": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T10:50:50+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-19T10:45:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-20T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T10:50:50+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-19T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T10:50:50+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T10:50:50+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93266/20261219"
+  }
+ },
+ "_updated": "2026-11-19T10:50:50+05:30"
 }

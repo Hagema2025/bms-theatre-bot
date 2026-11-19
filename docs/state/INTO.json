@@ -3862,13 +3862,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 59.43,
+     "reopened_at": "2026-11-19T11:40:48+05:30",
      "sold_out_at": "2026-11-19T11:31:20+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-19T11:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T23:15:00+05:30",
@@ -9090,5 +9097,55 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93266/20261219"
   }
  },
- "_updated": "2026-11-19T11:31:20+05:30"
+ "20261220": {
+  "93267": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T11:40:48+05:30",
+     "price": 121.74,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-19T11:40:48+05:30",
+     "price": 270.98,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-20T10:45:00+05:30",
+   "dimension": "MS-Infinity Vsn 3d",
+   "duration": 155,
+   "end": "2026-12-21T00:30:00+05:30",
+   "event_code": "ET00526306",
+   "first_seen": "2026-11-19T11:40:48+05:30",
+   "genre": "Action,Adventure,Fantasy,Sci-Fi",
+   "language": "English",
+   "movie": "Avengers: Doomsday",
+   "poster": "avengers-doomsday-et00526306-1794895899",
+   "screen": "SCREEN 1",
+   "start": "2026-12-20T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLUB": "2026-11-19T11:40:48+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-19T11:40:48+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=irVNGjRFZGk",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93267/20261220"
+  }
+ },
+ "_updated": "2026-11-19T11:40:48+05:30"
 }

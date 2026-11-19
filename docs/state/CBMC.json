@@ -1765,9 +1765,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:50:52+05:30",
+     "history": [
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3055,13 +3064,20 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:10:53+05:30",
+     "sold_out_at": "2026-11-19T11:40:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T11:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T19:20:00+05:30",
@@ -3588,12 +3604,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T23:10:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3604,13 +3626,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:10:53+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-19T11:10:53+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T16:20:00+05:30",
@@ -3665,13 +3693,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:10:53+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-19T11:10:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T20:15:00+05:30",
@@ -3748,13 +3782,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:10:53+05:30",
+     "sold_out_at": "2026-11-19T11:40:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T11:31:20+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T21:35:00+05:30",
@@ -4048,14 +4089,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-19T11:01:06+05:30",
-     "sold_out_at": "2026-11-19T02:11:03+05:30",
+     "sold_out_at": "2026-11-19T11:40:48+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T11:01:06+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4078,13 +4125,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:01:06+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T11:31:20+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T06:45:00+05:30",
@@ -4261,13 +4314,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-19T11:10:53+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-19T11:10:53+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     }
    },
    "cutoff": "2026-11-20T10:20:00+05:30",
@@ -7690,12 +7749,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T11:40:48+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T11:31:20+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-19T11:40:48+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -8307,7 +8372,7 @@
    },
    "cutoff": "2026-12-17T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -8353,7 +8418,7 @@
    },
    "cutoff": "2026-12-17T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -8389,7 +8454,7 @@
    },
    "cutoff": "2026-12-17T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -8435,7 +8500,7 @@
    },
    "cutoff": "2026-12-17T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-18T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-17T08:40:52+05:30",
@@ -8500,7 +8565,7 @@
    },
    "cutoff": "2026-12-18T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-19T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:31:25+05:30",
@@ -8551,7 +8616,7 @@
    },
    "cutoff": "2026-12-18T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-19T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:31:25+05:30",
@@ -8602,7 +8667,7 @@
    },
    "cutoff": "2026-12-18T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-19T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:31:25+05:30",
@@ -8663,7 +8728,7 @@
    },
    "cutoff": "2026-12-18T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-19T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:31:25+05:30",
@@ -8726,7 +8791,7 @@
    },
    "cutoff": "2026-12-19T13:45:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-20T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:40:51+05:30",
@@ -8787,7 +8852,7 @@
    },
    "cutoff": "2026-12-19T17:00:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-20T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:40:51+05:30",
@@ -8842,7 +8907,7 @@
    },
    "cutoff": "2026-12-19T20:15:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-20T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:40:51+05:30",
@@ -8897,7 +8962,7 @@
    },
    "cutoff": "2026-12-19T23:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-20T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:40:51+05:30",
@@ -8952,7 +9017,7 @@
    },
    "cutoff": "2026-12-19T10:30:00+05:30",
    "dimension": "MS - Infinity Vision",
-   "duration": 0,
+   "duration": 155,
    "end": "2026-12-20T00:30:00+05:30",
    "event_code": "ET00526287",
    "first_seen": "2026-11-19T10:40:51+05:30",
@@ -8979,5 +9044,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16508/20261219"
   }
  },
- "_updated": "2026-11-19T11:31:20+05:30"
+ "_updated": "2026-11-19T11:40:48+05:30"
 }

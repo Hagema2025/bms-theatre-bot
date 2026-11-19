@@ -1403,7 +1403,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T19:31:23+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -1518,7 +1518,7 @@
    },
    "cutoff": "2026-11-19T20:20:00+05:30",
    "dimension": "2D",
-   "duration": 130,
+   "duration": 0,
    "end": "2026-11-20T00:30:00+05:30",
    "event_code": "ET00516584",
    "first_seen": "2026-11-17T19:31:23+05:30",
@@ -2483,9 +2483,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:01:10+05:30",
+     "history": [
+      [
+       "2026-11-19T11:31:20+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-19T11:31:20+05:30"
     }
    },
    "cutoff": "2026-11-20T13:55:00+05:30",
@@ -2537,12 +2546,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-19T11:31:20+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-18T21:01:11+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-19T11:31:20+05:30"
     }
    },
    "cutoff": "2026-11-20T20:55:00+05:30",
@@ -3841,12 +3856,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T11:31:20+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
+     "sold_out_at": "2026-11-19T11:31:20+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T11:20:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T11:31:20+05:30"
     }
    },
    "cutoff": "2026-11-20T23:15:00+05:30",
@@ -9068,5 +9090,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93266/20261219"
   }
  },
- "_updated": "2026-11-19T11:20:48+05:30"
+ "_updated": "2026-11-19T11:31:20+05:30"
 }

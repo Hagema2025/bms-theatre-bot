@@ -664,12 +664,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-19T22:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-19T22:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T22:11:07+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:20:55+05:30"
     }
    },
    "cutoff": "2026-11-20T12:05:00+05:30",
@@ -1335,14 +1342,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-19T22:20:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
      "reopened_at": "2026-11-19T22:11:07+05:30",
-     "sold_out_at": "2026-11-19T22:01:20+05:30",
+     "sold_out_at": "2026-11-19T22:20:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-19T22:11:07+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-19T22:20:55+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -3589,5 +3602,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26776/20261125"
   }
  },
- "_updated": "2026-11-19T22:11:07+05:30"
+ "_updated": "2026-11-19T22:20:55+05:30"
 }

@@ -1897,9 +1897,19 @@
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T20:31:24+05:30",
+     "history": [
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 57.98,
+     "sold_out_at": "2026-11-20T22:20:50+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T00:08:00+05:30",
@@ -2306,12 +2316,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T01:10:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -3313,12 +3329,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-20T22:20:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:10:56+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-20T23:25:00+05:30",
@@ -3379,9 +3402,18 @@
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T20:31:24+05:30",
+     "history": [
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T00:05:00+05:30",
@@ -3604,12 +3636,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T22:01:15+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -4596,12 +4634,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T19:01:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -4630,12 +4674,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 57.98,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:10:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T00:09:00+05:30",
@@ -8282,9 +8332,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T13:10:54+05:30",
+     "history": [
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-20T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-22T17:50:00+05:30",
@@ -9527,9 +9587,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T17:50:51+05:30",
+     "history": [
+      [
+       "2026-11-20T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-20T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:20:50+05:30"
     }
    },
    "cutoff": "2026-11-22T14:10:00+05:30",
@@ -9801,5 +9871,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/242978/20261122"
   }
  },
- "_updated": "2026-11-20T22:10:56+05:30"
+ "_updated": "2026-11-20T22:20:50+05:30"
 }

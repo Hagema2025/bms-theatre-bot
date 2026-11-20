@@ -4012,9 +4012,18 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T18:10:52+05:30",
+     "history": [
+      [
+       "2026-11-20T11:20:58+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T11:20:58+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -4208,5 +4217,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48835/20261122"
   }
  },
- "_updated": "2026-11-20T11:10:50+05:30"
+ "_updated": "2026-11-20T11:20:58+05:30"
 }

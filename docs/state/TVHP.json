@@ -1619,7 +1619,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T05:31:22+05:30",
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "ELITE+BROWNIE": {
@@ -1640,7 +1640,7 @@
       ]
      ],
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T20:01:11+05:30"
     }
@@ -1843,6 +1843,13 @@
   "26807": {
    "censor": "UA16+",
    "classes": {
+    "BUDGET": {
+     "first_seen_status": "2",
+     "first_seen_time": "2026-11-20T20:51:08+05:30",
+     "price": 59.94,
+     "soon_alerted": false,
+     "status": "2"
+    },
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T17:20:51+05:30",
@@ -1883,6 +1890,16 @@
     "4K DOLBY ATMOS"
    ],
    "time": "11:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "BUDGET": "2026-11-20T20:51:08+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-20T20:51:08+05:30"
+    }
+   ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26807/20261120"
   }
@@ -2177,9 +2194,18 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:20:51+05:30",
+     "history": [
+      [
+       "2026-11-20T20:51:08+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T20:51:08+05:30"
     }
    },
    "cutoff": "2026-11-21T12:40:00+05:30",
@@ -2683,12 +2709,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T20:51:08+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T20:40:53+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T20:51:08+05:30"
     }
    },
    "cutoff": "2026-11-21T19:20:00+05:30",
@@ -4943,5 +4975,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-20T20:40:53+05:30"
+ "_updated": "2026-11-20T20:51:08+05:30"
 }

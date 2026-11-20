@@ -1295,9 +1295,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T13:20:54+05:30",
+     "history": [
+      [
+       "2026-11-20T12:01:04+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-20T12:01:04+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-20T11:50:00+05:30",
@@ -3032,7 +3042,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T08:20:51+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -8014,5 +8024,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242961/20261122"
   }
  },
- "_updated": "2026-11-20T11:50:52+05:30"
+ "_updated": "2026-11-20T12:01:04+05:30"
 }

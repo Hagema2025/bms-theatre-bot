@@ -421,7 +421,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-20T12:10:48+05:30"
     },
@@ -2725,7 +2725,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T22:31:29+05:30",
      "price": 210.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -9095,13 +9095,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T15:01:09+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-20T08:10:59+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T14:50:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T15:01:09+05:30"
     }
    },
    "cutoff": "2026-12-18T13:45:00+05:30",
@@ -9187,13 +9193,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T15:01:09+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-20T08:10:59+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T14:50:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T15:01:09+05:30"
     }
    },
    "cutoff": "2026-12-18T17:00:00+05:30",
@@ -9499,13 +9511,19 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T15:01:09+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-20T08:01:10+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T14:50:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T15:01:09+05:30"
     }
    },
    "cutoff": "2026-12-19T13:45:00+05:30",
@@ -10150,5 +10168,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-20T14:50:49+05:30"
+ "_updated": "2026-11-20T15:01:09+05:30"
 }

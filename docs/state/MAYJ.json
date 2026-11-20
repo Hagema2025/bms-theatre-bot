@@ -6013,9 +6013,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T13:20:49+05:30",
+     "history": [
+      [
+       "2026-11-20T13:40:48+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 211.0,
+     "sold_out_at": "2026-11-20T13:40:48+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T13:40:48+05:30"
     }
    },
    "cutoff": "2026-11-21T12:20:00+05:30",
@@ -6037,6 +6047,37 @@
    "time": "12:10 PM",
    "trailer": "https://www.youtube.com/watch?v=A7lyvgnDuDE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506939/MAYJ/242967/20261121"
+  },
+  "242968": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T13:40:48+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T12:20:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T13:40:48+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 14",
+   "start": "2026-11-21T12:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242968/20261121"
   }
  },
  "20261122": {
@@ -8273,5 +8314,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242961/20261122"
   }
  },
- "_updated": "2026-11-20T13:31:26+05:30"
+ "_updated": "2026-11-20T13:40:48+05:30"
 }

@@ -1303,7 +1303,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-20T12:01:04+05:30"
     }
@@ -2649,12 +2649,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T12:40:49+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T12:10:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T12:40:49+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3007,9 +3013,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T11:51:02+05:30",
+     "history": [
+      [
+       "2026-11-20T12:40:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T12:40:49+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4487,12 +4502,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T12:40:49+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-19T00:10:54+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T12:40:49+05:30"
     }
    },
    "cutoff": "2026-11-21T10:15:00+05:30",
@@ -5074,12 +5095,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T12:40:49+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T10:20:51+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T12:40:49+05:30"
     }
    },
    "cutoff": "2026-11-21T09:55:00+05:30",
@@ -6223,12 +6250,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T12:40:49+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 242.49,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T12:40:49+05:30"
     }
    },
    "cutoff": "2026-11-21T23:15:00+05:30",
@@ -11063,6 +11096,152 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46595/20261122"
   }
  },
+ "20261123": {
+  "46596": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T08:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T12:40:49+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 01",
+   "start": "2026-11-23T08:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46596/20261123"
+  },
+  "46597": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T12:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T12:40:49+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 01",
+   "start": "2026-11-23T11:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "11:40 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46597/20261123"
+  },
+  "46599": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T12:40:49+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 01",
+   "start": "2026-11-23T19:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46599/20261123"
+  },
+  "46600": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T12:40:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T12:40:49+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 01",
+   "start": "2026-11-23T22:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46600/20261123"
+  }
+ },
  "20261124": {
   "46601": {
    "censor": "UA16+",
@@ -11427,5 +11606,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46610/20261125"
   }
  },
- "_updated": "2026-11-20T12:31:20+05:30"
+ "_updated": "2026-11-20T12:40:49+05:30"
 }

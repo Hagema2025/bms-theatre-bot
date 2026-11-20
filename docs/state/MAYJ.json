@@ -200,12 +200,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2082,12 +2088,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 57.98,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-20T22:25:00+05:30",
@@ -2310,12 +2322,19 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-20T21:51:01+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T21:20:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-21T00:09:00+05:30",
@@ -2534,12 +2553,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-20T21:51:01+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T19:51:05+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2550,12 +2576,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-20T21:51:01+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T20:51:08+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-20T21:40:00+05:30",
@@ -3250,12 +3283,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 57.98,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:41:00+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-20T23:25:00+05:30",
@@ -3300,12 +3339,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T18:20:56+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -3517,12 +3562,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T19:11:00+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -4187,12 +4238,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T14:50:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -4495,12 +4552,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T21:41:00+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-21T00:09:00+05:30",
@@ -6162,9 +6225,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:10:51+05:30",
+     "history": [
+      [
+       "2026-11-20T21:51:01+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T21:51:01+05:30"
     }
    },
    "cutoff": "2026-11-21T17:00:00+05:30",
@@ -7246,6 +7318,68 @@
    "time": "09:45 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242974/20261121"
+  },
+  "242975": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T21:51:01+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T15:30:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-20T21:51:01+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 15",
+   "start": "2026-11-21T15:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/242975/20261121"
+  },
+  "242976": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T21:51:01+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-20T21:51:01+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 15",
+   "start": "2026-11-21T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/242976/20261121"
   }
  },
  "20261122": {
@@ -9510,7 +9644,69 @@
    "time": "11:10 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242961/20261122"
+  },
+  "242977": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T21:51:01+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T15:30:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-20T21:51:01+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 15",
+   "start": "2026-11-22T15:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/242977/20261122"
+  },
+  "242978": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T21:51:01+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-20T21:51:01+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 15",
+   "start": "2026-11-22T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/242978/20261122"
   }
  },
- "_updated": "2026-11-20T21:41:00+05:30"
+ "_updated": "2026-11-20T21:51:01+05:30"
 }

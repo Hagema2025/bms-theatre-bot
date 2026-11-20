@@ -359,13 +359,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T14:50:49+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-20T14:31:22+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T14:40:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T14:50:49+05:30"
     }
    },
    "cutoff": "2026-11-20T16:50:00+05:30",
@@ -428,12 +434,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T14:50:49+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-20T14:50:49+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T19:31:34+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T14:50:49+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1799,7 +1812,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:40:52+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -1847,7 +1860,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:40:52+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PEARL": {
@@ -2630,12 +2643,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T14:50:49+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T14:40:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T14:50:49+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -4456,5 +4475,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48835/20261122"
   }
  },
- "_updated": "2026-11-20T14:40:50+05:30"
+ "_updated": "2026-11-20T14:50:49+05:30"
 }

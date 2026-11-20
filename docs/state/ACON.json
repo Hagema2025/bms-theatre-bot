@@ -340,7 +340,7 @@
      "price": 183.0,
      "reopened_at": "2026-11-20T14:31:22+05:30",
      "sold_out_at": "2026-11-20T13:01:07+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T14:31:22+05:30"
     },
@@ -353,13 +353,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-20T14:40:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-20T14:31:22+05:30",
-     "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T14:31:22+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-20T14:40:50+05:30"
     }
    },
    "cutoff": "2026-11-20T16:50:00+05:30",
@@ -1114,12 +1120,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T14:40:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-20T14:40:50+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-18T17:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T14:40:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2611,9 +2624,18 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-17T18:10:52+05:30",
+     "history": [
+      [
+       "2026-11-20T14:40:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T14:40:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -4434,5 +4456,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48835/20261122"
   }
  },
- "_updated": "2026-11-20T14:31:22+05:30"
+ "_updated": "2026-11-20T14:40:50+05:30"
 }

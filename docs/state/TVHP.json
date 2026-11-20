@@ -175,7 +175,7 @@
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-19T22:01:20+05:30"
     }
@@ -656,12 +656,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T13:01:07+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T09:01:03+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T13:01:07+05:30"
     }
    },
    "cutoff": "2026-11-20T19:45:00+05:30",
@@ -1081,9 +1087,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:20:51+05:30",
+     "history": [
+      [
+       "2026-11-20T13:01:07+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-20T13:01:07+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T13:01:07+05:30"
     }
    },
    "cutoff": "2026-11-20T20:35:00+05:30",
@@ -1603,6 +1619,37 @@
    "time": "04:00 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26803/20261120"
+  },
+  "26804": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T13:01:07+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-20T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-21T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T13:01:07+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-20T19:35:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "07:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26804/20261120"
   }
  },
  "20261121": {
@@ -4330,5 +4377,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-20T12:50:52+05:30"
+ "_updated": "2026-11-20T13:01:07+05:30"
 }

@@ -243,12 +243,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T16:31:21+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T16:10:49+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-20T16:31:21+05:30"
     }
    },
    "cutoff": "2026-11-20T19:15:00+05:30",
@@ -1400,12 +1406,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T16:31:21+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 320.0,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T16:20:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T16:31:21+05:30"
     }
    },
    "cutoff": "2026-11-21T00:00:00+05:30",
@@ -4650,5 +4662,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-20T16:20:56+05:30"
+ "_updated": "2026-11-20T16:31:21+05:30"
 }

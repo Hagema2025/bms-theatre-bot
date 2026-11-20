@@ -4082,9 +4082,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-20T16:10:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6426,9 +6436,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T08:10:59+05:30",
+     "history": [
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -6567,6 +6586,42 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16530/20261121"
+  },
+  "16533": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T16:10:49+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-20T16:10:49+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-21T11:35:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-20T16:10:49+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "AUDI02",
+   "start": "2026-11-21T11:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:20 AM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/CBMC/16533/20261121"
   }
  },
  "20261122": {
@@ -6821,9 +6876,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:50:54+05:30",
+     "history": [
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-20T16:10:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -8839,9 +8904,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T08:10:59+05:30",
+     "history": [
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-20T16:10:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -9832,13 +9907,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-20T08:10:59+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T08:10:59+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     }
    },
    "cutoff": "2026-12-19T17:00:00+05:30",
@@ -9910,13 +9991,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-20T16:10:49+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-20T08:10:59+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T08:10:59+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T16:10:49+05:30"
     }
    },
    "cutoff": "2026-12-19T20:15:00+05:30",
@@ -10405,5 +10492,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-20T16:01:09+05:30"
+ "_updated": "2026-11-20T16:10:49+05:30"
 }

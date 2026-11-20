@@ -183,12 +183,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T18:01:06+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     }
    },
    "cutoff": "2026-11-20T23:30:00+05:30",
@@ -399,12 +405,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 242.49,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T08:51:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     }
    },
    "cutoff": "2026-11-20T23:15:00+05:30",
@@ -2453,7 +2465,7 @@
       ]
      ],
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T18:50:50+05:30"
     },
@@ -2469,7 +2481,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-20T19:31:39+05:30"
     }
@@ -3448,13 +3460,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-20T19:51:05+05:30",
      "sold_out_at": "2026-11-20T19:40:52+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-20T19:40:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4363,12 +4382,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 94.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T19:31:39+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7966,12 +7991,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T19:20:54+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -8128,12 +8159,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 94.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-19T21:40:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -10871,12 +10908,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T19:31:39+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -12156,9 +12199,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:40:54+05:30",
+     "history": [
+      [
+       "2026-11-20T19:51:05+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T19:51:05+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -13023,5 +13075,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46610/20261125"
   }
  },
- "_updated": "2026-11-20T19:40:52+05:30"
+ "_updated": "2026-11-20T19:51:05+05:30"
 }

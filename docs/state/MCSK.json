@@ -774,9 +774,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:10:52+05:30",
+     "history": [
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "0",
@@ -5894,5 +5903,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MCSK/17311/20261125"
   }
  },
- "_updated": "2026-11-20T22:10:56+05:30"
+ "_updated": "2026-11-20T22:31:24+05:30"
 }

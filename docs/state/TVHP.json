@@ -513,14 +513,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.94,
      "reopened_at": "2026-11-20T22:20:50+05:30",
-     "sold_out_at": "2026-11-20T21:41:00+05:30",
+     "sold_out_at": "2026-11-20T22:31:24+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:20:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     },
     "ELITE": {
      "first_seen_status": "3",
@@ -811,9 +817,19 @@
     "BUDGET+BROWINE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T21:41:12+05:30",
+     "history": [
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 320.0,
+     "sold_out_at": "2026-11-20T22:31:24+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -878,12 +894,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 320.0,
+     "sold_out_at": "2026-11-20T22:31:24+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T15:31:33+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     }
    },
    "cutoff": "2026-11-20T22:50:00+05:30",
@@ -2137,6 +2160,37 @@
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/TVHP/26701/20261121"
   },
+  "26702": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T09:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T22:31:24+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 2",
+   "start": "2026-11-21T08:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26702/20261121"
+  },
   "26704": {
    "censor": "UA13+",
    "classes": {
@@ -2249,6 +2303,44 @@
    "time": "11:05 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26706/20261121"
+  },
+  "26707": {
+   "censor": "UA16+",
+   "classes": {
+    "BUDGET+BROWINE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "ELITE+BROWNIE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T09:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T22:31:24+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 3",
+   "start": "2026-11-21T08:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:20 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26707/20261121"
   },
   "26708": {
    "censor": "UA16+",
@@ -2411,6 +2503,75 @@
    "time": "07:05 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26710/20261121"
+  },
+  "26711": {
+   "censor": "UA16+",
+   "classes": {
+    "BUDGET+BROWINE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "ELITE+BROWNIE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 320.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T23:35:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T22:31:24+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 3",
+   "start": "2026-11-21T22:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:50 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26711/20261121"
+  },
+  "26712": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-20T22:31:24+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T08:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-20T22:31:24+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-21T08:05:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "08:05 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26712/20261121"
   },
   "26713": {
    "censor": "UA16+",
@@ -3097,13 +3258,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 320.0,
+     "reopened_at": "2026-11-20T22:31:24+05:30",
      "sold_out_at": "2026-11-20T10:31:21+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-20T10:31:21+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     },
     "ELITE+BROWNIE": {
      "first_seen_status": "3",
@@ -3114,13 +3282,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-20T22:31:24+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 320.0,
+     "reopened_at": "2026-11-20T22:31:24+05:30",
      "sold_out_at": "2026-11-20T10:31:21+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-20T10:31:21+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T22:31:24+05:30"
     }
    },
    "cutoff": "2026-11-22T00:10:00+05:30",
@@ -5166,5 +5341,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-20T22:20:50+05:30"
+ "_updated": "2026-11-20T22:31:24+05:30"
 }

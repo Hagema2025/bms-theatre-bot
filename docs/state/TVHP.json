@@ -495,9 +495,18 @@
     "BUDGET": {
      "first_seen_status": "2",
      "first_seen_time": "2026-11-20T21:01:08+05:30",
+     "history": [
+      [
+       "2026-11-20T21:10:55+05:30",
+       "s",
+       "2",
+       "1"
+      ]
+     ],
      "price": 59.94,
      "soon_alerted": true,
-     "status": "2"
+     "status": "1",
+     "status_changed_at": "2026-11-20T21:10:55+05:30"
     },
     "ELITE": {
      "first_seen_status": "3",
@@ -2238,12 +2247,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-20T21:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T21:01:08+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T21:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T12:40:00+05:30",
@@ -2927,12 +2942,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-20T21:10:55+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 218.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:01:08+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-20T21:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T12:50:00+05:30",
@@ -3124,14 +3145,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-20T21:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.0,
      "reopened_at": "2026-11-20T18:31:23+05:30",
      "sold_out_at": "2026-11-20T18:20:56+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-20T18:31:23+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-20T21:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T16:55:00+05:30",
@@ -3748,9 +3775,18 @@
     "ELITE+3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T19:20:54+05:30",
+     "history": [
+      [
+       "2026-11-20T21:10:55+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 218.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-20T21:10:55+05:30"
     }
    },
    "cutoff": "2026-11-22T12:50:00+05:30",
@@ -5028,5 +5064,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-20T21:01:08+05:30"
+ "_updated": "2026-11-20T21:10:55+05:30"
 }

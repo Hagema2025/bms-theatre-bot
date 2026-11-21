@@ -86,14 +86,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 59.43,
-     "reopened_at": "2026-11-21T11:31:16+05:30",
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "sold_out_at": "2026-11-21T11:40:48+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T11:40:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T15:05:00+05:30",
@@ -154,9 +160,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T18:20:00+05:30",
@@ -215,9 +231,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 104.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T22:10:00+05:30",
@@ -846,9 +872,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T20:05:00+05:30",
@@ -882,9 +918,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T22:55:00+05:30",
@@ -935,12 +981,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 252.49,
+     "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T14:11:03+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -963,13 +1016,20 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 109.43,
      "reopened_at": "2026-11-21T03:20:57+05:30",
+     "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-21T10:50:58+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T11:50:00+05:30",
@@ -1102,9 +1162,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 61.74,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T19:40:00+05:30",
@@ -1500,9 +1570,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T23:35:00+05:30",
@@ -1845,13 +1925,20 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
+     "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T11:40:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T15:45:00+05:30",
@@ -1929,14 +2016,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-20T23:20:50+05:30",
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "sold_out_at": "2026-11-20T23:40:58+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-20T23:40:58+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T19:20:00+05:30",
@@ -2014,9 +2107,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T22:55:00+05:30",
@@ -2082,9 +2185,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T22:15:00+05:30",
@@ -2301,13 +2414,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T11:50:57+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T17:15:00+05:30",
@@ -2453,13 +2572,19 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T11:40:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T15:05:00+05:30",
@@ -2620,12 +2745,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-19T19:40:54+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2720,9 +2852,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T18:40:00+05:30",
@@ -2781,9 +2923,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T20:30:00+05:30",
@@ -2881,7 +3033,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T15:50:54+05:30"
     },
@@ -2910,7 +3062,7 @@
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-21T11:50:57+05:30"
     }
@@ -3344,9 +3496,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "history": [
+      [
+       "2026-11-21T12:01:04+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0"
+     "status": "3",
+     "status_changed_at": "2026-11-21T12:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T22:20:00+05:30",
@@ -8207,5 +8369,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-21T11:50:57+05:30"
+ "_updated": "2026-11-21T12:01:04+05:30"
 }

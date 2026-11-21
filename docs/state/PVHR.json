@@ -1142,14 +1142,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-21T14:40:47+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-21T13:01:03+05:30",
+     "reopened_at": "2026-11-21T14:40:47+05:30",
      "sold_out_at": "2026-11-21T14:31:22+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T14:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T14:40:47+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -2574,9 +2580,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:50:48+05:30",
+     "history": [
+      [
+       "2026-11-21T14:40:47+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 99.43,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T14:40:47+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -3420,7 +3435,7 @@
       ]
      ],
      "price": 59.43,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-21T11:31:16+05:30"
     },
@@ -3428,7 +3443,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:50:48+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -5603,6 +5618,52 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46612/20261121"
+  },
+  "46614": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:40:47+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:40:47+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T19:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:40:47+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 07",
+   "start": "2026-11-21T18:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "06:40 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "CLASSIC": "2026-11-21T14:40:47+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-21T14:40:47+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46614/20261121"
   }
  },
  "20261122": {
@@ -10437,5 +10498,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46610/20261125"
   }
  },
- "_updated": "2026-11-21T14:31:22+05:30"
+ "_updated": "2026-11-21T14:40:47+05:30"
 }

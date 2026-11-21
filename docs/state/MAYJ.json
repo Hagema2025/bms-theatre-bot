@@ -3238,7 +3238,7 @@
       ]
      ],
      "price": 202.5,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-21T12:31:16+05:30"
     }
@@ -4519,12 +4519,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T13:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 237.9,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T12:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T13:20:50+05:30"
     }
    },
    "cutoff": "2026-11-22T10:40:00+05:30",
@@ -6216,5 +6222,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242993/20261122"
   }
  },
- "_updated": "2026-11-21T13:10:50+05:30"
+ "_updated": "2026-11-21T13:20:50+05:30"
 }

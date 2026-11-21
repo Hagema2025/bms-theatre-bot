@@ -528,12 +528,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T13:20:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 213.0,
+     "sold_out_at": "2026-11-21T13:20:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T21:01:08+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T13:20:50+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -1418,12 +1425,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T13:20:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T13:20:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T09:31:18+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T13:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1494,14 +1508,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T13:20:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-21T12:50:58+05:30",
-     "sold_out_at": "2026-11-21T12:20:59+05:30",
+     "sold_out_at": "2026-11-21T13:20:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:50:58+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T13:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T13:15:00+05:30",
@@ -2659,12 +2679,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-21T13:20:50+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:10:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T13:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -5523,5 +5549,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48905/20261126"
   }
  },
- "_updated": "2026-11-21T13:01:03+05:30"
+ "_updated": "2026-11-21T13:20:50+05:30"
 }

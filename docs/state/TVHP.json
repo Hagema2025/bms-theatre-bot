@@ -2422,13 +2422,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 183.0,
+     "reopened_at": "2026-11-21T20:01:13+05:30",
      "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T12:40:00+05:30",
@@ -2463,12 +2470,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T14:31:22+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T16:15:00+05:30",
@@ -2503,13 +2516,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 183.0,
+     "reopened_at": "2026-11-21T20:01:13+05:30",
      "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T19:50:00+05:30",
@@ -2661,9 +2681,18 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:20:51+05:30",
+     "history": [
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T12:10:00+05:30",
@@ -2790,12 +2819,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 218.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T20:00:00+05:30",
@@ -3236,6 +3271,37 @@
    "time": "08:35 AM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26824/20261122"
+  },
+  "26826": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T20:01:13+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-22T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T20:01:13+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 3",
+   "start": "2026-11-22T22:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26826/20261122"
   }
  },
  "20261123": {
@@ -4492,5 +4558,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-21T19:50:52+05:30"
+ "_updated": "2026-11-21T20:01:13+05:30"
 }

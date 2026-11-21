@@ -605,7 +605,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-18T20:11:01+05:30"
     }
@@ -1192,14 +1192,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-21T14:40:47+05:30",
+     "reopened_at": "2026-11-21T20:01:13+05:30",
      "sold_out_at": "2026-11-21T16:20:49+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T16:20:49+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -2997,12 +3003,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 242.49,
+     "sold_out_at": "2026-11-21T20:01:13+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T09:01:07+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-21T23:15:00+05:30",
@@ -3571,12 +3584,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T16:50:57+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     }
    },
    "cutoff": "2026-11-21T23:30:00+05:30",
@@ -4210,14 +4229,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 94.35,
-     "reopened_at": "2026-11-21T18:21:01+05:30",
+     "reopened_at": "2026-11-21T20:01:13+05:30",
      "sold_out_at": "2026-11-21T19:50:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T19:50:52+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4261,7 +4286,7 @@
       ]
      ],
      "price": 223.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-21T13:40:50+05:30"
     }
@@ -8179,14 +8204,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T18:41:00+05:30",
-     "sold_out_at": "2026-11-21T18:31:18+05:30",
+     "sold_out_at": "2026-11-21T20:01:13+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T18:41:00+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -8496,12 +8527,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9715,12 +9752,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-21T20:01:13+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 94.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T15:50:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T20:01:13+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -14763,5 +14806,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46720/20261125"
   }
  },
- "_updated": "2026-11-21T19:50:52+05:30"
+ "_updated": "2026-11-21T20:01:13+05:30"
 }

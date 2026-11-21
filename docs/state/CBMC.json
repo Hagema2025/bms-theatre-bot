@@ -6,9 +6,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -92,14 +102,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-21T12:01:04+05:30",
-     "sold_out_at": "2026-11-21T11:40:48+05:30",
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T15:05:00+05:30",
@@ -166,13 +182,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T18:20:00+05:30",
@@ -337,7 +359,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -878,13 +900,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T20:05:00+05:30",
@@ -924,13 +952,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-21T12:01:04+05:30",
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T22:55:00+05:30",
@@ -1103,13 +1138,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T11:31:16+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T15:40:00+05:30",
@@ -2022,14 +2063,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "sold_out_at": "2026-11-20T23:40:58+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T19:20:00+05:30",
@@ -2113,13 +2160,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T22:55:00+05:30",
@@ -2191,13 +2244,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T22:15:00+05:30",
@@ -2420,16 +2479,22 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
-   "cutoff": "2026-11-21T17:15:00+05:30",
+   "cutoff": "2026-11-21T17:10:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-22T00:30:00+05:30",
@@ -2440,10 +2505,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI05",
-   "start": "2026-11-21T17:00:00+05:30",
+   "start": "2026-11-21T16:55:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "05:00 PM",
+   "time": "04:55 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -2578,13 +2643,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T15:05:00+05:30",
@@ -2858,13 +2930,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T18:40:00+05:30",
@@ -2929,13 +3007,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
    "cutoff": "2026-11-21T20:30:00+05:30",
@@ -2984,7 +3068,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-21T23:00:00+05:30",
+   "cutoff": "2026-11-21T23:05:00+05:30",
    "dimension": "2D",
    "duration": 132,
    "end": "2026-11-22T00:30:00+05:30",
@@ -2995,10 +3079,10 @@
    "movie": "Bachelor Party D'eux",
    "poster": "bachelor-party-d-eux-et00521598-1791544764",
    "screen": "AUDI05",
-   "start": "2026-11-21T22:45:00+05:30",
+   "start": "2026-11-21T22:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:45 PM",
+   "time": "10:50 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -3058,16 +3142,23 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T11:50:57+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     }
    },
-   "cutoff": "2026-11-21T14:10:00+05:30",
+   "cutoff": "2026-11-21T14:05:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-22T00:30:00+05:30",
@@ -3078,10 +3169,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI05",
-   "start": "2026-11-21T13:55:00+05:30",
+   "start": "2026-11-21T13:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:55 PM",
+   "time": "01:50 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -3545,9 +3636,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "history": [
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 210.98,
+     "sold_out_at": "2026-11-21T12:10:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -4012,6 +4113,42 @@
    "time": "11:20 AM",
    "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/CBMC/16533/20261121"
+  },
+  "16534": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T12:10:55+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T12:10:55+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-21T20:15:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-21T12:10:55+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "AUDI05",
+   "start": "2026-11-21T20:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/CBMC/16534/20261121"
   }
  },
  "20261122": {
@@ -4812,12 +4949,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T12:10:55+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T20:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:10:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -8369,5 +8512,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-21T12:01:04+05:30"
+ "_updated": "2026-11-21T12:10:55+05:30"
 }

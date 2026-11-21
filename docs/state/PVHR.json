@@ -3068,14 +3068,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T22:50:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 242.49,
      "reopened_at": "2026-11-21T20:10:48+05:30",
      "sold_out_at": "2026-11-21T20:01:13+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T20:10:48+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T22:50:50+05:30"
     }
    },
    "cutoff": "2026-11-21T23:15:00+05:30",
@@ -8032,14 +8038,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T22:50:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T22:40:50+05:30",
      "sold_out_at": "2026-11-21T22:31:21+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T22:40:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T22:50:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9936,9 +9948,18 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T13:01:05+05:30",
+     "history": [
+      [
+       "2026-11-21T22:50:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T22:50:50+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -12247,6 +12268,186 @@
    "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46697/20261123"
+  },
+  "46707": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T16:25:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:50:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "AUDI 09",
+   "start": "2026-11-23T15:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46707/20261123"
+  },
+  "46708": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:05:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:50:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "AUDI 09",
+   "start": "2026-11-23T22:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46708/20261123"
+  },
+  "46709": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T13:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T22:50:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 10",
+   "start": "2026-11-23T12:25:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "12:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46709/20261123"
+  },
+  "46710": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T22:50:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI 10",
+   "start": "2026-11-23T22:25:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46710/20261123"
+  },
+  "46711": {
+   "censor": "A",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:50:50+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T16:50:00+05:30",
+   "dimension": "2D",
+   "duration": 132,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00521598",
+   "first_seen": "2026-11-21T22:50:50+05:30",
+   "genre": "Action,Drama",
+   "language": "Malayalam",
+   "movie": "Bachelor Party D'eux",
+   "poster": "bachelor-party-d-eux-et00521598-1791544764",
+   "screen": "AUDI 10",
+   "start": "2026-11-23T16:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=eJMQsl2a2Ds",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00521598/PVHR/46711/20261123"
   },
   "46712": {
    "censor": "UA16+",
@@ -15137,5 +15338,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46720/20261125"
   }
  },
- "_updated": "2026-11-21T22:40:50+05:30"
+ "_updated": "2026-11-21T22:50:50+05:30"
 }

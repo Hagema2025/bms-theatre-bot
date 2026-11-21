@@ -480,12 +480,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T14:01:10+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-21T11:31:16+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T14:01:10+05:30"
     }
    },
    "cutoff": "2026-11-21T14:30:00+05:30",
@@ -696,12 +702,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T14:01:10+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T22:50:58+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T14:01:10+05:30"
     }
    },
    "cutoff": "2026-11-21T16:30:00+05:30",
@@ -1538,9 +1550,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T13:31:22+05:30",
+     "history": [
+      [
+       "2026-11-21T14:01:10+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-21T14:01:10+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T14:01:10+05:30"
     }
    },
    "cutoff": "2026-11-21T13:50:00+05:30",
@@ -1713,9 +1735,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:01:10+05:30",
+     "history": [
+      [
+       "2026-11-21T14:01:10+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-21T14:01:10+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T14:01:10+05:30"
     }
    },
    "cutoff": "2026-11-21T13:50:00+05:30",
@@ -3448,9 +3480,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T23:31:23+05:30",
+     "history": [
+      [
+       "2026-11-21T14:01:10+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-21T14:01:10+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T14:01:10+05:30"
     }
    },
    "cutoff": "2026-11-21T13:50:00+05:30",
@@ -6348,5 +6390,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242993/20261122"
   }
  },
- "_updated": "2026-11-21T13:50:50+05:30"
+ "_updated": "2026-11-21T14:01:10+05:30"
 }

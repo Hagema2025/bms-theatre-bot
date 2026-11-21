@@ -411,19 +411,34 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T18:10:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T18:41:00+05:30",
+     "history": [
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     }
    },
    "cutoff": "2026-11-21T22:10:00+05:30",
@@ -2157,9 +2172,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:10:51+05:30",
+     "history": [
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -3125,12 +3149,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T01:01:11+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -3958,9 +3988,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T21:51:01+05:30",
+     "history": [
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.5,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     }
    },
    "cutoff": "2026-11-21T19:10:00+05:30",
@@ -5034,12 +5073,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-21T19:01:09+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T18:50:54+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:01:09+05:30"
     }
    },
    "cutoff": "2026-11-22T13:20:00+05:30",
@@ -7379,5 +7424,385 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/242999/20261122"
   }
  },
- "_updated": "2026-11-21T18:50:54+05:30"
+ "20261123": {
+  "243000": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T10:40:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T10:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243000/20261123"
+  },
+  "243001": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T18:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T17:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243001/20261123"
+  },
+  "243002": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243002/20261123"
+  }
+ },
+ "20261124": {
+  "243003": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T10:40:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-24T10:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243003/20261124"
+  },
+  "243004": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T18:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-24T17:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243004/20261124"
+  },
+  "243005": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-24T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243005/20261124"
+  }
+ },
+ "20261125": {
+  "243006": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T10:40:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-25T10:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243006/20261125"
+  },
+  "243007": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T18:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-25T17:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243007/20261125"
+  },
+  "243008": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-25T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243008/20261125"
+  }
+ },
+ "20261126": {
+  "243009": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T10:40:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-26T10:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243009/20261126"
+  },
+  "243010": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T18:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-26T17:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "05:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243010/20261126"
+  },
+  "243011": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:01:09+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T19:01:09+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 1",
+   "start": "2026-11-26T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243011/20261126"
+  }
+ },
+ "_updated": "2026-11-21T19:01:09+05:30"
 }

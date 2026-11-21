@@ -77,7 +77,7 @@
       ]
      ],
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T23:40:58+05:30"
     },
@@ -277,13 +277,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:40:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T22:10:00+05:30",
@@ -868,13 +874,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:40:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T16:50:00+05:30",
@@ -1207,13 +1219,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-21T11:31:16+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T12:31:16+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T15:40:00+05:30",
@@ -1680,13 +1698,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T23:35:00+05:30",
@@ -2918,13 +2942,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 183.8,
+     "reopened_at": "2026-11-21T12:50:58+05:30",
      "sold_out_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-21T12:01:04+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3045,13 +3076,20 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
+     "sold_out_at": "2026-11-21T12:50:58+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:10:55+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T18:40:00+05:30",
@@ -3695,9 +3733,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T17:31:25+05:30",
+     "history": [
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3720,13 +3767,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T12:50:58+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T12:01:04+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:40:51+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T12:50:58+05:30"
     }
    },
    "cutoff": "2026-11-21T22:20:00+05:30",
@@ -5437,7 +5490,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-22T14:10:00+05:30",
+   "cutoff": "2026-11-22T14:05:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-23T00:30:00+05:30",
@@ -5448,10 +5501,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI05",
-   "start": "2026-11-22T13:55:00+05:30",
+   "start": "2026-11-22T13:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:55 PM",
+   "time": "01:50 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -5522,7 +5575,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-22T17:15:00+05:30",
+   "cutoff": "2026-11-22T17:10:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-23T00:30:00+05:30",
@@ -5533,10 +5586,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI05",
-   "start": "2026-11-22T17:00:00+05:30",
+   "start": "2026-11-22T16:55:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "05:00 PM",
+   "time": "04:55 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -5624,7 +5677,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-22T23:00:00+05:30",
+   "cutoff": "2026-11-22T23:05:00+05:30",
    "dimension": "2D",
    "duration": 132,
    "end": "2026-11-23T00:30:00+05:30",
@@ -5635,10 +5688,10 @@
    "movie": "Bachelor Party D'eux",
    "poster": "bachelor-party-d-eux-et00521598-1791544764",
    "screen": "AUDI05",
-   "start": "2026-11-22T22:45:00+05:30",
+   "start": "2026-11-22T22:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:45 PM",
+   "time": "10:50 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -6679,7 +6732,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-22T20:20:00+05:30",
+   "cutoff": "2026-11-22T20:15:00+05:30",
    "dimension": "2D",
    "duration": 123,
    "end": "2026-11-23T00:30:00+05:30",
@@ -6690,10 +6743,10 @@
    "movie": "How to Rob a Bank",
    "poster": "how-to-rob-a-bank-et00501652-1783341563",
    "screen": "AUDI05",
-   "start": "2026-11-22T20:05:00+05:30",
+   "start": "2026-11-22T20:00:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "08:05 PM",
+   "time": "08:00 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -6863,6 +6916,170 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16530/20261122"
+  },
+  "16535": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T08:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T12:50:58+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI01",
+   "start": "2026-11-22T08:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:15 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-21T12:50:58+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-21T12:50:58+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16535/20261122"
+  },
+  "16537": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T07:55:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T12:50:58+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-22T07:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:40 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-21T12:50:58+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-21T12:50:58+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16537/20261122"
+  },
+  "16538": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T11:35:00+05:30",
+   "dimension": "2D",
+   "duration": 140,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00524518",
+   "first_seen": "2026-11-21T12:50:58+05:30",
+   "genre": "Action,Adventure,Horror,Thriller",
+   "language": "Japanese",
+   "movie": "Godzilla Minus Zero",
+   "poster": "godzilla-minus-zero-et00524518-1793193023",
+   "screen": "AUDI02",
+   "start": "2026-11-22T11:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:20 AM",
+   "trailer": "https://www.youtube.com/watch?v=B-cZQN06bCM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00524518/CBMC/16538/20261122"
+  },
+  "16539": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-22T08:20:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T12:50:58+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI02",
+   "start": "2026-11-22T08:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:05 AM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16539/20261122"
   }
  },
  "20261217": {
@@ -8657,5 +8874,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-21T12:40:51+05:30"
+ "_updated": "2026-11-21T12:50:58+05:30"
 }

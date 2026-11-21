@@ -2821,7 +2821,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-21T08:50:49+05:30"
     }
@@ -5854,13 +5854,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T17:21:03+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-21T17:21:03+05:30",
      "sold_out_at": "2026-11-21T17:10:50+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-21T17:10:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T17:21:03+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -11565,6 +11572,42 @@
    "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46697/20261123"
+  },
+  "46712": {
+   "censor": "UA16+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T17:21:03+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T17:21:03+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:45:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T17:21:03+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI 10",
+   "start": "2026-11-23T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/PVHR/46712/20261123"
   }
  },
  "20261124": {
@@ -14419,5 +14462,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46720/20261125"
   }
  },
- "_updated": "2026-11-21T17:10:50+05:30"
+ "_updated": "2026-11-21T17:21:03+05:30"
 }

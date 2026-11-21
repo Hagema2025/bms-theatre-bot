@@ -2420,9 +2420,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T14:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T22:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3481,6 +3491,44 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48835/20261122"
+  },
+  "48906": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 200.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T00:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "SCREEN 1",
+   "start": "2026-11-22T23:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48906/20261122"
   }
  },
  "20261123": {
@@ -3883,6 +3931,310 @@
    "time": "09:45 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48845/20261123"
+  },
+  "48866": {
+   "censor": "U",
+   "classes": {
+    "DIAMOND 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 213.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL 3D": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 84.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T11:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-23T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48866/20261123"
+  },
+  "48867": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 2",
+   "start": "2026-11-23T15:25:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/ACON/48867/20261123"
+  },
+  "48868": {
+   "censor": "U",
+   "classes": {
+    "DIAMOND 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 213.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL 3D": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 84.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T18:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-23T18:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/ACON/48868/20261123"
+  },
+  "48869": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T22:35:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-23T22:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48869/20261123"
+  },
+  "48870": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T12:35:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T12:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48870/20261123"
+  },
+  "48871": {
+   "censor": "UA16+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T16:10:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T15:55:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:55 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/ACON/48871/20261123"
+  },
+  "48872": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 200.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48872/20261123"
+  },
+  "48907": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 200.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T22:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "SCREEN 1",
+   "start": "2026-11-23T22:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48907/20261123"
   }
  },
  "20261124": {
@@ -4406,9 +4758,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T11:20:59+05:30",
+     "history": [
+      [
+       "2026-11-21T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T22:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -4589,6 +4951,44 @@
    "time": "10:20 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48881/20261124"
+  },
+  "48908": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 200.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:20:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T22:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:20:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "SCREEN 1",
+   "start": "2026-11-24T22:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48908/20261124"
   }
  },
  "20261125": {
@@ -5112,9 +5512,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T11:20:59+05:30",
+     "history": [
+      [
+       "2026-11-21T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T22:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -5418,9 +5828,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T11:31:16+05:30",
+     "history": [
+      [
+       "2026-11-21T22:20:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T22:20:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T22:20:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -5907,5 +6327,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48905/20261126"
   }
  },
- "_updated": "2026-11-21T22:10:57+05:30"
+ "_updated": "2026-11-21T22:20:50+05:30"
 }

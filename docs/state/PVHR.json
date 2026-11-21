@@ -1334,12 +1334,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T16:10:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T11:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T16:10:52+05:30"
     }
    },
    "cutoff": "2026-11-21T23:25:00+05:30",
@@ -3238,14 +3244,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T16:10:52+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 59.43,
-     "reopened_at": "2026-11-21T15:20:52+05:30",
+     "reopened_at": "2026-11-21T16:10:52+05:30",
      "sold_out_at": "2026-11-21T15:50:50+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-21T15:50:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4004,12 +4016,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T16:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 223.8,
+     "sold_out_at": "2026-11-21T16:10:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:40:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T16:10:52+05:30"
     }
    },
    "cutoff": "2026-11-21T18:35:00+05:30",
@@ -6842,12 +6861,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T16:10:52+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T14:31:22+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -10947,6 +10972,114 @@
    "time": "10:35 PM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/PVHR/46641/20261123"
+  },
+  "46670": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:10:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T16:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 06",
+   "start": "2026-11-23T10:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:25 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46670/20261123"
+  },
+  "46671": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T16:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 06",
+   "start": "2026-11-23T14:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46671/20261123"
+  },
+  "46672": {
+   "censor": "U",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T16:10:52+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:20:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T16:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI 06",
+   "start": "2026-11-23T18:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/PVHR/46672/20261123"
   }
  },
  "20261124": {
@@ -11353,5 +11486,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/PVHR/46610/20261125"
   }
  },
- "_updated": "2026-11-21T16:01:10+05:30"
+ "_updated": "2026-11-21T16:10:52+05:30"
 }

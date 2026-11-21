@@ -2784,9 +2784,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T11:50:57+05:30",
+     "history": [
+      [
+       "2026-11-21T13:40:50+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T13:40:50+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T13:40:50+05:30"
     }
    },
    "cutoff": "2026-11-22T20:35:00+05:30",
@@ -3154,6 +3164,68 @@
    "time": "12:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26799/20261123"
+  },
+  "26821": {
+   "censor": "UA13+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T13:40:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:05:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T13:40:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T10:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:20 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26821/20261123"
+  },
+  "26822": {
+   "censor": "UA13+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T13:40:50+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:05:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T13:40:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T18:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26822/20261123"
   }
  },
  "20261124": {
@@ -4033,5 +4105,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-21T13:31:17+05:30"
+ "_updated": "2026-11-21T13:40:50+05:30"
 }

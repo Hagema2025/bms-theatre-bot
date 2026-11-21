@@ -677,12 +677,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-21T20:10:48+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 320.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:50:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:10:48+05:30"
     }
    },
    "cutoff": "2026-11-21T23:35:00+05:30",
@@ -1318,7 +1324,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T21:50:52+05:30",
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "ELITE+BROWNIE": {
@@ -1363,7 +1369,7 @@
       ]
      ],
      "price": 320.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-21T19:01:09+05:30"
     }
@@ -1993,12 +1999,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T20:10:48+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T20:10:48+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T16:40:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T20:10:48+05:30"
     }
    },
    "cutoff": "2026-11-21T20:30:00+05:30",
@@ -2074,12 +2087,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:10:48+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T18:41:00+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T20:10:48+05:30"
     }
    },
    "cutoff": "2026-11-21T23:10:00+05:30",
@@ -2197,12 +2216,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T20:10:48+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T11:31:16+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T20:10:48+05:30"
     }
    },
    "cutoff": "2026-11-22T17:00:00+05:30",
@@ -3032,12 +3057,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-21T20:10:48+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-21T16:20:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T20:10:48+05:30"
     }
    },
    "cutoff": "2026-11-22T14:10:00+05:30",
@@ -4558,5 +4589,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-21T20:01:13+05:30"
+ "_updated": "2026-11-21T20:10:48+05:30"
 }

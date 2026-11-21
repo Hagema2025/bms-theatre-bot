@@ -117,12 +117,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T10:40:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T16:40:00+05:30",
@@ -151,9 +157,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T18:20:51+05:30",
+     "history": [
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T11:10:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T20:45:00+05:30",
@@ -512,12 +528,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T21:31:22+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T19:50:00+05:30",
@@ -759,12 +781,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:10:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T19:35:00+05:30",
@@ -925,12 +953,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.0,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T12:10:00+05:30",
@@ -1053,12 +1087,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T21:01:08+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T19:20:00+05:30",
@@ -1100,12 +1140,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 320.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T12:40:49+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T22:55:00+05:30",
@@ -1199,12 +1245,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 218.0,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T08:20:59+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T20:00:00+05:30",
@@ -1504,14 +1556,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:10:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "reopened_at": "2026-11-20T18:31:23+05:30",
      "sold_out_at": "2026-11-20T18:20:56+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-20T22:20:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T11:10:51+05:30"
     }
    },
    "cutoff": "2026-11-21T16:55:00+05:30",
@@ -1612,6 +1670,37 @@
    "time": "11:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26812/20261121"
+  },
+  "26813": {
+   "censor": "U",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T11:10:51+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-21T20:30:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-22T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T11:10:51+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 1",
+   "start": "2026-11-21T19:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "07:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26813/20261121"
   }
  },
  "20261122": {
@@ -3505,5 +3594,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-21T10:40:50+05:30"
+ "_updated": "2026-11-21T11:10:51+05:30"
 }

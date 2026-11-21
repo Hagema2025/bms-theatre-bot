@@ -360,14 +360,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T14:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 104.35,
      "reopened_at": "2026-11-21T14:01:10+05:30",
-     "sold_out_at": "2026-11-21T13:40:50+05:30",
+     "sold_out_at": "2026-11-21T14:10:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T14:01:10+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-21T22:10:00+05:30",
@@ -460,9 +466,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T23:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T14:10:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T14:10:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -993,14 +1008,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T14:10:52+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 61.74,
-     "reopened_at": "2026-11-21T11:31:16+05:30",
+     "reopened_at": "2026-11-21T14:10:52+05:30",
      "sold_out_at": "2026-11-21T13:50:50+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T13:50:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-21T16:50:00+05:30",
@@ -3397,14 +3418,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T14:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-21T13:31:17+05:30",
-     "sold_out_at": "2026-11-21T13:10:50+05:30",
+     "sold_out_at": "2026-11-21T14:10:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T13:31:17+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-21T20:30:00+05:30",
@@ -8098,6 +8125,1522 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16585/20261123"
   }
  },
+ "20261124": {
+  "16586": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T11:50:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-24T11:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:35 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16586/20261124"
+  },
+  "16587": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-24T15:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16587/20261124"
+  },
+  "16588": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T19:30:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-24T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16588/20261124"
+  },
+  "16589": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T23:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI04",
+   "start": "2026-11-24T23:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:05 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16589/20261124"
+  },
+  "16590": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T10:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-24T09:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16590/20261124"
+  },
+  "16591": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T13:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-24T13:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16591/20261124"
+  },
+  "16592": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T17:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-24T17:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "05:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16592/20261124"
+  },
+  "16593": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T20:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-24T20:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16593/20261124"
+  },
+  "16594": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T12:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-24T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16594/20261124"
+  },
+  "16595": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-24T15:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16595/20261124"
+  },
+  "16596": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-24T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16596/20261124"
+  },
+  "16597": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T22:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-24T22:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16597/20261124"
+  },
+  "16598": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T11:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-24T10:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16598/20261124"
+  },
+  "16599": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T14:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-24T14:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16599/20261124"
+  },
+  "16600": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T18:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-24T18:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16600/20261124"
+  },
+  "16601": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T21:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-24T21:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16601/20261124"
+  },
+  "16602": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T10:25:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI08",
+   "start": "2026-11-24T10:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:10 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16602/20261124"
+  },
+  "16603": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T13:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-24T13:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16603/20261124"
+  },
+  "16604": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T16:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-24T16:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16604/20261124"
+  },
+  "16605": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-24T19:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16605/20261124"
+  },
+  "16606": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-24T22:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16606/20261124"
+  }
+ },
+ "20261125": {
+  "16607": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T11:50:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-25T11:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:35 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16607/20261125"
+  },
+  "16608": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-25T15:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16608/20261125"
+  },
+  "16609": {
+   "censor": "U",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T19:30:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "AUDI04",
+   "start": "2026-11-25T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/CBMC/16609/20261125"
+  },
+  "16610": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T23:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "AUDI04",
+   "start": "2026-11-25T23:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:05 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/CBMC/16610/20261125"
+  },
+  "16611": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T10:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-25T09:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16611/20261125"
+  },
+  "16612": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T13:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-25T13:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16612/20261125"
+  },
+  "16613": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T17:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-25T17:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "05:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16613/20261125"
+  },
+  "16614": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T20:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI05",
+   "start": "2026-11-25T20:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16614/20261125"
+  },
+  "16615": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T12:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-25T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16615/20261125"
+  },
+  "16616": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-25T15:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16616/20261125"
+  },
+  "16617": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-25T19:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16617/20261125"
+  },
+  "16618": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T22:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI06",
+   "start": "2026-11-25T22:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16618/20261125"
+  },
+  "16619": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T11:05:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-25T10:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16619/20261125"
+  },
+  "16620": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T14:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-25T14:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "02:25 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16620/20261125"
+  },
+  "16621": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T18:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-25T18:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16621/20261125"
+  },
+  "16622": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T21:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "AUDI07",
+   "start": "2026-11-25T21:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "09:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16622/20261125"
+  },
+  "16623": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T10:25:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "AUDI08",
+   "start": "2026-11-25T10:10:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:10 AM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16623/20261125"
+  },
+  "16624": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T13:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-25T13:25:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16624/20261125"
+  },
+  "16625": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T16:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-25T16:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16625/20261125"
+  },
+  "16626": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-25T19:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:35 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16626/20261125"
+  },
+  "16627": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-21T14:10:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI08",
+   "start": "2026-11-25T22:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16627/20261125"
+  }
+ },
  "20261217": {
   "16292": {
    "censor": "UA16+",
@@ -9897,5 +11440,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-21T14:01:10+05:30"
+ "_updated": "2026-11-21T14:10:52+05:30"
 }

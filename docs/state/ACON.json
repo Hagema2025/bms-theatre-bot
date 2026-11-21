@@ -373,19 +373,35 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T22:40:50+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.0,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T22:10:57+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-21T22:40:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T14:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T22:40:50+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-21T22:40:50+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-21T22:40:50+05:30"
     }
    },
    "cutoff": "2026-11-22T00:00:00+05:30",
@@ -854,9 +870,19 @@
     "PEARL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T14:40:52+05:30",
+     "history": [
+      [
+       "2026-11-21T22:40:50+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.0,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-21T22:40:50+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-21T22:40:50+05:30"
     }
    },
    "cutoff": "2026-11-22T00:05:00+05:30",
@@ -2025,13 +2051,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T22:40:50+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 183.0,
+     "reopened_at": "2026-11-21T22:40:50+05:30",
      "sold_out_at": "2026-11-21T21:50:49+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T21:50:49+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-21T22:40:50+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -2084,14 +2117,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-21T22:40:50+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 54.0,
-     "reopened_at": "2026-11-21T16:20:49+05:30",
+     "reopened_at": "2026-11-21T22:40:50+05:30",
      "sold_out_at": "2026-11-21T16:40:52+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T16:40:52+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-21T22:40:50+05:30"
     }
    },
    "cutoff": "2026-11-22T00:00:00+05:30",
@@ -3556,6 +3595,44 @@
    "time": "11:45 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48906/20261122"
+  },
+  "48911": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T22:40:50+05:30",
+     "price": 200.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-21T22:40:50+05:30",
+     "price": 59.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-23T00:00:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-23T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-21T22:40:50+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "Aakasamlo Oka Tara",
+   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "screen": "SCREEN 2",
+   "start": "2026-11-22T23:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48911/20261122"
   }
  },
  "20261123": {
@@ -6430,5 +6507,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/ACON/48910/20261126"
   }
  },
- "_updated": "2026-11-21T22:31:21+05:30"
+ "_updated": "2026-11-21T22:40:50+05:30"
 }

@@ -675,14 +675,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-21T17:01:14+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-21T16:20:49+05:30",
+     "reopened_at": "2026-11-21T17:01:14+05:30",
      "sold_out_at": "2026-11-21T16:50:57+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T16:50:57+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T17:01:14+05:30"
     }
    },
    "cutoff": "2026-11-21T19:30:00+05:30",
@@ -1009,12 +1015,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T17:01:14+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 210.98,
+     "sold_out_at": "2026-11-21T17:01:14+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-20T21:41:00+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T17:01:14+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3401,14 +3414,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-21T17:01:14+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-21T13:20:50+05:30",
-     "sold_out_at": "2026-11-21T13:01:03+05:30",
+     "sold_out_at": "2026-11-21T17:01:14+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T13:20:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T17:01:14+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -7742,7 +7761,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T16:30:00+05:30",
+   "cutoff": "2026-11-23T16:25:00+05:30",
    "dimension": "2D",
    "duration": 134,
    "end": "2026-11-24T00:30:00+05:30",
@@ -7753,10 +7772,10 @@
    "movie": "Appakutty",
    "poster": "appakutty-et00518647-1790152840",
    "screen": "AUDI03",
-   "start": "2026-11-23T16:15:00+05:30",
+   "start": "2026-11-23T16:10:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:15 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/CBMC/16545/20261123"
   },
@@ -7778,7 +7797,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T10:50:00+05:30",
+   "cutoff": "2026-11-23T10:45:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-24T00:30:00+05:30",
@@ -7789,10 +7808,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-23T10:35:00+05:30",
+   "start": "2026-11-23T10:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:35 AM",
+   "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16546/20261123"
   },
@@ -7814,7 +7833,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T13:40:00+05:30",
+   "cutoff": "2026-11-23T13:35:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-24T00:30:00+05:30",
@@ -7825,10 +7844,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-23T13:25:00+05:30",
+   "start": "2026-11-23T13:20:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:20 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16548/20261123"
   },
@@ -7922,7 +7941,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T22:35:00+05:30",
+   "cutoff": "2026-11-23T22:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-24T00:30:00+05:30",
@@ -7933,10 +7952,10 @@
    "movie": "Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI03",
-   "start": "2026-11-23T22:20:00+05:30",
+   "start": "2026-11-23T22:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/CBMC/16552/20261123"
   },
@@ -8066,7 +8085,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T16:45:00+05:30",
+   "cutoff": "2026-11-23T16:50:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8077,10 +8096,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-23T16:30:00+05:30",
+   "start": "2026-11-23T16:35:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:30 PM",
+   "time": "04:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16557/20261123"
   },
@@ -8102,7 +8121,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T13:40:00+05:30",
+   "cutoff": "2026-11-23T13:45:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8113,10 +8132,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-23T13:25:00+05:30",
+   "start": "2026-11-23T13:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16558/20261123"
   },
@@ -8426,7 +8445,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T22:55:00+05:30",
+   "cutoff": "2026-11-23T23:00:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8437,10 +8456,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-23T22:40:00+05:30",
+   "start": "2026-11-23T22:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:40 PM",
+   "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16572/20261123"
   },
@@ -8462,7 +8481,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T19:50:00+05:30",
+   "cutoff": "2026-11-23T19:55:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8473,10 +8492,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-23T19:35:00+05:30",
+   "start": "2026-11-23T19:40:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:35 PM",
+   "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16573/20261123"
   },
@@ -8498,7 +8517,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T19:20:00+05:30",
+   "cutoff": "2026-11-23T19:15:00+05:30",
    "dimension": "2D",
    "duration": 163,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8509,10 +8528,10 @@
    "movie": "ENE Repeat",
    "poster": "ene-repeat-et00506990-1794570849",
    "screen": "AUDI03",
-   "start": "2026-11-23T19:05:00+05:30",
+   "start": "2026-11-23T19:00:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:05 PM",
+   "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16575/20261123"
   },
@@ -8606,7 +8625,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T10:25:00+05:30",
+   "cutoff": "2026-11-23T10:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-24T00:30:00+05:30",
@@ -8617,10 +8636,10 @@
    "movie": "AOT",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI08",
-   "start": "2026-11-23T10:10:00+05:30",
+   "start": "2026-11-23T10:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:10 AM",
+   "time": "10:15 AM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16580/20261123"
   },
@@ -9508,7 +9527,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T10:25:00+05:30",
+   "cutoff": "2026-11-24T10:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9519,10 +9538,10 @@
    "movie": "AOT",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI08",
-   "start": "2026-11-24T10:10:00+05:30",
+   "start": "2026-11-24T10:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:10 AM",
+   "time": "10:15 AM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16602/20261124"
   },
@@ -9544,7 +9563,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T13:40:00+05:30",
+   "cutoff": "2026-11-24T13:45:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9555,10 +9574,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-24T13:25:00+05:30",
+   "start": "2026-11-24T13:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16603/20261124"
   },
@@ -9580,7 +9599,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T16:45:00+05:30",
+   "cutoff": "2026-11-24T16:50:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9591,10 +9610,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-24T16:30:00+05:30",
+   "start": "2026-11-24T16:35:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:30 PM",
+   "time": "04:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16604/20261124"
   },
@@ -9616,7 +9635,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T19:50:00+05:30",
+   "cutoff": "2026-11-24T19:55:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9627,10 +9646,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-24T19:35:00+05:30",
+   "start": "2026-11-24T19:40:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:35 PM",
+   "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16605/20261124"
   },
@@ -9652,7 +9671,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T22:55:00+05:30",
+   "cutoff": "2026-11-24T23:00:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9663,10 +9682,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-24T22:40:00+05:30",
+   "start": "2026-11-24T22:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:40 PM",
+   "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16606/20261124"
   },
@@ -9976,7 +9995,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T10:50:00+05:30",
+   "cutoff": "2026-11-24T10:45:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-25T00:30:00+05:30",
@@ -9987,10 +10006,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-24T10:35:00+05:30",
+   "start": "2026-11-24T10:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:35 AM",
+   "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16652/20261124"
   },
@@ -10012,7 +10031,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T13:40:00+05:30",
+   "cutoff": "2026-11-24T13:35:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-25T00:30:00+05:30",
@@ -10023,10 +10042,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-24T13:25:00+05:30",
+   "start": "2026-11-24T13:20:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:20 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16653/20261124"
   },
@@ -10048,7 +10067,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T16:30:00+05:30",
+   "cutoff": "2026-11-24T16:25:00+05:30",
    "dimension": "2D",
    "duration": 134,
    "end": "2026-11-25T00:30:00+05:30",
@@ -10059,10 +10078,10 @@
    "movie": "Appakutty",
    "poster": "appakutty-et00518647-1790152840",
    "screen": "AUDI03",
-   "start": "2026-11-24T16:15:00+05:30",
+   "start": "2026-11-24T16:10:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:15 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/CBMC/16654/20261124"
   },
@@ -10084,7 +10103,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T19:20:00+05:30",
+   "cutoff": "2026-11-24T19:15:00+05:30",
    "dimension": "2D",
    "duration": 163,
    "end": "2026-11-25T00:30:00+05:30",
@@ -10095,10 +10114,10 @@
    "movie": "ENE Repeat",
    "poster": "ene-repeat-et00506990-1794570849",
    "screen": "AUDI03",
-   "start": "2026-11-24T19:05:00+05:30",
+   "start": "2026-11-24T19:00:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:05 PM",
+   "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16655/20261124"
   },
@@ -10120,7 +10139,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T22:35:00+05:30",
+   "cutoff": "2026-11-24T22:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-25T00:30:00+05:30",
@@ -10131,10 +10150,10 @@
    "movie": "Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI03",
-   "start": "2026-11-24T22:20:00+05:30",
+   "start": "2026-11-24T22:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/CBMC/16656/20261124"
   },
@@ -10770,7 +10789,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T10:25:00+05:30",
+   "cutoff": "2026-11-25T10:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-26T00:30:00+05:30",
@@ -10781,10 +10800,10 @@
    "movie": "AOT",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI08",
-   "start": "2026-11-25T10:10:00+05:30",
+   "start": "2026-11-25T10:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:10 AM",
+   "time": "10:15 AM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16623/20261125"
   },
@@ -10806,7 +10825,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T13:40:00+05:30",
+   "cutoff": "2026-11-25T13:45:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-26T00:30:00+05:30",
@@ -10817,10 +10836,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-25T13:25:00+05:30",
+   "start": "2026-11-25T13:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16624/20261125"
   },
@@ -10842,7 +10861,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T16:45:00+05:30",
+   "cutoff": "2026-11-25T16:50:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-26T00:30:00+05:30",
@@ -10853,10 +10872,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-25T16:30:00+05:30",
+   "start": "2026-11-25T16:35:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:30 PM",
+   "time": "04:35 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16625/20261125"
   },
@@ -10878,7 +10897,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T19:50:00+05:30",
+   "cutoff": "2026-11-25T19:55:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-26T00:30:00+05:30",
@@ -10889,10 +10908,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-25T19:35:00+05:30",
+   "start": "2026-11-25T19:40:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:35 PM",
+   "time": "07:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16626/20261125"
   },
@@ -10914,7 +10933,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T22:55:00+05:30",
+   "cutoff": "2026-11-25T23:00:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-26T00:30:00+05:30",
@@ -10925,10 +10944,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI08",
-   "start": "2026-11-25T22:40:00+05:30",
+   "start": "2026-11-25T22:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:40 PM",
+   "time": "10:45 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16627/20261125"
   },
@@ -11238,7 +11257,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T10:50:00+05:30",
+   "cutoff": "2026-11-25T10:45:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-26T00:30:00+05:30",
@@ -11249,10 +11268,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-25T10:35:00+05:30",
+   "start": "2026-11-25T10:30:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:35 AM",
+   "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16666/20261125"
   },
@@ -11274,7 +11293,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T13:40:00+05:30",
+   "cutoff": "2026-11-25T13:35:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-26T00:30:00+05:30",
@@ -11285,10 +11304,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI03",
-   "start": "2026-11-25T13:25:00+05:30",
+   "start": "2026-11-25T13:20:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:25 PM",
+   "time": "01:20 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16667/20261125"
   },
@@ -11310,7 +11329,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T16:30:00+05:30",
+   "cutoff": "2026-11-25T16:25:00+05:30",
    "dimension": "2D",
    "duration": 134,
    "end": "2026-11-26T00:30:00+05:30",
@@ -11321,10 +11340,10 @@
    "movie": "Appakutty",
    "poster": "appakutty-et00518647-1790152840",
    "screen": "AUDI03",
-   "start": "2026-11-25T16:15:00+05:30",
+   "start": "2026-11-25T16:10:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:15 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/CBMC/16668/20261125"
   },
@@ -11346,7 +11365,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T19:20:00+05:30",
+   "cutoff": "2026-11-25T19:15:00+05:30",
    "dimension": "2D",
    "duration": 163,
    "end": "2026-11-26T00:30:00+05:30",
@@ -11357,10 +11376,10 @@
    "movie": "ENE Repeat",
    "poster": "ene-repeat-et00506990-1794570849",
    "screen": "AUDI03",
-   "start": "2026-11-25T19:05:00+05:30",
+   "start": "2026-11-25T19:00:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:05 PM",
+   "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16669/20261125"
   },
@@ -11382,7 +11401,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T22:35:00+05:30",
+   "cutoff": "2026-11-25T22:30:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-26T00:30:00+05:30",
@@ -11393,10 +11412,10 @@
    "movie": "Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI03",
-   "start": "2026-11-25T22:20:00+05:30",
+   "start": "2026-11-25T22:15:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:20 PM",
+   "time": "10:15 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/CBMC/16670/20261125"
   },
@@ -13236,5 +13255,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-21T16:50:57+05:30"
+ "_updated": "2026-11-21T17:01:14+05:30"
 }

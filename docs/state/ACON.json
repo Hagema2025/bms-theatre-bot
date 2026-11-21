@@ -268,12 +268,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T11:01:04+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 200.0,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:10:55+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T11:01:04+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -512,7 +518,7 @@
       ]
      ],
      "price": 213.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-20T21:01:08+05:30"
     },
@@ -535,7 +541,7 @@
      ],
      "price": 84.0,
      "reopened_at": "2026-11-21T09:01:07+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-21T10:40:50+05:30"
     }
@@ -1333,7 +1339,7 @@
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-21T09:31:18+05:30"
     },
@@ -1368,7 +1374,7 @@
      ],
      "price": 54.0,
      "reopened_at": "2026-11-21T09:10:46+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-21T10:20:53+05:30"
     }
@@ -1449,13 +1455,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T11:01:04+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.0,
      "reopened_at": "2026-11-21T09:20:55+05:30",
+     "sold_out_at": "2026-11-21T11:01:04+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-21T10:40:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T11:01:04+05:30"
     }
    },
    "cutoff": "2026-11-21T16:50:00+05:30",
@@ -3110,9 +3123,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T10:50:58+05:30",
+     "history": [
+      [
+       "2026-11-21T11:01:04+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T11:01:04+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T11:01:04+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3160,7 +3183,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T13:00:00+05:30",
+   "cutoff": "2026-11-23T12:50:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-24T00:30:00+05:30",
@@ -3171,12 +3194,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-23T12:45:00+05:30",
+   "start": "2026-11-23T12:35:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "12:45 PM",
+   "time": "12:35 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48842/20261123"
   },
@@ -3198,7 +3221,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T16:35:00+05:30",
+   "cutoff": "2026-11-23T16:25:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-24T00:30:00+05:30",
@@ -3209,12 +3232,12 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "SCREEN 3",
-   "start": "2026-11-23T16:20:00+05:30",
+   "start": "2026-11-23T16:10:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "04:20 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48843/20261123"
   },
@@ -3236,7 +3259,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T19:40:00+05:30",
+   "cutoff": "2026-11-23T19:30:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-24T00:30:00+05:30",
@@ -3247,12 +3270,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-23T19:25:00+05:30",
+   "start": "2026-11-23T19:15:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:25 PM",
+   "time": "07:15 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48844/20261123"
   },
@@ -3274,7 +3297,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-23T23:15:00+05:30",
+   "cutoff": "2026-11-23T23:05:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-24T00:30:00+05:30",
@@ -3285,12 +3308,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-23T23:00:00+05:30",
+   "start": "2026-11-23T22:50:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "11:00 PM",
+   "time": "10:50 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48845/20261123"
   }
@@ -3302,9 +3325,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T10:50:58+05:30",
+     "history": [
+      [
+       "2026-11-21T11:01:04+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T11:01:04+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T11:01:04+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3352,7 +3385,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T13:00:00+05:30",
+   "cutoff": "2026-11-24T12:50:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-25T00:30:00+05:30",
@@ -3363,12 +3396,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-24T12:45:00+05:30",
+   "start": "2026-11-24T12:35:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "12:45 PM",
+   "time": "12:35 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48847/20261124"
   },
@@ -3390,7 +3423,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T16:35:00+05:30",
+   "cutoff": "2026-11-24T16:25:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-25T00:30:00+05:30",
@@ -3401,12 +3434,12 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "SCREEN 3",
-   "start": "2026-11-24T16:20:00+05:30",
+   "start": "2026-11-24T16:10:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "04:20 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48848/20261124"
   },
@@ -3428,7 +3461,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T19:40:00+05:30",
+   "cutoff": "2026-11-24T19:30:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-25T00:30:00+05:30",
@@ -3439,12 +3472,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-24T19:25:00+05:30",
+   "start": "2026-11-24T19:15:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:25 PM",
+   "time": "07:15 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48849/20261124"
   },
@@ -3466,7 +3499,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-24T23:15:00+05:30",
+   "cutoff": "2026-11-24T23:05:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-25T00:30:00+05:30",
@@ -3477,12 +3510,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-24T23:00:00+05:30",
+   "start": "2026-11-24T22:50:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "11:00 PM",
+   "time": "10:50 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48850/20261124"
   },
@@ -3684,9 +3717,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T10:50:58+05:30",
+     "history": [
+      [
+       "2026-11-21T11:01:04+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-21T11:01:04+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-21T11:01:04+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -3734,7 +3777,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T13:00:00+05:30",
+   "cutoff": "2026-11-25T12:50:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-26T00:30:00+05:30",
@@ -3745,12 +3788,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-25T12:45:00+05:30",
+   "start": "2026-11-25T12:35:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "12:45 PM",
+   "time": "12:35 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48857/20261125"
   },
@@ -3772,7 +3815,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T16:35:00+05:30",
+   "cutoff": "2026-11-25T16:25:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-26T00:30:00+05:30",
@@ -3783,12 +3826,12 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "SCREEN 3",
-   "start": "2026-11-25T16:20:00+05:30",
+   "start": "2026-11-25T16:10:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "04:20 PM",
+   "time": "04:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/ACON/48858/20261125"
   },
@@ -3810,7 +3853,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T19:40:00+05:30",
+   "cutoff": "2026-11-25T19:30:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-26T00:30:00+05:30",
@@ -3821,12 +3864,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-25T19:25:00+05:30",
+   "start": "2026-11-25T19:15:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:25 PM",
+   "time": "07:15 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48859/20261125"
   },
@@ -3848,7 +3891,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T23:15:00+05:30",
+   "cutoff": "2026-11-25T23:05:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-26T00:30:00+05:30",
@@ -3859,12 +3902,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 3",
-   "start": "2026-11-25T23:00:00+05:30",
+   "start": "2026-11-25T22:50:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "11:00 PM",
+   "time": "10:50 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48860/20261125"
   },
@@ -4059,5 +4102,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/ACON/48865/20261125"
   }
  },
- "_updated": "2026-11-21T10:50:58+05:30"
+ "_updated": "2026-11-21T11:01:04+05:30"
 }

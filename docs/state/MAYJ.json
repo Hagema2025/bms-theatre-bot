@@ -212,12 +212,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:10:53+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T23:10:00+05:30",
@@ -664,19 +670,34 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-20T21:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T18:41:00+05:30",
+     "history": [
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T22:40:00+05:30",
@@ -2773,14 +2794,20 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-18T16:50:50+05:30",
-     "sold_out_at": "2026-11-18T16:31:23+05:30",
+     "sold_out_at": "2026-11-21T19:20:50+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T12:10:55+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -2791,12 +2818,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-21T19:20:50+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-21T15:50:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T19:10:00+05:30",
@@ -3187,9 +3221,18 @@
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T18:41:00+05:30",
+     "history": [
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T22:25:00+05:30",
@@ -3576,9 +3619,18 @@
     "SECOND CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T18:41:00+05:30",
+     "history": [
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 57.98,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T23:20:00+05:30",
@@ -4016,12 +4068,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 202.5,
+     "sold_out_at": "2026-11-21T19:20:50+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:01:09+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-21T19:10:00+05:30",
@@ -4163,9 +4222,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T08:20:59+05:30",
+     "history": [
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     },
     "SECOND CLASS": {
      "first_seen_status": "3",
@@ -6839,12 +6907,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-21T19:20:50+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T08:01:14+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-21T19:20:50+05:30"
     }
    },
    "cutoff": "2026-11-22T17:30:00+05:30",
@@ -7595,7 +7669,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-23T10:30:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243016/20261123"
@@ -7624,7 +7700,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-23T13:40:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "01:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243017/20261123"
@@ -7653,7 +7731,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-23T16:50:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "04:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243018/20261123"
@@ -7682,7 +7762,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-23T20:00:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "08:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243019/20261123"
@@ -7711,10 +7793,787 @@
    "screen": "SCREEN 2",
    "start": "2026-11-23T23:10:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "11:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243020/20261123"
+  },
+  "243036": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T11:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243036/20261123"
+  },
+  "243037": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T15:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243037/20261123"
+  },
+  "243038": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T19:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243038/20261123"
+  },
+  "243039": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-23T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243039/20261123"
+  },
+  "243052": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-23T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243052/20261123"
+  },
+  "243053": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-23T15:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243053/20261123"
+  },
+  "243054": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-23T19:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243054/20261123"
+  },
+  "243055": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-23T23:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243055/20261123"
+  },
+  "243068": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T10:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-23T10:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243068/20261123"
+  },
+  "243069": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-23T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243069/20261123"
+  },
+  "243070": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T18:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-23T18:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243070/20261123"
+  },
+  "243071": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-23T22:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243071/20261123"
+  },
+  "243084": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 6",
+   "start": "2026-11-23T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/243084/20261123"
+  },
+  "243088": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00523155",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
+   "screen": "SCREEN 6",
+   "start": "2026-11-23T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/MAYJ/243088/20261123"
+  },
+  "243092": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-23T10:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243092/20261123"
+  },
+  "243093": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-23T13:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "01:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243093/20261123"
+  },
+  "243094": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T17:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-23T17:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "05:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243094/20261123"
+  },
+  "243095": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-23T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243095/20261123"
+  },
+  "243108": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-23T11:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243108/20261123"
+  },
+  "243109": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T14:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-23T14:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "02:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243109/20261123"
+  },
+  "243110": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T18:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-23T18:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243110/20261123"
+  },
+  "243111": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-23T23:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243111/20261123"
+  },
+  "243124": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-23T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243124/20261123"
+  },
+  "243125": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-23T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243125/20261123"
+  },
+  "243126": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-23T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243126/20261123"
   }
  },
  "20261124": {
@@ -7866,7 +8725,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-24T10:30:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243021/20261124"
@@ -7895,7 +8756,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-24T13:40:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "01:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243022/20261124"
@@ -7924,7 +8787,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-24T16:50:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "04:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243023/20261124"
@@ -7953,7 +8818,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-24T20:00:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "08:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243024/20261124"
@@ -7982,10 +8849,787 @@
    "screen": "SCREEN 2",
    "start": "2026-11-24T23:10:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "11:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243025/20261124"
+  },
+  "243040": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T11:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-24T11:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243040/20261124"
+  },
+  "243041": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-24T15:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243041/20261124"
+  },
+  "243042": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T19:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-24T19:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243042/20261124"
+  },
+  "243043": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T23:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-24T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243043/20261124"
+  },
+  "243056": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-24T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243056/20261124"
+  },
+  "243057": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T15:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-24T15:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243057/20261124"
+  },
+  "243058": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T19:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-24T19:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243058/20261124"
+  },
+  "243059": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T23:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-24T23:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243059/20261124"
+  },
+  "243072": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T10:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-24T10:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243072/20261124"
+  },
+  "243073": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-24T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243073/20261124"
+  },
+  "243074": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T18:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-24T18:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243074/20261124"
+  },
+  "243075": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-24T22:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243075/20261124"
+  },
+  "243085": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T11:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 6",
+   "start": "2026-11-24T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/243085/20261124"
+  },
+  "243089": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00523155",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
+   "screen": "SCREEN 6",
+   "start": "2026-11-24T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/MAYJ/243089/20261124"
+  },
+  "243096": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-24T10:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243096/20261124"
+  },
+  "243097": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-24T13:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "01:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243097/20261124"
+  },
+  "243098": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T17:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-24T17:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "05:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243098/20261124"
+  },
+  "243099": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-24T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243099/20261124"
+  },
+  "243112": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T11:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-24T11:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243112/20261124"
+  },
+  "243113": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T14:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-24T14:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "02:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243113/20261124"
+  },
+  "243114": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T18:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-24T18:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243114/20261124"
+  },
+  "243115": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-24T23:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243115/20261124"
+  },
+  "243127": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-24T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243127/20261124"
+  },
+  "243128": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-24T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243128/20261124"
+  },
+  "243129": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-24T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243129/20261124"
   }
  },
  "20261125": {
@@ -8137,7 +9781,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-25T10:30:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243026/20261125"
@@ -8166,7 +9812,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-25T13:40:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "01:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243027/20261125"
@@ -8195,7 +9843,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-25T16:50:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "04:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243028/20261125"
@@ -8224,7 +9874,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-25T20:00:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "08:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243029/20261125"
@@ -8253,10 +9905,787 @@
    "screen": "SCREEN 2",
    "start": "2026-11-25T23:10:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "11:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243030/20261125"
+  },
+  "243044": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T11:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-25T11:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243044/20261125"
+  },
+  "243045": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-25T15:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243045/20261125"
+  },
+  "243046": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T19:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-25T19:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243046/20261125"
+  },
+  "243047": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T23:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-25T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243047/20261125"
+  },
+  "243060": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243060/20261125"
+  },
+  "243061": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T15:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T15:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243061/20261125"
+  },
+  "243062": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T19:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T19:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243062/20261125"
+  },
+  "243063": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T23:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T23:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243063/20261125"
+  },
+  "243076": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T10:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T10:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243076/20261125"
+  },
+  "243077": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243077/20261125"
+  },
+  "243078": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T18:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T18:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243078/20261125"
+  },
+  "243079": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T22:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243079/20261125"
+  },
+  "243086": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T11:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 6",
+   "start": "2026-11-25T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/243086/20261125"
+  },
+  "243090": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00523155",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
+   "screen": "SCREEN 6",
+   "start": "2026-11-25T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/MAYJ/243090/20261125"
+  },
+  "243100": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-25T10:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243100/20261125"
+  },
+  "243101": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-25T13:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "01:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243101/20261125"
+  },
+  "243102": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T17:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-25T17:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "05:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243102/20261125"
+  },
+  "243103": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-25T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243103/20261125"
+  },
+  "243116": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T11:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-25T11:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243116/20261125"
+  },
+  "243117": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T14:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-25T14:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "02:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243117/20261125"
+  },
+  "243118": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T18:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-25T18:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243118/20261125"
+  },
+  "243119": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-25T23:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243119/20261125"
+  },
+  "243130": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-25T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243130/20261125"
+  },
+  "243131": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-25T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243131/20261125"
+  },
+  "243132": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-25T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243132/20261125"
   }
  },
  "20261126": {
@@ -8408,7 +10837,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-26T10:30:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243031/20261126"
@@ -8437,7 +10868,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-26T13:40:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "01:40 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243032/20261126"
@@ -8466,7 +10899,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-26T16:50:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "04:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243033/20261126"
@@ -8495,7 +10930,9 @@
    "screen": "SCREEN 2",
    "start": "2026-11-26T20:00:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "08:00 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243034/20261126"
@@ -8524,11 +10961,788 @@
    "screen": "SCREEN 2",
    "start": "2026-11-26T23:10:00+05:30",
    "subs": "",
-   "tags": [],
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
    "time": "11:10 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/MAYJ/243035/20261126"
+  },
+  "243048": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T11:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-26T11:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243048/20261126"
+  },
+  "243049": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T15:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-26T15:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243049/20261126"
+  },
+  "243050": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T19:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-26T19:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243050/20261126"
+  },
+  "243051": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 219.2,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T23:25:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 3",
+   "start": "2026-11-26T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/MAYJ/243051/20261126"
+  },
+  "243064": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-26T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243064/20261126"
+  },
+  "243065": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T15:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-26T15:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243065/20261126"
+  },
+  "243066": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T19:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-26T19:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243066/20261126"
+  },
+  "243067": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T23:40:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-26T23:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243067/20261126"
+  },
+  "243080": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T10:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-26T10:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243080/20261126"
+  },
+  "243081": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T14:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-26T14:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "02:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243081/20261126"
+  },
+  "243082": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T18:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-26T18:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243082/20261126"
+  },
+  "243083": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 5",
+   "start": "2026-11-26T22:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "10:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243083/20261126"
+  },
+  "243087": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T11:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 6",
+   "start": "2026-11-26T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/MAYJ/243087/20261126"
+  },
+  "243091": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS 3D": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 237.9,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T15:40:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00523155",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Telugu",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523155-1792999994",
+   "screen": "SCREEN 6",
+   "start": "2026-11-26T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523155/MAYJ/243091/20261126"
+  },
+  "243104": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T10:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-26T10:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243104/20261126"
+  },
+  "243105": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-26T13:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "01:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243105/20261126"
+  },
+  "243106": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T17:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-26T17:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "05:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243106/20261126"
+  },
+  "243107": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T22:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-26T22:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243107/20261126"
+  },
+  "243120": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T11:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-26T11:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243120/20261126"
+  },
+  "243121": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T14:50:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-26T14:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "02:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243121/20261126"
+  },
+  "243122": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T18:30:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-26T18:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243122/20261126"
+  },
+  "243123": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 8",
+   "start": "2026-11-26T23:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243123/20261126"
+  },
+  "243133": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T12:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-26T12:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243133/20261126"
+  },
+  "243134": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-26T15:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243134/20261126"
+  },
+  "243135": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-21T19:20:50+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-21T19:20:50+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-26T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243135/20261126"
   }
  },
- "_updated": "2026-11-21T19:10:53+05:30"
+ "_updated": "2026-11-21T19:20:50+05:30"
 }

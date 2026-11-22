@@ -569,12 +569,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T18:20:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-22T18:20:53+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-22T16:40:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T18:20:53+05:30"
     }
    },
    "cutoff": "2026-11-22T18:10:00+05:30",
@@ -1159,12 +1166,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T18:20:53+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 219.2,
+     "sold_out_at": "2026-11-22T18:20:53+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-22T08:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T18:20:53+05:30"
     },
     "SECOND CLASS 3D": {
      "first_seen_status": "3",
@@ -5237,6 +5251,99 @@
    "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243140/20261123"
+  },
+  "243148": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T11:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-23T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243148/20261123"
+  },
+  "243149": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-23T15:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243149/20261123"
+  },
+  "243156": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T19:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-23T18:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/243156/20261123"
   }
  },
  "20261124": {
@@ -6365,6 +6472,99 @@
    "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243141/20261124"
+  },
+  "243150": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T11:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-24T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243150/20261124"
+  },
+  "243151": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-24T15:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243151/20261124"
+  },
+  "243157": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T19:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-24T18:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/243157/20261124"
   }
  },
  "20261125": {
@@ -7493,6 +7693,99 @@
    "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243142/20261125"
+  },
+  "243152": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T11:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-25T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243152/20261125"
+  },
+  "243153": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-25T15:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243153/20261125"
+  },
+  "243158": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T19:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-25T18:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/243158/20261125"
   }
  },
  "20261126": {
@@ -8621,7 +8914,100 @@
    "time": "03:30 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243143/20261126"
+  },
+  "243154": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T11:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-26T11:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:30 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243154/20261126"
+  },
+  "243155": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00525702",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Crime,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "John Doe",
+   "poster": "john-doe-et00525702-1794051624",
+   "screen": "SCREEN 10",
+   "start": "2026-11-26T15:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:10 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525702/MAYJ/243155/20261126"
+  },
+  "243159": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-26T19:00:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-22T18:20:53+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-26T18:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/243159/20261126"
   }
  },
- "_updated": "2026-11-22T18:01:08+05:30"
+ "_updated": "2026-11-22T18:20:53+05:30"
 }

@@ -47,9 +47,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T12:50:51+05:30",
+     "history": [
+      [
+       "2026-11-22T11:31:22+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T11:31:22+05:30"
     }
    },
    "cutoff": "2026-11-22T11:40:00+05:30",
@@ -652,12 +661,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T11:31:22+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:31:23+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:31:22+05:30"
     }
    },
    "cutoff": "2026-11-22T16:30:00+05:30",
@@ -2327,9 +2342,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T16:50:50+05:30",
+     "history": [
+      [
+       "2026-11-22T11:31:22+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-22T11:31:22+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T11:31:22+05:30"
     }
    },
    "cutoff": "2026-11-22T11:20:00+05:30",
@@ -2588,9 +2613,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T09:01:03+05:30",
+     "history": [
+      [
+       "2026-11-22T11:31:22+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T11:31:22+05:30"
     }
    },
    "cutoff": "2026-11-22T12:20:00+05:30",
@@ -7740,5 +7774,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243143/20261126"
   }
  },
- "_updated": "2026-11-22T11:20:49+05:30"
+ "_updated": "2026-11-22T11:31:22+05:30"
 }

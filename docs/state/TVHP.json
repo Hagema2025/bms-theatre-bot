@@ -432,7 +432,7 @@
       ]
      ],
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-21T23:40:51+05:30"
     }
@@ -753,12 +753,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T13:31:18+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-22T13:31:18+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-21T21:31:21+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T13:31:18+05:30"
     }
    },
    "cutoff": "2026-11-22T15:45:00+05:30",
@@ -994,6 +1001,13 @@
   "26805": {
    "censor": "UA16+",
    "classes": {
+    "BUDGET+VEG PUFF": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T13:31:18+05:30",
+     "price": 280.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T13:31:26+05:30",
@@ -1010,6 +1024,13 @@
      "soon_alerted": false,
      "status": "0",
      "status_changed_at": "2026-11-22T13:10:50+05:30"
+    },
+    "ELITE+VEG PUFF": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T13:31:18+05:30",
+     "price": 280.0,
+     "soon_alerted": false,
+     "status": "3"
     }
    },
    "cutoff": "2026-11-22T22:55:00+05:30",
@@ -2675,5 +2696,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-22T13:20:48+05:30"
+ "_updated": "2026-11-22T13:31:18+05:30"
 }

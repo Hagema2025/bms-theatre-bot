@@ -2617,19 +2617,35 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-22T14:10:50+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T03:50:48+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     }
    },
    "cutoff": "2026-11-22T20:05:00+05:30",
@@ -3134,7 +3150,7 @@
    "first_seen": "2026-11-18T03:50:48+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-22T16:05:00+05:30",
@@ -3207,7 +3223,7 @@
    "first_seen": "2026-11-18T08:10:49+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-22T19:25:00+05:30",
@@ -3274,7 +3290,7 @@
    "first_seen": "2026-11-18T03:50:48+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-22T22:45:00+05:30",
@@ -7585,7 +7601,7 @@
    "first_seen": "2026-11-21T22:50:50+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-23T15:40:00+05:30",
@@ -7631,7 +7647,7 @@
    "first_seen": "2026-11-21T22:50:50+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-23T22:20:00+05:30",
@@ -7866,7 +7882,7 @@
    "first_seen": "2026-11-22T11:01:11+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-23T12:20:00+05:30",
@@ -7912,7 +7928,7 @@
    "first_seen": "2026-11-22T11:01:11+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-23T19:00:00+05:30",
@@ -7986,9 +8002,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T12:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -8982,9 +9008,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9018,9 +9054,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9126,9 +9172,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9198,9 +9254,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9270,9 +9336,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T15:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T15:01:08+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -9464,7 +9540,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-24T12:20:00+05:30",
@@ -9510,7 +9586,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-24T15:40:00+05:30",
@@ -9556,7 +9632,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-24T19:00:00+05:30",
@@ -9602,7 +9678,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-24T22:20:00+05:30",
@@ -11064,7 +11140,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-25T12:20:00+05:30",
@@ -11100,7 +11176,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-25T15:40:00+05:30",
@@ -11136,7 +11212,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Tamil",
-   "movie": "AOT",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot-et00526277-1794829248",
    "screen": "AUDI 09",
    "start": "2026-11-25T19:00:00+05:30",
@@ -11172,7 +11248,7 @@
    "first_seen": "2026-11-22T07:10:52+05:30",
    "genre": "Drama,Romantic",
    "language": "Telugu",
-   "movie": "Aakasamlo Oka Tara",
+   "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aakasamlo-oka-tara-et00482388-1794656188",
    "screen": "AUDI 09",
    "start": "2026-11-25T22:20:00+05:30",
@@ -11183,5 +11259,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46730/20261125"
   }
  },
- "_updated": "2026-11-22T14:50:52+05:30"
+ "_updated": "2026-11-22T15:01:08+05:30"
 }

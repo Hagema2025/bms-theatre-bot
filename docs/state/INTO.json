@@ -508,14 +508,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-22T11:20:49+05:30",
+     "reopened_at": "2026-11-22T11:40:54+05:30",
      "sold_out_at": "2026-11-22T11:31:22+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-22T11:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     }
    },
    "cutoff": "2026-11-22T19:40:00+05:30",
@@ -1262,12 +1268,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-21T19:20:50+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     }
    },
    "cutoff": "2026-11-22T23:35:00+05:30",
@@ -4304,12 +4316,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 61.74,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-22T10:40:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     }
    },
    "cutoff": "2026-11-22T23:25:00+05:30",
@@ -5732,9 +5750,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T04:20:46+05:30",
+     "history": [
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 61.74,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     }
    },
    "cutoff": "2026-11-23T20:25:00+05:30",
@@ -6014,12 +6041,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-22T11:31:22+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     }
    },
    "cutoff": "2026-11-23T13:35:00+05:30",
@@ -6383,6 +6416,42 @@
    "time": "10:00 AM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93377/20261123"
+  },
+  "93380": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:40:54+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:40:54+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:35:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-22T11:40:54+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 6",
+   "start": "2026-11-23T22:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/INTO/93380/20261123"
   },
   "93381": {
    "censor": "UA13+",
@@ -6963,14 +7032,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-22T11:40:54+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 270.98,
-     "reopened_at": "2026-11-22T06:50:46+05:30",
+     "reopened_at": "2026-11-22T11:40:54+05:30",
      "sold_out_at": "2026-11-22T07:31:20+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-22T07:31:20+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:40:54+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -9320,5 +9395,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-22T11:31:22+05:30"
+ "_updated": "2026-11-22T11:40:54+05:30"
 }

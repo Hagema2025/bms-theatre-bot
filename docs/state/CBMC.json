@@ -1320,12 +1320,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-22T07:01:11+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-22T06:31:20+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-22T07:01:11+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2246,19 +2252,35 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T07:01:11+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-22T00:01:04+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-22T07:01:11+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-18T23:50:54+05:30",
+     "history": [
+      [
+       "2026-11-22T07:01:11+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-22T07:01:11+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-22T07:01:11+05:30"
     }
    },
    "cutoff": "2026-11-22T07:55:00+05:30",
@@ -3443,9 +3465,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "history": [
+      [
+       "2026-11-22T07:01:11+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-22T07:01:11+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-22T07:01:11+05:30"
     }
    },
    "cutoff": "2026-11-22T07:55:00+05:30",
@@ -9236,5 +9268,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-22T06:31:20+05:30"
+ "_updated": "2026-11-22T07:01:11+05:30"
 }

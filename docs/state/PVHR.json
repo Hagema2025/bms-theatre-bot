@@ -1242,14 +1242,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-22T21:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-22T20:10:49+05:30",
-     "sold_out_at": "2026-11-22T20:01:04+05:30",
+     "sold_out_at": "2026-11-22T21:01:07+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-22T20:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T21:01:07+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -1762,14 +1768,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-22T21:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-22T20:10:49+05:30",
-     "sold_out_at": "2026-11-22T20:01:04+05:30",
+     "sold_out_at": "2026-11-22T21:01:07+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-22T20:10:49+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T21:01:07+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5190,7 +5202,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T13:01:05+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -6020,7 +6032,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T19:40:54+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -6827,13 +6839,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-22T21:01:07+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-22T21:01:07+05:30",
      "sold_out_at": "2026-11-22T11:50:48+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-22T11:50:48+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T21:01:07+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6873,12 +6892,19 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-22T21:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
+     "sold_out_at": "2026-11-22T21:01:07+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-22T11:50:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T21:01:07+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -11750,5 +11776,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/PVHR/46730/20261125"
   }
  },
- "_updated": "2026-11-22T20:50:51+05:30"
+ "_updated": "2026-11-22T21:01:07+05:30"
 }

@@ -5637,16 +5637,36 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T04:20:46+05:30",
+     "history": [
+      [
+       "2026-11-22T11:01:11+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-22T11:01:11+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T11:01:11+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T04:20:46+05:30",
+     "history": [
+      [
+       "2026-11-22T11:01:11+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-22T11:01:11+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T11:01:11+05:30"
     }
    },
    "cutoff": "2026-11-23T23:35:00+05:30",
@@ -6174,6 +6194,42 @@
    "time": "10:30 AM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93376/20261123"
+  },
+  "93377": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:01:11+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:01:11+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 136,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00522599",
+   "first_seen": "2026-11-22T11:01:11+05:30",
+   "genre": "Crime,Drama,Thriller",
+   "language": "Tamil",
+   "movie": "Sathyavan Savithiri",
+   "poster": "sathyavan-savithiri-et00522599-1792070672",
+   "screen": "SCREEN 6",
+   "start": "2026-11-23T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:00 AM",
+   "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93377/20261123"
   }
  },
  "20261216": {
@@ -9063,5 +9119,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-22T10:50:49+05:30"
+ "_updated": "2026-11-22T11:01:11+05:30"
 }

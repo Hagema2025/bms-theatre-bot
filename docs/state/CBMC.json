@@ -2543,13 +2543,20 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-22T10:11:01+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-22T07:40:54+05:30",
+     "sold_out_at": "2026-11-22T10:11:01+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-22T09:50:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T10:11:01+05:30"
     }
    },
    "cutoff": "2026-11-22T22:55:00+05:30",
@@ -4110,9 +4117,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T12:50:58+05:30",
+     "history": [
+      [
+       "2026-11-22T10:11:01+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 210.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T10:11:01+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -9943,5 +9959,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-22T10:01:04+05:30"
+ "_updated": "2026-11-22T10:11:01+05:30"
 }

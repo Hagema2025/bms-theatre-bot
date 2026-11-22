@@ -496,14 +496,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-22T11:20:49+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-22T09:31:16+05:30",
+     "reopened_at": "2026-11-22T11:20:49+05:30",
      "sold_out_at": "2026-11-22T10:11:01+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-22T10:11:01+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T11:20:49+05:30"
     }
    },
    "cutoff": "2026-11-22T19:40:00+05:30",
@@ -2119,9 +2125,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T09:01:04+05:30",
+     "history": [
+      [
+       "2026-11-22T11:20:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T11:20:49+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -6135,16 +6150,36 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T04:20:46+05:30",
+     "history": [
+      [
+       "2026-11-22T11:20:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.49,
+     "sold_out_at": "2026-11-22T11:20:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T11:20:49+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T04:20:46+05:30",
+     "history": [
+      [
+       "2026-11-22T11:20:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-22T11:20:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-22T11:20:49+05:30"
     }
    },
    "cutoff": "2026-11-23T23:15:00+05:30",
@@ -6236,6 +6271,42 @@
    "time": "10:00 AM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93377/20261123"
+  },
+  "93381": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:20:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-22T11:20:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T23:15:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-22T11:20:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT",
+   "poster": "aot-et00526277-1794829248",
+   "screen": "SCREEN 8",
+   "start": "2026-11-23T22:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/INTO/93381/20261123"
   }
  },
  "20261216": {
@@ -9131,5 +9202,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-22T11:10:47+05:30"
+ "_updated": "2026-11-22T11:20:49+05:30"
 }

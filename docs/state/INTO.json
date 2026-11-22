@@ -3991,7 +3991,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-19T21:31:22+05:30",
      "price": 223.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -4024,7 +4024,7 @@
       ]
      ],
      "price": 94.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-22T14:31:23+05:30"
     }
@@ -4255,14 +4255,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-22T21:40:52+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-21T06:50:53+05:30",
+     "reopened_at": "2026-11-22T21:40:52+05:30",
      "sold_out_at": "2026-11-21T10:31:28+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-21T10:31:28+05:30"
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-22T21:40:52+05:30"
     }
    },
    "cutoff": "2026-11-22T23:20:00+05:30",
@@ -4647,9 +4653,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T08:50:49+05:30",
+     "history": [
+      [
+       "2026-11-22T21:40:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 210.98,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T21:40:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -8050,12 +8065,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T21:40:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-22T21:20:52+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-22T21:40:52+05:30"
     }
    },
    "cutoff": "2026-11-24T20:15:00+05:30",
@@ -13322,5 +13343,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-22T21:20:52+05:30"
+ "_updated": "2026-11-22T21:40:52+05:30"
 }

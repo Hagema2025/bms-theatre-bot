@@ -5056,14 +5056,20 @@
        "s",
        "0",
        "2"
+      ],
+      [
+       "2026-11-22T13:01:13+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-22T12:40:53+05:30",
      "sold_out_at": "2026-11-22T12:31:24+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-22T12:40:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T13:01:13+05:30"
     }
    },
    "cutoff": "2026-11-22T23:15:00+05:30",
@@ -6650,9 +6656,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T11:20:49+05:30",
+     "history": [
+      [
+       "2026-11-22T13:01:13+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-22T13:01:13+05:30"
     }
    },
    "cutoff": "2026-11-23T23:15:00+05:30",
@@ -9485,12 +9500,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-22T13:01:13+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 210.98,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-22T12:31:24+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T13:01:13+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -12301,5 +12322,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-22T12:40:53+05:30"
+ "_updated": "2026-11-22T13:01:13+05:30"
 }

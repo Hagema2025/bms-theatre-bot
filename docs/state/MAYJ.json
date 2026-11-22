@@ -345,12 +345,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T16:01:07+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-22T12:31:24+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-22T17:40:00+05:30",
@@ -554,7 +560,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-22T13:50:49+05:30"
     }
@@ -806,12 +812,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T16:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 57.98,
+     "sold_out_at": "2026-11-22T16:01:07+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-22T15:01:08+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-22T16:30:00+05:30",
@@ -1117,7 +1130,7 @@
       ]
      ],
      "price": 219.2,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-22T08:10:51+05:30"
     },
@@ -1136,12 +1149,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-22T16:01:07+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 89.76,
+     "sold_out_at": "2026-11-22T16:01:07+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-22T15:20:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-22T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-22T18:10:00+05:30",
@@ -1385,12 +1405,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-22T16:01:07+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 94.84,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-22T15:50:46+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-22T18:40:00+05:30",
@@ -2680,14 +2706,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-22T16:01:07+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 57.98,
-     "reopened_at": "2026-11-22T15:40:53+05:30",
+     "reopened_at": "2026-11-22T16:01:07+05:30",
      "sold_out_at": "2026-11-22T15:50:46+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-22T15:50:46+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-22T16:01:07+05:30"
     }
    },
    "cutoff": "2026-11-22T19:10:00+05:30",
@@ -3931,7 +3963,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-22T22:25:00+05:30",
+   "cutoff": "2026-11-22T22:40:00+05:30",
    "dimension": "2D",
    "duration": 163,
    "end": "2026-11-23T00:30:00+05:30",
@@ -3942,12 +3974,12 @@
    "movie": "ENE Repeat",
    "poster": "ene-repeat-et00506990-1794570849",
    "screen": "SCREEN 15",
-   "start": "2026-11-22T22:15:00+05:30",
+   "start": "2026-11-22T22:30:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "10:15 PM",
+   "time": "10:30 PM",
    "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243147/20261122"
   }
@@ -8464,5 +8496,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243143/20261126"
   }
  },
- "_updated": "2026-11-22T15:50:46+05:30"
+ "_updated": "2026-11-22T16:01:07+05:30"
 }

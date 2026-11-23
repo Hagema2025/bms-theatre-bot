@@ -18,12 +18,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-23T10:40:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-23T09:31:20+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-23T10:40:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -311,7 +317,7 @@
    "genre": "Drama,Romantic",
    "language": "Telugu",
    "movie": "AOT - Aakasamlo Oka Tara",
-   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410359",
    "screen": "AUDI03",
    "start": "2026-11-23T22:15:00+05:30",
    "subs": "",
@@ -1003,9 +1009,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:01:10+05:30",
+     "history": [
+      [
+       "2026-11-23T10:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-23T10:40:51+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-23T10:40:51+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1040,14 +1056,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-23T10:40:51+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 54.35,
      "reopened_at": "2026-11-23T10:01:06+05:30",
-     "sold_out_at": "2026-11-23T09:50:49+05:30",
+     "sold_out_at": "2026-11-23T10:40:51+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-23T10:01:06+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-23T10:40:51+05:30"
     }
    },
    "cutoff": "2026-11-23T10:30:00+05:30",
@@ -2573,7 +2595,7 @@
    "genre": "Drama,Romantic",
    "language": "Telugu",
    "movie": "AOT - Aakasamlo Oka Tara",
-   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410359",
    "screen": "AUDI03",
    "start": "2026-11-24T22:15:00+05:30",
    "subs": "",
@@ -3835,7 +3857,7 @@
    "genre": "Drama,Romantic",
    "language": "Telugu",
    "movie": "AOT - Aakasamlo Oka Tara",
-   "poster": "aakasamlo-oka-tara-et00482388-1794656188",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410359",
    "screen": "AUDI03",
    "start": "2026-11-25T22:15:00+05:30",
    "subs": "",
@@ -5708,5 +5730,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-23T10:31:24+05:30"
+ "_updated": "2026-11-23T10:40:51+05:30"
 }

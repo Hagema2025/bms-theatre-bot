@@ -1445,9 +1445,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
+     "history": [
+      [
+       "2026-11-23T13:01:18+05:30",
+       "s",
+       "0",
+       "1"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-23T13:01:18+05:30",
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-23T13:01:18+05:30"
     }
    },
    "cutoff": "2026-11-23T14:10:00+05:30",
@@ -1465,7 +1475,7 @@
    "subs": "",
    "tags": [],
    "time": "01:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16673/20261123"
   }
  },
@@ -2089,7 +2099,7 @@
    "subs": "",
    "tags": [],
    "time": "10:15 AM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16602/20261124"
   },
   "16603": {
@@ -2737,7 +2747,7 @@
    "subs": "",
    "tags": [],
    "time": "01:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16672/20261124"
   },
   "16678": {
@@ -2773,7 +2783,7 @@
    "subs": "",
    "tags": [],
    "time": "06:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16678/20261124"
   }
  },
@@ -3397,7 +3407,7 @@
    "subs": "",
    "tags": [],
    "time": "10:15 AM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16623/20261125"
   },
   "16624": {
@@ -4045,7 +4055,7 @@
    "subs": "",
    "tags": [],
    "time": "01:55 PM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16671/20261125"
   },
   "16677": {
@@ -4081,7 +4091,7 @@
    "subs": "",
    "tags": [],
    "time": "06:20 PM",
-   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16677/20261125"
   }
  },
@@ -5912,5 +5922,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-23T12:50:50+05:30"
+ "_updated": "2026-11-23T13:01:18+05:30"
 }

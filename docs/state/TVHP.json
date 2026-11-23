@@ -164,9 +164,19 @@
     "ELITE+3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-18T22:21:00+05:30",
+     "history": [
+      [
+       "2026-11-23T11:10:57+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 218.0,
+     "sold_out_at": "2026-11-23T11:10:57+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-23T11:10:57+05:30"
     }
    },
    "cutoff": "2026-11-23T11:30:00+05:30",
@@ -1377,5 +1387,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26802/20261126"
   }
  },
- "_updated": "2026-11-23T11:01:03+05:30"
+ "_updated": "2026-11-23T11:10:57+05:30"
 }

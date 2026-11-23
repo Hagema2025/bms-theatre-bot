@@ -990,7 +990,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:01:10+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -3033,6 +3033,42 @@
    "time": "06:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16678/20261124"
+  },
+  "16679": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T16:01:05+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T16:01:05+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T14:00:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-23T16:01:05+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI05",
+   "start": "2026-11-24T13:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16679/20261124"
   }
  },
  "20261125": {
@@ -3552,7 +3588,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-25T14:40:00+05:30",
+   "cutoff": "2026-11-25T13:40:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-26T00:30:00+05:30",
@@ -3562,11 +3598,11 @@
    "language": "Tamil",
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
-   "screen": "AUDI07",
-   "start": "2026-11-25T14:25:00+05:30",
+   "screen": "AUDI05",
+   "start": "2026-11-25T13:25:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "02:25 PM",
+   "time": "01:25 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16620/20261125"
   },
@@ -6200,5 +6236,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-23T15:50:50+05:30"
+ "_updated": "2026-11-23T16:01:05+05:30"
 }

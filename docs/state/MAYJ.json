@@ -905,7 +905,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T19:20:50+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1183,9 +1183,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T18:20:53+05:30",
+     "history": [
+      [
+       "2026-11-23T12:40:48+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-23T12:40:48+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-23T12:40:48+05:30"
     }
    },
    "cutoff": "2026-11-23T15:20:00+05:30",
@@ -1269,6 +1279,37 @@
    "time": "10:30 PM",
    "trailer": "https://www.youtube.com/watch?v=A7lyvgnDuDE",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506939/MAYJ/243160/20261123"
+  },
+  "243170": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T12:40:48+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-23T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 121,
+   "end": "2026-11-24T00:30:00+05:30",
+   "event_code": "ET00504975",
+   "first_seen": "2026-11-23T12:40:48+05:30",
+   "genre": "Action,Crime,Thriller",
+   "language": "Tamil",
+   "movie": "Black Gold",
+   "poster": "black-gold-et00504975-1782478984",
+   "screen": "SCREEN 10",
+   "start": "2026-11-23T15:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=sbuP58PQ54Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504975/MAYJ/243170/20261123"
   }
  },
  "20261124": {
@@ -5273,5 +5314,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243169/20261126"
   }
  },
- "_updated": "2026-11-23T12:31:22+05:30"
+ "_updated": "2026-11-23T12:40:48+05:30"
 }

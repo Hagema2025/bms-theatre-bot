@@ -189,7 +189,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -1890,9 +1890,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "history": [
+      [
+       "2026-11-23T11:20:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-23T11:20:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-23T11:20:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2639,6 +2649,42 @@
    "time": "01:55 PM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16672/20261124"
+  },
+  "16678": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T11:20:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T11:20:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-24T18:35:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-23T11:20:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "AUDI07",
+   "start": "2026-11-24T18:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16678/20261124"
   }
  },
  "20261125": {
@@ -3152,9 +3198,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "history": [
+      [
+       "2026-11-23T11:20:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-23T11:20:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-23T11:20:49+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3901,6 +3957,42 @@
    "time": "01:55 PM",
    "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16671/20261125"
+  },
+  "16677": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T11:20:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T11:20:49+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T18:35:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-23T11:20:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "AUDI07",
+   "start": "2026-11-25T18:20:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=myjoR2lY7YM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16677/20261125"
   }
  },
  "20261217": {
@@ -5730,5 +5822,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-23T11:01:03+05:30"
+ "_updated": "2026-11-23T11:20:49+05:30"
 }

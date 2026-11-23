@@ -30,12 +30,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-23T18:40:55+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 233.8,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-23T18:31:26+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-23T18:40:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -52,14 +58,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-23T18:40:55+05:30",
+       "s",
+       "0",
+       "2"
       ]
      ],
      "price": 104.35,
-     "reopened_at": "2026-11-23T18:20:52+05:30",
+     "reopened_at": "2026-11-23T18:40:55+05:30",
      "sold_out_at": "2026-11-23T18:31:26+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-23T18:31:26+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-23T18:40:55+05:30"
     }
    },
    "cutoff": "2026-11-23T19:25:00+05:30",
@@ -1311,13 +1323,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-23T18:40:55+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-23T18:10:54+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-23T18:20:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-23T18:40:55+05:30"
     }
    },
    "cutoff": "2026-11-23T19:15:00+05:30",
@@ -1751,7 +1769,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-23T16:21:04+05:30"
     },
@@ -4653,6 +4671,150 @@
    "time": "06:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16677/20261125"
+  },
+  "16680": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-23T18:40:55+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI05",
+   "start": "2026-11-25T16:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16680/20261125"
+  },
+  "16681": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T15:20:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-23T18:40:55+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410463",
+   "screen": "AUDI07",
+   "start": "2026-11-25T15:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/CBMC/16681/20261125"
+  },
+  "16682": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-23T18:40:55+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "AUDI05",
+   "start": "2026-11-25T23:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16682/20261125"
+  },
+  "16684": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-23T18:40:55+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-25T20:15:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-23T18:40:55+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "AUDI05",
+   "start": "2026-11-25T20:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "08:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16684/20261125"
   }
  },
  "20261217": {
@@ -6482,5 +6644,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16513/20261220"
   }
  },
- "_updated": "2026-11-23T18:31:26+05:30"
+ "_updated": "2026-11-23T18:40:55+05:30"
 }

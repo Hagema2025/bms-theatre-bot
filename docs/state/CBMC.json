@@ -707,14 +707,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-24T22:41:05+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
-     "reopened_at": "2026-11-24T22:10:53+05:30",
+     "reopened_at": "2026-11-24T22:41:05+05:30",
      "sold_out_at": "2026-11-24T22:20:51+05:30",
      "soon_alerted": true,
-     "status": "0",
-     "status_changed_at": "2026-11-24T22:20:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-24T22:41:05+05:30"
     }
    },
    "cutoff": "2026-11-24T22:50:00+05:30",
@@ -1724,9 +1730,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
+     "history": [
+      [
+       "2026-11-24T22:41:05+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-24T22:41:05+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2002,12 +2017,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-24T22:41:05+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 202.49,
+     "sold_out_at": "2026-11-24T22:41:05+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-24T22:10:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-24T22:41:05+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2024,13 +2046,20 @@
        "s",
        "3",
        "1"
+      ],
+      [
+       "2026-11-24T22:41:05+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-24T22:10:53+05:30",
+     "sold_out_at": "2026-11-24T22:41:05+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-24T22:20:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-24T22:41:05+05:30"
     }
    },
    "cutoff": "2026-11-24T22:30:00+05:30",
@@ -7027,5 +7056,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-24T22:31:23+05:30"
+ "_updated": "2026-11-24T22:41:05+05:30"
 }

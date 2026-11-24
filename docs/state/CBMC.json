@@ -686,9 +686,19 @@
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "history": [
+      [
+       "2026-11-24T22:10:53+05:30",
+       "s",
+       "0",
+       "1"
+      ]
+     ],
      "price": 54.35,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-24T22:10:53+05:30",
+     "soon_alerted": true,
+     "status": "1",
+     "status_changed_at": "2026-11-24T22:10:53+05:30"
     }
    },
    "cutoff": "2026-11-24T22:50:00+05:30",
@@ -1961,16 +1971,35 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
+     "history": [
+      [
+       "2026-11-24T22:10:53+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-24T22:10:53+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
+     "history": [
+      [
+       "2026-11-24T22:10:53+05:30",
+       "s",
+       "0",
+       "3"
+      ]
+     ],
      "price": 59.43,
-     "soon_alerted": false,
-     "status": "0"
+     "reopened_at": "2026-11-24T22:10:53+05:30",
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-24T22:10:53+05:30"
     }
    },
    "cutoff": "2026-11-24T22:30:00+05:30",
@@ -6967,5 +6996,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-24T22:01:13+05:30"
+ "_updated": "2026-11-24T22:10:53+05:30"
 }

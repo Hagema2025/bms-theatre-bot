@@ -1347,9 +1347,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-23T12:31:22+05:30",
+     "history": [
+      [
+       "2026-11-24T14:21:02+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-24T14:21:02+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-24T14:21:02+05:30"
     }
    },
    "cutoff": "2026-11-24T19:10:00+05:30",
@@ -1371,6 +1381,37 @@
    "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243167/20261124"
+  },
+  "243171": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-24T14:21:02+05:30",
+     "price": 202.5,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-24T20:10:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-25T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-24T14:21:02+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 9",
+   "start": "2026-11-24T20:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243171/20261124"
   }
  },
  "20261125": {
@@ -4041,5 +4082,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/MAYJ/243169/20261126"
   }
  },
- "_updated": "2026-11-24T14:01:08+05:30"
+ "_updated": "2026-11-24T14:21:02+05:30"
 }

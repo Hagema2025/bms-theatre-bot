@@ -1043,14 +1043,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-25T03:01:04+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 59.43,
-     "reopened_at": "2026-11-23T13:31:35+05:30",
+     "reopened_at": "2026-11-25T03:01:04+05:30",
      "sold_out_at": "2026-11-24T10:21:00+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-24T10:21:00+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-25T03:01:04+05:30"
     }
    },
    "cutoff": "2026-11-25T16:55:00+05:30",
@@ -3776,6 +3782,1102 @@
    "time": "01:05 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93513/20261126"
+  }
+ },
+ "20261127": {
+  "93519": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T14:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-27T14:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "02:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93519/20261127"
+  },
+  "93520": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T23:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-27T22:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93520/20261127"
+  },
+  "93521": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T12:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-27T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93521/20261127"
+  },
+  "93522": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T20:00:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-27T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93522/20261127"
+  },
+  "93524": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-27T15:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "03:55 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93524/20261127"
+  },
+  "93525": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T00:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-27T23:20:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "11:20 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93525/20261127"
+  },
+  "93529": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-27T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-27T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:00 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93529/20261127"
+  },
+  "93530": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-27T18:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "06:30 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93530/20261127"
+  }
+ },
+ "20261128": {
+  "93548": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-28T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93548/20261128"
+  },
+  "93549": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T14:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-28T14:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "02:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93549/20261128"
+  },
+  "93550": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-28T18:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "06:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93550/20261128"
+  },
+  "93551": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T23:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-28T22:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93551/20261128"
+  },
+  "93556": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T12:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93556/20261128"
+  },
+  "93557": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T15:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "03:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93557/20261128"
+  },
+  "93558": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T20:00:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93558/20261128"
+  },
+  "93559": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T00:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T23:20:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "11:20 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93559/20261128"
+  }
+ },
+ "20261129": {
+  "93552": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T10:45:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T10:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:00 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93552/20261129"
+  },
+  "93553": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T14:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T14:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "02:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93553/20261129"
+  },
+  "93554": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T19:15:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T18:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "06:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93554/20261129"
+  },
+  "93555": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 233.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 104.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T23:15:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T22:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "BIGPIX"
+   ],
+   "time": "10:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93555/20261129"
+  },
+  "93560": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T12:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-29T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93560/20261129"
+  },
+  "93561": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-29T15:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "03:55 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93561/20261129"
+  },
+  "93562": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T20:00:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-11-29T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93562/20261129"
+  },
+  "93563": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-30T00:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T03:01:04+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-11-29T23:20:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "11:20 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T03:01:04+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T03:01:04+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93563/20261129"
   }
  },
  "20261216": {
@@ -6842,5 +7944,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-25T02:51:06+05:30"
+ "_updated": "2026-11-25T03:01:04+05:30"
 }

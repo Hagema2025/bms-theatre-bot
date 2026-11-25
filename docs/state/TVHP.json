@@ -233,9 +233,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T10:31:21+05:30",
+     "history": [
+      [
+       "2026-11-25T11:31:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-25T11:31:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-25T11:31:18+05:30"
     }
    },
    "cutoff": "2026-11-25T17:10:00+05:30",
@@ -264,9 +274,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T10:31:21+05:30",
+     "history": [
+      [
+       "2026-11-25T11:31:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-25T11:31:18+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-25T11:31:18+05:30"
     }
    },
    "cutoff": "2026-11-25T13:45:00+05:30",
@@ -295,9 +315,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-23T10:10:52+05:30",
+     "history": [
+      [
+       "2026-11-25T11:31:18+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-25T11:31:18+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-25T11:31:18+05:30"
     }
    },
    "cutoff": "2026-11-25T20:15:00+05:30",
@@ -319,6 +349,161 @@
    "time": "07:30 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26830/20261125"
+  },
+  "26870": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "price": 183.0,
+     "soon_alerted": true,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T13:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T11:31:18+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T13:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "01:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26870/20261125"
+  },
+  "26871": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T17:10:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-25T11:31:18+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T16:25:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "04:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/TVHP/26871/20261125"
+  },
+  "26872": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T20:15:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-25T11:31:18+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 5",
+   "start": "2026-11-25T19:30:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "07:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/TVHP/26872/20261125"
+  },
+  "26873": {
+   "censor": "U",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T23:05:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-25T11:31:18+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T22:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "10:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26873/20261125"
+  },
+  "26874": {
+   "censor": "UA13+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-25T19:35:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-26T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-25T11:31:18+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 4",
+   "start": "2026-11-25T18:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "06:50 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26874/20261125"
   }
  },
  "20261126": {
@@ -1104,5 +1289,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/TVHP/26842/20261129"
   }
  },
- "_updated": "2026-11-25T11:10:57+05:30"
+ "_updated": "2026-11-25T11:31:18+05:30"
 }

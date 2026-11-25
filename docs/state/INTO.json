@@ -773,9 +773,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T12:01:04+05:30",
+     "history": [
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -1784,12 +1793,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-25T17:01:09+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-25T23:35:00+05:30",
@@ -2068,12 +2083,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 94.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-25T18:50:58+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-25T23:05:00+05:30",
@@ -5474,6 +5495,134 @@
    "trailer": "https://www.youtube.com/watch?v=vdhNar4uxm4",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00496261/INTO/93538/20261127"
   },
+  "93539": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T14:15:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-27T13:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93539/20261127"
+  },
+  "93540": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T20:45:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-27T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93540/20261127"
+  },
+  "93541": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-27T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 105,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504811",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Comedy,Drama",
+   "language": "English",
+   "movie": "Focker-In-Law",
+   "poster": "focker-in-law-et00504811-1782391478",
+   "screen": "SCREEN 8",
+   "start": "2026-11-27T22:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=bKvUYajnOdE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504811/INTO/93541/20261127"
+  },
   "93542": {
    "censor": "A",
    "classes": {
@@ -6851,6 +7000,52 @@
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93586/20261128"
   },
+  "93587": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 105,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00504811",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Comedy,Drama",
+   "language": "English",
+   "movie": "Focker-In-Law",
+   "poster": "focker-in-law-et00504811-1782391478",
+   "screen": "SCREEN 8",
+   "start": "2026-11-28T22:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=bKvUYajnOdE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504811/INTO/93587/20261128"
+  },
   "93592": {
    "censor": "A",
    "classes": {
@@ -7292,14 +7487,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 61.74,
-     "reopened_at": "2026-11-25T18:50:58+05:30",
+     "reopened_at": "2026-11-25T19:31:22+05:30",
      "sold_out_at": "2026-11-25T19:01:09+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-25T19:01:09+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-28T19:50:00+05:30",
@@ -7376,6 +7577,52 @@
    "trailer": "https://www.youtube.com/watch?v=EA-a7RR-7DY",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525197/INTO/93603/20261128"
   },
+  "93608": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T14:15:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-28T13:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93608/20261128"
+  },
   "93609": {
    "censor": "U",
    "classes": {
@@ -7420,6 +7667,52 @@
    "time": "04:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93609/20261128"
+  },
+  "93610": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T20:45:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-28T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93610/20261128"
   },
   "93611": {
    "censor": "UA16+",
@@ -8182,12 +8475,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-25T19:21:01+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-29T16:50:00+05:30",
@@ -8436,6 +8735,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93590/20261129"
+  },
+  "93591": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 105,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00504811",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Comedy,Drama",
+   "language": "English",
+   "movie": "Focker-In-Law",
+   "poster": "focker-in-law-et00504811-1782391478",
+   "screen": "SCREEN 8",
+   "start": "2026-11-29T22:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:10 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=bKvUYajnOdE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504811/INTO/93591/20261129"
   },
   "93596": {
    "censor": "A",
@@ -8765,6 +9110,52 @@
    "trailer": "https://www.youtube.com/watch?v=EA-a7RR-7DY",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525197/INTO/93607/20261129"
   },
+  "93612": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T14:15:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-29T13:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93612/20261129"
+  },
   "93613": {
    "censor": "U",
    "classes": {
@@ -8801,6 +9192,52 @@
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93613/20261129"
   },
+  "93614": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:31:22+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T20:45:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-25T19:31:22+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-11-29T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "EXECUTIVE": "2026-11-25T19:31:22+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-25T19:31:22+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93614/20261129"
+  },
   "93615": {
    "censor": "UA16+",
    "classes": {
@@ -8820,12 +9257,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-25T19:31:22+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-25T13:50:51+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-25T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-29T23:25:00+05:30",
@@ -11911,5 +12354,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-25T19:21:01+05:30"
+ "_updated": "2026-11-25T19:31:22+05:30"
 }

@@ -1600,12 +1600,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-25T12:01:06+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-24T23:40:57+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-25T12:01:06+05:30"
     }
    },
    "cutoff": "2026-11-25T16:05:00+05:30",
@@ -5211,7 +5217,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00507268/INTO/93546/20261127"
   },
   "93547": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -5230,11 +5236,11 @@
    },
    "cutoff": "2026-11-27T16:50:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 116,
    "end": "2026-11-28T00:30:00+05:30",
    "event_code": "ET00526424",
    "first_seen": "2026-11-25T11:40:57+05:30",
-   "genre": "Drama",
+   "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
    "poster": "signal-at-11-30-et00526424-1795585904",
@@ -5243,7 +5249,7 @@
    "subs": "",
    "tags": [],
    "time": "04:05 PM",
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/INTO/93547/20261127"
   }
  },
@@ -6206,7 +6212,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93584/20261128"
   },
   "93585": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -6225,11 +6231,11 @@
    },
    "cutoff": "2026-11-28T16:50:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 116,
    "end": "2026-11-29T00:30:00+05:30",
    "event_code": "ET00526424",
    "first_seen": "2026-11-25T11:40:57+05:30",
-   "genre": "Drama",
+   "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
    "poster": "signal-at-11-30-et00526424-1795585904",
@@ -6248,7 +6254,7 @@
      "tracked_at": "2026-11-25T11:40:57+05:30"
     }
    ],
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/INTO/93585/20261128"
   },
   "93586": {
@@ -7642,7 +7648,7 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93588/20261129"
   },
   "93589": {
-   "censor": "",
+   "censor": "UA16+",
    "classes": {
     "CLUB": {
      "first_seen_status": "3",
@@ -7661,11 +7667,11 @@
    },
    "cutoff": "2026-11-29T16:50:00+05:30",
    "dimension": "2D",
-   "duration": 0,
+   "duration": 116,
    "end": "2026-11-30T00:30:00+05:30",
    "event_code": "ET00526424",
    "first_seen": "2026-11-25T11:40:57+05:30",
-   "genre": "Drama",
+   "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
    "poster": "signal-at-11-30-et00526424-1795585904",
@@ -7684,7 +7690,7 @@
      "tracked_at": "2026-11-25T11:40:57+05:30"
     }
    ],
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/INTO/93589/20261129"
   },
   "93590": {
@@ -11198,5 +11204,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-25T11:40:57+05:30"
+ "_updated": "2026-11-25T12:01:06+05:30"
 }

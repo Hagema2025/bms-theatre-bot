@@ -729,7 +729,7 @@
       ]
      ],
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-25T18:31:25+05:30"
     },
@@ -939,9 +939,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "history": [
+      [
+       "2026-11-25T19:40:59+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-25T19:40:59+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1150,7 +1159,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T16:40:52+05:30",
      "price": 233.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -3563,7 +3572,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-26T22:25:00+05:30",
+   "cutoff": "2026-11-26T22:20:00+05:30",
    "dimension": "2D",
    "duration": 174,
    "end": "2026-11-27T00:30:00+05:30",
@@ -3574,10 +3583,10 @@
    "movie": "You Can See Everything",
    "poster": "you-can-see-everything-et00526232-1794472661",
    "screen": "AUDI03",
-   "start": "2026-11-26T22:10:00+05:30",
+   "start": "2026-11-26T22:05:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:10 PM",
+   "time": "10:05 PM",
    "trailer": "https://www.youtube.com/watch?v=HvW_N5p1q44",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526232/CBMC/16757/20261126"
   },
@@ -3616,6 +3625,42 @@
    "time": "07:50 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/CBMC/16758/20261126"
+  },
+  "16759": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-25T19:40:59+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-25T19:40:59+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-26T23:05:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-11-27T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-25T19:40:59+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "AUDI04",
+   "start": "2026-11-26T22:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/CBMC/16759/20261126"
   }
  },
  "20261217": {
@@ -5600,5 +5645,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-25T19:31:22+05:30"
+ "_updated": "2026-11-25T19:40:59+05:30"
 }

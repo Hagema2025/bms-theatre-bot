@@ -359,12 +359,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-25T14:10:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-25T13:20:53+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-25T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-25T20:05:00+05:30",
@@ -584,9 +590,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T12:01:04+05:30",
+     "history": [
+      [
+       "2026-11-25T14:10:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
-     "soon_alerted": false,
-     "status": "3"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-25T14:10:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -1110,7 +1125,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-22T12:01:04+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "EXECUTIVE": {
@@ -1212,14 +1227,20 @@
        "s",
        "0",
        "1"
+      ],
+      [
+       "2026-11-25T14:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-25T11:40:57+05:30",
-     "sold_out_at": "2026-11-25T11:31:18+05:30",
+     "sold_out_at": "2026-11-25T14:10:52+05:30",
      "soon_alerted": false,
-     "status": "1",
-     "status_changed_at": "2026-11-25T11:40:57+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-25T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-25T16:55:00+05:30",
@@ -5385,7 +5406,7 @@
    "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
-   "poster": "signal-at-11-30-et00526424-1795592980",
+   "poster": "signal-at-11-30-et00526424-1795595184",
    "screen": "SCREEN 8",
    "start": "2026-11-27T16:05:00+05:30",
    "subs": "",
@@ -6394,7 +6415,7 @@
    "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
-   "poster": "signal-at-11-30-et00526424-1795592980",
+   "poster": "signal-at-11-30-et00526424-1795595184",
    "screen": "SCREEN 8",
    "start": "2026-11-28T16:05:00+05:30",
    "subs": "",
@@ -6822,14 +6843,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-25T14:10:52+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-25T13:31:23+05:30",
-     "sold_out_at": "2026-11-25T12:40:54+05:30",
+     "sold_out_at": "2026-11-25T14:10:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-25T13:31:23+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-25T14:10:52+05:30"
     }
    },
    "cutoff": "2026-11-28T19:50:00+05:30",
@@ -7848,7 +7875,7 @@
    "genre": "Drama,Psychological,Thriller",
    "language": "Tamil",
    "movie": "Signal at 11:30",
-   "poster": "signal-at-11-30-et00526424-1795592980",
+   "poster": "signal-at-11-30-et00526424-1795595184",
    "screen": "SCREEN 8",
    "start": "2026-11-29T16:05:00+05:30",
    "subs": "",
@@ -11387,5 +11414,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-25T14:01:11+05:30"
+ "_updated": "2026-11-25T14:10:52+05:30"
 }

@@ -6,9 +6,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-21T14:10:52+05:30",
+     "history": [
+      [
+       "2026-11-25T11:50:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 233.8,
+     "sold_out_at": "2026-11-25T11:50:55+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-25T11:50:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -1718,9 +1728,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-24T18:10:53+05:30",
+     "history": [
+      [
+       "2026-11-25T11:50:55+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-25T11:50:55+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-25T11:50:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2876,13 +2896,20 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-25T11:50:55+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 183.8,
+     "reopened_at": "2026-11-25T11:50:55+05:30",
      "sold_out_at": "2026-11-25T11:40:57+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-25T11:40:57+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-25T11:50:55+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2892,7 +2919,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-26T10:00:00+05:30",
+   "cutoff": "2026-11-26T10:25:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-27T00:30:00+05:30",
@@ -2902,11 +2929,11 @@
    "language": "Tamil",
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
-   "screen": "AUDI08",
-   "start": "2026-11-26T09:45:00+05:30",
+   "screen": "AUDI02",
+   "start": "2026-11-26T10:10:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "09:45 AM",
+   "time": "10:10 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/CBMC/16755/20261126"
   }
@@ -4893,5 +4920,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-25T11:40:57+05:30"
+ "_updated": "2026-11-25T11:50:55+05:30"
 }

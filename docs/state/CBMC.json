@@ -958,7 +958,7 @@
      "price": 183.8,
      "reopened_at": "2026-11-25T18:31:25+05:30",
      "sold_out_at": "2026-11-25T15:01:11+05:30",
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-26T14:01:15+05:30"
     },
@@ -1763,14 +1763,20 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-26T17:50:52+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-25T18:31:25+05:30",
      "sold_out_at": "2026-11-25T15:01:11+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-26T17:40:55+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-26T17:50:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2392,7 +2398,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T19:10:53+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -2641,7 +2647,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-27T17:05:00+05:30",
+   "cutoff": "2026-11-27T17:10:00+05:30",
    "dimension": "2D",
    "duration": 136,
    "end": "2026-11-28T00:30:00+05:30",
@@ -2652,10 +2658,10 @@
    "movie": "Sathyavan Savithiri",
    "poster": "sathyavan-savithiri-et00522599-1792070672",
    "screen": "AUDI05",
-   "start": "2026-11-27T16:50:00+05:30",
+   "start": "2026-11-27T16:55:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "04:50 PM",
+   "time": "04:55 PM",
    "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/CBMC/16768/20261127"
   },
@@ -2713,7 +2719,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-27T22:15:00+05:30",
+   "cutoff": "2026-11-27T22:20:00+05:30",
    "dimension": "2D",
    "duration": 174,
    "end": "2026-11-28T00:30:00+05:30",
@@ -2724,10 +2730,10 @@
    "movie": "You Can See Everything",
    "poster": "you-can-see-everything-et00526232-1794472661",
    "screen": "AUDI05",
-   "start": "2026-11-27T22:00:00+05:30",
+   "start": "2026-11-27T22:05:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "10:00 PM",
+   "time": "10:05 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -3031,7 +3037,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-27T14:00:00+05:30",
+   "cutoff": "2026-11-27T14:05:00+05:30",
    "dimension": "2D",
    "duration": 149,
    "end": "2026-11-28T00:30:00+05:30",
@@ -3042,10 +3048,10 @@
    "movie": "Scene",
    "poster": "scene-et00516631-1793771165",
    "screen": "AUDI05",
-   "start": "2026-11-27T13:45:00+05:30",
+   "start": "2026-11-27T13:50:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "01:45 PM",
+   "time": "01:50 PM",
    "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16787/20261127"
   },
@@ -3529,7 +3535,7 @@
      "status": "0"
     }
    },
-   "cutoff": "2026-11-27T19:55:00+05:30",
+   "cutoff": "2026-11-27T20:00:00+05:30",
    "dimension": "2D",
    "duration": 105,
    "end": "2026-11-28T00:30:00+05:30",
@@ -3540,10 +3546,10 @@
    "movie": "Focker-In-Law",
    "poster": "focker-in-law-et00504811-1782391478",
    "screen": "AUDI05",
-   "start": "2026-11-27T19:40:00+05:30",
+   "start": "2026-11-27T19:45:00+05:30",
    "subs": "",
    "tags": [],
-   "time": "07:40 PM",
+   "time": "07:45 PM",
    "tracked_by_rules": [
     {
      "cats": {
@@ -9342,5 +9348,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-26T17:40:55+05:30"
+ "_updated": "2026-11-26T17:50:52+05:30"
 }

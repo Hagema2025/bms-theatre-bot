@@ -2127,7 +2127,7 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "01:05 PM",
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93513/20261126"
   }
  },
@@ -3512,7 +3512,7 @@
    "subs": "ENG subs",
    "tags": [],
    "time": "03:40 PM",
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93545/20261127"
   },
   "93546": {
@@ -5114,7 +5114,7 @@
      "tracked_at": "2026-11-25T03:50:49+05:30"
     }
    ],
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93601/20261128"
   },
   "93602": {
@@ -5466,14 +5466,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-26T11:40:53+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-26T11:31:22+05:30",
-     "sold_out_at": "2026-11-26T10:50:50+05:30",
+     "sold_out_at": "2026-11-26T11:40:53+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-26T11:31:22+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-26T11:40:53+05:30"
     }
    },
    "cutoff": "2026-11-28T19:50:00+05:30",
@@ -7268,7 +7274,7 @@
      "tracked_at": "2026-11-25T03:50:49+05:30"
     }
    ],
-   "trailer": "",
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93605/20261129"
   },
   "93606": {
@@ -10670,5 +10676,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-26T11:31:22+05:30"
+ "_updated": "2026-11-26T11:40:53+05:30"
 }

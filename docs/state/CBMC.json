@@ -1570,14 +1570,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-26T17:31:26+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 183.8,
      "reopened_at": "2026-11-25T18:31:25+05:30",
      "sold_out_at": "2026-11-25T15:01:11+05:30",
-     "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-25T18:31:25+05:30"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-26T17:31:26+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2801,6 +2807,42 @@
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16777/20261127"
   },
+  "16778": {
+   "censor": "UA13+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-27T15:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-26T17:31:26+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "AUDI06",
+   "start": "2026-11-27T15:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "03:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16778/20261127"
+  },
   "16779": {
    "censor": "UA13+",
    "classes": {
@@ -2964,6 +3006,42 @@
    "time": "12:30 PM",
    "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/CBMC/16784/20261127"
+  },
+  "16787": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-27T14:00:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-26T17:31:26+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI05",
+   "start": "2026-11-27T13:45:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "01:45 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16787/20261127"
   },
   "16788": {
    "censor": "UA16+",
@@ -5404,6 +5482,52 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16901/20261128"
+  },
+  "16903": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-28T16:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-26T17:31:26+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-28T16:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-26T17:31:26+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-26T17:31:26+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16903/20261128"
   }
  },
  "20261129": {
@@ -7182,6 +7306,52 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/CBMC/16902/20261129"
+  },
+  "16904": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-26T17:31:26+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-29T16:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-26T17:31:26+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "AUDI02",
+   "start": "2026-11-29T16:30:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:30 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-26T17:31:26+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-26T17:31:26+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/CBMC/16904/20261129"
   }
  },
  "20261217": {
@@ -9166,5 +9336,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-26T17:20:54+05:30"
+ "_updated": "2026-11-26T17:31:26+05:30"
 }

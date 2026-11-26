@@ -172,7 +172,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-20T10:31:21+05:30",
      "price": 218.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -986,7 +986,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-28T10:45:00+05:30",
+   "cutoff": "2026-11-28T10:25:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-29T00:30:00+05:30",
@@ -997,12 +997,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 1",
-   "start": "2026-11-28T10:00:00+05:30",
+   "start": "2026-11-28T09:40:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY ATMOS"
    ],
-   "time": "10:00 AM",
+   "time": "09:40 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26857/20261128"
   },
@@ -1017,7 +1017,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-28T14:25:00+05:30",
+   "cutoff": "2026-11-28T14:05:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-29T00:30:00+05:30",
@@ -1028,12 +1028,12 @@
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
    "screen": "SCREEN 1",
-   "start": "2026-11-28T13:40:00+05:30",
+   "start": "2026-11-28T13:20:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY ATMOS"
    ],
-   "time": "01:40 PM",
+   "time": "01:20 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26858/20261128"
   },
@@ -1043,9 +1043,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T20:50:50+05:30",
+     "history": [
+      [
+       "2026-11-26T13:01:11+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-26T13:01:11+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-26T13:01:11+05:30"
     }
    },
    "cutoff": "2026-11-28T18:05:00+05:30",
@@ -1074,9 +1084,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T20:50:50+05:30",
+     "history": [
+      [
+       "2026-11-26T13:01:11+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-26T13:01:11+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-26T13:01:11+05:30"
     }
    },
    "cutoff": "2026-11-28T21:45:00+05:30",
@@ -1346,6 +1366,37 @@
    "time": "03:45 PM",
    "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/TVHP/26896/20261128"
+  },
+  "26910": {
+   "censor": "U",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T13:01:11+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T11:55:00+05:30",
+   "dimension": "2D",
+   "duration": 195,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00518313",
+   "first_seen": "2026-11-26T13:01:11+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00518313-1792999979",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T11:10:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:10 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/TVHP/26910/20261128"
   }
  },
  "20261129": {
@@ -1846,5 +1897,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26908/20261129"
   }
  },
- "_updated": "2026-11-26T11:40:53+05:30"
+ "_updated": "2026-11-26T13:01:11+05:30"
 }

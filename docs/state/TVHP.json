@@ -337,7 +337,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T11:40:57+05:30",
      "price": 183.0,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1530,16 +1530,23 @@
        "s",
        "3",
        "0"
+      ],
+      [
+       "2026-11-26T20:01:08+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 183.0,
+     "reopened_at": "2026-11-26T20:01:08+05:30",
      "sold_out_at": "2026-11-26T13:01:11+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-26T13:01:11+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-26T20:01:08+05:30"
     }
    },
-   "cutoff": "2026-11-28T18:05:00+05:30",
+   "cutoff": "2026-11-28T19:00:00+05:30",
    "dimension": "2D",
    "duration": 178,
    "end": "2026-11-29T00:30:00+05:30",
@@ -1549,13 +1556,13 @@
    "language": "Tamil",
    "movie": "O.M Operation Mole",
    "poster": "om-operation-mole-et00504901-1794917895",
-   "screen": "SCREEN 1",
-   "start": "2026-11-28T17:20:00+05:30",
+   "screen": "SCREEN 2",
+   "start": "2026-11-28T18:15:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY ATMOS"
    ],
-   "time": "05:20 PM",
+   "time": "06:15 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/TVHP/26859/20261128"
   },
@@ -2244,9 +2251,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T19:01:09+05:30",
+     "history": [
+      [
+       "2026-11-26T20:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-26T20:01:08+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-26T20:01:08+05:30"
     }
    },
    "cutoff": "2026-11-28T10:55:00+05:30",
@@ -2361,6 +2378,37 @@
    "time": "05:00 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26933/20261128"
+  },
+  "26948": {
+   "censor": "UA13+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T20:01:08+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T10:35:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-26T20:01:08+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 1",
+   "start": "2026-11-28T09:50:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "09:50 AM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26948/20261128"
   }
  },
  "20261129": {
@@ -3296,5 +3344,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526455/TVHP/26946/20261130"
   }
  },
- "_updated": "2026-11-26T19:20:59+05:30"
+ "_updated": "2026-11-26T20:01:08+05:30"
 }

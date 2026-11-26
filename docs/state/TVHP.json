@@ -865,9 +865,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T18:31:25+05:30",
+     "history": [
+      [
+       "2026-11-26T18:41:02+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-26T18:41:02+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-26T18:41:02+05:30"
     }
    },
    "cutoff": "2026-11-27T13:00:00+05:30",
@@ -896,9 +906,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T18:31:25+05:30",
+     "history": [
+      [
+       "2026-11-26T18:41:02+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-26T18:41:02+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-26T18:41:02+05:30"
     }
    },
    "cutoff": "2026-11-27T19:45:00+05:30",
@@ -920,6 +940,68 @@
    "time": "07:00 PM",
    "trailer": "https://www.youtube.com/watch?v=M4r3aClMw7M",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526455/TVHP/26912/20261127"
+  },
+  "26914": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T18:41:02+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T16:45:00+05:30",
+   "dimension": "2D",
+   "duration": 124,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00507268",
+   "first_seen": "2026-11-26T18:41:02+05:30",
+   "genre": "Action,Drama",
+   "language": "Tamil",
+   "movie": "Delivery Boy",
+   "poster": "delivery-boy-et00507268-1791011706",
+   "screen": "SCREEN 5",
+   "start": "2026-11-27T16:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "04:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=b77NFLgDXio",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00507268/TVHP/26914/20261127"
+  },
+  "26915": {
+   "censor": "UA16+",
+   "classes": {
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-26T18:41:02+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T13:00:00+05:30",
+   "dimension": "2D",
+   "duration": 105,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526455",
+   "first_seen": "2026-11-26T18:41:02+05:30",
+   "genre": "Drama",
+   "language": "Tamil",
+   "movie": "Nellai Boys",
+   "poster": "nellai-boys-et00526455-1795694617",
+   "screen": "SCREEN 4",
+   "start": "2026-11-27T12:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "12:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=M4r3aClMw7M",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526455/TVHP/26915/20261127"
   }
  },
  "20261128": {
@@ -1969,5 +2051,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/26908/20261129"
   }
  },
- "_updated": "2026-11-26T18:31:25+05:30"
+ "_updated": "2026-11-26T18:41:02+05:30"
 }

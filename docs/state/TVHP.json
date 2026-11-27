@@ -890,9 +890,19 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T19:01:09+05:30",
+     "history": [
+      [
+       "2026-11-27T15:01:08+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-27T15:01:08+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T15:01:08+05:30"
     }
    },
    "cutoff": "2026-11-27T15:20:00+05:30",
@@ -1814,7 +1824,17 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T19:01:09+05:30",
-     "price": 183.0,
+     "history": [
+      [
+       "2026-11-27T15:01:08+05:30",
+       "p",
+       183.0,
+       120.0
+      ]
+     ],
+     "prev_price": 183.0,
+     "price": 120.0,
+     "price_changed_at": "2026-11-27T15:01:08+05:30",
      "soon_alerted": false,
      "status": "3"
     }
@@ -1836,6 +1856,16 @@
     "4K DOLBY ATMOS"
    ],
    "time": "10:35 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "ELITE": "2026-11-27T15:01:08+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-27T15:01:08+05:30"
+    }
+   ],
    "trailer": "https://www.youtube.com/watch?v=nSJ84u_4A_I",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526406/TVHP/26925/20261128"
   },
@@ -4791,5 +4821,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/27001/20261203"
   }
  },
- "_updated": "2026-11-27T14:50:54+05:30"
+ "_updated": "2026-11-27T15:01:08+05:30"
 }

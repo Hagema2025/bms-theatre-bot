@@ -1593,7 +1593,7 @@
    },
    "cutoff": "2026-11-27T22:30:00+05:30",
    "dimension": "2D",
-   "duration": 174,
+   "duration": 177,
    "end": "2026-11-28T00:30:00+05:30",
    "event_code": "ET00526232",
    "first_seen": "2026-11-25T03:50:49+05:30",
@@ -1842,14 +1842,14 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T11:10:57+05:30",
      "price": 54.35,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "PRIME": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T11:10:57+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -4155,7 +4155,7 @@
    },
    "cutoff": "2026-11-28T22:30:00+05:30",
    "dimension": "2D",
-   "duration": 174,
+   "duration": 177,
    "end": "2026-11-29T00:30:00+05:30",
    "event_code": "ET00526232",
    "first_seen": "2026-11-25T03:50:49+05:30",
@@ -6336,7 +6336,7 @@
    },
    "cutoff": "2026-11-29T22:30:00+05:30",
    "dimension": "2D",
-   "duration": 174,
+   "duration": 177,
    "end": "2026-11-30T00:30:00+05:30",
    "event_code": "ET00526232",
    "first_seen": "2026-11-25T04:10:50+05:30",
@@ -6563,5 +6563,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46913/20261129"
   }
  },
- "_updated": "2026-11-27T11:50:51+05:30"
+ "_updated": "2026-11-27T12:01:10+05:30"
 }

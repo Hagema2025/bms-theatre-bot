@@ -337,9 +337,18 @@
     "3D EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T00:10:54+05:30",
+     "history": [
+      [
+       "2026-11-27T20:31:31+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 223.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-27T20:31:31+05:30"
     },
     "3D SPECIAL": {
      "first_seen_status": "3",
@@ -541,7 +550,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T00:10:54+05:30",
      "price": 202.49,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "SPECIAL": {
@@ -691,9 +700,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T00:10:54+05:30",
+     "history": [
+      [
+       "2026-11-27T20:31:31+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-27T20:31:31+05:30"
     },
     "SPECIAL": {
      "first_seen_status": "3",
@@ -2588,5 +2606,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00507268/MCSK/17381/20261129"
   }
  },
- "_updated": "2026-11-27T20:20:49+05:30"
+ "_updated": "2026-11-27T20:31:31+05:30"
 }

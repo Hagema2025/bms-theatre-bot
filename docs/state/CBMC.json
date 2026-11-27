@@ -165,12 +165,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-27T15:40:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-27T12:31:28+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-27T15:40:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -506,12 +512,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-27T15:40:52+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T15:40:52+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-27T15:20:52+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-27T15:40:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -922,9 +935,18 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T11:31:22+05:30",
+     "history": [
+      [
+       "2026-11-27T15:40:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-27T15:40:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -2418,9 +2440,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T11:40:53+05:30",
+     "history": [
+      [
+       "2026-11-27T15:40:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T15:40:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T15:40:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -3751,6 +3783,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/CBMC/16906/20261128"
+  },
+  "16908": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T15:40:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-27T15:40:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-28T08:05:00+05:30",
+   "dimension": "2D",
+   "duration": 152,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526356",
+   "first_seen": "2026-11-27T15:40:52+05:30",
+   "genre": "Crime,Drama,Mystery",
+   "language": "Malayalam",
+   "movie": "Hail Mary",
+   "poster": "hail-mary-et00526356-1795003073",
+   "screen": "AUDI04",
+   "start": "2026-11-28T07:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:50 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-27T15:40:52+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-27T15:40:52+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/CBMC/16908/20261128"
   }
  },
  "20261129": {
@@ -4363,9 +4441,19 @@
     "EXECUTIVE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T11:40:53+05:30",
+     "history": [
+      [
+       "2026-11-27T15:40:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T15:40:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T15:40:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -5630,6 +5718,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/CBMC/16907/20261129"
+  },
+  "16909": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T15:40:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-27T15:40:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-29T08:05:00+05:30",
+   "dimension": "2D",
+   "duration": 152,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526356",
+   "first_seen": "2026-11-27T15:40:52+05:30",
+   "genre": "Crime,Drama,Mystery",
+   "language": "Malayalam",
+   "movie": "Hail Mary",
+   "poster": "hail-mary-et00526356-1795003073",
+   "screen": "AUDI04",
+   "start": "2026-11-29T07:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:50 AM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-27T15:40:52+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-27T15:40:52+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/CBMC/16909/20261129"
   }
  },
  "20261217": {
@@ -7614,5 +7748,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-27T15:31:22+05:30"
+ "_updated": "2026-11-27T15:40:52+05:30"
 }

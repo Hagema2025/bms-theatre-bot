@@ -223,9 +223,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-24T20:50:50+05:30",
+     "history": [
+      [
+       "2026-11-27T11:20:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T11:20:54+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T11:20:54+05:30"
     }
    },
    "cutoff": "2026-11-27T11:10:00+05:30",
@@ -1079,9 +1089,19 @@
     "FIRST CLASS 3D": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:10:53+05:30",
+     "history": [
+      [
+       "2026-11-27T11:20:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 219.2,
+     "sold_out_at": "2026-11-27T11:20:54+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T11:20:54+05:30"
     }
    },
    "cutoff": "2026-11-27T11:10:00+05:30",
@@ -1518,7 +1538,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-27T19:10:00+05:30",
+   "cutoff": "2026-11-27T22:50:00+05:30",
    "dimension": "2D",
    "duration": 152,
    "end": "2026-11-28T00:30:00+05:30",
@@ -1529,12 +1549,12 @@
    "movie": "Hail Mary",
    "poster": "hail-mary-et00526356-1795003073",
    "screen": "SCREEN 12",
-   "start": "2026-11-27T19:00:00+05:30",
+   "start": "2026-11-27T22:40:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:00 PM",
+   "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/MAYJ/243313/20261127"
   },
@@ -1792,9 +1812,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T08:21:00+05:30",
+     "history": [
+      [
+       "2026-11-27T11:20:54+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T11:20:54+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T11:20:54+05:30"
     }
    },
    "cutoff": "2026-11-27T11:10:00+05:30",
@@ -1909,6 +1939,37 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243350/20261127"
+  },
+  "243359": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T11:20:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-27T11:20:54+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 12",
+   "start": "2026-11-27T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243359/20261127"
   }
  },
  "20261128": {
@@ -3420,7 +3481,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-28T19:10:00+05:30",
+   "cutoff": "2026-11-28T22:50:00+05:30",
    "dimension": "2D",
    "duration": 152,
    "end": "2026-11-29T00:30:00+05:30",
@@ -3431,12 +3492,12 @@
    "movie": "Hail Mary",
    "poster": "hail-mary-et00526356-1795003073",
    "screen": "SCREEN 12",
-   "start": "2026-11-28T19:00:00+05:30",
+   "start": "2026-11-28T22:40:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:00 PM",
+   "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/MAYJ/243315/20261128"
   },
@@ -3811,6 +3872,37 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243354/20261128"
+  },
+  "243360": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T11:20:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-27T11:20:54+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 12",
+   "start": "2026-11-28T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243360/20261128"
   }
  },
  "20261129": {
@@ -5322,7 +5414,7 @@
      "status": "3"
     }
    },
-   "cutoff": "2026-11-29T19:10:00+05:30",
+   "cutoff": "2026-11-29T22:50:00+05:30",
    "dimension": "2D",
    "duration": 152,
    "end": "2026-11-30T00:30:00+05:30",
@@ -5333,12 +5425,12 @@
    "movie": "Hail Mary",
    "poster": "hail-mary-et00526356-1795003073",
    "screen": "SCREEN 12",
-   "start": "2026-11-29T19:00:00+05:30",
+   "start": "2026-11-29T22:40:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY 7.1"
    ],
-   "time": "07:00 PM",
+   "time": "10:40 PM",
    "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/MAYJ/243317/20261129"
   },
@@ -5713,7 +5805,38 @@
    "time": "11:00 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243358/20261129"
+  },
+  "243361": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T11:20:54+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T19:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-27T11:20:54+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 12",
+   "start": "2026-11-29T19:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "07:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243361/20261129"
   }
  },
- "_updated": "2026-11-27T11:11:01+05:30"
+ "_updated": "2026-11-27T11:20:54+05:30"
 }

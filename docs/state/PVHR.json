@@ -913,13 +913,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-27T19:31:22+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 54.35,
+     "reopened_at": "2026-11-27T19:31:22+05:30",
      "sold_out_at": "2026-11-27T19:20:52+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-27T19:20:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-27T19:31:22+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7132,5 +7139,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46913/20261129"
   }
  },
- "_updated": "2026-11-27T19:20:52+05:30"
+ "_updated": "2026-11-27T19:31:22+05:30"
 }

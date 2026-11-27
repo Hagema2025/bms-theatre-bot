@@ -716,9 +716,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:01:11+05:30",
+     "history": [
+      [
+       "2026-11-27T19:31:22+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-27T19:31:22+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-27T22:40:00+05:30",
@@ -1436,9 +1446,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:20:55+05:30",
+     "history": [
+      [
+       "2026-11-27T19:31:22+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 211.0,
+     "sold_out_at": "2026-11-27T19:31:22+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-27T22:40:00+05:30",
@@ -1950,9 +1970,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:40:58+05:30",
+     "history": [
+      [
+       "2026-11-27T19:31:22+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T19:31:22+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T19:31:22+05:30"
     }
    },
    "cutoff": "2026-11-27T19:20:00+05:30",
@@ -2273,6 +2303,99 @@
    "time": "11:55 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243364/20261127"
+  },
+  "243365": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T19:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-27T19:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 10",
+   "start": "2026-11-27T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243365/20261127"
+  },
+  "243366": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T19:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T00:09:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-27T19:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 7",
+   "start": "2026-11-27T23:59:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY ATMOS"
+   ],
+   "time": "11:59 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243366/20261127"
+  },
+  "243367": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T19:31:22+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T23:55:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-27T19:31:22+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-27T23:45:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:45 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243367/20261127"
   }
  },
  "20261128": {
@@ -6141,5 +6264,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243361/20261129"
   }
  },
- "_updated": "2026-11-27T19:01:12+05:30"
+ "_updated": "2026-11-27T19:31:22+05:30"
 }

@@ -512,9 +512,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:01:11+05:30",
+     "history": [
+      [
+       "2026-11-27T11:40:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T11:40:53+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T11:40:53+05:30"
     }
    },
    "cutoff": "2026-11-27T23:10:00+05:30",
@@ -997,7 +1007,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:10:53+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -1347,9 +1357,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:20:55+05:30",
+     "history": [
+      [
+       "2026-11-27T11:40:53+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-27T11:40:53+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-27T11:40:53+05:30"
     }
    },
    "cutoff": "2026-11-27T11:25:00+05:30",
@@ -1970,6 +1990,37 @@
    "time": "07:00 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243359/20261127"
+  },
+  "243362": {
+   "censor": "U",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-27T11:40:53+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-27T23:10:00+05:30",
+   "dimension": "2D",
+   "duration": 147,
+   "end": "2026-11-28T00:30:00+05:30",
+   "event_code": "ET00526403",
+   "first_seen": "2026-11-27T11:40:53+05:30",
+   "genre": "Fantasy,Romantic",
+   "language": "Tamil",
+   "movie": "Chitukurinji",
+   "poster": "chitukurinji-et00526403-1795413276",
+   "screen": "SCREEN 1",
+   "start": "2026-11-27T23:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=2fXFBxkzOhs",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526403/MAYJ/243362/20261127"
   }
  },
  "20261128": {
@@ -5838,5 +5889,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243361/20261129"
   }
  },
- "_updated": "2026-11-27T11:20:54+05:30"
+ "_updated": "2026-11-27T11:40:53+05:30"
 }

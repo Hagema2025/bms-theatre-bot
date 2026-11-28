@@ -170,14 +170,20 @@
        "s",
        "2",
        "0"
+      ],
+      [
+       "2026-11-28T12:51:03+05:30",
+       "s",
+       "0",
+       "1"
       ]
      ],
      "price": 104.35,
-     "reopened_at": "2026-11-28T11:31:33+05:30",
+     "reopened_at": "2026-11-28T12:51:03+05:30",
      "sold_out_at": "2026-11-28T12:40:52+05:30",
      "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-28T12:40:52+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-28T12:51:03+05:30"
     }
    },
    "cutoff": "2026-11-28T15:10:00+05:30",
@@ -578,13 +584,19 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-28T12:51:03+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-28T11:31:33+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T12:01:07+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-28T12:51:03+05:30"
     }
    },
    "cutoff": "2026-11-28T20:00:00+05:30",
@@ -883,13 +895,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T12:51:03+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 61.74,
      "reopened_at": "2026-11-28T11:31:33+05:30",
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T12:11:00+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-28T12:51:03+05:30"
     }
    },
    "cutoff": "2026-11-28T16:10:00+05:30",
@@ -1206,7 +1224,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T11:40:53+05:30",
      "price": 260.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     },
     "NORMAL": {
@@ -7175,5 +7193,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-28T12:40:52+05:30"
+ "_updated": "2026-11-28T12:51:03+05:30"
 }

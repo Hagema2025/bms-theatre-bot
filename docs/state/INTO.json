@@ -1940,12 +1940,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T21:50:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 61.74,
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-28T21:01:06+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-28T21:50:52+05:30"
     }
    },
    "cutoff": "2026-11-28T22:55:00+05:30",
@@ -3276,9 +3282,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T03:50:49+05:30",
+     "history": [
+      [
+       "2026-11-28T21:50:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 202.49,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-28T21:50:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -3535,12 +3550,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-28T21:50:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 202.49,
+     "sold_out_at": "2026-11-28T21:50:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-28T15:10:48+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T21:50:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "0",
@@ -8530,6 +8552,1022 @@
    "time": "10:30 PM",
    "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93634/20261202"
+  },
+  "93643": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T12:35:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-12-02T11:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:50 AM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93643/20261202"
+  },
+  "93644": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T16:40:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-12-02T15:55:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "03:55 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93644/20261202"
+  },
+  "93645": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 223.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 94.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T20:00:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00523997",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Tamil",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00523997-1793000094",
+   "screen": "SCREEN 2",
+   "start": "2026-12-02T19:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:15 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00523997/INTO/93645/20261202"
+  },
+  "93646": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-03T00:05:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 2",
+   "start": "2026-12-02T23:20:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "11:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93646/20261202"
+  },
+  "93655": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T13:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 3",
+   "start": "2026-12-02T13:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "01:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93655/20261202"
+  },
+  "93656": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T17:00:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 3",
+   "start": "2026-12-02T16:15:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/INTO/93656/20261202"
+  },
+  "93657": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T20:45:00+05:30",
+   "dimension": "2D",
+   "duration": 149,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00516631",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Comedy,Drama",
+   "language": "Tamil",
+   "movie": "Scene",
+   "poster": "scene-et00516631-1793771165",
+   "screen": "SCREEN 3",
+   "start": "2026-12-02T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [
+    "Atmos"
+   ],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=_nuRAflabx8",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00516631/INTO/93657/20261202"
+  },
+  "93658": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 242.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 99.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T23:55:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 3",
+   "start": "2026-12-02T23:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "11:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93658/20261202"
+  },
+  "93667": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T13:25:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "LASER 4",
+   "start": "2026-12-02T12:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:40 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/INTO/93667/20261202"
+  },
+  "93668": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T16:50:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410463",
+   "screen": "LASER 4",
+   "start": "2026-12-02T16:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/INTO/93668/20261202"
+  },
+  "93669": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T20:20:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "LASER 4",
+   "start": "2026-12-02T19:35:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "07:35 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/INTO/93669/20261202"
+  },
+  "93670": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T23:45:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00482388",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Telugu",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00482388-1795410463",
+   "screen": "LASER 4",
+   "start": "2026-12-02T23:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "11:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=hXPXHfgHvzU",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00482388/INTO/93670/20261202"
+  },
+  "93679": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T14:15:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-12-02T13:30:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:30 PM",
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93679/20261202"
+  },
+  "93680": {
+   "censor": "U",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 242.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 99.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T16:45:00+05:30",
+   "dimension": "3D",
+   "duration": 195,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00493076",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Adventure,Drama",
+   "language": "Hindi",
+   "movie": "Ramayana",
+   "poster": "namit-malhotra-s-ramayana-et00493076-1792999955",
+   "screen": "SCREEN 5",
+   "start": "2026-12-02T16:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=8HiWKbDTc7w",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/INTO/93680/20261202"
+  },
+  "93681": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 250.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 101.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T20:45:00+05:30",
+   "dimension": "3D",
+   "duration": 103,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526419",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Adventure,Animation,Comedy,Family,Fantasy",
+   "language": "English",
+   "movie": "Hexed",
+   "poster": "hexed-et00526419-1795532130",
+   "screen": "SCREEN 5",
+   "start": "2026-12-02T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=KXO21xZdUaM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526419/INTO/93681/20261202"
+  },
+  "93682": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 163,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00506990",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Comedy,Drama",
+   "language": "Telugu",
+   "movie": "ENE Repeat",
+   "poster": "ene-repeat-et00506990-1794570849",
+   "screen": "SCREEN 5",
+   "start": "2026-12-02T22:40:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "10:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=TXJrO0Lt2Q0",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/INTO/93682/20261202"
+  },
+  "93691": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T13:35:00+05:30",
+   "dimension": "2D",
+   "duration": 124,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00507268",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Drama",
+   "language": "Tamil",
+   "movie": "Delivery Boy",
+   "poster": "delivery-boy-et00507268-1791011706",
+   "screen": "SCREEN 6",
+   "start": "2026-12-02T12:50:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "12:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=b77NFLgDXio",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00507268/INTO/93691/20261202"
+  },
+  "93692": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T16:25:00+05:30",
+   "dimension": "2D",
+   "duration": 152,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526356",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Crime,Drama,Mystery",
+   "language": "Malayalam",
+   "movie": "Hail Mary",
+   "poster": "hail-mary-et00526356-1795003073",
+   "screen": "SCREEN 6",
+   "start": "2026-12-02T15:40:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "03:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/INTO/93692/20261202"
+  },
+  "93693": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T19:50:00+05:30",
+   "dimension": "2D",
+   "duration": 177,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526232",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Crime,Documentary",
+   "language": "English",
+   "movie": "You Can See Everything",
+   "poster": "you-can-see-everything-et00526232-1794472661",
+   "screen": "SCREEN 6",
+   "start": "2026-12-02T19:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "07:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=HvW_N5p1q44",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526232/INTO/93693/20261202"
+  },
+  "93694": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T23:35:00+05:30",
+   "dimension": "2D",
+   "duration": 122,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00525197",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Fantasy",
+   "language": "Malayalam",
+   "movie": "Cosmic Samson",
+   "poster": "cosmic-samson-et00525197-1793708592",
+   "screen": "SCREEN 6",
+   "start": "2026-12-02T22:50:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=EA-a7RR-7DY",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525197/INTO/93694/20261202"
+  },
+  "93703": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T13:50:00+05:30",
+   "dimension": "2D",
+   "duration": 154,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00489093",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Drama,Period",
+   "language": "Telugu",
+   "movie": "Bhogi",
+   "poster": "bhogi-et00489093-1772023120",
+   "screen": "SCREEN 7",
+   "start": "2026-12-02T13:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=dWOYaZ2gb9I",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00489093/INTO/93703/20261202"
+  },
+  "93704": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T17:10:00+05:30",
+   "dimension": "2D",
+   "duration": 173,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00496261",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Family,Musical,Romantic",
+   "language": "Hindi",
+   "movie": "Yeh Prem Mol Liya",
+   "poster": "yeh-prem-mol-liya-et00496261-1790239554",
+   "screen": "SCREEN 7",
+   "start": "2026-12-02T16:25:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "04:25 PM",
+   "trailer": "https://www.youtube.com/watch?v=vdhNar4uxm4",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00496261/INTO/93704/20261202"
+  },
+  "93705": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T20:45:00+05:30",
+   "dimension": "2D",
+   "duration": 142,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00452908",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Action,Romantic,Thriller",
+   "language": "Hindi",
+   "movie": "Gunmaaster G9",
+   "poster": "gunmaaster-g9-et00452908-1795865061",
+   "screen": "SCREEN 7",
+   "start": "2026-12-02T20:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "08:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=m1u4sR2rwQg",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00452908/INTO/93705/20261202"
+  },
+  "93706": {
+   "censor": "UA13+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T23:50:00+05:30",
+   "dimension": "2D",
+   "duration": 173,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00496261",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Family,Musical,Romantic",
+   "language": "Hindi",
+   "movie": "Yeh Prem Mol Liya",
+   "poster": "yeh-prem-mol-liya-et00496261-1790239554",
+   "screen": "SCREEN 7",
+   "start": "2026-12-02T23:05:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "11:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=vdhNar4uxm4",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00496261/INTO/93706/20261202"
+  },
+  "93715": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T13:45:00+05:30",
+   "dimension": "2D",
+   "duration": 136,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00522599",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Crime,Drama,Thriller",
+   "language": "Tamil",
+   "movie": "Sathyavan Savithiri",
+   "poster": "sathyavan-savithiri-et00522599-1792070672",
+   "screen": "SCREEN 8",
+   "start": "2026-12-02T13:00:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "01:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=LDMhbZWJzso",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00522599/INTO/93715/20261202"
+  },
+  "93716": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T16:50:00+05:30",
+   "dimension": "2D",
+   "duration": 116,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00526424",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Psychological,Thriller",
+   "language": "Tamil",
+   "movie": "Signal at 11:30",
+   "poster": "signal-at-11-30-et00526424-1795595184",
+   "screen": "SCREEN 8",
+   "start": "2026-12-02T16:05:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "04:05 PM",
+   "trailer": "https://www.youtube.com/watch?v=ff7TIzi0p3Q",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526424/INTO/93716/20261202"
+  },
+  "93717": {
+   "censor": "UA16+",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 54.35,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T19:35:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 8",
+   "start": "2026-12-02T18:50:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "06:50 PM",
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/INTO/93717/20261202"
+  },
+  "93718": {
+   "censor": "A",
+   "classes": {
+    "CLUB": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 210.98,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T21:50:52+05:30",
+     "price": 61.74,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-12-02T22:55:00+05:30",
+   "dimension": "2D",
+   "duration": 105,
+   "end": "2026-12-03T00:30:00+05:30",
+   "event_code": "ET00504811",
+   "first_seen": "2026-11-28T21:50:52+05:30",
+   "genre": "Comedy,Drama",
+   "language": "English",
+   "movie": "Focker-In-Law",
+   "poster": "focker-in-law-et00504811-1782391478",
+   "screen": "SCREEN 8",
+   "start": "2026-12-02T22:10:00+05:30",
+   "subs": "ENG subs",
+   "tags": [],
+   "time": "10:10 PM",
+   "trailer": "https://www.youtube.com/watch?v=bKvUYajnOdE",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504811/INTO/93718/20261202"
   }
  },
  "20261216": {
@@ -12106,5 +13144,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-28T21:40:50+05:30"
+ "_updated": "2026-11-28T21:50:52+05:30"
 }

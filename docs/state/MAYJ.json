@@ -2751,9 +2751,18 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T16:50:50+05:30",
+     "history": [
+      [
+       "2026-11-29T00:01:13+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-29T00:01:13+05:30"
     }
    },
    "cutoff": "2026-11-29T00:09:00+05:30",
@@ -2784,9 +2793,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-24T18:01:11+05:30",
+     "history": [
+      [
+       "2026-11-29T00:01:13+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-29T00:01:13+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-29T00:01:13+05:30"
     }
    },
    "cutoff": "2026-11-29T15:50:00+05:30",
@@ -2815,9 +2834,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-24T18:01:11+05:30",
+     "history": [
+      [
+       "2026-11-29T00:01:13+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-29T00:01:13+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-29T00:01:13+05:30"
     }
    },
    "cutoff": "2026-11-29T19:30:00+05:30",
@@ -3249,9 +3278,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:01:11+05:30",
+     "history": [
+      [
+       "2026-11-29T00:01:13+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-29T00:01:13+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-29T00:01:13+05:30"
     }
    },
    "cutoff": "2026-11-29T12:10:00+05:30",
@@ -3280,9 +3319,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:01:11+05:30",
+     "history": [
+      [
+       "2026-11-29T00:01:13+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-29T00:01:13+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-29T00:01:13+05:30"
     }
    },
    "cutoff": "2026-11-29T23:10:00+05:30",
@@ -4881,6 +4930,130 @@
    "time": "11:45 AM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243510/20261129"
+  },
+  "243511": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-29T00:01:13+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T13:10:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-29T00:01:13+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T13:00:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "01:00 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243511/20261129"
+  },
+  "243512": {
+   "censor": "UA13+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-29T00:01:13+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T20:30:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-29T00:01:13+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T20:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "08:20 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/MAYJ/243512/20261129"
+  },
+  "243513": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-29T00:01:13+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T16:50:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-29T00:01:13+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T16:40:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "04:40 PM",
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/MAYJ/243513/20261129"
+  },
+  "243514": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-29T00:01:13+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-29T23:30:00+05:30",
+   "dimension": "2D",
+   "duration": 134,
+   "end": "2026-11-30T00:30:00+05:30",
+   "event_code": "ET00518647",
+   "first_seen": "2026-11-29T00:01:13+05:30",
+   "genre": "Drama,Family",
+   "language": "Tamil",
+   "movie": "Appakutty",
+   "poster": "appakutty-et00518647-1790152840",
+   "screen": "SCREEN 1",
+   "start": "2026-11-29T23:20:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:20 PM",
+   "trailer": "https://www.youtube.com/watch?v=mm55UVZ0AxM",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518647/MAYJ/243514/20261129"
   }
  },
  "20261130": {
@@ -9023,5 +9196,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243509/20261203"
   }
  },
- "_updated": "2026-11-28T23:40:52+05:30"
+ "_updated": "2026-11-29T00:01:13+05:30"
 }

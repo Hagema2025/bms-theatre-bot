@@ -569,13 +569,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-28T09:01:05+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 59.43,
      "reopened_at": "2026-11-28T08:01:06+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-28T08:01:06+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T09:01:05+05:30"
     }
    },
    "cutoff": "2026-11-28T09:05:00+05:30",
@@ -894,7 +900,7 @@
       ]
      ],
      "price": 233.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "1",
      "status_changed_at": "2026-11-28T00:01:14+05:30"
     },
@@ -2487,6 +2493,52 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/CBMC/16908/20261128"
+  },
+  "16910": {
+   "censor": "UA16+",
+   "classes": {
+    "EXECUTIVE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T09:01:05+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "NORMAL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-28T09:01:05+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-28T12:30:00+05:30",
+   "dimension": "2D",
+   "duration": 122,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00525197",
+   "first_seen": "2026-11-28T09:01:05+05:30",
+   "genre": "Action,Fantasy",
+   "language": "Malayalam",
+   "movie": "Cosmic Samson",
+   "poster": "cosmic-samson-et00525197-1793708592",
+   "screen": "AUDI01",
+   "start": "2026-11-28T12:15:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:15 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "NORMAL": "2026-11-28T09:01:05+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-28T09:01:05+05:30"
+    }
+   ],
+   "trailer": "https://www.youtube.com/watch?v=EA-a7RR-7DY",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00525197/CBMC/16910/20261128"
   }
  },
  "20261129": {
@@ -6484,5 +6536,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-28T08:40:49+05:30"
+ "_updated": "2026-11-28T09:01:05+05:30"
 }

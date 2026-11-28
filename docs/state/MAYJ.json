@@ -2281,9 +2281,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:50:55+05:30",
+     "history": [
+      [
+       "2026-11-28T23:10:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-28T23:10:51+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T23:10:51+05:30"
     }
    },
    "cutoff": "2026-11-28T23:00:00+05:30",
@@ -3234,7 +3244,7 @@
    "genre": "Action,Romantic,Thriller",
    "language": "Hindi",
    "movie": "Gunmaaster G9",
-   "poster": "gunmaaster-g9-et00452908-1795865061",
+   "poster": "gunmaaster-g9-et00452908-1795887197",
    "screen": "SCREEN 1",
    "start": "2026-11-29T12:00:00+05:30",
    "subs": "",
@@ -8994,5 +9004,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00506990/MAYJ/243509/20261203"
   }
  },
- "_updated": "2026-11-28T23:01:06+05:30"
+ "_updated": "2026-11-28T23:10:51+05:30"
 }

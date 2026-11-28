@@ -250,12 +250,18 @@
        "s",
        "2",
        "3"
+      ],
+      [
+       "2026-11-28T11:20:49+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 213.0,
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-28T09:50:49+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T11:20:49+05:30"
     },
     "PEARL 3D": {
      "first_seen_status": "0",
@@ -937,6 +943,54 @@
    ],
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/ACON/48963/20261128"
+  },
+  "48965": {
+   "censor": "UA13+",
+   "classes": {
+    "DIAMOND": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T11:20:49+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PEARL": {
+     "first_seen_status": "0",
+     "first_seen_time": "2026-11-28T11:20:49+05:30",
+     "price": 54.0,
+     "soon_alerted": false,
+     "status": "0"
+    }
+   },
+   "cutoff": "2026-11-28T15:40:00+05:30",
+   "dimension": "2D",
+   "duration": 159,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00526277",
+   "first_seen": "2026-11-28T11:20:49+05:30",
+   "genre": "Drama,Romantic",
+   "language": "Tamil",
+   "movie": "AOT - Aakasamlo Oka Tara",
+   "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
+   "screen": "SCREEN 3",
+   "start": "2026-11-28T15:25:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "03:25 PM",
+   "tracked_by_rules": [
+    {
+     "cats": {
+      "PEARL": "2026-11-28T11:20:49+05:30"
+     },
+     "rule": "Weekend vibes",
+     "rule_id": "rmw9hsgbj5m8",
+     "tracked_at": "2026-11-28T11:20:49+05:30"
+    }
+   ],
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/ACON/48965/20261128"
   }
  },
  "20261129": {
@@ -1815,5 +1869,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/ACON/48964/20261129"
   }
  },
- "_updated": "2026-11-28T11:10:52+05:30"
+ "_updated": "2026-11-28T11:20:49+05:30"
 }

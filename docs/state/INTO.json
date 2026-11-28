@@ -661,14 +661,20 @@
        "s",
        "1",
        "0"
+      ],
+      [
+       "2026-11-28T19:01:12+05:30",
+       "s",
+       "0",
+       "3"
       ]
      ],
      "price": 94.35,
-     "reopened_at": "2026-11-26T00:31:29+05:30",
+     "reopened_at": "2026-11-28T19:01:12+05:30",
      "sold_out_at": "2026-11-26T09:40:55+05:30",
-     "soon_alerted": false,
-     "status": "0",
-     "status_changed_at": "2026-11-26T09:40:55+05:30"
+     "soon_alerted": true,
+     "status": "3",
+     "status_changed_at": "2026-11-28T19:01:12+05:30"
     }
    },
    "cutoff": "2026-11-28T20:00:00+05:30",
@@ -3537,9 +3543,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T03:01:04+05:30",
+     "history": [
+      [
+       "2026-11-28T19:01:12+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-28T19:01:12+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4088,12 +4103,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T19:01:12+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 223.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T18:50:51+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-28T19:01:12+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -4178,9 +4199,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T03:50:49+05:30",
+     "history": [
+      [
+       "2026-11-28T19:01:12+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-28T19:01:12+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -9414,5 +9444,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-28T18:50:51+05:30"
+ "_updated": "2026-11-28T19:01:12+05:30"
 }

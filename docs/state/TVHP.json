@@ -1003,9 +1003,18 @@
     "ELITE": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T19:01:09+05:30",
+     "history": [
+      [
+       "2026-11-28T19:40:49+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.0,
-     "soon_alerted": false,
-     "status": "3"
+     "soon_alerted": true,
+     "status": "2",
+     "status_changed_at": "2026-11-28T19:40:49+05:30"
     }
    },
    "cutoff": "2026-11-28T22:20:00+05:30",
@@ -1458,6 +1467,13 @@
      "status": "0",
      "status_changed_at": "2026-11-28T19:31:23+05:30"
     },
+    "ELITE": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T19:40:49+05:30",
+     "price": 183.0,
+     "soon_alerted": false,
+     "status": "3"
+    },
     "ELITE+VEG PUFF": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T15:01:09+05:30",
@@ -1476,7 +1492,7 @@
      "status_changed_at": "2026-11-28T19:31:23+05:30"
     }
    },
-   "cutoff": "2026-11-29T00:25:00+05:30",
+   "cutoff": "2026-11-29T00:15:00+05:30",
    "dimension": "2D",
    "duration": 159,
    "end": "2026-11-29T00:30:00+05:30",
@@ -1487,12 +1503,12 @@
    "movie": "AOT - Aakasamlo Oka Tara",
    "poster": "aot--aakasamlo-oka-tara-et00526277-1795410472",
    "screen": "SCREEN 1",
-   "start": "2026-11-28T23:40:00+05:30",
+   "start": "2026-11-28T23:30:00+05:30",
    "subs": "",
    "tags": [
     "4K DOLBY ATMOS"
    ],
-   "time": "11:40 PM",
+   "time": "11:30 PM",
    "trailer": "",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/27007/20261128"
   }
@@ -4248,5 +4264,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/TVHP/27001/20261203"
   }
  },
- "_updated": "2026-11-28T19:31:23+05:30"
+ "_updated": "2026-11-28T19:40:49+05:30"
 }

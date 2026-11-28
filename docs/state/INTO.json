@@ -311,12 +311,18 @@
        "s",
        "1",
        "2"
+      ],
+      [
+       "2026-11-28T17:10:52+05:30",
+       "s",
+       "2",
+       "1"
       ]
      ],
      "price": 233.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T17:01:11+05:30"
+     "status": "1",
+     "status_changed_at": "2026-11-28T17:10:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -2020,7 +2026,7 @@
    "genre": "Action,Romantic,Thriller",
    "language": "Hindi",
    "movie": "Gunmaaster G9",
-   "poster": "gunmaaster-g9-et00452908-1795514468",
+   "poster": "gunmaaster-g9-et00452908-1795865061",
    "screen": "SCREEN 7",
    "start": "2026-11-28T20:00:00+05:30",
    "subs": "ENG subs",
@@ -2254,7 +2260,7 @@
       ]
      ],
      "price": 210.98,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-28T12:11:00+05:30"
     },
@@ -4430,9 +4436,18 @@
     "CLUB": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T03:50:49+05:30",
+     "history": [
+      [
+       "2026-11-28T17:10:52+05:30",
+       "s",
+       "3",
+       "2"
+      ]
+     ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "3"
+     "status": "2",
+     "status_changed_at": "2026-11-28T17:10:52+05:30"
     },
     "EXECUTIVE": {
      "first_seen_status": "3",
@@ -5163,7 +5178,7 @@
    "genre": "Action,Romantic,Thriller",
    "language": "Hindi",
    "movie": "Gunmaaster G9",
-   "poster": "gunmaaster-g9-et00452908-1795514468",
+   "poster": "gunmaaster-g9-et00452908-1795865061",
    "screen": "SCREEN 7",
    "start": "2026-11-29T20:00:00+05:30",
    "subs": "ENG subs",
@@ -9317,5 +9332,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526306/INTO/93323/20261220"
   }
  },
- "_updated": "2026-11-28T17:01:11+05:30"
+ "_updated": "2026-11-28T17:10:52+05:30"
 }

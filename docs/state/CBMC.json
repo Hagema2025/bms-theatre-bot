@@ -257,12 +257,19 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-28T17:10:52+05:30",
+       "s",
+       "1",
+       "0"
       ]
      ],
      "price": 252.49,
+     "sold_out_at": "2026-11-28T17:10:52+05:30",
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-27T23:20:53+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T17:10:52+05:30"
     },
     "NORMAL": {
      "first_seen_status": "0",
@@ -273,13 +280,19 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-28T17:10:52+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 109.43,
      "reopened_at": "2026-11-28T11:31:33+05:30",
      "soon_alerted": true,
-     "status": "3",
-     "status_changed_at": "2026-11-28T11:31:33+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T17:10:52+05:30"
     }
    },
    "cutoff": "2026-11-28T19:00:00+05:30",
@@ -3126,7 +3139,7 @@
    "genre": "Action,Romantic,Thriller",
    "language": "Hindi",
    "movie": "Gunmaaster G9",
-   "poster": "gunmaaster-g9-et00452908-1795514468",
+   "poster": "gunmaaster-g9-et00452908-1795865061",
    "screen": "AUDI08",
    "start": "2026-11-28T19:35:00+05:30",
    "subs": "",
@@ -5453,7 +5466,7 @@
    "genre": "Action,Romantic,Thriller",
    "language": "Hindi",
    "movie": "Gunmaaster G9",
-   "poster": "gunmaaster-g9-et00452908-1795514468",
+   "poster": "gunmaaster-g9-et00452908-1795865061",
    "screen": "AUDI08",
    "start": "2026-11-29T19:35:00+05:30",
    "subs": "",
@@ -7686,5 +7699,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526287/CBMC/16631/20261221"
   }
  },
- "_updated": "2026-11-28T17:01:11+05:30"
+ "_updated": "2026-11-28T17:10:52+05:30"
 }

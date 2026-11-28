@@ -170,9 +170,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-24T20:50:50+05:30",
+     "history": [
+      [
+       "2026-11-28T16:40:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.8,
+     "sold_out_at": "2026-11-28T16:40:49+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:40:49+05:30"
     }
    },
    "cutoff": "2026-11-28T16:30:00+05:30",
@@ -725,9 +735,19 @@
     "FIRST CLASS": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:01:11+05:30",
+     "history": [
+      [
+       "2026-11-28T16:40:49+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 202.5,
+     "sold_out_at": "2026-11-28T16:40:49+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:40:49+05:30"
     }
    },
    "cutoff": "2026-11-28T22:40:00+05:30",
@@ -1468,14 +1488,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-28T16:40:49+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 211.0,
      "reopened_at": "2026-11-28T13:10:56+05:30",
-     "sold_out_at": "2026-11-28T13:01:08+05:30",
+     "sold_out_at": "2026-11-28T16:40:49+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-28T13:10:56+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:40:49+05:30"
     }
    },
    "cutoff": "2026-11-28T22:40:00+05:30",
@@ -1546,7 +1572,7 @@
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T16:20:55+05:30",
      "price": 183.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "3"
     }
    },
@@ -2374,6 +2400,37 @@
    "time": "07:30 PM",
    "trailer": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526356/MAYJ/243374/20261128"
+  },
+  "243375": {
+   "censor": "UA16+",
+   "classes": {
+    "FIRST CLASS": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T16:40:49+05:30",
+     "price": 183.8,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-28T23:25:00+05:30",
+   "dimension": "2D",
+   "duration": 178,
+   "end": "2026-11-29T00:30:00+05:30",
+   "event_code": "ET00504901",
+   "first_seen": "2026-11-28T16:40:49+05:30",
+   "genre": "Action,Thriller",
+   "language": "Tamil",
+   "movie": "O.M Operation Mole",
+   "poster": "om-operation-mole-et00504901-1794917895",
+   "screen": "SCREEN 4",
+   "start": "2026-11-28T23:15:00+05:30",
+   "subs": "",
+   "tags": [
+    "4K DOLBY 7.1"
+   ],
+   "time": "11:15 PM",
+   "trailer": "",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00504901/MAYJ/243375/20261128"
   }
  },
  "20261129": {
@@ -4402,5 +4459,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00518313/MAYJ/243373/20261129"
   }
  },
- "_updated": "2026-11-28T16:31:26+05:30"
+ "_updated": "2026-11-28T16:40:49+05:30"
 }

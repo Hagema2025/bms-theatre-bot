@@ -1290,7 +1290,7 @@
       ]
      ],
      "price": 223.8,
-     "soon_alerted": false,
+     "soon_alerted": true,
      "status": "2",
      "status_changed_at": "2026-11-28T14:50:53+05:30"
     }
@@ -1592,12 +1592,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-28T15:50:56+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     }
    },
    "cutoff": "2026-11-28T16:40:00+05:30",
@@ -2838,12 +2844,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 202.49,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T15:20:51+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     }
    },
    "cutoff": "2026-11-28T22:40:00+05:30",
@@ -3958,9 +3970,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T04:10:50+05:30",
+     "history": [
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4534,12 +4556,18 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "2",
+       "3"
       ]
      ],
      "price": 183.8,
      "soon_alerted": false,
-     "status": "2",
-     "status_changed_at": "2026-11-28T14:40:50+05:30"
+     "status": "3",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     }
    },
    "cutoff": "2026-11-29T16:40:00+05:30",
@@ -4706,14 +4734,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 101.74,
      "reopened_at": "2026-11-25T18:10:51+05:30",
-     "sold_out_at": "2026-11-25T04:40:56+05:30",
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-25T18:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -4786,14 +4820,20 @@
        "s",
        "0",
        "3"
+      ],
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
       ]
      ],
      "price": 101.74,
      "reopened_at": "2026-11-25T18:10:51+05:30",
-     "sold_out_at": "2026-11-25T04:40:56+05:30",
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-25T18:10:51+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5359,9 +5399,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T11:31:18+05:30",
+     "history": [
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.12,
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5749,9 +5799,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T11:10:57+05:30",
+     "history": [
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -5977,9 +6037,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-26T19:31:27+05:30",
+     "history": [
+      [
+       "2026-11-28T16:10:52+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-28T16:10:52+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T16:10:52+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6223,5 +6293,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00493076/PVHR/46913/20261129"
   }
  },
- "_updated": "2026-11-28T16:01:09+05:30"
+ "_updated": "2026-11-28T16:10:52+05:30"
 }

@@ -1752,12 +1752,18 @@
        "s",
        "2",
        "1"
+      ],
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "1",
+       "2"
       ]
      ],
      "price": 183.8,
      "soon_alerted": true,
-     "status": "1",
-     "status_changed_at": "2026-11-28T18:20:50+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     }
    },
    "cutoff": "2026-11-28T20:00:00+05:30",
@@ -4627,12 +4633,18 @@
        "s",
        "1",
        "3"
+      ],
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "2"
       ]
      ],
      "price": 54.35,
      "soon_alerted": false,
-     "status": "3",
-     "status_changed_at": "2026-11-28T18:31:27+05:30"
+     "status": "2",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6580,9 +6592,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:01:10+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 54.35,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6806,9 +6828,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:10:51+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -6842,9 +6874,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:10:51+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 59.43,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7446,9 +7488,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:10:51+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 94.35,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7656,15 +7708,61 @@
    "trailer": "https://www.youtube.com/watch?v=m1u4sR2rwQg",
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00452908/PVHR/46976/20261130"
   },
+  "46977": {
+   "censor": "UA13+",
+   "classes": {
+    "CLASSIC": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T18:40:51+05:30",
+     "price": 59.43,
+     "soon_alerted": false,
+     "status": "3"
+    },
+    "PRIME": {
+     "first_seen_status": "3",
+     "first_seen_time": "2026-11-28T18:40:51+05:30",
+     "price": 202.49,
+     "soon_alerted": false,
+     "status": "3"
+    }
+   },
+   "cutoff": "2026-11-30T12:45:00+05:30",
+   "dimension": "2D",
+   "duration": 136,
+   "end": "2026-12-01T00:30:00+05:30",
+   "event_code": "ET00526414",
+   "first_seen": "2026-11-28T18:40:51+05:30",
+   "genre": "Drama,Family",
+   "language": "Telugu",
+   "movie": "Dad's Little Friend",
+   "poster": "dad-s-little-friend-et00526414-1795526303",
+   "screen": "AUDI 08",
+   "start": "2026-11-30T12:00:00+05:30",
+   "subs": "",
+   "tags": [],
+   "time": "12:00 PM",
+   "trailer": "https://www.youtube.com/watch?v=mvQ-9YuHXa4",
+   "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526414/PVHR/46977/20261130"
+  },
   "46978": {
    "censor": "U",
    "classes": {
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:31:27+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 99.43,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -7734,9 +7832,19 @@
     "CLASSIC": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-28T18:31:27+05:30",
+     "history": [
+      [
+       "2026-11-28T18:40:51+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 99.43,
+     "sold_out_at": "2026-11-28T18:40:51+05:30",
      "soon_alerted": false,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T18:40:51+05:30"
     },
     "PRIME": {
      "first_seen_status": "3",
@@ -8149,5 +8257,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526232/PVHR/46997/20261130"
   }
  },
- "_updated": "2026-11-28T18:31:27+05:30"
+ "_updated": "2026-11-28T18:40:51+05:30"
 }

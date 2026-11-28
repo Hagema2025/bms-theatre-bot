@@ -24,12 +24,19 @@
        "s",
        "3",
        "2"
+      ],
+      [
+       "2026-11-28T12:01:07+05:30",
+       "s",
+       "2",
+       "0"
       ]
      ],
      "price": 183.0,
+     "sold_out_at": "2026-11-28T12:01:07+05:30",
      "soon_alerted": true,
-     "status": "2",
-     "status_changed_at": "2026-11-28T11:01:07+05:30"
+     "status": "0",
+     "status_changed_at": "2026-11-28T12:01:07+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -669,9 +676,19 @@
     "DIAMOND": {
      "first_seen_status": "3",
      "first_seen_time": "2026-11-25T14:40:52+05:30",
+     "history": [
+      [
+       "2026-11-28T12:01:07+05:30",
+       "s",
+       "3",
+       "0"
+      ]
+     ],
      "price": 183.0,
+     "sold_out_at": "2026-11-28T12:01:07+05:30",
      "soon_alerted": true,
-     "status": "3"
+     "status": "0",
+     "status_changed_at": "2026-11-28T12:01:07+05:30"
     },
     "PEARL": {
      "first_seen_status": "0",
@@ -1876,5 +1893,5 @@
    "url": "https://in.bookmyshow.com/movies/chennai/seat-layout/ET00526277/ACON/48964/20261129"
   }
  },
- "_updated": "2026-11-28T11:40:50+05:30"
+ "_updated": "2026-11-28T12:01:07+05:30"
 }
